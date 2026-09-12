@@ -1,0 +1,599 @@
+/* ==========================================================================
+   xStocks Terminal — Base and layout
+   Depends on css/theme.css. Load that file first.
+   ========================================================================== */
+
+/* --- Reset ---------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  scrollbar-gutter: stable;
+}
+
+body {
+  min-height: 100dvh;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  display: flex;
+  flex-direction: column;
+}
+
+img,
+svg,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+}
+
+button {
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+a {
+  color: var(--accent-alt);
+  text-decoration-color: var(--sol-teal-deep);
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  text-decoration-color: currentColor;
+}
+
+:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
+}
+
+::selection {
+  background: var(--sol-purple-deep);
+  color: var(--grey-000);
+}
+
+/* --- Typography ----------------------------------------------------------- */
+h1,
+h2,
+h3 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  text-wrap: balance;
+}
+
+h1 {
+  font-size: var(--text-2xl);
+}
+
+h2 {
+  font-size: var(--text-xl);
+}
+
+h3 {
+  font-size: var(--text-lg);
+  font-weight: var(--weight-medium);
+}
+
+p {
+  max-width: var(--measure);
+  text-wrap: pretty;
+}
+
+/* Numbers hold a fixed width so columns stay aligned. */
+.numeric,
+.mono {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum" 1;
+  letter-spacing: -0.01em;
+}
+
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--text-faint);
+}
+
+.text-muted {
+  color: var(--text-muted);
+}
+
+/* --- Layout --------------------------------------------------------------- */
+.container {
+  width: 100%;
+  max-width: 1240px;
+  margin-inline: auto;
+  padding-inline: var(--gutter);
+}
+
+.section {
+  padding-block: var(--space-7);
+  border-top: 1px solid var(--border);
+}
+
+.section:first-of-type {
+  border-top: none;
+  padding-block-start: var(--space-6);
+}
+
+.section-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-3);
+  margin-block-end: var(--space-5);
+}
+
+.section-head h2 {
+  margin-inline-end: auto;
+  padding-inline-start: var(--space-3);
+  border-inline-start: 3px solid var(--accent);
+}
+
+/* --- Top bar -------------------------------------------------------------- */
+.topbar {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--z-sticky);
+  border-block-end: 1px solid var(--border);
+  background: var(--bg-page);
+}
+
+.topbar__inner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  min-height: 60px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  min-width: 0;
+}
+
+.brand__mark {
+  position: relative;
+  inline-size: 28px;
+  block-size: 28px;
+  border-radius: var(--radius-xs);
+  background: var(--accent);
+  overflow: hidden;
+  flex: none;
+}
+
+/* Teal half. A flat two-tone block replaces the old gradient. */
+.brand__mark::after {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  inset-inline-end: 0;
+  inline-size: 50%;
+  background: var(--accent-alt);
+  border-inline-start: 2px solid var(--bg-page);
+}
+
+.brand__name {
+  font-size: var(--text-md);
+  font-weight: var(--weight-bold);
+  letter-spacing: var(--tracking-tight);
+  white-space: nowrap;
+}
+
+.brand__name span {
+  color: var(--text-muted);
+  font-weight: var(--weight-regular);
+}
+
+.topbar__meta {
+  margin-inline-start: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--text-faint);
+  font-size: var(--text-xs);
+}
+
+/* --- Hero ----------------------------------------------------------------- */
+.hero {
+  padding-block: var(--space-8) var(--space-6);
+}
+
+.hero h1 {
+  max-width: 22ch;
+  margin-block-end: var(--space-4);
+}
+
+.hero__lede {
+  color: var(--text-muted);
+  font-size: var(--text-md);
+  max-width: 54ch;
+}
+
+/* --- Grid ----------------------------------------------------------------- */
+.grid {
+  display: grid;
+  gap: var(--space-4);
+}
+
+.grid--cards {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+}
+
+/* --- Card ----------------------------------------------------------------- */
+.card {
+  background: var(--bg-surface);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+}
+
+.card--raised {
+  background: var(--bg-raised);
+  border-color: var(--border);
+}
+
+/* A hard accent rule on the top edge. Not a glow. */
+.card--accent {
+  border-color: var(--accent-line);
+  box-shadow: inset 0 3px 0 0 var(--accent);
+}
+
+.card__label {
+  display: block;
+  margin-block-end: var(--space-3);
+}
+
+/* --- Metric --------------------------------------------------------------- */
+.metric__value {
+  font-family: var(--font-mono);
+  font-size: var(--text-xl);
+  font-weight: var(--weight-medium);
+  font-variant-numeric: tabular-nums;
+  line-height: 1.1;
+}
+
+.metric__delta {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  margin-block-start: var(--space-2);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+.metric__delta--up {
+  color: var(--positive);
+}
+
+.metric__delta--down {
+  color: var(--negative);
+}
+
+.metric__hint {
+  margin-block-start: var(--space-3);
+  color: var(--text-faint);
+  font-size: var(--text-xs);
+}
+
+/* --- Badge ---------------------------------------------------------------- */
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xs);
+  background: var(--bg-raised);
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+  white-space: nowrap;
+}
+
+.badge--accent {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+  color: var(--grey-100);
+}
+
+.badge--live {
+  color: var(--positive);
+  border-color: var(--positive-line);
+  background: var(--positive-soft);
+}
+
+/* --- Button --------------------------------------------------------------- */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-raised);
+  color: var(--text-primary);
+  font-size: var(--text-sm);
+  font-weight: var(--weight-medium);
+  white-space: nowrap;
+  transition: background-color var(--duration-fast) var(--ease-out),
+    border-color var(--duration-fast) var(--ease-out),
+    transform var(--duration-fast) var(--ease-out);
+}
+
+.btn:hover {
+  background: var(--bg-hover);
+  border-color: var(--border-strong);
+}
+
+.btn:active {
+  transform: translateY(1px);
+}
+
+.btn--primary {
+  border-color: var(--accent);
+  background-color: var(--accent);
+  color: var(--accent-contrast);
+  font-weight: var(--weight-bold);
+}
+
+.btn--primary:hover {
+  border-color: var(--sol-purple-deep);
+  background-color: var(--sol-purple-deep);
+}
+
+.btn--ghost {
+  background: transparent;
+}
+
+/* --- Search --------------------------------------------------------------- */
+.search {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-block-end: var(--space-4);
+}
+
+.search__label {
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wider);
+  color: var(--text-faint);
+}
+
+.search__input {
+  flex: 1 1 240px;
+  min-width: 0;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: var(--bg-surface);
+  color: var(--text-primary);
+  font-size: var(--text-sm);
+  transition: border-color var(--duration-fast) var(--ease-out);
+}
+
+.search__input::placeholder {
+  color: var(--text-faint);
+}
+
+.search__input:hover {
+  border-color: var(--border-strong);
+}
+
+/* --- Table ---------------------------------------------------------------- */
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.table th {
+  text-align: start;
+  padding: var(--space-3) var(--space-4);
+  border-block-end: 1px solid var(--border);
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+.table th.is-numeric,
+.table td.is-numeric {
+  text-align: end;
+}
+
+.table td {
+  padding: var(--space-3) var(--space-4);
+  border-block-end: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+}
+
+.table tbody tr {
+  transition: background-color var(--duration-fast) var(--ease-out);
+}
+
+.table tbody tr:hover {
+  background: var(--bg-raised);
+}
+
+/* The row holds the logo, the name, and the symbol in one flex line. The logo
+   keeps its full size, whatever width the column takes. */
+.table__asset {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  color: var(--text-primary);
+}
+
+.table__logo {
+  inline-size: 40px;
+  block-size: 40px;
+  max-width: none;
+  flex: none;
+  object-fit: contain;
+  border-radius: var(--radius-md);
+  background: var(--bg-raised);
+  border: 1px solid var(--border-subtle);
+}
+
+/* A missing file shows a letter tile, so a broken logo stays visible. */
+.table__logo--empty {
+  display: grid;
+  place-items: center;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-md);
+  text-transform: uppercase;
+}
+
+.table__name {
+  color: var(--text-primary);
+  font-size: var(--text-md);
+  font-weight: var(--weight-medium);
+  overflow-wrap: anywhere;
+}
+
+.table__sep {
+  color: var(--text-faint);
+  font-size: var(--text-md);
+}
+
+.table__sym {
+  font-family: var(--font-mono);
+  font-size: var(--text-md);
+  color: var(--text-muted);
+}
+
+/* --- Asset list ----------------------------------------------------------- */
+.table__status {
+  margin-block-end: var(--space-3);
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+/* The body scrolls. The header holds its place. */
+.table-wrap {
+  max-block-size: 70vh;
+  overflow: auto;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  background: var(--bg-surface);
+}
+
+.table-wrap thead th {
+  position: sticky;
+  inset-block-start: 0;
+  z-index: var(--z-raised);
+  background: var(--bg-raised);
+  border-block-end: none;
+  box-shadow: inset 0 -1px 0 var(--border);
+}
+
+/* Hidden rows leave the layout, so the scroll height follows the filter. */
+.table tbody tr[hidden] {
+  display: none;
+}
+
+/* The single column holds the whole entry: logo, name, and symbol. */
+.table .col-asset {
+  inline-size: 100%;
+}
+
+/* --- Footer --------------------------------------------------------------- */
+.footer {
+  margin-block-start: auto;
+  padding-block: var(--space-6);
+  border-block-start: 1px solid var(--border-subtle);
+  color: var(--text-faint);
+  font-size: var(--text-xs);
+}
+
+.footer__inner {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* --- App state ------------------------------------------------------------ */
+[data-app-state="loading"] .table__status {
+  color: var(--text-muted);
+}
+
+[data-app-state="error"] .table-wrap {
+  border-color: var(--negative);
+}
+
+[data-app-state="error"] .table__status {
+  color: var(--negative);
+}
+
+/* --- Motion --------------------------------------------------------------- */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.animate-rise {
+  animation: rise var(--duration-slow) var(--ease-out) both;
+}
+
+/* --- Responsive ----------------------------------------------------------- */
+@media (max-width: 720px) {
+  .topbar__meta {
+    display: none;
+  }
+
+  .hero {
+    padding-block: var(--space-7) var(--space-5);
+  }
+
+  .table-wrap {
+    max-block-size: 60vh;
+  }
+}

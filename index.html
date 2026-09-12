@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" data-app-state="loading">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#0b0b0d" />
+    <title>xStocks Terminal</title>
+    <meta
+      name="description"
+      content="A single view of every xStocks tokenized equity."
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Chivo:wght@400;500;700&family=Geist+Mono:wght@400;500&display=swap"
+    />
+
+    <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="topbar">
+      <div class="container topbar__inner">
+        <div class="brand">
+          <span class="brand__mark" aria-hidden="true"></span>
+          <span class="brand__name">xStocks <span>Terminal</span></span>
+        </div>
+        <div class="topbar__meta">
+          <span class="badge badge--live">Local snapshot</span>
+          <span class="numeric">static data</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="container" id="app">
+      <section class="hero animate-rise">
+        <p class="eyebrow">Tokenized equities</p>
+        <h1>Every tokenized equity in one dark terminal.</h1>
+        <p class="hero__lede">
+          The table reads the local snapshot. It holds the name, the symbol, and the
+          logo for every xStock. Prices and charts come next.
+        </p>
+      </section>
+
+      <section class="section animate-rise" aria-labelledby="assets-title">
+        <div class="section-head">
+          <h2 id="assets-title">Assets</h2>
+          <span class="badge badge--accent" id="assets-count">Loading</span>
+        </div>
+
+        <div class="search">
+          <label class="search__label" for="asset-search">Filter</label>
+          <input
+            class="search__input"
+            id="asset-search"
+            type="search"
+            name="q"
+            placeholder="Name or symbol, for example AAPLx"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+
+        <p class="table__status" id="asset-status" role="status" aria-live="polite">
+          Loading the snapshot.
+        </p>
+
+        <div
+          class="table-wrap"
+          role="region"
+          aria-labelledby="assets-title"
+          tabindex="0"
+        >
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col" class="col-asset">Asset</th>
+              </tr>
+            </thead>
+            <tbody id="asset-rows"></tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer__inner">
+        <span>xStocks Terminal</span>
+        <span class="numeric">Data snapshot · not investment advice</span>
+        <span id="footer-year" class="numeric"></span>
+      </div>
+    </footer>
+
+    <!-- The page has no build step and no server. Classic scripts run from
+         file://, so a plain double-click on this file works. -->
+    <script>
+      window.setTimeout(() => {
+        if (document.documentElement.dataset.appState !== "loading") {
+          return;
+        }
+        const status = document.getElementById("asset-status");
+        if (status) {
+          status.textContent =
+            "The page scripts did not run. Read the browser console for the cause.";
+        }
+      }, 2000);
+    </script>
+
+    <script src="data/xstocks-assets.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/render-list.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

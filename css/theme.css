@@ -1,0 +1,144 @@
+/* ==========================================================================
+   xStocks Terminal — Theme tokens
+   Dark only. Greys carry structure. Solana accents carry emphasis.
+   No gradients. No glow. Flat fills and hard rules only.
+   Load this file before any other stylesheet.
+   ========================================================================== */
+
+:root {
+  color-scheme: dark;
+
+  /* --- Grey ramp --------------------------------------------------------- */
+  --grey-000: #ffffff;
+  --grey-050: #f4f4f6;
+  --grey-100: #ececef;
+  --grey-200: #b4b4bc;
+  --grey-300: #8b8b94;
+  --grey-400: #6b6b76;
+  --grey-500: #3d3d47;
+  --grey-600: #2e2e36;
+  --grey-700: #24242a;
+  --grey-800: #1b1b1f;
+  --grey-850: #151518;
+  --grey-900: #101013;
+  --grey-950: #0b0b0d;
+
+  /* --- Solana accents ---------------------------------------------------- */
+  --sol-purple: #9945ff;
+  --sol-teal: #03e1ff;
+  --sol-green: #14f195;
+  --sol-magenta: #dc1fff;
+
+  /* Tinted support shades. Use for soft fills, never for text. */
+  --sol-purple-deep: #6b2fc4;
+  --sol-teal-deep: #0a9cbe;
+  --sol-green-deep: #0e9e63;
+
+  /* --- Typography -------------------------------------------------------- */
+  --font-display: "Chivo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --font-body: var(--font-display);
+  --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
+
+  /* Fluid scale. Clamp keeps the small end readable and the large end calm. */
+  --text-2xs: 0.6875rem;
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-md: 1.0625rem;
+  --text-lg: clamp(1.25rem, 0.6vw + 1.1rem, 1.5rem);
+  --text-xl: clamp(1.75rem, 1.2vw + 1.45rem, 2.25rem);
+  --text-2xl: clamp(2.5rem, 3vw + 1.7rem, 4rem);
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.35;
+  --leading-normal: 1.6;
+
+  --tracking-tight: -0.02em;
+  --tracking-wide: 0.08em;
+  --tracking-wider: 0.14em;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* --- Space ------------------------------------------------------------- */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+
+  --gutter: clamp(1rem, 3vw, 2.5rem);
+  --measure: 68ch;
+
+  /* --- Radius ------------------------------------------------------------ */
+  /* Square edges read as formal. Cards and buttons take 4px. Small parts take 2px. */
+  --radius-xs: 2px;
+  --radius-md: 4px;
+  --radius-lg: 4px;
+
+  /* --- Motion ------------------------------------------------------------ */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --duration-fast: 120ms;
+  --duration-base: 200ms;
+  --duration-slow: 420ms;
+
+  /* --- Layer ------------------------------------------------------------- */
+  --z-base: 0;
+  --z-raised: 10;
+  --z-sticky: 100;
+  --z-overlay: 1000;
+}
+
+/* Semantic tokens. Views read these, not the raw ramp. */
+:root {
+  /* Surfaces */
+  --bg-page: var(--grey-950);
+  --bg-surface: var(--grey-900);
+  --bg-raised: var(--grey-800);
+  --bg-sunken: var(--grey-850);
+  --bg-hover: var(--grey-700);
+  --bg-active: var(--grey-600);
+
+  /* Lines. Flat values only. No transparency. */
+  --border-subtle: var(--grey-700);
+  --border: var(--grey-600);
+  --border-strong: var(--grey-500);
+
+  /* Text */
+  --text-primary: var(--grey-100);
+  --text-secondary: var(--grey-200);
+  --text-muted: var(--grey-300);
+  --text-faint: var(--grey-400);
+  --text-inverse: var(--grey-950);
+
+  /* Accents */
+  --accent: var(--sol-purple);
+  --accent-alt: var(--sol-teal);
+  --accent-contrast: var(--grey-000);
+  --positive: var(--sol-green);
+  --negative: var(--sol-magenta);
+
+  /* Solid accent fills. The theme has no gradients and no glow. */
+  --accent-soft: #2b1b42;
+  --accent-line: var(--sol-purple-deep);
+  --positive-soft: #112b23;
+  --positive-line: var(--sol-green-deep);
+
+  /* Focus. A solid double ring for access, not a glow. */
+  --focus-ring: 0 0 0 2px var(--bg-page), 0 0 0 4px var(--accent-alt);
+}
+
+/* Reduced motion: cut every duration token to zero. */
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-base: 0ms;
+    --duration-slow: 0ms;
+  }
+}
