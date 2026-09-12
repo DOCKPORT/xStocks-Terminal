@@ -1,0 +1,4340 @@
+[
+  {
+    "name": "Storage ETF (Roundhill) xStock",
+    "symbol": "DRAMx",
+    "sharesHeld": "2339",
+    "circulatingSupply": "2328.6141095881646905"
+  },
+  {
+    "name": "Marvell 2x Long ETF xStock",
+    "symbol": "MVLLx",
+    "sharesHeld": "5481",
+    "circulatingSupply": "5468.87262258"
+  },
+  {
+    "name": "Micron 2x Long ETF xStock",
+    "symbol": "MUUx",
+    "sharesHeld": "4326",
+    "circulatingSupply": "4318.78271348"
+  },
+  {
+    "name": "AXT xStock",
+    "symbol": "AXTIx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.492445073309728916"
+  },
+  {
+    "name": "Korea 3x Long ETF xStock",
+    "symbol": "KORUx",
+    "sharesHeld": "6341",
+    "circulatingSupply": "6330.01277076"
+  },
+  {
+    "name": "INTC 2x Long ETF xStock",
+    "symbol": "INTWx",
+    "sharesHeld": "6869",
+    "circulatingSupply": "6861.58455238"
+  },
+  {
+    "name": "3x Short Semiconductor ETF xStock",
+    "symbol": "SOXSx",
+    "sharesHeld": "2652",
+    "circulatingSupply": "2642.2911109500021441"
+  },
+  {
+    "name": "SNDK 2x Long ETF xStock",
+    "symbol": "SNXXx",
+    "sharesHeld": "8155",
+    "circulatingSupply": "8143.63797076"
+  },
+  {
+    "name": "SHEIN xStock",
+    "symbol": "SHEINx",
+    "sharesHeld": "32308",
+    "circulatingSupply": "32238.954688408078947"
+  },
+  {
+    "name": "NatWest xStock",
+    "symbol": "NWGx",
+    "sharesHeld": null,
+    "circulatingSupply": null
+  },
+  {
+    "name": "Bank Of China xStock",
+    "symbol": "BANKCx",
+    "sharesHeld": "102",
+    "circulatingSupply": "98.00907889714462189"
+  },
+  {
+    "name": "Sunny Optical Technology Group xStock",
+    "symbol": "SUOPTx",
+    "sharesHeld": "7",
+    "circulatingSupply": "5.239943285415938768"
+  },
+  {
+    "name": "MMG xStock",
+    "symbol": "MMGx",
+    "sharesHeld": "37",
+    "circulatingSupply": "34.823126885615635493"
+  },
+  {
+    "name": "Tingyi xStock",
+    "symbol": "TNGYIx",
+    "sharesHeld": "27",
+    "circulatingSupply": "24.115270596087802513"
+  },
+  {
+    "name": "Zhaojin Mining Industry xStock",
+    "symbol": "ZHAOMx",
+    "sharesHeld": "15",
+    "circulatingSupply": "12.648262838062950442"
+  },
+  {
+    "name": "Laopu Gold xStock",
+    "symbol": "LAOPGx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.41279774071941746"
+  },
+  {
+    "name": "JD Logistics xStock",
+    "symbol": "JDLOGx",
+    "sharesHeld": "15",
+    "circulatingSupply": "13.978457665846782605"
+  },
+  {
+    "name": "China Taiping Insurance xStock",
+    "symbol": "CTINSx",
+    "sharesHeld": "17",
+    "circulatingSupply": "15.969149916275922926"
+  },
+  {
+    "name": "Kunlun Energy xStock",
+    "symbol": "KUNLx",
+    "sharesHeld": "49",
+    "circulatingSupply": "46.087144838734633584"
+  },
+  {
+    "name": "The Wharf Holdings xStock",
+    "symbol": "WRFHDx",
+    "sharesHeld": "17",
+    "circulatingSupply": "15.305910830964801221"
+  },
+  {
+    "name": "Haidilao International xStock",
+    "symbol": "HAIDLx",
+    "sharesHeld": "324",
+    "circulatingSupply": "319.42812645752467783"
+  },
+  {
+    "name": "Sino Biopharmaceutical xStock",
+    "symbol": "SNBIOx",
+    "sharesHeld": "61",
+    "circulatingSupply": "58.657718502287825425"
+  },
+  {
+    "name": "Shenzhou International xStock",
+    "symbol": "SZIGHx",
+    "sharesHeld": "9",
+    "circulatingSupply": "7.861380921101311719"
+  },
+  {
+    "name": "ENN Energy xStock",
+    "symbol": "ENNHLx",
+    "sharesHeld": "7",
+    "circulatingSupply": "3.467613454165881812"
+  },
+  {
+    "name": "Smoore International xStock",
+    "symbol": "SMOIHx",
+    "sharesHeld": "17",
+    "circulatingSupply": "14.930529747557224644"
+  },
+  {
+    "name": "Horizon Robotics xStock",
+    "symbol": "HRZRBx",
+    "sharesHeld": "122",
+    "circulatingSupply": "120.34797025647493969"
+  },
+  {
+    "name": "China Resources Beer Holdings xStock",
+    "symbol": "CRESBx",
+    "sharesHeld": "8",
+    "circulatingSupply": "7.701528710683712595"
+  },
+  {
+    "name": "China Merchants Port xStock",
+    "symbol": "CMERPx",
+    "sharesHeld": "11",
+    "circulatingSupply": "10.27512485601456329"
+  },
+  {
+    "name": "CSPC Pharmaceutical xStock",
+    "symbol": "CSPCx",
+    "sharesHeld": "18",
+    "circulatingSupply": "17.292935727003574368"
+  },
+  {
+    "name": "J&T Global Express xStock",
+    "symbol": "JTGEXx",
+    "sharesHeld": "16",
+    "circulatingSupply": "15.757607968497122038"
+  },
+  {
+    "name": "China Resources Mixc Lifestyle Services xStock",
+    "symbol": "CRESMx",
+    "sharesHeld": "4",
+    "circulatingSupply": "3.98535135215754997"
+  },
+  {
+    "name": "WuXi XDC Cayman xStock",
+    "symbol": "WXXDCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "2.302845401978409779"
+  },
+  {
+    "name": "China Mengniu Dairy xStock",
+    "symbol": "CMENDx",
+    "sharesHeld": "9",
+    "circulatingSupply": "8.733570369796218647"
+  },
+  {
+    "name": "Budweiser Brewing Co APAC xStock",
+    "symbol": "BDWAPx",
+    "sharesHeld": "26",
+    "circulatingSupply": "25.735664398805926423"
+  },
+  {
+    "name": "Mixue xStock",
+    "symbol": "MIXUx",
+    "sharesHeld": "593",
+    "circulatingSupply": "402.12121430530889481"
+  },
+  {
+    "name": "ASMPT xStock",
+    "symbol": "ASMPTx",
+    "sharesHeld": "1",
+    "circulatingSupply": "0.983191917637258424"
+  },
+  {
+    "name": "Wharf Real Estate Investment xStock",
+    "symbol": "WHRFRx",
+    "sharesHeld": "5",
+    "circulatingSupply": "4.875036038999298585"
+  },
+  {
+    "name": "SITC International xStock",
+    "symbol": "SITCx",
+    "sharesHeld": "4",
+    "circulatingSupply": "3.611682037539256161"
+  },
+  {
+    "name": "JD Health International xStock",
+    "symbol": "JDHLTx",
+    "sharesHeld": "10",
+    "circulatingSupply": "8.500230726202265429"
+  },
+  {
+    "name": "Sands China xStock",
+    "symbol": "SNDSCx",
+    "sharesHeld": "25",
+    "circulatingSupply": "22.475419228324284162"
+  },
+  {
+    "name": "China Resources Power xStock",
+    "symbol": "CRESPx",
+    "sharesHeld": "19",
+    "circulatingSupply": "17.992603742819538121"
+  },
+  {
+    "name": "Prada xStock",
+    "symbol": "PRADx",
+    "sharesHeld": "12",
+    "circulatingSupply": "8.231678750818119798"
+  },
+  {
+    "name": "Sinotruk xStock",
+    "symbol": "SINOTx",
+    "sharesHeld": "11",
+    "circulatingSupply": "8.688323423126967035"
+  },
+  {
+    "name": "Chow Tai Fook Jewellery xStock",
+    "symbol": "CTFJWx",
+    "sharesHeld": "26",
+    "circulatingSupply": "24.036830441108979306"
+  },
+  {
+    "name": "China Longyuan Power xStock",
+    "symbol": "CLONPx",
+    "sharesHeld": "61",
+    "circulatingSupply": "59.760095273931973467"
+  },
+  {
+    "name": "WH xStock",
+    "symbol": "WHGROx",
+    "sharesHeld": "155",
+    "circulatingSupply": "40.84777986777168211"
+  },
+  {
+    "name": "Sino Land xStock",
+    "symbol": "SINOx",
+    "sharesHeld": "33",
+    "circulatingSupply": "30.224572162457391138"
+  },
+  {
+    "name": "Cathay Pacific Airways xStock",
+    "symbol": "CTPCAx",
+    "sharesHeld": "25",
+    "circulatingSupply": "22.776359470285041373"
+  },
+  {
+    "name": "Power Assets xStock",
+    "symbol": "PWAHLx",
+    "sharesHeld": "4",
+    "circulatingSupply": "2.635200154534491868"
+  },
+  {
+    "name": "CLP xStock",
+    "symbol": "CLPHDx",
+    "sharesHeld": "4",
+    "circulatingSupply": "2.06137946099935286"
+  },
+  {
+    "name": "Galaxy Entertainment xStock",
+    "symbol": "GENTEx",
+    "sharesHeld": "6",
+    "circulatingSupply": "4.616260193704843823"
+  },
+  {
+    "name": "Chery Automobile xStock",
+    "symbol": "CRAUTx",
+    "sharesHeld": "13",
+    "circulatingSupply": "11.941154223295425548"
+  },
+  {
+    "name": "WuXi Biologics xStock",
+    "symbol": "WUXIBx",
+    "sharesHeld": "5",
+    "circulatingSupply": "3.227775455092432668"
+  },
+  {
+    "name": "Swire Properties xStock",
+    "symbol": "SWPRPx",
+    "sharesHeld": "15",
+    "circulatingSupply": "12.955875381347543216"
+  },
+  {
+    "name": "CK Asset xStock",
+    "symbol": "CKAHx",
+    "sharesHeld": "9",
+    "circulatingSupply": "6.977978942578143071"
+  },
+  {
+    "name": "CK Infrastructure xStock",
+    "symbol": "CKINFx",
+    "sharesHeld": "7",
+    "circulatingSupply": "4.945408667810895595"
+  },
+  {
+    "name": "Hong Kong and China Gas xStock",
+    "symbol": "HKCGAx",
+    "sharesHeld": "46",
+    "circulatingSupply": "43.913012923267389643"
+  },
+  {
+    "name": "Kuaishou Technology xStock",
+    "symbol": "KUAIx",
+    "sharesHeld": "7393",
+    "circulatingSupply": "7168.1604093848784767"
+  },
+  {
+    "name": "Hong Kong Exchanges and Clearing xStock",
+    "symbol": "HKEXCx",
+    "sharesHeld": "955",
+    "circulatingSupply": "811.96556857558586634"
+  },
+  {
+    "name": "Nongfu Spring xStock",
+    "symbol": "NONGx",
+    "sharesHeld": "9",
+    "circulatingSupply": "7.736965019965930894"
+  },
+  {
+    "name": "China Overseas Land & Investment xStock",
+    "symbol": "COVELx",
+    "sharesHeld": "25",
+    "circulatingSupply": "23.365323049934450704"
+  },
+  {
+    "name": "China Hongqiao xStock",
+    "symbol": "CHONGx",
+    "sharesHeld": "18",
+    "circulatingSupply": "14.031809891114582206"
+  },
+  {
+    "name": "Meituan xStock",
+    "symbol": "MEITx",
+    "sharesHeld": "8554",
+    "circulatingSupply": "8291.3278835124913466"
+  },
+  {
+    "name": "Geely Automobile xStock",
+    "symbol": "GEELx",
+    "sharesHeld": "21",
+    "circulatingSupply": "17.707528542002562948"
+  },
+  {
+    "name": "MTR xStock",
+    "symbol": "MTRCPx",
+    "sharesHeld": "10",
+    "circulatingSupply": "9.692785120906023228"
+  },
+  {
+    "name": "Henderson Land Development xStock",
+    "symbol": "HNDLDx",
+    "sharesHeld": "12",
+    "circulatingSupply": "10.808804959456093772"
+  },
+  {
+    "name": "PICC Property and Casualty xStock",
+    "symbol": "PICCx",
+    "sharesHeld": "21",
+    "circulatingSupply": "19.977999533557292865"
+  },
+  {
+    "name": "COSCO SHIPPING xStock",
+    "symbol": "COSCx",
+    "sharesHeld": "20",
+    "circulatingSupply": "18.460024878922844891"
+  },
+  {
+    "name": "CK Hutchison xStock",
+    "symbol": "CKHUTx",
+    "sharesHeld": "6",
+    "circulatingSupply": "4.611646918070314485"
+  },
+  {
+    "name": "Pop Mart International xStock",
+    "symbol": "POPMTx",
+    "sharesHeld": "20953",
+    "circulatingSupply": "20793.192408383841827"
+  },
+  {
+    "name": "Bank of Communications xStock",
+    "symbol": "BOCOMx",
+    "sharesHeld": "44",
+    "circulatingSupply": "43.492940499903068715"
+  },
+  {
+    "name": "China Petroleum & Chemical xStock",
+    "symbol": "CPETCx",
+    "sharesHeld": "75",
+    "circulatingSupply": "73.012081232218128852"
+  },
+  {
+    "name": "BOC Hong Kong xStock",
+    "symbol": "BOCHKx",
+    "sharesHeld": "8",
+    "circulatingSupply": "6.461914847650453902"
+  },
+  {
+    "name": "CITIC xStock",
+    "symbol": "CITICx",
+    "sharesHeld": "13",
+    "circulatingSupply": "12.57083597331709187"
+  },
+  {
+    "name": "ANTA Sports Products xStock",
+    "symbol": "ANTASx",
+    "sharesHeld": "6",
+    "circulatingSupply": "4.473611382502280351"
+  },
+  {
+    "name": "China Resources Land xStock",
+    "symbol": "CRESLx",
+    "sharesHeld": "10",
+    "circulatingSupply": "9.358493926697376153"
+  },
+  {
+    "name": "Haier Smart Home xStock",
+    "symbol": "HAIERx",
+    "sharesHeld": "16",
+    "circulatingSupply": "15.39767433445627266"
+  },
+  {
+    "name": "Zijin Gold International xStock",
+    "symbol": "ZJGLDx",
+    "sharesHeld": "4",
+    "circulatingSupply": "2.014648855394745425"
+  },
+  {
+    "name": "Postal Savings Bank Of China xStock",
+    "symbol": "PSBOCx",
+    "sharesHeld": "68",
+    "circulatingSupply": "66.448711351861385026"
+  },
+  {
+    "name": "Industrial And Commercial Bank Of China xStock",
+    "symbol": "ICBCx",
+    "sharesHeld": "46",
+    "circulatingSupply": "44.045978280796578519"
+  },
+  {
+    "name": "AIA xStock",
+    "symbol": "AIAGRx",
+    "sharesHeld": "24",
+    "circulatingSupply": "7.691944583135096166"
+  },
+  {
+    "name": "China Construction Bank xStock",
+    "symbol": "CCONBx",
+    "sharesHeld": "37",
+    "circulatingSupply": "35.852134440474886619"
+  },
+  {
+    "name": "BYD xStock",
+    "symbol": "BYDCOx",
+    "sharesHeld": "42",
+    "circulatingSupply": "38.068872249664134804"
+  },
+  {
+    "name": "Xiaomi xStock",
+    "symbol": "XIAOx",
+    "sharesHeld": "285301",
+    "circulatingSupply": "279817.74703613900375"
+  },
+  {
+    "name": "China Shenhua Energy xStock",
+    "symbol": "CSHEEx",
+    "sharesHeld": "5",
+    "circulatingSupply": "3.636883325970960592"
+  },
+  {
+    "name": "China Life Insurance xStock",
+    "symbol": "CLINSx",
+    "sharesHeld": "8",
+    "circulatingSupply": "5.870098181948033043"
+  },
+  {
+    "name": "Tencent xStock",
+    "symbol": "TCENTx",
+    "sharesHeld": "2498",
+    "circulatingSupply": "2234.5133802932596288"
+  },
+  {
+    "name": "CoreWeave xStock",
+    "symbol": "CRWVx",
+    "sharesHeld": "10488",
+    "circulatingSupply": "10145.058170113390395"
+  },
+  {
+    "name": "Twist Bioscience xStock",
+    "symbol": "TWSTx",
+    "sharesHeld": "856",
+    "circulatingSupply": "799.69206408162347521"
+  },
+  {
+    "name": "Cerebras Systems xStock",
+    "symbol": "CBRSx",
+    "sharesHeld": "10223",
+    "circulatingSupply": "10052.759117789921797"
+  },
+  {
+    "name": "SharonAI xStock",
+    "symbol": "SHAZx",
+    "sharesHeld": "5007",
+    "circulatingSupply": "4938.9055558719504688"
+  },
+  {
+    "name": "T1 Energy xStock",
+    "symbol": "TEx",
+    "sharesHeld": "22066",
+    "circulatingSupply": "22020.902853816382958"
+  },
+  {
+    "name": "Nebius xStock",
+    "symbol": "NBISx",
+    "sharesHeld": "3560",
+    "circulatingSupply": "3359.6593464757767513"
+  },
+  {
+    "name": "uniQure xStock",
+    "symbol": "QUREx",
+    "sharesHeld": "2292",
+    "circulatingSupply": "2162.0064757708999833"
+  },
+  {
+    "name": "Applied Optoelectronics xStock",
+    "symbol": "AAOIx",
+    "sharesHeld": "4889",
+    "circulatingSupply": "4830.0082723687596223"
+  },
+  {
+    "name": "ARM xStock",
+    "symbol": "ARMx",
+    "sharesHeld": "4486",
+    "circulatingSupply": "4384.5209827590303339"
+  },
+  {
+    "name": "Bloom Energy xStock",
+    "symbol": "BEx",
+    "sharesHeld": "4155",
+    "circulatingSupply": "4052.3722788252928415"
+  },
+  {
+    "name": "Jersey Mike's Subs xStock",
+    "symbol": "JMKEx",
+    "sharesHeld": "22572",
+    "circulatingSupply": "22330.495415758287454"
+  },
+  {
+    "name": "SK hynix xStock",
+    "symbol": "SKHYx",
+    "sharesHeld": "47041",
+    "circulatingSupply": "46895.511395003929413"
+  },
+  {
+    "name": "Baker Hughes xStock",
+    "symbol": "BKRx",
+    "sharesHeld": "1760",
+    "circulatingSupply": "1740.4189798581348211"
+  },
+  {
+    "name": "Viking xStock",
+    "symbol": "VIKx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.372276597119671686"
+  },
+  {
+    "name": "Penumbra xStock",
+    "symbol": "PENx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.162179644465901691"
+  },
+  {
+    "name": "BJ's Wholesale Club xStock",
+    "symbol": "BJx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.370716809951739058"
+  },
+  {
+    "name": "FedEx Freight xStock",
+    "symbol": "FDXFx",
+    "sharesHeld": "839",
+    "circulatingSupply": "746.12551763585123212"
+  },
+  {
+    "name": "RenaissanceRe xStock",
+    "symbol": "RNRx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.162416830809522705"
+  },
+  {
+    "name": "Talen Energy xStock",
+    "symbol": "TLNx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.161180753674794095"
+  },
+  {
+    "name": "Elanco Animal Health xStock",
+    "symbol": "ELANx",
+    "sharesHeld": "3",
+    "circulatingSupply": "1.087782446330504243"
+  },
+  {
+    "name": "New York Times xStock",
+    "symbol": "NYTx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.486392213157969096"
+  },
+  {
+    "name": "Bank of New York Mellon xStock",
+    "symbol": "BNYx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.251241675210731303"
+  },
+  {
+    "name": "McCormick xStock",
+    "symbol": "MKCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.568837164178042037"
+  },
+  {
+    "name": "J.M. Smucker xStock",
+    "symbol": "SJMx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.30432569883844806"
+  },
+  {
+    "name": "Restaurant Brands International xStock",
+    "symbol": "QSRx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.430042825181980116"
+  },
+  {
+    "name": "CDW xStock",
+    "symbol": "CDWx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.185976589668940465"
+  },
+  {
+    "name": "First Horizon xStock",
+    "symbol": "FHNx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.029673991945853238"
+  },
+  {
+    "name": "Everest xStock",
+    "symbol": "EGx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.061727751998622828"
+  },
+  {
+    "name": "APi xStock",
+    "symbol": "APGx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.735460093825293732"
+  },
+  {
+    "name": "RB Global xStock",
+    "symbol": "RBAx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.375603591448342501"
+  },
+  {
+    "name": "Clorox xStock",
+    "symbol": "CLXx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.249151111653653718"
+  },
+  {
+    "name": "Roivant Sciences xStock",
+    "symbol": "ROIVx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.814349071559327675"
+  },
+  {
+    "name": "Veralto xStock",
+    "symbol": "VLTOx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.353825331825897869"
+  },
+  {
+    "name": "APA xStock",
+    "symbol": "APAx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.776600482357084866"
+  },
+  {
+    "name": "Tradeweb Markets xStock",
+    "symbol": "TWx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.346222548872647117"
+  },
+  {
+    "name": "Charter Communications xStock",
+    "symbol": "CHTRx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.178489787371574217"
+  },
+  {
+    "name": "Knight-Swift Transportation xStock",
+    "symbol": "KNXx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.335318472787897735"
+  },
+  {
+    "name": "Trimble xStock",
+    "symbol": "TRMBx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.542979653243711668"
+  },
+  {
+    "name": "Hasbro xStock",
+    "symbol": "HASx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.282953210951964476"
+  },
+  {
+    "name": "Pinnacle West Capital xStock",
+    "symbol": "PNWx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.348160856584396277"
+  },
+  {
+    "name": "Graco xStock",
+    "symbol": "GGGx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.306003773519586765"
+  },
+  {
+    "name": "Applied Industrial Technologies xStock",
+    "symbol": "AITx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.171679793843619716"
+  },
+  {
+    "name": "Camden Property Trust xStock",
+    "symbol": "CPTx",
+    "sharesHeld": "5",
+    "circulatingSupply": "2.175302937327234779"
+  },
+  {
+    "name": "Tyler Technologies xStock",
+    "symbol": "TYLx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.177373110076598206"
+  },
+  {
+    "name": "Dynatrace xStock",
+    "symbol": "DTx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.53938374992166405"
+  },
+  {
+    "name": "Ally Financial xStock",
+    "symbol": "ALLYx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.722266316312872992"
+  },
+  {
+    "name": "Equity Lifestyle Properties xStock",
+    "symbol": "ELSx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.398068204491729493"
+  },
+  {
+    "name": "Align Technology xStock",
+    "symbol": "ALGNx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.241374518499387177"
+  },
+  {
+    "name": "Zebra Technologies xStock",
+    "symbol": "ZBRAx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.160525741536169809"
+  },
+  {
+    "name": "The Carlyle xStock",
+    "symbol": "CGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.547650091780601231"
+  },
+  {
+    "name": "Saia xStock",
+    "symbol": "SAIAx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.159071156760859155"
+  },
+  {
+    "name": "Arrow Electronics xStock",
+    "symbol": "ARWx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.180614033933121015"
+  },
+  {
+    "name": "Avery Dennison xStock",
+    "symbol": "AVYx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.235553808832435111"
+  },
+  {
+    "name": "Nutanix xStock",
+    "symbol": "NTNXx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.504935701183518839"
+  },
+  {
+    "name": "Assurant xStock",
+    "symbol": "AIZx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.179261875987150132"
+  },
+  {
+    "name": "Rivian Automotive xStock",
+    "symbol": "RIVNx",
+    "sharesHeld": "10678",
+    "circulatingSupply": "10666.552113477856582"
+  },
+  {
+    "name": "Permian Resources xStock",
+    "symbol": "PRx",
+    "sharesHeld": "3",
+    "circulatingSupply": "1.246482403228490597"
+  },
+  {
+    "name": "Pinterest xStock",
+    "symbol": "PINSx",
+    "sharesHeld": "3",
+    "circulatingSupply": "1.23509646554985353"
+  },
+  {
+    "name": "TransUnion xStock",
+    "symbol": "TRUx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.384600602184327261"
+  },
+  {
+    "name": "UDR xStock",
+    "symbol": "UDRx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.746427041323469446"
+  },
+  {
+    "name": "Gaming and Leisure Properties xStock",
+    "symbol": "GLPIx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.604470227247301327"
+  },
+  {
+    "name": "Zscaler xStock",
+    "symbol": "ZSx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.245105112546411344"
+  },
+  {
+    "name": "Stanley Black & Decker xStock",
+    "symbol": "SWKx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.369539555958918984"
+  },
+  {
+    "name": "Healthpeak Properties xStock",
+    "symbol": "DOCx",
+    "sharesHeld": "6",
+    "circulatingSupply": "1.194574450769656703"
+  },
+  {
+    "name": "The Cooper Companies xStock",
+    "symbol": "COOx",
+    "sharesHeld": "9",
+    "circulatingSupply": "5.997021972760339886"
+  },
+  {
+    "name": "PTC xStock",
+    "symbol": "PTCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.273530617231456186"
+  },
+  {
+    "name": "Jones Lang LaSalle xStock",
+    "symbol": "JLLx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.189148014164588528"
+  },
+  {
+    "name": "Solstice Advanced Materials xStock",
+    "symbol": "SOLSx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.508103545801833337"
+  },
+  {
+    "name": "Lincoln Electric xStock",
+    "symbol": "LECOx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.068738136912013469"
+  },
+  {
+    "name": "W.R. Berkley xStock",
+    "symbol": "WRBx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.455850656522177134"
+  },
+  {
+    "name": "Broadridge Financial Solutions xStock",
+    "symbol": "BRx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.222335404580307793"
+  },
+  {
+    "name": "Omega Healthcare Investors xStock",
+    "symbol": "OHIx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.640509477550181561"
+  },
+  {
+    "name": "Fidelity National Financial xStock",
+    "symbol": "FNFx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.493519683289062722"
+  },
+  {
+    "name": "Sun Communities xStock",
+    "symbol": "SUIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.2425517643510389"
+  },
+  {
+    "name": "Watsco xStock",
+    "symbol": "WSOx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.150085569099282115"
+  },
+  {
+    "name": "Rollins xStock",
+    "symbol": "ROLx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.793701315799768654"
+  },
+  {
+    "name": "Mid-America Apartment Communities xStock",
+    "symbol": "MAAx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.272910120386237346"
+  },
+  {
+    "name": "CoStar xStock",
+    "symbol": "CSGPx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.828932979899608715"
+  },
+  {
+    "name": "Tenet Healthcare xStock",
+    "symbol": "THCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.187711752770843734"
+  },
+  {
+    "name": "Equitable xStock",
+    "symbol": "EQHx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.386357458564247069"
+  },
+  {
+    "name": "Globe Life xStock",
+    "symbol": "GLx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.139783255734177163"
+  },
+  {
+    "name": "Reinsurance Group of America xStock",
+    "symbol": "RGAx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.161756972115248155"
+  },
+  {
+    "name": "Exelixis xStock",
+    "symbol": "EXELx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.467513962559201038"
+  },
+  {
+    "name": "Unum xStock",
+    "symbol": "UNMx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.385498947872254846"
+  },
+  {
+    "name": "Deckers Outdoor xStock",
+    "symbol": "DECKx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.282419642285175588"
+  },
+  {
+    "name": "Neurocrine Biosciences xStock",
+    "symbol": "NBIXx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.245665163232928385"
+  },
+  {
+    "name": "Somnigroup International xStock",
+    "symbol": "SGIx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.48609522840151786"
+  },
+  {
+    "name": "Regency Centers xStock",
+    "symbol": "REGx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.437413852043844038"
+  },
+  {
+    "name": "Leidos xStock",
+    "symbol": "LDOSx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.189041932276631894"
+  },
+  {
+    "name": "Jacobs Solutions xStock",
+    "symbol": "Jx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.175069393915498709"
+  },
+  {
+    "name": "Dick's Sporting Goods xStock",
+    "symbol": "DKSx",
+    "sharesHeld": "14",
+    "circulatingSupply": "4.280645333900302181"
+  },
+  {
+    "name": "Pinnacle Financial Partners xStock",
+    "symbol": "PNFPx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.333818058978996625"
+  },
+  {
+    "name": "Performance Food xStock",
+    "symbol": "PFGCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.326843114201425135"
+  },
+  {
+    "name": "Evercore xStock",
+    "symbol": "EVRx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.085499183485780099"
+  },
+  {
+    "name": "Roku xStock",
+    "symbol": "ROKUx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.256557737001131884"
+  },
+  {
+    "name": "Lamar Advertising xStock",
+    "symbol": "LAMRx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.168394220201851563"
+  },
+  {
+    "name": "BorgWarner xStock",
+    "symbol": "BWAx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.494449221846020427"
+  },
+  {
+    "name": "Ball xStock",
+    "symbol": "BALLx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.535211194011846246"
+  },
+  {
+    "name": "DraftKings xStock",
+    "symbol": "DKNGx",
+    "sharesHeld": "5367",
+    "circulatingSupply": "5333.5447323860275717"
+  },
+  {
+    "name": "Regal Rexnord xStock",
+    "symbol": "RRXx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.234783730793627809"
+  },
+  {
+    "name": "Gen Digital xStock",
+    "symbol": "GENx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.927514259920415849"
+  },
+  {
+    "name": "RPM International xStock",
+    "symbol": "RPMx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.437361345954900734"
+  },
+  {
+    "name": "CBRE xStock",
+    "symbol": "CBREx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.168966043138551284"
+  },
+  {
+    "name": "SS&C Technologies xStock",
+    "symbol": "SSNCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.42832656029942421"
+  },
+  {
+    "name": "Aramark xStock",
+    "symbol": "ARMKx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.495819003759687815"
+  },
+  {
+    "name": "Ralph Lauren xStock",
+    "symbol": "RLx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.207160636308694852"
+  },
+  {
+    "name": "Clean Harbors xStock",
+    "symbol": "CLHx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.081408511576462932"
+  },
+  {
+    "name": "Genuine Parts xStock",
+    "symbol": "GPCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.195879808870705909"
+  },
+  {
+    "name": "Block xStock",
+    "symbol": "XYZx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.426109910797995955"
+  },
+  {
+    "name": "Alcoa xStock",
+    "symbol": "AAx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.538839428600997335"
+  },
+  {
+    "name": "Toll Brothers xStock",
+    "symbol": "TOLx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.259563113380559822"
+  },
+  {
+    "name": "Reddit xStock",
+    "symbol": "RDDTx",
+    "sharesHeld": "1891",
+    "circulatingSupply": "1629.8992912045741856"
+  },
+  {
+    "name": "Kinder Morgan xStock",
+    "symbol": "KMIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.82368659978625131"
+  },
+  {
+    "name": "Heico xStock",
+    "symbol": "HEIx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.072740556723921435"
+  },
+  {
+    "name": "Carvana xStock",
+    "symbol": "CVNAx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.372030658456759305"
+  },
+  {
+    "name": "Southern Copper xStock",
+    "symbol": "SCCOx",
+    "sharesHeld": "4.024",
+    "circulatingSupply": "0.729340718557088467"
+  },
+  {
+    "name": "Best Buy xStock",
+    "symbol": "BBYx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.404125533407753538"
+  },
+  {
+    "name": "Everpure xStock",
+    "symbol": "Px",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.355864516832141474"
+  },
+  {
+    "name": "Atlassian xStock",
+    "symbol": "TEAMx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.266828618697339924"
+  },
+  {
+    "name": "Las Vegas Sands xStock",
+    "symbol": "LVSx",
+    "sharesHeld": "9",
+    "circulatingSupply": "4.705950334056359512"
+  },
+  {
+    "name": "Carlisle Companies xStock",
+    "symbol": "CSLx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.05285503489644912"
+  },
+  {
+    "name": "Nasdaq Inc. xStock",
+    "symbol": "NDAQx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.373005243166260112"
+  },
+  {
+    "name": "Mueller Industries xStock",
+    "symbol": "MLIx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.407419514678130711"
+  },
+  {
+    "name": "Generac xStock",
+    "symbol": "GNRCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.116970580129805292"
+  },
+  {
+    "name": "W.P. Carey xStock",
+    "symbol": "WPCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.460963223221440142"
+  },
+  {
+    "name": "Masco xStock",
+    "symbol": "MASx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.435268532018156955"
+  },
+  {
+    "name": "ITT xStock",
+    "symbol": "ITTx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.124084679840359874"
+  },
+  {
+    "name": "Okta xStock",
+    "symbol": "OKTAx",
+    "sharesHeld": "745",
+    "circulatingSupply": "727.17455070766173445"
+  },
+  {
+    "name": "Tyson Foods xStock",
+    "symbol": "TSNx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.548485633812030246"
+  },
+  {
+    "name": "Ovintiv xStock",
+    "symbol": "OVVx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.503261847291792937"
+  },
+  {
+    "name": "Annaly Capital Management xStock",
+    "symbol": "NLYx",
+    "sharesHeld": "3",
+    "circulatingSupply": "1.228659723533098988"
+  },
+  {
+    "name": "Interactive Brokers xStock",
+    "symbol": "IBKRx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.287663656640307593"
+  },
+  {
+    "name": "CF Industries xStock",
+    "symbol": "CFx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.211883156828423491"
+  },
+  {
+    "name": "Ares Management xStock",
+    "symbol": "ARESx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.296281029320757797"
+  },
+  {
+    "name": "The Estee Lauder Companies xStock",
+    "symbol": "ELx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.280870050068157168"
+  },
+  {
+    "name": "Onto Innovation xStock",
+    "symbol": "ONTOx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.160984731629827985"
+  },
+  {
+    "name": "Coupang xStock",
+    "symbol": "CPNGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.580565267462331594"
+  },
+  {
+    "name": "Global Payments xStock",
+    "symbol": "GPNx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.290909576706901094"
+  },
+  {
+    "name": "DoorDash xStock",
+    "symbol": "DASHx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.121766289030739604"
+  },
+  {
+    "name": "Nordson xStock",
+    "symbol": "NDSNx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.16434429472290796"
+  },
+  {
+    "name": "Twilio xStock",
+    "symbol": "TWLOx",
+    "sharesHeld": "791",
+    "circulatingSupply": "772.50603980029564349"
+  },
+  {
+    "name": "First Citizens BancShares xStock",
+    "symbol": "FCNCAx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.022055400522438712"
+  },
+  {
+    "name": "Constellation Brands xStock",
+    "symbol": "STZx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.442528985510459473"
+  },
+  {
+    "name": "United Parcel Service xStock",
+    "symbol": "UPSx",
+    "sharesHeld": "7",
+    "circulatingSupply": "2.698313576605053322"
+  },
+  {
+    "name": "MongoDB xStock",
+    "symbol": "MDBx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.148551429505369388"
+  },
+  {
+    "name": "Cognizant Technology Solutions xStock",
+    "symbol": "CTSHx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.453031837292940329"
+  },
+  {
+    "name": "Zoetis xStock",
+    "symbol": "ZTSx",
+    "sharesHeld": "56",
+    "circulatingSupply": "51.967690095906524835"
+  },
+  {
+    "name": "Airbnb xStock",
+    "symbol": "ABNBx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.307564452591623037"
+  },
+  {
+    "name": "Incyte xStock",
+    "symbol": "INCYx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.205830275581586304"
+  },
+  {
+    "name": "Brookfield Asset Management xStock",
+    "symbol": "BAMx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.642560420523446273"
+  },
+  {
+    "name": "Lennar xStock",
+    "symbol": "LENx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.304667013196127915"
+  },
+  {
+    "name": "Veeva Systems xStock",
+    "symbol": "VEEVx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.195453918648458931"
+  },
+  {
+    "name": "Textron xStock",
+    "symbol": "TXTx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.380558250100262888"
+  },
+  {
+    "name": "Workday xStock",
+    "symbol": "WDAYx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.241474572641038442"
+  },
+  {
+    "name": "SBA Communications xStock",
+    "symbol": "SBACx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.209670775886621075"
+  },
+  {
+    "name": "Nike xStock",
+    "symbol": "NKEx",
+    "sharesHeld": "783",
+    "circulatingSupply": "533.50356408809594301"
+  },
+  {
+    "name": "Marriott International xStock",
+    "symbol": "MARx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.156909211807369398"
+  },
+  {
+    "name": "Tractor Supply xStock",
+    "symbol": "TSCOx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.87314067857806596"
+  },
+  {
+    "name": "Mondelez International xStock",
+    "symbol": "MDLZx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.514952344333096377"
+  },
+  {
+    "name": "CME xStock",
+    "symbol": "CMEx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.098855151925860317"
+  },
+  {
+    "name": "Datadog xStock",
+    "symbol": "DDOGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.015135488368403123"
+  },
+  {
+    "name": "Amphenol xStock",
+    "symbol": "APHx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.55189539819303303"
+  },
+  {
+    "name": "Fiserv xStock",
+    "symbol": "FISVx",
+    "sharesHeld": "87",
+    "circulatingSupply": "84.272805144565912933"
+  },
+  {
+    "name": "KeyCorp xStock",
+    "symbol": "KEYx",
+    "sharesHeld": "6",
+    "circulatingSupply": "1.691505475288232895"
+  },
+  {
+    "name": "Synchrony Financial xStock",
+    "symbol": "SYFx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.944614731381273213"
+  },
+  {
+    "name": "Principal Financial xStock",
+    "symbol": "PFGx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.662495821415151288"
+  },
+  {
+    "name": "Church & Dwight xStock",
+    "symbol": "CHDx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.681403874391336035"
+  },
+  {
+    "name": "Fidelity National Information Services xStock",
+    "symbol": "FISx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.065267963847563631"
+  },
+  {
+    "name": "Fortive xStock",
+    "symbol": "FTVx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.832953659780711777"
+  },
+  {
+    "name": "Albemarle xStock",
+    "symbol": "ALBx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.689304912356123719"
+  },
+  {
+    "name": "Woodward xStock",
+    "symbol": "WWDx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.658666818479123153"
+  },
+  {
+    "name": "Darden Restaurants xStock",
+    "symbol": "DRIx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.518268281297811527"
+  },
+  {
+    "name": "Quest Diagnostics xStock",
+    "symbol": "DGXx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.514541771467265453"
+  },
+  {
+    "name": "West Pharmaceutical Services xStock",
+    "symbol": "WSTx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.648831031308427259"
+  },
+  {
+    "name": "United Therapeutics xStock",
+    "symbol": "UTHRx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.909444872735517829"
+  },
+  {
+    "name": "Omnicom xStock",
+    "symbol": "OMCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.7963548176998495"
+  },
+  {
+    "name": "Dollar General xStock",
+    "symbol": "DGx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.624316929189474114"
+  },
+  {
+    "name": "T. Rowe Price xStock",
+    "symbol": "TROWx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.719643911367731012"
+  },
+  {
+    "name": "WESCO International xStock",
+    "symbol": "WCCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.544225107410525647"
+  },
+  {
+    "name": "Regions Financial xStock",
+    "symbol": "RFx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.367244851895262472"
+  },
+  {
+    "name": "Essex Property Trust xStock",
+    "symbol": "ESSx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.468940493329934047"
+  },
+  {
+    "name": "Evergy xStock",
+    "symbol": "EVRGx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.814499361536234849"
+  },
+  {
+    "name": "Loews xStock",
+    "symbol": "Lx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.820543788414006694"
+  },
+  {
+    "name": "International Paper xStock",
+    "symbol": "IPx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.119082313121860528"
+  },
+  {
+    "name": "Expand Energy xStock",
+    "symbol": "EXEx",
+    "sharesHeld": "796",
+    "circulatingSupply": "792.43014836701532553"
+  },
+  {
+    "name": "Zimmer Biomet xStock",
+    "symbol": "ZBHx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.755224204624037395"
+  },
+  {
+    "name": "Brown & Brown xStock",
+    "symbol": "BROx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.862331207030057106"
+  },
+  {
+    "name": "JB Hunt Transport Services xStock",
+    "symbol": "JBHTx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.591325429986646778"
+  },
+  {
+    "name": "East West Bancorp xStock",
+    "symbol": "EWBCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.558197499253022758"
+  },
+  {
+    "name": "Packaging Corp of America xStock",
+    "symbol": "PKGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.578536101181560993"
+  },
+  {
+    "name": "Illumina xStock",
+    "symbol": "ILMNx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.531429410228396431"
+  },
+  {
+    "name": "F5 xStock",
+    "symbol": "FFIVx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.468806833646847348"
+  },
+  {
+    "name": "Invitation Homes xStock",
+    "symbol": "INVHx",
+    "sharesHeld": "3",
+    "circulatingSupply": "1.297235466781210768"
+  },
+  {
+    "name": "Moderna xStock",
+    "symbol": "MRNAx",
+    "sharesHeld": "2476",
+    "circulatingSupply": "1787.6034772153294293"
+  },
+  {
+    "name": "HP xStock",
+    "symbol": "HPQx",
+    "sharesHeld": "6",
+    "circulatingSupply": "3.085355560414475142"
+  },
+  {
+    "name": "The Kraft Heinz xStock",
+    "symbol": "KHCx",
+    "sharesHeld": "8",
+    "circulatingSupply": "3.573493761437817998"
+  },
+  {
+    "name": "IDEX xStock",
+    "symbol": "IEXx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.595137698476130261"
+  },
+  {
+    "name": "Burlington Stores xStock",
+    "symbol": "BURLx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.559389703966673777"
+  },
+  {
+    "name": "Lattice Semiconductor xStock",
+    "symbol": "LSCCx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.697131325685785536"
+  },
+  {
+    "name": "TD Synnex xStock",
+    "symbol": "SNXx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.584111453953351914"
+  },
+  {
+    "name": "Zoom Communications xStock",
+    "symbol": "ZMx",
+    "sharesHeld": "1711",
+    "circulatingSupply": "1693.9223261578116603"
+  },
+  {
+    "name": "Verisk Analytics xStock",
+    "symbol": "VRSKx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.620678634864697654"
+  },
+  {
+    "name": "Mettler-Toledo International xStock",
+    "symbol": "MTDx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.498721291674040704"
+  },
+  {
+    "name": "Eversource Energy xStock",
+    "symbol": "ESx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.774292067206914296"
+  },
+  {
+    "name": "C.H. Robinson Worldwide xStock",
+    "symbol": "CHRWx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.572834926531694575"
+  },
+  {
+    "name": "Dow xStock",
+    "symbol": "DOWx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.255991212140993417"
+  },
+  {
+    "name": "VeriSign xStock",
+    "symbol": "VRSNx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.57946309955644378"
+  },
+  {
+    "name": "Expeditors International of Washington xStock",
+    "symbol": "EXPDx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.531047690388023115"
+  },
+  {
+    "name": "Southwest Airlines xStock",
+    "symbol": "LUVx",
+    "sharesHeld": "10",
+    "circulatingSupply": "7.3921452067175419"
+  },
+  {
+    "name": "American Water Works xStock",
+    "symbol": "AWKx",
+    "sharesHeld": "14",
+    "circulatingSupply": "11.029390733978454888"
+  },
+  {
+    "name": "Corpay xStock",
+    "symbol": "CPAYx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.467060712386865005"
+  },
+  {
+    "name": "CMS Energy xStock",
+    "symbol": "CMSx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.770443147521866136"
+  },
+  {
+    "name": "US Foods xStock",
+    "symbol": "USFDx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.82608720932422577"
+  },
+  {
+    "name": "MasTec xStock",
+    "symbol": "MTZx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.57136914495642427"
+  },
+  {
+    "name": "NiSource xStock",
+    "symbol": "NIx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.089664603794334466"
+  },
+  {
+    "name": "BWX Technologies xStock",
+    "symbol": "BWXTx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.593333087020785996"
+  },
+  {
+    "name": "MKS xStock",
+    "symbol": "MKSIx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.567316927019865548"
+  },
+  {
+    "name": "Viatris xStock",
+    "symbol": "VTRSx",
+    "sharesHeld": "9",
+    "circulatingSupply": "2.09472166965059593"
+  },
+  {
+    "name": "Insmed xStock",
+    "symbol": "INSMx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.68808286431877539"
+  },
+  {
+    "name": "Host Hotels & Resorts xStock",
+    "symbol": "HSTx",
+    "sharesHeld": "3",
+    "circulatingSupply": "1.560450916283829789"
+  },
+  {
+    "name": "ATI xStock",
+    "symbol": "ATIx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.612466873948874492"
+  },
+  {
+    "name": "Markel xStock",
+    "symbol": "MKLx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.694946705811243093"
+  },
+  {
+    "name": "Alliant Energy xStock",
+    "symbol": "LNTx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.861917947429763244"
+  },
+  {
+    "name": "Liberty Media xStock",
+    "symbol": "FWONKx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.661147297367966741"
+  },
+  {
+    "name": "Weyerhaeuser xStock",
+    "symbol": "WYx",
+    "sharesHeld": "6",
+    "circulatingSupply": "1.531109210260162938"
+  },
+  {
+    "name": "Cincinnati Financial xStock",
+    "symbol": "CINFx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.555360835554577441"
+  },
+  {
+    "name": "Kimco Realty xStock",
+    "symbol": "KIMx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.468395257987478994"
+  },
+  {
+    "name": "Equifax xStock",
+    "symbol": "EFXx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.540837305719963435"
+  },
+  {
+    "name": "Reliance xStock",
+    "symbol": "RSx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.586252941191098468"
+  },
+  {
+    "name": "Xylem xStock",
+    "symbol": "XYLx",
+    "sharesHeld": "7",
+    "circulatingSupply": "4.788512321966270199"
+  },
+  {
+    "name": "Williams-Sonoma xStock",
+    "symbol": "WSMx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.687113861655937675"
+  },
+  {
+    "name": "SoFi Technologies xStock",
+    "symbol": "SOFIx",
+    "sharesHeld": "14",
+    "circulatingSupply": "7.211848933495069293"
+  },
+  {
+    "name": "Ulta Beauty xStock",
+    "symbol": "ULTAx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.571056548056844948"
+  },
+  {
+    "name": "Texas Pacific Land xStock",
+    "symbol": "TPLx",
+    "sharesHeld": "8",
+    "circulatingSupply": "0.605398109939300623"
+  },
+  {
+    "name": "Dollar Tree xStock",
+    "symbol": "DLTRx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.614209138691417422"
+  },
+  {
+    "name": "XPO xStock",
+    "symbol": "XPOx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.71544595506356061"
+  },
+  {
+    "name": "General Mills xStock",
+    "symbol": "GISx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.588591940995471765"
+  },
+  {
+    "name": "Akamai Technologies xStock",
+    "symbol": "AKAMx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.897206456544892493"
+  },
+  {
+    "name": "Royal Gold xStock",
+    "symbol": "RGLDx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.659135731670822942"
+  },
+  {
+    "name": "Copart xStock",
+    "symbol": "CPRTx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.842127506827395067"
+  },
+  {
+    "name": "International Flavors & Fragrances xStock",
+    "symbol": "IFFx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.946466565974684328"
+  },
+  {
+    "name": "FirstEnergy xStock",
+    "symbol": "FEx",
+    "sharesHeld": "6",
+    "circulatingSupply": "1.363957468800751385"
+  },
+  {
+    "name": "LPL Financial xStock",
+    "symbol": "LPLAx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.624421907856140122"
+  },
+  {
+    "name": "Raymond James Financial xStock",
+    "symbol": "RJFx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.626299991559562631"
+  },
+  {
+    "name": "Snap-on xStock",
+    "symbol": "SNAx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.687089547005781487"
+  },
+  {
+    "name": "The Hershey xStock",
+    "symbol": "HSYx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.662280226434808454"
+  },
+  {
+    "name": "Entegris xStock",
+    "symbol": "ENTGx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.737156032910263018"
+  },
+  {
+    "name": "PPL xStock",
+    "symbol": "PPLx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.848150543592750382"
+  },
+  {
+    "name": "MACOM Technology Solutions xStock",
+    "symbol": "MTSIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.657185049680595446"
+  },
+  {
+    "name": "FTAI Aviation xStock",
+    "symbol": "FTAIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.636533775954825123"
+  },
+  {
+    "name": "NRG Energy xStock",
+    "symbol": "NRGx",
+    "sharesHeld": "14",
+    "circulatingSupply": "4.125143568078017232"
+  },
+  {
+    "name": "Hubbell xStock",
+    "symbol": "HUBBx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.50288466949964969"
+  },
+  {
+    "name": "Edison International xStock",
+    "symbol": "EIXx",
+    "sharesHeld": "23",
+    "circulatingSupply": "13.602553060996723298"
+  },
+  {
+    "name": "Fair Isaac xStock",
+    "symbol": "FICOx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.44156953427322524"
+  },
+  {
+    "name": "Carpenter Technology xStock",
+    "symbol": "CRSx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.453693828325557861"
+  },
+  {
+    "name": "PPG Industries xStock",
+    "symbol": "PPGx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.91259093393554204"
+  },
+  {
+    "name": "First Solar xStock",
+    "symbol": "FSLRx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.957823495274543344"
+  },
+  {
+    "name": "Atmos Energy xStock",
+    "symbol": "ATOx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.882433110232874596"
+  },
+  {
+    "name": "Lennox International xStock",
+    "symbol": "LIIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.593748320909523487"
+  },
+  {
+    "name": "Live Nation Entertainment xStock",
+    "symbol": "LYVx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.742432602551970672"
+  },
+  {
+    "name": "Bending Spoons xStock",
+    "symbol": "BSPx",
+    "sharesHeld": "24343",
+    "circulatingSupply": "24218.397838062016276"
+  },
+  {
+    "name": "DexCom xStock",
+    "symbol": "DXCMx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.717214157300750068"
+  },
+  {
+    "name": "EQT xStock",
+    "symbol": "EQTx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.921406379521737369"
+  },
+  {
+    "name": "Northern Trust xStock",
+    "symbol": "NTRSx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.629718009003321487"
+  },
+  {
+    "name": "Agilent Technologies xStock",
+    "symbol": "Ax",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.797462404419828267"
+  },
+  {
+    "name": "Martin Marietta Materials xStock",
+    "symbol": "MLMx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.551015462420516694"
+  },
+  {
+    "name": "CenterPoint Energy xStock",
+    "symbol": "CNPx",
+    "sharesHeld": "5",
+    "circulatingSupply": "2.111120522252248127"
+  },
+  {
+    "name": "MSCI xStock",
+    "symbol": "MSCIx",
+    "sharesHeld": "7",
+    "circulatingSupply": "0.531285982201848267"
+  },
+  {
+    "name": "Kenvue xStock",
+    "symbol": "KVUEx",
+    "sharesHeld": "9",
+    "circulatingSupply": "2.65782592640599156"
+  },
+  {
+    "name": "Revolution Medicines xStock",
+    "symbol": "RVMDx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.614708897111302446"
+  },
+  {
+    "name": "Teledyne Technologies xStock",
+    "symbol": "TDYx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.122898692054190939"
+  },
+  {
+    "name": "PG&E xStock",
+    "symbol": "PCGx",
+    "sharesHeld": "6",
+    "circulatingSupply": "1.826431257059150584"
+  },
+  {
+    "name": "IQVIA xStock",
+    "symbol": "IQVx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.513450756628374531"
+  },
+  {
+    "name": "WEC Energy xStock",
+    "symbol": "WECx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.369957600842382934"
+  },
+  {
+    "name": "Paychex xStock",
+    "symbol": "PAYXx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.717424175751206993"
+  },
+  {
+    "name": "Casey's General Stores xStock",
+    "symbol": "CASYx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.01222489468212096"
+  },
+  {
+    "name": "Natera xStock",
+    "symbol": "NTRAx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.671011399565826827"
+  },
+  {
+    "name": "Ameren xStock",
+    "symbol": "AEEx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.060863479553803802"
+  },
+  {
+    "name": "VICI Properties xStock",
+    "symbol": "VICIx",
+    "sharesHeld": "12",
+    "circulatingSupply": "5.361989826630962946"
+  },
+  {
+    "name": "Diamondback Energy xStock",
+    "symbol": "FANGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.125459585191351949"
+  },
+  {
+    "name": "Otis Worldwide xStock",
+    "symbol": "OTISx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.864402852511074046"
+  },
+  {
+    "name": "Steel Dynamics xStock",
+    "symbol": "STLDx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.602542155713501768"
+  },
+  {
+    "name": "Dover xStock",
+    "symbol": "DOVx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.535073132394738479"
+  },
+  {
+    "name": "Ferguson Enterprises xStock",
+    "symbol": "FERGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.516724867026790394"
+  },
+  {
+    "name": "Citizens Financial xStock",
+    "symbol": "CFGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.878584344337476285"
+  },
+  {
+    "name": "ResMed xStock",
+    "symbol": "RMDx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.203634209665010513"
+  },
+  {
+    "name": "Qnity Electronics xStock",
+    "symbol": "Qx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.691886095025275495"
+  },
+  {
+    "name": "EMCOR xStock",
+    "symbol": "EMEx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.434400666645329353"
+  },
+  {
+    "name": "Kimberly-Clark xStock",
+    "symbol": "KMBx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.243060512898610037"
+  },
+  {
+    "name": "Ingersoll Rand xStock",
+    "symbol": "IRx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.743063141100057259"
+  },
+  {
+    "name": "Exelon xStock",
+    "symbol": "EXCx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.002725940841253366"
+  },
+  {
+    "name": "GE HealthCare Technologies xStock",
+    "symbol": "GEHCx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.373691058361286854"
+  },
+  {
+    "name": "The Hartford Insurance xStock",
+    "symbol": "HIGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.190793659567917998"
+  },
+  {
+    "name": "Iron Mountain xStock",
+    "symbol": "IRMx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.70374253563538398"
+  },
+  {
+    "name": "Extra Space Storage xStock",
+    "symbol": "EXRx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.586515266173999724"
+  },
+  {
+    "name": "DTE Energy xStock",
+    "symbol": "DTEx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.185057185293123626"
+  },
+  {
+    "name": "Occidental Petroleum xStock",
+    "symbol": "OXYx",
+    "sharesHeld": "93",
+    "circulatingSupply": "84.925714279791771355"
+  },
+  {
+    "name": "Take-Two Interactive Software xStock",
+    "symbol": "TTWOx",
+    "sharesHeld": "1502",
+    "circulatingSupply": "1463.6480112602946902"
+  },
+  {
+    "name": "The Kroger xStock",
+    "symbol": "KRx",
+    "sharesHeld": "8",
+    "circulatingSupply": "0.902226283715761554"
+  },
+  {
+    "name": "NetApp xStock",
+    "symbol": "NTAPx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.626167225913246162"
+  },
+  {
+    "name": "Prudential Financial xStock",
+    "symbol": "PRUx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.713654107639923827"
+  },
+  {
+    "name": "Consolidated Edison xStock",
+    "symbol": "EDx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.653522625608139216"
+  },
+  {
+    "name": "Curtiss-Wright xStock",
+    "symbol": "CWx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.440352473120301287"
+  },
+  {
+    "name": "Waters xStock",
+    "symbol": "WATx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.662976207528726311"
+  },
+  {
+    "name": "Halliburton xStock",
+    "symbol": "HALx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.172892390444580846"
+  },
+  {
+    "name": "Biogen xStock",
+    "symbol": "BIIBx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.606635281771159511"
+  },
+  {
+    "name": "Centene xStock",
+    "symbol": "CNCx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.818376879446044757"
+  },
+  {
+    "name": "IDEXX Laboratories xStock",
+    "symbol": "IDXXx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.047076535980536501"
+  },
+  {
+    "name": "Axon Enterprise xStock",
+    "symbol": "AXONx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.622307015769322152"
+  },
+  {
+    "name": "Chipotle Mexican Grill xStock",
+    "symbol": "CMGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.191662251261023652"
+  },
+  {
+    "name": "Humana xStock",
+    "symbol": "HUMx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.787309112446736653"
+  },
+  {
+    "name": "Roper Technologies xStock",
+    "symbol": "ROPx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.549460658711541251"
+  },
+  {
+    "name": "Archer-Daniels-Midland xStock",
+    "symbol": "ADMx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.079038049956835809"
+  },
+  {
+    "name": "Crown Castle xStock",
+    "symbol": "CCIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.775782155305506695"
+  },
+  {
+    "name": "D.R. Horton xStock",
+    "symbol": "DHIx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.587705064066269038"
+  },
+  {
+    "name": "Becton Dickinson xStock",
+    "symbol": "BDXx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.635711958136247717"
+  },
+  {
+    "name": "Public Storage xStock",
+    "symbol": "PSAx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.16488641885331784"
+  },
+  {
+    "name": "Vulcan Materials xStock",
+    "symbol": "VMCx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.675929655763597185"
+  },
+  {
+    "name": "Alnylam Pharmaceuticals xStock",
+    "symbol": "ALNYx",
+    "sharesHeld": "10",
+    "circulatingSupply": "3.956753254698495404"
+  },
+  {
+    "name": "Ameriprise Financial xStock",
+    "symbol": "AMPx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.533905751823062047"
+  },
+  {
+    "name": "Sysco xStock",
+    "symbol": "SYYx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.412394041246198865"
+  },
+  {
+    "name": "M&T Bank xStock",
+    "symbol": "MTBx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.193773113649690401"
+  },
+  {
+    "name": "Aflac xStock",
+    "symbol": "AFLx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.804165453178631818"
+  },
+  {
+    "name": "Cencora xStock",
+    "symbol": "CORx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.488247877280972918"
+  },
+  {
+    "name": "Ventas xStock",
+    "symbol": "VTRx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.775938416924090526"
+  },
+  {
+    "name": "Tapestry xStock",
+    "symbol": "TPRx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.786549688325457133"
+  },
+  {
+    "name": "Huntington Bancshares xStock",
+    "symbol": "HBANx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.879428252213986479"
+  },
+  {
+    "name": "Fastenal xStock",
+    "symbol": "FASTx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.954814663612292204"
+  },
+  {
+    "name": "Xcel Energy xStock",
+    "symbol": "XELx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.821902350869844082"
+  },
+  {
+    "name": "United Airlines xStock",
+    "symbol": "UALx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.318576584993989465"
+  },
+  {
+    "name": "Old Dominion Freight Line xStock",
+    "symbol": "ODFLx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.611304407933703861"
+  },
+  {
+    "name": "Entergy xStock",
+    "symbol": "ETRx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.651202236325228022"
+  },
+  {
+    "name": "ON Semiconductor xStock",
+    "symbol": "ONx",
+    "sharesHeld": "2783",
+    "circulatingSupply": "2753.0730835417622621"
+  },
+  {
+    "name": "Yum Brands xStock",
+    "symbol": "YUMx",
+    "sharesHeld": "9",
+    "circulatingSupply": "4.499691465755145429"
+  },
+  {
+    "name": "Public Service Enterprise xStock",
+    "symbol": "PEGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.843276554640725777"
+  },
+  {
+    "name": "Corteva xStock",
+    "symbol": "CTVAx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.321383900554115322"
+  },
+  {
+    "name": "Microchip Technology xStock",
+    "symbol": "MCHPx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.438103800332920207"
+  },
+  {
+    "name": "Jabil xStock",
+    "symbol": "JBLx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.146161695163536498"
+  },
+  {
+    "name": "Westinghouse Air Brake Technologies xStock",
+    "symbol": "WABx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.672093038874520182"
+  },
+  {
+    "name": "ONEOK xStock",
+    "symbol": "OKEx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.774600426099687582"
+  },
+  {
+    "name": "State Street xStock",
+    "symbol": "STTx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.628399951195699375"
+  },
+  {
+    "name": "Keurig Dr Pepper xStock",
+    "symbol": "KDPx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.327521091925024406"
+  },
+  {
+    "name": "American International xStock",
+    "symbol": "AIGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.847733057425060068"
+  },
+  {
+    "name": "Republic Services xStock",
+    "symbol": "RSGx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.603911467756027853"
+  },
+  {
+    "name": "MetLife xStock",
+    "symbol": "METx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.381074998136078103"
+  },
+  {
+    "name": "Edwards Lifesciences xStock",
+    "symbol": "EWx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.286028298798642837"
+  },
+  {
+    "name": "Carrier Global xStock",
+    "symbol": "CARRx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.922281196800745267"
+  },
+  {
+    "name": "Cardinal Health xStock",
+    "symbol": "CAHx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.597920316940393913"
+  },
+  {
+    "name": "Delta Air Lines xStock",
+    "symbol": "DALx",
+    "sharesHeld": "6",
+    "circulatingSupply": "1.985380354815199006"
+  },
+  {
+    "name": "Autodesk xStock",
+    "symbol": "ADSKx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.517046217312081129"
+  },
+  {
+    "name": "Astera Labs xStock",
+    "symbol": "ALABx",
+    "sharesHeld": "967",
+    "circulatingSupply": "930.5629834335115764"
+  },
+  {
+    "name": "AutoZone xStock",
+    "symbol": "AZOx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.495991822915464707"
+  },
+  {
+    "name": "AMETEK xStock",
+    "symbol": "AMEx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.686085706690919059"
+  },
+  {
+    "name": "Fifth Third Bancorp xStock",
+    "symbol": "FITBx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.860031580426547255"
+  },
+  {
+    "name": "Targa Resources xStock",
+    "symbol": "TRGPx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.762109455890369224"
+  },
+  {
+    "name": "Devon Energy xStock",
+    "symbol": "DVNx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.394279409029518009"
+  },
+  {
+    "name": "Arthur J. Gallagher xStock",
+    "symbol": "AJGx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.669843529327053171"
+  },
+  {
+    "name": "Rockwell Automation xStock",
+    "symbol": "ROKx",
+    "sharesHeld": "187",
+    "circulatingSupply": "173.16406358919340991"
+  },
+  {
+    "name": "Realty Income xStock",
+    "symbol": "Ox",
+    "sharesHeld": "14",
+    "circulatingSupply": "4.234671985099559026"
+  },
+  {
+    "name": "Regeneron Pharmaceuticals xStock",
+    "symbol": "REGNx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.654872577924038491"
+  },
+  {
+    "name": "Ciena xStock",
+    "symbol": "CIENx",
+    "sharesHeld": "370",
+    "circulatingSupply": "352.87621056019003085"
+  },
+  {
+    "name": "Dominion Energy xStock",
+    "symbol": "Dx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.113650741429239394"
+  },
+  {
+    "name": "Moody's xStock",
+    "symbol": "MCOx",
+    "sharesHeld": "4",
+    "circulatingSupply": "0.535916315411927843"
+  },
+  {
+    "name": "Sempra xStock",
+    "symbol": "SREx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.031940048512010146"
+  },
+  {
+    "name": "The Travelers Companies xStock",
+    "symbol": "TRVx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.711608598692771239"
+  },
+  {
+    "name": "EOG Resources xStock",
+    "symbol": "EOGx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.7198838989733852"
+  },
+  {
+    "name": "L3Harris Technologies xStock",
+    "symbol": "LHXx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.657442582471504834"
+  },
+  {
+    "name": "Simon Property xStock",
+    "symbol": "SPGx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.702920431518364983"
+  },
+  {
+    "name": "W.W. Grainger xStock",
+    "symbol": "GWWx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.43830353145345248"
+  },
+  {
+    "name": "Sherwin-Williams xStock",
+    "symbol": "SHWx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.621996580086271067"
+  },
+  {
+    "name": "Monolithic Power Systems xStock",
+    "symbol": "MPWRx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.536526301913367055"
+  },
+  {
+    "name": "Marathon Petroleum xStock",
+    "symbol": "MPCx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.618606651973758837"
+  },
+  {
+    "name": "Apollo Global Management xStock",
+    "symbol": "APOx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.857883257076824321"
+  },
+  {
+    "name": "Comfort Systems USA xStock",
+    "symbol": "FIXx",
+    "sharesHeld": "7",
+    "circulatingSupply": "0.429137916065570381"
+  },
+  {
+    "name": "Ford Motor xStock",
+    "symbol": "Fx",
+    "sharesHeld": "14",
+    "circulatingSupply": "3.685941378210226648"
+  },
+  {
+    "name": "KKR xStock",
+    "symbol": "KKRx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.85113638666358438"
+  },
+  {
+    "name": "Northrop Grumman xStock",
+    "symbol": "NOCx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.565856018082632044"
+  },
+  {
+    "name": "Air Products and Chemicals xStock",
+    "symbol": "APDx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.735158762033422296"
+  },
+  {
+    "name": "Digital Realty Trust xStock",
+    "symbol": "DLRx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.654478781566087525"
+  },
+  {
+    "name": "Truist Financial xStock",
+    "symbol": "TFCx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.033480977092791115"
+  },
+  {
+    "name": "Cintas xStock",
+    "symbol": "CTASx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.228902801577165414"
+  },
+  {
+    "name": "Keysight Technologies xStock",
+    "symbol": "KEYSx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.551101472787725627"
+  },
+  {
+    "name": "Nucor xStock",
+    "symbol": "NUEx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.680875025660229741"
+  },
+  {
+    "name": "Coherent xStock",
+    "symbol": "COHRx",
+    "sharesHeld": "2202",
+    "circulatingSupply": "2131.9579783799223841"
+  },
+  {
+    "name": "Allstate xStock",
+    "symbol": "ALLx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.674804472910232723"
+  },
+  {
+    "name": "PACCAR xStock",
+    "symbol": "PCARx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.461945732812830548"
+  },
+  {
+    "name": "HCA Healthcare xStock",
+    "symbol": "HCAx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.51942866371876277"
+  },
+  {
+    "name": "American Electric Power xStock",
+    "symbol": "AEPx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.910231776049468981"
+  },
+  {
+    "name": "Motorola Solutions xStock",
+    "symbol": "MSIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.678389155500581079"
+  },
+  {
+    "name": "Ecolab xStock",
+    "symbol": "ECLx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.571475767967132205"
+  },
+  {
+    "name": "Colgate-Palmolive xStock",
+    "symbol": "CLx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.930836044559297451"
+  },
+  {
+    "name": "Norfolk Southern xStock",
+    "symbol": "NSCx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.624523470354762048"
+  },
+  {
+    "name": "TransDigm xStock",
+    "symbol": "TDGx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.118612631846099893"
+  },
+  {
+    "name": "United Rentals xStock",
+    "symbol": "URIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.524456473856764313"
+  },
+  {
+    "name": "Hewlett Packard Enterprise xStock",
+    "symbol": "HPEx",
+    "sharesHeld": "2266",
+    "circulatingSupply": "2245.0043269919069643"
+  },
+  {
+    "name": "Boston Scientific xStock",
+    "symbol": "BSXx",
+    "sharesHeld": "109",
+    "circulatingSupply": "105.01645324432020491"
+  },
+  {
+    "name": "Valero Energy xStock",
+    "symbol": "VLOx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.223584739051512779"
+  },
+  {
+    "name": "FedEx xStock",
+    "symbol": "FDXx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.550238364236177496"
+  },
+  {
+    "name": "Intuit xStock",
+    "symbol": "INTUx",
+    "sharesHeld": "8",
+    "circulatingSupply": "1.141418658837136123"
+  },
+  {
+    "name": "Hilton Worldwide xStock",
+    "symbol": "HLTx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.547110839045566421"
+  },
+  {
+    "name": "O'Reilly Automotive xStock",
+    "symbol": "ORLYx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.023807569381199317"
+  },
+  {
+    "name": "Illinois Tool Works xStock",
+    "symbol": "ITWx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.568529202968755896"
+  },
+  {
+    "name": "Ross Stores xStock",
+    "symbol": "ROSTx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.687940793486089689"
+  },
+  {
+    "name": "Phillips 66 xStock",
+    "symbol": "PSXx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.685936504844529064"
+  },
+  {
+    "name": "Intercontinental Exchange xStock",
+    "symbol": "ICEx",
+    "sharesHeld": "852",
+    "circulatingSupply": "473.2033737194891205"
+  },
+  {
+    "name": "The Cigna xStock",
+    "symbol": "CIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.573916558675913504"
+  },
+  {
+    "name": "General Motors xStock",
+    "symbol": "GMx",
+    "sharesHeld": "4",
+    "circulatingSupply": "1.064871846828898882"
+  },
+  {
+    "name": "Snowflake xStock",
+    "symbol": "SNOWx",
+    "sharesHeld": "1032",
+    "circulatingSupply": "978.36067019824847123"
+  },
+  {
+    "name": "Waste Management xStock",
+    "symbol": "WMx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.303778748038120627"
+  },
+  {
+    "name": "Emerson Electric xStock",
+    "symbol": "EMRx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.71620600559030215"
+  },
+  {
+    "name": "Elevance Health xStock",
+    "symbol": "ELVx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.602516326911076284"
+  },
+  {
+    "name": "3M xStock",
+    "symbol": "MMMx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.757086499643521689"
+  },
+  {
+    "name": "CSX xStock",
+    "symbol": "CSXx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.358901990728785469"
+  },
+  {
+    "name": "Synopsys xStock",
+    "symbol": "SNPSx",
+    "sharesHeld": "169",
+    "circulatingSupply": "164.31156011981818348"
+  },
+  {
+    "name": "American Tower xStock",
+    "symbol": "AMTx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.75973101270355138"
+  },
+  {
+    "name": "Fortinet xStock",
+    "symbol": "FTNTx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.714093436987061206"
+  },
+  {
+    "name": "Blackstone xStock",
+    "symbol": "BXx",
+    "sharesHeld": "737",
+    "circulatingSupply": "722.95182322757358319"
+  },
+  {
+    "name": "Automatic Data Processing xStock",
+    "symbol": "ADPx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.666248990610052892"
+  },
+  {
+    "name": "PNC Financial Services xStock",
+    "symbol": "PNCx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.674591816424227122"
+  },
+  {
+    "name": "Marsh xStock",
+    "symbol": "MRSHx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.732921182669999565"
+  },
+  {
+    "name": "Williams Companies xStock",
+    "symbol": "WMBx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.221739322551522709"
+  },
+  {
+    "name": "Cummins xStock",
+    "symbol": "CMIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.479552396918419054"
+  },
+  {
+    "name": "Freeport-McMoRan xStock",
+    "symbol": "FCXx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.123741987560216209"
+  },
+  {
+    "name": "Southern xStock",
+    "symbol": "SOx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.003720420281000587"
+  },
+  {
+    "name": "McKesson xStock",
+    "symbol": "MCKx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.556057739537432367"
+  },
+  {
+    "name": "Cadence Design Systems xStock",
+    "symbol": "CDNSx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.646081027687651576"
+  },
+  {
+    "name": "U.S. Bancorp xStock",
+    "symbol": "USBx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.353705903646284119"
+  },
+  {
+    "name": "General Dynamics xStock",
+    "symbol": "GDx",
+    "sharesHeld": "8",
+    "circulatingSupply": "1.292425098505568139"
+  },
+  {
+    "name": "Stryker xStock",
+    "symbol": "SYKx",
+    "sharesHeld": "26",
+    "circulatingSupply": "20.679721526334308896"
+  },
+  {
+    "name": "Equinix xStock",
+    "symbol": "EQIXx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.447200537151421729"
+  },
+  {
+    "name": "ServiceNow xStock",
+    "symbol": "NOWx",
+    "sharesHeld": "1679",
+    "circulatingSupply": "1657.9637422296761108"
+  },
+  {
+    "name": "Howmet Aerospace xStock",
+    "symbol": "HWMx",
+    "sharesHeld": "7",
+    "circulatingSupply": "0.571925847317994961"
+  },
+  {
+    "name": "Duke Energy xStock",
+    "symbol": "DUKx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.794104035458858588"
+  },
+  {
+    "name": "Lockheed Martin xStock",
+    "symbol": "LMTx",
+    "sharesHeld": "9",
+    "circulatingSupply": "1.814974310293755285"
+  },
+  {
+    "name": "Vertex Pharmaceuticals xStock",
+    "symbol": "VRTXx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.567508723975122262"
+  },
+  {
+    "name": "Newmont xStock",
+    "symbol": "NEMx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.889554251954837924"
+  },
+  {
+    "name": "Starbucks xStock",
+    "symbol": "SBUXx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.040302868278473653"
+  },
+  {
+    "name": "Capital One Financial xStock",
+    "symbol": "COFx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.623612529495309343"
+  },
+  {
+    "name": "ConocoPhillips xStock",
+    "symbol": "COPx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.363324354262866033"
+  },
+  {
+    "name": "Bristol-Myers Squibb xStock",
+    "symbol": "BMYx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.21101146124485995"
+  },
+  {
+    "name": "Parker Hannifin xStock",
+    "symbol": "PHx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.528976971150700147"
+  },
+  {
+    "name": "Deere xStock",
+    "symbol": "DEx",
+    "sharesHeld": "7",
+    "circulatingSupply": "1.968707025288585614"
+  },
+  {
+    "name": "Altria xStock",
+    "symbol": "MOx",
+    "sharesHeld": "10",
+    "circulatingSupply": "4.235728617638984417"
+  },
+  {
+    "name": "CVS Health xStock",
+    "symbol": "CVSx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.907651456248460588"
+  },
+  {
+    "name": "Welltower xStock",
+    "symbol": "WELLx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.687106654376241551"
+  },
+  {
+    "name": "Progressive xStock",
+    "symbol": "PGRx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.692507060107555561"
+  },
+  {
+    "name": "Prologis xStock",
+    "symbol": "PLDx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.910273799514121551"
+  },
+  {
+    "name": "Lowe's Companies xStock",
+    "symbol": "LOWx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.801244480416961705"
+  },
+  {
+    "name": "TJX Companies xStock",
+    "symbol": "TJXx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.426871223330213783"
+  },
+  {
+    "name": "The Walt Disney xStock",
+    "symbol": "DISx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.86141305628137985"
+  },
+  {
+    "name": "Corning xStock",
+    "symbol": "GLWx",
+    "sharesHeld": "3428",
+    "circulatingSupply": "3371.4487255507043313"
+  },
+  {
+    "name": "Union Pacific xStock",
+    "symbol": "UNPx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.643644985687851347"
+  },
+  {
+    "name": "Charles Schwab xStock",
+    "symbol": "SCHWx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.528338868700514967"
+  },
+  {
+    "name": "Intuitive Surgical xStock",
+    "symbol": "ISRGx",
+    "sharesHeld": "381",
+    "circulatingSupply": "367.84226707294584568"
+  },
+  {
+    "name": "Gilead Sciences xStock",
+    "symbol": "GILDx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.733252306884178885"
+  },
+  {
+    "name": "Boeing xStock",
+    "symbol": "BAx",
+    "sharesHeld": "8",
+    "circulatingSupply": "0.913996216371074431"
+  },
+  {
+    "name": "NextEra Energy xStock",
+    "symbol": "NEEx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.638569271701438045"
+  },
+  {
+    "name": "Amgen xStock",
+    "symbol": "AMGNx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.595395650781973974"
+  },
+  {
+    "name": "Verizon Communications xStock",
+    "symbol": "VZx",
+    "sharesHeld": "5",
+    "circulatingSupply": "1.455790487292550971"
+  },
+  {
+    "name": "Qualcomm xStock",
+    "symbol": "QCOMx",
+    "sharesHeld": "2953",
+    "circulatingSupply": "2922.2241947600445287"
+  },
+  {
+    "name": "RTX xStock",
+    "symbol": "RTXx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.704281040307447567"
+  },
+  {
+    "name": "Morgan Stanley xStock",
+    "symbol": "MSx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.70985171690526679"
+  },
+  {
+    "name": "Citigroup xStock",
+    "symbol": "Cx",
+    "sharesHeld": "6",
+    "circulatingSupply": "0.765434174997588873"
+  },
+  {
+    "name": "Texas Instruments xStock",
+    "symbol": "TXNx",
+    "sharesHeld": "7",
+    "circulatingSupply": "0.759099459612501193"
+  },
+  {
+    "name": "Western Digital xStock",
+    "symbol": "WDCx",
+    "sharesHeld": "1431",
+    "circulatingSupply": "1357.7149849104043666"
+  },
+  {
+    "name": "GE Aerospace xStock",
+    "symbol": "GEx",
+    "sharesHeld": "9",
+    "circulatingSupply": "1.056839860606451172"
+  },
+  {
+    "name": "Analog Devices xStock",
+    "symbol": "ADIx",
+    "sharesHeld": "5",
+    "circulatingSupply": "0.527456507049749593"
+  },
+  {
+    "name": "Wells Fargo xStock",
+    "symbol": "WFCx",
+    "sharesHeld": "6",
+    "circulatingSupply": "1.04691706381419915"
+  },
+  {
+    "name": "Caterpillar xStock",
+    "symbol": "CATx",
+    "sharesHeld": "9",
+    "circulatingSupply": "0.942703933019957896"
+  },
+  {
+    "name": "RoboStrategy xStock",
+    "symbol": "BOTx",
+    "sharesHeld": "9109",
+    "circulatingSupply": "9011.9644618902515418"
+  },
+  {
+    "name": "SpaceX xStock",
+    "symbol": "SPCXx",
+    "sharesHeld": "270417",
+    "circulatingSupply": "270001.45606012601036"
+  },
+  {
+    "name": "Medline xStock",
+    "symbol": "MDLNx",
+    "sharesHeld": "3",
+    "circulatingSupply": "0.28985507"
+  },
+  {
+    "name": "Enhanced Group xStock",
+    "symbol": "ENHAx",
+    "sharesHeld": "68425",
+    "circulatingSupply": "62425.033572589574655"
+  },
+  {
+    "name": "iShares MSCI South Korea xStock",
+    "symbol": "EWYx",
+    "sharesHeld": "11913",
+    "circulatingSupply": "11846.569918546211822"
+  },
+  {
+    "name": "Global X DAX Germany xStock",
+    "symbol": "DAXx",
+    "sharesHeld": "2434",
+    "circulatingSupply": "2426.9268687206998294"
+  },
+  {
+    "name": "Strive, Inc. Series A Preferred xStock",
+    "symbol": "SATAx",
+    "sharesHeld": "1932",
+    "circulatingSupply": "1928.081008940345977"
+  },
+  {
+    "name": "iShares Semiconductor xStock",
+    "symbol": "SOXXx",
+    "sharesHeld": "328",
+    "circulatingSupply": "305.87305354146666901"
+  },
+  {
+    "name": "iShares MSCI United Kingdom xStock",
+    "symbol": "EWUx",
+    "sharesHeld": "2529",
+    "circulatingSupply": "2366.6152262599424513"
+  },
+  {
+    "name": "iShares MSCI Germany xStock",
+    "symbol": "EWGx",
+    "sharesHeld": "2607",
+    "circulatingSupply": "2534.12511621176854"
+  },
+  {
+    "name": "iShares MSCI France xStock",
+    "symbol": "EWQx",
+    "sharesHeld": "2610",
+    "circulatingSupply": "2476.3404711264477256"
+  },
+  {
+    "name": "Volatility Shares 2x Bitcoin Strategy xStock",
+    "symbol": "BITXx",
+    "sharesHeld": "17811",
+    "circulatingSupply": "17786.494397128207689"
+  },
+  {
+    "name": "Vanguard S&P 500 xStock",
+    "symbol": "VOOx",
+    "sharesHeld": "1245",
+    "circulatingSupply": "1188.8041049363359412"
+  },
+  {
+    "name": "VanEck Uranium and Nuclear xStock",
+    "symbol": "NLRx",
+    "sharesHeld": "1012",
+    "circulatingSupply": "980.06360552205532692"
+  },
+  {
+    "name": "VanEck Gold Miners xStock",
+    "symbol": "GDXx",
+    "sharesHeld": "10754",
+    "circulatingSupply": "10727.792341340593496"
+  },
+  {
+    "name": "SPDR EURO STOXX 50 xStock",
+    "symbol": "FEZx",
+    "sharesHeld": "1498",
+    "circulatingSupply": "1480.130746703989398"
+  },
+  {
+    "name": "Janus Henderson AAA CLO xStock",
+    "symbol": "JAAAx",
+    "sharesHeld": "1996",
+    "circulatingSupply": "1995.7407189272442637"
+  },
+  {
+    "name": "JPMorgan Ultra-Short Income xStock",
+    "symbol": "JPSTx",
+    "sharesHeld": "2100",
+    "circulatingSupply": "2099.0192743181972083"
+  },
+  {
+    "name": "Franklin U.S. Mid Cap Multi-Factor xStock",
+    "symbol": "FLQMx",
+    "sharesHeld": "2195",
+    "circulatingSupply": "2018.2928816609936164"
+  },
+  {
+    "name": "Franklin U.S. Equity Index xStock",
+    "symbol": "USPXx",
+    "sharesHeld": "1792",
+    "circulatingSupply": "1644.4758491534389184"
+  },
+  {
+    "name": "Franklin Small Cap Enhanced xStock",
+    "symbol": "FSMLx",
+    "sharesHeld": "5679",
+    "circulatingSupply": "4004.3638422103853193"
+  },
+  {
+    "name": "Franklin Senior Loan xStock",
+    "symbol": "FLBLx",
+    "sharesHeld": "4798",
+    "circulatingSupply": "4726.4304687727114043"
+  },
+  {
+    "name": "Franklin Intelligent Machines xStock",
+    "symbol": "IQMx",
+    "sharesHeld": "1449",
+    "circulatingSupply": "1080.2706506045556259"
+  },
+  {
+    "name": "Franklin ClearBridge Enhanced Income xStock",
+    "symbol": "YLDEx",
+    "sharesHeld": "2324",
+    "circulatingSupply": "2107.9718254791330786"
+  },
+  {
+    "name": "Fidelity AAA CLO xStock",
+    "symbol": "FAAAx",
+    "sharesHeld": "2775",
+    "circulatingSupply": "2275.7898577819927464"
+  },
+  {
+    "name": "Direxion Semiconductor Bull 3X xStock",
+    "symbol": "SOXLx",
+    "sharesHeld": "45302",
+    "circulatingSupply": "44617.211628130623766"
+  },
+  {
+    "name": "Vida Global xStock",
+    "symbol": "VIDAx",
+    "sharesHeld": "215171",
+    "circulatingSupply": "196829.58439785927575"
+  },
+  {
+    "name": "Red Cat xStock",
+    "symbol": "RCATx",
+    "sharesHeld": "13185",
+    "circulatingSupply": "13128.177771776616047"
+  },
+  {
+    "name": "Ondas xStock",
+    "symbol": "ONDSx",
+    "sharesHeld": "63873",
+    "circulatingSupply": "63620.553328596048321"
+  },
+  {
+    "name": "IREN xStock",
+    "symbol": "IRENx",
+    "sharesHeld": "19290",
+    "circulatingSupply": "18909.900356034416404"
+  },
+  {
+    "name": "Hims & Hers xStock",
+    "symbol": "HIMSx",
+    "sharesHeld": "15709",
+    "circulatingSupply": "15626.76595913936284"
+  },
+  {
+    "name": "Cloudflare xStock",
+    "symbol": "NETx",
+    "sharesHeld": "576",
+    "circulatingSupply": "551.33358599767377017"
+  },
+  {
+    "name": "Cheniere Energy xStock",
+    "symbol": "LNGx",
+    "sharesHeld": "418",
+    "circulatingSupply": "387.30669463187630405"
+  },
+  {
+    "name": "Franklin Responsibly Sourced Gold ETF xStock",
+    "symbol": "FGDLx",
+    "sharesHeld": null,
+    "circulatingSupply": null
+  },
+  {
+    "name": "VanEck Agribusiness ETF xStock",
+    "symbol": "MOOx",
+    "sharesHeld": "1355",
+    "circulatingSupply": "1290.1342254726917466"
+  },
+  {
+    "name": "SPDR S&P Oil & Gas Exploration & Production ETF xStock",
+    "symbol": "XOPx",
+    "sharesHeld": "1820",
+    "circulatingSupply": "1803.6691346028546737"
+  },
+  {
+    "name": "Vanguard FTSE Europe ETF xStock",
+    "symbol": "VGKx",
+    "sharesHeld": "1279",
+    "circulatingSupply": "1274.4477603628199708"
+  },
+  {
+    "name": "iShares U.S. Aerospace & Defense ETF xStock",
+    "symbol": "ITAx",
+    "sharesHeld": "684",
+    "circulatingSupply": "658.03227828246678532"
+  },
+  {
+    "name": "Vanguard Total International Stock ETF xStock",
+    "symbol": "VXUSx",
+    "sharesHeld": "1780",
+    "circulatingSupply": "1769.4643057850354441"
+  },
+  {
+    "name": "iShares 0-3 Month Treasury Bond ETF xStock",
+    "symbol": "SGOVx",
+    "sharesHeld": "2890",
+    "circulatingSupply": "2889.9726759092789759"
+  },
+  {
+    "name": "Vanguard Growth ETF xStock",
+    "symbol": "VUGx",
+    "sharesHeld": "3190",
+    "circulatingSupply": "3155.0255360730808919"
+  },
+  {
+    "name": "VanEck Semiconductor ETF xStock",
+    "symbol": "SMHx",
+    "sharesHeld": "1678",
+    "circulatingSupply": "1615.246708121890136"
+  },
+  {
+    "name": "Global X Uranium ETF xStock",
+    "symbol": "URAx",
+    "sharesHeld": "5948",
+    "circulatingSupply": "5894.5928482566950261"
+  },
+  {
+    "name": "Energy Select Sector SPDR Fund xStock",
+    "symbol": "XLEx",
+    "sharesHeld": "8700",
+    "circulatingSupply": "8650.0149058463902472"
+  },
+  {
+    "name": "Fundrise Innovation Fund, LLC xStock",
+    "symbol": "VCXx",
+    "sharesHeld": "3667",
+    "circulatingSupply": "3553.5540005182425964"
+  },
+  {
+    "name": "Sandisk Corporation xStock",
+    "symbol": "SNDKx",
+    "sharesHeld": "9003",
+    "circulatingSupply": "8699.4526397006854426"
+  },
+  {
+    "name": "Lumentum Holdings Inc. xStock",
+    "symbol": "LITEx",
+    "sharesHeld": "2417",
+    "circulatingSupply": "2387.81994466"
+  },
+  {
+    "name": "NuScale Power Corporation xStock",
+    "symbol": "SMRx",
+    "sharesHeld": "21957",
+    "circulatingSupply": "21917.8618895"
+  },
+  {
+    "name": "Applied Digital Corporation xStock",
+    "symbol": "APLDx",
+    "sharesHeld": "9709",
+    "circulatingSupply": "9655.70843909"
+  },
+  {
+    "name": "Quanta Services, Inc. xStock",
+    "symbol": "PWRx",
+    "sharesHeld": "185",
+    "circulatingSupply": "177.08365604370263999"
+  },
+  {
+    "name": "Teradyne, Inc. xStock",
+    "symbol": "TERx",
+    "sharesHeld": "825",
+    "circulatingSupply": "786.07587958845763535"
+  },
+  {
+    "name": "Eaton Corporation plc xStock",
+    "symbol": "ETNx",
+    "sharesHeld": "365",
+    "circulatingSupply": "360.42605853750279796"
+  },
+  {
+    "name": "KLA Corporation xStock",
+    "symbol": "KLACx",
+    "sharesHeld": "1997",
+    "circulatingSupply": "1958.9683866055356311"
+  },
+  {
+    "name": "GE Vernova Inc. xStock",
+    "symbol": "GEVx",
+    "sharesHeld": "1319",
+    "circulatingSupply": "1249.8899510838105003"
+  },
+  {
+    "name": "Constellation Energy Corporation xStock",
+    "symbol": "CEGx",
+    "sharesHeld": "593",
+    "circulatingSupply": "555.05988819600704701"
+  },
+  {
+    "name": "Super Micro Computer, Inc. xStock",
+    "symbol": "SMCIx",
+    "sharesHeld": "21338",
+    "circulatingSupply": "20873.29739914562538"
+  },
+  {
+    "name": "Dell Technologies Inc. xStock",
+    "symbol": "DELLx",
+    "sharesHeld": "3063",
+    "circulatingSupply": "2870.5246875156941496"
+  },
+  {
+    "name": "Vertiv Holdings Co xStock",
+    "symbol": "VRTx",
+    "sharesHeld": "2171",
+    "circulatingSupply": "2094.3334863105322645"
+  },
+  {
+    "name": "Applied Materials, Inc. xStock",
+    "symbol": "AMATx",
+    "sharesHeld": "1425",
+    "circulatingSupply": "1370.1331718753927516"
+  },
+  {
+    "name": "Lam Research Corporation xStock",
+    "symbol": "LRCXx",
+    "sharesHeld": "1153",
+    "circulatingSupply": "1120.2739670942177717"
+  },
+  {
+    "name": "Arista Networks, Inc. xStock",
+    "symbol": "ANETx",
+    "sharesHeld": "880",
+    "circulatingSupply": "865.23667061"
+  },
+  {
+    "name": "USA Rare Earth Inc. xStock",
+    "symbol": "USARx",
+    "sharesHeld": "38378",
+    "circulatingSupply": "38234.664123392045102"
+  },
+  {
+    "name": "Energy Fuels Inc. xStock",
+    "symbol": "UUUUx",
+    "sharesHeld": "15148",
+    "circulatingSupply": "15096.291241137313261"
+  },
+  {
+    "name": "abrdn Physical Platinum Shares xStock",
+    "symbol": "PPLTx",
+    "sharesHeld": "11824",
+    "circulatingSupply": "11730.837710776972966"
+  },
+  {
+    "name": "abrdn Physical Palladium Shares xStock",
+    "symbol": "PALLx",
+    "sharesHeld": "6555",
+    "circulatingSupply": "6522.8497146337161023"
+  },
+  {
+    "name": "Global X Copper Miners xStock",
+    "symbol": "COPXx",
+    "sharesHeld": "4952",
+    "circulatingSupply": "4869.9784366373028344"
+  },
+  {
+    "name": "KRAQ xStock",
+    "symbol": "KRAQx",
+    "sharesHeld": "65639",
+    "circulatingSupply": "64938.291946981456305"
+  },
+  {
+    "name": "Bitgo xStock",
+    "symbol": "BTGOx",
+    "sharesHeld": "19440",
+    "circulatingSupply": "18686.477947553933454"
+  },
+  {
+    "name": "iShares Silver Trust xStock",
+    "symbol": "SLVx",
+    "sharesHeld": "21641",
+    "circulatingSupply": "21460.637555852846155"
+  },
+  {
+    "name": "Strategy PP Fixed xStock",
+    "symbol": "STRKx",
+    "sharesHeld": "79",
+    "circulatingSupply": "55.753860261313486596"
+  },
+  {
+    "name": "Strategy PP Variable xStock",
+    "symbol": "STRCx",
+    "sharesHeld": "1463165",
+    "circulatingSupply": "1462430.610572074931"
+  },
+  {
+    "name": "Vanguard Total World xStock",
+    "symbol": "VTx",
+    "sharesHeld": "2505",
+    "circulatingSupply": "2443.5488419083016348"
+  },
+  {
+    "name": "Schwab International Equity xStock",
+    "symbol": "SCHFx",
+    "sharesHeld": "7094",
+    "circulatingSupply": "7059.4345689756629516"
+  },
+  {
+    "name": "Core MSCI Emerging Markets xStock",
+    "symbol": "IEMGx",
+    "sharesHeld": "3193",
+    "circulatingSupply": "3179.265880732962848"
+  },
+  {
+    "name": "S&P Small Cap xStock",
+    "symbol": "IJRx",
+    "sharesHeld": "1002",
+    "circulatingSupply": "995.76528343601293883"
+  },
+  {
+    "name": "Russell 2000 xStock",
+    "symbol": "IWMx",
+    "sharesHeld": "2321",
+    "circulatingSupply": "2219.3685497851834944"
+  },
+  {
+    "name": "T-Mobile xStock",
+    "symbol": "TMUSx",
+    "sharesHeld": "793",
+    "circulatingSupply": "782.54762353105350805"
+  },
+  {
+    "name": "Bit Digital xStock",
+    "symbol": "BTBTx",
+    "sharesHeld": "80671",
+    "circulatingSupply": "78880.466577813406944"
+  },
+  {
+    "name": "Hut 8 xStock",
+    "symbol": "HUTx",
+    "sharesHeld": "1260",
+    "circulatingSupply": "1212.12623375"
+  },
+  {
+    "name": "Core Scientific xStock",
+    "symbol": "CORZx",
+    "sharesHeld": "6485",
+    "circulatingSupply": "6419.5402472"
+  },
+  {
+    "name": "Rocket Lab xStock",
+    "symbol": "RKLBx",
+    "sharesHeld": "24767",
+    "circulatingSupply": "24532.659994667577018"
+  },
+  {
+    "name": "Planet Labs xStock",
+    "symbol": "PLx",
+    "sharesHeld": "6435",
+    "circulatingSupply": "6351.48784378"
+  },
+  {
+    "name": "Virgin Galactic xStock",
+    "symbol": "SPCEx",
+    "sharesHeld": "50241",
+    "circulatingSupply": "49513.73177908"
+  },
+  {
+    "name": "Warner Bros. Discovery xStock",
+    "symbol": "WBDx",
+    "sharesHeld": "3821",
+    "circulatingSupply": "3808.38473949"
+  },
+  {
+    "name": "Micron Technology xStock",
+    "symbol": "MUx",
+    "sharesHeld": "17791.12",
+    "circulatingSupply": "17488.36466158574977"
+  },
+  {
+    "name": "Roblox xStock",
+    "symbol": "RBLXx",
+    "sharesHeld": "3222",
+    "circulatingSupply": "3177.6114274477764642"
+  },
+  {
+    "name": "Palo Alto Networks xStock",
+    "symbol": "PANWx",
+    "sharesHeld": "491",
+    "circulatingSupply": "476.63549129"
+  },
+  {
+    "name": "ASML xStock",
+    "symbol": "ASMLx",
+    "sharesHeld": "543",
+    "circulatingSupply": "442.05386379329879241"
+  },
+  {
+    "name": "AMD xStock",
+    "symbol": "AMDx",
+    "sharesHeld": "9240",
+    "circulatingSupply": "9072.3123058424097068"
+  },
+  {
+    "name": "TSMC xStock",
+    "symbol": "TSMx",
+    "sharesHeld": "8679",
+    "circulatingSupply": "8527.2572054442439988"
+  },
+  {
+    "name": "Wendy's xStock",
+    "symbol": "WENx",
+    "sharesHeld": "26862",
+    "circulatingSupply": "26848.65405746621447"
+  },
+  {
+    "name": "AST SpaceMobile xStock",
+    "symbol": "ASTSx",
+    "sharesHeld": "11921",
+    "circulatingSupply": "11783.45882888"
+  },
+  {
+    "name": "PayPal xStock",
+    "symbol": "PYPLx",
+    "sharesHeld": "5623",
+    "circulatingSupply": "5609.6681182429340755"
+  },
+  {
+    "name": "CleanSpark xStock",
+    "symbol": "CLSKx",
+    "sharesHeld": "11390",
+    "circulatingSupply": "11346.64809145"
+  },
+  {
+    "name": "SharpLink Gaming xStock",
+    "symbol": "SBETx",
+    "sharesHeld": "17368",
+    "circulatingSupply": "17216.967311205315758"
+  },
+  {
+    "name": "Uber xStock",
+    "symbol": "UBERx",
+    "sharesHeld": "9260",
+    "circulatingSupply": "9208.1506487851788972"
+  },
+  {
+    "name": "Adobe xStock",
+    "symbol": "ADBEx",
+    "sharesHeld": "1936",
+    "circulatingSupply": "1861.8163133355699679"
+  },
+  {
+    "name": "TeraWulf xStock",
+    "symbol": "WULFx",
+    "sharesHeld": "9046",
+    "circulatingSupply": "8995.47833768"
+  },
+  {
+    "name": "Riot Platforms xStock",
+    "symbol": "RIOTx",
+    "sharesHeld": "5958",
+    "circulatingSupply": "5900.9808929379973473"
+  },
+  {
+    "name": "MARA xStock",
+    "symbol": "MARAx",
+    "sharesHeld": "17009",
+    "circulatingSupply": "16950.875348295039154"
+  },
+  {
+    "name": "Oklo xStock",
+    "symbol": "OKLOx",
+    "sharesHeld": "4386",
+    "circulatingSupply": "4356.0084535958851897"
+  },
+  {
+    "name": "Galaxy Digital xStock",
+    "symbol": "GLXYx",
+    "sharesHeld": "12906",
+    "circulatingSupply": "12846.78694952453694"
+  },
+  {
+    "name": "TON xStock",
+    "symbol": "TONXx",
+    "sharesHeld": "176495",
+    "circulatingSupply": "174214.12492402"
+  },
+  {
+    "name": "Bitmine xStock",
+    "symbol": "BMNRx",
+    "sharesHeld": "115978",
+    "circulatingSupply": "115088.19489022291628"
+  },
+  {
+    "name": "MicroStrategy xStock",
+    "symbol": "MSTRx",
+    "sharesHeld": "544460.97",
+    "circulatingSupply": "544153.05445810727036"
+  },
+  {
+    "name": "TBLL xStock",
+    "symbol": "TBLLx",
+    "sharesHeld": "4235",
+    "circulatingSupply": "4193.7381327477409853"
+  },
+  {
+    "name": "OPEN xStock",
+    "symbol": "OPENx",
+    "sharesHeld": "34132",
+    "circulatingSupply": "34101.296302928682421"
+  },
+  {
+    "name": "DFDV xStock",
+    "symbol": "DFDVx",
+    "sharesHeld": "181401",
+    "circulatingSupply": "180975.03307408661235"
+  },
+  {
+    "name": "Circle xStock",
+    "symbol": "CRCLx",
+    "sharesHeld": "826575",
+    "circulatingSupply": "826444.61654547057417"
+  },
+  {
+    "name": "Amber xStock",
+    "symbol": "AMBRx",
+    "sharesHeld": "216100",
+    "circulatingSupply": "214576.1016524"
+  },
+  {
+    "name": "TQQQ xStock",
+    "symbol": "TQQQx",
+    "sharesHeld": "55403",
+    "circulatingSupply": "55126.856100206835894"
+  },
+  {
+    "name": "Gold xStock",
+    "symbol": "GLDx",
+    "sharesHeld": "26438.99",
+    "circulatingSupply": "25636.978198320917987"
+  },
+  {
+    "name": "Vanguard xStock",
+    "symbol": "VTIx",
+    "sharesHeld": "4707",
+    "circulatingSupply": "4671.3394576529669375"
+  },
+  {
+    "name": "Nasdaq xStock",
+    "symbol": "QQQx",
+    "sharesHeld": "50903",
+    "circulatingSupply": "50669.773914929985201"
+  },
+  {
+    "name": "SP500 xStock",
+    "symbol": "SPYx",
+    "sharesHeld": "78493.99856414",
+    "circulatingSupply": "76752.825934086506977"
+  },
+  {
+    "name": "Coinbase xStock",
+    "symbol": "COINx",
+    "sharesHeld": "66774",
+    "circulatingSupply": "66648.425093084914249"
+  },
+  {
+    "name": "Gamestop xStock",
+    "symbol": "GMEx",
+    "sharesHeld": "59769",
+    "circulatingSupply": "58601.268322228594881"
+  },
+  {
+    "name": "Goldman Sachs xStock",
+    "symbol": "GSx",
+    "sharesHeld": "331",
+    "circulatingSupply": "313.26066465681996998"
+  },
+  {
+    "name": "CrowdStrike xStock",
+    "symbol": "CRWDx",
+    "sharesHeld": "3556",
+    "circulatingSupply": "3429.8798524357290949"
+  },
+  {
+    "name": "Robinhood xStock",
+    "symbol": "HOODx",
+    "sharesHeld": "100405",
+    "circulatingSupply": "99916.820488571770356"
+  },
+  {
+    "name": "Marvell xStock",
+    "symbol": "MRVLx",
+    "sharesHeld": "34208",
+    "circulatingSupply": "34029.821283345388674"
+  },
+  {
+    "name": "AppLovin xStock",
+    "symbol": "APPx",
+    "sharesHeld": "2134",
+    "circulatingSupply": "2074.4978349589563772"
+  },
+  {
+    "name": "Palantir xStock",
+    "symbol": "PLTRx",
+    "sharesHeld": "15183",
+    "circulatingSupply": "14656.994129421165856"
+  },
+  {
+    "name": "Accenture xStock",
+    "symbol": "ACNx",
+    "sharesHeld": "1241",
+    "circulatingSupply": "1220.4968824264257801"
+  },
+  {
+    "name": "Intel xStock",
+    "symbol": "INTCx",
+    "sharesHeld": "127579",
+    "circulatingSupply": "127076.6303562687072"
+  },
+  {
+    "name": "Philip Morris xStock",
+    "symbol": "PMx",
+    "sharesHeld": "1185",
+    "circulatingSupply": "1150.6638000057824559"
+  },
+  {
+    "name": "Honeywell xStock",
+    "symbol": "HONx",
+    "sharesHeld": "864",
+    "circulatingSupply": "843.12767314348230609"
+  },
+  {
+    "name": "Medtronic xStock",
+    "symbol": "MDTx",
+    "sharesHeld": "1968",
+    "circulatingSupply": "1963.0048695031391976"
+  },
+  {
+    "name": "Comcast xStock",
+    "symbol": "CMCSAx",
+    "sharesHeld": "6835",
+    "circulatingSupply": "6821.8032738636414098"
+  },
+  {
+    "name": "International Business Machines xStock",
+    "symbol": "IBMx",
+    "sharesHeld": "4454",
+    "circulatingSupply": "4388.1242907201308278"
+  },
+  {
+    "name": "Danaher xStock",
+    "symbol": "DHRx",
+    "sharesHeld": "1152",
+    "circulatingSupply": "1130.4022922722041443"
+  },
+  {
+    "name": "McDonald's xStock",
+    "symbol": "MCDx",
+    "sharesHeld": "7817",
+    "circulatingSupply": "6667.3169708614213894"
+  },
+  {
+    "name": "Netflix xStock",
+    "symbol": "NFLXx",
+    "sharesHeld": "16718",
+    "circulatingSupply": "16469.918550716748062"
+  },
+  {
+    "name": "Abbott xStock",
+    "symbol": "ABTx",
+    "sharesHeld": "2410",
+    "circulatingSupply": "2394.3013778128190336"
+  },
+  {
+    "name": "Bank of America xStock",
+    "symbol": "BACx",
+    "sharesHeld": "4069",
+    "circulatingSupply": "3967.7392877324894908"
+  },
+  {
+    "name": "Thermo Fisher xStock",
+    "symbol": "TMOx",
+    "sharesHeld": "377",
+    "circulatingSupply": "359.57619349815265412"
+  },
+  {
+    "name": "AstraZeneca xStock",
+    "symbol": "AZNx",
+    "sharesHeld": "1301",
+    "circulatingSupply": "1260.2637372278253857"
+  },
+  {
+    "name": "Salesforce xStock",
+    "symbol": "CRMx",
+    "sharesHeld": "2443",
+    "circulatingSupply": "2367.6784773447323374"
+  },
+  {
+    "name": "Linde xStock",
+    "symbol": "LINx",
+    "sharesHeld": "444",
+    "circulatingSupply": "426.93253783800596779"
+  },
+  {
+    "name": "Oracle xStock",
+    "symbol": "ORCLx",
+    "sharesHeld": "20135",
+    "circulatingSupply": "19937.348352823763822"
+  },
+  {
+    "name": "Novo Nordisk xStock",
+    "symbol": "NVOx",
+    "sharesHeld": "12324",
+    "circulatingSupply": "12226.48213703899469"
+  },
+  {
+    "name": "Cisco xStock",
+    "symbol": "CSCOx",
+    "sharesHeld": "6517",
+    "circulatingSupply": "6459.7483763169283118"
+  },
+  {
+    "name": "Walmart xStock",
+    "symbol": "WMTx",
+    "sharesHeld": "3003",
+    "circulatingSupply": "2636.1526718802358234"
+  },
+  {
+    "name": "Coca-Cola xStock",
+    "symbol": "KOx",
+    "sharesHeld": "10790",
+    "circulatingSupply": "10436.238208651466121"
+  },
+  {
+    "name": "PepsiCo xStock",
+    "symbol": "PEPx",
+    "sharesHeld": "1895",
+    "circulatingSupply": "1875.2891380545773166"
+  },
+  {
+    "name": "AbbVie xStock",
+    "symbol": "ABBVx",
+    "sharesHeld": "1032",
+    "circulatingSupply": "1011.4257875216218249"
+  },
+  {
+    "name": "Merck xStock",
+    "symbol": "MRKx",
+    "sharesHeld": "2230",
+    "circulatingSupply": "1913.6126429106353502"
+  },
+  {
+    "name": "Pfizer xStock",
+    "symbol": "PFEx",
+    "sharesHeld": "12664",
+    "circulatingSupply": "12636.531292265609125"
+  },
+  {
+    "name": "Chevron xStock",
+    "symbol": "CVXx",
+    "sharesHeld": "5533",
+    "circulatingSupply": "5490.8012712912511369"
+  },
+  {
+    "name": "Home Depot xStock",
+    "symbol": "HDx",
+    "sharesHeld": "274",
+    "circulatingSupply": "254.17515548371878722"
+  },
+  {
+    "name": "Procter & Gamble xStock",
+    "symbol": "PGx",
+    "sharesHeld": "3037",
+    "circulatingSupply": "3015.7137167988932779"
+  },
+  {
+    "name": "Mastercard xStock",
+    "symbol": "MAx",
+    "sharesHeld": "357",
+    "circulatingSupply": "340.63242104114503922"
+  },
+  {
+    "name": "Eli Lilly xStock",
+    "symbol": "LLYx",
+    "sharesHeld": "878",
+    "circulatingSupply": "845.13523472423484644"
+  },
+  {
+    "name": "Visa xStock",
+    "symbol": "Vx",
+    "sharesHeld": "1311",
+    "circulatingSupply": "1268.6208412482901591"
+  },
+  {
+    "name": "JPMorgan Chase xStock",
+    "symbol": "JPMx",
+    "sharesHeld": "1105",
+    "circulatingSupply": "1066.4392491274862116"
+  },
+  {
+    "name": "Johnson & Johnson xStock",
+    "symbol": "JNJx",
+    "sharesHeld": "1877",
+    "circulatingSupply": "1846.582194750267828"
+  },
+  {
+    "name": "Exxon Mobil xStock",
+    "symbol": "XOMx",
+    "sharesHeld": "4786",
+    "circulatingSupply": "4673.4597945881172201"
+  },
+  {
+    "name": "UnitedHealth xStock",
+    "symbol": "UNHx",
+    "sharesHeld": "1401",
+    "circulatingSupply": "1334.1177071293379588"
+  },
+  {
+    "name": "Berkshire Hathaway xStock",
+    "symbol": "BRK.Bx",
+    "sharesHeld": "3876",
+    "circulatingSupply": "3517.1569028393381523"
+  },
+  {
+    "name": "Tesla xStock",
+    "symbol": "TSLAx",
+    "sharesHeld": "195625",
+    "circulatingSupply": "195013.18103450673058"
+  },
+  {
+    "name": "Broadcom xStock",
+    "symbol": "AVGOx",
+    "sharesHeld": "15348.22",
+    "circulatingSupply": "15107.82383887812032"
+  },
+  {
+    "name": "Alphabet xStock",
+    "symbol": "GOOGLx",
+    "sharesHeld": "106347",
+    "circulatingSupply": "105869.75628159032293"
+  },
+  {
+    "name": "Meta xStock",
+    "symbol": "METAx",
+    "sharesHeld": "15611",
+    "circulatingSupply": "15310.962133548826507"
+  },
+  {
+    "name": "Amazon.com xStock",
+    "symbol": "AMZNx",
+    "sharesHeld": "31427",
+    "circulatingSupply": "31198.201892019285366"
+  },
+  {
+    "name": "Microsoft xStock",
+    "symbol": "MSFTx",
+    "sharesHeld": "14697.57",
+    "circulatingSupply": "14454.985455195140197"
+  },
+  {
+    "name": "NVIDIA xStock",
+    "symbol": "NVDAx",
+    "sharesHeld": "179664.24989831",
+    "circulatingSupply": "179198.64270113998375"
+  },
+  {
+    "name": "Apple xStock",
+    "symbol": "AAPLx",
+    "sharesHeld": "44372",
+    "circulatingSupply": "43558.789462644730095"
+  }
+]
