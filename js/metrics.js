@@ -7,8 +7,7 @@
  * @typedef {object} Metrics
  * @property {number} totalMarketCap - Price times circulating supply, summed over the snapshot.
  * @property {number} assetCount - The number of assets in the snapshot.
- * @property {number} pricedCount - The assets that hold both a price and a supply.
- * @property {number | null} mintRatio - Tokens minted divided by shares held. Null when no asset holds a reserve row.
+ * @property {number | null} tokensPerShare - The circulating tokens divided by the reserve shares. Null when no asset holds a reserve row.
  * @property {string | null} quoteUpdatedAt - The newest quote stamp in the snapshot.
  */
 
@@ -60,15 +59,14 @@
   };
 
   /**
-   * Compute the headline totals. An asset with no reserve row leaves the supply
-   * sums, so the ratio reads on full data alone.
+   * Compute the headline totals. The market cap sum reads the circulating supply,
+   * so it is the value of the public float and not a fully diluted value.
    * @param {Asset[]} assets - The asset snapshot.
    * @returns {Metrics} The totals.
    */
   const computeMetrics = (assets) => {
     let totalMarketCap = 0;
-    let pricedCount = 0;
-    let mintedTotal = 0;
+    let circulatingTotal = 0;
     let sharesTotal = 0;
 
     /** @type {string | null} */
@@ -83,11 +81,10 @@
 
       if (price !== null && supply !== null) {
         totalMarketCap += price * supply;
-        pricedCount += 1;
       }
 
       if (supply !== null && shares !== null && shares > 0) {
-        mintedTotal += supply;
+        circulatingTotal += supply;
         sharesTotal += shares;
       }
     }
@@ -95,8 +92,7 @@
     return {
       totalMarketCap,
       assetCount: assets.length,
-      pricedCount,
-      mintRatio: sharesTotal > 0 ? mintedTotal / sharesTotal : null,
+      tokensPerShare: sharesTotal > 0 ? circulatingTotal / sharesTotal : null,
       quoteUpdatedAt,
     };
   };

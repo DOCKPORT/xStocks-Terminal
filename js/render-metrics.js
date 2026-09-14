@@ -1,5 +1,5 @@
 /**
- * @file Draw the headline metric cards: market cap, asset count, and mint ratio.
+ * @file Draw the headline metric cards: market cap, asset count, and reserve ratio.
  */
 
 /**
@@ -17,9 +17,9 @@
  * @property {HTMLElement} marketCapHint - The market cap note.
  * @property {HTMLElement} assets - The asset count value.
  * @property {HTMLElement} assetsHint - The asset count note.
- * @property {HTMLElement} ratio - The mint ratio value.
- * @property {HTMLElement} ratioPercent - The mint ratio as a percent.
- * @property {HTMLElement} ratioHint - The mint ratio note.
+ * @property {HTMLElement} ratio - The reserve ratio value.
+ * @property {HTMLElement} ratioPercent - The reserve ratio as a percent.
+ * @property {HTMLElement} ratioHint - The reserve ratio note.
  */
 
 (() => {
@@ -36,12 +36,6 @@
     maximumFractionDigits: 2,
   });
 
-  const EXACT_USD = new Intl.NumberFormat("en-US", {
-    style: "currency",
-    currency: "USD",
-    maximumFractionDigits: 0,
-  });
-
   const COUNT = new Intl.NumberFormat("en-US");
 
   const RATIO = new Intl.NumberFormat("en-US", {
@@ -55,58 +49,14 @@
     maximumFractionDigits: 2,
   });
 
-  const STAMP = new Intl.DateTimeFormat("en-US", {
-    dateStyle: "medium",
-    timeStyle: "short",
-    timeZone: "UTC",
-  });
-
-  /**
-   * Write one readable stamp for a quote time.
-   * @param {string | null} iso - The stored quote stamp.
-   * @returns {string | null} The readable stamp in UTC, or null when the stamp is unusable.
-   */
-  const formatStamp = (iso) => {
-    if (typeof iso !== "string") {
-      return null;
-    }
-    const date = new Date(iso);
-    return Number.isNaN(date.getTime()) ? null : `${STAMP.format(date)} UTC`;
-  };
-
-  /**
-   * Report the market cap basis and its coverage.
-   * @param {Metrics} metrics - The headline totals.
-   * @returns {string} The note for the market cap card.
-   */
-  const marketCapNote = (metrics) => {
-    const parts = [`Exact figure ${EXACT_USD.format(metrics.totalMarketCap)}.`];
-
-    // A row with no price or no supply lowers the total. State the shortfall only then.
-    if (metrics.pricedCount < metrics.assetCount) {
-      parts.push(
-        `${COUNT.format(metrics.pricedCount)} of ${COUNT.format(metrics.assetCount)} rows hold a price and a supply.`,
-      );
-    }
-
-    const stamp = formatStamp(metrics.quoteUpdatedAt);
-    if (stamp !== null) {
-      parts.push(`Newest quote ${stamp}.`);
-    }
-
-    return parts.join(" ");
-  };
+  /** The note for the market cap card. */
+  const MARKET_CAP_NOTE = "Circulating supply \u00d7 quote price.";
 
   /** The note for the asset count card. */
-  const ASSETS_NOTE = "One row for each token in the local snapshot.";
+  const ASSETS_NOTE = "Tokenized stocks under management.";
 
-  /**
-   * Report the basis of the mint ratio.
-   * @param {Metrics} metrics - The headline totals.
-   * @returns {string} The note for the mint ratio card.
-   */
-  const ratioNote = (metrics) =>
-    `Tokens minted over shares held, across all ${COUNT.format(metrics.assetCount)} rows.`;
+  /** The note for the mint ratio card. */
+  const RATIO_NOTE = "Circulating tokens per reserve share.";
 
   /**
    * Draw the three metric cards.
@@ -116,21 +66,21 @@
    */
   const renderMetrics = (metrics, refs) => {
     refs.marketCap.textContent = COMPACT_USD.format(metrics.totalMarketCap);
-    refs.marketCapHint.textContent = marketCapNote(metrics);
+    refs.marketCapHint.textContent = MARKET_CAP_NOTE;
 
     refs.assets.textContent = COUNT.format(metrics.assetCount);
     refs.assetsHint.textContent = ASSETS_NOTE;
 
-    if (metrics.mintRatio === null) {
+    if (metrics.tokensPerShare === null) {
       refs.ratio.textContent = "n/a";
       refs.ratioPercent.textContent = "n/a";
       refs.ratioHint.textContent = "No row in the snapshot holds a reserve row.";
       return;
     }
 
-    refs.ratio.textContent = `${RATIO.format(metrics.mintRatio)} : 1`;
-    refs.ratioPercent.textContent = PERCENT.format(metrics.mintRatio);
-    refs.ratioHint.textContent = ratioNote(metrics);
+    refs.ratio.textContent = `1 : ${RATIO.format(metrics.tokensPerShare)}`;
+    refs.ratioPercent.textContent = PERCENT.format(metrics.tokensPerShare);
+    refs.ratioHint.textContent = RATIO_NOTE;
   };
 
   /**
