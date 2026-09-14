@@ -8,7 +8,7 @@
  * @property {string} name - The company or fund name.
  * @property {string} symbol - The xStock symbol.
  * @property {string | null} sharesHeld - The reserve shares, kept as a string.
- * @property {string | null} circulatingSupply - The token supply, kept as a string.
+ * @property {string | null} circulatingSupply - The supply that the public holds, kept as a string.
  * @property {number | null} price - The last known quote.
  * @property {string | null} priceUpdatedAt - When that quote was written.
  */

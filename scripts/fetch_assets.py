@@ -14,16 +14,25 @@ flag, not the total.
 
 The quote endpoint has no bulk variant. One call covers one symbol, so 723
 calls per run. While the market is closed the server waits about 21 seconds on
-a price lookup, then returns null. During trading hours the lookup should
-answer in seconds. The exact in-market latency is not measured yet.
+a price lookup, then returns null. During a session the lookup answers in
+about 0.5 to 0.7 seconds. The exact in-market latency is not measured yet.
 
-The script therefore only fetches quotes during US trading hours
-(pre-market and after-hours included: 4:00 to 20:00 ET, Monday to Friday,
-market holidays excluded). While the market is closed it skips every quote
-call and keeps the last known price from the previous run.
+The script therefore only fetches quotes during a US session. The session
+rules live in scripts/market_calendar.py. The overnight leg runs from 20:00 to
+04:00 ET, Sunday night through Friday morning. The day leg runs from 04:00 to
+20:00 ET, Monday to Friday, and it covers pre-market, regular, and after-hours
+trading. Holidays are excluded. While the session is closed the script skips
+every quote call and keeps the last known price from the previous run.
 
 Output: data/xstocks-assets.json
   array of { name, symbol, sharesHeld, circulatingSupply, price, priceUpdatedAt }
+
+circulatingSupply is the token supply that the public holds, not the minted
+supply. See API_endpoint/notes.md for the full meaning.
+
+The quote calls share one pacer. Each call takes one time slot. The default
+gap is 0.25 seconds. Pass --min-interval to change the gap. A 429 or 503
+answer waits for the Retry-After header, then backs off.
 
 The page reads that file with fetch, so the script writes no second file.
 
@@ -49,15 +58,18 @@ import argparse
 import json
 import subprocess
 import sys
+import threading
 import time
 import urllib.error
 import urllib.request
 from concurrent.futures import ThreadPoolExecutor
-from datetime import date, datetime, timedelta, timezone
-from datetime import time as clock_time
+from datetime import datetime, timezone
+from email.utils import parsedate_to_datetime
+from functools import partial
 from pathlib import Path
 from typing import Any
-from zoneinfo import ZoneInfo
+
+from market_calendar import MARKET_ZONE, market_is_open
 
 API_BASE = "https://api.backed.fi/api/v2/public"
 ASSETS_URL = f"{API_BASE}/assets"
@@ -69,11 +81,14 @@ USER_AGENT = "xstocks-terminal/1.0"
 REQUEST_TIMEOUT_SECONDS = 60
 REQUEST_ATTEMPTS = 2
 RETRY_DELAY_SECONDS = 2
-DEFAULT_WORKERS = 32
+DEFAULT_WORKERS = 8
 
-MARKET_ZONE = ZoneInfo("America/New_York")
-PREMARKET_OPEN = clock_time(4, 0)
-AFTERHOURS_CLOSE = clock_time(20, 0)
+# The price endpoint rate limits a burst of quote calls. Pace those calls only.
+QUOTE_ATTEMPTS = 4
+QUOTE_INTERVAL_SECONDS = 0.25
+RATE_LIMIT_CODES = (429, 503)
+RATE_LIMIT_BACKOFF_SECONDS = (2.0, 4.0, 8.0)
+RATE_LIMIT_MAX_WAIT_SECONDS = 30.0
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
@@ -81,25 +96,107 @@ LOGO_SCRIPT = REPO_ROOT / "scripts" / "fetch_logos.py"
 
 Price = int | float | None
 Record = dict[str, Any]
+QuoteResult = tuple[Price, bool]
+
+# One time slot per quote call, shared by every worker thread.
+_PACER_LOCK = threading.Lock()
+_PACER_NEXT_SLOT = 0.0
 
 
-def fetch_json(url: str, attempts: int = REQUEST_ATTEMPTS) -> Any:
-    """Fetch one URL and decode the JSON body. Retry a transport error."""
+class RateLimitError(RuntimeError):
+    """The server refused the request with a rate-limit status."""
+
+
+def _wait_for_slot(interval: float) -> None:
+    """Hold the caller until its time slot. One slot per interval, all threads."""
+    global _PACER_NEXT_SLOT
+    with _PACER_LOCK:
+        start = max(time.monotonic(), _PACER_NEXT_SLOT)
+        _PACER_NEXT_SLOT = start + interval
+    delay = start - time.monotonic()
+    if delay > 0:
+        time.sleep(delay)
+
+
+def _retry_after_seconds(error: urllib.error.HTTPError) -> float | None:
+    """Read the Retry-After header. Return the wait in seconds, or None.
+
+    The value is a number of seconds or an HTTP date.
+    """
+    header = error.headers.get("Retry-After") if error.headers else None
+    if not header:
+        return None
+
+    seconds: float | None
+    try:
+        seconds = float(header)
+    except ValueError:
+        seconds = None
+    if seconds is not None:
+        return max(0.0, seconds)
+
+    try:
+        moment = parsedate_to_datetime(header)
+    except (TypeError, ValueError):
+        return None
+    if moment.tzinfo is None:
+        moment = moment.replace(tzinfo=timezone.utc)
+    return max(0.0, (moment - datetime.now(timezone.utc)).total_seconds())
+
+
+def _rate_limit_delay(error: urllib.error.HTTPError, attempt: int) -> float:
+    """Return the wait before a retry. Honor Retry-After, then back off."""
+    header_seconds = _retry_after_seconds(error)
+    if header_seconds is not None:
+        return min(header_seconds, RATE_LIMIT_MAX_WAIT_SECONDS)
+
+    index = min(attempt - 1, len(RATE_LIMIT_BACKOFF_SECONDS) - 1)
+    return RATE_LIMIT_BACKOFF_SECONDS[index]
+
+
+def fetch_json(
+    url: str,
+    attempts: int = REQUEST_ATTEMPTS,
+    *,
+    pace_seconds: float = 0.0,
+    respect_retry_after: bool = False,
+) -> Any:
+    """Fetch one URL and decode the JSON body. Retry a transport error.
+
+    A positive pace_seconds holds the call until its time slot. With
+    respect_retry_after set, a rate-limit status waits for the Retry-After
+    value. Both options serve the quote calls only.
+    """
     request = urllib.request.Request(
         url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"}
     )
     last_error: Exception | None = None
+    rate_limited = False
     for attempt in range(1, attempts + 1):
+        if pace_seconds > 0:
+            _wait_for_slot(pace_seconds)
         try:
             with urllib.request.urlopen(
                 request, timeout=REQUEST_TIMEOUT_SECONDS
             ) as response:
                 payload = response.read()
             return json.loads(payload)
+        except urllib.error.HTTPError as error:
+            last_error = error
+            if respect_retry_after and error.code in RATE_LIMIT_CODES:
+                rate_limited = True
+                if attempt < attempts:
+                    time.sleep(_rate_limit_delay(error, attempt))
+                continue
+            if attempt < attempts:
+                time.sleep(RETRY_DELAY_SECONDS)
         except (OSError, ValueError) as error:
             last_error = error
             if attempt < attempts:
                 time.sleep(RETRY_DELAY_SECONDS)
+
+    if rate_limited:
+        raise RateLimitError(f"rate limited: {url}: {last_error}")
     raise RuntimeError(f"request failed: {url}: {last_error}")
 
 
@@ -168,81 +265,6 @@ def merge_records(
     return merged, dropped
 
 
-def _nth_weekday(year: int, month: int, weekday: int, occurrence: int) -> date:
-    """Return the nth given weekday of a month. Monday is 0."""
-    first = date(year, month, 1)
-    offset = (weekday - first.weekday()) % 7
-    return first + timedelta(days=offset + 7 * (occurrence - 1))
-
-
-def _last_weekday(year: int, month: int, weekday: int) -> date:
-    """Return the last given weekday of a month. Monday is 0."""
-    if month == 12:
-        last = date(year, 12, 31)
-    else:
-        last = date(year, month + 1, 1) - timedelta(days=1)
-    offset = (last.weekday() - weekday) % 7
-    return last - timedelta(days=offset)
-
-
-def _observed(day: date) -> date:
-    """Shift a fixed holiday off the weekend, as the exchange does."""
-    if day.weekday() == 5:
-        return day - timedelta(days=1)
-    if day.weekday() == 6:
-        return day + timedelta(days=1)
-    return day
-
-
-def _easter_sunday(year: int) -> date:
-    """Return Easter Sunday. Anonymous Gregorian algorithm."""
-    a = year % 19
-    b = year // 100
-    c = year % 100
-    d = b // 4
-    e = b % 4
-    f = (b + 8) // 25
-    g = (b - f + 1) // 3
-    h = (19 * a + b - d - g + 15) % 30
-    i = c // 4
-    k = c % 4
-    leap = (32 + 2 * e + 2 * i - h - k) % 7
-    correction = (a + 11 * h + 22 * leap) // 451
-    month = (h + leap - 7 * correction + 114) // 31
-    day = ((h + leap - 7 * correction + 114) % 31) + 1
-    return date(year, month, day)
-
-
-def us_market_holidays(year: int) -> set[date]:
-    """Return the ten US market holidays for one year."""
-    return {
-        _observed(date(year, 1, 1)),  # New Year's Day
-        _nth_weekday(year, 1, 0, 3),  # Martin Luther King Jr. Day
-        _nth_weekday(year, 2, 0, 3),  # Washington's Birthday
-        _easter_sunday(year) - timedelta(days=2),  # Good Friday
-        _last_weekday(year, 5, 0),  # Memorial Day
-        _observed(date(year, 6, 19)),  # Juneteenth
-        _observed(date(year, 7, 4)),  # Independence Day
-        _nth_weekday(year, 9, 0, 1),  # Labor Day
-        _nth_weekday(year, 11, 3, 4),  # Thanksgiving
-        _observed(date(year, 12, 25)),  # Christmas
-    }
-
-
-def market_is_open(moment: datetime) -> bool:
-    """True during US pre-market, regular, or after-hours trading."""
-    local = moment.astimezone(MARKET_ZONE)
-    if local.weekday() >= 5:
-        return False
-
-    # The next year is included: an observed New Year's Day can fall in December.
-    holidays = us_market_holidays(local.year) | us_market_holidays(local.year + 1)
-    if local.date() in holidays:
-        return False
-
-    return PREMARKET_OPEN <= local.time() < AFTERHOURS_CLOSE
-
-
 def load_last_known(path: Path) -> dict[str, Record]:
     """Read the prices from the previous run. This holds the last known value."""
     if not path.is_file():
@@ -270,19 +292,34 @@ def load_last_known(path: Path) -> dict[str, Record]:
     return known
 
 
-def fetch_quote(symbol: str) -> Price:
-    """Fetch one quote. Return None on a null quote, a timeout, or an error."""
+def fetch_quote(
+    symbol: str, pace_seconds: float = QUOTE_INTERVAL_SECONDS
+) -> QuoteResult:
+    """Fetch one quote. Return the price and a rate-limit flag.
+
+    A null quote, a timeout, or a plain error returns the price None. The
+    quote call gets its own time slot, and a rate-limit status waits for the
+    Retry-After value.
+    """
     url = f"{ASSETS_URL}/{symbol}/price-data"
     try:
-        body = fetch_json(url)
+        body = fetch_json(
+            url,
+            QUOTE_ATTEMPTS,
+            pace_seconds=pace_seconds,
+            respect_retry_after=True,
+        )
+    except RateLimitError as error:
+        print(f"Warning: quote rate limited for {symbol}: {error}", file=sys.stderr)
+        return None, True
     except RuntimeError as error:
         print(f"Warning: quote failed for {symbol}: {error}", file=sys.stderr)
-        return None
+        return None, False
 
     quote = body.get("quote") if isinstance(body, dict) else None
     if isinstance(quote, bool) or not isinstance(quote, (int, float)):
-        return None
-    return quote
+        return None, False
+    return quote, False
 
 
 def _is_price(value: Any) -> bool:
@@ -404,7 +441,9 @@ def run(args: argparse.Namespace) -> int:
     stamp = moment.astimezone(MARKET_ZONE).strftime("%Y-%m-%d %H:%M %Z")
 
     quotes: list[Price]
-    if trading or args.force_quotes:
+    fetch_quotes = trading or args.force_quotes
+    rate_limited = 0
+    if fetch_quotes:
         state = "open" if trading else "closed, forced"
         print(
             f"Market is {state} at {stamp}. Fetching {len(records)} quotes "
@@ -412,9 +451,12 @@ def run(args: argparse.Namespace) -> int:
         )
         symbols = [record["symbol"] for record in records]
         quotes = []
+        paced = partial(fetch_quote, pace_seconds=args.min_interval)
         with ThreadPoolExecutor(max_workers=args.workers) as pool:
-            for quote in pool.map(fetch_quote, symbols):
-                quotes.append(quote)
+            for price, limited in pool.map(paced, symbols):
+                quotes.append(price)
+                if limited:
+                    rate_limited += 1
                 done = len(quotes)
                 if done % 100 == 0 or done == len(symbols):
                     print(f"  quotes: {done}/{len(symbols)}")
@@ -442,6 +484,8 @@ def run(args: argparse.Namespace) -> int:
     if dropped_symbols:
         print(f"Zero shares held: {', '.join(dropped_symbols)}")
     print(f"Prices: {fresh} fresh, {retained} retained, {unavailable} unavailable")
+    if fetch_quotes:
+        print(f"Rate limited quotes: {rate_limited}")
     if no_reserve:
         print(f"Assets with no reserve entry: {no_reserve}")
 
@@ -461,6 +505,15 @@ def build_parser() -> argparse.ArgumentParser:
         help=f"Parallel quote calls (default: {DEFAULT_WORKERS}).",
     )
     parser.add_argument(
+        "--min-interval",
+        type=float,
+        default=QUOTE_INTERVAL_SECONDS,
+        help=(
+            "Minimum seconds between quote calls. Use 0 to stop pacing "
+            f"(default: {QUOTE_INTERVAL_SECONDS})."
+        ),
+    )
+    parser.add_argument(
         "--force-quotes",
         action="store_true",
         help="Fetch quotes even when the US market is closed.",
@@ -478,6 +531,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     if args.workers < 1:
         parser.error("--workers must be 1 or more")
+    if args.min_interval < 0:
+        parser.error("--min-interval must be 0 or more")
 
     try:
         return run(args)

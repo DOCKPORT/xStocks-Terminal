@@ -36,14 +36,21 @@ Base: `https://api.backed.fi/api/v2/public`. No authentication for the public en
 ### Node Fields
 - `symbol` — the xStock symbol.
 - `timestamp` — the snapshot time in ISO format.
-- `sharesHeld` — a string. Example `"4082"`.
-- `circulatingSupply` — a string with many decimals. Example `"3880.3515380051873531"`.
+- `sharesHeld` — a string. The shares in reserve. Example `"4082"`.
+- `circulatingSupply` — a string. The supply that the public holds. Example `"3880.3515380051873531"`.
 - `holdings` — array of `{ provider, quantity, symbol }`.
 
 ### Coverage
 - All 730 reserve symbols exist in the asset catalog.
 - Two assets have no reserve entry: `FGDLx` and `NWGx`.
 - 9 assets have a `sharesHeld` of `"0"`. The script drops these.
+
+### Supply Semantics (confirmed 2026-09-13)
+- `circulatingSupply` is the token supply that the public holds. The minter holds the rest, so the value stays below the minted supply that a chain explorer shows. The two values never match.
+- Sample: `FSLRx` reports a public supply of `0.957823495274543344`. The Solana mint `XsSbcq8MZso4DLAMgtRKjzCvgozdh4sje8PLj45kxJZ` holds 8 decimals and a minted supply of `24942.83932654`. The minter holds the other `24941.88` tokens. The tiny public supply shows that the asset is not in active public trading.
+- The gap is not a unit or decimal fault. The minted supply divided by the public supply differs per asset: `SPYx` `1.25`, `NVDAx` `1.79`, `DRAMx` `23`, `FSLRx` `26041`, `AXTIx` `161068`.
+- `sharesHeld` divided by `circulatingSupply` is about `1.00` for an actively traded asset: `SPYx` `1.02`, `NVDAx` `1.00`, `DRAMx` `1.00`. For a thin asset the same ratio is far above `1.00`: `FSLRx` `5.22`, `AXTIx` `12.18`, `MDBx` `20.2`.
+- Market cap from this field is the value of the public supply, not a fully diluted value. Say so in the app.
 
 ## Endpoint: Asset Logo
 - **Method**: GET
@@ -79,6 +86,14 @@ Base: `https://api.backed.fi/api/v2/public`. No authentication for the public en
 - The check costs 723 small requests, about one minute. `--force` overrides the check and downloads every file.
 - `--check-changes` on its own downloads a missing logo too. The flag does not skip a new symbol.
 
+### scripts/market_calendar.py
+- Owns every trading-day rule. Imported by `scripts/fetch_assets.py`. It is not run on its own.
+- `MARKET_ZONE` is the exchange time zone: `America/New_York`.
+- `is_trading_day(day)` returns True for a weekday that is not a market holiday.
+- `market_is_open(moment)` returns True during the overnight leg (20:00 to 04:00 ET) and the day leg (04:00 to 20:00 ET).
+- The overnight leg starts on Sunday night and ends on Friday morning. It does not run into a weekend or a holiday.
+- `us_market_holidays(year)` returns the ten market holidays. A fixed holiday that falls on a weekend shifts to the observed day.
+
 ### scripts/fetch_assets.py
 - Python 3 script for the assets, the reserves, and the quotes. No third-party packages.
 - Output: `data/xstocks-assets.json`: array of `{ name, symbol, sharesHeld, circulatingSupply, price, priceUpdatedAt }`.
@@ -90,11 +105,18 @@ Base: `https://api.backed.fi/api/v2/public`. No authentication for the public en
 - Values stay as strings, exactly as the API returns them.
 - The script prints both groups. The first line holds the dropped count. The second line holds the dropped symbols.
 - Adds a `price` field and a `priceUpdatedAt` field per asset.
-- Quotes download only during US trading hours: 4:00 to 20:00 ET, Monday to Friday. Market holidays are excluded.
-- Outside that window the script skips every quote call and keeps the last known price.
-- Quote calls run in a thread pool. The default is 32 workers. Set `--workers N` to change it.
-- The quote step costs about 23 rounds at 32 workers. At about 1 second per call the step takes about 23 seconds.
-- `--force-quotes` fetches quotes while the market is closed.
+- Quotes download only during a US session. The session rules live in `scripts/market_calendar.py`.
+- The overnight leg runs from 20:00 to 04:00 ET, Sunday night through Friday morning.
+- The day leg runs from 04:00 to 20:00 ET, Monday to Friday. It covers pre-market, regular, and after-hours trading.
+- Market holidays are excluded. A holiday on a Monday also closes the Sunday-night leg. A holiday on a Friday also closes the Thursday-night leg.
+- Outside the session the script skips every quote call and keeps the last known price.
+- Quote calls run in a thread pool. The default is 8 workers. Set `--workers N` to change it.
+- Quote calls share one pacer. Each call takes one time slot. The default gap is 0.25 seconds. Set `--min-interval S` to change it. The value 0 stops the pacing.
+- The pacer holds every worker thread, so the flag caps the call rate for the whole run. 723 calls take at least 3 minutes at the default gap.
+- A quote call makes 4 attempts. A 429 or 503 answer waits for the `Retry-After` header. Without that header the wait is 2, 4, then 8 seconds. The wait cap is 30 seconds.
+- A 32-worker burst during a live session returned HTTP 429 Too Many Requests on many calls. The default is 8 workers now.
+- The run prints the counts for fresh, retained, and unavailable prices. It also prints the `Rate limited quotes: N` line.
+- `--force-quotes` fetches quotes outside a session.
 - The script runs `scripts/fetch_logos.py` after the write. The logo script skips every saved file, so only a new logo downloads. The child also receives `--check-changes`, so every saved logo is compared with the server.
 - `--no-logo-check` skips the compare and the extra requests. A new logo still downloads.
 - A child failure prints a warning. The snapshot stays valid, so the parent keeps exit code 0.
@@ -105,7 +127,7 @@ Base: `https://api.backed.fi/api/v2/public`. No authentication for the public en
 - **Method**: GET
 - **URL**: `https://api.backed.fi/api/v2/public/assets/{symbol}/price-data`
 - **Purpose**: Returns the current quote for one asset.
-- **Response**: `{"quote": ...}`. The value is null when the market is closed.
+- **Response**: `{"quote": ...}`. The value is null outside a session.
 - **Coverage**: One symbol per call. There is no bulk variant.
 - **Missing symbol**: `ZZZZx` returns HTTP 404.
 
@@ -120,12 +142,16 @@ Base: `https://api.backed.fi/api/v2/public`. No authentication for the public en
 - The endpoint needs a User-Agent header. The default urllib agent gets `403`.
 - A closed-market call answers in about 21 seconds with `{"quote": null}`.
 - 32 concurrent calls all answered in about 21 seconds with zero errors.
+- Overnight session: on Sunday 2026-09-13 at 21:03 ET, `AAPLx`, `TSLAx`, and `SPYx` each returned a real quote in about 0.5 to 0.7 seconds. The old gate treated the whole weekend as closed.
 
 ### Open Items
-- Capture the `quote` object fields on a trading day.
-- Measure the latency on a trading day. The 21-second wait is a closed-market behavior. The server waits on the price lookup, then returns null.
-- Inside market hours a healthy call must answer in seconds. Do not size the run with the closed-market number. The gate skips those calls, so the slow case does not occur.
-- If a call answers in about 1 second, 723 calls at 32 workers take about 23 rounds, so about 23 seconds. If a call answers in about 3 seconds, the step takes about 70 seconds.
+- The response holds one number. The `quote` field is `number | null`. No object fields exist.
+- Latency in a session is about 0.5 to 0.7 seconds. The 21-second wait is a closed-market behavior.
+- 723 calls at 8 workers take about 91 rounds. At about 0.7 seconds per call the step takes about 64 seconds.
+- HTTP 429 rate limit: a 32-worker burst returned 429 on many calls on Sunday 2026-09-13 at 21:22 ET. 660 of 723 prices filled.
+- The quote step paces its calls now. The default gap is one slot per 0.25 seconds. A 429 or 503 answer waits for `Retry-After`, then backs off. See the quote bullets under `scripts/fetch_assets.py`.
+- Confirm the Sunday 20:00 ET open and the Friday 04:00 ET close on more dates. Only one observation exists.
+- Confirm the holiday nights. Half days are untreated.
 
 ## Endpoint: Sibling Asset Paths
 Documented on the same page. Not fetched yet.
@@ -134,8 +160,16 @@ Documented on the same page. Not fetched yet.
 - `GET /public/assets/{symbol}/circulating-supply`
 - `GET /public/assets/{symbol}/total-supply`
 
+### Supply Paths (confirmed 2026-09-13)
+- `circulating-supply` returns one number in a `value` field.
+- That number matches the reserve row for the symbol. Sample: `FSLRx` returns `0.9578234952745434`.
+- `total-supply` returns a third number. Sample: `FSLRx` returns `266993.31182593195`.
+- The three supply numbers differ. The script reads the reserve row only, so the JSON holds one source.
+
 ## Still Missing
-- **Price values**: the endpoint exists, but it returns null while the market is closed. Confirm the schema and the latency on a trading day.
+- **Live price check**: a session run filled 660 of 723 quotes. Run the script with the 0.25-second pacer. Confirm that every price fills.
+- **Session edges**: confirm the Sunday open and the Friday close on more dates.
+- **Holiday nights**: half days are untreated.
 
 ## Docs
 - API reference: `https://docs.xstocks.fi/apis/openapi`
