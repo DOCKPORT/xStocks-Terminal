@@ -12,17 +12,11 @@ Both list endpoints paginate with 100 items per page and a hasNextPage flag.
 The proof-of-reserves totalNodes value is wrong (830), so the loop uses the
 flag, not the total.
 
-The quote endpoint has no bulk variant. One call covers one symbol, so 723
-calls per run. While the market is closed the server waits about 21 seconds on
-a price lookup, then returns null. During a session the lookup answers in
-about 0.5 to 0.7 seconds. The exact in-market latency is not measured yet.
-
-The script therefore only fetches quotes during a US session. The session
-rules live in scripts/market_calendar.py. The overnight leg runs from 20:00 to
-04:00 ET, Sunday night through Friday morning. The day leg runs from 04:00 to
-20:00 ET, Monday to Friday, and it covers pre-market, regular, and after-hours
-trading. Holidays are excluded. While the session is closed the script skips
-every quote call and keeps the last known price from the previous run.
+The script fetches a quote for every asset whose home market is open. Each
+catalog row carries a trading block. A false openNow value means the home
+exchange has no session, and the price endpoint then waits about 21 seconds and
+answers null. The script skips those symbols, so they keep the last known price.
+A missing flag fetches the quote, and --force-quotes calls every symbol anyway.
 
 Output: data/xstocks-assets.json
   array of { name, symbol, sharesHeld, circulatingSupply, price, priceUpdatedAt }
@@ -68,8 +62,7 @@ from email.utils import parsedate_to_datetime
 from functools import partial
 from pathlib import Path
 from typing import Any
-
-from market_calendar import MARKET_ZONE, market_is_open
+from zoneinfo import ZoneInfo
 
 API_BASE = "https://api.backed.fi/api/v2/public"
 ASSETS_URL = f"{API_BASE}/assets"
@@ -77,6 +70,9 @@ RESERVES_URL = f"{API_BASE}/proof-of-reserves"
 
 # The API rejects the default urllib User-Agent with HTTP 403.
 USER_AGENT = "xstocks-terminal/1.0"
+
+# The log lines print in Eastern time, where the main session runs.
+MARKET_ZONE = ZoneInfo("America/New_York")
 
 REQUEST_TIMEOUT_SECONDS = 60
 REQUEST_ATTEMPTS = 2
@@ -265,6 +261,25 @@ def merge_records(
     return merged, dropped
 
 
+def closed_market_symbols(asset_nodes: list[Record]) -> set[str]:
+    """Return the symbols whose home market is closed, from the trading flag.
+
+    A false openNow value means the home exchange has no session. The price
+    endpoint then waits about 21 seconds and answers null, so the caller skips
+    those symbols. A missing flag returns no symbol, so that asset keeps its
+    quote call.
+    """
+    closed: set[str] = set()
+    for node in asset_nodes:
+        symbol = node.get("symbol")
+        trading = node.get("trading")
+        if not isinstance(symbol, str) or not isinstance(trading, dict):
+            continue
+        if trading.get("openNow") is False:
+            closed.add(symbol)
+    return closed
+
+
 def load_last_known(path: Path) -> dict[str, Record]:
     """Read the prices from the previous run. This holds the last known value."""
     if not path.is_file():
@@ -437,32 +452,35 @@ def run(args: argparse.Namespace) -> int:
     dropped = len(dropped_symbols)
 
     moment = datetime.now(timezone.utc)
-    trading = market_is_open(moment)
     stamp = moment.astimezone(MARKET_ZONE).strftime("%Y-%m-%d %H:%M %Z")
 
-    quotes: list[Price]
-    fetch_quotes = trading or args.force_quotes
+    symbols = [record["symbol"] for record in records]
+    closed = set() if args.force_quotes else closed_market_symbols(asset_nodes)
+    todo = [symbol for symbol in symbols if symbol not in closed]
+    skipped = len(symbols) - len(todo)
+
+    print(
+        f"Fetching {len(todo)} quotes at {stamp} "
+        f"with {args.workers} workers..."
+    )
+    if skipped:
+        print(f"  Skipped {skipped}: the home market is closed.")
+    if not todo:
+        print("  No market is open now, so every quote call is skipped.")
+
     rate_limited = 0
-    if fetch_quotes:
-        state = "open" if trading else "closed, forced"
-        print(
-            f"Market is {state} at {stamp}. Fetching {len(records)} quotes "
-            f"with {args.workers} workers..."
-        )
-        symbols = [record["symbol"] for record in records]
-        quotes = []
-        paced = partial(fetch_quote, pace_seconds=args.min_interval)
-        with ThreadPoolExecutor(max_workers=args.workers) as pool:
-            for price, limited in pool.map(paced, symbols):
-                quotes.append(price)
-                if limited:
-                    rate_limited += 1
-                done = len(quotes)
-                if done % 100 == 0 or done == len(symbols):
-                    print(f"  quotes: {done}/{len(symbols)}")
-    else:
-        print(f"Market is closed at {stamp}. Skipped {len(records)} quote calls.")
-        quotes = [None] * len(records)
+    fetched: list[Price] = []
+    paced = partial(fetch_quote, pace_seconds=args.min_interval)
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for price, limited in pool.map(paced, todo):
+            fetched.append(price)
+            if limited:
+                rate_limited += 1
+            done = len(fetched)
+            if done % 100 == 0 or done == len(todo):
+                print(f"  quotes: {done}/{len(todo)}")
+    price_by_symbol = dict(zip(todo, fetched))
+    quotes = [price_by_symbol.get(symbol) for symbol in symbols]
 
     fresh, retained, unavailable = apply_prices(records, quotes, last_known)
 
@@ -484,8 +502,7 @@ def run(args: argparse.Namespace) -> int:
     if dropped_symbols:
         print(f"Zero shares held: {', '.join(dropped_symbols)}")
     print(f"Prices: {fresh} fresh, {retained} retained, {unavailable} unavailable")
-    if fetch_quotes:
-        print(f"Rate limited quotes: {rate_limited}")
+    print(f"Rate limited quotes: {rate_limited}")
     if no_reserve:
         print(f"Assets with no reserve entry: {no_reserve}")
 
@@ -516,7 +533,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser.add_argument(
         "--force-quotes",
         action="store_true",
-        help="Fetch quotes even when the US market is closed.",
+        help="Fetch every quote, even for a closed home market.",
     )
     parser.add_argument(
         "--no-logo-check",
