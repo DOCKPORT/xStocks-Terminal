@@ -9,22 +9,26 @@
  * @property {string} symbol - The xStock symbol.
  * @property {string | null} sharesHeld - The reserve shares, kept as a string.
  * @property {string | null} circulatingSupply - The token supply, kept as a string.
+ * @property {number | null} price - The last known quote.
+ * @property {string | null} priceUpdatedAt - When that quote was written.
  */
 
 /**
- * The shared page namespace. The page has no build step and no server, so the
- * files share one global object instead of ES module imports.
+ * The shared page namespace. The page has no build step and no module loader, so
+ * the files share one global object instead of ES module imports.
  * @typedef {object} DataNamespace
- * @property {unknown} [XSTOCKS_ASSETS] - The raw snapshot, written by the fetch script.
- * @property {() => Asset[]} [loadAssets] - Read the local asset snapshot.
+ * @property {() => Promise<Asset[]>} [loadAssets] - Read the local asset snapshot.
  */
 
 (() => {
   "use strict";
 
-  /** @type {Window & { XSTOCKS?: DataNamespace; XSTOCKS_ASSETS?: unknown }} */
+  /** @type {Window & { XSTOCKS?: DataNamespace }} */
   const page = window;
   const ns = page.XSTOCKS || (page.XSTOCKS = {});
+
+  /** The snapshot path, relative to index.html. */
+  const SNAPSHOT_URL = "data/xstocks-assets.json";
 
   /**
    * Check one raw row from the snapshot.
@@ -43,15 +47,25 @@
 
   /**
    * Read every asset from the local snapshot.
-   * @returns {Asset[]} The asset list in file order.
+   * @returns {Promise<Asset[]>} The asset list in file order.
    */
-  const loadAssets = () => {
-    if (!Array.isArray(page.XSTOCKS_ASSETS)) {
+  const loadAssets = async () => {
+    const response = await fetch(SNAPSHOT_URL);
+    if (!response.ok) {
       throw new Error(
-        "The asset snapshot did not load. Check data/xstocks-assets.js.",
+        `The asset snapshot did not load. HTTP ${response.status} from ${SNAPSHOT_URL}.`,
       );
     }
-    return page.XSTOCKS_ASSETS.filter(isAsset);
+
+    /** @type {unknown} */
+    const rows = await response.json();
+    if (!Array.isArray(rows)) {
+      throw new Error(
+        `The asset snapshot did not load. ${SNAPSHOT_URL} does not hold an array.`,
+      );
+    }
+
+    return rows.filter(isAsset);
   };
 
   ns.loadAssets = loadAssets;

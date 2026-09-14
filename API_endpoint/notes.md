@@ -59,21 +59,47 @@ Base: `https://api.backed.fi/api/v2/public`. No authentication for the public en
 
 ## Fetch Scripts
 
-### scripts/fetch-assets.sh
-- `scripts/fetch-assets.sh` downloads both endpoints and writes one merged JSON.
-- Output `data/xstocks-assets.json`: array of `{ name, symbol, sharesHeld, circulatingSupply }`.
-- Assets with `sharesHeld` of `"0"` are dropped. The last run dropped 9.
-- 723 assets remain. 721 have reserves. Two have null reserve values. File size is about 100 KB.
-- Values stay as strings, exactly as the API returns them. A null means no reserve entry.
-- Run from anywhere: `./scripts/fetch-assets.sh`. Needs `curl` and `jq`.
-
-### scripts/fetch-logos.sh
-- `scripts/fetch-logos.sh` downloads the logo for every symbol in `data/xstocks-assets.json`.
+### scripts/fetch_logos.py
+- `scripts/fetch_logos.py` downloads the logo for every symbol in `data/xstocks-assets.json`.
 - Output: `data/logos/{symbol}.png`. The folder holds 723 files and about 18 MB.
 - Existing files are skipped. Pass `--force` to overwrite them.
 - A wrong content type is rejected, so an error page never lands in the folder.
-- The script prints a resolved count and a missed-symbol list. The exit code is non-zero when a download fails.
-- Run from anywhere: `./scripts/fetch-logos.sh`. Needs `curl` and `jq`.
+- A failed write is removed. A partial file never stays behind.
+- The script prints a counts block: downloaded, changed, unchanged, skipped, and failed.
+- The exit code is non-zero when one or more downloads fail.
+- Run from anywhere: `./scripts/fetch_logos.py`. Python 3 only. No third-party packages.
+
+#### Logo Change Check
+- Pass `--check-changes` to compare every saved logo with the server.
+- The request carries the fingerprint of the saved file. When the image did not change, the server matches the fingerprint and answers `304` with no body. No image bytes cross the wire.
+- A `200` answer with new bytes replaces the file and prints `CHANGED {symbol}`.
+- A `200` answer with the saved bytes keeps the file. This guards against a foreign fingerprint scheme.
+- A missing file takes the plain download path and prints `OK {symbol}`.
+- A change prints the symbol list and a note to commit the replaced files. The logos are tracked in git.
+- The check costs 723 small requests, about one minute. `--force` overrides the check and downloads every file.
+- `--check-changes` on its own downloads a missing logo too. The flag does not skip a new symbol.
+
+### scripts/fetch_assets.py
+- Python 3 script for the assets, the reserves, and the quotes. No third-party packages.
+- Output: `data/xstocks-assets.json`: array of `{ name, symbol, sharesHeld, circulatingSupply, price, priceUpdatedAt }`.
+- The page reads that file with `fetch`, so no wrapper file is written.
+- Two different groups. Do not mix them:
+  - The drop rule removes an asset when the reserve row reports `sharesHeld` of `"0"`. The last run dropped 9.
+  - An asset with no reserve row stays, with null values. The last run kept 2: `FGDLx` and `NWGx`.
+- 723 assets remain. 721 have reserves. File size is about 100 KB.
+- Values stay as strings, exactly as the API returns them.
+- The script prints both groups. The first line holds the dropped count. The second line holds the dropped symbols.
+- Adds a `price` field and a `priceUpdatedAt` field per asset.
+- Quotes download only during US trading hours: 4:00 to 20:00 ET, Monday to Friday. Market holidays are excluded.
+- Outside that window the script skips every quote call and keeps the last known price.
+- Quote calls run in a thread pool. The default is 32 workers. Set `--workers N` to change it.
+- The quote step costs about 23 rounds at 32 workers. At about 1 second per call the step takes about 23 seconds.
+- `--force-quotes` fetches quotes while the market is closed.
+- The script runs `scripts/fetch_logos.py` after the write. The logo script skips every saved file, so only a new logo downloads. The child also receives `--check-changes`, so every saved logo is compared with the server.
+- `--no-logo-check` skips the compare and the extra requests. A new logo still downloads.
+- A child failure prints a warning. The snapshot stays valid, so the parent keeps exit code 0.
+- The API rejects the default urllib User-Agent with `403`. The script sends its own User-Agent.
+- Run from anywhere: `./scripts/fetch_assets.py`.
 
 ## Endpoint: Asset Price Data
 - **Method**: GET
@@ -88,10 +114,18 @@ Base: `https://api.backed.fi/api/v2/public`. No authentication for the public en
 - Latency was about 21 seconds per symbol while the market was closed.
 - Both hosts work: `api.backed.fi` and `api.xstocks.fi`.
 
+### Confirmed 2026-09-13
+- The OpenAPI spec states the response is `{ "quote": number | null }`.
+- There is no bulk or multi-symbol quote endpoint. One call covers one symbol.
+- The endpoint needs a User-Agent header. The default urllib agent gets `403`.
+- A closed-market call answers in about 21 seconds with `{"quote": null}`.
+- 32 concurrent calls all answered in about 21 seconds with zero errors.
+
 ### Open Items
 - Capture the `quote` object fields on a trading day.
-- Confirm the latency on a trading day. A slow call may be a closed-market timeout.
-- 723 calls at 21 seconds each is too slow. Use batching if this holds.
+- Measure the latency on a trading day. The 21-second wait is a closed-market behavior. The server waits on the price lookup, then returns null.
+- Inside market hours a healthy call must answer in seconds. Do not size the run with the closed-market number. The gate skips those calls, so the slow case does not occur.
+- If a call answers in about 1 second, 723 calls at 32 workers take about 23 rounds, so about 23 seconds. If a call answers in about 3 seconds, the step takes about 70 seconds.
 
 ## Endpoint: Sibling Asset Paths
 Documented on the same page. Not fetched yet.

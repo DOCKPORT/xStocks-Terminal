@@ -16,7 +16,8 @@ A web app that shows all xStocks tokenized equities in one place.
 - Assets with a shares held value of zero are dropped.
 
 ## Stack
+- Python scripting.
+- Github actions.
 - HTML, CSS, and JavaScript.
 - Deployed to Vercel.
-
 

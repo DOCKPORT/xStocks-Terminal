@@ -3,10 +3,10 @@
  */
 
 /**
- * The shared page namespace. The page has no build step and no server, so the
- * files share one global object instead of ES module imports.
+ * The shared page namespace. The page has no build step and no module loader, so
+ * the files share one global object instead of ES module imports.
  * @typedef {object} AppNamespace
- * @property {() => Asset[]} [loadAssets] - Read the local asset snapshot.
+ * @property {() => Promise<Asset[]>} [loadAssets] - Read the local asset snapshot.
  * @property {(assets: Asset[], refs: ListRefs) => () => void} [renderList] - Draw the table.
  */
 
@@ -66,9 +66,9 @@
 
   /**
    * Read the data and start the page.
-   * @returns {void}
+   * @returns {Promise<void>} Resolves when the page is ready or has failed.
    */
-  const init = () => {
+  const init = async () => {
     stampYear();
 
     const status = requireElement("asset-status");
@@ -85,7 +85,7 @@
 
       setAppState("loading");
 
-      ns.renderList(ns.loadAssets(), {
+      ns.renderList(await ns.loadAssets(), {
         body: requireElement("asset-rows"),
         count: requireElement("assets-count"),
         status,

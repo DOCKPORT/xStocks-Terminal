@@ -95,8 +95,8 @@
       </div>
     </footer>
 
-    <!-- The page has no build step and no server. Classic scripts run from
-         file://, so a plain double-click on this file works. -->
+    <!-- The page has no build step. Serve this folder over HTTP, because the
+         data layer reads the asset snapshot with fetch. -->
     <script>
       window.setTimeout(() => {
         if (document.documentElement.dataset.appState !== "loading") {
@@ -110,7 +110,6 @@
       }, 2000);
     </script>
 
-    <script src="data/xstocks-assets.js"></script>
     <script src="js/data.js"></script>
     <script src="js/render-list.js"></script>
     <script src="js/main.js"></script>
