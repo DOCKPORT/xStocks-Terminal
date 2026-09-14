@@ -37,13 +37,46 @@
     </header>
 
     <main class="container" id="app">
-      <section class="hero animate-rise">
-        <p class="eyebrow">Tokenized equities</p>
-        <h1>Every tokenized equity in one dark terminal.</h1>
-        <p class="hero__lede">
-          The table reads the local snapshot. It holds the name, the symbol, and the
-          logo for every xStock. Prices and charts come next.
-        </p>
+      <section class="section stats animate-rise" aria-labelledby="stats-title">
+        <div class="section-head">
+          <p class="eyebrow" id="stats-title">Tokenized equities</p>
+        </div>
+
+        <div class="card card--accent stats__card">
+          <div class="stats__grid">
+            <div class="stats__item">
+              <p class="card__label eyebrow">Total market cap</p>
+              <p class="metric__value" id="metric-market-cap">&mdash;</p>
+              <p class="metric__hint" id="metric-market-cap-hint">
+                Loading the snapshot.
+              </p>
+            </div>
+
+            <div class="stats__item">
+              <p class="card__label eyebrow">Total assets</p>
+              <p class="metric__value" id="metric-assets">&mdash;</p>
+              <p class="metric__hint" id="metric-assets-hint">
+                Loading the snapshot.
+              </p>
+            </div>
+
+            <div class="stats__item">
+              <p class="card__label eyebrow">Reserve ratio</p>
+              <div class="metric__pair">
+                <p class="metric__value" id="metric-ratio">&mdash;</p>
+                <p
+                  class="metric__value metric__value--muted"
+                  id="metric-ratio-percent"
+                >
+                  &mdash;
+                </p>
+              </div>
+              <p class="metric__hint" id="metric-ratio-hint">
+                Tokens minted over shares held.
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       <section class="section animate-rise" aria-labelledby="assets-title">
@@ -111,6 +144,8 @@
     </script>
 
     <script src="js/data.js"></script>
+    <script src="js/metrics.js"></script>
+    <script src="js/render-metrics.js"></script>
     <script src="js/render-list.js"></script>
     <script src="js/main.js"></script>
   </body>

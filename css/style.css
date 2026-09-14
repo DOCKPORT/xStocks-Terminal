@@ -304,6 +304,55 @@ p {
   font-size: var(--text-xs);
 }
 
+/* The ratio card holds two readings on one line. The line wraps on a narrow card. */
+.metric__pair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-2) var(--space-4);
+}
+
+.metric__value--muted {
+  color: var(--text-muted);
+  font-size: var(--text-lg);
+}
+
+/* --- Stats strip ---------------------------------------------------------- */
+/* One card holds every reading. A hard rule separates the items on a wide card.
+   The items stack on a narrow card. */
+.stats__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-5);
+}
+
+.stats__item {
+  min-width: 0;
+}
+
+@media (min-width: 720px) {
+  .stats__grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0;
+  }
+
+  .stats__item {
+    padding-inline: var(--space-5);
+  }
+
+  .stats__item:first-child {
+    padding-inline-start: 0;
+  }
+
+  .stats__item:last-child {
+    padding-inline-end: 0;
+  }
+
+  .stats__item + .stats__item {
+    border-inline-start: 1px solid var(--border-subtle);
+  }
+}
+
 /* --- Badge ---------------------------------------------------------------- */
 .badge {
   display: inline-flex;

@@ -7,6 +7,9 @@
  * the files share one global object instead of ES module imports.
  * @typedef {object} AppNamespace
  * @property {() => Promise<Asset[]>} [loadAssets] - Read the local asset snapshot.
+ * @property {(assets: Asset[]) => Metrics} [computeMetrics] - Compute the headline totals.
+ * @property {(metrics: Metrics, refs: MetricRefs) => void} [renderMetrics] - Draw the metric cards.
+ * @property {(refs: MetricRefs) => void} [renderMetricsFailure] - Report that the totals did not load.
  * @property {(assets: Asset[], refs: ListRefs) => () => void} [renderList] - Draw the table.
  */
 
@@ -65,6 +68,20 @@
   };
 
   /**
+   * Find every slot that the metric cards write to.
+   * @returns {MetricRefs} The metric card elements.
+   */
+  const requireMetricRefs = () => ({
+    marketCap: requireElement("metric-market-cap"),
+    marketCapHint: requireElement("metric-market-cap-hint"),
+    assets: requireElement("metric-assets"),
+    assetsHint: requireElement("metric-assets-hint"),
+    ratio: requireElement("metric-ratio"),
+    ratioPercent: requireElement("metric-ratio-percent"),
+    ratioHint: requireElement("metric-ratio-hint"),
+  });
+
+  /**
    * Read the data and start the page.
    * @returns {Promise<void>} Resolves when the page is ready or has failed.
    */
@@ -72,12 +89,17 @@
     stampYear();
 
     const status = requireElement("asset-status");
+    const ns = page.XSTOCKS;
+
+    /** @type {MetricRefs | null} */
+    let metricRefs = null;
 
     try {
-      const ns = page.XSTOCKS;
       if (
         !ns ||
         typeof ns.loadAssets !== "function" ||
+        typeof ns.computeMetrics !== "function" ||
+        typeof ns.renderMetrics !== "function" ||
         typeof ns.renderList !== "function"
       ) {
         throw new Error("The page scripts did not load in order.");
@@ -85,7 +107,13 @@
 
       setAppState("loading");
 
-      ns.renderList(await ns.loadAssets(), {
+      metricRefs = requireMetricRefs();
+
+      const assets = await ns.loadAssets();
+
+      ns.renderMetrics(ns.computeMetrics(assets), metricRefs);
+
+      ns.renderList(assets, {
         body: requireElement("asset-rows"),
         count: requireElement("assets-count"),
         status,
@@ -95,6 +123,11 @@
       setAppState("ready");
     } catch (error) {
       setAppState("error");
+
+      if (metricRefs !== null && ns && typeof ns.renderMetricsFailure === "function") {
+        ns.renderMetricsFailure(metricRefs);
+      }
+
       status.textContent =
         error instanceof Error ? error.message : "The asset snapshot did not load.";
     }

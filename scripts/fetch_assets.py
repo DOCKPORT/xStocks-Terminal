@@ -20,6 +20,7 @@ A missing flag fetches the quote, and --force-quotes calls every symbol anyway.
 
 Output: data/xstocks-assets.json
   array of { name, symbol, sharesHeld, circulatingSupply, price, priceUpdatedAt }
+  one row per asset that holds a reserve row
 
 circulatingSupply is the token supply that the public holds, not the minted
 supply. See memory-bank/notes.md for the full meaning.
@@ -226,10 +227,12 @@ def fetch_pages(url: str, label: str) -> list[Record]:
 
 def merge_records(
     asset_nodes: list[Record], reserve_nodes: list[Record]
-) -> tuple[list[Record], list[str]]:
+) -> tuple[list[Record], list[str], list[str]]:
     """Join the reserves onto the catalog by symbol.
 
-    Return the kept records and the symbols dropped for zero shares held.
+    Keep one record per asset that holds a reserve row. Return the kept records,
+    the symbols dropped for zero shares held, and the symbols with no reserve
+    entry. A zero count and a missing row both mean that no live reserve exists.
     """
     reserves: dict[str, tuple[Any, Any]] = {}
     for node in reserve_nodes:
@@ -239,6 +242,7 @@ def merge_records(
 
     merged: list[Record] = []
     dropped: list[str] = []
+    absent: list[str] = []
     for node in asset_nodes:
         symbol = node.get("symbol")
         name = node.get("name")
@@ -246,6 +250,9 @@ def merge_records(
             continue
 
         shares, supply = reserves.get(symbol, (None, None))
+        if shares is None:
+            absent.append(symbol)
+            continue
         if shares == "0":
             dropped.append(symbol)
             continue
@@ -258,7 +265,7 @@ def merge_records(
                 "circulatingSupply": supply,
             }
         )
-    return merged, dropped
+    return merged, dropped, absent
 
 
 def closed_market_symbols(asset_nodes: list[Record]) -> set[str]:
@@ -447,9 +454,11 @@ def run(args: argparse.Namespace) -> int:
     print("Fetching proof of reserves...")
     reserve_nodes = fetch_pages(RESERVES_URL, "reserves")
 
-    records, dropped_symbols = merge_records(asset_nodes, reserve_nodes)
+    records, dropped_symbols, absent_symbols = merge_records(
+        asset_nodes, reserve_nodes
+    )
     fetched_total = len(asset_nodes)
-    dropped = len(dropped_symbols)
+    removed = len(dropped_symbols) + len(absent_symbols)
 
     moment = datetime.now(timezone.utc)
     stamp = moment.astimezone(MARKET_ZONE).strftime("%Y-%m-%d %H:%M %Z")
@@ -488,23 +497,18 @@ def run(args: argparse.Namespace) -> int:
 
     new_symbols = report_symbol_changes(records, last_known, has_baseline)
 
-    with_reserves = sum(
-        1 for record in records if record["circulatingSupply"] is not None
+    print(f"Wrote {len(records)} assets to {OUT_JSON}")
+    print(
+        f"Filtered out {removed} assets (fetched {fetched_total}): "
+        f"{len(dropped_symbols)} zero shares held, "
+        f"{len(absent_symbols)} no reserve entry"
     )
-    no_reserve = ", ".join(
-        record["symbol"]
-        for record in records
-        if record["circulatingSupply"] is None
-    )
-
-    print(f"Wrote {len(records)} assets ({with_reserves} with reserves) to {OUT_JSON}")
-    print(f"Filtered out {dropped} assets with zero shares held (fetched {fetched_total})")
     if dropped_symbols:
         print(f"Zero shares held: {', '.join(dropped_symbols)}")
+    if absent_symbols:
+        print(f"No reserve entry: {', '.join(absent_symbols)}")
     print(f"Prices: {fresh} fresh, {retained} retained, {unavailable} unavailable")
     print(f"Rate limited quotes: {rate_limited}")
-    if no_reserve:
-        print(f"Assets with no reserve entry: {no_reserve}")
 
     refresh_logos(new_symbols, not args.no_logo_check)
 
