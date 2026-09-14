@@ -28,7 +28,7 @@ Output: data/xstocks-assets.json
   array of { name, symbol, sharesHeld, circulatingSupply, price, priceUpdatedAt }
 
 circulatingSupply is the token supply that the public holds, not the minted
-supply. See API_endpoint/notes.md for the full meaning.
+supply. See memory-bank/notes.md for the full meaning.
 
 The quote calls share one pacer. Each call takes one time slot. The default
 gap is 0.25 seconds. Pass --min-interval to change the gap. A 429 or 503
