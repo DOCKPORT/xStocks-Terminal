@@ -1,5 +1,6 @@
 /**
- * @file Page bootstrap. Reads the asset snapshot and starts the table.
+ * @file Page bootstrap. Wires the view buttons, reads the asset snapshot, and
+ * starts the table.
  */
 
 /**
@@ -68,6 +69,54 @@
   };
 
   /**
+   * Move the pressed state onto one button of a group.
+   * @param {HTMLButtonElement} picked - The button that the user pressed.
+   * @param {HTMLButtonElement[]} group - Every button in the group.
+   * @returns {void}
+   */
+  const selectView = (picked, group) => {
+    group.forEach((button) => {
+      button.setAttribute("aria-pressed", button === picked ? "true" : "false");
+    });
+  };
+
+  /**
+   * Wire the view buttons. One click moves the pressed state. The stylesheet
+   * draws the purple and grey borders from that state.
+   * @returns {void}
+   */
+  const bindViewToggle = () => {
+    /** @type {HTMLButtonElement[]} */
+    const group = [];
+
+    document.querySelectorAll("[data-view]").forEach((node) => {
+      if (node instanceof HTMLButtonElement) {
+        group.push(node);
+      }
+    });
+
+    if (group.length === 0) {
+      return;
+    }
+
+    document.addEventListener("click", (event) => {
+      const target = event.target;
+
+      if (!(target instanceof HTMLElement)) {
+        return;
+      }
+
+      const picked = target.closest("[data-view]");
+
+      if (!(picked instanceof HTMLButtonElement)) {
+        return;
+      }
+
+      selectView(picked, group);
+    });
+  };
+
+  /**
    * Find every slot that the metric cards write to.
    * @returns {MetricRefs} The metric card elements.
    */
@@ -115,7 +164,6 @@
 
       ns.renderList(assets, {
         body: requireElement("asset-rows"),
-        count: requireElement("assets-count"),
         status,
         input: requireInput("asset-search"),
       });
@@ -132,6 +180,9 @@
         error instanceof Error ? error.message : "The asset snapshot did not load.";
     }
   };
+
+  /* The toggle binds at load time, so it works when the data fails. */
+  bindViewToggle();
 
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", init);

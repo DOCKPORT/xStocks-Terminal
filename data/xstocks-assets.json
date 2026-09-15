@@ -4,64 +4,64 @@
     "symbol": "DRAMx",
     "sharesHeld": "2435",
     "circulatingSupply": "2424.1226914681646905",
-    "price": 55.635,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 55.73,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Marvell 2x Long ETF xStock",
     "symbol": "MVLLx",
     "sharesHeld": "5965",
     "circulatingSupply": "5950.178764189219526",
-    "price": 26.295,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 25.56,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Micron 2x Long ETF xStock",
     "symbol": "MUUx",
     "sharesHeld": "4441",
     "circulatingSupply": "4432.501068029307022",
-    "price": 28.565,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 28.47,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "AXT xStock",
     "symbol": "AXTIx",
     "sharesHeld": "6",
     "circulatingSupply": "0.00054377556635284",
-    "price": 59.165,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 58.275,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Korea 3x Long ETF xStock",
     "symbol": "KORUx",
-    "sharesHeld": "6351",
-    "circulatingSupply": "6339.3375854354390251",
-    "price": 19.545,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "6703",
+    "circulatingSupply": "6690.5939581628468562",
+    "price": 19.53,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "INTC 2x Long ETF xStock",
     "symbol": "INTWx",
     "sharesHeld": "6869",
     "circulatingSupply": "6861.58455238",
-    "price": 21.795,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 21.385,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "3x Short Semiconductor ETF xStock",
     "symbol": "SOXSx",
     "sharesHeld": "2652",
     "circulatingSupply": "2642.2911109500021441",
-    "price": 50.585,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 50.81,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SNDK 2x Long ETF xStock",
     "symbol": "SNXXx",
     "sharesHeld": "8230",
     "circulatingSupply": "8218.1285254220189476",
-    "price": 14.235,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 13.925,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SHEIN xStock",
@@ -690,26 +690,26 @@
   {
     "name": "CoreWeave xStock",
     "symbol": "CRWVx",
-    "sharesHeld": "10949",
-    "circulatingSupply": "10602.159546521945159",
-    "price": 84.8545,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "11011",
+    "circulatingSupply": "10663.400988931945159",
+    "price": 83.5075,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Twist Bioscience xStock",
     "symbol": "TWSTx",
     "sharesHeld": "856",
     "circulatingSupply": "799.69206408162347521",
-    "price": 135.1,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 134.025,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cerebras Systems xStock",
     "symbol": "CBRSx",
     "sharesHeld": "10298",
     "circulatingSupply": "10124.593491859921797",
-    "price": 183.075,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 182.05,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SharonAI xStock",
@@ -724,440 +724,440 @@
     "symbol": "TEx",
     "sharesHeld": "23301",
     "circulatingSupply": "23248.902426316382958",
-    "price": 4.375,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 4.43,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Nebius xStock",
     "symbol": "NBISx",
-    "sharesHeld": "3752",
-    "circulatingSupply": "3545.5296413357767513",
-    "price": 219.035,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "3835",
+    "circulatingSupply": "3626.6185535457767513",
+    "price": 213.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "uniQure xStock",
     "symbol": "QUREx",
     "sharesHeld": "2292",
     "circulatingSupply": "2162.0064757708999833",
-    "price": 44.89,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 45.415,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Applied Optoelectronics xStock",
     "symbol": "AAOIx",
     "sharesHeld": "5256",
     "circulatingSupply": "5194.9869598987596223",
-    "price": 98.76,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 97.045,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "ARM xStock",
     "symbol": "ARMx",
     "sharesHeld": "4580",
     "circulatingSupply": "4472.1505041790303339",
-    "price": 242.42,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 241.175,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Bloom Energy xStock",
     "symbol": "BEx",
     "sharesHeld": "4117",
     "circulatingSupply": "4011.9003475554255333",
-    "price": 260.4295,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 258.62,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Jersey Mike's Subs xStock",
     "symbol": "JMKEx",
-    "sharesHeld": "22257",
-    "circulatingSupply": "22011.965706898287454",
-    "price": 22.07,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "22457",
+    "circulatingSupply": "22211.826549718287454",
+    "price": 21.775,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SK hynix xStock",
     "symbol": "SKHYx",
-    "sharesHeld": "42977",
-    "circulatingSupply": "42802.598878506461493",
-    "price": 177.25,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "42779",
+    "circulatingSupply": "42596.691104816461493",
+    "price": 177.755,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Baker Hughes xStock",
     "symbol": "BKRx",
     "sharesHeld": "1760",
     "circulatingSupply": "1740.4189798581348211",
-    "price": 56.315,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 56.83,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Viking xStock",
     "symbol": "VIKx",
     "sharesHeld": "4",
     "circulatingSupply": "0.372276597119671686",
-    "price": 86.17,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 86.66,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Penumbra xStock",
     "symbol": "PENx",
     "sharesHeld": "3",
     "circulatingSupply": "0.162179644465901691",
-    "price": 319.56,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 329.75,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "BJ's Wholesale Club xStock",
     "symbol": "BJx",
     "sharesHeld": "3",
     "circulatingSupply": "0.370716809951739058",
-    "price": 94.715,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 94,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "FedEx Freight xStock",
     "symbol": "FDXFx",
     "sharesHeld": "839",
     "circulatingSupply": "746.12551763585123212",
-    "price": 129.86,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 129.255,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "RenaissanceRe xStock",
     "symbol": "RNRx",
     "sharesHeld": "3",
     "circulatingSupply": "0.162416830809522705",
-    "price": 329.875,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 330.055,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Talen Energy xStock",
     "symbol": "TLNx",
     "sharesHeld": "3",
     "circulatingSupply": "0.161180753674794095",
-    "price": 289.695,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 289.71,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Elanco Animal Health xStock",
     "symbol": "ELANx",
     "sharesHeld": "3",
     "circulatingSupply": "1.087782446330504243",
-    "price": 23.265,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 23.31,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "New York Times xStock",
     "symbol": "NYTx",
     "sharesHeld": "3",
     "circulatingSupply": "0.486392213157969096",
-    "price": 69.935,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 70.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Bank of New York Mellon xStock",
     "symbol": "BNYx",
     "sharesHeld": "3",
     "circulatingSupply": "0.251241675210731303",
-    "price": 157.06,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 158.735,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "McCormick xStock",
     "symbol": "MKCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.568837164178042037",
-    "price": 50.565,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 50.415,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "J.M. Smucker xStock",
     "symbol": "SJMx",
     "sharesHeld": "3",
     "circulatingSupply": "0.30432569883844806",
-    "price": 121.53,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 121.4,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Restaurant Brands International xStock",
     "symbol": "QSRx",
     "sharesHeld": "3",
     "circulatingSupply": "0.430042825181980116",
-    "price": 78.725,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 78.92,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CDW xStock",
     "symbol": "CDWx",
     "sharesHeld": "3",
     "circulatingSupply": "0.185976589668940465",
-    "price": 151.44,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 151.06,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "First Horizon xStock",
     "symbol": "FHNx",
     "sharesHeld": "5",
     "circulatingSupply": "1.029673991945853238",
-    "price": 24.397,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 24.34,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Everest xStock",
     "symbol": "EGx",
     "sharesHeld": "3",
     "circulatingSupply": "0.061727751998622828",
-    "price": 378.815,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 376.635,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "APi xStock",
     "symbol": "APGx",
     "sharesHeld": "3",
     "circulatingSupply": "0.735460093825293732",
-    "price": 37.13,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 38.195,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "RB Global xStock",
     "symbol": "RBAx",
     "sharesHeld": "3",
     "circulatingSupply": "0.375603591448342501",
-    "price": 83.75,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 83.87,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Clorox xStock",
     "symbol": "CLXx",
     "sharesHeld": "3",
     "circulatingSupply": "0.249151111653653718",
-    "price": 89.635,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 89.445,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Roivant Sciences xStock",
     "symbol": "ROIVx",
     "sharesHeld": "3",
     "circulatingSupply": "0.814349071559327675",
-    "price": 41.345,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 40.81,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Veralto xStock",
     "symbol": "VLTOx",
     "sharesHeld": "3",
     "circulatingSupply": "0.353825331825897869",
-    "price": 96.06,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 92.125,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "APA xStock",
     "symbol": "APAx",
     "sharesHeld": "3",
     "circulatingSupply": "0.776600482357084866",
-    "price": 45.435,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 45.085,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Tradeweb Markets xStock",
     "symbol": "TWx",
     "sharesHeld": "3",
     "circulatingSupply": "0.346222548872647117",
-    "price": 104.105,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 103.78,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Charter Communications xStock",
     "symbol": "CHTRx",
     "sharesHeld": "3",
     "circulatingSupply": "0.178489787371574217",
-    "price": 144.595,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 143.43,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Knight-Swift Transportation xStock",
     "symbol": "KNXx",
     "sharesHeld": "3",
     "circulatingSupply": "0.335318472787897735",
-    "price": 68.26,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 67.88,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Trimble xStock",
     "symbol": "TRMBx",
     "sharesHeld": "3",
     "circulatingSupply": "0.542979653243711668",
-    "price": 58.71,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 58.755,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Hasbro xStock",
     "symbol": "HASx",
     "sharesHeld": "3",
     "circulatingSupply": "0.282953210951964476",
-    "price": 91.62,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 90.795,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Pinnacle West Capital xStock",
     "symbol": "PNWx",
     "sharesHeld": "3",
     "circulatingSupply": "0.348160856584396277",
-    "price": 95.7,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 95.41,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Graco xStock",
     "symbol": "GGGx",
     "sharesHeld": "3",
     "circulatingSupply": "0.306003773519586765",
-    "price": 76.55,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 76.605,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Applied Industrial Technologies xStock",
     "symbol": "AITx",
     "sharesHeld": "3",
     "circulatingSupply": "0.171679793843619716",
-    "price": 318.065,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 304.545,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Camden Property Trust xStock",
     "symbol": "CPTx",
     "sharesHeld": "5",
     "circulatingSupply": "2.175302937327234779",
-    "price": 103.295,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 103.87,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Tyler Technologies xStock",
     "symbol": "TYLx",
     "sharesHeld": "3",
     "circulatingSupply": "0.177373110076598206",
-    "price": 359.555,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 360.475,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Dynatrace xStock",
     "symbol": "DTx",
     "sharesHeld": "3",
     "circulatingSupply": "0.53938374992166405",
-    "price": 52.7725,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 52.975,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ally Financial xStock",
     "symbol": "ALLYx",
     "sharesHeld": "4",
     "circulatingSupply": "0.722266316312872992",
-    "price": 41.814,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 41.685,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Equity Lifestyle Properties xStock",
     "symbol": "ELSx",
     "sharesHeld": "3",
     "circulatingSupply": "0.398068204491729493",
-    "price": 61.57,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 60.975,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Align Technology xStock",
     "symbol": "ALGNx",
     "sharesHeld": "3",
     "circulatingSupply": "0.241374518499387177",
-    "price": 151.605,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 152.91,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Zebra Technologies xStock",
     "symbol": "ZBRAx",
     "sharesHeld": "3",
     "circulatingSupply": "0.160525741536169809",
-    "price": 350.915,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 351.955,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Carlyle xStock",
     "symbol": "CGx",
     "sharesHeld": "4",
     "circulatingSupply": "0.547650091780601231",
-    "price": 41.3865,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 41.825,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Saia xStock",
     "symbol": "SAIAx",
     "sharesHeld": "3",
     "circulatingSupply": "0.159071156760859155",
-    "price": 350.285,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 343.635,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Arrow Electronics xStock",
     "symbol": "ARWx",
     "sharesHeld": "3",
     "circulatingSupply": "0.180614033933121015",
-    "price": 212.925,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 215.7,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Avery Dennison xStock",
     "symbol": "AVYx",
     "sharesHeld": "3",
     "circulatingSupply": "0.235553808832435111",
-    "price": 170.99,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 171.095,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Nutanix xStock",
     "symbol": "NTNXx",
     "sharesHeld": "3",
     "circulatingSupply": "0.504935701183518839",
-    "price": 67.62,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 66.96,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Assurant xStock",
     "symbol": "AIZx",
     "sharesHeld": "3",
     "circulatingSupply": "0.179261875987150132",
-    "price": 283.43,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 201.02,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Rivian Automotive xStock",
     "symbol": "RIVNx",
     "sharesHeld": "10678",
     "circulatingSupply": "10666.552113477856582",
-    "price": 15.965,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 15.87,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Permian Resources xStock",
     "symbol": "PRx",
     "sharesHeld": "3",
     "circulatingSupply": "1.246482403228490597",
-    "price": 23.995,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 23.97,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Pinterest xStock",
     "symbol": "PINSx",
     "sharesHeld": "3",
     "circulatingSupply": "1.23509646554985353",
-    "price": 19.475,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 19.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "TransUnion xStock",
     "symbol": "TRUx",
     "sharesHeld": "3",
     "circulatingSupply": "0.384600602184327261",
-    "price": 77.898,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 77.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "UDR xStock",
@@ -1172,224 +1172,224 @@
     "symbol": "GLPIx",
     "sharesHeld": "3",
     "circulatingSupply": "0.604470227247301327",
-    "price": 41.135,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 41.01,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Zscaler xStock",
     "symbol": "ZSx",
-    "sharesHeld": "3",
-    "circulatingSupply": "0.245105112546411344",
-    "price": 190.33,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "4",
+    "circulatingSupply": "0.348894740604324474",
+    "price": 191.555,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Stanley Black & Decker xStock",
     "symbol": "SWKx",
     "sharesHeld": "3",
     "circulatingSupply": "0.369539555958918984",
-    "price": 88.735,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 88.69,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Healthpeak Properties xStock",
     "symbol": "DOCx",
     "sharesHeld": "6",
     "circulatingSupply": "1.194574450769656703",
-    "price": 20.165,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 20.23,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Cooper Companies xStock",
     "symbol": "COOx",
     "sharesHeld": "9",
     "circulatingSupply": "5.997021972760339886",
-    "price": 54.225,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 53.905,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "PTC xStock",
     "symbol": "PTCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.273530617231456186",
-    "price": 137.136,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 136.685,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Jones Lang LaSalle xStock",
     "symbol": "JLLx",
     "sharesHeld": "3",
     "circulatingSupply": "0.189148014164588528",
-    "price": 342.805,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 343.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Solstice Advanced Materials xStock",
     "symbol": "SOLSx",
     "sharesHeld": "4",
     "circulatingSupply": "0.508103545801833337",
-    "price": 58.32,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 58.025,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Lincoln Electric xStock",
     "symbol": "LECOx",
     "sharesHeld": "3",
     "circulatingSupply": "0.068738136912013469",
-    "price": 251.6,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 251.51,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "W.R. Berkley xStock",
     "symbol": "WRBx",
     "sharesHeld": "3",
     "circulatingSupply": "0.455850656522177134",
-    "price": 70.22,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 70.75,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Broadridge Financial Solutions xStock",
     "symbol": "BRx",
     "sharesHeld": "3",
     "circulatingSupply": "0.222335404580307793",
-    "price": 174.3,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 174.46,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Omega Healthcare Investors xStock",
     "symbol": "OHIx",
     "sharesHeld": "3",
     "circulatingSupply": "0.640509477550181561",
-    "price": 47.27,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 47.36,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Fidelity National Financial xStock",
     "symbol": "FNFx",
     "sharesHeld": "3",
     "circulatingSupply": "0.493519683289062722",
-    "price": 44.555,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 44.465,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Sun Communities xStock",
     "symbol": "SUIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.2425517643510389",
-    "price": 117.48,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 115.265,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Watsco xStock",
     "symbol": "WSOx",
     "sharesHeld": "3",
     "circulatingSupply": "0.150085569099282115",
-    "price": 312.93,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 313,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Rollins xStock",
     "symbol": "ROLx",
     "sharesHeld": "4",
     "circulatingSupply": "0.793701315799768654",
-    "price": 35.185,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 35.385,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Mid-America Apartment Communities xStock",
     "symbol": "MAAx",
     "sharesHeld": "3",
     "circulatingSupply": "0.272910120386237346",
-    "price": 124.89,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 126.1,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CoStar xStock",
     "symbol": "CSGPx",
     "sharesHeld": "3",
     "circulatingSupply": "0.828932979899608715",
-    "price": 31.6215,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 31.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Tenet Healthcare xStock",
     "symbol": "THCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.187711752770843734",
-    "price": 262.655,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 275.46,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Equitable xStock",
     "symbol": "EQHx",
     "sharesHeld": "4",
     "circulatingSupply": "0.386357458564247069",
-    "price": 53.615,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 53.815,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Globe Life xStock",
     "symbol": "GLx",
     "sharesHeld": "3",
     "circulatingSupply": "0.139783255734177163",
-    "price": 171.72,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 174.645,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Reinsurance Group of America xStock",
     "symbol": "RGAx",
     "sharesHeld": "3",
     "circulatingSupply": "0.161756972115248155",
-    "price": 248.695,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 308.46,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Exelixis xStock",
     "symbol": "EXELx",
     "sharesHeld": "3",
     "circulatingSupply": "0.467513962559201038",
-    "price": 56.4675,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 57.05,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Unum xStock",
     "symbol": "UNMx",
     "sharesHeld": "3",
     "circulatingSupply": "0.385498947872254846",
-    "price": 94.345,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 91.305,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Deckers Outdoor xStock",
     "symbol": "DECKx",
     "sharesHeld": "3",
     "circulatingSupply": "0.282419642285175588",
-    "price": 79.165,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 80.69,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Neurocrine Biosciences xStock",
     "symbol": "NBIXx",
     "sharesHeld": "3",
     "circulatingSupply": "0.245665163232928385",
-    "price": 157.95,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 157,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Somnigroup International xStock",
     "symbol": "SGIx",
     "sharesHeld": "3",
     "circulatingSupply": "0.48609522840151786",
-    "price": 68.17,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 69.01,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Regency Centers xStock",
     "symbol": "REGx",
     "sharesHeld": "3",
     "circulatingSupply": "0.437413852043844038",
-    "price": 74.455,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 74.56,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Leidos xStock",
@@ -1404,320 +1404,320 @@
     "symbol": "Jx",
     "sharesHeld": "3",
     "circulatingSupply": "0.175069393915498709",
-    "price": 144.515,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 143.9,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Dick's Sporting Goods xStock",
     "symbol": "DKSx",
     "sharesHeld": "14",
     "circulatingSupply": "4.280645333900302181",
-    "price": 130.655,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 131.055,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Pinnacle Financial Partners xStock",
     "symbol": "PNFPx",
     "sharesHeld": "3",
     "circulatingSupply": "0.333818058978996625",
-    "price": 99.97,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 100,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Performance Food xStock",
     "symbol": "PFGCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.326843114201425135",
-    "price": 94.16,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 93.195,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Evercore xStock",
     "symbol": "EVRx",
     "sharesHeld": "3",
     "circulatingSupply": "0.085499183485780099",
-    "price": 274.585,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 268.125,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Roku xStock",
     "symbol": "ROKUx",
     "sharesHeld": "3",
     "circulatingSupply": "0.256557737001131884",
-    "price": 157.22,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 157.375,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Lamar Advertising xStock",
     "symbol": "LAMRx",
     "sharesHeld": "3",
     "circulatingSupply": "0.168394220201851563",
-    "price": 149.04,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 151.775,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "BorgWarner xStock",
     "symbol": "BWAx",
     "sharesHeld": "3",
     "circulatingSupply": "0.494449221846020427",
-    "price": 63.85,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 64,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ball xStock",
     "symbol": "BALLx",
     "sharesHeld": "3",
     "circulatingSupply": "0.535211194011846246",
-    "price": 60.675,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 60.755,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "DraftKings xStock",
     "symbol": "DKNGx",
     "sharesHeld": "5367",
     "circulatingSupply": "5333.5447323860275717",
-    "price": 24.395,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 24.8,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Regal Rexnord xStock",
     "symbol": "RRXx",
     "sharesHeld": "4",
     "circulatingSupply": "0.234783730793627809",
-    "price": 155.3605,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 164,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Gen Digital xStock",
     "symbol": "GENx",
     "sharesHeld": "5",
     "circulatingSupply": "0.927514259920415849",
-    "price": 31.4425,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 31.37,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "RPM International xStock",
     "symbol": "RPMx",
     "sharesHeld": "3",
     "circulatingSupply": "0.437361345954900734",
-    "price": 99.97,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 100.855,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CBRE xStock",
     "symbol": "CBREx",
     "sharesHeld": "3",
     "circulatingSupply": "0.168966043138551284",
-    "price": 140.735,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 140.95,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SS&C Technologies xStock",
     "symbol": "SSNCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.42832656029942421",
-    "price": 81.035,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 83.505,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Aramark xStock",
     "symbol": "ARMKx",
     "sharesHeld": "3",
     "circulatingSupply": "0.495819003759687815",
-    "price": 58.2805,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 57.755,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ralph Lauren xStock",
     "symbol": "RLx",
     "sharesHeld": "4",
     "circulatingSupply": "0.207160636308694852",
-    "price": 339.455,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 341.48,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Clean Harbors xStock",
     "symbol": "CLHx",
     "sharesHeld": "3",
     "circulatingSupply": "0.081408511576462932",
-    "price": 321.58,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 312,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Genuine Parts xStock",
     "symbol": "GPCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.195879808870705909",
-    "price": 132.475,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 134.2,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Block xStock",
     "symbol": "XYZx",
     "sharesHeld": "3",
     "circulatingSupply": "0.426109910797995955",
-    "price": 79.525,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 79.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Alcoa xStock",
     "symbol": "AAx",
     "sharesHeld": "3",
     "circulatingSupply": "0.538839428600997335",
-    "price": 47.31,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 47.05,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Toll Brothers xStock",
     "symbol": "TOLx",
     "sharesHeld": "3",
     "circulatingSupply": "0.259563113380559822",
-    "price": 134.23,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 136,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Reddit xStock",
     "symbol": "RDDTx",
     "sharesHeld": "1893",
     "circulatingSupply": "1625.5361315701176916",
-    "price": 165.09,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 161.865,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Kinder Morgan xStock",
     "symbol": "KMIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.82368659978625131",
-    "price": 30.865,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 30.905,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Heico xStock",
     "symbol": "HEIx",
     "sharesHeld": "3",
     "circulatingSupply": "0.072740556723921435",
-    "price": 303.595,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 302.79,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Carvana xStock",
     "symbol": "CVNAx",
     "sharesHeld": "3",
     "circulatingSupply": "0.372030658456759305",
-    "price": 70.775,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 70.77,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Southern Copper xStock",
     "symbol": "SCCOx",
-    "sharesHeld": "4",
+    "sharesHeld": "4.024",
     "circulatingSupply": "0.729340718557088467",
-    "price": 188.765,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 190.685,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Best Buy xStock",
     "symbol": "BBYx",
     "sharesHeld": "3",
     "circulatingSupply": "0.404125533407753538",
-    "price": 94.09,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 94.875,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Everpure xStock",
     "symbol": "Px",
     "sharesHeld": "3",
     "circulatingSupply": "0.355864516832141474",
-    "price": 95.05,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 94.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Atlassian xStock",
     "symbol": "TEAMx",
     "sharesHeld": "3",
     "circulatingSupply": "0.266828618697339924",
-    "price": 191.3,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 191,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Las Vegas Sands xStock",
     "symbol": "LVSx",
     "sharesHeld": "9",
     "circulatingSupply": "4.705950334056359512",
-    "price": 42.1725,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 42.345,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Carlisle Companies xStock",
     "symbol": "CSLx",
     "sharesHeld": "3",
     "circulatingSupply": "0.05285503489644912",
-    "price": 329.385,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 336.79,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Nasdaq Inc. xStock",
     "symbol": "NDAQx",
     "sharesHeld": "3",
     "circulatingSupply": "0.373005243166260112",
-    "price": 91.24,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 91.515,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Mueller Industries xStock",
     "symbol": "MLIx",
     "sharesHeld": "3",
     "circulatingSupply": "0.407419514678130711",
-    "price": 60.06,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 58.97,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Generac xStock",
     "symbol": "GNRCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.116970580129805292",
-    "price": 177.785,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 177.68,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "W.P. Carey xStock",
     "symbol": "WPCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.460963223221440142",
-    "price": 69.015,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 68.945,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Masco xStock",
     "symbol": "MASx",
     "sharesHeld": "3",
     "circulatingSupply": "0.435268532018156955",
-    "price": 68.82,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 69.435,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "ITT xStock",
     "symbol": "ITTx",
     "sharesHeld": "3",
     "circulatingSupply": "0.124084679840359874",
-    "price": 197.35,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 160,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Okta xStock",
     "symbol": "OKTAx",
-    "sharesHeld": "719",
-    "circulatingSupply": "700.89498170766173445",
-    "price": 187.5,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "665",
+    "circulatingSupply": "646.55935370766173445",
+    "price": 186.785,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Tyson Foods xStock",
     "symbol": "TSNx",
     "sharesHeld": "4",
     "circulatingSupply": "0.548485633812030246",
-    "price": 52.98,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 53.14,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ovintiv xStock",
@@ -1732,376 +1732,376 @@
     "symbol": "NLYx",
     "sharesHeld": "3",
     "circulatingSupply": "1.228659723533098988",
-    "price": 21.765,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 21.875,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Interactive Brokers xStock",
     "symbol": "IBKRx",
     "sharesHeld": "3",
     "circulatingSupply": "0.287663656640307593",
-    "price": 90.08,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 90.43,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CF Industries xStock",
     "symbol": "CFx",
     "sharesHeld": "3",
     "circulatingSupply": "0.211883156828423491",
-    "price": 132.23,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 131.06,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ares Management xStock",
     "symbol": "ARESx",
     "sharesHeld": "3",
     "circulatingSupply": "0.296281029320757797",
-    "price": 130.835,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 130,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Estee Lauder Companies xStock",
     "symbol": "ELx",
     "sharesHeld": "3",
     "circulatingSupply": "0.280870050068157168",
-    "price": 98.87,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 97.845,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Onto Innovation xStock",
     "symbol": "ONTOx",
     "sharesHeld": "3",
     "circulatingSupply": "0.160984731629827985",
-    "price": 253.3,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 255.82,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Coupang xStock",
     "symbol": "CPNGx",
     "sharesHeld": "4",
     "circulatingSupply": "1.580565267462331594",
-    "price": 15.125,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 15.1,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Global Payments xStock",
     "symbol": "GPNx",
     "sharesHeld": "3",
     "circulatingSupply": "0.290909576706901094",
-    "price": 89.3655,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 90.2,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "DoorDash xStock",
     "symbol": "DASHx",
     "sharesHeld": "3",
     "circulatingSupply": "0.121766289030739604",
-    "price": 202.805,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 203.435,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Nordson xStock",
     "symbol": "NDSNx",
     "sharesHeld": "3",
     "circulatingSupply": "0.16434429472290796",
-    "price": 308.38,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 308.37,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Twilio xStock",
     "symbol": "TWLOx",
     "sharesHeld": "791",
     "circulatingSupply": "772.50603980029564349",
-    "price": 232.085,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 231.44,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "First Citizens BancShares xStock",
     "symbol": "FCNCAx",
     "sharesHeld": "4",
     "circulatingSupply": "0.022055400522438712",
-    "price": 2162.84,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 2672.285,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Constellation Brands xStock",
     "symbol": "STZx",
     "sharesHeld": "4",
     "circulatingSupply": "0.442528985510459473",
-    "price": 124.56,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 124.105,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "United Parcel Service xStock",
     "symbol": "UPSx",
     "sharesHeld": "7",
     "circulatingSupply": "2.698313576605053322",
-    "price": 101.76,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 102.38,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "MongoDB xStock",
     "symbol": "MDBx",
     "sharesHeld": "3",
     "circulatingSupply": "0.148551429505369388",
-    "price": 383.08,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 381.785,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cognizant Technology Solutions xStock",
     "symbol": "CTSHx",
     "sharesHeld": "3",
     "circulatingSupply": "0.453031837292940329",
-    "price": 63.6945,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 63.87,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Zoetis xStock",
     "symbol": "ZTSx",
     "sharesHeld": "56",
     "circulatingSupply": "51.967690095906524835",
-    "price": 73.71,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 73.83,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Airbnb xStock",
     "symbol": "ABNBx",
     "sharesHeld": "4",
     "circulatingSupply": "0.307564452591623037",
-    "price": 170.48,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 169.34,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Incyte xStock",
     "symbol": "INCYx",
     "sharesHeld": "3",
     "circulatingSupply": "0.205830275581586304",
-    "price": 122.42,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 124.45,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Brookfield Asset Management xStock",
     "symbol": "BAMx",
     "sharesHeld": "3",
     "circulatingSupply": "0.642560420523446273",
-    "price": 46.255,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 46.8,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Lennar xStock",
     "symbol": "LENx",
     "sharesHeld": "3",
     "circulatingSupply": "0.304667013196127915",
-    "price": 79.89,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 80.06,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Veeva Systems xStock",
     "symbol": "VEEVx",
     "sharesHeld": "4",
     "circulatingSupply": "0.195453918648458931",
-    "price": 265.465,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 260,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Textron xStock",
     "symbol": "TXTx",
     "sharesHeld": "3",
     "circulatingSupply": "0.380558250100262888",
-    "price": 81.3,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 81.4,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Workday xStock",
     "symbol": "WDAYx",
     "sharesHeld": "3",
     "circulatingSupply": "0.241474572641038442",
-    "price": 195.25,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 193.7,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SBA Communications xStock",
     "symbol": "SBACx",
     "sharesHeld": "3",
     "circulatingSupply": "0.209670775886621075",
-    "price": 183.8,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 181.295,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Nike xStock",
     "symbol": "NKEx",
     "sharesHeld": "786",
     "circulatingSupply": "536.26512812675827693",
-    "price": 37.102,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 37.0685,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Marriott International xStock",
     "symbol": "MARx",
-    "sharesHeld": "4",
-    "circulatingSupply": "0.156909211807369398",
-    "price": 337.445,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "5",
+    "circulatingSupply": "0.304070623090467161",
+    "price": 339.23,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Tractor Supply xStock",
     "symbol": "TSCOx",
     "sharesHeld": "4",
     "circulatingSupply": "0.87314067857806596",
-    "price": 33.485,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 33.77,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Mondelez International xStock",
     "symbol": "MDLZx",
     "sharesHeld": "3",
     "circulatingSupply": "0.514952344333096377",
-    "price": 62.2945,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 62.35,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CME xStock",
     "symbol": "CMEx",
     "sharesHeld": "3",
     "circulatingSupply": "0.098855151925860317",
-    "price": 279.74,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 281.23,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Datadog xStock",
     "symbol": "DDOGx",
     "sharesHeld": "4",
     "circulatingSupply": "1.015135488368403123",
-    "price": 232.875,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 229,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Amphenol xStock",
     "symbol": "APHx",
     "sharesHeld": "6",
     "circulatingSupply": "0.55189539819303303",
-    "price": 78.935,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 78.8975,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Fiserv xStock",
     "symbol": "FISVx",
     "sharesHeld": "87",
     "circulatingSupply": "84.272805144565912933",
-    "price": 51.418,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 51.065,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "KeyCorp xStock",
     "symbol": "KEYx",
     "sharesHeld": "6",
     "circulatingSupply": "1.691505475288232895",
-    "price": 21.785,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 21.92,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Synchrony Financial xStock",
     "symbol": "SYFx",
     "sharesHeld": "3",
     "circulatingSupply": "0.944614731381273213",
-    "price": 75.52,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 75.925,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Principal Financial xStock",
     "symbol": "PFGx",
     "sharesHeld": "3",
     "circulatingSupply": "0.662495821415151288",
-    "price": 115.735,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 116.82,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Church & Dwight xStock",
     "symbol": "CHDx",
     "sharesHeld": "3",
     "circulatingSupply": "0.681403874391336035",
-    "price": 95.02,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 94.615,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Fidelity National Information Services xStock",
     "symbol": "FISx",
     "sharesHeld": "4",
     "circulatingSupply": "1.065267963847563631",
-    "price": 37.8545,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 38.69,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Fortive xStock",
     "symbol": "FTVx",
     "sharesHeld": "3",
     "circulatingSupply": "0.832953659780711777",
-    "price": 54.93,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 54.89,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Albemarle xStock",
     "symbol": "ALBx",
     "sharesHeld": "4",
     "circulatingSupply": "0.689304912356123719",
-    "price": 115.43,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 115.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Woodward xStock",
     "symbol": "WWDx",
     "sharesHeld": "3",
     "circulatingSupply": "0.658666818479123153",
-    "price": 325.305,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 343.61,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Darden Restaurants xStock",
     "symbol": "DRIx",
     "sharesHeld": "3",
     "circulatingSupply": "0.518268281297811527",
-    "price": 217.375,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 218.66,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Quest Diagnostics xStock",
     "symbol": "DGXx",
     "sharesHeld": "3",
     "circulatingSupply": "0.514541771467265453",
-    "price": 236.55,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 248.1,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "West Pharmaceutical Services xStock",
     "symbol": "WSTx",
     "sharesHeld": "3",
     "circulatingSupply": "0.648831031308427259",
-    "price": 355.85,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 367.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "United Therapeutics xStock",
     "symbol": "UTHRx",
     "sharesHeld": "4",
     "circulatingSupply": "0.909444872735517829",
-    "price": 504.6,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 507.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Omnicom xStock",
     "symbol": "OMCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.7963548176998495",
-    "price": 80.5,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 80.92,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Dollar General xStock",
     "symbol": "DGx",
     "sharesHeld": "3",
     "circulatingSupply": "0.624316929189474114",
-    "price": 128.66,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 128.8,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "T. Rowe Price xStock",
@@ -2116,88 +2116,88 @@
     "symbol": "WCCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.544225107410525647",
-    "price": 336.535,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 336.8,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Regions Financial xStock",
     "symbol": "RFx",
     "sharesHeld": "5",
     "circulatingSupply": "1.367244851895262472",
-    "price": 29.935,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 30.05,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Essex Property Trust xStock",
     "symbol": "ESSx",
     "sharesHeld": "3",
     "circulatingSupply": "0.468940493329934047",
-    "price": 274.645,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 266.385,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Evergy xStock",
     "symbol": "EVRGx",
     "sharesHeld": "3",
     "circulatingSupply": "0.814499361536234849",
-    "price": 81.259,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 80.895,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Loews xStock",
     "symbol": "Lx",
     "sharesHeld": "3",
     "circulatingSupply": "0.820543788414006694",
-    "price": 108.62,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 109.04,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "International Paper xStock",
     "symbol": "IPx",
     "sharesHeld": "4",
     "circulatingSupply": "1.119082313121860528",
-    "price": 34.36,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 34.48,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Expand Energy xStock",
     "symbol": "EXEx",
     "sharesHeld": "796",
     "circulatingSupply": "792.43014836701532553",
-    "price": 94.055,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 93.95,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Zimmer Biomet xStock",
     "symbol": "ZBHx",
     "sharesHeld": "3",
     "circulatingSupply": "0.755224204624037395",
-    "price": 95.97,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 97,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Brown & Brown xStock",
     "symbol": "BROx",
     "sharesHeld": "3",
     "circulatingSupply": "0.862331207030057106",
-    "price": 67.86,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 68.165,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "JB Hunt Transport Services xStock",
     "symbol": "JBHTx",
     "sharesHeld": "3",
     "circulatingSupply": "0.591325429986646778",
-    "price": 273.355,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 274.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "East West Bancorp xStock",
     "symbol": "EWBCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.558197499253022758",
-    "price": 129.285,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 128.375,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Packaging Corp of America xStock",
@@ -2212,88 +2212,88 @@
     "symbol": "ILMNx",
     "sharesHeld": "3",
     "circulatingSupply": "0.531429410228396431",
-    "price": 208.21,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 207.935,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "F5 xStock",
     "symbol": "FFIVx",
     "sharesHeld": "3",
     "circulatingSupply": "0.468806833646847348",
-    "price": 412.16,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 411.215,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Invitation Homes xStock",
     "symbol": "INVHx",
     "sharesHeld": "3",
     "circulatingSupply": "1.297235466781210768",
-    "price": 27.515,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 27.58,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Moderna xStock",
     "symbol": "MRNAx",
     "sharesHeld": "2049",
     "circulatingSupply": "1849.8615508077664049",
-    "price": 146.28,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 146.71,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "HP xStock",
     "symbol": "HPQx",
     "sharesHeld": "6",
     "circulatingSupply": "3.085355560414475142",
-    "price": 34.045,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 33.88,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Kraft Heinz xStock",
     "symbol": "KHCx",
     "sharesHeld": "10",
     "circulatingSupply": "4.596626158967569334",
-    "price": 24.405,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 24.32,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "IDEX xStock",
     "symbol": "IEXx",
     "sharesHeld": "3",
     "circulatingSupply": "0.595137698476130261",
-    "price": 222.23,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 222.395,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Burlington Stores xStock",
     "symbol": "BURLx",
     "sharesHeld": "3",
     "circulatingSupply": "0.559389703966673777",
-    "price": 233.155,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 233.32,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Lattice Semiconductor xStock",
     "symbol": "LSCCx",
     "sharesHeld": "3",
     "circulatingSupply": "0.697131325685785536",
-    "price": 108.595,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 107.82,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "TD Synnex xStock",
     "symbol": "SNXx",
     "sharesHeld": "3",
     "circulatingSupply": "0.584111453953351914",
-    "price": 260.23,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 259,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Zoom Communications xStock",
     "symbol": "ZMx",
     "sharesHeld": "1711",
     "circulatingSupply": "1693.9223261578116603",
-    "price": 95.63,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 95.2,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Verisk Analytics xStock",
@@ -2308,728 +2308,728 @@
     "symbol": "MTDx",
     "sharesHeld": "3",
     "circulatingSupply": "0.498721291674040704",
-    "price": 1282.395,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1286.025,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Eversource Energy xStock",
     "symbol": "ESx",
     "sharesHeld": "3",
     "circulatingSupply": "0.774292067206914296",
-    "price": 68.16,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 68.18,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "C.H. Robinson Worldwide xStock",
     "symbol": "CHRWx",
     "sharesHeld": "3",
     "circulatingSupply": "0.572834926531694575",
-    "price": 156.665,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 176.88,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Dow xStock",
     "symbol": "DOWx",
     "sharesHeld": "4",
     "circulatingSupply": "1.255991212140993417",
-    "price": 28.7945,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 28.94,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "VeriSign xStock",
     "symbol": "VRSNx",
     "sharesHeld": "3",
     "circulatingSupply": "0.57946309955644378",
-    "price": 299.775,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 299.61,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Expeditors International of Washington xStock",
     "symbol": "EXPDx",
     "sharesHeld": "3",
     "circulatingSupply": "0.531047690388023115",
-    "price": 192.835,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 200.31,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Southwest Airlines xStock",
     "symbol": "LUVx",
     "sharesHeld": "10",
     "circulatingSupply": "7.3921452067175419",
-    "price": 39.276,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 39.715,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "American Water Works xStock",
     "symbol": "AWKx",
     "sharesHeld": "14",
     "circulatingSupply": "11.029390733978454888",
-    "price": 138,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 138.98,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Corpay xStock",
     "symbol": "CPAYx",
     "sharesHeld": "3",
     "circulatingSupply": "0.467060712386865005",
-    "price": 410.42,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 412.855,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CMS Energy xStock",
     "symbol": "CMSx",
     "sharesHeld": "3",
     "circulatingSupply": "0.770443147521866136",
-    "price": 66.955,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 67.06,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "US Foods xStock",
     "symbol": "USFDx",
     "sharesHeld": "3",
     "circulatingSupply": "0.82608720932422577",
-    "price": 96.325,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 94.84,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "MasTec xStock",
     "symbol": "MTZx",
     "sharesHeld": "3",
     "circulatingSupply": "0.57136914495642427",
-    "price": 228.25,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 230.21,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "NiSource xStock",
     "symbol": "NIx",
     "sharesHeld": "4",
     "circulatingSupply": "1.089664603794334466",
-    "price": 41.1665,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 41.035,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "BWX Technologies xStock",
     "symbol": "BWXTx",
     "sharesHeld": "4",
     "circulatingSupply": "1.593333087020785996",
-    "price": 147.89,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 149.9,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "MKS xStock",
     "symbol": "MKSIx",
     "sharesHeld": "3",
     "circulatingSupply": "0.567316927019865548",
-    "price": 241.08,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 239.75,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Viatris xStock",
     "symbol": "VTRSx",
     "sharesHeld": "9",
     "circulatingSupply": "2.09472166965059593",
-    "price": 16.7245,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 16.71,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Insmed xStock",
     "symbol": "INSMx",
     "sharesHeld": "3",
     "circulatingSupply": "0.68808286431877539",
-    "price": 125.715,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 125.3,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Host Hotels & Resorts xStock",
     "symbol": "HSTx",
     "sharesHeld": "3",
     "circulatingSupply": "1.560450916283829789",
-    "price": 22.215,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 22.205,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "ATI xStock",
     "symbol": "ATIx",
     "sharesHeld": "3",
     "circulatingSupply": "0.612466873948874492",
-    "price": 189.2625,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 184.61,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Markel xStock",
     "symbol": "MKLx",
     "sharesHeld": "5",
     "circulatingSupply": "0.694946705811243093",
-    "price": 1795.235,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1797.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Alliant Energy xStock",
     "symbol": "LNTx",
     "sharesHeld": "3",
     "circulatingSupply": "0.861917947429763244",
-    "price": 67.0885,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 66.915,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Liberty Media xStock",
     "symbol": "FWONKx",
     "sharesHeld": "3",
     "circulatingSupply": "0.661147297367966741",
-    "price": 95.995,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 95.745,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Weyerhaeuser xStock",
     "symbol": "WYx",
     "sharesHeld": "6",
     "circulatingSupply": "1.531109210260162938",
-    "price": 22.235,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 22.305,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cincinnati Financial xStock",
     "symbol": "CINFx",
     "sharesHeld": "3",
     "circulatingSupply": "0.555360835554577441",
-    "price": 171.04,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 172.84,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Kimco Realty xStock",
     "symbol": "KIMx",
     "sharesHeld": "5",
     "circulatingSupply": "1.468395257987478994",
-    "price": 23.195,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 23.22,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Equifax xStock",
     "symbol": "EFXx",
     "sharesHeld": "3",
     "circulatingSupply": "0.540837305719963435",
-    "price": 170.98,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 169.1,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Reliance xStock",
     "symbol": "RSx",
     "sharesHeld": "4",
     "circulatingSupply": "0.586252941191098468",
-    "price": 385.465,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 343.15,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Xylem xStock",
     "symbol": "XYLx",
     "sharesHeld": "7",
     "circulatingSupply": "4.788512321966270199",
-    "price": 107.96,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 108.305,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Williams-Sonoma xStock",
     "symbol": "WSMx",
     "sharesHeld": "3",
     "circulatingSupply": "0.687113861655937675",
-    "price": 228.525,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 229.525,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SoFi Technologies xStock",
     "symbol": "SOFIx",
     "sharesHeld": "14",
     "circulatingSupply": "7.211848933495069293",
-    "price": 17.625,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 17.63,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ulta Beauty xStock",
     "symbol": "ULTAx",
     "sharesHeld": "4",
     "circulatingSupply": "0.571056548056844948",
-    "price": 551.64,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 548.325,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Texas Pacific Land xStock",
     "symbol": "TPLx",
     "sharesHeld": "8",
     "circulatingSupply": "0.605398109939300623",
-    "price": 368.79,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 366.775,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Dollar Tree xStock",
     "symbol": "DLTRx",
     "sharesHeld": "4",
     "circulatingSupply": "0.614209138691417422",
-    "price": 119.845,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 119.205,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "XPO xStock",
     "symbol": "XPOx",
     "sharesHeld": "4",
     "circulatingSupply": "0.71544595506356061",
-    "price": 179.11,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 178.59,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "General Mills xStock",
     "symbol": "GISx",
     "sharesHeld": "4",
     "circulatingSupply": "1.588591940995471765",
-    "price": 36.4985,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 36.53,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Akamai Technologies xStock",
     "symbol": "AKAMx",
     "sharesHeld": "5",
     "circulatingSupply": "0.897206456544892493",
-    "price": 107.235,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 106.32,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Royal Gold xStock",
     "symbol": "RGLDx",
     "sharesHeld": "4",
     "circulatingSupply": "0.659135731670822942",
-    "price": 248.807,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 247.19,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Copart xStock",
     "symbol": "CPRTx",
     "sharesHeld": "5",
     "circulatingSupply": "1.842127506827395067",
-    "price": 31.275,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 31.805,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "International Flavors & Fragrances xStock",
     "symbol": "IFFx",
     "sharesHeld": "5",
     "circulatingSupply": "0.946466565974684328",
-    "price": 83.895,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 83.98,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "FirstEnergy xStock",
     "symbol": "FEx",
     "sharesHeld": "6",
     "circulatingSupply": "1.363957468800751385",
-    "price": 45.81,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 45.7,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "LPL Financial xStock",
     "symbol": "LPLAx",
     "sharesHeld": "4",
     "circulatingSupply": "0.624421907856140122",
-    "price": 341.26,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 349,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Raymond James Financial xStock",
     "symbol": "RJFx",
     "sharesHeld": "3",
     "circulatingSupply": "0.626299991559562631",
-    "price": 170.6945,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 176.285,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Snap-on xStock",
     "symbol": "SNAx",
     "sharesHeld": "4",
     "circulatingSupply": "0.687089547005781487",
-    "price": 378.825,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 377.865,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Hershey xStock",
     "symbol": "HSYx",
     "sharesHeld": "5",
     "circulatingSupply": "0.662280226434808454",
-    "price": 174.005,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 173.955,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Entegris xStock",
     "symbol": "ENTGx",
     "sharesHeld": "5",
     "circulatingSupply": "0.737156032910263018",
-    "price": 130.74,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 132.63,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "PPL xStock",
     "symbol": "PPLx",
     "sharesHeld": "5",
     "circulatingSupply": "1.848150543592750382",
-    "price": 33.755,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 34.03,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "MACOM Technology Solutions xStock",
     "symbol": "MTSIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.657185049680595446",
-    "price": 245.835,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 242.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "FTAI Aviation xStock",
     "symbol": "FTAIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.636533775954825123",
-    "price": 176.515,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 175.84,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "NRG Energy xStock",
     "symbol": "NRGx",
     "sharesHeld": "14",
     "circulatingSupply": "4.125143568078017232",
-    "price": 108.755,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 108.65,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Hubbell xStock",
     "symbol": "HUBBx",
     "sharesHeld": "5",
     "circulatingSupply": "0.50288466949964969",
-    "price": 440.605,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 442.805,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Edison International xStock",
     "symbol": "EIXx",
-    "sharesHeld": "23",
-    "circulatingSupply": "13.602553060996723298",
-    "price": 56.315,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "29",
+    "circulatingSupply": "19.25454957406491841",
+    "price": 56.267,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Fair Isaac xStock",
     "symbol": "FICOx",
     "sharesHeld": "5",
     "circulatingSupply": "0.44156953427322524",
-    "price": 998.705,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 991.55,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Carpenter Technology xStock",
     "symbol": "CRSx",
     "sharesHeld": "4",
     "circulatingSupply": "0.453693828325557861",
-    "price": 421.738,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 420.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "PPG Industries xStock",
     "symbol": "PPGx",
     "sharesHeld": "5",
     "circulatingSupply": "0.91259093393554204",
-    "price": 106.135,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 105.26,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "First Solar xStock",
     "symbol": "FSLRx",
     "sharesHeld": "5",
     "circulatingSupply": "0.957823495274543344",
-    "price": 208.36,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 207.325,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Atmos Energy xStock",
     "symbol": "ATOx",
     "sharesHeld": "5",
     "circulatingSupply": "0.882433110232874596",
-    "price": 164.245,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 164.425,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Lennox International xStock",
     "symbol": "LIIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.593748320909523487",
-    "price": 365.68,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 358,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Live Nation Entertainment xStock",
     "symbol": "LYVx",
     "sharesHeld": "4",
     "circulatingSupply": "0.742432602551970672",
-    "price": 172.407,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 171.67,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Bending Spoons xStock",
     "symbol": "BSPx",
     "sharesHeld": "24589",
     "circulatingSupply": "24463.363781342016276",
-    "price": 41.05,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 41.29,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "DexCom xStock",
     "symbol": "DXCMx",
     "sharesHeld": "4",
     "circulatingSupply": "0.717214157300750068",
-    "price": 84.18,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 84.8,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "EQT xStock",
     "symbol": "EQTx",
     "sharesHeld": "4",
     "circulatingSupply": "0.921406379521737369",
-    "price": 53.535,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 53.295,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Northern Trust xStock",
     "symbol": "NTRSx",
     "sharesHeld": "4",
     "circulatingSupply": "0.629718009003321487",
-    "price": 180.32,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 181.66,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Agilent Technologies xStock",
     "symbol": "Ax",
     "sharesHeld": "4",
     "circulatingSupply": "0.797462404419828267",
-    "price": 145.7995,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 146.025,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Martin Marietta Materials xStock",
     "symbol": "MLMx",
     "sharesHeld": "4",
     "circulatingSupply": "0.551015462420516694",
-    "price": 498.69,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 510.595,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CenterPoint Energy xStock",
     "symbol": "CNPx",
     "sharesHeld": "5",
     "circulatingSupply": "2.111120522252248127",
-    "price": 38.5655,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 38.72,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "MSCI xStock",
     "symbol": "MSCIx",
     "sharesHeld": "7",
     "circulatingSupply": "0.531285982201848267",
-    "price": 547.735,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 555.55,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Kenvue xStock",
     "symbol": "KVUEx",
     "sharesHeld": "9",
     "circulatingSupply": "2.65782592640599156",
-    "price": 18.065,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 17.935,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Revolution Medicines xStock",
     "symbol": "RVMDx",
     "sharesHeld": "6",
     "circulatingSupply": "0.614708897111302446",
-    "price": 205.315,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 206.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Teledyne Technologies xStock",
     "symbol": "TDYx",
     "sharesHeld": "4",
     "circulatingSupply": "0.122898692054190939",
-    "price": 594.29,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 645.615,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "PG&E xStock",
     "symbol": "PCGx",
     "sharesHeld": "6",
     "circulatingSupply": "1.826431257059150584",
-    "price": 13.685,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 13.625,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "IQVIA xStock",
     "symbol": "IQVx",
     "sharesHeld": "4",
     "circulatingSupply": "0.513450756628374531",
-    "price": 266.13,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 270.85,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "WEC Energy xStock",
     "symbol": "WECx",
     "sharesHeld": "5",
     "circulatingSupply": "0.369957600842382934",
-    "price": 104.85,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 105.165,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Paychex xStock",
     "symbol": "PAYXx",
     "sharesHeld": "4",
     "circulatingSupply": "0.717424175751206993",
-    "price": 118.1325,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 118.055,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Casey's General Stores xStock",
     "symbol": "CASYx",
     "sharesHeld": "5",
     "circulatingSupply": "1.01222489468212096",
-    "price": 624.53,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 621.76,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Natera xStock",
     "symbol": "NTRAx",
     "sharesHeld": "5",
     "circulatingSupply": "0.671011399565826827",
-    "price": 336.65,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 342.625,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ameren xStock",
     "symbol": "AEEx",
     "sharesHeld": "4",
     "circulatingSupply": "1.060863479553803802",
-    "price": 104.185,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 103.935,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "VICI Properties xStock",
     "symbol": "VICIx",
     "sharesHeld": "12",
     "circulatingSupply": "5.361989826630962946",
-    "price": 25.055,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 25.105,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Diamondback Energy xStock",
     "symbol": "FANGx",
     "sharesHeld": "4",
     "circulatingSupply": "0.125459585191351949",
-    "price": 206.82,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 207.11,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Otis Worldwide xStock",
     "symbol": "OTISx",
     "sharesHeld": "4",
     "circulatingSupply": "0.864402852511074046",
-    "price": 70.465,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 69.95,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Steel Dynamics xStock",
     "symbol": "STLDx",
     "sharesHeld": "4",
     "circulatingSupply": "0.602542155713501768",
-    "price": 235.96,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 239.86,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Dover xStock",
     "symbol": "DOVx",
     "sharesHeld": "4",
     "circulatingSupply": "0.535073132394738479",
-    "price": 189.155,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 187.965,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ferguson Enterprises xStock",
     "symbol": "FERGx",
     "sharesHeld": "4",
     "circulatingSupply": "0.516724867026789394",
-    "price": 221.87,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 232.055,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Citizens Financial xStock",
     "symbol": "CFGx",
     "sharesHeld": "4",
     "circulatingSupply": "0.878584344337476285",
-    "price": 69.96,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 70.495,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "ResMed xStock",
     "symbol": "RMDx",
     "sharesHeld": "4",
     "circulatingSupply": "0.203634209665010513",
-    "price": 223.09,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 226.32,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Qnity Electronics xStock",
     "symbol": "Qx",
     "sharesHeld": "4",
     "circulatingSupply": "0.691886095025275495",
-    "price": 116.985,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 118.125,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "EMCOR xStock",
     "symbol": "EMEx",
     "sharesHeld": "3",
     "circulatingSupply": "0.434400666645329353",
-    "price": 750.915,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 750.07,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Kimberly-Clark xStock",
     "symbol": "KMBx",
     "sharesHeld": "4",
     "circulatingSupply": "0.243060512898610037",
-    "price": 100.1065,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 99.925,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ingersoll Rand xStock",
     "symbol": "IRx",
     "sharesHeld": "4",
     "circulatingSupply": "0.743063141100057259",
-    "price": 72.03,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 72.16,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Exelon xStock",
     "symbol": "EXCx",
     "sharesHeld": "4",
     "circulatingSupply": "1.002725940841253366",
-    "price": 42.747,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 43.31,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "GE HealthCare Technologies xStock",
     "symbol": "GEHCx",
     "sharesHeld": "6",
     "circulatingSupply": "0.373691058361286854",
-    "price": 64.18,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 64.675,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Hartford Insurance xStock",
     "symbol": "HIGx",
     "sharesHeld": "5",
     "circulatingSupply": "0.319570194408617685",
-    "price": 137.065,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 137.48,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Iron Mountain xStock",
@@ -3052,144 +3052,144 @@
     "symbol": "DTEx",
     "sharesHeld": "4",
     "circulatingSupply": "0.185057185293123626",
-    "price": 131.91,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 131.92,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Occidental Petroleum xStock",
     "symbol": "OXYx",
     "sharesHeld": "93",
     "circulatingSupply": "84.925714279791771355",
-    "price": 61.9315,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 61.925,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Take-Two Interactive Software xStock",
     "symbol": "TTWOx",
     "sharesHeld": "1511",
     "circulatingSupply": "1471.2369042366733574",
-    "price": 221.11,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 221.875,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Kroger xStock",
     "symbol": "KRx",
     "sharesHeld": "8",
     "circulatingSupply": "0.902226283715761554",
-    "price": 60.95,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 60.68,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "NetApp xStock",
     "symbol": "NTAPx",
     "sharesHeld": "4",
     "circulatingSupply": "0.626167225913246162",
-    "price": 190.835,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 188.99,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Prudential Financial xStock",
     "symbol": "PRUx",
     "sharesHeld": "4",
     "circulatingSupply": "0.713654107639923827",
-    "price": 119.135,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 118.895,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Consolidated Edison xStock",
     "symbol": "EDx",
     "sharesHeld": "4",
     "circulatingSupply": "0.653522625608139216",
-    "price": 105.8775,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 106.16,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Curtiss-Wright xStock",
     "symbol": "CWx",
     "sharesHeld": "4",
     "circulatingSupply": "0.440352473120301287",
-    "price": 551.33,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 586.025,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Waters xStock",
     "symbol": "WATx",
     "sharesHeld": "4",
     "circulatingSupply": "0.662976207528726311",
-    "price": 404.82,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 410.73,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Halliburton xStock",
     "symbol": "HALx",
     "sharesHeld": "4",
     "circulatingSupply": "1.172892390444580846",
-    "price": 34.74,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 35.08,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Biogen xStock",
     "symbol": "BIIBx",
     "sharesHeld": "4",
     "circulatingSupply": "0.606635281771159511",
-    "price": 217.565,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 217,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Centene xStock",
     "symbol": "CNCx",
     "sharesHeld": "4",
     "circulatingSupply": "0.818376879446044757",
-    "price": 69.15,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 69.515,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "IDEXX Laboratories xStock",
     "symbol": "IDXXx",
     "sharesHeld": "4",
     "circulatingSupply": "0.047076535980536501",
-    "price": 507.445,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 509.725,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Axon Enterprise xStock",
     "symbol": "AXONx",
     "sharesHeld": "4",
     "circulatingSupply": "0.622307015769322152",
-    "price": 493.505,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 491.495,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Chipotle Mexican Grill xStock",
     "symbol": "CMGx",
     "sharesHeld": "4",
     "circulatingSupply": "1.191662251261023652",
-    "price": 37.005,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 36.99,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Humana xStock",
     "symbol": "HUMx",
     "sharesHeld": "6",
     "circulatingSupply": "0.550362824735730875",
-    "price": 414.13,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 408.84,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Roper Technologies xStock",
     "symbol": "ROPx",
     "sharesHeld": "4",
     "circulatingSupply": "0.549460658711541251",
-    "price": 395.08,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 395.2,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Archer-Daniels-Midland xStock",
     "symbol": "ADMx",
     "sharesHeld": "3",
     "circulatingSupply": "0.079038049956835809",
-    "price": 86.755,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 86.22,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Crown Castle xStock",
@@ -3204,16 +3204,16 @@
     "symbol": "DHIx",
     "sharesHeld": "4",
     "circulatingSupply": "0.587705064066269038",
-    "price": 138.97,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 139.415,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Becton Dickinson xStock",
     "symbol": "BDXx",
     "sharesHeld": "4",
     "circulatingSupply": "0.635711958136247717",
-    "price": 181.5,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 185.805,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Public Storage xStock",
@@ -3228,88 +3228,88 @@
     "symbol": "VMCx",
     "sharesHeld": "4",
     "circulatingSupply": "0.675929655763597185",
-    "price": 250.7,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 250.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Alnylam Pharmaceuticals xStock",
     "symbol": "ALNYx",
     "sharesHeld": "10",
     "circulatingSupply": "3.956753254698495404",
-    "price": 248.845,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 247.85,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ameriprise Financial xStock",
     "symbol": "AMPx",
     "sharesHeld": "4",
     "circulatingSupply": "0.533905751823062047",
-    "price": 554.87,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 558.96,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Sysco xStock",
     "symbol": "SYYx",
     "sharesHeld": "4",
     "circulatingSupply": "0.412394041246198865",
-    "price": 84.21,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 81.675,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "M&T Bank xStock",
     "symbol": "MTBx",
     "sharesHeld": "4",
     "circulatingSupply": "0.193773113649690401",
-    "price": 237.305,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 235,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Aflac xStock",
     "symbol": "AFLx",
     "sharesHeld": "5",
     "circulatingSupply": "0.804165453178631818",
-    "price": 116.495,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 117,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cencora xStock",
     "symbol": "CORx",
     "sharesHeld": "4",
     "circulatingSupply": "0.488247877280972918",
-    "price": 325.82,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 328.13,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ventas xStock",
     "symbol": "VTRx",
     "sharesHeld": "4",
     "circulatingSupply": "0.775938416924090526",
-    "price": 89.88,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 89.24,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Tapestry xStock",
     "symbol": "TPRx",
     "sharesHeld": "4",
     "circulatingSupply": "0.786549688325457133",
-    "price": 118.29,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 118.115,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Huntington Bancshares xStock",
     "symbol": "HBANx",
     "sharesHeld": "5",
     "circulatingSupply": "1.879428252213986479",
-    "price": 16.735,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 16.85,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Fastenal xStock",
     "symbol": "FASTx",
     "sharesHeld": "4",
     "circulatingSupply": "0.954814663612292204",
-    "price": 49.405,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 49.385,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Xcel Energy xStock",
@@ -3324,184 +3324,184 @@
     "symbol": "UALx",
     "sharesHeld": "5",
     "circulatingSupply": "0.318576584993989465",
-    "price": 108.995,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 109.45,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Old Dominion Freight Line xStock",
     "symbol": "ODFLx",
     "sharesHeld": "4",
     "circulatingSupply": "0.611304407933703861",
-    "price": 181.4955,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 180.23,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Entergy xStock",
     "symbol": "ETRx",
     "sharesHeld": "4",
     "circulatingSupply": "0.651202236325228022",
-    "price": 104.05,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 103.27,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "ON Semiconductor xStock",
     "symbol": "ONx",
     "sharesHeld": "2783",
     "circulatingSupply": "2753.0730835417622621",
-    "price": 72.813,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 72.045,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Yum Brands xStock",
     "symbol": "YUMx",
     "sharesHeld": "9",
     "circulatingSupply": "4.499691465755145429",
-    "price": 144.925,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 145.9,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Public Service Enterprise xStock",
     "symbol": "PEGx",
     "sharesHeld": "4",
     "circulatingSupply": "0.843276554640725777",
-    "price": 70.9765,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 71.09,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Corteva xStock",
     "symbol": "CTVAx",
     "sharesHeld": "4",
     "circulatingSupply": "0.321383900554115322",
-    "price": 82.855,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 82.425,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Microchip Technology xStock",
     "symbol": "MCHPx",
     "sharesHeld": "4",
     "circulatingSupply": "0.438103800332920207",
-    "price": 71.9955,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 71.725,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Jabil xStock",
     "symbol": "JBLx",
     "sharesHeld": "5",
     "circulatingSupply": "0.146161695163536498",
-    "price": 303.53,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 300.9,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Westinghouse Air Brake Technologies xStock",
     "symbol": "WABx",
     "sharesHeld": "4",
     "circulatingSupply": "0.672093038874520182",
-    "price": 278.275,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 278.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "ONEOK xStock",
     "symbol": "OKEx",
     "sharesHeld": "4",
     "circulatingSupply": "0.774600426099687582",
-    "price": 97.14,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 97.865,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "State Street xStock",
     "symbol": "STTx",
     "sharesHeld": "4",
     "circulatingSupply": "0.628399951195699375",
-    "price": 187.275,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 191.05,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Keurig Dr Pepper xStock",
     "symbol": "KDPx",
     "sharesHeld": "4",
     "circulatingSupply": "1.327521091925024406",
-    "price": 31.6455,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 31.68,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "American International xStock",
     "symbol": "AIGx",
     "sharesHeld": "4",
     "circulatingSupply": "0.847733057425060068",
-    "price": 75.72,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 76.055,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Republic Services xStock",
     "symbol": "RSGx",
     "sharesHeld": "4",
     "circulatingSupply": "0.603911467756027853",
-    "price": 225.605,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 226.455,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "MetLife xStock",
     "symbol": "METx",
     "sharesHeld": "4",
     "circulatingSupply": "0.381074998136078103",
-    "price": 97.165,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 96.885,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Edwards Lifesciences xStock",
     "symbol": "EWx",
     "sharesHeld": "4",
     "circulatingSupply": "0.286028298798642837",
-    "price": 85.31,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 85.325,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Carrier Global xStock",
     "symbol": "CARRx",
     "sharesHeld": "4",
     "circulatingSupply": "0.922281196800745267",
-    "price": 57.001,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 57.82,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cardinal Health xStock",
     "symbol": "CAHx",
     "sharesHeld": "4",
     "circulatingSupply": "0.597920316940393913",
-    "price": 233.435,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 234.91,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Delta Air Lines xStock",
     "symbol": "DALx",
     "sharesHeld": "6",
     "circulatingSupply": "1.985380354815199006",
-    "price": 79.655,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 80.69,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Autodesk xStock",
     "symbol": "ADSKx",
     "sharesHeld": "4",
     "circulatingSupply": "0.517046217312081129",
-    "price": 229.665,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 227.07,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Astera Labs xStock",
     "symbol": "ALABx",
     "sharesHeld": "974",
     "circulatingSupply": "933.23799391905798309",
-    "price": 262.575,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 258.575,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "AutoZone xStock",
     "symbol": "AZOx",
     "sharesHeld": "5",
     "circulatingSupply": "0.495991822915464707",
-    "price": 2950.275,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 2955.4,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "AMETEK xStock",
@@ -3516,16 +3516,16 @@
     "symbol": "FITBx",
     "sharesHeld": "5",
     "circulatingSupply": "0.860031580426547255",
-    "price": 54.27,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 54.225,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Targa Resources xStock",
     "symbol": "TRGPx",
     "sharesHeld": "4",
     "circulatingSupply": "0.762109455890369224",
-    "price": 288.15,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 293,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Devon Energy xStock",
@@ -3540,176 +3540,176 @@
     "symbol": "AJGx",
     "sharesHeld": "5",
     "circulatingSupply": "0.669843529327053171",
-    "price": 251.945,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 247.15,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Rockwell Automation xStock",
     "symbol": "ROKx",
     "sharesHeld": "187",
     "circulatingSupply": "173.16406358919340991",
-    "price": 418.27,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 418.975,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Realty Income xStock",
     "symbol": "Ox",
     "sharesHeld": "14",
     "circulatingSupply": "4.234671985099559026",
-    "price": 59.358,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 59.335,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Regeneron Pharmaceuticals xStock",
     "symbol": "REGNx",
     "sharesHeld": "6",
     "circulatingSupply": "0.654872577924038491",
-    "price": 796.91,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 787.57,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ciena xStock",
     "symbol": "CIENx",
     "sharesHeld": "370",
     "circulatingSupply": "352.87621056019003085",
-    "price": 325.365,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 322.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Dominion Energy xStock",
     "symbol": "Dx",
     "sharesHeld": "5",
     "circulatingSupply": "1.113650741429239394",
-    "price": 64.7725,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 64.655,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Moody's xStock",
     "symbol": "MCOx",
     "sharesHeld": "4",
     "circulatingSupply": "0.535916315411927843",
-    "price": 473.8,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 475,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Sempra xStock",
     "symbol": "SREx",
     "sharesHeld": "5",
     "circulatingSupply": "1.031940048512010146",
-    "price": 83.256,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 83.11,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Travelers Companies xStock",
     "symbol": "TRVx",
     "sharesHeld": "5",
     "circulatingSupply": "0.711608598692771239",
-    "price": 376.245,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 379.16,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "EOG Resources xStock",
     "symbol": "EOGx",
     "sharesHeld": "5",
     "circulatingSupply": "0.7198838989733852",
-    "price": 149.04,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 149.615,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "L3Harris Technologies xStock",
     "symbol": "LHXx",
     "sharesHeld": "5",
     "circulatingSupply": "0.657442582471504834",
-    "price": 248.215,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 250.59,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Simon Property xStock",
     "symbol": "SPGx",
     "sharesHeld": "5",
     "circulatingSupply": "0.702920431518364983",
-    "price": 204.775,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 205.055,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "W.W. Grainger xStock",
     "symbol": "GWWx",
     "sharesHeld": "5",
     "circulatingSupply": "0.43830353145345248",
-    "price": 1276.52,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1277.875,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Sherwin-Williams xStock",
     "symbol": "SHWx",
     "sharesHeld": "5",
     "circulatingSupply": "0.621996580086271067",
-    "price": 325.24,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 324.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Monolithic Power Systems xStock",
     "symbol": "MPWRx",
     "sharesHeld": "5",
     "circulatingSupply": "0.536526301913367055",
-    "price": 1156.6245,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1148,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Marathon Petroleum xStock",
     "symbol": "MPCx",
     "sharesHeld": "5",
     "circulatingSupply": "0.618606651973758837",
-    "price": 392.58,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 397,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Apollo Global Management xStock",
     "symbol": "APOx",
     "sharesHeld": "5",
     "circulatingSupply": "0.857883257076824321",
-    "price": 127.075,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 127.3,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Comfort Systems USA xStock",
     "symbol": "FIXx",
     "sharesHeld": "7",
     "circulatingSupply": "0.429137916065570381",
-    "price": 1593.2445,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1588.7,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ford Motor xStock",
     "symbol": "Fx",
     "sharesHeld": "14",
     "circulatingSupply": "3.685941378210226648",
-    "price": 13.835,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 13.87,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "KKR xStock",
     "symbol": "KKRx",
     "sharesHeld": "5",
     "circulatingSupply": "0.85113638666358438",
-    "price": 101.095,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 103,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Northrop Grumman xStock",
     "symbol": "NOCx",
     "sharesHeld": "6",
     "circulatingSupply": "0.565856018082632044",
-    "price": 526.73,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 529.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Air Products and Chemicals xStock",
     "symbol": "APDx",
     "sharesHeld": "5",
     "circulatingSupply": "0.735158762033422296",
-    "price": 288.695,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 287.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Digital Realty Trust xStock",
@@ -3724,80 +3724,80 @@
     "symbol": "TFCx",
     "sharesHeld": "5",
     "circulatingSupply": "1.033480977092791115",
-    "price": 50.0985,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 50.165,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cintas xStock",
     "symbol": "CTASx",
     "sharesHeld": "5",
     "circulatingSupply": "0.228902801577165414",
-    "price": 200.815,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 200.745,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Keysight Technologies xStock",
     "symbol": "KEYSx",
     "sharesHeld": "5",
     "circulatingSupply": "0.551101472787725627",
-    "price": 320.159,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 317.31,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Nucor xStock",
     "symbol": "NUEx",
     "sharesHeld": "5",
     "circulatingSupply": "0.680875025660229741",
-    "price": 255.665,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 254.72,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Coherent xStock",
     "symbol": "COHRx",
     "sharesHeld": "2161",
     "circulatingSupply": "2089.7051613799223841",
-    "price": 273.238,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 270.575,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Allstate xStock",
     "symbol": "ALLx",
     "sharesHeld": "5",
     "circulatingSupply": "0.674804472910232723",
-    "price": 256.6315,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 257.95,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "PACCAR xStock",
     "symbol": "PCARx",
     "sharesHeld": "5",
     "circulatingSupply": "0.461945732812830548",
-    "price": 121.665,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 122.91,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "HCA Healthcare xStock",
     "symbol": "HCAx",
     "sharesHeld": "5",
     "circulatingSupply": "0.51942866371876277",
-    "price": 420.95,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 423.95,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "American Electric Power xStock",
     "symbol": "AEPx",
     "sharesHeld": "6",
     "circulatingSupply": "0.910231776049468981",
-    "price": 122.22,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 121.973,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Motorola Solutions xStock",
     "symbol": "MSIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.678389155500581079",
-    "price": 476.85,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 467.805,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ecolab xStock",
@@ -3812,416 +3812,416 @@
     "symbol": "CLx",
     "sharesHeld": "5",
     "circulatingSupply": "0.930836044559297451",
-    "price": 88.2,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 88.215,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Norfolk Southern xStock",
     "symbol": "NSCx",
     "sharesHeld": "5",
     "circulatingSupply": "0.624523470354762048",
-    "price": 320.09,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 320.775,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "TransDigm xStock",
     "symbol": "TDGx",
     "sharesHeld": "5",
     "circulatingSupply": "0.118612631846099893",
-    "price": 1114.235,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1118.53,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "United Rentals xStock",
     "symbol": "URIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.524456473856764313",
-    "price": 994.175,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 991.495,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Hewlett Packard Enterprise xStock",
     "symbol": "HPEx",
     "sharesHeld": "2283",
     "circulatingSupply": "2261.7787355919069643",
-    "price": 56.845,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 55.55,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Boston Scientific xStock",
     "symbol": "BSXx",
     "sharesHeld": "109",
     "circulatingSupply": "105.01645324432020491",
-    "price": 44.644,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 45.075,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Valero Energy xStock",
     "symbol": "VLOx",
     "sharesHeld": "5",
     "circulatingSupply": "0.223584739051512779",
-    "price": 380.77,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 383.545,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "FedEx xStock",
     "symbol": "FDXx",
     "sharesHeld": "6",
     "circulatingSupply": "0.550238364236177496",
-    "price": 310.7735,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 312.505,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Intuit xStock",
     "symbol": "INTUx",
     "sharesHeld": "8",
     "circulatingSupply": "1.141418658837136123",
-    "price": 337.765,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 338.385,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Hilton Worldwide xStock",
     "symbol": "HLTx",
     "sharesHeld": "5",
     "circulatingSupply": "0.547110839045566421",
-    "price": 310.3525,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 309.105,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "O'Reilly Automotive xStock",
     "symbol": "ORLYx",
     "sharesHeld": "5",
     "circulatingSupply": "1.023807569381199317",
-    "price": 87.05,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 87.62,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Illinois Tool Works xStock",
     "symbol": "ITWx",
     "sharesHeld": "5",
     "circulatingSupply": "0.568529202968755896",
-    "price": 269.734,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 269.11,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ross Stores xStock",
     "symbol": "ROSTx",
     "sharesHeld": "5",
     "circulatingSupply": "0.687940793486089689",
-    "price": 230.4,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 230.865,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Phillips 66 xStock",
     "symbol": "PSXx",
     "sharesHeld": "5",
     "circulatingSupply": "0.685936504844529064",
-    "price": 255.795,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 257.88,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Intercontinental Exchange xStock",
     "symbol": "ICEx",
     "sharesHeld": "797",
     "circulatingSupply": "403.01466719155913534",
-    "price": 157.425,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 157.66,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Cigna xStock",
     "symbol": "CIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.573916558675913504",
-    "price": 288.57,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 288.895,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "General Motors xStock",
     "symbol": "GMx",
     "sharesHeld": "4",
     "circulatingSupply": "1.064871846828898882",
-    "price": 86.285,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 87.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Snowflake xStock",
     "symbol": "SNOWx",
     "sharesHeld": "1005",
     "circulatingSupply": "951.36067019824847123",
-    "price": 334.0745,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 331.605,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Waste Management xStock",
     "symbol": "WMx",
     "sharesHeld": "6",
     "circulatingSupply": "0.303778748038120627",
-    "price": 217.815,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 219.065,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Emerson Electric xStock",
     "symbol": "EMRx",
     "sharesHeld": "5",
     "circulatingSupply": "0.71620600559030215",
-    "price": 148.065,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 148.01,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Elevance Health xStock",
     "symbol": "ELVx",
     "sharesHeld": "5",
     "circulatingSupply": "0.602516326911076284",
-    "price": 423.585,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 419.105,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "3M xStock",
     "symbol": "MMMx",
     "sharesHeld": "5",
     "circulatingSupply": "0.757086499643521689",
-    "price": 161.925,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 161.985,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CSX xStock",
     "symbol": "CSXx",
     "sharesHeld": "5",
     "circulatingSupply": "1.358901990728785469",
-    "price": 48.697,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 48.745,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Synopsys xStock",
     "symbol": "SNPSx",
     "sharesHeld": "169",
     "circulatingSupply": "164.31156011981818348",
-    "price": 386.573,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 382.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "American Tower xStock",
     "symbol": "AMTx",
     "sharesHeld": "5",
     "circulatingSupply": "0.75973101270355138",
-    "price": 177.7,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 177.75,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Fortinet xStock",
     "symbol": "FTNTx",
     "sharesHeld": "5",
     "circulatingSupply": "0.714093436987061206",
-    "price": 170.165,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 169.695,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Blackstone xStock",
     "symbol": "BXx",
     "sharesHeld": "737",
     "circulatingSupply": "722.95182322757358319",
-    "price": 127.469,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 128.445,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Automatic Data Processing xStock",
     "symbol": "ADPx",
     "sharesHeld": "5",
     "circulatingSupply": "0.666248990610052892",
-    "price": 275.755,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 275.815,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "PNC Financial Services xStock",
     "symbol": "PNCx",
     "sharesHeld": "5",
     "circulatingSupply": "0.674591816424227122",
-    "price": 242.2465,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 242.68,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Marsh xStock",
     "symbol": "MRSHx",
     "sharesHeld": "5",
     "circulatingSupply": "0.732921182669999565",
-    "price": 179.415,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 180.905,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Williams Companies xStock",
     "symbol": "WMBx",
     "sharesHeld": "5",
     "circulatingSupply": "1.221739322551522709",
-    "price": 72.4405,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 72.395,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cummins xStock",
     "symbol": "CMIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.479552396918419054",
-    "price": 537.335,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 542.75,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Freeport-McMoRan xStock",
     "symbol": "FCXx",
     "sharesHeld": "5",
     "circulatingSupply": "1.123741987560216209",
-    "price": 69.615,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 69.65,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Southern xStock",
     "symbol": "SOx",
     "sharesHeld": "5",
     "circulatingSupply": "1.003720420281000587",
-    "price": 86.8175,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 86.915,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "McKesson xStock",
     "symbol": "MCKx",
     "sharesHeld": "5",
     "circulatingSupply": "0.556057739537432367",
-    "price": 902.88,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 915.45,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cadence Design Systems xStock",
     "symbol": "CDNSx",
     "sharesHeld": "5",
     "circulatingSupply": "0.646081027687651576",
-    "price": 281.8195,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 279.87,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "U.S. Bancorp xStock",
     "symbol": "USBx",
     "sharesHeld": "5",
     "circulatingSupply": "1.353705903646284119",
-    "price": 62.433,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 62.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "General Dynamics xStock",
     "symbol": "GDx",
     "sharesHeld": "8",
-    "circulatingSupply": "1.292425098505568139",
-    "price": 356,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "1.055280698637568139",
+    "price": 357.38,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Stryker xStock",
     "symbol": "SYKx",
     "sharesHeld": "26",
     "circulatingSupply": "20.679721526334308896",
-    "price": 281.655,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 283,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Equinix xStock",
     "symbol": "EQIXx",
     "sharesHeld": "6",
     "circulatingSupply": "0.447200537151421729",
-    "price": 1004.86,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1001.6,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "ServiceNow xStock",
     "symbol": "NOWx",
     "sharesHeld": "2068",
     "circulatingSupply": "2044.0257145196761108",
-    "price": 142.595,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 141.85,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Howmet Aerospace xStock",
     "symbol": "HWMx",
     "sharesHeld": "7",
     "circulatingSupply": "0.571925847317994961",
-    "price": 228.34,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 229.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Duke Energy xStock",
     "symbol": "DUKx",
     "sharesHeld": "6",
     "circulatingSupply": "0.794104035458858588",
-    "price": 118.91,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 119.255,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Lockheed Martin xStock",
     "symbol": "LMTx",
     "sharesHeld": "9",
     "circulatingSupply": "1.814974310293755285",
-    "price": 527.59,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 530.18,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Vertex Pharmaceuticals xStock",
     "symbol": "VRTXx",
     "sharesHeld": "6",
     "circulatingSupply": "0.567508723975122262",
-    "price": 519.325,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 519.12,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Newmont xStock",
     "symbol": "NEMx",
     "sharesHeld": "5",
     "circulatingSupply": "0.889554251954837924",
-    "price": 123.1765,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 122.87,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Starbucks xStock",
     "symbol": "SBUXx",
     "sharesHeld": "5",
     "circulatingSupply": "1.040302868278473653",
-    "price": 98.8225,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 99.23,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Capital One Financial xStock",
     "symbol": "COFx",
     "sharesHeld": "5",
     "circulatingSupply": "0.623612529495309343",
-    "price": 207.01,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 207.685,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "ConocoPhillips xStock",
     "symbol": "COPx",
     "sharesHeld": "5",
     "circulatingSupply": "0.363324354262866033",
-    "price": 137.247,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 136.86,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Bristol-Myers Squibb xStock",
     "symbol": "BMYx",
     "sharesHeld": "5",
     "circulatingSupply": "1.21101146124485995",
-    "price": 64.01,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 64.12,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Parker Hannifin xStock",
     "symbol": "PHx",
     "sharesHeld": "5",
     "circulatingSupply": "0.528976971150700147",
-    "price": 927.383,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 924.605,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Deere xStock",
     "symbol": "DEx",
     "sharesHeld": "7",
     "circulatingSupply": "1.968707025288585614",
-    "price": 681.685,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 681.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Altria xStock",
@@ -4236,88 +4236,88 @@
     "symbol": "CVSx",
     "sharesHeld": "5",
     "circulatingSupply": "0.907651456248460588",
-    "price": 95.625,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 95.53,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Welltower xStock",
     "symbol": "WELLx",
     "sharesHeld": "5",
     "circulatingSupply": "0.687106654376241551",
-    "price": 235.275,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 233.18,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Progressive xStock",
     "symbol": "PGRx",
     "sharesHeld": "5",
     "circulatingSupply": "0.692507060107555561",
-    "price": 220.23,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 220.64,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Prologis xStock",
     "symbol": "PLDx",
     "sharesHeld": "5",
     "circulatingSupply": "0.910273799514121551",
-    "price": 135.26,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 135.825,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Lowe's Companies xStock",
     "symbol": "LOWx",
     "sharesHeld": "5",
     "circulatingSupply": "0.801244480416961705",
-    "price": 198.62,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 198.58,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "TJX Companies xStock",
     "symbol": "TJXx",
     "sharesHeld": "6",
     "circulatingSupply": "0.426871223330213783",
-    "price": 126.3,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 126.085,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "The Walt Disney xStock",
     "symbol": "DISx",
     "sharesHeld": "6",
     "circulatingSupply": "0.86141305628137985",
-    "price": 109.095,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 108.685,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Corning xStock",
     "symbol": "GLWx",
-    "sharesHeld": "3486",
-    "circulatingSupply": "3427.9688809438693603",
-    "price": 145.005,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "3558",
+    "circulatingSupply": "3499.2636218425404813",
+    "price": 145.34,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Union Pacific xStock",
     "symbol": "UNPx",
     "sharesHeld": "5",
     "circulatingSupply": "0.643644985687851347",
-    "price": 284.245,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 283.99,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Charles Schwab xStock",
     "symbol": "SCHWx",
     "sharesHeld": "5",
     "circulatingSupply": "0.528338868700514967",
-    "price": 107.0165,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 107.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Intuitive Surgical xStock",
     "symbol": "ISRGx",
     "sharesHeld": "381",
     "circulatingSupply": "367.84226707294584568",
-    "price": 375.71,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 378.265,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Gilead Sciences xStock",
@@ -4331,113 +4331,113 @@
     "name": "Boeing xStock",
     "symbol": "BAx",
     "sharesHeld": "8",
-    "circulatingSupply": "0.913996216371074431",
-    "price": 210.02,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "0.81975208862062982",
+    "price": 210.185,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "NextEra Energy xStock",
     "symbol": "NEEx",
     "sharesHeld": "6",
     "circulatingSupply": "0.638569271701438045",
-    "price": 82.185,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 82,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Amgen xStock",
     "symbol": "AMGNx",
     "sharesHeld": "5",
     "circulatingSupply": "0.595395650781973974",
-    "price": 380.16,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 381.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Verizon Communications xStock",
     "symbol": "VZx",
     "sharesHeld": "5",
     "circulatingSupply": "1.455790487292550971",
-    "price": 51.255,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 51.2275,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Qualcomm xStock",
     "symbol": "QCOMx",
     "sharesHeld": "2953",
     "circulatingSupply": "2922.2241947600445287",
-    "price": 180.345,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 180.4,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "RTX xStock",
     "symbol": "RTXx",
     "sharesHeld": "6",
     "circulatingSupply": "0.704281040307447567",
-    "price": 194.285,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 195.3175,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Morgan Stanley xStock",
     "symbol": "MSx",
     "sharesHeld": "5",
     "circulatingSupply": "0.70985171690526679",
-    "price": 206.331,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 206.695,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Citigroup xStock",
     "symbol": "Cx",
     "sharesHeld": "6",
     "circulatingSupply": "0.765434174997588873",
-    "price": 133.195,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 136.4475,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Texas Instruments xStock",
     "symbol": "TXNx",
     "sharesHeld": "7",
     "circulatingSupply": "0.759099459612501193",
-    "price": 264.68,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 264.165,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Western Digital xStock",
     "symbol": "WDCx",
     "sharesHeld": "1436",
     "circulatingSupply": "1358.7751228371718215",
-    "price": 432.545,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 431.05,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "GE Aerospace xStock",
     "symbol": "GEx",
     "sharesHeld": "9",
     "circulatingSupply": "1.056839860606451172",
-    "price": 316.875,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 317.795,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Analog Devices xStock",
     "symbol": "ADIx",
     "sharesHeld": "5",
     "circulatingSupply": "0.527456507049749593",
-    "price": 363.425,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 362.665,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Wells Fargo xStock",
     "symbol": "WFCx",
     "sharesHeld": "6",
     "circulatingSupply": "1.04691706381419915",
-    "price": 87.645,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 88.87,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Caterpillar xStock",
     "symbol": "CATx",
     "sharesHeld": "9",
     "circulatingSupply": "0.942703933019957896",
-    "price": 786.785,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 785.755,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "RoboStrategy xStock",
@@ -4450,42 +4450,42 @@
   {
     "name": "SpaceX xStock",
     "symbol": "SPCXx",
-    "sharesHeld": "264823",
-    "circulatingSupply": "264355.09678834332682",
-    "price": 151.77,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "265554",
+    "circulatingSupply": "265082.96746964726264",
+    "price": 148.615,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Medline xStock",
     "symbol": "MDLNx",
     "sharesHeld": "3",
     "circulatingSupply": "0.28985507",
-    "price": 32.38,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 32.745,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Enhanced Group xStock",
     "symbol": "ENHAx",
     "sharesHeld": "68425",
     "circulatingSupply": "62425.033572589574655",
-    "price": 1.575,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1.58,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "iShares MSCI South Korea xStock",
     "symbol": "EWYx",
-    "sharesHeld": "11878",
-    "circulatingSupply": "11811.067560826211822",
-    "price": 178.99,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "11830",
+    "circulatingSupply": "11763.067560826211822",
+    "price": 179.21,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Global X DAX Germany xStock",
     "symbol": "DAXx",
     "sharesHeld": "2434",
     "circulatingSupply": "2426.9268687206998294",
-    "price": 45.73,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 46,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Strive, Inc. Series A Preferred xStock",
@@ -4500,80 +4500,80 @@
     "symbol": "SOXXx",
     "sharesHeld": "328",
     "circulatingSupply": "305.87305354146666901",
-    "price": 501.955,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 500.025,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "iShares MSCI United Kingdom xStock",
     "symbol": "EWUx",
     "sharesHeld": "2529",
     "circulatingSupply": "2366.6152262599424513",
-    "price": 48.055,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 49.955,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "iShares MSCI Germany xStock",
     "symbol": "EWGx",
     "sharesHeld": "2607",
     "circulatingSupply": "2534.12511621176854",
-    "price": 42.817,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 42.3,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "iShares MSCI France xStock",
     "symbol": "EWQx",
     "sharesHeld": "2610",
     "circulatingSupply": "2476.3404711264477256",
-    "price": 44.665,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 45.355,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Volatility Shares 2x Bitcoin Strategy xStock",
     "symbol": "BITXx",
     "sharesHeld": "17811",
     "circulatingSupply": "17786.494397128207689",
-    "price": 17.755,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 17.445,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Vanguard S&P 500 xStock",
     "symbol": "VOOx",
-    "sharesHeld": "1287",
-    "circulatingSupply": "1228.6638549697040598",
-    "price": 700.8955,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "1288",
+    "circulatingSupply": "1228.6977122783665664",
+    "price": 699.655,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "VanEck Uranium and Nuclear xStock",
     "symbol": "NLRx",
     "sharesHeld": "1017",
     "circulatingSupply": "984.64289923205532692",
-    "price": 109.845,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 110.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "VanEck Gold Miners xStock",
     "symbol": "GDXx",
     "sharesHeld": "10858",
     "circulatingSupply": "10830.312192150593496",
-    "price": 94.575,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 94.035,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SPDR EURO STOXX 50 xStock",
     "symbol": "FEZx",
     "sharesHeld": "1498",
     "circulatingSupply": "1480.130746703989398",
-    "price": 69.065,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 68.865,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Janus Henderson AAA CLO xStock",
     "symbol": "JAAAx",
     "sharesHeld": "1996",
     "circulatingSupply": "1995.7407189272442637",
-    "price": 50.615,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 50.625,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "JPMorgan Ultra-Short Income xStock",
@@ -4588,8 +4588,8 @@
     "symbol": "FLQMx",
     "sharesHeld": "2195",
     "circulatingSupply": "2018.2928816609936164",
-    "price": 60.005,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 60.1,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Franklin U.S. Equity Index xStock",
@@ -4612,16 +4612,16 @@
     "symbol": "FLBLx",
     "sharesHeld": "4798",
     "circulatingSupply": "4726.4304687727114043",
-    "price": 22.975,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 23.105,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Franklin Intelligent Machines xStock",
     "symbol": "IQMx",
     "sharesHeld": "1498",
     "circulatingSupply": "1121.0157565945556259",
-    "price": 102.55,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 102.24,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Franklin ClearBridge Enhanced Income xStock",
@@ -4636,22 +4636,22 @@
     "symbol": "FAAAx",
     "sharesHeld": "2775",
     "circulatingSupply": "2275.7898577819927464",
-    "price": 50.34,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 50.355,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Direxion Semiconductor Bull 3X xStock",
     "symbol": "SOXLx",
-    "sharesHeld": "57950",
-    "circulatingSupply": "57668.419365036282484",
+    "sharesHeld": "58711",
+    "circulatingSupply": "58424.379745126282484",
     "price": 104.545,
     "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
   },
   {
     "name": "Vida Global xStock",
     "symbol": "VIDAx",
-    "sharesHeld": "215323",
-    "circulatingSupply": "196965.15309685927575",
+    "sharesHeld": "217261",
+    "circulatingSupply": "198876.07954096927575",
     "price": 2.03,
     "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
   },
@@ -4660,88 +4660,88 @@
     "symbol": "RCATx",
     "sharesHeld": "13281",
     "circulatingSupply": "13223.674757596616047",
-    "price": 7.855,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 7.835,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Ondas xStock",
     "symbol": "ONDSx",
     "sharesHeld": "64386",
     "circulatingSupply": "64130.850273456317171",
-    "price": 7.295,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 7.225,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "IREN xStock",
     "symbol": "IRENx",
     "sharesHeld": "18990",
     "circulatingSupply": "18604.409787474416404",
-    "price": 44.288,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 43.26,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Hims & Hers xStock",
     "symbol": "HIMSx",
     "sharesHeld": "15714",
     "circulatingSupply": "15630.814797524880527",
-    "price": 29.34,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 28.815,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cloudflare xStock",
     "symbol": "NETx",
-    "sharesHeld": "561",
-    "circulatingSupply": "536.23784544767377017",
-    "price": 331.975,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "562",
+    "circulatingSupply": "536.28476098951252719",
+    "price": 329.07,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cheniere Energy xStock",
     "symbol": "LNGx",
     "sharesHeld": "418",
     "circulatingSupply": "387.30669463187630405",
-    "price": 276.2,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 275.14,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "VanEck Agribusiness ETF xStock",
     "symbol": "MOOx",
     "sharesHeld": "1355",
     "circulatingSupply": "1290.1342254726917466",
-    "price": 86.45,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 88.585,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SPDR S&P Oil & Gas Exploration & Production ETF xStock",
     "symbol": "XOPx",
     "sharesHeld": "1914",
     "circulatingSupply": "1896.7649053069016047",
-    "price": 194.6455,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 193.835,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Vanguard FTSE Europe ETF xStock",
     "symbol": "VGKx",
     "sharesHeld": "1279",
     "circulatingSupply": "1274.4477603628199708",
-    "price": 89.5155,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 89.615,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "iShares U.S. Aerospace & Defense ETF xStock",
     "symbol": "ITAx",
     "sharesHeld": "684",
     "circulatingSupply": "658.03227828246678532",
-    "price": 216.53,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 217.33,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Vanguard Total International Stock ETF xStock",
     "symbol": "VXUSx",
     "sharesHeld": "1780",
     "circulatingSupply": "1769.4643057850354441",
-    "price": 86.375,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 86.37,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "iShares 0-3 Month Treasury Bond ETF xStock",
@@ -4749,239 +4749,239 @@
     "sharesHeld": "2890",
     "circulatingSupply": "2889.9726759092789759",
     "price": 100.525,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Vanguard Growth ETF xStock",
     "symbol": "VUGx",
     "sharesHeld": "3190",
     "circulatingSupply": "3155.0255360730808919",
-    "price": 88.065,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 87.79,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "VanEck Semiconductor ETF xStock",
     "symbol": "SMHx",
     "sharesHeld": "1690",
     "circulatingSupply": "1624.3767031406281675",
-    "price": 545.418,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 544.1,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Global X Uranium ETF xStock",
     "symbol": "URAx",
     "sharesHeld": "6073",
     "circulatingSupply": "6017.8350798766950261",
-    "price": 42.3,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 42.31,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Energy Select Sector SPDR Fund xStock",
     "symbol": "XLEx",
     "sharesHeld": "8700",
     "circulatingSupply": "8650.0149058463902472",
-    "price": 64.6505,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 64.62,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Fundrise Innovation Fund, LLC xStock",
     "symbol": "VCXx",
     "sharesHeld": "3667",
     "circulatingSupply": "3553.5540005182425964",
-    "price": 32.675,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 32.597,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Sandisk Corporation xStock",
     "symbol": "SNDKx",
-    "sharesHeld": "9541",
-    "circulatingSupply": "9438.8066709599625298",
-    "price": 1580.62,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "9567",
+    "circulatingSupply": "9412.2939678199625298",
+    "price": 1564.03,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Lumentum Holdings Inc. xStock",
     "symbol": "LITEx",
-    "sharesHeld": "2425",
-    "circulatingSupply": "2393.66033171",
-    "price": 847.235,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "2447",
+    "circulatingSupply": "2412.6391579",
+    "price": 846.145,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "NuScale Power Corporation xStock",
     "symbol": "SMRx",
     "sharesHeld": "21957",
     "circulatingSupply": "21917.8618895",
-    "price": 8.655,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 8.515,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Applied Digital Corporation xStock",
     "symbol": "APLDx",
-    "sharesHeld": "9052",
-    "circulatingSupply": "8996.44665859",
-    "price": 25.12,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "10307",
+    "circulatingSupply": "10249.99013893",
+    "price": 24.695,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Quanta Services, Inc. xStock",
     "symbol": "PWRx",
     "sharesHeld": "185",
     "circulatingSupply": "177.08365604370263999",
-    "price": 623.955,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 635.64,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Teradyne, Inc. xStock",
     "symbol": "TERx",
     "sharesHeld": "904",
-    "circulatingSupply": "863.9838424874784999",
-    "price": 334.965,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "863.98384248747850015",
+    "price": 332.55,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Eaton Corporation plc xStock",
     "symbol": "ETNx",
     "sharesHeld": "365",
     "circulatingSupply": "360.42605853750279796",
-    "price": 392.785,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 396,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "KLA Corporation xStock",
     "symbol": "KLACx",
     "sharesHeld": "2027",
     "circulatingSupply": "1987.9550143464892211",
-    "price": 170.225,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 170.875,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "GE Vernova Inc. xStock",
     "symbol": "GEVx",
-    "sharesHeld": "1282",
-    "circulatingSupply": "1260.781930099916148",
-    "price": 875.275,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "1299",
+    "circulatingSupply": "1276.2863127685411992",
+    "price": 878.2,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Constellation Energy Corporation xStock",
     "symbol": "CEGx",
-    "sharesHeld": "644",
-    "circulatingSupply": "582.62531110584948301",
-    "price": 266.015,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "645",
+    "circulatingSupply": "583.19170813955361601",
+    "price": 265.455,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Super Micro Computer, Inc. xStock",
     "symbol": "SMCIx",
-    "sharesHeld": "21242",
-    "circulatingSupply": "20776.65248572562538",
-    "price": 37.6125,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "21414",
+    "circulatingSupply": "20947.95247453562538",
+    "price": 37.08,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Dell Technologies Inc. xStock",
     "symbol": "DELLx",
-    "sharesHeld": "2839",
-    "circulatingSupply": "2786.5016001306363626",
-    "price": 542.63,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "2830",
+    "circulatingSupply": "2774.3150218981619496",
+    "price": 539.05,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Vertiv Holdings Co xStock",
     "symbol": "VRTx",
     "sharesHeld": "2263",
     "circulatingSupply": "2184.0955930731349827",
-    "price": 238.393,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 238.9625,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Applied Materials, Inc. xStock",
     "symbol": "AMATx",
     "sharesHeld": "1435",
     "circulatingSupply": "1378.302004511714799",
-    "price": 427.6,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 427.42,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Lam Research Corporation xStock",
     "symbol": "LRCXx",
     "sharesHeld": "1176",
     "circulatingSupply": "1142.7369002419208537",
-    "price": 276.56,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 276.3,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Arista Networks, Inc. xStock",
     "symbol": "ANETx",
     "sharesHeld": "880",
     "circulatingSupply": "865.23667061",
-    "price": 190.65,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 189.475,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "USA Rare Earth Inc. xStock",
     "symbol": "USARx",
-    "sharesHeld": "39914",
-    "circulatingSupply": "39767.061998772045102",
-    "price": 15.935,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "40505",
+    "circulatingSupply": "40357.718564122045102",
+    "price": 15.72,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Energy Fuels Inc. xStock",
     "symbol": "UUUUx",
-    "sharesHeld": "15873",
-    "circulatingSupply": "15818.796188947313261",
+    "sharesHeld": "15876",
+    "circulatingSupply": "15820.874998443911737",
     "price": 12.355,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "abrdn Physical Platinum Shares xStock",
     "symbol": "PPLTx",
     "sharesHeld": "14425",
     "circulatingSupply": "14329.509627776972966",
-    "price": 16.025,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 15.91,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "abrdn Physical Palladium Shares xStock",
     "symbol": "PALLx",
     "sharesHeld": "6555",
     "circulatingSupply": "6522.8497146337161023",
-    "price": 23.3935,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 23.245,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Global X Copper Miners xStock",
     "symbol": "COPXx",
     "sharesHeld": "4986",
     "circulatingSupply": "4899.3566303531591397",
-    "price": 86.02,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 86.3175,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "KRAQ xStock",
     "symbol": "KRAQx",
-    "sharesHeld": "65639",
-    "circulatingSupply": "64938.291946981456305",
-    "price": 10.03,
-    "priceUpdatedAt": "2026-09-14T15:51:07+00:00"
+    "sharesHeld": "65419",
+    "circulatingSupply": "64711.047244609566245",
+    "price": 10.155,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Bitgo xStock",
     "symbol": "BTGOx",
     "sharesHeld": "19458",
     "circulatingSupply": "18702.929716303933454",
-    "price": 7.88,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 7.855,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "iShares Silver Trust xStock",
     "symbol": "SLVx",
-    "sharesHeld": "21884",
-    "circulatingSupply": "21690.295069133303453",
-    "price": 57.585,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "21935",
+    "circulatingSupply": "21737.099518649350472",
+    "price": 57.01,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Strategy PP Fixed xStock",
@@ -5004,152 +5004,152 @@
     "symbol": "VTx",
     "sharesHeld": "2505",
     "circulatingSupply": "2443.5488419083016348",
-    "price": 159.175,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 158.875,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Schwab International Equity xStock",
     "symbol": "SCHFx",
     "sharesHeld": "7094",
     "circulatingSupply": "7059.4345689756629516",
-    "price": 27.945,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 27.985,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Core MSCI Emerging Markets xStock",
     "symbol": "IEMGx",
     "sharesHeld": "3193",
     "circulatingSupply": "3179.265880732962848",
-    "price": 80.905,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 80.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "S&P Small Cap xStock",
     "symbol": "IJRx",
     "sharesHeld": "1002",
     "circulatingSupply": "995.76528343601293883",
-    "price": 141.615,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 141.38,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Russell 2000 xStock",
     "symbol": "IWMx",
     "sharesHeld": "2328",
     "circulatingSupply": "2224.8901671647961773",
-    "price": 288.755,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 288.01,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "T-Mobile xStock",
     "symbol": "TMUSx",
     "sharesHeld": "793",
     "circulatingSupply": "782.54762353105350805",
-    "price": 183.7,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 181.425,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Bit Digital xStock",
     "symbol": "BTBTx",
     "sharesHeld": "80719",
     "circulatingSupply": "78926.086529993407944",
-    "price": 1.575,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1.54,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Hut 8 xStock",
     "symbol": "HUTx",
     "sharesHeld": "1260",
     "circulatingSupply": "1212.12623375",
-    "price": 92.58,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 91.05,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Core Scientific xStock",
     "symbol": "CORZx",
     "sharesHeld": "6680",
     "circulatingSupply": "6613.85824387",
-    "price": 17.425,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 17.07,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Rocket Lab xStock",
     "symbol": "RKLBx",
     "sharesHeld": "24771",
     "circulatingSupply": "24535.01289694867139",
-    "price": 62.7425,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 62.58,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Planet Labs xStock",
     "symbol": "PLx",
     "sharesHeld": "7072",
     "circulatingSupply": "6985.84228485",
-    "price": 16.265,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 16.225,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Virgin Galactic xStock",
     "symbol": "SPCEx",
     "sharesHeld": "50241",
     "circulatingSupply": "49513.73177908",
-    "price": 3.015,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 3.005,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Warner Bros. Discovery xStock",
     "symbol": "WBDx",
     "sharesHeld": "3821",
     "circulatingSupply": "3808.38473949",
-    "price": 28.145,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 28.1,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Micron Technology xStock",
     "symbol": "MUx",
-    "sharesHeld": "18295.12",
-    "circulatingSupply": "18250.985355037660572",
-    "price": 931.4825,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "18319",
+    "circulatingSupply": "18274.606066575127223",
+    "price": 930.357,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Roblox xStock",
     "symbol": "RBLXx",
-    "sharesHeld": "3125",
-    "circulatingSupply": "3078.5682209977764642",
-    "price": 51.1205,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "3132",
+    "circulatingSupply": "3079.5416098077764642",
+    "price": 51.145,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Palo Alto Networks xStock",
     "symbol": "PANWx",
     "sharesHeld": "478",
     "circulatingSupply": "463.11843174",
-    "price": 376.91,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 373.67,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "ASML xStock",
     "symbol": "ASMLx",
-    "sharesHeld": "496",
-    "circulatingSupply": "463.62344643123233108",
-    "price": 1593.47,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "508",
+    "circulatingSupply": "467.82693055126431348",
+    "price": 1589.2,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "AMD xStock",
     "symbol": "AMDx",
     "sharesHeld": "9093",
-    "circulatingSupply": "9020.8854301924097068",
-    "price": 496.635,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "9020.8851499024097068",
+    "price": 493.7475,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "TSMC xStock",
     "symbol": "TSMx",
     "sharesHeld": "8578",
     "circulatingSupply": "8522.9360155521922309",
-    "price": 421.3225,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 419.795,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Wendy's xStock",
@@ -5157,365 +5157,365 @@
     "sharesHeld": "26862",
     "circulatingSupply": "26848.65405746621447",
     "price": 7.635,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "AST SpaceMobile xStock",
     "symbol": "ASTSx",
     "sharesHeld": "12374",
     "circulatingSupply": "12234.68963413",
-    "price": 60.525,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 59.95,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "PayPal xStock",
     "symbol": "PYPLx",
     "sharesHeld": "5623",
     "circulatingSupply": "5609.6681182429340755",
-    "price": 54.02,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 53.975,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CleanSpark xStock",
     "symbol": "CLSKx",
     "sharesHeld": "11390",
     "circulatingSupply": "11346.64809145",
-    "price": 13.5725,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 13.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SharpLink Gaming xStock",
     "symbol": "SBETx",
     "sharesHeld": "17368",
     "circulatingSupply": "17216.967311205315758",
-    "price": 9.165,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 9.005,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Uber xStock",
     "symbol": "UBERx",
     "sharesHeld": "9369",
-    "circulatingSupply": "9315.8714216551788972",
-    "price": 72.5055,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "9315.6076874651788972",
+    "price": 72.595,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Adobe xStock",
     "symbol": "ADBEx",
     "sharesHeld": "1985",
     "circulatingSupply": "1910.5475345755699679",
-    "price": 263.89,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 264.415,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "TeraWulf xStock",
     "symbol": "WULFx",
     "sharesHeld": "9046",
     "circulatingSupply": "8995.47833768",
-    "price": 15.905,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 15.5075,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Riot Platforms xStock",
     "symbol": "RIOTx",
     "sharesHeld": "5958",
     "circulatingSupply": "5900.9808929379973473",
-    "price": 21.315,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 20.945,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "MARA xStock",
     "symbol": "MARAx",
     "sharesHeld": "17136",
     "circulatingSupply": "17077.258495755039154",
-    "price": 11.895,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 11.48,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Oklo xStock",
     "symbol": "OKLOx",
-    "sharesHeld": "4532",
-    "circulatingSupply": "4500.8949032358851897",
-    "price": 36.72,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "4527",
+    "circulatingSupply": "4495.8883763958851897",
+    "price": 36.15,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Galaxy Digital xStock",
     "symbol": "GLXYx",
     "sharesHeld": "12907",
     "circulatingSupply": "12847.253341232092379",
-    "price": 24.24,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 24.16,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "TON xStock",
     "symbol": "TONXx",
     "sharesHeld": "176495",
     "circulatingSupply": "174214.12492402",
-    "price": 3.195,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 3.145,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Bitmine xStock",
     "symbol": "BMNRx",
-    "sharesHeld": "116764",
-    "circulatingSupply": "115862.39697915523251",
-    "price": 25.921,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "118322",
+    "circulatingSupply": "117368.92079603400836",
+    "price": 25.32,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "MicroStrategy xStock",
     "symbol": "MSTRx",
-    "sharesHeld": "549555.97",
-    "circulatingSupply": "549092.93935245355459",
-    "price": 137.07,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "550347.97",
+    "circulatingSupply": "550002.63176968563398",
+    "price": 134.165,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "TBLL xStock",
     "symbol": "TBLLx",
     "sharesHeld": "4235",
     "circulatingSupply": "4193.7381327477409853",
-    "price": 105.725,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 105.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "OPEN xStock",
     "symbol": "OPENx",
     "sharesHeld": "34132",
     "circulatingSupply": "34101.296302928682421",
-    "price": 2.825,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 2.785,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "DFDV xStock",
     "symbol": "DFDVx",
     "sharesHeld": "181401",
-    "circulatingSupply": "180974.59263008224395",
-    "price": 5.235,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "180974.18605255514825",
+    "price": 5.17,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Circle xStock",
     "symbol": "CRCLx",
-    "sharesHeld": "835981",
-    "circulatingSupply": "835809.94832865293514",
-    "price": 96.392,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "835829",
+    "circulatingSupply": "835617.42803994293514",
+    "price": 94.806,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Amber xStock",
     "symbol": "AMBRx",
     "sharesHeld": "216100",
     "circulatingSupply": "214576.10165239",
-    "price": 1.125,
-    "priceUpdatedAt": "2026-09-14T16:13:01+00:00"
+    "price": 1.09,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "TQQQ xStock",
     "symbol": "TQQQx",
-    "sharesHeld": "55325",
-    "circulatingSupply": "55005.647856823040574",
-    "price": 70.245,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "55321",
+    "circulatingSupply": "54994.941502001642218",
+    "price": 69.3355,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Gold xStock",
     "symbol": "GLDx",
-    "sharesHeld": "26407.99",
-    "circulatingSupply": "26046.189633296453617",
-    "price": 395.529,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "26438",
+    "circulatingSupply": "26054.289634526453617",
+    "price": 393.185,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Vanguard xStock",
     "symbol": "VTIx",
     "sharesHeld": "4707",
     "circulatingSupply": "4671.3394576529669375",
-    "price": 375.4795,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 374.94,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Nasdaq xStock",
     "symbol": "QQQx",
-    "sharesHeld": "51228",
-    "circulatingSupply": "51180.485130781320116",
-    "price": 712.4705,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "51058",
+    "circulatingSupply": "51010.290546910039318",
+    "price": 709.448,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "SP500 xStock",
     "symbol": "SPYx",
-    "sharesHeld": "78193.99856414",
-    "circulatingSupply": "77905.776365278587403",
-    "price": 762.4225,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "78895",
+    "circulatingSupply": "78401.680636290485332",
+    "price": 761.071,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Coinbase xStock",
     "symbol": "COINx",
-    "sharesHeld": "67898",
-    "circulatingSupply": "67775.488085758742572",
-    "price": 191.305,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "67773",
+    "circulatingSupply": "67629.860640338742571",
+    "price": 188,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Gamestop xStock",
     "symbol": "GMEx",
-    "sharesHeld": "60286",
-    "circulatingSupply": "58890.540847215771222",
-    "price": 21.6255,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "60818",
+    "circulatingSupply": "59295.988601422918712",
+    "price": 21.57,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Goldman Sachs xStock",
     "symbol": "GSx",
     "sharesHeld": "331",
     "circulatingSupply": "313.26066465681996998",
-    "price": 985.685,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 991.75,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "CrowdStrike xStock",
     "symbol": "CRWDx",
     "sharesHeld": "3540",
     "circulatingSupply": "3411.8318913957290949",
-    "price": 237.4295,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 235.18,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Robinhood xStock",
     "symbol": "HOODx",
-    "sharesHeld": "101143",
-    "circulatingSupply": "100641.16698399884767",
-    "price": 114.75,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "101215",
+    "circulatingSupply": "100704.47362818884767",
+    "price": 114.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Marvell xStock",
     "symbol": "MRVLx",
-    "sharesHeld": "33231",
-    "circulatingSupply": "33007.856748128351811",
-    "price": 223.684,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "33149",
+    "circulatingSupply": "32923.778737498545811",
+    "price": 221.285,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "AppLovin xStock",
     "symbol": "APPx",
     "sharesHeld": "2134",
     "circulatingSupply": "2070.2053272189563772",
-    "price": 335.05,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 332.8,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Palantir xStock",
     "symbol": "PLTRx",
-    "sharesHeld": "14524",
-    "circulatingSupply": "14270.619122206859302",
-    "price": 173.225,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "14570",
+    "circulatingSupply": "14301.700029446859301",
+    "price": 172.795,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Accenture xStock",
     "symbol": "ACNx",
     "sharesHeld": "1241",
     "circulatingSupply": "1220.4968824264257801",
-    "price": 193.045,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 193.43,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Intel xStock",
     "symbol": "INTCx",
-    "sharesHeld": "125524",
-    "circulatingSupply": "125008.8370177987072",
-    "price": 98.565,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "125435",
+    "circulatingSupply": "124916.8931421187072",
+    "price": 97.59,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Philip Morris xStock",
     "symbol": "PMx",
     "sharesHeld": "1185",
     "circulatingSupply": "1150.6638000057824559",
-    "price": 193.925,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 194.245,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Honeywell xStock",
     "symbol": "HONx",
     "sharesHeld": "864",
     "circulatingSupply": "843.12767314348230609",
-    "price": 198.92,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 201.695,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Medtronic xStock",
     "symbol": "MDTx",
     "sharesHeld": "1968",
     "circulatingSupply": "1963.0048695031391976",
-    "price": 93.2,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 93.515,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Comcast xStock",
     "symbol": "CMCSAx",
     "sharesHeld": "6835",
     "circulatingSupply": "6821.8032738636414098",
-    "price": 25.035,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 24.895,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "International Business Machines xStock",
     "symbol": "IBMx",
     "sharesHeld": "4455",
     "circulatingSupply": "4388.4548240621353762",
-    "price": 250.46,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 248.41,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Danaher xStock",
     "symbol": "DHRx",
     "sharesHeld": "1152",
     "circulatingSupply": "1130.4022922722041443",
-    "price": 203.35,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 203.455,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "McDonald's xStock",
     "symbol": "MCDx",
-    "sharesHeld": "6824",
-    "circulatingSupply": "6634.8281806880763404",
-    "price": 257.496,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "7278",
+    "circulatingSupply": "7023.3617341873327483",
+    "price": 257.835,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Netflix xStock",
     "symbol": "NFLXx",
     "sharesHeld": "16668",
-    "circulatingSupply": "16416.603605429659214",
-    "price": 80.4945,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "16416.597542229659214",
+    "price": 80.125,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Abbott xStock",
     "symbol": "ABTx",
     "sharesHeld": "2410",
     "circulatingSupply": "2394.3013778128190336",
-    "price": 102.923,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 103.35,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Bank of America xStock",
     "symbol": "BACx",
     "sharesHeld": "4069",
     "circulatingSupply": "3967.7392877324894908",
-    "price": 59.37,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 59.69,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Thermo Fisher xStock",
     "symbol": "TMOx",
     "sharesHeld": "377",
-    "circulatingSupply": "359.57619349815265412",
+    "circulatingSupply": "359.57619348812813112",
     "price": 610.52,
     "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
   },
@@ -5523,63 +5523,63 @@
     "name": "AstraZeneca xStock",
     "symbol": "AZNx",
     "sharesHeld": "1303",
-    "circulatingSupply": "1262.1455907640487887",
-    "price": 163.824,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "1262.1449116275325307",
+    "price": 162.65,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Salesforce xStock",
     "symbol": "CRMx",
     "sharesHeld": "2448",
-    "circulatingSupply": "2367.4998882905096439",
-    "price": 258.42,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "2367.4998882905096443",
+    "price": 258.665,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Linde xStock",
     "symbol": "LINx",
     "sharesHeld": "444",
     "circulatingSupply": "426.93253783800596779",
-    "price": 464.365,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 465.25,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Oracle xStock",
     "symbol": "ORCLx",
-    "sharesHeld": "21591",
-    "circulatingSupply": "21379.593406010879278",
-    "price": 144.0925,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "21736",
+    "circulatingSupply": "21523.098315894871741",
+    "price": 144.405,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Novo Nordisk xStock",
     "symbol": "NVOx",
     "sharesHeld": "12132",
-    "circulatingSupply": "12021.32733583738468",
-    "price": 43.535,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "12021.2506830066516",
+    "price": 43.59,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Cisco xStock",
     "symbol": "CSCOx",
     "sharesHeld": "6517",
     "circulatingSupply": "6459.7483763169283118",
-    "price": 111.28,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 110.13,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Walmart xStock",
     "symbol": "WMTx",
-    "sharesHeld": "2708",
-    "circulatingSupply": "2294.9882183660442549",
-    "price": 109.4025,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "2711",
+    "circulatingSupply": "2294.9742211394695748",
+    "price": 109.095,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Coca-Cola xStock",
     "symbol": "KOx",
-    "sharesHeld": "10674",
-    "circulatingSupply": "10282.901080048041173",
+    "sharesHeld": "10742",
+    "circulatingSupply": "10349.734811867088543",
     "price": 88.9435,
     "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
   },
@@ -5588,22 +5588,22 @@
     "symbol": "PEPx",
     "sharesHeld": "1894",
     "circulatingSupply": "1873.8477782655035566",
-    "price": 136.395,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 136.1205,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "AbbVie xStock",
     "symbol": "ABBVx",
     "sharesHeld": "1032",
     "circulatingSupply": "1011.4257875216218249",
-    "price": 261.475,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 261.4,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Merck xStock",
     "symbol": "MRKx",
     "sharesHeld": "2228",
-    "circulatingSupply": "1909.44533378703529",
+    "circulatingSupply": "1909.4453337870352901",
     "price": 145.305,
     "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
   },
@@ -5612,159 +5612,159 @@
     "symbol": "PFEx",
     "sharesHeld": "12664",
     "circulatingSupply": "12636.531292265609125",
-    "price": 27.755,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 27.57,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Chevron xStock",
     "symbol": "CVXx",
     "sharesHeld": "5140",
     "circulatingSupply": "5096.2552660909723475",
-    "price": 213.5785,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 212.65,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Home Depot xStock",
     "symbol": "HDx",
     "sharesHeld": "294",
     "circulatingSupply": "273.57542013107847422",
-    "price": 310.735,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 311.08,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Procter & Gamble xStock",
     "symbol": "PGx",
     "sharesHeld": "3036",
     "circulatingSupply": "3013.7146906022005213",
-    "price": 146.049,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 146.165,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Mastercard xStock",
     "symbol": "MAx",
     "sharesHeld": "357",
     "circulatingSupply": "340.63242104114503922",
-    "price": 574.521,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 574.595,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Eli Lilly xStock",
     "symbol": "LLYx",
     "sharesHeld": "879",
     "circulatingSupply": "845.09004073614298132",
-    "price": 1144.78,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 1136.5,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Visa xStock",
     "symbol": "Vx",
     "sharesHeld": "1314",
     "circulatingSupply": "1269.1615208833460721",
-    "price": 376.075,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 375.625,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "JPMorgan Chase xStock",
     "symbol": "JPMx",
     "sharesHeld": "1105",
-    "circulatingSupply": "1066.4263873207430936",
-    "price": 348.905,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "1066.4246645228715826",
+    "price": 350.94,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Johnson & Johnson xStock",
     "symbol": "JNJx",
     "sharesHeld": "1877",
     "circulatingSupply": "1846.582194750267828",
-    "price": 267.63,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "price": 267.18,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Exxon Mobil xStock",
     "symbol": "XOMx",
-    "sharesHeld": "4173",
-    "circulatingSupply": "4054.2387914676574601",
-    "price": 165.5165,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "4176",
+    "circulatingSupply": "4056.6620761588772101",
+    "price": 165.37,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "UnitedHealth xStock",
     "symbol": "UNHx",
     "sharesHeld": "1400",
-    "circulatingSupply": "1322.8968763835893198",
-    "price": 383.75,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "circulatingSupply": "1322.1154799610086628",
+    "price": 383.405,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Berkshire Hathaway xStock",
     "symbol": "BRK.Bx",
-    "sharesHeld": "3576",
-    "circulatingSupply": "3468.3384666942118076",
-    "price": 514.625,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "3575",
+    "circulatingSupply": "3459.3984841942118076",
+    "price": 515.22,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Tesla xStock",
     "symbol": "TSLAx",
-    "sharesHeld": "194516",
-    "circulatingSupply": "194324.37213960239499",
-    "price": 362.23,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "194613",
+    "circulatingSupply": "194402.44974791248503",
+    "price": 359.82,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Broadcom xStock",
     "symbol": "AVGOx",
-    "sharesHeld": "15620.22",
-    "circulatingSupply": "15566.693099236291684",
-    "price": 346.335,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "15813",
+    "circulatingSupply": "15757.679514848682997",
+    "price": 346.245,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Alphabet xStock",
     "symbol": "GOOGLx",
-    "sharesHeld": "102401",
-    "circulatingSupply": "102218.60773782637988",
-    "price": 349.187,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "102243",
+    "circulatingSupply": "102040.2633350346847",
+    "price": 347.37,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Meta xStock",
     "symbol": "METAx",
-    "sharesHeld": "15215",
-    "circulatingSupply": "15156.339460060590597",
-    "price": 665.906,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "15037",
+    "circulatingSupply": "14971.60629323628587",
+    "price": 664.785,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Amazon.com xStock",
     "symbol": "AMZNx",
-    "sharesHeld": "30859",
-    "circulatingSupply": "30793.362082646268953",
-    "price": 255.265,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "30881",
+    "circulatingSupply": "30804.418891806268953",
+    "price": 253.62,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Microsoft xStock",
     "symbol": "MSFTx",
-    "sharesHeld": "14417.57",
-    "circulatingSupply": "14295.202584534183732",
-    "price": 509.105,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "14411",
+    "circulatingSupply": "14282.422623139836072",
+    "price": 504.09,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "NVIDIA xStock",
     "symbol": "NVDAx",
-    "sharesHeld": "184796.24989831",
-    "circulatingSupply": "184530.71602055911392",
-    "price": 212.5,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "185623.24989831",
+    "circulatingSupply": "185304.64121804708493",
+    "price": 212.12,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   },
   {
     "name": "Apple xStock",
     "symbol": "AAPLx",
-    "sharesHeld": "42156",
-    "circulatingSupply": "42011.961982287267425",
-    "price": 333.7,
-    "priceUpdatedAt": "2026-09-14T18:01:39+00:00"
+    "sharesHeld": "41809",
+    "circulatingSupply": "41658.866074601669176",
+    "price": 332.215,
+    "priceUpdatedAt": "2026-09-14T23:47:50+00:00"
   }
 ]

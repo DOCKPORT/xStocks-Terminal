@@ -151,10 +151,32 @@ p {
   margin-block-end: var(--space-5);
 }
 
-.section-head h2 {
-  margin-inline-end: auto;
-  padding-inline-start: var(--space-3);
-  border-inline-start: 3px solid var(--accent);
+/* The title row doubles as a control group. The base reset clears the button.
+   The font is pinned here. A heading parent must not leak its own metrics. */
+.section-head__btn {
+  padding: var(--space-2) var(--space-4);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  font-family: var(--font-display);
+  font-size: var(--text-md);
+  font-weight: var(--weight-regular);
+  line-height: var(--leading-tight);
+  letter-spacing: normal;
+  text-align: start;
+}
+
+.section-head__btn:hover {
+  border-color: var(--border-strong);
+}
+
+/* The selected control takes the accent. Its pair stays grey. */
+.section-head__btn[aria-pressed="true"] {
+  border-color: var(--accent-line);
+}
+
+.section-head__btn:focus-visible {
+  outline: none;
+  box-shadow: var(--focus-ring);
 }
 
 /* --- Top bar -------------------------------------------------------------- */
@@ -178,27 +200,6 @@ p {
   align-items: center;
   gap: var(--space-3);
   min-width: 0;
-}
-
-.brand__mark {
-  position: relative;
-  inline-size: 28px;
-  block-size: 28px;
-  border-radius: var(--radius-xs);
-  background: var(--accent);
-  overflow: hidden;
-  flex: none;
-}
-
-/* Teal half. A flat two-tone block replaces the old gradient. */
-.brand__mark::after {
-  content: "";
-  position: absolute;
-  inset-block: 0;
-  inset-inline-end: 0;
-  inline-size: 50%;
-  background: var(--accent-alt);
-  border-inline-start: 2px solid var(--bg-page);
 }
 
 .brand__name {
@@ -261,10 +262,9 @@ p {
   border-color: var(--border);
 }
 
-/* A hard accent rule on the top edge. Not a glow. */
+/* A quiet accent border. One thickness on every edge. */
 .card--accent {
   border-color: var(--accent-line);
-  box-shadow: inset 0 3px 0 0 var(--accent);
 }
 
 .card__label {
@@ -353,35 +353,6 @@ p {
   }
 }
 
-/* --- Badge ---------------------------------------------------------------- */
-.badge {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  padding: 0.2rem 0.55rem;
-  border: 1px solid var(--border);
-  border-radius: var(--radius-xs);
-  background: var(--bg-raised);
-  color: var(--text-muted);
-  font-family: var(--font-mono);
-  font-size: var(--text-2xs);
-  text-transform: uppercase;
-  letter-spacing: var(--tracking-wide);
-  white-space: nowrap;
-}
-
-.badge--accent {
-  border-color: var(--accent-line);
-  background: var(--accent-soft);
-  color: var(--grey-100);
-}
-
-.badge--live {
-  color: var(--positive);
-  border-color: var(--positive-line);
-  background: var(--positive-soft);
-}
-
 /* --- Button --------------------------------------------------------------- */
 .btn {
   display: inline-flex;
@@ -435,15 +406,6 @@ p {
   margin-block-end: var(--space-4);
 }
 
-.search__label {
-  font-family: var(--font-mono);
-  font-size: var(--text-2xs);
-  font-weight: var(--weight-medium);
-  text-transform: uppercase;
-  letter-spacing: var(--tracking-wider);
-  color: var(--text-faint);
-}
-
 .search__input {
   flex: 1 1 240px;
   min-width: 0;
@@ -462,6 +424,13 @@ p {
 
 .search__input:hover {
   border-color: var(--border-strong);
+}
+
+/* The global teal focus ring is off here. A light grey line marks the focus. */
+.search__input:focus-visible {
+  outline: none;
+  box-shadow: none;
+  border-color: var(--grey-400);
 }
 
 /* --- Table ---------------------------------------------------------------- */

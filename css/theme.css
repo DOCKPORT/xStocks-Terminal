@@ -12,9 +12,9 @@
   --grey-000: #ffffff;
   --grey-050: #f4f4f6;
   --grey-100: #ececef;
-  --grey-200: #b4b4bc;
-  --grey-300: #8b8b94;
-  --grey-400: #6b6b76;
+  --grey-200: #c6c6cd;
+  --grey-300: #9d9da7;
+  --grey-400: #86868f;
   --grey-500: #3d3d47;
   --grey-600: #2e2e36;
   --grey-700: #24242a;
@@ -40,9 +40,9 @@
   --font-mono: "Geist Mono", ui-monospace, "SFMono-Regular", Menlo, Consolas, monospace;
 
   /* Fluid scale. Clamp keeps the small end readable and the large end calm. */
-  --text-2xs: 0.6875rem;
-  --text-xs: 0.75rem;
-  --text-sm: 0.8125rem;
+  --text-2xs: 0.75rem;
+  --text-xs: 0.8125rem;
+  --text-sm: 0.875rem;
   --text-base: 0.9375rem;
   --text-md: 1.0625rem;
   --text-lg: clamp(1.25rem, 0.6vw + 1.1rem, 1.5rem);

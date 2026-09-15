@@ -26,26 +26,20 @@
     <header class="topbar">
       <div class="container topbar__inner">
         <div class="brand">
-          <span class="brand__mark" aria-hidden="true"></span>
           <span class="brand__name">xStocks <span>Terminal</span></span>
         </div>
         <div class="topbar__meta">
-          <span class="badge badge--live">Local snapshot</span>
-          <span class="numeric">static data</span>
+          <span>DockPort</span>
         </div>
       </div>
     </header>
 
     <main class="container" id="app">
-      <section class="section stats animate-rise" aria-labelledby="stats-title">
-        <div class="section-head">
-          <p class="eyebrow" id="stats-title">Tokenized equities</p>
-        </div>
-
+      <section class="section stats animate-rise">
         <div class="card card--accent stats__card">
           <div class="stats__grid">
             <div class="stats__item">
-              <p class="card__label eyebrow">Total market cap</p>
+              <p class="card__label eyebrow">Market cap under management</p>
               <p class="metric__value" id="metric-market-cap">&mdash;</p>
               <p class="metric__hint" id="metric-market-cap-hint">
                 Loading the snapshot.
@@ -53,7 +47,7 @@
             </div>
 
             <div class="stats__item">
-              <p class="card__label eyebrow">Total assets</p>
+              <p class="card__label eyebrow">Total tokenized assets</p>
               <p class="metric__value" id="metric-assets">&mdash;</p>
               <p class="metric__hint" id="metric-assets-hint">
                 Loading the snapshot.
@@ -72,7 +66,7 @@
                 </p>
               </div>
               <p class="metric__hint" id="metric-ratio-hint">
-                Circulating tokens per reserve share.
+                Circulating tokens per share held.
               </p>
             </div>
           </div>
@@ -81,17 +75,49 @@
 
       <section class="section animate-rise" aria-labelledby="assets-title">
         <div class="section-head">
-          <h2 id="assets-title">Assets</h2>
-          <span class="badge badge--accent" id="assets-count">Loading</span>
+          <h2 id="assets-title">
+            <button
+              type="button"
+              class="section-head__btn"
+              data-view="list"
+              aria-pressed="true"
+            >
+              Asset List
+            </button>
+          </h2>
+          <button
+            type="button"
+            class="section-head__btn"
+            data-view="market-cap"
+            aria-pressed="false"
+          >
+            Market Cap List
+          </button>
+          <button
+            type="button"
+            class="section-head__btn"
+            data-view="sectors"
+            aria-pressed="false"
+          >
+            GICS Sector
+          </button>
+          <button
+            type="button"
+            class="section-head__btn"
+            data-view="region"
+            aria-pressed="false"
+          >
+            Region
+          </button>
         </div>
 
         <div class="search">
-          <label class="search__label" for="asset-search">Filter</label>
           <input
             class="search__input"
             id="asset-search"
             type="search"
             name="q"
+            aria-label="Filter assets"
             placeholder="Name or symbol, for example AAPLx"
             autocomplete="off"
             spellcheck="false"

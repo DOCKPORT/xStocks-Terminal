@@ -50,13 +50,13 @@
   });
 
   /** The note for the market cap card. */
-  const MARKET_CAP_NOTE = "Circulating supply \u00d7 quote price.";
+  const MARKET_CAP_NOTE = "Token circulating supply \u00d7 quote price.";
 
   /** The note for the asset count card. */
-  const ASSETS_NOTE = "Tokenized stocks under management.";
+  const ASSETS_NOTE = "Stocks and ETFs.";
 
-  /** The note for the mint ratio card. */
-  const RATIO_NOTE = "Circulating tokens per reserve share.";
+  /** The note for the tokens-per-share card. */
+  const RATIO_NOTE = "Circulating tokens per share held.";
 
   /**
    * Draw the three metric cards.

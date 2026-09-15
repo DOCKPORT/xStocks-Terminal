@@ -12,7 +12,6 @@
 /**
  * @typedef {object} ListRefs
  * @property {HTMLElement} body - The table body that holds the rows.
- * @property {HTMLElement} count - The badge that shows the row total.
  * @property {HTMLElement} status - The live region that reports the filter result.
  * @property {HTMLInputElement} input - The search field.
  */
@@ -132,7 +131,6 @@
     }
 
     refs.body.replaceChildren(fragment);
-    refs.count.textContent = `${total} assets`;
 
     const logoTotal = refs.body.querySelectorAll(".table__logo").length;
     if (logoTotal !== total) {
