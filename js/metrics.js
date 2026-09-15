@@ -12,10 +12,25 @@
  */
 
 /**
+ * One row of the market cap ranking.
+ * @typedef {object} MarketCapRow
+ * @property {Asset} asset - The asset for the row.
+ * @property {number | null} marketCap - Price times circulating supply. Null when a value is absent.
+ */
+
+/**
+ * The snapshot in market cap order.
+ * @typedef {object} MarketCapRanking
+ * @property {MarketCapRow[]} rows - Every asset, largest market cap first. A row without a value comes last.
+ * @property {number} total - The market cap sum over the rows that hold a value.
+ */
+
+/**
  * The shared page namespace. The page has no build step and no module loader, so
  * the files share one global object instead of ES module imports.
  * @typedef {object} MetricsNamespace
  * @property {(assets: Asset[]) => Metrics} [computeMetrics] - Compute the headline totals.
+ * @property {(assets: Asset[]) => MarketCapRanking} [computeMarketCapRanks] - Rank the snapshot by market cap.
  */
 
 (() => {
@@ -97,5 +112,44 @@
     };
   };
 
+  /**
+   * Rank the snapshot by market cap. The value reads price times circulating
+   * supply, so it is the value of the public float and not a fully diluted
+   * value. A row without a price or a supply keeps no value and sorts last.
+   * @param {Asset[]} assets - The asset snapshot.
+   * @returns {MarketCapRanking} The rows in rank order and the total value.
+   */
+  const computeMarketCapRanks = (assets) => {
+    /** @type {MarketCapRow[]} */
+    const rows = [];
+    let total = 0;
+
+    for (const asset of assets) {
+      const price = toNumber(asset.price);
+      const supply = toNumber(asset.circulatingSupply);
+      const marketCap = price !== null && supply !== null ? price * supply : null;
+
+      if (marketCap !== null) {
+        total += marketCap;
+      }
+
+      rows.push({ asset, marketCap });
+    }
+
+    /* The sort keeps the file order for equal values, because it is stable. */
+    rows.sort((a, b) => {
+      if (a.marketCap === null) {
+        return b.marketCap === null ? 0 : 1;
+      }
+      if (b.marketCap === null) {
+        return -1;
+      }
+      return b.marketCap - a.marketCap;
+    });
+
+    return { rows, total };
+  };
+
   ns.computeMetrics = computeMetrics;
+  ns.computeMarketCapRanks = computeMarketCapRanks;
 })();

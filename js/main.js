@@ -11,7 +11,9 @@
  * @property {(assets: Asset[]) => Metrics} [computeMetrics] - Compute the headline totals.
  * @property {(metrics: Metrics, refs: MetricRefs) => void} [renderMetrics] - Draw the metric cards.
  * @property {(refs: MetricRefs) => void} [renderMetricsFailure] - Report that the totals did not load.
+ * @property {(assets: Asset[]) => MarketCapRanking} [computeMarketCapRanks] - Rank the snapshot by market cap.
  * @property {(assets: Asset[], refs: ListRefs) => () => void} [renderList] - Draw the table.
+ * @property {(ranking: MarketCapRanking, refs: MarketCapRefs) => void} [renderMarketCap] - Draw the market cap ranking.
  */
 
 /** @typedef {"loading" | "ready" | "error"} AppState */
@@ -81,6 +83,34 @@
   };
 
   /**
+   * Show the panel that pairs with one view. Every other panel hides. When the
+   * markup holds no pair, the current panel stays, so the section never goes
+   * blank.
+   * @param {string} view - The view name from the picked button.
+   * @returns {void}
+   */
+  const showPanel = (view) => {
+    /** @type {HTMLElement[]} */
+    const panels = [];
+
+    document.querySelectorAll("[data-view-panel]").forEach((node) => {
+      if (node instanceof HTMLElement) {
+        panels.push(node);
+      }
+    });
+
+    const match = panels.find((panel) => panel.dataset.viewPanel === view);
+
+    if (!match) {
+      return;
+    }
+
+    panels.forEach((panel) => {
+      panel.hidden = panel !== match;
+    });
+  };
+
+  /**
    * Wire the view buttons. One click moves the pressed state. The stylesheet
    * draws the purple and grey borders from that state.
    * @returns {void}
@@ -112,7 +142,12 @@
         return;
       }
 
-      selectView(picked, group);
+      const view = picked.dataset.view;
+
+      if (view) {
+        selectView(picked, group);
+        showPanel(view);
+      }
     });
   };
 
@@ -131,6 +166,14 @@
   });
 
   /**
+   * Find the slot that the market cap table writes to.
+   * @returns {MarketCapRefs} The ranking element.
+   */
+  const requireMarketCapRefs = () => ({
+    body: requireElement("market-cap-rows"),
+  });
+
+  /**
    * Read the data and start the page.
    * @returns {Promise<void>} Resolves when the page is ready or has failed.
    */
@@ -143,13 +186,18 @@
     /** @type {MetricRefs | null} */
     let metricRefs = null;
 
+    /** @type {MarketCapRefs | null} */
+    let marketCapRefs = null;
+
     try {
       if (
         !ns ||
         typeof ns.loadAssets !== "function" ||
         typeof ns.computeMetrics !== "function" ||
         typeof ns.renderMetrics !== "function" ||
-        typeof ns.renderList !== "function"
+        typeof ns.renderList !== "function" ||
+        typeof ns.computeMarketCapRanks !== "function" ||
+        typeof ns.renderMarketCap !== "function"
       ) {
         throw new Error("The page scripts did not load in order.");
       }
@@ -157,6 +205,7 @@
       setAppState("loading");
 
       metricRefs = requireMetricRefs();
+      marketCapRefs = requireMarketCapRefs();
 
       const assets = await ns.loadAssets();
 
@@ -167,6 +216,8 @@
         status,
         input: requireInput("asset-search"),
       });
+
+      ns.renderMarketCap(ns.computeMarketCapRanks(assets), marketCapRefs);
 
       setAppState("ready");
     } catch (error) {

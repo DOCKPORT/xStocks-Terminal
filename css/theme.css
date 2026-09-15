@@ -110,6 +110,11 @@
   --border: var(--grey-600);
   --border-strong: var(--grey-500);
 
+  /* Scrollbars. The standard properties read these two values.
+     The clear track lets the surface show through the rail. */
+  --scrollbar-thumb: var(--border-strong);
+  --scrollbar-track: transparent;
+
   /* Text */
   --text-primary: var(--grey-100);
   --text-secondary: var(--grey-200);

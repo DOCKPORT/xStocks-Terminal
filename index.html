@@ -111,38 +111,146 @@
           </button>
         </div>
 
-        <div class="search">
-          <input
-            class="search__input"
-            id="asset-search"
-            type="search"
-            name="q"
-            aria-label="Filter assets"
-            placeholder="Name or symbol, for example AAPLx"
-            autocomplete="off"
-            spellcheck="false"
-          />
+        <div class="view-panel" data-view-panel="list">
+          <div class="search">
+            <input
+              class="search__input"
+              id="asset-search"
+              type="search"
+              name="q"
+              aria-label="Filter assets"
+              placeholder="Name or symbol, for example AAPLx"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </div>
+
+          <p class="table__status" id="asset-status" role="status" aria-live="polite">
+            Loading the snapshot.
+          </p>
+
+          <div
+            class="table-wrap"
+            role="region"
+            aria-labelledby="assets-title"
+            tabindex="0"
+          >
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="col-asset">Asset</th>
+                </tr>
+              </thead>
+              <tbody id="asset-rows"></tbody>
+            </table>
+          </div>
         </div>
 
-        <p class="table__status" id="asset-status" role="status" aria-live="polite">
-          Loading the snapshot.
-        </p>
-
-        <div
-          class="table-wrap"
-          role="region"
-          aria-labelledby="assets-title"
-          tabindex="0"
-        >
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col" class="col-asset">Asset</th>
-              </tr>
-            </thead>
-            <tbody id="asset-rows"></tbody>
-          </table>
+        <!-- The region view draws here. The panel stays empty until the data
+             layer supplies the values that the view needs. -->
+        <div class="view-panel" data-view-panel="market-cap" hidden>
+          <div
+            class="table-wrap"
+            role="region"
+            aria-labelledby="assets-title"
+            tabindex="0"
+          >
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="col-rank">Rank</th>
+                  <th scope="col" class="col-asset">Asset</th>
+                  <th scope="col" class="is-numeric">Market Cap</th>
+                  <th scope="col" class="is-numeric">Share</th>
+                </tr>
+              </thead>
+              <tbody id="market-cap-rows"></tbody>
+            </table>
+          </div>
         </div>
+
+        <div class="view-panel" data-view-panel="sectors" hidden>
+          <div
+            class="table-wrap"
+            role="region"
+            aria-labelledby="assets-title"
+            tabindex="0"
+          >
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="col-asset">Sector</th>
+                  <th scope="col" class="is-numeric">Market Cap</th>
+                  <th scope="col" class="is-numeric">Weight</th>
+                </tr>
+              </thead>
+              <tbody id="sector-rows">
+                <tr>
+                  <td class="col-asset">Energy</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Materials</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Industrials</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Consumer Discretionary</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Consumer Staples</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Health Care</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Financials</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Information Technology</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Communication Services</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Utilities</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">Real Estate</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+                <tr>
+                  <td class="col-asset">ETF</td>
+                  <td class="is-numeric table__cap">&mdash;</td>
+                  <td class="is-numeric table__share">&mdash;</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="view-panel" data-view-panel="region" hidden></div>
       </section>
     </main>
 
@@ -173,6 +281,7 @@
     <script src="js/metrics.js"></script>
     <script src="js/render-metrics.js"></script>
     <script src="js/render-list.js"></script>
+    <script src="js/render-market-cap.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

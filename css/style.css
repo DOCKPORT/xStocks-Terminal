@@ -16,7 +16,12 @@
 
 html {
   -webkit-text-size-adjust: 100%;
+  /* Subtle bars in every scroll area, the table wraps included. The two
+     standard properties inherit. A browser that does not know them shows its
+     own bar, so nothing breaks. */
   scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
 }
 
 body {
@@ -517,6 +522,42 @@ p {
   font-family: var(--font-mono);
   font-size: var(--text-md);
   color: var(--text-muted);
+}
+
+/* --- Market cap rank ------------------------------------------------------ */
+/* The rank takes a narrow column. The two numbers use the mono face, so the
+   digits line up down the column. */
+.table .col-rank {
+  inline-size: 1%;
+  white-space: nowrap;
+}
+
+.table__rank {
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+.table__cap {
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: var(--text-md);
+  white-space: nowrap;
+}
+
+.table__share {
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  font-size: var(--text-md);
+  white-space: nowrap;
+}
+
+/* --- View panels ---------------------------------------------------------- */
+/* One panel for each view button. The script shows the panel that pairs with
+   the picked button and hides the rest. An empty panel takes no space, so the
+   section measures the height of the open view. */
+.view-panel[hidden] {
+  display: none;
 }
 
 /* --- Asset list ----------------------------------------------------------- */
