@@ -19,11 +19,16 @@ answers null. The script skips those symbols, so they keep the last known price.
 A missing flag fetches the quote, and --force-quotes calls every symbol anyway.
 
 Output: data/xstocks-assets.json
-  array of { name, symbol, sharesHeld, circulatingSupply, price, priceUpdatedAt }
+  array of { name, symbol, sector, sharesHeld, circulatingSupply, price,
+            priceUpdatedAt }
   one row per asset that holds a reserve row
 
 circulatingSupply is the token supply that the public holds, not the minted
 supply. See memory-bank/notes.md for the full meaning.
+
+The sector comes from data/ticker_universe.json, which scripts/ticker_universe.py
+writes. scripts/sector_map.py holds the match rules and backfills a file without
+a fetch. Without a universe file, each asset keeps the sector of the last run.
 
 The quote calls share one pacer. Each call takes one time slot. The default
 gap is 0.25 seconds. Pass --min-interval to change the gap. A 429 or 503
@@ -64,6 +69,8 @@ from functools import partial
 from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
+
+import sector_map
 
 API_BASE = "https://api.backed.fi/api/v2/public"
 ASSETS_URL = f"{API_BASE}/assets"
@@ -233,6 +240,9 @@ def merge_records(
     Keep one record per asset that holds a reserve row. Return the kept records,
     the symbols dropped for zero shares held, and the symbols with no reserve
     entry. A zero count and a missing row both mean that no live reserve exists.
+
+    The sector starts empty, because the ticker universe supplies that value.
+    apply_sectors() fills it after the price step.
     """
     reserves: dict[str, tuple[Any, Any]] = {}
     for node in reserve_nodes:
@@ -261,6 +271,7 @@ def merge_records(
             {
                 "name": name,
                 "symbol": symbol,
+                "sector": None,
                 "sharesHeld": shares,
                 "circulatingSupply": supply,
             }
@@ -288,7 +299,11 @@ def closed_market_symbols(asset_nodes: list[Record]) -> set[str]:
 
 
 def load_last_known(path: Path) -> dict[str, Record]:
-    """Read the prices from the previous run. This holds the last known value."""
+    """Read the values of the previous run. This holds the last known value.
+
+    The prices and the sectors both come from here. The previous sector stands
+    when the ticker universe file is absent.
+    """
     if not path.is_file():
         return {}
 
@@ -310,6 +325,7 @@ def load_last_known(path: Path) -> dict[str, Record]:
             known[row["symbol"]] = {
                 "price": row.get("price"),
                 "priceUpdatedAt": row.get("priceUpdatedAt"),
+                "sector": row.get("sector"),
             }
     return known
 
@@ -493,6 +509,11 @@ def run(args: argparse.Namespace) -> int:
 
     fresh, retained, unavailable = apply_prices(records, quotes, last_known)
 
+    # A missing or broken universe file keeps the sector of the previous run.
+    sector_counts = sector_map.apply_sectors(
+        records, sector_map.load_index(), last_known
+    )
+
     write_outputs(records)
 
     new_symbols = report_symbol_changes(records, last_known, has_baseline)
@@ -509,6 +530,7 @@ def run(args: argparse.Namespace) -> int:
         print(f"No reserve entry: {', '.join(absent_symbols)}")
     print(f"Prices: {fresh} fresh, {retained} retained, {unavailable} unavailable")
     print(f"Rate limited quotes: {rate_limited}")
+    print(sector_map.counts_line(sector_counts))
 
     refresh_logos(new_symbols, not args.no_logo_check)
 

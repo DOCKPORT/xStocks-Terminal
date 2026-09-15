@@ -14,6 +14,9 @@
  * @property {(assets: Asset[]) => MarketCapRanking} [computeMarketCapRanks] - Rank the snapshot by market cap.
  * @property {(assets: Asset[], refs: ListRefs) => () => void} [renderList] - Draw the table.
  * @property {(ranking: MarketCapRanking, refs: MarketCapRefs) => void} [renderMarketCap] - Draw the market cap ranking.
+ * @property {(assets: Asset[]) => SectorTotals} [computeSectorTotals] - Sum the snapshot by sector.
+ * @property {(totals: SectorTotals, refs: SectorRefs) => void} [renderSectors] - Draw the sector table.
+ * @property {(asset: Asset) => HTMLImageElement} [buildLogo] - Build the row logo from js/render-list.js.
  */
 
 /** @typedef {"loading" | "ready" | "error"} AppState */
@@ -174,6 +177,14 @@
   });
 
   /**
+   * Find the slot that the sector table writes to.
+   * @returns {SectorRefs} The sector element.
+   */
+  const requireSectorRefs = () => ({
+    body: requireElement("sector-rows"),
+  });
+
+  /**
    * Read the data and start the page.
    * @returns {Promise<void>} Resolves when the page is ready or has failed.
    */
@@ -189,6 +200,9 @@
     /** @type {MarketCapRefs | null} */
     let marketCapRefs = null;
 
+    /** @type {SectorRefs | null} */
+    let sectorRefs = null;
+
     try {
       if (
         !ns ||
@@ -197,7 +211,10 @@
         typeof ns.renderMetrics !== "function" ||
         typeof ns.renderList !== "function" ||
         typeof ns.computeMarketCapRanks !== "function" ||
-        typeof ns.renderMarketCap !== "function"
+        typeof ns.renderMarketCap !== "function" ||
+        typeof ns.computeSectorTotals !== "function" ||
+        typeof ns.renderSectors !== "function" ||
+        typeof ns.buildLogo !== "function"
       ) {
         throw new Error("The page scripts did not load in order.");
       }
@@ -206,6 +223,7 @@
 
       metricRefs = requireMetricRefs();
       marketCapRefs = requireMarketCapRefs();
+      sectorRefs = requireSectorRefs();
 
       const assets = await ns.loadAssets();
 
@@ -218,6 +236,8 @@
       });
 
       ns.renderMarketCap(ns.computeMarketCapRanks(assets), marketCapRefs);
+
+      ns.renderSectors(ns.computeSectorTotals(assets), sectorRefs);
 
       setAppState("ready");
     } catch (error) {

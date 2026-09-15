@@ -1,11 +1,13 @@
 /**
- * @file Render the asset table and filter it by name or symbol.
+ * @file Render the asset table and filter it by name or symbol. The file also
+ * builds the row logo, so every view draws the same logo rule.
  */
 
 /**
  * The shared page namespace. The page has no build step and no server, so the
  * files share one global object instead of ES module imports.
  * @typedef {object} ListNamespace
+ * @property {(asset: Asset) => HTMLImageElement} [buildLogo] - Build the row logo, with a letter tile as the fallback.
  * @property {(assets: Asset[], refs: ListRefs) => () => void} [renderList] - Draw the table.
  */
 
@@ -181,6 +183,7 @@
     return applyQuery;
   };
 
+  ns.buildLogo = buildLogo;
   ns.renderList = renderList;
 })();
 

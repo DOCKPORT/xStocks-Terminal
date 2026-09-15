@@ -1,2 +1,4 @@
 /memory-bank
 __pycache__/
+.env
+scripts/bq_key.py

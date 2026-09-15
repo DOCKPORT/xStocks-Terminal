@@ -26,11 +26,28 @@
  */
 
 /**
+ * One row of the sector totals.
+ * @typedef {object} SectorRow
+ * @property {string} sector - The sector name from the snapshot.
+ * @property {number} assetCount - The number of assets in the sector.
+ * @property {Asset[]} assets - The assets in the sector, in name order.
+ * @property {number | null} marketCap - The sum of price times circulating supply over the sector. Null when no asset in the sector holds a value.
+ */
+
+/**
+ * The snapshot summed by sector.
+ * @typedef {object} SectorTotals
+ * @property {SectorRow[]} rows - Every sector in the snapshot, largest market cap first. A sector without a value comes last, in name order.
+ * @property {number} total - The market cap sum over the rows that hold a value.
+ */
+
+/**
  * The shared page namespace. The page has no build step and no module loader, so
  * the files share one global object instead of ES module imports.
  * @typedef {object} MetricsNamespace
  * @property {(assets: Asset[]) => Metrics} [computeMetrics] - Compute the headline totals.
  * @property {(assets: Asset[]) => MarketCapRanking} [computeMarketCapRanks] - Rank the snapshot by market cap.
+ * @property {(assets: Asset[]) => SectorTotals} [computeSectorTotals] - Sum the snapshot by sector.
  */
 
 (() => {
@@ -150,6 +167,94 @@
     return { rows, total };
   };
 
+  /** The word that marks an asset without a sector. The Python backfill writes the same word. */
+  const UNKNOWN_SECTOR = "unknown";
+
+  /**
+   * Read the sector name from one asset.
+   * @param {Asset} asset - The asset.
+   * @returns {string} The sector name, or "unknown" when the asset holds none.
+   */
+  const sectorName = (asset) => {
+    const value = asset.sector;
+    if (typeof value !== "string" || value.trim() === "") {
+      return UNKNOWN_SECTOR;
+    }
+    return value.trim();
+  };
+
+  /**
+   * Sum the snapshot by sector. Every sector that the snapshot holds gets one
+   * row, so the panel needs no fixed list. The value reads price times
+   * circulating supply, the same rule as the market cap ranking.
+   * @param {Asset[]} assets - The asset snapshot.
+   * @returns {SectorTotals} The rows in market cap order and the total value.
+   */
+  const computeSectorTotals = (assets) => {
+    /** @type {Map<string, SectorRow>} */
+    const bySector = new Map();
+
+    for (const asset of assets) {
+      const name = sectorName(asset);
+      const row = bySector.get(name) ?? {
+        sector: name,
+        assetCount: 0,
+        assets: [],
+        marketCap: null,
+      };
+
+      const price = toNumber(asset.price);
+      const supply = toNumber(asset.circulatingSupply);
+      const marketCap = price !== null && supply !== null ? price * supply : null;
+
+      row.assetCount += 1;
+      row.assets.push(asset);
+
+      if (marketCap !== null) {
+        row.marketCap = (row.marketCap ?? 0) + marketCap;
+      }
+
+      bySector.set(name, row);
+    }
+
+    const rows = Array.from(bySector.values());
+
+    /* The panel draws the assets under one sector, so the list reads in name
+       order. The symbol breaks a tie, the same rule as the asset table. */
+    for (const row of rows) {
+      row.assets.sort(
+        (a, b) =>
+          a.name.localeCompare(b.name) || a.symbol.localeCompare(b.symbol),
+      );
+    }
+
+    let total = 0;
+
+    for (const row of rows) {
+      if (row.marketCap !== null) {
+        total += row.marketCap;
+      }
+    }
+
+    /* The largest sector comes first. A sector without a value comes last, in
+       name order. The name breaks a tie, so every run draws the same order. */
+    rows.sort((a, b) => {
+      if (a.marketCap === null) {
+        return b.marketCap === null ? a.sector.localeCompare(b.sector) : 1;
+      }
+      if (b.marketCap === null) {
+        return -1;
+      }
+      if (b.marketCap !== a.marketCap) {
+        return b.marketCap - a.marketCap;
+      }
+      return a.sector.localeCompare(b.sector);
+    });
+
+    return { rows, total };
+  };
+
   ns.computeMetrics = computeMetrics;
   ns.computeMarketCapRanks = computeMarketCapRanks;
+  ns.computeSectorTotals = computeSectorTotals;
 })();

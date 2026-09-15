@@ -552,6 +552,59 @@ p {
   white-space: nowrap;
 }
 
+/* --- Sector rows ---------------------------------------------------------- */
+/* The whole row toggles the asset list below it. The button carries the state
+   for the keyboard and for a screen reader. */
+.sector-row {
+  cursor: pointer;
+}
+
+.table .sector__toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  inline-size: 100%;
+  color: var(--text-primary);
+  font-weight: var(--weight-medium);
+  text-align: start;
+}
+
+.sector__caret {
+  flex: none;
+  color: var(--text-faint);
+  font-size: var(--text-sm);
+  line-height: 1;
+  transition: transform var(--duration-fast) var(--ease-out);
+}
+
+.sector__toggle[aria-expanded="true"] .sector__caret {
+  transform: rotate(90deg);
+}
+
+.sector__toggle[aria-expanded="true"] .sector__label {
+  color: var(--accent-alt);
+}
+
+/* The detail row holds the assets of one sector. The sunken fill groups the
+   open list, and the row takes no hover fill of its own. */
+.table tbody tr.sector__detail:hover {
+  background: none;
+}
+
+.table .sector__cell {
+  padding-block: var(--space-4);
+  background: var(--bg-sunken);
+}
+
+.table .sector__assets {
+  display: grid;
+  gap: var(--space-3);
+  margin-inline-start: var(--space-2);
+  padding-inline-start: var(--space-5);
+  border-inline-start: 1px solid var(--border-subtle);
+  list-style: none;
+}
+
 /* --- View panels ---------------------------------------------------------- */
 /* One panel for each view button. The script shows the panel that pairs with
    the picked button and hides the rest. An empty panel takes no space, so the
