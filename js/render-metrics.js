@@ -53,7 +53,7 @@
   const MARKET_CAP_NOTE = "Token circulating supply \u00d7 quote price.";
 
   /** The note for the asset count card. */
-  const ASSETS_NOTE = "Stocks and ETFs.";
+  const ASSETS_NOTE = "Stocks, ETFs and Funds.";
 
   /** The note for the tokens-per-share card. */
   const RATIO_NOTE = "Circulating tokens per share held.";
