@@ -19,9 +19,13 @@ answers null. The script skips those symbols, so they keep the last known price.
 A missing flag fetches the quote, and --force-quotes calls every symbol anyway.
 
 Output: data/xstocks-assets.json
-  array of { name, symbol, sector, sharesHeld, circulatingSupply, price,
-            priceUpdatedAt }
+  array of { name, symbol, listingCountry, sector, sharesHeld, circulatingSupply,
+            price, priceUpdatedAt }
   one row per asset that holds a reserve row
+
+listingCountry is the country code of the venue that lists the underlying share,
+for example "HK" for Bank Of China xStock. The catalog row carries that value in
+its underlying object, so the field costs no extra request.
 
 circulatingSupply is the token supply that the public holds, not the minted
 supply. See memory-bank/notes.md for the full meaning.
@@ -232,6 +236,23 @@ def fetch_pages(url: str, label: str) -> list[Record]:
     return records
 
 
+def listing_country(node: Record) -> str | None:
+    """Return the country that lists the underlying share, or None.
+
+    The catalog holds the value in the underlying object of the same row, so no
+    extra request is needed. A missing object, a missing field, or an empty
+    string returns None.
+    """
+    underlying = node.get("underlying")
+    if not isinstance(underlying, dict):
+        return None
+
+    country = underlying.get("listingCountry")
+    if isinstance(country, str):
+        return country.strip() or None
+    return None
+
+
 def merge_records(
     asset_nodes: list[Record], reserve_nodes: list[Record]
 ) -> tuple[list[Record], list[str], list[str]]:
@@ -242,7 +263,8 @@ def merge_records(
     entry. A zero count and a missing row both mean that no live reserve exists.
 
     The sector starts empty, because the ticker universe supplies that value.
-    apply_sectors() fills it after the price step.
+    apply_sectors() fills it after the price step. The listing country comes
+    from the catalog row, so this step fills it.
     """
     reserves: dict[str, tuple[Any, Any]] = {}
     for node in reserve_nodes:
@@ -271,6 +293,7 @@ def merge_records(
             {
                 "name": name,
                 "symbol": symbol,
+                "listingCountry": listing_country(node),
                 "sector": None,
                 "sharesHeld": shares,
                 "circulatingSupply": supply,
@@ -402,6 +425,31 @@ def write_outputs(records: list[Record]) -> None:
     OUT_JSON.write_text(payload + "\n", encoding="utf-8")
 
 
+def country_counts_line(records: list[Record]) -> str:
+    """Return one report line for the listing-country counts.
+
+    The most common country comes first. A tie breaks in code order, so every
+    run prints the same line.
+    """
+    counts: dict[str, int] = {}
+    unknown = 0
+
+    for record in records:
+        country = record.get("listingCountry")
+        if isinstance(country, str) and country:
+            counts[country] = counts.get(country, 0) + 1
+        else:
+            unknown += 1
+
+    ordered = sorted(counts.items(), key=lambda item: (-item[1], item[0]))
+    parts = [f"{country} {count}" for country, count in ordered]
+    if unknown:
+        parts.append(f"{unknown} unknown")
+    if not parts:
+        return "Country: no value"
+    return "Country: " + ", ".join(parts)
+
+
 def report_symbol_changes(
     records: list[Record], previous: dict[str, Record], has_baseline: bool
 ) -> list[str]:
@@ -531,6 +579,7 @@ def run(args: argparse.Namespace) -> int:
     print(f"Prices: {fresh} fresh, {retained} retained, {unavailable} unavailable")
     print(f"Rate limited quotes: {rate_limited}")
     print(sector_map.counts_line(sector_counts))
+    print(country_counts_line(records))
 
     refresh_logos(new_symbols, not args.no_logo_check)
 

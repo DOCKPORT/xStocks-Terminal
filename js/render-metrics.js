@@ -18,7 +18,6 @@
  * @property {HTMLElement} assets - The asset count value.
  * @property {HTMLElement} assetsHint - The asset count note.
  * @property {HTMLElement} ratio - The reserve ratio value.
- * @property {HTMLElement} ratioPercent - The reserve ratio as a percent.
  * @property {HTMLElement} ratioHint - The reserve ratio note.
  */
 
@@ -39,12 +38,6 @@
   const COUNT = new Intl.NumberFormat("en-US");
 
   const RATIO = new Intl.NumberFormat("en-US", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  });
-
-  const PERCENT = new Intl.NumberFormat("en-US", {
-    style: "percent",
     minimumFractionDigits: 2,
     maximumFractionDigits: 2,
   });
@@ -73,13 +66,13 @@
 
     if (metrics.tokensPerShare === null) {
       refs.ratio.textContent = "n/a";
-      refs.ratioPercent.textContent = "n/a";
       refs.ratioHint.textContent = "No row in the snapshot holds a reserve row.";
       return;
     }
 
-    refs.ratio.textContent = `1 : ${RATIO.format(metrics.tokensPerShare)}`;
-    refs.ratioPercent.textContent = PERCENT.format(metrics.tokensPerShare);
+    /* The pair reads tokens first, then shares, so the colon matches the note:
+       the token count against one share held. */
+    refs.ratio.textContent = `${RATIO.format(metrics.tokensPerShare)} : 1`;
     refs.ratioHint.textContent = RATIO_NOTE;
   };
 
@@ -90,12 +83,7 @@
    * @returns {void}
    */
   const renderMetricsFailure = (refs) => {
-    for (const slot of [
-      refs.marketCap,
-      refs.assets,
-      refs.ratio,
-      refs.ratioPercent,
-    ]) {
+    for (const slot of [refs.marketCap, refs.assets, refs.ratio]) {
       slot.textContent = "\u2014";
     }
 

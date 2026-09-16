@@ -309,19 +309,6 @@ p {
   font-size: var(--text-xs);
 }
 
-/* The ratio card holds two readings on one line. The line wraps on a narrow card. */
-.metric__pair {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: var(--space-2) var(--space-4);
-}
-
-.metric__value--muted {
-  color: var(--text-muted);
-  font-size: var(--text-lg);
-}
-
 /* --- Stats strip ---------------------------------------------------------- */
 /* One card holds every reading. A hard rule separates the items on a wide card.
    The items stack on a narrow card. */
@@ -552,14 +539,18 @@ p {
   white-space: nowrap;
 }
 
-/* --- Sector rows ---------------------------------------------------------- */
-/* The whole row toggles the asset list below it. The button carries the state
+/* --- Sector rows and region rows ------------------------------------------ */
+/* The sector table and the region table share one set of rules. Each rule lists
+   both views, so the two tables stay in step.
+   The whole row toggles the asset list below it. The button carries the state
    for the keyboard and for a screen reader. */
-.sector-row {
+.sector-row,
+.region-row {
   cursor: pointer;
 }
 
-.table .sector__toggle {
+.table .sector__toggle,
+.table .region__toggle {
   display: flex;
   align-items: center;
   gap: var(--space-2);
@@ -569,7 +560,8 @@ p {
   text-align: start;
 }
 
-.sector__caret {
+.sector__caret,
+.region__caret {
   flex: none;
   color: var(--text-faint);
   font-size: var(--text-sm);
@@ -577,26 +569,31 @@ p {
   transition: transform var(--duration-fast) var(--ease-out);
 }
 
-.sector__toggle[aria-expanded="true"] .sector__caret {
+.sector__toggle[aria-expanded="true"] .sector__caret,
+.region__toggle[aria-expanded="true"] .region__caret {
   transform: rotate(90deg);
 }
 
-.sector__toggle[aria-expanded="true"] .sector__label {
+.sector__toggle[aria-expanded="true"] .sector__label,
+.region__toggle[aria-expanded="true"] .region__label {
   color: var(--accent-alt);
 }
 
-/* The detail row holds the assets of one sector. The sunken fill groups the
+/* The detail row holds the assets of one group. The sunken fill groups the
    open list, and the row takes no hover fill of its own. */
-.table tbody tr.sector__detail:hover {
+.table tbody tr.sector__detail:hover,
+.table tbody tr.region__detail:hover {
   background: none;
 }
 
-.table .sector__cell {
+.table .sector__cell,
+.table .region__cell {
   padding-block: var(--space-4);
   background: var(--bg-sunken);
 }
 
-.table .sector__assets {
+.table .sector__assets,
+.table .region__assets {
   display: grid;
   gap: var(--space-3);
   margin-inline-start: var(--space-2);

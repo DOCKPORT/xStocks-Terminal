@@ -42,12 +42,29 @@
  */
 
 /**
+ * One row of the region totals.
+ * @typedef {object} RegionRow
+ * @property {string} region - The listing country code from the snapshot, or "unknown".
+ * @property {number} assetCount - The number of assets that list in the region.
+ * @property {Asset[]} assets - The assets in the region, in name order.
+ * @property {number | null} marketCap - The sum of price times circulating supply over the region. Null when no asset in the region holds a value.
+ */
+
+/**
+ * The snapshot summed by listing region.
+ * @typedef {object} RegionTotals
+ * @property {RegionRow[]} rows - Every region in the snapshot, largest market cap first. A region without a value comes last, in code order.
+ * @property {number} total - The market cap sum over the rows that hold a value.
+ */
+
+/**
  * The shared page namespace. The page has no build step and no module loader, so
  * the files share one global object instead of ES module imports.
  * @typedef {object} MetricsNamespace
  * @property {(assets: Asset[]) => Metrics} [computeMetrics] - Compute the headline totals.
  * @property {(assets: Asset[]) => MarketCapRanking} [computeMarketCapRanks] - Rank the snapshot by market cap.
  * @property {(assets: Asset[]) => SectorTotals} [computeSectorTotals] - Sum the snapshot by sector.
+ * @property {(assets: Asset[]) => RegionTotals} [computeRegionTotals] - Sum the snapshot by listing country.
  */
 
 (() => {
@@ -183,6 +200,23 @@
     return value.trim();
   };
 
+  /** The word that marks an asset without a listing country. The Python script writes null. */
+  const UNKNOWN_REGION = "unknown";
+
+  /**
+   * Read the listing country from one asset. The country code goes to upper case,
+   * because the API and the JSON may differ in case.
+   * @param {Asset} asset - The asset.
+   * @returns {string} The country code, or "unknown" when the asset holds none.
+   */
+  const regionName = (asset) => {
+    const value = asset.listingCountry;
+    if (typeof value !== "string" || value.trim() === "") {
+      return UNKNOWN_REGION;
+    }
+    return value.trim().toUpperCase();
+  };
+
   /**
    * Sum the snapshot by sector. Every sector that the snapshot holds gets one
    * row, so the panel needs no fixed list. The value reads price times
@@ -254,7 +288,79 @@
     return { rows, total };
   };
 
+  /**
+   * Sum the snapshot by listing region. Every country that the snapshot holds
+   * gets one row, so the panel needs no fixed list. The value reads price times
+   * circulating supply, the same rule as the market cap ranking.
+   * @param {Asset[]} assets - The asset snapshot.
+   * @returns {RegionTotals} The rows in market cap order and the total value.
+   */
+  const computeRegionTotals = (assets) => {
+    /** @type {Map<string, RegionRow>} */
+    const byRegion = new Map();
+
+    for (const asset of assets) {
+      const code = regionName(asset);
+      const row = byRegion.get(code) ?? {
+        region: code,
+        assetCount: 0,
+        assets: [],
+        marketCap: null,
+      };
+
+      const price = toNumber(asset.price);
+      const supply = toNumber(asset.circulatingSupply);
+      const marketCap = price !== null && supply !== null ? price * supply : null;
+
+      row.assetCount += 1;
+      row.assets.push(asset);
+
+      if (marketCap !== null) {
+        row.marketCap = (row.marketCap ?? 0) + marketCap;
+      }
+
+      byRegion.set(code, row);
+    }
+
+    const rows = Array.from(byRegion.values());
+
+    /* The panel draws the assets under one region, so the list reads in name
+       order. The symbol breaks a tie, the same rule as the asset table. */
+    for (const row of rows) {
+      row.assets.sort(
+        (a, b) =>
+          a.name.localeCompare(b.name) || a.symbol.localeCompare(b.symbol),
+      );
+    }
+
+    let total = 0;
+
+    for (const row of rows) {
+      if (row.marketCap !== null) {
+        total += row.marketCap;
+      }
+    }
+
+    /* The largest region comes first. A region without a value comes last, in
+       code order. The code breaks a tie, so every run draws the same order. */
+    rows.sort((a, b) => {
+      if (a.marketCap === null) {
+        return b.marketCap === null ? a.region.localeCompare(b.region) : 1;
+      }
+      if (b.marketCap === null) {
+        return -1;
+      }
+      if (b.marketCap !== a.marketCap) {
+        return b.marketCap - a.marketCap;
+      }
+      return a.region.localeCompare(b.region);
+    });
+
+    return { rows, total };
+  };
+
   ns.computeMetrics = computeMetrics;
   ns.computeMarketCapRanks = computeMarketCapRanks;
   ns.computeSectorTotals = computeSectorTotals;
+  ns.computeRegionTotals = computeRegionTotals;
 })();

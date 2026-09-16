@@ -16,6 +16,8 @@
  * @property {(ranking: MarketCapRanking, refs: MarketCapRefs) => void} [renderMarketCap] - Draw the market cap ranking.
  * @property {(assets: Asset[]) => SectorTotals} [computeSectorTotals] - Sum the snapshot by sector.
  * @property {(totals: SectorTotals, refs: SectorRefs) => void} [renderSectors] - Draw the sector table.
+ * @property {(assets: Asset[]) => RegionTotals} [computeRegionTotals] - Sum the snapshot by listing country.
+ * @property {(totals: RegionTotals, refs: RegionRefs) => void} [renderRegion] - Draw the region table.
  * @property {(asset: Asset) => HTMLImageElement} [buildLogo] - Build the row logo from js/render-list.js.
  */
 
@@ -164,7 +166,6 @@
     assets: requireElement("metric-assets"),
     assetsHint: requireElement("metric-assets-hint"),
     ratio: requireElement("metric-ratio"),
-    ratioPercent: requireElement("metric-ratio-percent"),
     ratioHint: requireElement("metric-ratio-hint"),
   });
 
@@ -182,6 +183,14 @@
    */
   const requireSectorRefs = () => ({
     body: requireElement("sector-rows"),
+  });
+
+  /**
+   * Find the slot that the region table writes to.
+   * @returns {RegionRefs} The region element.
+   */
+  const requireRegionRefs = () => ({
+    body: requireElement("region-rows"),
   });
 
   /**
@@ -203,6 +212,9 @@
     /** @type {SectorRefs | null} */
     let sectorRefs = null;
 
+    /** @type {RegionRefs | null} */
+    let regionRefs = null;
+
     try {
       if (
         !ns ||
@@ -214,6 +226,8 @@
         typeof ns.renderMarketCap !== "function" ||
         typeof ns.computeSectorTotals !== "function" ||
         typeof ns.renderSectors !== "function" ||
+        typeof ns.computeRegionTotals !== "function" ||
+        typeof ns.renderRegion !== "function" ||
         typeof ns.buildLogo !== "function"
       ) {
         throw new Error("The page scripts did not load in order.");
@@ -224,6 +238,7 @@
       metricRefs = requireMetricRefs();
       marketCapRefs = requireMarketCapRefs();
       sectorRefs = requireSectorRefs();
+      regionRefs = requireRegionRefs();
 
       const assets = await ns.loadAssets();
 
@@ -238,6 +253,8 @@
       ns.renderMarketCap(ns.computeMarketCapRanks(assets), marketCapRefs);
 
       ns.renderSectors(ns.computeSectorTotals(assets), sectorRefs);
+
+      ns.renderRegion(ns.computeRegionTotals(assets), regionRefs);
 
       setAppState("ready");
     } catch (error) {

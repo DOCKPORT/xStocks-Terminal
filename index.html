@@ -56,15 +56,7 @@
 
             <div class="stats__item">
               <p class="card__label eyebrow">Reserve ratio</p>
-              <div class="metric__pair">
-                <p class="metric__value" id="metric-ratio">&mdash;</p>
-                <p
-                  class="metric__value metric__value--muted"
-                  id="metric-ratio-percent"
-                >
-                  &mdash;
-                </p>
-              </div>
+              <p class="metric__value" id="metric-ratio">&mdash;</p>
               <p class="metric__hint" id="metric-ratio-hint">
                 Circulating tokens per share held.
               </p>
@@ -146,8 +138,6 @@
           </div>
         </div>
 
-        <!-- The region view draws here. The panel stays empty until the data
-             layer supplies the values that the view needs. -->
         <div class="view-panel" data-view-panel="market-cap" hidden>
           <div
             class="table-wrap"
@@ -189,7 +179,25 @@
           </div>
         </div>
 
-        <div class="view-panel" data-view-panel="region" hidden></div>
+        <div class="view-panel" data-view-panel="region" hidden>
+          <div
+            class="table-wrap"
+            role="region"
+            aria-labelledby="assets-title"
+            tabindex="0"
+          >
+            <table class="table">
+              <thead>
+                <tr>
+                  <th scope="col" class="col-asset">Region</th>
+                  <th scope="col" class="is-numeric">Market Cap</th>
+                  <th scope="col" class="is-numeric">Weight</th>
+                </tr>
+              </thead>
+              <tbody id="region-rows"></tbody>
+            </table>
+          </div>
+        </div>
       </section>
     </main>
 
@@ -222,6 +230,7 @@
     <script src="js/render-list.js"></script>
     <script src="js/render-market-cap.js"></script>
     <script src="js/render-sectors.js"></script>
+    <script src="js/render-region.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
