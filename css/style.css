@@ -517,6 +517,16 @@
   padding-block: var(--space-6);
   /* The home indicator sits over the page on a modern phone. */
   padding-block-end: max(var(--space-6), env(safe-area-inset-bottom));
+  /* iPad Safari lays the page out against the large viewport. The visible area
+     is then shorter than that box by the height of the browser bars. The last
+     band of the page can then hide at the bottom edge. This reserve covers
+     that band, so the last line stays in view. Both units are constant, so the
+     page does not shift while it moves. A browser without the units keeps the
+     value above. */
+  padding-block-end: calc(
+    max(var(--space-6), env(safe-area-inset-bottom)) +
+      clamp(0px, 100lvh - 100svh, 8rem)
+  );
   border-block-start: 1px solid var(--border-subtle);
   color: var(--text-faint);
   font-size: var(--text-xs);
@@ -616,4 +626,30 @@
 
 .animate-rise {
   animation: rise var(--duration-slow) var(--ease-out) both;
+}
+
+/* --- Wide layout, one scroll area ----------------------------------------- */
+/* A tablet in portrait is wider than 720px, so it takes the wide layout. That
+   layout holds a second scroll area inside the table. The finger moves the
+   table in place of the page, so the footer never arrives.
+   The sector table carries 13 rows and stands about 890px tall. The cap holds
+   717px at a 1024px viewport, so that table just overflows the cap. The page
+   keeps almost no scroll room of its own.
+   Two cases get one scroll area, as the narrow layout does. A touch screen
+   reports hover: none. A viewport of 1024px or less leaves the page no room
+   under the cap.
+   A mouse on a wider screen keeps the two scroll areas, because the mouse
+   reaches the page through the top bar and the search field. The cap also
+   keeps the long list out of the page.
+   The top bar holds 60px. The header pins below that bar. */
+@media (min-width: 721px) and (hover: none),
+  (min-width: 721px) and (max-width: 1024px) {
+  .table-wrap {
+    max-block-size: none;
+    overflow: visible;
+  }
+
+  .table-wrap thead th {
+    inset-block-start: calc(60px + env(safe-area-inset-top));
+  }
 }
