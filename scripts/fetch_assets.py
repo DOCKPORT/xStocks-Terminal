@@ -21,14 +21,20 @@ A missing flag fetches the quote, and --force-quotes calls every symbol anyway.
 Output: data/xstocks-assets.json
   array of { name, symbol, listingCountry, sector, sharesHeld, circulatingSupply,
             price, priceUpdatedAt }
-  one row per asset that holds a reserve row
+  one row per asset that holds a reserve row with a live balance
+
+The name field holds no " xStock" mark. The catalog adds that mark to every
+name, so the script drops it and the page shows the plain name, for example
+"Tesla" in place of "Tesla xStock".
 
 listingCountry is the country code of the venue that lists the underlying share,
 for example "HK" for Bank Of China xStock. The catalog row carries that value in
 its underlying object, so the field costs no extra request.
 
 circulatingSupply is the token supply that the public holds, not the minted
-supply. See memory-bank/notes.md for the full meaning.
+supply. See memory-bank/notes.md for the full meaning. The script drops a row
+when sharesHeld is "0" or when circulatingSupply is "0". A zero in either field
+means that no live reserve exists.
 
 The sector comes from data/ticker_universe.json, which scripts/ticker_universe.py
 writes. scripts/sector_map.py holds the match rules and backfills a file without
@@ -82,6 +88,11 @@ RESERVES_URL = f"{API_BASE}/proof-of-reserves"
 
 # The API rejects the default urllib User-Agent with HTTP 403.
 USER_AGENT = "xstocks-terminal/1.0"
+
+# The catalog marks every asset name with this text, for example
+# "Tesla xStock". The symbol carries the same mark, so the snapshot drops the
+# words and the page keeps the name column narrow.
+NAME_SUFFIX = " xStock"
 
 # The log lines print in Eastern time, where the main session runs.
 MARKET_ZONE = ZoneInfo("America/New_York")
@@ -253,18 +264,36 @@ def listing_country(node: Record) -> str | None:
     return None
 
 
+def short_name(name: str) -> str:
+    """Return the asset name without the trailing xStock mark.
+
+    The catalog marks every name with " xStock", for example "Tesla xStock".
+    The symbol already carries that mark, so the snapshot drops the words and
+    the page shows "Tesla". The compare ignores case and the space around the
+    name. A name that holds the mark alone stays unchanged.
+    """
+    trimmed = name.strip()
+    if not trimmed.lower().endswith(NAME_SUFFIX.lower()):
+        return name
+
+    short = trimmed[: -len(NAME_SUFFIX)].strip()
+    return short or name
+
+
 def merge_records(
     asset_nodes: list[Record], reserve_nodes: list[Record]
-) -> tuple[list[Record], list[str], list[str]]:
+) -> tuple[list[Record], list[str], list[str], list[str]]:
     """Join the reserves onto the catalog by symbol.
 
     Keep one record per asset that holds a reserve row. Return the kept records,
-    the symbols dropped for zero shares held, and the symbols with no reserve
-    entry. A zero count and a missing row both mean that no live reserve exists.
+    the symbols dropped for zero shares held, the symbols dropped for a zero
+    circulating supply, and the symbols with no reserve entry. A zero count and
+    a missing row both mean that no live reserve exists.
 
     The sector starts empty, because the ticker universe supplies that value.
     apply_sectors() fills it after the price step. The listing country comes
-    from the catalog row, so this step fills it.
+    from the catalog row, so this step fills it. The name loses its xStock mark
+    in this step, so the JSON holds the plain name.
     """
     reserves: dict[str, tuple[Any, Any]] = {}
     for node in reserve_nodes:
@@ -274,12 +303,14 @@ def merge_records(
 
     merged: list[Record] = []
     dropped: list[str] = []
+    thin_supply: list[str] = []
     absent: list[str] = []
     for node in asset_nodes:
         symbol = node.get("symbol")
         name = node.get("name")
         if not isinstance(symbol, str) or not isinstance(name, str):
             continue
+        name = short_name(name)
 
         shares, supply = reserves.get(symbol, (None, None))
         if shares is None:
@@ -287,6 +318,9 @@ def merge_records(
             continue
         if shares == "0":
             dropped.append(symbol)
+            continue
+        if supply == "0":
+            thin_supply.append(symbol)
             continue
 
         merged.append(
@@ -299,7 +333,7 @@ def merge_records(
                 "circulatingSupply": supply,
             }
         )
-    return merged, dropped, absent
+    return merged, dropped, thin_supply, absent
 
 
 def closed_market_symbols(asset_nodes: list[Record]) -> set[str]:
@@ -518,11 +552,11 @@ def run(args: argparse.Namespace) -> int:
     print("Fetching proof of reserves...")
     reserve_nodes = fetch_pages(RESERVES_URL, "reserves")
 
-    records, dropped_symbols, absent_symbols = merge_records(
+    records, dropped_symbols, thin_supply_symbols, absent_symbols = merge_records(
         asset_nodes, reserve_nodes
     )
     fetched_total = len(asset_nodes)
-    removed = len(dropped_symbols) + len(absent_symbols)
+    removed = len(dropped_symbols) + len(thin_supply_symbols) + len(absent_symbols)
 
     moment = datetime.now(timezone.utc)
     stamp = moment.astimezone(MARKET_ZONE).strftime("%Y-%m-%d %H:%M %Z")
@@ -570,10 +604,13 @@ def run(args: argparse.Namespace) -> int:
     print(
         f"Filtered out {removed} assets (fetched {fetched_total}): "
         f"{len(dropped_symbols)} zero shares held, "
+        f"{len(thin_supply_symbols)} zero circulating supply, "
         f"{len(absent_symbols)} no reserve entry"
     )
     if dropped_symbols:
         print(f"Zero shares held: {', '.join(dropped_symbols)}")
+    if thin_supply_symbols:
+        print(f"Zero circulating supply: {', '.join(thin_supply_symbols)}")
     if absent_symbols:
         print(f"No reserve entry: {', '.join(absent_symbols)}")
     print(f"Prices: {fresh} fresh, {retained} retained, {unavailable} unavailable")

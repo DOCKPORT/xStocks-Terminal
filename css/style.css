@@ -1,194 +1,17 @@
 /* ==========================================================================
-   xStocks Terminal — Base and layout
-   Depends on css/theme.css. Load that file first.
+   xStocks Terminal — Components
+   Depends on css/theme.css and css/base.css. Load those files first.
+   The narrow screen rules live in css/mobile.css. Load that file last, so the
+   narrow rules win the cascade.
    ========================================================================== */
-
-/* --- Reset ---------------------------------------------------------------- */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-* {
-  margin: 0;
-}
-
-html {
-  -webkit-text-size-adjust: 100%;
-  /* Subtle bars in every scroll area, the table wraps included. The two
-     standard properties inherit. A browser that does not know them shows its
-     own bar, so nothing breaks. */
-  scrollbar-gutter: stable;
-  scrollbar-width: thin;
-  scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
-}
-
-body {
-  min-height: 100dvh;
-  background-color: var(--bg-page);
-  color: var(--text-primary);
-  font-family: var(--font-body);
-  font-size: var(--text-base);
-  font-weight: var(--weight-regular);
-  line-height: var(--leading-normal);
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  display: flex;
-  flex-direction: column;
-}
-
-img,
-svg,
-picture {
-  display: block;
-  max-width: 100%;
-}
-
-button,
-input,
-select,
-textarea {
-  font: inherit;
-  color: inherit;
-}
-
-button {
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-a {
-  color: var(--accent-alt);
-  text-decoration-color: var(--sol-teal-deep);
-  text-underline-offset: 3px;
-}
-
-a:hover {
-  text-decoration-color: currentColor;
-}
-
-:focus-visible {
-  outline: none;
-  box-shadow: var(--focus-ring);
-}
-
-::selection {
-  background: var(--sol-purple-deep);
-  color: var(--grey-000);
-}
-
-/* --- Typography ----------------------------------------------------------- */
-h1,
-h2,
-h3 {
-  font-family: var(--font-display);
-  font-weight: var(--weight-bold);
-  line-height: var(--leading-tight);
-  letter-spacing: var(--tracking-tight);
-  text-wrap: balance;
-}
-
-h1 {
-  font-size: var(--text-2xl);
-}
-
-h2 {
-  font-size: var(--text-xl);
-}
-
-h3 {
-  font-size: var(--text-lg);
-  font-weight: var(--weight-medium);
-}
-
-p {
-  max-width: var(--measure);
-  text-wrap: pretty;
-}
-
-/* Numbers hold a fixed width so columns stay aligned. */
-.numeric,
-.mono {
-  font-family: var(--font-mono);
-  font-variant-numeric: tabular-nums;
-  font-feature-settings: "tnum" 1;
-  letter-spacing: -0.01em;
-}
-
-.eyebrow {
-  font-family: var(--font-mono);
-  font-size: var(--text-2xs);
-  font-weight: var(--weight-medium);
-  text-transform: uppercase;
-  letter-spacing: var(--tracking-wider);
-  color: var(--text-faint);
-}
-
-.text-muted {
-  color: var(--text-muted);
-}
-
-/* --- Layout --------------------------------------------------------------- */
-.container {
-  width: 100%;
-  max-width: 1240px;
-  margin-inline: auto;
-  padding-inline: var(--gutter);
-}
-
-.section {
-  padding-block: var(--space-7);
-  border-top: 1px solid var(--border);
-}
-
-.section:first-of-type {
-  border-top: none;
-  padding-block-start: var(--space-6);
-}
-
-.section-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: var(--space-3);
-  margin-block-end: var(--space-5);
-}
-
-/* The title row doubles as a control group. The base reset clears the button.
-   The font is pinned here. A heading parent must not leak its own metrics. */
-.section-head__btn {
-  padding: var(--space-2) var(--space-4);
-  border: 1px solid var(--border);
-  border-radius: var(--radius-md);
-  font-family: var(--font-display);
-  font-size: var(--text-md);
-  font-weight: var(--weight-regular);
-  line-height: var(--leading-tight);
-  letter-spacing: normal;
-  text-align: start;
-}
-
-.section-head__btn:hover {
-  border-color: var(--border-strong);
-}
-
-/* The selected control takes the accent. Its pair stays grey. */
-.section-head__btn[aria-pressed="true"] {
-  border-color: var(--accent-line);
-}
-
-.section-head__btn:focus-visible {
-  outline: none;
-  box-shadow: var(--focus-ring);
-}
 
 /* --- Top bar -------------------------------------------------------------- */
 .topbar {
   position: sticky;
   inset-block-start: 0;
   z-index: var(--z-sticky);
+  /* The status bar sits over the page in a standalone web app. */
+  padding-block-start: env(safe-area-inset-top);
   border-block-end: 1px solid var(--border);
   background: var(--bg-page);
 }
@@ -205,6 +28,20 @@ p {
   align-items: center;
   gap: var(--space-3);
   min-width: 0;
+}
+
+/* The brand mark holds a square view box and no clear space, so it needs no
+   padding. The parent gap sets the space before the name. */
+.brand__logo-link {
+  display: flex;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.brand__logo {
+  display: block;
+  inline-size: 28px;
+  block-size: 28px;
 }
 
 .brand__name {
@@ -226,6 +63,24 @@ p {
   gap: var(--space-3);
   color: var(--text-faint);
   font-size: var(--text-xs);
+}
+
+/* The brand mark links out. The text stays muted, so the rule drops the
+   underline that the global anchor rule adds. */
+.topbar__link {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--text-faint);
+  font-size: var(--text-md);
+  text-decoration: none;
+}
+
+.topbar__icon {
+  display: block;
+  inline-size: 28px;
+  block-size: 28px;
+  opacity: 0.7;
 }
 
 /* --- Hero ----------------------------------------------------------------- */
@@ -322,7 +177,9 @@ p {
   min-width: 0;
 }
 
-@media (min-width: 720px) {
+/* A wide screen takes three columns. The value clears the narrow query in
+   css/mobile.css, so the 720px case takes the narrow rules. */
+@media (min-width: 720.02px) {
   .stats__grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 0;
@@ -364,11 +221,6 @@ p {
     transform var(--duration-fast) var(--ease-out);
 }
 
-.btn:hover {
-  background: var(--bg-hover);
-  border-color: var(--border-strong);
-}
-
 .btn:active {
   transform: translateY(1px);
 }
@@ -378,11 +230,6 @@ p {
   background-color: var(--accent);
   color: var(--accent-contrast);
   font-weight: var(--weight-bold);
-}
-
-.btn--primary:hover {
-  border-color: var(--sol-purple-deep);
-  background-color: var(--sol-purple-deep);
 }
 
 .btn--ghost {
@@ -412,10 +259,6 @@ p {
 
 .search__input::placeholder {
   color: var(--text-faint);
-}
-
-.search__input:hover {
-  border-color: var(--border-strong);
 }
 
 /* The global teal focus ring is off here. A light grey line marks the focus. */
@@ -457,10 +300,6 @@ p {
 
 .table tbody tr {
   transition: background-color var(--duration-fast) var(--ease-out);
-}
-
-.table tbody tr:hover {
-  background: var(--bg-raised);
 }
 
 /* The row holds the logo, the name, and the symbol in one flex line. The logo
@@ -580,12 +419,7 @@ p {
 }
 
 /* The detail row holds the assets of one group. The sunken fill groups the
-   open list, and the row takes no hover fill of its own. */
-.table tbody tr.sector__detail:hover,
-.table tbody tr.region__detail:hover {
-  background: none;
-}
-
+   open list. The row takes no fill of its own. */
 .table .sector__cell,
 .table .region__cell {
   padding-block: var(--space-4);
@@ -650,6 +484,8 @@ p {
 .footer {
   margin-block-start: auto;
   padding-block: var(--space-6);
+  /* The home indicator sits over the page on a modern phone. */
+  padding-block-end: max(var(--space-6), env(safe-area-inset-bottom));
   border-block-start: 1px solid var(--border-subtle);
   color: var(--text-faint);
   font-size: var(--text-xs);
@@ -676,6 +512,65 @@ p {
   color: var(--negative);
 }
 
+/* --- Pointer -------------------------------------------------------------- */
+/* Hover belongs to a mouse. A touch screen reads the pressed state only, so a
+   tap never leaves a row lit after the finger lifts. */
+@media (hover: hover) {
+  a:hover {
+    text-decoration-color: currentColor;
+  }
+
+  .topbar__link:hover {
+    color: var(--text-muted);
+  }
+
+  .topbar__link:hover .topbar__icon {
+    opacity: 1;
+  }
+
+  .btn:hover {
+    background: var(--bg-hover);
+    border-color: var(--border-strong);
+  }
+
+  .btn--primary:hover {
+    border-color: var(--sol-purple-deep);
+    background-color: var(--sol-purple-deep);
+  }
+
+  .section-head__btn:hover {
+    border-color: var(--border-strong);
+  }
+
+  .search__input:hover {
+    border-color: var(--border-strong);
+  }
+
+  .table tbody tr:hover {
+    background: var(--bg-raised);
+  }
+
+  .table tbody tr.sector__detail:hover,
+  .table tbody tr.region__detail:hover {
+    background: none;
+  }
+}
+
+/* --- Pressed state -------------------------------------------------------- */
+/* A tap must show an answer at once, because a touch screen holds no hover. */
+.table tbody tr:active {
+  background: var(--bg-raised);
+}
+
+.table tbody tr.sector__detail:active,
+.table tbody tr.region__detail:active {
+  background: none;
+}
+
+.section-head__btn:active {
+  border-color: var(--border-strong);
+}
+
 /* --- Motion --------------------------------------------------------------- */
 @keyframes rise {
   from {
@@ -690,19 +585,4 @@ p {
 
 .animate-rise {
   animation: rise var(--duration-slow) var(--ease-out) both;
-}
-
-/* --- Responsive ----------------------------------------------------------- */
-@media (max-width: 720px) {
-  .topbar__meta {
-    display: none;
-  }
-
-  .hero {
-    padding-block: var(--space-7) var(--space-5);
-  }
-
-  .table-wrap {
-    max-block-size: 60vh;
-  }
 }

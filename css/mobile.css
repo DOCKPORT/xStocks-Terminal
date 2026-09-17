@@ -1,0 +1,155 @@
+/* ==========================================================================
+   xStocks Terminal — Narrow screen
+   Every rule in this file applies at 720px and below. The stylesheet link in
+   index.html carries the condition, and that link comes after css/style.css.
+   Load this file last, so these rules win the cascade.
+   ========================================================================== */
+
+/* The DockPort mark stays on a phone. The label moves out of sight but stays
+   in the accessibility tree, so the link keeps its name. */
+.topbar__link {
+  justify-content: center;
+  min-block-size: 44px;
+  min-inline-size: 44px;
+}
+
+.topbar__link span {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+/* The four view buttons hold one row. The row scrolls sideways. */
+.section-head {
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-1);
+  margin-block-end: var(--space-4);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scrollbar-width: none;
+}
+
+.section-head::-webkit-scrollbar {
+  display: none;
+}
+
+/* The heading keeps its place in the outline. Its box hugs the button. */
+.section-head h2 {
+  display: flex;
+  align-items: center;
+  margin: 0;
+  font-size: inherit;
+}
+
+/* A field under 16px makes the browser zoom the whole page on focus. */
+.search__input {
+  font-size: 1rem;
+}
+
+/* The columns share a narrow screen. The cells take a tight inset, so the
+   asset column keeps the room that it needs. The name starts at the gutter
+   of the page. */
+.table th,
+.table td {
+  padding-inline: var(--space-1);
+}
+
+.table .col-asset {
+  padding-inline-start: var(--space-2);
+}
+
+/* Every row drops one step. The name leads, so the symbol and the share of
+   the total take the step below it. */
+.table__name,
+.table__cap {
+  font-size: var(--text-base);
+}
+
+.table__sym,
+.table__sep,
+.table__share,
+.table__logo--empty {
+  font-size: var(--text-sm);
+}
+
+.table__rank {
+  font-size: var(--text-2xs);
+}
+
+/* A smaller logo keeps the stack in proportion. */
+.table__logo {
+  inline-size: 32px;
+  block-size: 32px;
+}
+
+/* The page scrolls the table. A second scroll area fights the first one. */
+.table-wrap {
+  max-block-size: none;
+  overflow: visible;
+}
+
+/* The top bar holds 60px. The header pins below it. */
+.table-wrap thead th {
+  inset-block-start: calc(60px + env(safe-area-inset-top));
+}
+
+/* Every row drops the dash and stacks the ticker below the name. The ticker
+   starts at the left edge of the name, so the two lines read as one column
+   beside the logo. */
+.table__asset {
+  --stack-indent: calc(32px + var(--space-2));
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.table__sep {
+  display: none;
+}
+
+/* A name breaks at a word boundary, never inside a word. The automatic
+   minimum then keeps the column at least as wide as the longest word, so the
+   letters cannot stack one on top of another. */
+.table__name {
+  flex: 1 1 0;
+  overflow-wrap: break-word;
+}
+
+.table__sym {
+  flex: 1 1 calc(100% - var(--stack-indent));
+  margin-inline-start: var(--stack-indent);
+}
+
+/* The rank number takes a column that a phone cannot spare. The row order
+   still reads down the list, so the plain screen drops the column. The
+   header cell goes with it, because both cells carry the same class. */
+.view-panel[data-view-panel="market-cap"] .col-rank {
+  display: none;
+}
+
+/* The ranked table holds four columns. A narrow screen cannot spare the room
+   for a long name, so the ticker stands alone beside the logo. Every other
+   view keeps the name. */
+.view-panel[data-view-panel="market-cap"] .table__name {
+  display: none;
+}
+
+/* The ticker names the row on its own. The light color marks it as the label,
+   not as subtext. One line takes no indent. */
+.view-panel[data-view-panel="market-cap"] .table__sym {
+  color: var(--text-primary);
+  flex: 0 1 auto;
+  margin-inline-start: 0;
+}
+
+/* The group list takes less inset, because the column is narrow. */
+.table .sector__assets,
+.table .region__assets {
+  margin-inline-start: 0;
+  padding-inline-start: var(--space-4);
+}

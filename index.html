@@ -2,7 +2,10 @@
 <html lang="en" data-app-state="loading">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, viewport-fit=cover"
+    />
     <meta name="color-scheme" content="dark" />
     <meta name="theme-color" content="#0b0b0d" />
     <title>xStocks Terminal</title>
@@ -19,17 +22,49 @@
     />
 
     <link rel="stylesheet" href="css/theme.css" />
+    <link rel="stylesheet" href="css/base.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <!-- The narrow screen rules. This link stays last, so those rules win. -->
+    <link rel="stylesheet" href="css/mobile.css" media="(max-width: 720px)" />
   </head>
 
   <body>
     <header class="topbar">
       <div class="container topbar__inner">
         <div class="brand">
+          <a
+            class="brand__logo-link"
+            href="https://xstocks.fi/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="xStocks"
+          >
+            <img
+              class="brand__logo"
+              src="css/xstocks-logo.svg"
+              alt=""
+              width="28"
+              height="28"
+            />
+          </a>
           <span class="brand__name">xStocks <span>Terminal</span></span>
         </div>
         <div class="topbar__meta">
-          <span>DockPort</span>
+          <a
+            class="topbar__link"
+            href="https://github.com/DOCKPORT"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>DockPort</span>
+            <img
+              class="topbar__icon"
+              src="css/GitHub_Invertocat_White_Clearspace.svg"
+              alt=""
+              width="28"
+              height="28"
+            />
+          </a>
         </div>
       </div>
     </header>
@@ -204,7 +239,7 @@
     <footer class="footer">
       <div class="container footer__inner">
         <span>xStocks Terminal</span>
-        <span class="numeric">Data snapshot · not investment advice</span>
+        <span class="numeric">All data provided by the official xStocks API</span>
         <span id="footer-year" class="numeric"></span>
       </div>
     </footer>
