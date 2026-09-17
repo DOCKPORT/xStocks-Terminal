@@ -101,6 +101,8 @@
   --bg-page: var(--grey-950);
   --bg-surface: var(--grey-900);
   --bg-raised: var(--grey-800);
+  /* The veiled fill for a glass header. The rows below show through it. */
+  --bg-veil: color-mix(in srgb, var(--grey-800) 72%, transparent);
   --bg-sunken: var(--grey-850);
   --bg-hover: var(--grey-700);
   --bg-active: var(--grey-600);

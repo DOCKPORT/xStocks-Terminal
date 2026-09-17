@@ -116,8 +116,26 @@
   };
 
   /**
-   * Wire the view buttons. One click moves the pressed state. The stylesheet
-   * draws the purple and grey borders from that state.
+   * Bring one button into the middle of its scrolling row. A narrow screen puts
+   * the view row on one sideways track, so a button can sit half out of sight.
+   * The query runs here, because the duration tokens cannot reach a script.
+   * @param {HTMLButtonElement} picked - The button that the user pressed.
+   * @returns {void}
+   */
+  const centerViewButton = (picked) => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    picked.scrollIntoView({
+      behavior: reduceMotion ? "auto" : "smooth",
+      block: "nearest",
+      inline: "center",
+    });
+  };
+
+  /**
+   * Wire the view buttons. One click moves the pressed state and centers the
+   * button in the row. The stylesheet draws the purple and grey borders from
+   * that state.
    * @returns {void}
    */
   const bindViewToggle = () => {
@@ -152,6 +170,7 @@
       if (view) {
         selectView(picked, group);
         showPanel(view);
+        centerViewButton(picked);
       }
     });
   };
