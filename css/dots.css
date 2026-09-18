@@ -1,0 +1,46 @@
+/* ==========================================================================
+   xStocks Terminal — Dot field
+   The page shows an array of grey dots behind the content. The dots appear in
+   the page margins and between the sections. A panel, a bar, or a control
+   paints its own fill, so the dots stay hidden under those parts.
+   The field is one solid grey fill. A mask cuts that fill into dots. No
+   gradient takes part, so the grey stays flat.
+   Depends on css/theme.css. Load this file after css/base.css.
+   ========================================================================== */
+
+:root {
+  /* The mask holds one dot in one tile. Only the alpha channel counts, so the
+     image carries no colour. The fill in the layer below carries the grey. The
+     circle covers about one seventh of the tile across, so the dot measures
+     just over 2px at the default step of 14px. Change the circle radius to
+     change that share. */
+  --dot-image: url("data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2040%2040'%3E%3Ccircle%20cx='20'%20cy='20'%20r='3'/%3E%3C/svg%3E");
+}
+
+/* A browser without mask support must not paint the fill as a plain grey
+   sheet. This test covers both spellings, because older Safari ships the
+   prefixed property only. A browser that fails the test shows no field. */
+@supports ((mask-image: var(--dot-image)) or
+  (-webkit-mask-image: var(--dot-image))) {
+  /* The layer holds the viewport, so the array covers the whole page. The
+     layer never moves, so the array stays still while the page scrolls. The
+     layer takes no pointer events, so a click reaches the page below it.
+     The layer reads a negative z index. That index paints the fill over the
+     page fill and under every line of content. */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: var(--z-under);
+    pointer-events: none;
+    background-color: var(--dot-color);
+    /* One tile holds one dot. The tile repeats at the step, so the array stays
+       uniform on both axes. */
+    mask-image: var(--dot-image);
+    mask-repeat: repeat;
+    mask-size: var(--dot-step) var(--dot-step);
+    -webkit-mask-image: var(--dot-image);
+    -webkit-mask-repeat: repeat;
+    -webkit-mask-size: var(--dot-step) var(--dot-step);
+  }
+}

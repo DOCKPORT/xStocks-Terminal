@@ -145,12 +145,21 @@ p {
 
 .section {
   padding-block: var(--space-7);
-  border-top: 1px solid var(--border);
 }
 
+/* The page shows no rule between two bands. The gap alone divides them. The
+   first band takes a shorter top space, because the top bar holds it. The
+   bottom space stays tight, because the metric card and the control row read
+   as one block. */
 .section:first-of-type {
-  border-top: none;
   padding-block-start: var(--space-6);
+  padding-block-end: var(--space-6);
+}
+
+/* A band that follows another band takes a short top space. The control row
+   then sits close under the metric card. */
+.section + .section {
+  padding-block-start: var(--space-4);
 }
 
 .section-head {
@@ -170,6 +179,10 @@ p {
   padding: var(--space-2) var(--space-4);
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
+  /* The control sits over the dot field. The fill stays opaque, so a dot never
+     shows through the button. The control takes the fill of the metric card,
+     so the two read as one family. One value covers every state. */
+  background: var(--bg-surface);
   font-family: var(--font-display);
   font-size: var(--text-md);
   font-weight: var(--weight-regular);

@@ -89,6 +89,10 @@
   --duration-slow: 420ms;
 
   /* --- Layer ------------------------------------------------------------- */
+  /* The dot field sits under the page fill. Only css/dots.css reads this
+     value. A negative layer paints over the page fill and under every line of
+     content. */
+  --z-under: -1;
   --z-base: 0;
   --z-raised: 10;
   --z-sticky: 100;
@@ -106,6 +110,12 @@
   --bg-sunken: var(--grey-850);
   --bg-hover: var(--grey-700);
   --bg-active: var(--grey-600);
+
+  /* Dot field. The page shows an array of grey dots behind the content.
+     css/dots.css draws that array. The grey sits bright against the page fill,
+     so the dots read at a glance. The step holds the gap between two dots. */
+  --dot-color: var(--grey-600);
+  --dot-step: 14px;
 
   /* Lines. Flat values only. No transparency. */
   --border-subtle: var(--grey-700);

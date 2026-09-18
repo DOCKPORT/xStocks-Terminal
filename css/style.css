@@ -527,6 +527,9 @@
     max(var(--space-6), env(safe-area-inset-bottom)) +
       clamp(0px, 100lvh - 100svh, 8rem)
   );
+  /* The fill stays opaque, so the dot field never shows through the band. The
+     value matches the top bar, so the two chrome bands read as one pair. */
+  background: var(--bg-page);
   border-block-start: 1px solid var(--border-subtle);
   color: var(--text-faint);
   font-size: var(--text-xs);
@@ -583,6 +586,17 @@
     border-color: var(--border-strong);
   }
 
+  /* The selected toggle keeps its accent border under the pointer. The selected
+     rule in base.css and the hover rule above carry the same specificity. The
+     later file wins while the pointer is on the button, so the grey border
+     would replace the accent and the selection would then look cleared. This
+     rule outranks the hover rule, because it adds one more state. The border
+     holds the accent. The selected control takes no hover fill, so its look
+     stays constant under the pointer. */
+  .section-head__btn[aria-pressed="true"]:hover {
+    border-color: var(--accent-line);
+  }
+
   .search__input:hover {
     border-color: var(--border-strong);
   }
@@ -610,6 +624,12 @@
 
 .section-head__btn:active {
   border-color: var(--border-strong);
+}
+
+/* The selected toggle keeps the accent while pressed. The reason matches the
+   hover case above. */
+.section-head__btn[aria-pressed="true"]:active {
+  border-color: var(--accent-line);
 }
 
 /* --- Motion --------------------------------------------------------------- */
