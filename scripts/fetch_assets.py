@@ -54,6 +54,9 @@ That logo script also compares every saved logo with the server. An image that
 changed on the server replaces the saved file, and the run prints each change.
 Pass --no-logo-check to skip the compare and the extra requests.
 
+scripts/http_client.py holds the shared HTTP layer: the User-Agent, the
+timeout, the retry count, the rate-limit wait, and the call pacer.
+
 Requires: Python 3.9 or later. No third-party packages.
 
 Usage:
@@ -68,26 +71,19 @@ import argparse
 import json
 import subprocess
 import sys
-import threading
-import time
-import urllib.error
-import urllib.request
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
-from email.utils import parsedate_to_datetime
 from functools import partial
 from pathlib import Path
 from typing import Any
 from zoneinfo import ZoneInfo
 
+import http_client
 import sector_map
 
 API_BASE = "https://api.backed.fi/api/v2/public"
 ASSETS_URL = f"{API_BASE}/assets"
 RESERVES_URL = f"{API_BASE}/proof-of-reserves"
-
-# The API rejects the default urllib User-Agent with HTTP 403.
-USER_AGENT = "xstocks-terminal/1.0"
 
 # The catalog marks every asset name with this text, for example
 # "Tesla xStock". The symbol carries the same mark, so the snapshot drops the
@@ -97,17 +93,15 @@ NAME_SUFFIX = " xStock"
 # The log lines print in Eastern time, where the main session runs.
 MARKET_ZONE = ZoneInfo("America/New_York")
 
-REQUEST_TIMEOUT_SECONDS = 60
-REQUEST_ATTEMPTS = 2
-RETRY_DELAY_SECONDS = 2
 DEFAULT_WORKERS = 8
+
+# A page of the catalog or of the reserves gets two attempts on a transport
+# error. The quote calls use the count below.
+PAGE_ATTEMPTS = 2
 
 # The price endpoint rate limits a burst of quote calls. Pace those calls only.
 QUOTE_ATTEMPTS = 4
 QUOTE_INTERVAL_SECONDS = 0.25
-RATE_LIMIT_CODES = (429, 503)
-RATE_LIMIT_BACKOFF_SECONDS = (2.0, 4.0, 8.0)
-RATE_LIMIT_MAX_WAIT_SECONDS = 30.0
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
@@ -117,114 +111,13 @@ Price = int | float | None
 Record = dict[str, Any]
 QuoteResult = tuple[Price, bool]
 
-# One time slot per quote call, shared by every worker thread.
-_PACER_LOCK = threading.Lock()
-_PACER_NEXT_SLOT = 0.0
-
-
-class RateLimitError(RuntimeError):
-    """The server refused the request with a rate-limit status."""
-
-
-def _wait_for_slot(interval: float) -> None:
-    """Hold the caller until its time slot. One slot per interval, all threads."""
-    global _PACER_NEXT_SLOT
-    with _PACER_LOCK:
-        start = max(time.monotonic(), _PACER_NEXT_SLOT)
-        _PACER_NEXT_SLOT = start + interval
-    delay = start - time.monotonic()
-    if delay > 0:
-        time.sleep(delay)
-
-
-def _retry_after_seconds(error: urllib.error.HTTPError) -> float | None:
-    """Read the Retry-After header. Return the wait in seconds, or None.
-
-    The value is a number of seconds or an HTTP date.
-    """
-    header = error.headers.get("Retry-After") if error.headers else None
-    if not header:
-        return None
-
-    seconds: float | None
-    try:
-        seconds = float(header)
-    except ValueError:
-        seconds = None
-    if seconds is not None:
-        return max(0.0, seconds)
-
-    try:
-        moment = parsedate_to_datetime(header)
-    except (TypeError, ValueError):
-        return None
-    if moment.tzinfo is None:
-        moment = moment.replace(tzinfo=timezone.utc)
-    return max(0.0, (moment - datetime.now(timezone.utc)).total_seconds())
-
-
-def _rate_limit_delay(error: urllib.error.HTTPError, attempt: int) -> float:
-    """Return the wait before a retry. Honor Retry-After, then back off."""
-    header_seconds = _retry_after_seconds(error)
-    if header_seconds is not None:
-        return min(header_seconds, RATE_LIMIT_MAX_WAIT_SECONDS)
-
-    index = min(attempt - 1, len(RATE_LIMIT_BACKOFF_SECONDS) - 1)
-    return RATE_LIMIT_BACKOFF_SECONDS[index]
-
-
-def fetch_json(
-    url: str,
-    attempts: int = REQUEST_ATTEMPTS,
-    *,
-    pace_seconds: float = 0.0,
-    respect_retry_after: bool = False,
-) -> Any:
-    """Fetch one URL and decode the JSON body. Retry a transport error.
-
-    A positive pace_seconds holds the call until its time slot. With
-    respect_retry_after set, a rate-limit status waits for the Retry-After
-    value. Both options serve the quote calls only.
-    """
-    request = urllib.request.Request(
-        url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"}
-    )
-    last_error: Exception | None = None
-    rate_limited = False
-    for attempt in range(1, attempts + 1):
-        if pace_seconds > 0:
-            _wait_for_slot(pace_seconds)
-        try:
-            with urllib.request.urlopen(
-                request, timeout=REQUEST_TIMEOUT_SECONDS
-            ) as response:
-                payload = response.read()
-            return json.loads(payload)
-        except urllib.error.HTTPError as error:
-            last_error = error
-            if respect_retry_after and error.code in RATE_LIMIT_CODES:
-                rate_limited = True
-                if attempt < attempts:
-                    time.sleep(_rate_limit_delay(error, attempt))
-                continue
-            if attempt < attempts:
-                time.sleep(RETRY_DELAY_SECONDS)
-        except (OSError, ValueError) as error:
-            last_error = error
-            if attempt < attempts:
-                time.sleep(RETRY_DELAY_SECONDS)
-
-    if rate_limited:
-        raise RateLimitError(f"rate limited: {url}: {last_error}")
-    raise RuntimeError(f"request failed: {url}: {last_error}")
-
 
 def fetch_pages(url: str, label: str) -> list[Record]:
     """Walk every page of a paginated endpoint and return the nodes."""
     records: list[Record] = []
     page = 1
     while True:
-        body = fetch_json(f"{url}?page={page}")
+        body = http_client.fetch_json(f"{url}?page={page}", PAGE_ATTEMPTS)
         nodes = body.get("nodes") if isinstance(body, dict) else None
         if not isinstance(nodes, list):
             raise RuntimeError(f"{label} page {page} did not return a valid list.")  # noqa: TRY004
@@ -387,24 +280,19 @@ def load_last_known(path: Path) -> dict[str, Record]:
     return known
 
 
-def fetch_quote(
-    symbol: str, pace_seconds: float = QUOTE_INTERVAL_SECONDS
-) -> QuoteResult:
+def fetch_quote(symbol: str, pacer: http_client.Pacer) -> QuoteResult:
     """Fetch one quote. Return the price and a rate-limit flag.
 
     A null quote, a timeout, or a plain error returns the price None. The
-    quote call gets its own time slot, and a rate-limit status waits for the
-    Retry-After value.
+    quote call takes its own time slot from the pacer, and a rate-limit status
+    waits for the Retry-After value.
     """
     url = f"{ASSETS_URL}/{symbol}/price-data"
     try:
-        body = fetch_json(
-            url,
-            QUOTE_ATTEMPTS,
-            pace_seconds=pace_seconds,
-            respect_retry_after=True,
+        body = http_client.fetch_json(
+            url, QUOTE_ATTEMPTS, pacer=pacer
         )
-    except RateLimitError as error:
+    except http_client.RateLimitError as error:
         print(f"Warning: quote rate limited for {symbol}: {error}", file=sys.stderr)
         return None, True
     except RuntimeError as error:
@@ -540,6 +428,63 @@ def refresh_logos(new_symbols: list[str], check_changes: bool) -> None:
         )
 
 
+def fetch_all_quotes(
+    symbols: list[str], closed: set[str], args: argparse.Namespace
+) -> tuple[list[Price], int]:
+    """Fetch one quote per open-market symbol.
+
+    Return the price list, in symbol order, and the count of rate-limited
+    calls. A skipped symbol reads None, so it keeps the last known price.
+    """
+    todo = [symbol for symbol in symbols if symbol not in closed]
+    skipped = len(symbols) - len(todo)
+    stamp = (
+        datetime.now(timezone.utc).astimezone(MARKET_ZONE).strftime("%Y-%m-%d %H:%M %Z")
+    )
+
+    print(f"Fetching {len(todo)} quotes at {stamp} with {args.workers} workers...")
+    if skipped:
+        print(f"  Skipped {skipped}: the home market is closed.")
+    if not todo:
+        print("  No market is open now, so every quote call is skipped.")
+        return [], 0
+
+    pacer = http_client.Pacer(args.min_interval)
+    paced = partial(fetch_quote, pacer=pacer)
+    rate_limited = 0
+    fetched: list[Price] = []
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for price, limited in pool.map(paced, todo):
+            fetched.append(price)
+            if limited:
+                rate_limited += 1
+            done = len(fetched)
+            if done % 100 == 0 or done == len(todo):
+                print(f"  quotes: {done}/{len(todo)}")
+
+    price_by_symbol = dict(zip(todo, fetched))
+    return [price_by_symbol.get(symbol) for symbol in symbols], rate_limited
+
+
+def report_filters(
+    dropped: list[str], thin_supply: list[str], absent: list[str], fetched_total: int
+) -> None:
+    """Print the rows that the reserve filter removed, and the reason."""
+    removed = len(dropped) + len(thin_supply) + len(absent)
+    print(
+        f"Filtered out {removed} assets (fetched {fetched_total}): "
+        f"{len(dropped)} zero shares held, "
+        f"{len(thin_supply)} zero circulating supply, "
+        f"{len(absent)} no reserve entry"
+    )
+    if dropped:
+        print(f"Zero shares held: {', '.join(dropped)}")
+    if thin_supply:
+        print(f"Zero circulating supply: {', '.join(thin_supply)}")
+    if absent:
+        print(f"No reserve entry: {', '.join(absent)}")
+
+
 def run(args: argparse.Namespace) -> int:
     """Fetch everything, merge it, and write the JSON snapshot."""
     # Read the symbol set before the write, so the compare has a baseline.
@@ -552,42 +497,11 @@ def run(args: argparse.Namespace) -> int:
     print("Fetching proof of reserves...")
     reserve_nodes = fetch_pages(RESERVES_URL, "reserves")
 
-    records, dropped_symbols, thin_supply_symbols, absent_symbols = merge_records(
-        asset_nodes, reserve_nodes
-    )
-    fetched_total = len(asset_nodes)
-    removed = len(dropped_symbols) + len(thin_supply_symbols) + len(absent_symbols)
-
-    moment = datetime.now(timezone.utc)
-    stamp = moment.astimezone(MARKET_ZONE).strftime("%Y-%m-%d %H:%M %Z")
-
+    records, dropped, thin_supply, absent = merge_records(asset_nodes, reserve_nodes)
     symbols = [record["symbol"] for record in records]
+
     closed = set() if args.force_quotes else closed_market_symbols(asset_nodes)
-    todo = [symbol for symbol in symbols if symbol not in closed]
-    skipped = len(symbols) - len(todo)
-
-    print(
-        f"Fetching {len(todo)} quotes at {stamp} "
-        f"with {args.workers} workers..."
-    )
-    if skipped:
-        print(f"  Skipped {skipped}: the home market is closed.")
-    if not todo:
-        print("  No market is open now, so every quote call is skipped.")
-
-    rate_limited = 0
-    fetched: list[Price] = []
-    paced = partial(fetch_quote, pace_seconds=args.min_interval)
-    with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        for price, limited in pool.map(paced, todo):
-            fetched.append(price)
-            if limited:
-                rate_limited += 1
-            done = len(fetched)
-            if done % 100 == 0 or done == len(todo):
-                print(f"  quotes: {done}/{len(todo)}")
-    price_by_symbol = dict(zip(todo, fetched))
-    quotes = [price_by_symbol.get(symbol) for symbol in symbols]
+    quotes, rate_limited = fetch_all_quotes(symbols, closed, args)
 
     fresh, retained, unavailable = apply_prices(records, quotes, last_known)
 
@@ -597,29 +511,16 @@ def run(args: argparse.Namespace) -> int:
     )
 
     write_outputs(records)
-
     new_symbols = report_symbol_changes(records, last_known, has_baseline)
 
     print(f"Wrote {len(records)} assets to {OUT_JSON}")
-    print(
-        f"Filtered out {removed} assets (fetched {fetched_total}): "
-        f"{len(dropped_symbols)} zero shares held, "
-        f"{len(thin_supply_symbols)} zero circulating supply, "
-        f"{len(absent_symbols)} no reserve entry"
-    )
-    if dropped_symbols:
-        print(f"Zero shares held: {', '.join(dropped_symbols)}")
-    if thin_supply_symbols:
-        print(f"Zero circulating supply: {', '.join(thin_supply_symbols)}")
-    if absent_symbols:
-        print(f"No reserve entry: {', '.join(absent_symbols)}")
+    report_filters(dropped, thin_supply, absent, len(asset_nodes))
     print(f"Prices: {fresh} fresh, {retained} retained, {unavailable} unavailable")
     print(f"Rate limited quotes: {rate_limited}")
     print(sector_map.counts_line(sector_counts))
     print(country_counts_line(records))
 
     refresh_logos(new_symbols, not args.no_logo_check)
-
     return 0
 
 

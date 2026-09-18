@@ -16,7 +16,7 @@ request URL carries the key. The script prints the source name, never the key.
 
 A 401 or 403 answer stops the run at once, with one clear line. A 429 or 503
 answer waits for the Retry-After header, then backs off. A transport error
-retries.
+retries. scripts/http_client.py holds that shared HTTP layer.
 
 Output: data/ticker_universe.json
   {
@@ -54,27 +54,14 @@ import json
 import os
 import re
 import sys
-import time
-import urllib.error
-import urllib.request
 from datetime import datetime, timezone
-from email.utils import parsedate_to_datetime
 from pathlib import Path
 from typing import Any
 
+import http_client
+
 UNIVERSE_URL = "https://data.businessquant.com/universe"
 API_KEY_ENV = "BUSINESSQUANT_API_KEY"
-
-# The API rejects the default urllib User-Agent with HTTP 403.
-USER_AGENT = "xstocks-terminal/1.0"
-
-REQUEST_TIMEOUT_SECONDS = 60
-REQUEST_ATTEMPTS = 3
-RETRY_DELAY_SECONDS = 2
-AUTH_ERROR_CODES = (401, 403)
-RATE_LIMIT_CODES = (429, 503)
-RATE_LIMIT_BACKOFF_SECONDS = (2.0, 4.0, 8.0)
-RATE_LIMIT_MAX_WAIT_SECONDS = 30.0
 
 # The rows sit in the payload itself, or under one of these keys.
 ROW_KEYS = ("tickers", "data", "results", "universe", "nodes", "items")
@@ -94,106 +81,11 @@ OUT_JSON = REPO_ROOT / "data" / "ticker_universe.json"
 Row = dict[str, Any]
 
 
-class AuthError(RuntimeError):
-    """The server rejected the API key."""
-
-
-class RateLimitError(RuntimeError):
-    """The server refused the request with a rate-limit status."""
-
-
 def redact(text: str, key: str = "") -> str:
     """Hide the API key in a message. The key sits in the request URL."""
     if key:
         text = text.replace(key, "***")
     return re.sub(r"(api_key=)[^&\s]+", r"\1***", text)
-
-
-def describe_error(error: Exception) -> str:
-    """Describe a fetch error without the URL, because the URL holds the key."""
-    if isinstance(error, urllib.error.HTTPError):
-        return f"HTTP {error.code} {error.reason}"
-    if isinstance(error, urllib.error.URLError):
-        return f"{type(error).__name__}: {error.reason}"
-    return type(error).__name__
-
-
-def _retry_after_seconds(error: urllib.error.HTTPError) -> float | None:
-    """Read the Retry-After header. Return the wait in seconds, or None.
-
-    The value is a number of seconds or an HTTP date.
-    """
-    header = error.headers.get("Retry-After") if error.headers else None
-    if not header:
-        return None
-
-    seconds: float | None
-    try:
-        seconds = float(header)
-    except ValueError:
-        seconds = None
-    if seconds is not None:
-        return max(0.0, seconds)
-
-    try:
-        moment = parsedate_to_datetime(header)
-    except (TypeError, ValueError):
-        return None
-    if moment.tzinfo is None:
-        moment = moment.replace(tzinfo=timezone.utc)
-    return max(0.0, (moment - datetime.now(timezone.utc)).total_seconds())
-
-
-def _rate_limit_delay(error: urllib.error.HTTPError, attempt: int) -> float:
-    """Return the wait before a retry. Honor Retry-After, then back off."""
-    header_seconds = _retry_after_seconds(error)
-    if header_seconds is not None:
-        return min(header_seconds, RATE_LIMIT_MAX_WAIT_SECONDS)
-
-    index = min(attempt - 1, len(RATE_LIMIT_BACKOFF_SECONDS) - 1)
-    return RATE_LIMIT_BACKOFF_SECONDS[index]
-
-
-def fetch_json(url: str, attempts: int = REQUEST_ATTEMPTS) -> Any:
-    """Fetch one URL and decode the JSON body.
-
-    A rejected key stops at once. A rate-limit status waits for the
-    Retry-After value, then backs off. A transport error retries.
-    """
-    request = urllib.request.Request(
-        url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"}
-    )
-    last_error: Exception | None = None
-    rate_limited = False
-    for attempt in range(1, attempts + 1):
-        try:
-            with urllib.request.urlopen(
-                request, timeout=REQUEST_TIMEOUT_SECONDS
-            ) as response:
-                payload = response.read()
-            return json.loads(payload)
-        except urllib.error.HTTPError as error:
-            last_error = error
-            if error.code in AUTH_ERROR_CODES:
-                raise AuthError(
-                    f"the API key was rejected with HTTP {error.code}. "
-                    f"Check the key."
-                ) from error
-            if error.code in RATE_LIMIT_CODES:
-                rate_limited = True
-                if attempt < attempts:
-                    time.sleep(_rate_limit_delay(error, attempt))
-                continue
-            if attempt < attempts:
-                time.sleep(RETRY_DELAY_SECONDS)
-        except (OSError, ValueError) as error:
-            last_error = error
-            if attempt < attempts:
-                time.sleep(RETRY_DELAY_SECONDS)
-
-    if rate_limited:
-        raise RateLimitError(f"rate limited: {describe_error(last_error)}")
-    raise RuntimeError(f"request failed: {describe_error(last_error)}")
 
 
 def read_key_file(path: Path) -> str:
@@ -349,7 +241,9 @@ def run(args: argparse.Namespace) -> int:
 
     print(f"Key source: {source}")
     print("Fetching the ticker universe...")
-    payload = fetch_json(f"{UNIVERSE_URL}?api_key={key}")
+    payload = http_client.fetch_json(
+        f"{UNIVERSE_URL}?api_key={key}", raise_on_auth=True, label=UNIVERSE_URL
+    )
     rows = universe_rows(payload)
 
     print(f"Rows: {len(rows)}")

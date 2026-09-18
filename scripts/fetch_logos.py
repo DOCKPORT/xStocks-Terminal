@@ -17,7 +17,8 @@ Behaviour:
     costs one small request and no image bytes. A changed image replaces the
     file and prints CHANGED.
   - The host rejects the default urllib User-Agent with HTTP 403, so the
-    script sends its own Agent.
+    script sends its own Agent. scripts/http_client.py holds that header with
+    the timeout and the retry.
   - The content type must be image/png. That check runs before the write, so
     an error page never lands in the folder.
   - A failed write is removed. A partial file never stays behind.
@@ -43,20 +44,13 @@ import argparse
 import hashlib
 import json
 import sys
-import time
-import urllib.error
-import urllib.request
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
+import http_client
+
 LOGO_BASE = "https://xstocks-metadata.backed.fi/logos/tokens"
 
-# The host rejects the default urllib User-Agent with HTTP 403.
-USER_AGENT = "xstocks-terminal/1.0"
-
-REQUEST_TIMEOUT_SECONDS = 60
-REQUEST_ATTEMPTS = 3
-RETRY_DELAY_SECONDS = 2
 DEFAULT_WORKERS = 8
 PROGRESS_EVERY = 25
 
@@ -107,45 +101,28 @@ def download_logo(symbol: str, conditional: bool) -> tuple[str, str]:
     The status is "unchanged", "ok", "changed", or "miss".
 
     With conditional set, the request carries the fingerprint of the saved file.
-    An unchanged image then costs one small request and no image bytes. Retry a
-    transport error. An HTTP error is final. The body stays in memory until the
-    content type passes, so a bad response never reaches the disk.
+    An unchanged image then costs one small request and no image bytes. A wrong
+    content type stops the call before the write, so a bad response never
+    reaches the disk. The shared HTTP layer retries a transport error and stops
+    on an HTTP error.
     """
     out_path = OUT_DIR / f"{symbol}.png"
     saved = saved_bytes(out_path) if conditional else None
 
-    headers = {"User-Agent": USER_AGENT, "Accept": PNG_CONTENT_TYPE}
+    headers = {"Accept": PNG_CONTENT_TYPE}
     if saved is not None:
         headers["If-None-Match"] = f'"{hashlib.md5(saved).hexdigest()}"'
 
     url = f"{LOGO_BASE}/{symbol}.png"
-    request = urllib.request.Request(url, headers=headers)
+    try:
+        payload = http_client.get_bytes(
+            url, headers=headers, label=url, content_type=PNG_CONTENT_TYPE
+        )
+    except RuntimeError as error:
+        return "miss", f"MISS  {symbol} (download failed: {error})"
 
-    payload = b""
-    last_error: Exception | None = None
-    for attempt in range(1, REQUEST_ATTEMPTS + 1):
-        try:
-            with urllib.request.urlopen(
-                request, timeout=REQUEST_TIMEOUT_SECONDS
-            ) as response:
-                content_type = response.headers.get("Content-Type", "")
-                if content_type.split(";")[0].strip().lower() != PNG_CONTENT_TYPE:
-                    return (
-                        "miss",
-                        f"MISS  {symbol} (unexpected content type: {content_type})",
-                    )
-                payload = response.read()
-            break
-        except urllib.error.HTTPError as error:
-            if error.code == 304:
-                return "unchanged", f"SAME  {symbol}"
-            return "miss", f"MISS  {symbol} (download failed: HTTP {error.code})"
-        except (OSError, ValueError) as error:
-            last_error = error
-            if attempt < REQUEST_ATTEMPTS:
-                time.sleep(RETRY_DELAY_SECONDS)
-    else:
-        return "miss", f"MISS  {symbol} (download failed: {last_error})"
+    if payload is None:
+        return "unchanged", f"SAME  {symbol}"
 
     # A 200 with the saved bytes means the fingerprint of the server differs
     # from the file hash. Keep the saved file.
