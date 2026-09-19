@@ -313,13 +313,19 @@ def _is_price(value: Any) -> bool:
 def apply_prices(
     records: list[Record], quotes: list[Price], last_known: dict[str, Record]
 ) -> tuple[int, int, int]:
-    """Write the price. A null quote keeps the last known value. Return counts."""
+    """Write the price. A null quote keeps the last known value. Return counts.
+
+    The record holds the symbol order, and the quote list matches that order.
+    A short quote list reads None for the missing tail, so the last known price
+    stands. The zip call cannot do this job, because it drops the tail rows.
+    """
     fresh = 0
     retained = 0
     unavailable = 0
     stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
-    for record, quote in zip(records, quotes):
+    for index, record in enumerate(records):
+        quote = quotes[index] if index < len(quotes) else None
         if quote is not None:
             record["price"] = quote
             record["priceUpdatedAt"] = stamp
@@ -435,6 +441,8 @@ def fetch_all_quotes(
 
     Return the price list, in symbol order, and the count of rate-limited
     calls. A skipped symbol reads None, so it keeps the last known price.
+    With no open market the list holds one None per symbol, so the last known
+    price still stands on every row.
     """
     todo = [symbol for symbol in symbols if symbol not in closed]
     skipped = len(symbols) - len(todo)
@@ -447,7 +455,7 @@ def fetch_all_quotes(
         print(f"  Skipped {skipped}: the home market is closed.")
     if not todo:
         print("  No market is open now, so every quote call is skipped.")
-        return [], 0
+        return [None] * len(symbols), 0
 
     pacer = http_client.Pacer(args.min_interval)
     paced = partial(fetch_quote, pacer=pacer)
