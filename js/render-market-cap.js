@@ -13,6 +13,16 @@
  * The element that the ranking table writes to.
  * @typedef {object} MarketCapRefs
  * @property {HTMLElement} body - The table body that holds the rows.
+ * @property {HTMLElement} status - The live region that reports the filter result.
+ * @property {HTMLInputElement} input - The search field.
+ */
+
+/**
+ * One ranking row and its search text.
+ * @typedef {object} RankRow
+ * @property {HTMLTableRowElement} element - The table row.
+ * @property {AssetDetail} detail - The collapsible detail that pairs with the row.
+ * @property {string} haystack - The lower-case name and symbol.
  */
 
 (() => {
@@ -24,6 +34,9 @@
 
   const LOGO_DIR = "data/logos";
   const LOGO_SIZE = 40;
+
+  /** The ranked table holds four columns: the rank, the asset, the cap, and the share. */
+  const COLUMN_COUNT = 4;
 
   /** A dash marks a value that the snapshot does not hold, so a reader sees a gap and not a zero. */
   const NO_VALUE = "\u2014";
@@ -69,15 +82,12 @@
   };
 
   /**
-   * Build the asset cell. The cell holds the logo, the name, and the symbol, so
-   * the two tables look alike.
+   * Build the content of one row: the logo, the name, and the symbol, so the two
+   * tables look alike.
    * @param {Asset} asset - The asset for the row.
-   * @returns {HTMLTableCellElement} The cell that holds the whole entry.
+   * @returns {HTMLDivElement} The content of the row.
    */
-  const buildAssetCell = (asset) => {
-    const cell = document.createElement("td");
-    cell.className = "col-asset";
-
+  const buildAssetContent = (asset) => {
     const wrapper = document.createElement("div");
     wrapper.className = "table__asset";
 
@@ -95,9 +105,8 @@
     symbol.textContent = asset.symbol;
 
     wrapper.append(buildLogo(asset), label, separator, symbol);
-    cell.append(wrapper);
 
-    return cell;
+    return wrapper;
   };
 
   /**
@@ -114,46 +123,139 @@
   };
 
   /**
-   * Draw the ranking table. One row holds the rank, the asset, the market cap,
-   * and the share of the snapshot total.
+   * Build one ranking row and its detail panel. The rank holds the true market
+   * cap position, so a filter never renumbers the column. The whole row toggles
+   * the panel below it.
+   * @param {MarketCapRow} row - The asset and its market cap.
+   * @param {number} rank - The one-based market cap rank.
+   * @param {number} total - The market cap of the whole snapshot.
+   * @param {(trigger: HTMLElement, options?: AssetDetailOptions) => AssetDetail} createDetail - The shared detail builder.
+   * @returns {RankRow} The row, its detail, and its search text.
+   */
+  const buildRow = (row, rank, total, createDetail) => {
+    const element = document.createElement("tr");
+    element.className = "asset-row";
+
+    const detail = createDetail(element, {
+      columns: COLUMN_COUNT,
+      asset: row.asset,
+    });
+
+    const rankCell = document.createElement("td");
+    rankCell.className = "col-rank table__rank";
+    rankCell.textContent = String(rank);
+
+    const assetCell = document.createElement("td");
+    assetCell.className = "col-asset";
+    detail.toggle.append(buildAssetContent(row.asset));
+    assetCell.append(detail.toggle);
+
+    const capText = row.marketCap === null ? NO_VALUE : CAP.format(row.marketCap);
+    const shareText =
+      row.marketCap === null || total === 0
+        ? NO_VALUE
+        : SHARE.format(row.marketCap / total);
+
+    element.append(
+      rankCell,
+      assetCell,
+      buildNumberCell("is-numeric table__cap", capText),
+      buildNumberCell("is-numeric table__share", shareText),
+    );
+
+    return {
+      element,
+      detail,
+      haystack: `${row.asset.name} ${row.asset.symbol}`.toLowerCase(),
+    };
+  };
+
+  /**
+   * Draw the ranking table and wire the search field. One row holds the rank,
+   * the asset, the market cap, and the share of the snapshot total.
    * @param {MarketCapRanking} ranking - The rows in rank order and the total value.
-   * @param {MarketCapRefs} refs - The element that the table writes to.
+   * @param {MarketCapRefs} refs - The elements that the table writes to.
    * @returns {void}
    */
   const renderMarketCap = (ranking, refs) => {
+    const createDetail = ns.createAssetDetail;
+
+    if (typeof createDetail !== "function") {
+      throw new Error(
+        "The asset detail builder from js/asset-detail.js did not load.",
+      );
+    }
+
+    const total = ranking.rows.length;
     const fragment = document.createDocumentFragment();
 
+    /** @type {RankRow[]} */
+    const rows = [];
+
     ranking.rows.forEach((row, index) => {
-      const element = document.createElement("tr");
-
-      const rankCell = document.createElement("td");
-      rankCell.className = "col-rank table__rank";
-      rankCell.textContent = String(index + 1);
-
-      const capText = row.marketCap === null ? NO_VALUE : CAP.format(row.marketCap);
-      const shareText =
-        row.marketCap === null || ranking.total === 0
-          ? NO_VALUE
-          : SHARE.format(row.marketCap / ranking.total);
-
-      element.append(
-        rankCell,
-        buildAssetCell(row.asset),
-        buildNumberCell("is-numeric table__cap", capText),
-        buildNumberCell("is-numeric table__share", shareText),
-      );
-
-      fragment.append(element);
+      const entry = buildRow(row, index + 1, ranking.total, createDetail);
+      rows.push(entry);
+      fragment.append(entry.element, entry.detail.element);
     });
 
     refs.body.replaceChildren(fragment);
 
-    const built = refs.body.childElementCount;
-    if (built !== ranking.rows.length) {
+    const built = refs.body.querySelectorAll("tr.asset-row").length;
+    if (built !== total) {
+      throw new Error(`The ranking holds ${built} rows for ${total} assets.`);
+    }
+
+    const details = refs.body.querySelectorAll("tr.asset__detail").length;
+    if (details !== total) {
       throw new Error(
-        `The ranking holds ${built} rows for ${ranking.rows.length} assets.`,
+        `The ranking holds ${details} details for ${total} assets.`,
       );
     }
+
+    /**
+     * Show the rows that match the current query. Rows are toggled, not rebuilt,
+     * so the browser never reloads a logo and the rank column stays true. A row
+     * that leaves the list closes its detail, so no panel stays open on its own.
+     * @returns {void}
+     */
+    const applyQuery = () => {
+      const query = refs.input.value.trim().toLowerCase();
+      let visible = 0;
+
+      for (const row of rows) {
+        const matches = query === "" || row.haystack.includes(query);
+        row.element.hidden = !matches;
+
+        if (matches) {
+          visible += 1;
+        } else {
+          row.detail.close();
+        }
+      }
+
+      if (query === "") {
+        refs.status.textContent = `Showing all ${total} assets.`;
+        return;
+      }
+
+      if (visible === 0) {
+        refs.status.textContent = `No assets match "${query}".`;
+        return;
+      }
+
+      refs.status.textContent = `Showing ${visible} of ${total} assets.`;
+    };
+
+    refs.input.addEventListener("input", applyQuery);
+
+    refs.input.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && refs.input.value !== "") {
+        refs.input.value = "";
+        applyQuery();
+      }
+    });
+
+    applyQuery();
   };
 
   ns.renderMarketCap = renderMarketCap;

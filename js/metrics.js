@@ -30,7 +30,7 @@
  * @typedef {object} SectorRow
  * @property {string} sector - The sector name from the snapshot.
  * @property {number} assetCount - The number of assets in the sector.
- * @property {Asset[]} assets - The assets in the sector, in name order.
+ * @property {MarketCapRow[]} assets - The assets in the sector, largest market cap first. An asset without a value comes last, in name order.
  * @property {number | null} marketCap - The sum of price times circulating supply over the sector. Null when no asset in the sector holds a value.
  */
 
@@ -46,7 +46,7 @@
  * @typedef {object} RegionRow
  * @property {string} region - The listing country code from the snapshot, or "unknown".
  * @property {number} assetCount - The number of assets that list in the region.
- * @property {Asset[]} assets - The assets in the region, in name order.
+ * @property {MarketCapRow[]} assets - The assets in the region, largest market cap first. An asset without a value comes last, in name order.
  * @property {number | null} marketCap - The sum of price times circulating supply over the region. Null when no asset in the region holds a value.
  */
 
@@ -105,6 +105,23 @@
       return candidate;
     }
     return current;
+  };
+
+  /**
+   * Compare two market cap values. The larger value comes first. A missing value
+   * comes last. An equal pair returns zero, so the caller can break the tie.
+   * @param {number | null} a - The left value.
+   * @param {number | null} b - The right value.
+   * @returns {number} The sort result.
+   */
+  const compareMarketCap = (a, b) => {
+    if (a === null) {
+      return b === null ? 0 : 1;
+    }
+    if (b === null) {
+      return -1;
+    }
+    return b - a;
   };
 
   /**
@@ -171,15 +188,7 @@
     }
 
     /* The sort keeps the file order for equal values, because it is stable. */
-    rows.sort((a, b) => {
-      if (a.marketCap === null) {
-        return b.marketCap === null ? 0 : 1;
-      }
-      if (b.marketCap === null) {
-        return -1;
-      }
-      return b.marketCap - a.marketCap;
-    });
+    rows.sort((a, b) => compareMarketCap(a.marketCap, b.marketCap));
 
     return { rows, total };
   };
@@ -242,7 +251,7 @@
       const marketCap = price !== null && supply !== null ? price * supply : null;
 
       row.assetCount += 1;
-      row.assets.push(asset);
+      row.assets.push({ asset, marketCap });
 
       if (marketCap !== null) {
         row.marketCap = (row.marketCap ?? 0) + marketCap;
@@ -253,12 +262,15 @@
 
     const rows = Array.from(bySector.values());
 
-    /* The panel draws the assets under one sector, so the list reads in name
-       order. The symbol breaks a tie, the same rule as the asset table. */
+    /* The panel draws the assets under one sector, so the largest market cap
+       reads first. A missing value comes last. The name breaks a tie, then the
+       symbol, the same rule as the asset table. */
     for (const row of rows) {
       row.assets.sort(
         (a, b) =>
-          a.name.localeCompare(b.name) || a.symbol.localeCompare(b.symbol),
+          compareMarketCap(a.marketCap, b.marketCap) ||
+          a.asset.name.localeCompare(b.asset.name) ||
+          a.asset.symbol.localeCompare(b.asset.symbol),
       );
     }
 
@@ -272,18 +284,11 @@
 
     /* The largest sector comes first. A sector without a value comes last, in
        name order. The name breaks a tie, so every run draws the same order. */
-    rows.sort((a, b) => {
-      if (a.marketCap === null) {
-        return b.marketCap === null ? a.sector.localeCompare(b.sector) : 1;
-      }
-      if (b.marketCap === null) {
-        return -1;
-      }
-      if (b.marketCap !== a.marketCap) {
-        return b.marketCap - a.marketCap;
-      }
-      return a.sector.localeCompare(b.sector);
-    });
+    rows.sort(
+      (a, b) =>
+        compareMarketCap(a.marketCap, b.marketCap) ||
+        a.sector.localeCompare(b.sector),
+    );
 
     return { rows, total };
   };
@@ -313,7 +318,7 @@
       const marketCap = price !== null && supply !== null ? price * supply : null;
 
       row.assetCount += 1;
-      row.assets.push(asset);
+      row.assets.push({ asset, marketCap });
 
       if (marketCap !== null) {
         row.marketCap = (row.marketCap ?? 0) + marketCap;
@@ -324,12 +329,15 @@
 
     const rows = Array.from(byRegion.values());
 
-    /* The panel draws the assets under one region, so the list reads in name
-       order. The symbol breaks a tie, the same rule as the asset table. */
+    /* The panel draws the assets under one region, so the largest market cap
+       reads first. A missing value comes last. The name breaks a tie, then the
+       symbol, the same rule as the asset table. */
     for (const row of rows) {
       row.assets.sort(
         (a, b) =>
-          a.name.localeCompare(b.name) || a.symbol.localeCompare(b.symbol),
+          compareMarketCap(a.marketCap, b.marketCap) ||
+          a.asset.name.localeCompare(b.asset.name) ||
+          a.asset.symbol.localeCompare(b.asset.symbol),
       );
     }
 
@@ -343,18 +351,11 @@
 
     /* The largest region comes first. A region without a value comes last, in
        code order. The code breaks a tie, so every run draws the same order. */
-    rows.sort((a, b) => {
-      if (a.marketCap === null) {
-        return b.marketCap === null ? a.region.localeCompare(b.region) : 1;
-      }
-      if (b.marketCap === null) {
-        return -1;
-      }
-      if (b.marketCap !== a.marketCap) {
-        return b.marketCap - a.marketCap;
-      }
-      return a.region.localeCompare(b.region);
-    });
+    rows.sort(
+      (a, b) =>
+        compareMarketCap(a.marketCap, b.marketCap) ||
+        a.region.localeCompare(b.region),
+    );
 
     return { rows, total };
   };

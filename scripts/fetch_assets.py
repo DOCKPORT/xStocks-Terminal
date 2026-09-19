@@ -19,8 +19,8 @@ answers null. The script skips those symbols, so they keep the last known price.
 A missing flag fetches the quote, and --force-quotes calls every symbol anyway.
 
 Output: data/xstocks-assets.json
-  array of { name, symbol, listingCountry, sector, sharesHeld, circulatingSupply,
-            price, priceUpdatedAt }
+  array of { name, symbol, listingCountry, sector, industry, exchange,
+            sharesHeld, circulatingSupply, price, priceUpdatedAt }
   one row per asset that holds a reserve row with a live balance
 
 The name field holds no " xStock" mark. The catalog adds that mark to every
@@ -36,9 +36,11 @@ supply. See memory-bank/notes.md for the full meaning. The script drops a row
 when sharesHeld is "0" or when circulatingSupply is "0". A zero in either field
 means that no live reserve exists.
 
-The sector comes from data/ticker_universe.json, which scripts/ticker_universe.py
-writes. scripts/sector_map.py holds the match rules and backfills a file without
-a fetch. Without a universe file, each asset keeps the sector of the last run.
+The sector, the industry, and the exchange come from data/ticker_universe.json,
+which scripts/ticker_universe.py writes. scripts/sector_map.py holds the match
+rules and backfills a file without a fetch. Without a universe file, each asset
+keeps the sector, the industry, and the exchange of the last run. A value that
+the universe misses reads null, and the page then leaves that label out.
 
 The quote calls share one pacer. Each call takes one time slot. The default
 gap is 0.25 seconds. Pass --min-interval to change the gap. A 429 or 503
@@ -222,6 +224,8 @@ def merge_records(
                 "symbol": symbol,
                 "listingCountry": listing_country(node),
                 "sector": None,
+                "industry": None,
+                "exchange": None,
                 "sharesHeld": shares,
                 "circulatingSupply": supply,
             }

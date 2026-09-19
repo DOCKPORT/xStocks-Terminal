@@ -94,15 +94,21 @@
   };
 
   /**
-   * Build one line of the asset list: the logo, the name, and the symbol. The
-   * stylesheet draws the line with the same rule as the asset table.
-   * @param {Asset} asset - The asset for the line.
+   * Build one line of the asset list: the logo, the name, the symbol, and the
+   * market cap. The stylesheet draws the line with the same rule as the asset
+   * table. A missing value shows a dash, so a reader sees a gap and not a zero.
+   * The whole line toggles a detail panel below it.
+   * @param {MarketCapRow} row - The asset for the line and its market cap.
    * @param {(asset: Asset) => HTMLImageElement} buildLogo - The shared logo builder.
-   * @returns {HTMLLIElement} The line.
+   * @param {(trigger: HTMLElement, options?: AssetDetailOptions) => AssetDetail} createDetail - The shared detail builder.
+   * @returns {{ element: HTMLLIElement, detail: AssetDetail }} The line and its detail.
    */
-  const buildAssetLine = (asset, buildLogo) => {
+  const buildAssetLine = (row, buildLogo, createDetail) => {
+    const asset = row.asset;
     const item = document.createElement("li");
     item.className = "region__item";
+
+    const detail = createDetail(item, { asset });
 
     const wrapper = document.createElement("div");
     wrapper.className = "table__asset";
@@ -120,10 +126,16 @@
     symbol.className = "table__sym";
     symbol.textContent = asset.symbol;
 
-    wrapper.append(buildLogo(asset), label, separator, symbol);
-    item.append(wrapper);
+    const cap = document.createElement("span");
+    cap.className = "table__cap";
+    cap.textContent =
+      row.marketCap === null ? NO_VALUE : CAP.format(row.marketCap);
 
-    return item;
+    wrapper.append(buildLogo(asset), label, separator, symbol);
+    detail.toggle.append(wrapper, cap);
+    item.append(detail.toggle);
+
+    return { element: item, detail };
   };
 
   /**
@@ -136,9 +148,16 @@
    */
   const renderRegion = (totals, refs) => {
     const buildLogo = ns.buildLogo;
+    const createDetail = ns.createAssetDetail;
 
     if (typeof buildLogo !== "function") {
       throw new Error("The logo builder from js/render-list.js did not load.");
+    }
+
+    if (typeof createDetail !== "function") {
+      throw new Error(
+        "The asset detail builder from js/asset-detail.js did not load.",
+      );
     }
 
     const fragment = document.createDocumentFragment();
@@ -194,21 +213,33 @@
       const list = document.createElement("ul");
       list.className = "region__assets";
 
-      row.assets.forEach((asset) => {
-        list.append(buildAssetLine(asset, buildLogo));
+      /** @type {AssetDetail[]} */
+      const assetDetails = [];
+
+      row.assets.forEach((entry) => {
+        const line = buildAssetLine(entry, buildLogo, createDetail);
+        assetDetails.push(line.detail);
+        list.append(line.element, line.detail.element);
       });
 
       detailCell.append(list);
       detail.append(detailCell);
 
       /**
-       * Open or close the asset list of one region.
+       * Open or close the asset list of one region. A list that closes takes its
+       * open asset panels with it.
        * @param {boolean} open - True shows the list.
        * @returns {void}
        */
       const setOpen = (open) => {
         toggle.setAttribute("aria-expanded", open ? "true" : "false");
         detail.hidden = !open;
+
+        if (!open) {
+          for (const line of assetDetails) {
+            line.close();
+          }
+        }
       };
 
       toggle.addEventListener("click", () => {

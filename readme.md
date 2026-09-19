@@ -16,4 +16,4 @@ A web app that analyzes all xStocks tokenized assets.
 
 ## Preview 
 
-![xstocks-terminal](screenshots/Screenshot_2026-09-17_19-28-53.png)
+![xstocks-terminal](screenshots/view.png)

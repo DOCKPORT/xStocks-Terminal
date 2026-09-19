@@ -21,6 +21,7 @@
 /**
  * @typedef {object} Row
  * @property {HTMLTableRowElement} element - The table row.
+ * @property {AssetDetail} detail - The collapsible detail that pairs with the row.
  * @property {string} haystack - The lower-case name and symbol.
  */
 
@@ -34,6 +35,9 @@
   const LOGO_DIR = "data/logos";
   const LOGO_SIZE = 40;
   const ORDER = new Intl.Collator("en", { sensitivity: "base", numeric: true });
+
+  /** The asset list holds one column, so the detail cell spans one column. */
+  const COLUMN_COUNT = 1;
 
   /**
    * Build the logo for one row. If the file is missing, a letter tile takes its
@@ -60,16 +64,12 @@
   };
 
   /**
-   * Build the one cell of the row. The cell holds the logo, the name, and the
-   * symbol. One flex row keeps the logo at full size, whatever width the column
-   * takes.
+   * Build the content of one row: the logo, the name, and the symbol. One flex
+   * row keeps the logo at full size, whatever width the column takes.
    * @param {Asset} asset - The asset for the row.
-   * @returns {HTMLTableCellElement} The cell that holds the whole entry.
+   * @returns {HTMLDivElement} The content of the row.
    */
-  const buildAssetCell = (asset) => {
-    const cell = document.createElement("td");
-    cell.className = "col-asset";
-
+  const buildAssetContent = (asset) => {
     const wrapper = document.createElement("div");
     wrapper.className = "table__asset";
 
@@ -87,20 +87,37 @@
     symbol.textContent = asset.symbol;
 
     wrapper.append(buildLogo(asset), label, separator, symbol);
-    cell.append(wrapper);
 
-    return cell;
+    return wrapper;
   };
 
   /**
-   * Build one row. Text goes in as a text node, never as markup.
+   * Build one row and its detail panel. Text goes in as a text node, never as
+   * markup. The whole row toggles the panel below it.
    * @param {Asset} asset - The asset for the row.
-   * @returns {Row} The row and its search text.
+   * @param {(trigger: HTMLElement, options?: AssetDetailOptions) => AssetDetail} createDetail - The shared detail builder.
+   * @returns {Row} The row, its detail, and its search text.
    */
-  const buildRow = (asset) => {
+  const buildRow = (asset, createDetail) => {
     const element = document.createElement("tr");
-    element.append(buildAssetCell(asset));
-    return { element, haystack: `${asset.name} ${asset.symbol}`.toLowerCase() };
+    element.className = "asset-row";
+
+    const detail = createDetail(element, {
+      columns: COLUMN_COUNT,
+      asset,
+    });
+
+    const cell = document.createElement("td");
+    cell.className = "col-asset";
+    detail.toggle.append(buildAssetContent(asset));
+    cell.append(detail.toggle);
+    element.append(cell);
+
+    return {
+      element,
+      detail,
+      haystack: `${asset.name} ${asset.symbol}`.toLowerCase(),
+    };
   };
 
   /**
@@ -120,6 +137,14 @@
    * @returns {() => void} A function that applies the current query.
    */
   const renderList = (assets, refs) => {
+    const createDetail = ns.createAssetDetail;
+
+    if (typeof createDetail !== "function") {
+      throw new Error(
+        "The asset detail builder from js/asset-detail.js did not load.",
+      );
+    }
+
     const total = assets.length;
     const fragment = document.createDocumentFragment();
 
@@ -127,9 +152,9 @@
     const rows = [];
 
     for (const asset of sortAssets(assets)) {
-      const row = buildRow(asset);
+      const row = buildRow(asset, createDetail);
       rows.push(row);
-      fragment.append(row.element);
+      fragment.append(row.element, row.detail.element);
     }
 
     refs.body.replaceChildren(fragment);
@@ -139,9 +164,17 @@
       throw new Error(`The rows hold ${logoTotal} logos for ${total} assets.`);
     }
 
+    const detailTotal = refs.body.querySelectorAll("tr.asset__detail").length;
+    if (detailTotal !== total) {
+      throw new Error(
+        `The rows hold ${detailTotal} details for ${total} assets.`,
+      );
+    }
+
     /**
      * Show the rows that match the current query. Rows are toggled, not rebuilt,
-     * so the browser never reloads a logo.
+     * so the browser never reloads a logo. A row that leaves the list closes its
+     * detail, so no panel stays open on its own.
      * @returns {void}
      */
     const applyQuery = () => {
@@ -151,8 +184,11 @@
       for (const row of rows) {
         const matches = query === "" || row.haystack.includes(query);
         row.element.hidden = !matches;
+
         if (matches) {
           visible += 1;
+        } else {
+          row.detail.close();
         }
       }
 

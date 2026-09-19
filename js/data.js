@@ -9,6 +9,8 @@
  * @property {string} symbol - The xStock symbol.
  * @property {string | null} listingCountry - The two-letter country code of the listing market from the xStock catalog. The value is null when the catalog holds none.
  * @property {string | null} sector - The sector name from the universe snapshot. A value of "unknown" marks an asset that no rule matched.
+ * @property {string | null} industry - The industry from the ticker universe. The value is null when the universe holds none.
+ * @property {string | null} exchange - The listing exchange from the ticker universe. The value is null when the universe holds none.
  * @property {string | null} sharesHeld - The reserve shares, kept as a string.
  * @property {string | null} circulatingSupply - The supply that the public holds, kept as a string.
  * @property {number | null} price - The last known quote.

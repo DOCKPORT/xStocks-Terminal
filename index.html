@@ -23,15 +23,15 @@
 
     <!-- The version token marks a stylesheet change. A browser then fetches the
          new file in place of the cached one. Bump the token after a style edit. -->
-    <link rel="stylesheet" href="css/theme.css?v=9" />
-    <link rel="stylesheet" href="css/base.css?v=9" />
+    <link rel="stylesheet" href="css/theme.css?v=12" />
+    <link rel="stylesheet" href="css/base.css?v=12" />
     <!-- The dot field. This module draws the page background array. -->
-    <link rel="stylesheet" href="css/dots.css?v=9" />
-    <link rel="stylesheet" href="css/style.css?v=9" />
+    <link rel="stylesheet" href="css/dots.css?v=12" />
+    <link rel="stylesheet" href="css/style.css?v=12" />
     <!-- The narrow screen rules. This link stays last, so those rules win. -->
     <link
       rel="stylesheet"
-      href="css/mobile.css?v=9"
+      href="css/mobile.css?v=12"
       media="(max-width: 720px)"
     />
   </head>
@@ -182,6 +182,28 @@
         </div>
 
         <div class="view-panel" data-view-panel="market-cap" hidden>
+          <div class="search">
+            <input
+              class="search__input"
+              id="market-cap-search"
+              type="search"
+              name="q"
+              aria-label="Filter the market cap list"
+              placeholder="Name or symbol, for example AAPLx"
+              autocomplete="off"
+              spellcheck="false"
+            />
+          </div>
+
+          <p
+            class="table__status"
+            id="market-cap-status"
+            role="status"
+            aria-live="polite"
+          >
+            Loading the snapshot.
+          </p>
+
           <div
             class="table-wrap"
             role="region"
@@ -270,6 +292,10 @@
     <script src="js/data.js"></script>
     <script src="js/metrics.js"></script>
     <script src="js/render-metrics.js"></script>
+    <!-- The collapse mechanics. Every asset row reads this module. -->
+    <script src="js/asset-detail.js"></script>
+    <!-- The detail content: the label and value list for one asset. -->
+    <script src="js/render-asset-detail.js"></script>
     <script src="js/render-list.js"></script>
     <script src="js/render-market-cap.js"></script>
     <script src="js/render-sectors.js"></script>

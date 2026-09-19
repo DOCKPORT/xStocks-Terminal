@@ -19,6 +19,8 @@
  * @property {(assets: Asset[]) => RegionTotals} [computeRegionTotals] - Sum the snapshot by listing country.
  * @property {(totals: RegionTotals, refs: RegionRefs) => void} [renderRegion] - Draw the region table.
  * @property {(asset: Asset) => HTMLImageElement} [buildLogo] - Build the row logo from js/render-list.js.
+ * @property {(trigger: HTMLElement, options?: AssetDetailOptions) => AssetDetail} [createAssetDetail] - Build a collapsible detail from js/asset-detail.js.
+ * @property {(asset: Asset) => HTMLElement} [buildAssetDetailBody] - Build the detail field list from js/render-asset-detail.js.
  */
 
 /** @typedef {"loading" | "ready" | "error"} AppState */
@@ -189,11 +191,13 @@
   });
 
   /**
-   * Find the slot that the market cap table writes to.
-   * @returns {MarketCapRefs} The ranking element.
+   * Find the slots that the market cap table writes to.
+   * @returns {MarketCapRefs} The ranking elements.
    */
   const requireMarketCapRefs = () => ({
     body: requireElement("market-cap-rows"),
+    status: requireElement("market-cap-status"),
+    input: requireInput("market-cap-search"),
   });
 
   /**
@@ -247,6 +251,8 @@
         typeof ns.renderSectors !== "function" ||
         typeof ns.computeRegionTotals !== "function" ||
         typeof ns.renderRegion !== "function" ||
+        typeof ns.createAssetDetail !== "function" ||
+        typeof ns.buildAssetDetailBody !== "function" ||
         typeof ns.buildLogo !== "function"
       ) {
         throw new Error("The page scripts did not load in order.");
@@ -283,8 +289,14 @@
         ns.renderMetricsFailure(metricRefs);
       }
 
-      status.textContent =
+      const message =
         error instanceof Error ? error.message : "The asset snapshot did not load.";
+
+      status.textContent = message;
+
+      if (marketCapRefs !== null) {
+        marketCapRefs.status.textContent = message;
+      }
     }
   };
 

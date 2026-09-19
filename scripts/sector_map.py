@@ -3,7 +3,8 @@
 Match every xStock symbol to a sector from the BusinessQuant ticker universe.
 
 The universe file holds one row per listed ticker. This script groups the rows
-of one ticker, picks the sector, and writes that value on the asset row.
+of one ticker, picks one row, and writes that row's sector, industry, and
+exchange on the asset row.
 
 The base symbol is the asset symbol minus the final "x". "SPYx" becomes "SPY".
 
@@ -16,16 +17,21 @@ The match rules, in order:
   4. The first group with a value wins. An Equity group with no sector reads
      "unknown", and so does a ticker with no row.
 
+The industry and the exchange come from the same picked row. A value that the
+universe misses reads null, so the page can leave that label out.
+
 A manual override in data/sector_overrides.json wins over every rule above. The
 key is the base symbol, and the value is the sector. Use that file for a symbol
 that the universe misses, or for a symbol that the feed drops. Put a fund in as
-"ETF".
+"ETF". An override sets the sector only, so the industry and the exchange still
+come from the universe.
 
 A base symbol with a dot retries with a dash, and the other way around.
 "BRK.B" then reads "BRK-B".
 
 Output: data/xstocks-assets.json
-  one row per asset, with the sector field after the symbol
+  one row per asset, with the country, the sector, the industry, and the
+  exchange after the symbol
 
 fetch_assets.py imports this module and joins the sector on every run. The
 commands here backfill an existing file without a full fetch.
@@ -59,19 +65,27 @@ SOURCE_UNKNOWN = "unknown"
 SOURCE_RETAINED = "retained"
 SOURCE_OVERRIDE = "override"
 
-# Field names. The universe file holds the first four.
+# Field names. The universe file holds the ticker, the type, the sector, the
+# industry, and the exchange. The snapshot holds the symbol and the country.
 TICKER_FIELD = "ticker"
 TYPE_FIELD = "security_type"
 SECTOR_FIELD = "sector"
+INDUSTRY_FIELD = "industry"
+EXCHANGE_FIELD = "exchange"
 UNIVERSE_ROWS_KEY = "tickers"
 ASSET_SYMBOL_FIELD = "symbol"
+LISTING_COUNTRY_FIELD = "listingCountry"
 
-# The field order of the asset snapshot. The sector follows the symbol, so a
-# backfill keeps the same order that fetch_assets.py writes.
+# The field order of the asset snapshot. The sector and its two detail fields
+# follow the country, so a backfill keeps the same order that fetch_assets.py
+# writes.
 ASSET_FIELD_ORDER = (
     "name",
     "symbol",
+    "listingCountry",
     "sector",
+    "industry",
+    "exchange",
     "sharesHeld",
     "circulatingSupply",
     "price",
@@ -86,7 +100,12 @@ ASSETS_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
 OVERRIDES_JSON = REPO_ROOT / "data" / "sector_overrides.json"
 
 Row = dict[str, Any]
-Index = dict[str, str]
+
+# One universe entry: the sector label and the two detail fields.
+IndexEntry = dict[str, str]
+
+# The base-symbol map. The key is the ticker in upper case.
+Index = dict[str, IndexEntry]
 
 
 def base_symbol(symbol: str) -> str:
@@ -115,27 +134,26 @@ def row_label(row: Row) -> str:
     return _row_text(row, SECTOR_FIELD)
 
 
-def _label_for_rows(rows: list[Row]) -> str:
-    """Return the label for every row of one ticker.
+def pick_row(rows: list[Row]) -> Row | None:
+    """Return the row that decides the sector and the detail fields of a ticker.
 
-    The type order picks the group: Equity first, then ETF, Fund, and Index.
-    The first row of that group with a value wins. A group without a value
-    reads "unknown".
+    The type order picks the group: Equity first, then ETF, Fund, and Index. The
+    first row of that group with a label wins. A group without a label gives its
+    first row, so the label reads "unknown" and the detail fields still arrive.
+    A ticker with no row gives None.
     """
     for kind in TYPE_ORDER:
         group = [row for row in rows if _row_text(row, TYPE_FIELD) == kind]
         for row in group:
-            label = row_label(row)
-            if label:
-                return label
+            if row_label(row):
+                return row
         if group:
-            return UNKNOWN
+            return group[0]
 
     for row in rows:
-        label = row_label(row)
-        if label:
-            return label
-    return UNKNOWN
+        if row_label(row):
+            return row
+    return rows[0] if rows else None
 
 
 def load_rows(path: Path = UNIVERSE_JSON) -> list[Row]:
@@ -159,13 +177,27 @@ def load_rows(path: Path = UNIVERSE_JSON) -> list[Row]:
 
 
 def build_index(rows: list[Row]) -> Index:
-    """Build the base-symbol to label map. One pass over the rows."""
+    """Build the base-symbol map. One pass over the rows.
+
+    Every entry holds the sector label and the industry and exchange of the same
+    row, so the three values come from one source.
+    """
     grouped: dict[str, list[Row]] = {}
     for row in rows:
         ticker = _row_text(row, TICKER_FIELD)
         if ticker:
             grouped.setdefault(ticker.upper(), []).append(row)
-    return {ticker: _label_for_rows(group) for ticker, group in grouped.items()}
+
+    index: Index = {}
+    for ticker, group in grouped.items():
+        row = pick_row(group)
+        label = row_label(row) if row is not None else ""
+        index[ticker] = {
+            SECTOR_FIELD: label or UNKNOWN,
+            INDUSTRY_FIELD: _row_text(row, INDUSTRY_FIELD) if row is not None else "",
+            EXCHANGE_FIELD: _row_text(row, EXCHANGE_FIELD) if row is not None else "",
+        }
+    return index
 
 
 def load_index(path: Path = UNIVERSE_JSON) -> Index | None:
@@ -232,15 +264,52 @@ def load_overrides(path: Path = OVERRIDES_JSON) -> dict[str, str]:
     return overrides
 
 
+def entry_for(symbol: str, index: Index) -> IndexEntry | None:
+    """Return the universe entry for one asset symbol.
+
+    A base symbol with a dot retries with a dash, and the other way around. A
+    symbol that the universe does not hold gives None.
+    """
+    base = base_symbol(symbol)
+    entry = index.get(base)
+    if entry is None and "." in base:
+        entry = index.get(base.replace(".", "-"))
+    if entry is None and "-" in base:
+        entry = index.get(base.replace("-", "."))
+    return entry
+
+
 def sector_for(symbol: str, index: Index) -> str:
     """Return the sector label for one asset symbol. A miss returns "unknown"."""
-    base = base_symbol(symbol)
-    label = index.get(base)
-    if not label and "." in base:
-        label = index.get(base.replace(".", "-"))
-    if not label and "-" in base:
-        label = index.get(base.replace("-", "."))
-    return label or UNKNOWN
+    entry = entry_for(symbol, index)
+    if entry is None:
+        return UNKNOWN
+
+    label = entry.get(SECTOR_FIELD)
+    return label if isinstance(label, str) and label else UNKNOWN
+
+
+def extra_value(
+    entry: IndexEntry | None,
+    symbol: str,
+    previous: dict[str, Row],
+    field: str,
+) -> str | None:
+    """Return one detail field value for an asset row.
+
+    The universe wins. An entry without the value, and an absent universe, keep
+    the value of the previous run. A value that no source holds reads None, so
+    the page can leave the label out.
+    """
+    if entry is not None:
+        value = entry.get(field)
+        if isinstance(value, str) and value:
+            return value
+
+    prior = previous.get(symbol, {}).get(field)
+    if isinstance(prior, str) and prior:
+        return prior
+    return None
 
 
 def apply_sectors(
@@ -264,7 +333,9 @@ def apply_sectors(
         if not isinstance(symbol, str):
             continue
 
+        entry = entry_for(symbol, index) if index is not None else None
         override = overrides.get(base_symbol(symbol))
+
         if override:
             label = override
             source = SOURCE_OVERRIDE
@@ -282,6 +353,12 @@ def apply_sectors(
                 source = SOURCE_SECTOR
 
         record[SECTOR_FIELD] = label
+        record[INDUSTRY_FIELD] = extra_value(
+            entry, symbol, previous, INDUSTRY_FIELD
+        )
+        record[EXCHANGE_FIELD] = extra_value(
+            entry, symbol, previous, EXCHANGE_FIELD
+        )
         counts[source] += 1
     return counts
 
@@ -298,6 +375,21 @@ def counts_line(counts: Counter[str]) -> str:
     if counts[SOURCE_RETAINED]:
         parts.append(f"{counts[SOURCE_RETAINED]} retained")
     return "Sector: " + ", ".join(parts)
+
+
+def detail_counts_line(records: list[Row]) -> str:
+    """Return one report line for the industry and the exchange coverage."""
+    industry = sum(
+        1
+        for record in records
+        if isinstance(record.get(INDUSTRY_FIELD), str) and record[INDUSTRY_FIELD]
+    )
+    exchange = sum(
+        1
+        for record in records
+        if isinstance(record.get(EXCHANGE_FIELD), str) and record[EXCHANGE_FIELD]
+    )
+    return f"Detail: {industry} with an industry, {exchange} with an exchange"
 
 
 def label_counts(records: list[Row]) -> list[tuple[str, int]]:
@@ -339,7 +431,7 @@ def read_assets(path: Path = ASSETS_JSON) -> list[Row]:
         ) from error
 
     if not isinstance(rows, list):
-        raise RuntimeError(f"the asset snapshot at {path} holds no list")
+        raise RuntimeError(f"the asset snapshot at {path} holds no list")  # noqa: TRY004
     return [row for row in rows if isinstance(row, dict)]
 
 
@@ -370,6 +462,7 @@ def run(args: argparse.Namespace) -> int:
     counts = apply_sectors(records, index, previous, overrides)
 
     print(counts_line(counts))
+    print(detail_counts_line(records))
     for label, count in label_counts(records):
         print(f"  {label}: {count}")
 

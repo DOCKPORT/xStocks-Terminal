@@ -443,6 +443,27 @@
   list-style: none;
 }
 
+/* The line holds the asset block and the market cap value. The block takes the
+   free space, so the value sits at the end of the line. The block may shrink,
+   so a long name wraps and does not press the value out of the row. */
+.table .sector__item,
+.table .region__item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.table .sector__item .table__asset,
+.table .region__item .table__asset {
+  flex: 1 1 auto;
+  min-inline-size: 0;
+}
+
+.table .sector__item .table__cap,
+.table .region__item .table__cap {
+  flex: none;
+}
+
 /* --- View panels ---------------------------------------------------------- */
 /* One panel for each view button. The script shows the panel that pairs with
    the picked button and hides the rest. An empty panel takes no space, so the
@@ -509,6 +530,99 @@
 /* The single column holds the whole entry: logo, name, and symbol. */
 .table .col-asset {
   inline-size: 100%;
+}
+
+/* --- Asset detail ---------------------------------------------------------- */
+/* The whole row opens the panel below it. The row shows the pointer, the same
+   rule as a sector row. */
+.asset-row {
+  cursor: pointer;
+}
+
+/* The button fills the cell, so a press on the line lands. It carries the state
+   for the keyboard and for a screen reader. */
+.asset__toggle {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  inline-size: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+/* The row content takes the free space, so a long name wraps instead of
+   pressing a value out of the line. */
+.asset__toggle .table__asset {
+  flex: 1 1 auto;
+  min-inline-size: 0;
+}
+
+/* The drawer line holds the button and nothing else. The button takes the free
+   space, so the market cap value stays at the end of the line. */
+.table .sector__item .asset__toggle,
+.table .region__item .asset__toggle {
+  flex: 1 1 auto;
+  min-inline-size: 0;
+}
+
+/* The detail cell takes no inset of its own. The body holds the inset, so the
+   panel fill runs the full width of the table. */
+.table .asset__cell {
+  padding: 0;
+}
+
+/* The panel body. The sunken fill groups the open panel, the same fill that the
+   group lists take. The slot holds a hint until the asset details arrive. */
+.asset__body {
+  padding: var(--space-3) var(--space-4);
+  background: var(--bg-sunken);
+}
+
+.asset__hint {
+  margin: 0;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+}
+
+/* The field list. One label takes each left cell and one value each right cell.
+   The column takes the width of the longest label, so the values line up. */
+.asset__fields {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-2) var(--space-4);
+  margin: 0;
+}
+
+.asset__label {
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-2xs);
+  font-weight: var(--weight-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-wide);
+}
+
+/* The value clears the default inset of a definition value, so the grid cells
+   hold the alignment. */
+.asset__value {
+  margin: 0;
+  color: var(--text-primary);
+  font-family: var(--font-mono);
+  font-size: var(--text-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+/* The detail node leaves the layout while it is closed. A list item needs the
+   rule, because a display value on the node would beat the user agent style. */
+.asset__detail[hidden] {
+  display: none;
 }
 
 /* --- Footer --------------------------------------------------------------- */
