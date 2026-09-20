@@ -26,6 +26,10 @@ that the universe misses, or for a symbol that the feed drops. Put a fund in as
 "ETF". An override sets the sector only, so the industry and the exchange still
 come from the universe.
 
+A manual industry override lives in data/industry_overrides.json. The shape
+matches the sector file: the key is the base symbol and the value is the
+industry. It wins over the universe row, and it leaves the sector alone.
+
 A base symbol with a dot retries with a dash, and the other way around.
 "BRK.B" then reads "BRK-B".
 
@@ -90,6 +94,7 @@ ASSET_FIELD_ORDER = (
     "circulatingSupply",
     "price",
     "priceUpdatedAt",
+    "multiplier",
 )
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
@@ -98,6 +103,9 @@ ASSETS_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
 
 # The manual sector overrides. A hand edit here survives every fetch.
 OVERRIDES_JSON = REPO_ROOT / "data" / "sector_overrides.json"
+
+# The manual industry overrides. The same shape, for the industry field.
+INDUSTRY_OVERRIDES_JSON = REPO_ROOT / "data" / "industry_overrides.json"
 
 Row = dict[str, Any]
 
@@ -224,13 +232,13 @@ def load_index(path: Path = UNIVERSE_JSON) -> Index | None:
     return build_index(rows)
 
 
-def load_overrides(path: Path = OVERRIDES_JSON) -> dict[str, str]:
-    """Read the manual sector overrides. Return an empty map on a fault.
+def read_labels(path: Path, kind: str) -> dict[str, str]:
+    """Read one manual override file. Return an empty map on a fault.
 
     The key is the base symbol, in any case, without the final "x". The value
-    is the sector. An absent file reads as no override, with no warning. A key
-    that starts with an underscore is a comment, and a key with no value drops
-    out.
+    is the label for the field that the file serves. An absent file reads as no
+    override, with no warning. A key that starts with an underscore is a
+    comment, and a key with no value drops out.
     """
     if not path.is_file():
         return {}
@@ -239,15 +247,15 @@ def load_overrides(path: Path = OVERRIDES_JSON) -> dict[str, str]:
         body = json.loads(path.read_text(encoding="utf-8"))
     except (OSError, ValueError) as error:
         print(
-            f"Warning: cannot read the sector overrides from {path}: {error}",
+            f"Warning: cannot read the {kind} from {path}: {error}",
             file=sys.stderr,
         )
         return {}
 
     if not isinstance(body, dict):
         print(
-            f"Warning: the sector overrides at {path} hold no object, "
-            "so the universe sets every sector.",
+            f"Warning: the {kind} at {path} hold no object, "
+            "so the universe sets every value.",
             file=sys.stderr,
         )
         return {}
@@ -262,6 +270,16 @@ def load_overrides(path: Path = OVERRIDES_JSON) -> dict[str, str]:
             continue
         overrides[symbol] = label
     return overrides
+
+
+def load_overrides(path: Path = OVERRIDES_JSON) -> dict[str, str]:
+    """Read the manual sector overrides."""
+    return read_labels(path, "sector overrides")
+
+
+def load_industry_overrides(path: Path = INDUSTRY_OVERRIDES_JSON) -> dict[str, str]:
+    """Read the manual industry overrides."""
+    return read_labels(path, "industry overrides")
 
 
 def entry_for(symbol: str, index: Index) -> IndexEntry | None:
@@ -291,16 +309,20 @@ def sector_for(symbol: str, index: Index) -> str:
 
 def extra_value(
     entry: IndexEntry | None,
+    override: str,
     symbol: str,
     previous: dict[str, Row],
     field: str,
 ) -> str | None:
     """Return one detail field value for an asset row.
 
-    The universe wins. An entry without the value, and an absent universe, keep
-    the value of the previous run. A value that no source holds reads None, so
-    the page can leave the label out.
+    The manual override wins, then the universe. An entry without the value, and
+    an absent universe, keep the value of the previous run. A value that no
+    source holds reads None, so the page can leave the label out.
     """
+    if override:
+        return override
+
     if entry is not None:
         value = entry.get(field)
         if isinstance(value, str) and value:
@@ -317,6 +339,7 @@ def apply_sectors(
     index: Index | None,
     previous: dict[str, Row],
     overrides: dict[str, str] | None = None,
+    industry_overrides: dict[str, str] | None = None,
 ) -> Counter[str]:
     """Write the sector on every record. Return the count per source.
 
@@ -326,6 +349,8 @@ def apply_sectors(
     """
     if overrides is None:
         overrides = load_overrides()
+    if industry_overrides is None:
+        industry_overrides = load_industry_overrides()
 
     counts: Counter[str] = Counter()
     for record in records:
@@ -333,8 +358,9 @@ def apply_sectors(
         if not isinstance(symbol, str):
             continue
 
+        base = base_symbol(symbol)
         entry = entry_for(symbol, index) if index is not None else None
-        override = overrides.get(base_symbol(symbol))
+        override = overrides.get(base)
 
         if override:
             label = override
@@ -354,10 +380,14 @@ def apply_sectors(
 
         record[SECTOR_FIELD] = label
         record[INDUSTRY_FIELD] = extra_value(
-            entry, symbol, previous, INDUSTRY_FIELD
+            entry,
+            industry_overrides.get(base, ""),
+            symbol,
+            previous,
+            INDUSTRY_FIELD,
         )
         record[EXCHANGE_FIELD] = extra_value(
-            entry, symbol, previous, EXCHANGE_FIELD
+            entry, "", symbol, previous, EXCHANGE_FIELD
         )
         counts[source] += 1
     return counts
@@ -444,7 +474,10 @@ def write_assets(records: list[Row], path: Path = ASSETS_JSON) -> None:
 
 
 def run(args: argparse.Namespace) -> int:
-    """Join the sector onto every asset row, then report. Write only on request."""
+    """Join the sector and the industry onto every asset row, then report.
+
+    Write only on request.
+    """
     records = read_assets()
     if not records:
         raise RuntimeError(f"the asset snapshot at {ASSETS_JSON} holds no asset")
@@ -455,11 +488,14 @@ def run(args: argparse.Namespace) -> int:
     overrides = load_overrides()
     if overrides:
         print(f"Overrides: {len(overrides)} symbols")
+    industry_overrides = load_industry_overrides()
+    if industry_overrides:
+        print(f"Industry overrides: {len(industry_overrides)} symbols")
     print(f"Assets: {len(records)}")
 
     # Without a universe, the records themselves hold the previous sector.
     previous = {record[ASSET_SYMBOL_FIELD]: record for record in records}
-    counts = apply_sectors(records, index, previous, overrides)
+    counts = apply_sectors(records, index, previous, overrides, industry_overrides)
 
     print(counts_line(counts))
     print(detail_counts_line(records))
@@ -479,9 +515,11 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Match xStock symbols to a sector from the ticker universe.",
         epilog=(
-            f"The sector comes from {UNIVERSE_JSON.relative_to(REPO_ROOT)}. "
-            f"A manual override in {OVERRIDES_JSON.relative_to(REPO_ROOT)} "
-            "wins over that file. fetch_assets.py joins the sector on every run."
+            f"The sector and the industry come from "
+            f"{UNIVERSE_JSON.relative_to(REPO_ROOT)}. A manual override in "
+            f"{OVERRIDES_JSON.relative_to(REPO_ROOT)} or "
+            f"{INDUSTRY_OVERRIDES_JSON.relative_to(REPO_ROOT)} wins over that "
+            "file. fetch_assets.py joins both on every run."
         ),
     )
     parser.add_argument(

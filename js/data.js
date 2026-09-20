@@ -15,6 +15,7 @@
  * @property {string | null} circulatingSupply - The supply that the public holds, kept as a string.
  * @property {number | null} price - The last known quote.
  * @property {string | null} priceUpdatedAt - When that quote was written.
+ * @property {number | null} multiplier - The current token multiplier for one share. The value is null when no run holds it.
  */
 
 /**

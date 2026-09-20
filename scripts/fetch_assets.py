@@ -20,7 +20,7 @@ A missing flag fetches the quote, and --force-quotes calls every symbol anyway.
 
 Output: data/xstocks-assets.json
   array of { name, symbol, listingCountry, sector, industry, exchange,
-            sharesHeld, circulatingSupply, price, priceUpdatedAt }
+            sharesHeld, circulatingSupply, price, priceUpdatedAt, multiplier }
   one row per asset that holds a reserve row with a live balance
 
 The name field holds no " xStock" mark. The catalog adds that mark to every
@@ -45,6 +45,12 @@ the universe misses reads null, and the page then leaves that label out.
 The quote calls share one pacer. Each call takes one time slot. The default
 gap is 0.25 seconds. Pass --min-interval to change the gap. A 429 or 503
 answer waits for the Retry-After header, then backs off.
+
+multiplier is the current value of the token multiplier for one share, read
+from GET /public/assets/{symbol}/multiplier. The endpoint needs a network name,
+and it answers the same value on every network, so the run names Solana for
+every symbol. One call per symbol runs beside the quote calls. A failed call
+keeps the value of the last run. A value that no run holds reads null.
 
 The page reads that file with fetch, so the script writes no second file.
 
@@ -105,13 +111,20 @@ PAGE_ATTEMPTS = 2
 QUOTE_ATTEMPTS = 4
 QUOTE_INTERVAL_SECONDS = 0.25
 
+# The multiplier endpoint needs a network name. It answers the same value on
+# every network, so one name serves the whole run.
+MULTIPLIER_NETWORK = "Solana"
+MULTIPLIER_ATTEMPTS = 3
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
 LOGO_SCRIPT = REPO_ROOT / "scripts" / "fetch_logos.py"
 
 Price = int | float | None
+Multiplier = int | float | None
 Record = dict[str, Any]
 QuoteResult = tuple[Price, bool]
+MultiplierResult = tuple[Multiplier, bool]
 
 
 def fetch_pages(url: str, label: str) -> list[Record]:
@@ -255,8 +268,8 @@ def closed_market_symbols(asset_nodes: list[Record]) -> set[str]:
 def load_last_known(path: Path) -> dict[str, Record]:
     """Read the values of the previous run. This holds the last known value.
 
-    The prices and the sectors both come from here. The previous sector stands
-    when the ticker universe file is absent.
+    The prices, the multipliers, and the sectors all come from here. The
+    previous sector stands when the ticker universe file is absent.
     """
     if not path.is_file():
         return {}
@@ -279,6 +292,7 @@ def load_last_known(path: Path) -> dict[str, Record]:
             known[row["symbol"]] = {
                 "price": row.get("price"),
                 "priceUpdatedAt": row.get("priceUpdatedAt"),
+                "multiplier": row.get("multiplier"),
                 "sector": row.get("sector"),
             }
     return known
@@ -309,8 +323,8 @@ def fetch_quote(symbol: str, pacer: http_client.Pacer) -> QuoteResult:
     return quote, False
 
 
-def _is_price(value: Any) -> bool:
-    """True for a real number. A bool is not a price."""
+def _is_number(value: Any) -> bool:
+    """True for a real number. A bool is not a number."""
     return isinstance(value, (int, float)) and not isinstance(value, bool)
 
 
@@ -338,13 +352,45 @@ def apply_prices(
 
         previous = last_known.get(record["symbol"], {})
         previous_price = previous.get("price")
-        if _is_price(previous_price):
+        if _is_number(previous_price):
             record["price"] = previous_price
             record["priceUpdatedAt"] = previous.get("priceUpdatedAt")
             retained += 1
         else:
             record["price"] = None
             record["priceUpdatedAt"] = None
+            unavailable += 1
+
+    return fresh, retained, unavailable
+
+
+def apply_multipliers(
+    records: list[Record],
+    multipliers: list[Multiplier],
+    last_known: dict[str, Record],
+) -> tuple[int, int, int]:
+    """Write the multiplier. A failed call keeps the last known value.
+
+    The record holds the symbol order, and the value list matches that order,
+    the same rule as the price list. A value that no source holds reads null.
+    """
+    fresh = 0
+    retained = 0
+    unavailable = 0
+
+    for index, record in enumerate(records):
+        value = multipliers[index] if index < len(multipliers) else None
+        if value is not None:
+            record["multiplier"] = value
+            fresh += 1
+            continue
+
+        previous = last_known.get(record["symbol"], {}).get("multiplier")
+        if _is_number(previous):
+            record["multiplier"] = previous
+            retained += 1
+        else:
+            record["multiplier"] = None
             unavailable += 1
 
     return fresh, retained, unavailable
@@ -478,6 +524,62 @@ def fetch_all_quotes(
     return [price_by_symbol.get(symbol) for symbol in symbols], rate_limited
 
 
+def fetch_multiplier(symbol: str, pacer: http_client.Pacer) -> MultiplierResult:
+    """Fetch one multiplier. Return the value and a rate-limit flag.
+
+    The endpoint needs a network name, and it answers the same value on every
+    network. A miss or a plain error returns the value None, so the caller keeps
+    the value of the previous run.
+    """
+    url = f"{ASSETS_URL}/{symbol}/multiplier?network={MULTIPLIER_NETWORK}"
+    try:
+        body = http_client.fetch_json(url, MULTIPLIER_ATTEMPTS, pacer=pacer)
+    except http_client.RateLimitError as error:
+        print(
+            f"Warning: multiplier rate limited for {symbol}: {error}",
+            file=sys.stderr,
+        )
+        return None, True
+    except RuntimeError as error:
+        print(f"Warning: multiplier failed for {symbol}: {error}", file=sys.stderr)
+        return None, False
+
+    value = body.get("currentMultiplier") if isinstance(body, dict) else None
+    if not _is_number(value):
+        return None, False
+    return value, False
+
+
+def fetch_all_multipliers(
+    symbols: list[str], args: argparse.Namespace
+) -> list[Multiplier]:
+    """Fetch one multiplier per symbol.
+
+    Every symbol takes a call, because this endpoint has no market gate. Return
+    the values in symbol order.
+    """
+    print(f"Fetching {len(symbols)} multipliers with {args.workers} workers...")
+
+    pacer = http_client.Pacer(args.min_interval)
+    paced = partial(fetch_multiplier, pacer=pacer)
+    rate_limited = 0
+    fetched: list[Multiplier] = []
+
+    with ThreadPoolExecutor(max_workers=args.workers) as pool:
+        for value, limited in pool.map(paced, symbols):
+            fetched.append(value)
+            if limited:
+                rate_limited += 1
+            done = len(fetched)
+            if done % 100 == 0 or done == len(symbols):
+                print(f"  multipliers: {done}/{len(symbols)}")
+
+    if rate_limited:
+        print(f"  Rate limited: {rate_limited}")
+
+    return fetched
+
+
 def report_filters(
     dropped: list[str], thin_supply: list[str], absent: list[str], fetched_total: int
 ) -> None:
@@ -517,6 +619,11 @@ def run(args: argparse.Namespace) -> int:
 
     fresh, retained, unavailable = apply_prices(records, quotes, last_known)
 
+    multipliers = fetch_all_multipliers(symbols, args)
+    multiplier_fresh, multiplier_retained, multiplier_missing = apply_multipliers(
+        records, multipliers, last_known
+    )
+
     # A missing or broken universe file keeps the sector of the previous run.
     sector_counts = sector_map.apply_sectors(
         records, sector_map.load_index(), last_known
@@ -528,6 +635,10 @@ def run(args: argparse.Namespace) -> int:
     print(f"Wrote {len(records)} assets to {OUT_JSON}")
     report_filters(dropped, thin_supply, absent, len(asset_nodes))
     print(f"Prices: {fresh} fresh, {retained} retained, {unavailable} unavailable")
+    print(
+        f"Multipliers: {multiplier_fresh} fresh, {multiplier_retained} retained, "
+        f"{multiplier_missing} unavailable"
+    )
     print(f"Rate limited quotes: {rate_limited}")
     print(sector_map.counts_line(sector_counts))
     print(country_counts_line(records))
