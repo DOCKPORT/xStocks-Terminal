@@ -268,7 +268,7 @@
 
     <footer class="footer">
       <div class="container footer__inner">
-        <span>xStocks Terminal</span>
+        <span id="footer-brand">xStocks Terminal</span>
         <span class="numeric">All data provided by the official xStocks API</span>
         <span id="footer-year" class="numeric"></span>
       </div>
@@ -289,6 +289,8 @@
       }, 2000);
     </script>
 
+    <!-- The release version. This module loads first, so the footer can read it. -->
+    <script src="js/version.js"></script>
     <script src="js/data.js"></script>
     <script src="js/metrics.js"></script>
     <script src="js/render-metrics.js"></script>

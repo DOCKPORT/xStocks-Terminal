@@ -21,6 +21,7 @@
  * @property {(asset: Asset) => HTMLImageElement} [buildLogo] - Build the row logo from js/render-list.js.
  * @property {(trigger: HTMLElement, options?: AssetDetailOptions) => AssetDetail} [createAssetDetail] - Build a collapsible detail from js/asset-detail.js.
  * @property {(asset: Asset) => HTMLElement} [buildAssetDetailBody] - Build the detail field list from js/render-asset-detail.js.
+ * @property {string} [version] - The release version from js/version.js.
  */
 
 /** @typedef {"loading" | "ready" | "error"} AppState */
@@ -48,6 +49,21 @@
     const slot = document.querySelector("#footer-year");
     if (slot instanceof HTMLElement) {
       slot.textContent = `\u00A9 ${new Date().getFullYear()}`;
+    }
+  };
+
+  /**
+   * Write the app version into the footer brand slot. The label reads
+   * "xStocks Terminal v0.1.0" with no brackets. The value comes from js/version.js.
+   * @returns {void}
+   */
+  const stampVersion = () => {
+    const slot = document.querySelector("#footer-brand");
+    const ns = page.XSTOCKS;
+    const version = ns ? ns.version : undefined;
+
+    if (slot instanceof HTMLElement && typeof version === "string" && version !== "") {
+      slot.textContent = `xStocks Terminal ${version}`;
     }
   };
 
@@ -222,6 +238,7 @@
    */
   const init = async () => {
     stampYear();
+    stampVersion();
 
     const status = requireElement("asset-status");
     const ns = page.XSTOCKS;
@@ -253,7 +270,8 @@
         typeof ns.renderRegion !== "function" ||
         typeof ns.createAssetDetail !== "function" ||
         typeof ns.buildAssetDetailBody !== "function" ||
-        typeof ns.buildLogo !== "function"
+        typeof ns.buildLogo !== "function" ||
+        typeof ns.version !== "string"
       ) {
         throw new Error("The page scripts did not load in order.");
       }
