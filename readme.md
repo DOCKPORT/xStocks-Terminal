@@ -11,7 +11,7 @@ A web app that analyzes all xStocks tokenized assets.
 - Python scripting.
 - Github actions.
 - HTML, CSS, and JavaScript.
-- Vervel.
+- Vercel.
 - xStock API v2.
 - Business Quant API.
 
