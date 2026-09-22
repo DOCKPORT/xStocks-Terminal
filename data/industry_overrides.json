@@ -1,4 +1,5 @@
 {
   "_comment": "Manual industry overrides. The key is the base symbol, without the final x. A manual value wins over data/ticker_universe.json. A key that starts with an underscore is a comment. Add a key only when the feed value is missing or wrong. This file sets the industry only, so the sector stays with data/sector_overrides.json.",
-  "SPCX": "Diversified Telecommunication Services"
+  "SPCX": "Diversified Telecommunication Services",
+  "MP" : "Rare Earths"
 }
