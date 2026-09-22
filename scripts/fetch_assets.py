@@ -63,6 +63,10 @@ That logo script also compares every saved logo with the server. An image that
 changed on the server replaces the saved file, and the run prints each change.
 Pass --no-logo-check to skip the compare and the extra requests.
 
+After the write, the script runs scripts/sec_edgar.py. The asset snapshot holds
+the CIK of every asset, so that script builds the SEC EDGAR link list from the
+fresh snapshot. A new symbol then holds its link in the same run.
+
 scripts/http_client.py holds the shared HTTP layer: the User-Agent, the
 timeout, the retry count, the rate-limit wait, and the call pacer.
 
@@ -120,6 +124,7 @@ MULTIPLIER_ATTEMPTS = 3
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
 LOGO_SCRIPT = REPO_ROOT / "scripts" / "fetch_logos.py"
+EDGAR_SCRIPT = REPO_ROOT / "scripts" / "sec_edgar.py"
 
 Price = int | float | None
 Multiplier = int | float | None
@@ -462,6 +467,25 @@ def report_symbol_changes(
     return new_symbols
 
 
+def refresh_edgar_links() -> None:
+    """Run the EDGAR link script on the snapshot that the write step saved.
+
+    The script reads the asset snapshot, so the caller runs it after the write.
+    Warn on a child failure. The asset snapshot is still valid, so the caller
+    keeps its own exit code.
+    """
+    print("Refreshing the SEC EDGAR links...")
+    result = subprocess.run(
+        [sys.executable, str(EDGAR_SCRIPT)], cwd=REPO_ROOT, check=False
+    )
+    if result.returncode != 0:
+        print(
+            "Warning: the EDGAR link update failed. "
+            "Run scripts/sec_edgar.py to retry.",
+            file=sys.stderr,
+        )
+
+
 def refresh_logos(new_symbols: list[str], check_changes: bool) -> None:
     """Run the logo script for the new symbols and the changed logos.
 
@@ -643,6 +667,9 @@ def run(args: argparse.Namespace) -> int:
     print(f"Rate limited quotes: {rate_limited}")
     print(sector_map.counts_line(sector_counts))
     print(country_counts_line(records))
+
+    # The snapshot is on disk now, so the EDGAR links follow the new list.
+    refresh_edgar_links()
 
     refresh_logos(new_symbols, not args.no_logo_check)
     return 0
