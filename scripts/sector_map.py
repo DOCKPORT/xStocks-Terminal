@@ -3,8 +3,8 @@
 Match every xStock symbol to a sector from the BusinessQuant ticker universe.
 
 The universe file holds one row per listed ticker. This script groups the rows
-of one ticker, picks one row, and writes that row's sector, industry, and
-exchange on the asset row.
+of one ticker, picks one row, and writes that row's sector, industry, exchange,
+and CIK on the asset row.
 
 The base symbol is the asset symbol minus the final "x". "SPYx" becomes "SPY".
 
@@ -17,8 +17,12 @@ The match rules, in order:
   4. The first group with a value wins. An Equity group with no sector reads
      "unknown", and so does a ticker with no row.
 
-The industry and the exchange come from the same picked row. A value that the
-universe misses reads null, so the page can leave that label out.
+The industry, the exchange, and the CIK come from the same picked row. A value
+that the universe misses reads null, so the page can leave that label out. The
+CIK is the SEC central index key, and it stays a number.
+
+An asset with no universe row reads a null CIK. A row that a later run loses
+keeps the CIK of the last run, in the same way as the industry and the exchange.
 
 A manual override in data/sector_overrides.json wins over every rule above. The
 key is the base symbol, and the value is the sector. Use that file for a symbol
@@ -34,8 +38,8 @@ A base symbol with a dot retries with a dash, and the other way around.
 "BRK.B" then reads "BRK-B".
 
 Output: data/xstocks-assets.json
-  one row per asset, with the country, the sector, the industry, and the
-  exchange after the symbol
+  one row per asset, with the country, the sector, the industry, the exchange,
+  and the CIK after the symbol
 
 fetch_assets.py imports this module and joins the sector on every run. The
 commands here backfill an existing file without a full fetch.
@@ -70,17 +74,19 @@ SOURCE_RETAINED = "retained"
 SOURCE_OVERRIDE = "override"
 
 # Field names. The universe file holds the ticker, the type, the sector, the
-# industry, and the exchange. The snapshot holds the symbol and the country.
+# industry, the exchange, and the CIK. The snapshot holds the symbol and the
+# country.
 TICKER_FIELD = "ticker"
 TYPE_FIELD = "security_type"
 SECTOR_FIELD = "sector"
 INDUSTRY_FIELD = "industry"
 EXCHANGE_FIELD = "exchange"
+CIK_FIELD = "cik"
 UNIVERSE_ROWS_KEY = "tickers"
 ASSET_SYMBOL_FIELD = "symbol"
 LISTING_COUNTRY_FIELD = "listingCountry"
 
-# The field order of the asset snapshot. The sector and its two detail fields
+# The field order of the asset snapshot. The sector and its three detail fields
 # follow the country, so a backfill keeps the same order that fetch_assets.py
 # writes.
 ASSET_FIELD_ORDER = (
@@ -90,6 +96,7 @@ ASSET_FIELD_ORDER = (
     "sector",
     "industry",
     "exchange",
+    "cik",
     "sharesHeld",
     "circulatingSupply",
     "price",
@@ -109,8 +116,9 @@ INDUSTRY_OVERRIDES_JSON = REPO_ROOT / "data" / "industry_overrides.json"
 
 Row = dict[str, Any]
 
-# One universe entry: the sector label and the two detail fields.
-IndexEntry = dict[str, str]
+# One universe entry: the sector label, the two detail fields, and the CIK.
+# The CIK stays a number, so the entry holds more than text.
+IndexEntry = dict[str, Any]
 
 # The base-symbol map. The key is the ticker in upper case.
 Index = dict[str, IndexEntry]
@@ -128,6 +136,18 @@ def _row_text(row: Row, field: str) -> str:
     """Return one text field of a row. A missing or empty value returns ""."""
     value = row.get(field)
     return value.strip() if isinstance(value, str) else ""
+
+
+def _row_int(row: Row, field: str) -> int | None:
+    """Return one number field of a row. A missing value returns None.
+
+    A true or false value is not a number here, because Python counts a bool as
+    an int.
+    """
+    value = row.get(field)
+    if isinstance(value, bool) or not isinstance(value, int):
+        return None
+    return value
 
 
 def row_label(row: Row) -> str:
@@ -187,8 +207,8 @@ def load_rows(path: Path = UNIVERSE_JSON) -> list[Row]:
 def build_index(rows: list[Row]) -> Index:
     """Build the base-symbol map. One pass over the rows.
 
-    Every entry holds the sector label and the industry and exchange of the same
-    row, so the three values come from one source.
+    Every entry holds the sector label, the industry, the exchange, and the CIK
+    of the same row, so the four values come from one source.
     """
     grouped: dict[str, list[Row]] = {}
     for row in rows:
@@ -204,6 +224,7 @@ def build_index(rows: list[Row]) -> Index:
             SECTOR_FIELD: label or UNKNOWN,
             INDUSTRY_FIELD: _row_text(row, INDUSTRY_FIELD) if row is not None else "",
             EXCHANGE_FIELD: _row_text(row, EXCHANGE_FIELD) if row is not None else "",
+            CIK_FIELD: _row_int(row, CIK_FIELD) if row is not None else None,
         }
     return index
 
@@ -334,6 +355,28 @@ def extra_value(
     return None
 
 
+def cik_value(
+    entry: IndexEntry | None,
+    symbol: str,
+    previous: dict[str, Row],
+) -> int | None:
+    """Return the CIK for one asset row.
+
+    The universe is the only source, because no manual file serves this field. A
+    miss keeps the value of the previous run. A value that no source holds reads
+    None, so the page can leave the label out.
+    """
+    if entry is not None:
+        value = entry.get(CIK_FIELD)
+        if isinstance(value, int) and not isinstance(value, bool):
+            return value
+
+    prior = previous.get(symbol, {}).get(CIK_FIELD)
+    if isinstance(prior, int) and not isinstance(prior, bool):
+        return prior
+    return None
+
+
 def apply_sectors(
     records: list[Row],
     index: Index | None,
@@ -346,6 +389,9 @@ def apply_sectors(
     A manual override wins over the universe. An absent overrides value reads
     the file. Without an index, the sector of the previous run stands. A
     record without a previous sector reads "unknown".
+
+    The industry, the exchange, and the CIK follow the same rule. The CIK has no
+    override file, so the universe and the previous run are its only sources.
     """
     if overrides is None:
         overrides = load_overrides()
@@ -389,6 +435,7 @@ def apply_sectors(
         record[EXCHANGE_FIELD] = extra_value(
             entry, "", symbol, previous, EXCHANGE_FIELD
         )
+        record[CIK_FIELD] = cik_value(entry, symbol, previous)
         counts[source] += 1
     return counts
 
@@ -407,8 +454,14 @@ def counts_line(counts: Counter[str]) -> str:
     return "Sector: " + ", ".join(parts)
 
 
+def _holds_cik(record: Row) -> bool:
+    """Return True when one asset row holds a CIK number."""
+    value = record.get(CIK_FIELD)
+    return isinstance(value, int) and not isinstance(value, bool)
+
+
 def detail_counts_line(records: list[Row]) -> str:
-    """Return one report line for the industry and the exchange coverage."""
+    """Return one report line for the industry, the exchange, and the CIK coverage."""
     industry = sum(
         1
         for record in records
@@ -419,7 +472,11 @@ def detail_counts_line(records: list[Row]) -> str:
         for record in records
         if isinstance(record.get(EXCHANGE_FIELD), str) and record[EXCHANGE_FIELD]
     )
-    return f"Detail: {industry} with an industry, {exchange} with an exchange"
+    cik = sum(1 for record in records if _holds_cik(record))
+    return (
+        f"Detail: {industry} with an industry, {exchange} with an exchange, "
+        f"{cik} with a CIK"
+    )
 
 
 def label_counts(records: list[Row]) -> list[tuple[str, int]]:
@@ -515,7 +572,7 @@ def build_parser() -> argparse.ArgumentParser:
     parser = argparse.ArgumentParser(
         description="Match xStock symbols to a sector from the ticker universe.",
         epilog=(
-            f"The sector and the industry come from "
+            f"The sector, the industry, and the CIK come from "
             f"{UNIVERSE_JSON.relative_to(REPO_ROOT)}. A manual override in "
             f"{OVERRIDES_JSON.relative_to(REPO_ROOT)} or "
             f"{INDUSTRY_OVERRIDES_JSON.relative_to(REPO_ROOT)} wins over that "

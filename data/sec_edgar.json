@@ -1,0 +1,6041 @@
+[
+  {
+    "name": "AXT",
+    "symbol": "AXTIx",
+    "cik": 1051627,
+    "form": "10-K",
+    "filed": "2026-03-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001051627/000143774926008612/axti20251231_10k.htm"
+  },
+  {
+    "name": "Trump Media & Technology Group",
+    "symbol": "DJTx",
+    "cik": 1849635,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001849635/000114036126007174/ef20062365_10k.htm"
+  },
+  {
+    "name": "SHEIN",
+    "symbol": "SHEINx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Volkswagen",
+    "symbol": "VOW3x",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Shell",
+    "symbol": "SHELx",
+    "cik": 1306965,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Vodafone",
+    "symbol": "VODx",
+    "cik": 839923,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Bank Of China",
+    "symbol": "BANKCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Sunny Optical Technology Group",
+    "symbol": "SUOPTx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "MMG",
+    "symbol": "MMGx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Tingyi",
+    "symbol": "TNGYIx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Zhaojin Mining Industry",
+    "symbol": "ZHAOMx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Laopu Gold",
+    "symbol": "LAOPGx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "JD Logistics",
+    "symbol": "JDLOGx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Taiping Insurance",
+    "symbol": "CTINSx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Kunlun Energy",
+    "symbol": "KUNLx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "The Wharf Holdings",
+    "symbol": "WRFHDx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Haidilao International",
+    "symbol": "HAIDLx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Sino Biopharmaceutical",
+    "symbol": "SNBIOx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Shenzhou International",
+    "symbol": "SZIGHx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "ENN Energy",
+    "symbol": "ENNHLx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Smoore International",
+    "symbol": "SMOIHx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Horizon Robotics",
+    "symbol": "HRZRBx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Resources Beer Holdings",
+    "symbol": "CRESBx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Merchants Port",
+    "symbol": "CMERPx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "CSPC Pharmaceutical",
+    "symbol": "CSPCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "J&T Global Express",
+    "symbol": "JTGEXx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Resources Mixc Lifestyle Services",
+    "symbol": "CRESMx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "WuXi XDC Cayman",
+    "symbol": "WXXDCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Mengniu Dairy",
+    "symbol": "CMENDx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Budweiser Brewing Co APAC",
+    "symbol": "BDWAPx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Mixue",
+    "symbol": "MIXUx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "ASMPT",
+    "symbol": "ASMPTx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Wharf Real Estate Investment",
+    "symbol": "WHRFRx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "SITC International",
+    "symbol": "SITCx",
+    "cik": 894315,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000894315/000119312526076905/sitc-20251231.htm"
+  },
+  {
+    "name": "JD Health International",
+    "symbol": "JDHLTx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Sands China",
+    "symbol": "SNDSCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Resources Power",
+    "symbol": "CRESPx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Prada",
+    "symbol": "PRADx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Sinotruk",
+    "symbol": "SINOTx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Chow Tai Fook Jewellery",
+    "symbol": "CTFJWx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Longyuan Power",
+    "symbol": "CLONPx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "WH",
+    "symbol": "WHGROx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Sino Land",
+    "symbol": "SINOx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Cathay Pacific Airways",
+    "symbol": "CTPCAx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Power Assets",
+    "symbol": "PWAHLx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "CLP",
+    "symbol": "CLPHDx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Galaxy Entertainment",
+    "symbol": "GENTEx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Chery Automobile",
+    "symbol": "CRAUTx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "WuXi Biologics",
+    "symbol": "WUXIBx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Swire Properties",
+    "symbol": "SWPRPx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "CK Asset",
+    "symbol": "CKAHx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "CK Infrastructure",
+    "symbol": "CKINFx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Hong Kong and China Gas",
+    "symbol": "HKCGAx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Kuaishou Technology",
+    "symbol": "KUAIx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Hong Kong Exchanges and Clearing",
+    "symbol": "HKEXCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Nongfu Spring",
+    "symbol": "NONGx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Overseas Land & Investment",
+    "symbol": "COVELx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Hongqiao",
+    "symbol": "CHONGx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Meituan",
+    "symbol": "MEITx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Geely Automobile",
+    "symbol": "GEELx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "MTR",
+    "symbol": "MTRCPx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Henderson Land Development",
+    "symbol": "HNDLDx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "PICC Property and Casualty",
+    "symbol": "PICCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "COSCO SHIPPING",
+    "symbol": "COSCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "CK Hutchison",
+    "symbol": "CKHUTx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Pop Mart International",
+    "symbol": "POPMTx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Bank of Communications",
+    "symbol": "BOCOMx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Petroleum & Chemical",
+    "symbol": "CPETCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "BOC Hong Kong",
+    "symbol": "BOCHKx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "CITIC",
+    "symbol": "CITICx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "ANTA Sports Products",
+    "symbol": "ANTASx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Resources Land",
+    "symbol": "CRESLx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Haier Smart Home",
+    "symbol": "HAIERx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Zijin Gold International",
+    "symbol": "ZJGLDx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Postal Savings Bank Of China",
+    "symbol": "PSBOCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Industrial And Commercial Bank Of China",
+    "symbol": "ICBCx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "AIA",
+    "symbol": "AIAGRx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Construction Bank",
+    "symbol": "CCONBx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "BYD",
+    "symbol": "BYDCOx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Xiaomi",
+    "symbol": "XIAOx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Shenhua Energy",
+    "symbol": "CSHEEx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Ping An Insurance Group Co. of China",
+    "symbol": "PICOx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "China Life Insurance",
+    "symbol": "CLINSx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Tencent",
+    "symbol": "TCENTx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "CoreWeave",
+    "symbol": "CRWVx",
+    "cik": 1769628,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001769628/000176962826000104/crwv-20251231.htm"
+  },
+  {
+    "name": "Twist Bioscience",
+    "symbol": "TWSTx",
+    "cik": 1581280,
+    "form": "10-K",
+    "filed": "2025-11-17",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001581280/000158128025000025/twst-20250930.htm"
+  },
+  {
+    "name": "Cerebras Systems",
+    "symbol": "CBRSx",
+    "cik": 2021728,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "SharonAI",
+    "symbol": "SHAZx",
+    "cik": 2068385,
+    "form": "10-K",
+    "filed": "2026-03-31",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0002068385/000149315226014068/form10-k.htm"
+  },
+  {
+    "name": "T1 Energy",
+    "symbol": "TEx",
+    "cik": 1992243,
+    "form": "10-K",
+    "filed": "2026-03-31",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001992243/000199224326000007/t1-20251231.htm"
+  },
+  {
+    "name": "Nebius",
+    "symbol": "NBISx",
+    "cik": 1513845,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "uniQure",
+    "symbol": "QUREx",
+    "cik": 1590560,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001590560/000110465926021898/qure-20251231x10k.htm"
+  },
+  {
+    "name": "Applied Optoelectronics",
+    "symbol": "AAOIx",
+    "cik": 1158114,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001158114/000143774926005875/aaoi20251231_10k.htm"
+  },
+  {
+    "name": "ARM",
+    "symbol": "ARMx",
+    "cik": 1973239,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Bloom Energy",
+    "symbol": "BEx",
+    "cik": 1664703,
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001664703/000162828026006516/be-20251231.htm"
+  },
+  {
+    "name": "Jersey Mike's Subs",
+    "symbol": "JMKEx",
+    "cik": 2127043,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "SK hynix",
+    "symbol": "SKHYx",
+    "cik": 2120882,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Baker Hughes",
+    "symbol": "BKRx",
+    "cik": 1701605,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001701605/000170160526000007/bkr-20251231.htm"
+  },
+  {
+    "name": "Viking",
+    "symbol": "VIKx",
+    "cik": 1745201,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Penumbra",
+    "symbol": "PENx",
+    "cik": 1321732,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001321732/000132173226000007/pen-20251231.htm"
+  },
+  {
+    "name": "BJ's Wholesale Club",
+    "symbol": "BJx",
+    "cik": 1531152,
+    "form": "10-K",
+    "filed": "2026-03-12",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001531152/000153115226000007/bj-20260131.htm"
+  },
+  {
+    "name": "FedEx Freight",
+    "symbol": "FDXFx",
+    "cik": 2082247,
+    "form": "10-K",
+    "filed": "2026-08-05",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0002082247/000162828026053359/fdxf-20260531.htm"
+  },
+  {
+    "name": "RenaissanceRe",
+    "symbol": "RNRx",
+    "cik": 913144,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000913144/000091314426000012/rnr-20251231.htm"
+  },
+  {
+    "name": "Talen Energy",
+    "symbol": "TLNx",
+    "cik": 1622536,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001622536/000162253626000017/tln-20251231.htm"
+  },
+  {
+    "name": "Elanco Animal Health",
+    "symbol": "ELANx",
+    "cik": 1739104,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001739104/000173910426000012/elan-20251231.htm"
+  },
+  {
+    "name": "New York Times",
+    "symbol": "NYTx",
+    "cik": 71691,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000071691/000007169126000011/nyt-20251231.htm"
+  },
+  {
+    "name": "Bank of New York Mellon",
+    "symbol": "BNYx",
+    "cik": 1390777,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001390777/000139077726000033/bk-20251231.htm"
+  },
+  {
+    "name": "McCormick",
+    "symbol": "MKCx",
+    "cik": 63754,
+    "form": "10-K",
+    "filed": "2026-01-22",
+    "period": "2025-11-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000063754/000006375426000037/mkc-20251130.htm"
+  },
+  {
+    "name": "J.M. Smucker",
+    "symbol": "SJMx",
+    "cik": 91419,
+    "form": "10-K",
+    "filed": "2026-06-09",
+    "period": "2026-04-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000091419/000009141926000050/sjm-20260430.htm"
+  },
+  {
+    "name": "Restaurant Brands International",
+    "symbol": "QSRx",
+    "cik": 1618756,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001618756/000161875626000017/qsr-20251231.htm"
+  },
+  {
+    "name": "CDW",
+    "symbol": "CDWx",
+    "cik": 1402057,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001402057/000140205726000011/cdw-20251231.htm"
+  },
+  {
+    "name": "First Horizon",
+    "symbol": "FHNx",
+    "cik": 36966,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000036966/000003696626000051/fhn-20251231.htm"
+  },
+  {
+    "name": "Everest",
+    "symbol": "EGx",
+    "cik": 1095073,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001095073/000109507326000006/eg-20251231.htm"
+  },
+  {
+    "name": "APi",
+    "symbol": "APGx",
+    "cik": 1796209,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001796209/000162828026011620/apg-20251231.htm"
+  },
+  {
+    "name": "RB Global",
+    "symbol": "RBAx",
+    "cik": 1046102,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001046102/000162828026011682/rba-20251231.htm"
+  },
+  {
+    "name": "Clorox",
+    "symbol": "CLXx",
+    "cik": 21076,
+    "form": "10-K",
+    "filed": "2026-08-07",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000021076/000002107626000034/clx-20260630.htm"
+  },
+  {
+    "name": "Roivant Sciences",
+    "symbol": "ROIVx",
+    "cik": 1635088,
+    "form": "10-K",
+    "filed": "2026-05-20",
+    "period": "2026-03-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001635088/000163508826000061/roiv-20260331.htm"
+  },
+  {
+    "name": "Veralto",
+    "symbol": "VLTOx",
+    "cik": 1967680,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001967680/000196768026000011/vlto-20251231.htm"
+  },
+  {
+    "name": "APA",
+    "symbol": "APAx",
+    "cik": 1841666,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001841666/000184166626000015/apa-20251231.htm"
+  },
+  {
+    "name": "Tradeweb Markets",
+    "symbol": "TWx",
+    "cik": 1758730,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001758730/000175873026000015/tw-20251231.htm"
+  },
+  {
+    "name": "Charter Communications",
+    "symbol": "CHTRx",
+    "cik": 1091667,
+    "form": "10-K",
+    "filed": "2026-01-30",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001091667/000109166726000017/chtr-20251231.htm"
+  },
+  {
+    "name": "Knight-Swift Transportation",
+    "symbol": "KNXx",
+    "cik": 1492691,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001492691/000149269126000016/knx-20251231.htm"
+  },
+  {
+    "name": "Trimble",
+    "symbol": "TRMBx",
+    "cik": 864749,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2026-01-02",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000864749/000086474926000015/trmb-20260102.htm"
+  },
+  {
+    "name": "Hasbro",
+    "symbol": "HASx",
+    "cik": 46080,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000046080/000004608026000011/has-20251228.htm"
+  },
+  {
+    "name": "Pinnacle West Capital",
+    "symbol": "PNWx",
+    "cik": 764622,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000764622/000076462226000011/pnw-20251231.htm"
+  },
+  {
+    "name": "Graco",
+    "symbol": "GGGx",
+    "cik": 42888,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-26",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000042888/000004288826000081/ggg-20251226.htm"
+  },
+  {
+    "name": "Applied Industrial Technologies",
+    "symbol": "AITx",
+    "cik": 109563,
+    "form": "10-K",
+    "filed": "2026-08-13",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000109563/000010956326000033/ait-20260630.htm"
+  },
+  {
+    "name": "Camden Property Trust",
+    "symbol": "CPTx",
+    "cik": 906345,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000906345/000162828026007697/cpt-20251231.htm"
+  },
+  {
+    "name": "Tyler Technologies",
+    "symbol": "TYLx",
+    "cik": 860731,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000860731/000086073126000016/tyl-20251231.htm"
+  },
+  {
+    "name": "Dynatrace",
+    "symbol": "DTx",
+    "cik": 1773383,
+    "form": "10-K",
+    "filed": "2026-05-20",
+    "period": "2026-03-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001773383/000177338326000019/dt-20260331.htm"
+  },
+  {
+    "name": "Ally Financial",
+    "symbol": "ALLYx",
+    "cik": 40729,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000040729/000004072926000005/ally-20251231.htm"
+  },
+  {
+    "name": "Equity Lifestyle Properties",
+    "symbol": "ELSx",
+    "cik": 895417,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000895417/000162828026008722/els-20251231.htm"
+  },
+  {
+    "name": "Align Technology",
+    "symbol": "ALGNx",
+    "cik": 1097149,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001097149/000109714926000014/algn-20251231.htm"
+  },
+  {
+    "name": "Zebra Technologies",
+    "symbol": "ZBRAx",
+    "cik": 877212,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000877212/000162828026007668/zbra-20251231.htm"
+  },
+  {
+    "name": "The Carlyle",
+    "symbol": "CGx",
+    "cik": 1527166,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001527166/000152716626000009/cg-20251231.htm"
+  },
+  {
+    "name": "Saia",
+    "symbol": "SAIAx",
+    "cik": 1177702,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001177702/000119312526067030/saia-20251231.htm"
+  },
+  {
+    "name": "Arrow Electronics",
+    "symbol": "ARWx",
+    "cik": 7536,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000007536/000110465926012765/arw-20251231x10k.htm"
+  },
+  {
+    "name": "Avery Dennison",
+    "symbol": "AVYx",
+    "cik": 8818,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000008818/000000881826000015/avy-20251231.htm"
+  },
+  {
+    "name": "Nutanix",
+    "symbol": "NTNXx",
+    "cik": 1618732,
+    "form": "10-K",
+    "filed": "2026-09-18",
+    "period": "2026-07-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001618732/000119312526394793/ntnx-20260731.htm"
+  },
+  {
+    "name": "Assurant",
+    "symbol": "AIZx",
+    "cik": 1267238,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001267238/000126723826000010/aiz-20251231.htm"
+  },
+  {
+    "name": "Rivian Automotive",
+    "symbol": "RIVNx",
+    "cik": 1874178,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001874178/000187417826000008/rivn-20251231.htm"
+  },
+  {
+    "name": "Permian Resources",
+    "symbol": "PRx",
+    "cik": 1658566,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001658566/000165856626000035/pr-20251231.htm"
+  },
+  {
+    "name": "Pinterest",
+    "symbol": "PINSx",
+    "cik": 1506293,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001506293/000150629326000021/pins-20251231.htm"
+  },
+  {
+    "name": "TransUnion",
+    "symbol": "TRUx",
+    "cik": 1552033,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001552033/000155203326000012/tru-20251231.htm"
+  },
+  {
+    "name": "UDR",
+    "symbol": "UDRx",
+    "cik": 74208,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000074208/000007420826000013/udr-20251231x10k.htm"
+  },
+  {
+    "name": "Gaming and Leisure Properties",
+    "symbol": "GLPIx",
+    "cik": 1575965,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001575965/000157596526000032/glpi-20251231.htm"
+  },
+  {
+    "name": "Zscaler",
+    "symbol": "ZSx",
+    "cik": 1713683,
+    "form": "10-K",
+    "filed": "2026-09-03",
+    "period": "2026-07-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001713683/000171368326000157/zs-20260731.htm"
+  },
+  {
+    "name": "Stanley Black & Decker",
+    "symbol": "SWKx",
+    "cik": 93556,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2026-01-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000093556/000009355626000009/swk-20260103.htm"
+  },
+  {
+    "name": "Healthpeak Properties",
+    "symbol": "DOCx",
+    "cik": 765880,
+    "form": "10-K",
+    "filed": "2026-02-03",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000765880/000162828026005044/peak-20251231.htm"
+  },
+  {
+    "name": "The Cooper Companies",
+    "symbol": "COOx",
+    "cik": 711404,
+    "form": "10-K",
+    "filed": "2025-12-05",
+    "period": "2025-10-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000711404/000162828025055615/coo-20251031.htm"
+  },
+  {
+    "name": "PTC",
+    "symbol": "PTCx",
+    "cik": 857005,
+    "form": "10-K",
+    "filed": "2025-11-21",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000857005/000119312525291326/ptc-20250930.htm"
+  },
+  {
+    "name": "Jones Lang LaSalle",
+    "symbol": "JLLx",
+    "cik": 1037976,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001037976/000103797626000037/jll-20251231.htm"
+  },
+  {
+    "name": "Solstice Advanced Materials",
+    "symbol": "SOLSx",
+    "cik": 2064953,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0002064953/000206495326000008/sols-20251231.htm"
+  },
+  {
+    "name": "Lincoln Electric",
+    "symbol": "LECOx",
+    "cik": 59527,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000059527/000005952726000006/leco-20251231x10k.htm"
+  },
+  {
+    "name": "W.R. Berkley",
+    "symbol": "WRBx",
+    "cik": 11544,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000011544/000001154426000005/wrb-20251231.htm"
+  },
+  {
+    "name": "Broadridge Financial Solutions",
+    "symbol": "BRx",
+    "cik": 1383312,
+    "form": "10-K",
+    "filed": "2026-08-04",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001383312/000162828026052243/br-20260630.htm"
+  },
+  {
+    "name": "Omega Healthcare Investors",
+    "symbol": "OHIx",
+    "cik": 888491,
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000888491/000088849126000008/ohi-20251231x10k.htm"
+  },
+  {
+    "name": "Fidelity National Financial",
+    "symbol": "FNFx",
+    "cik": 1331875,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001331875/000133187526000026/fnf-20251231.htm"
+  },
+  {
+    "name": "Sun Communities",
+    "symbol": "SUIx",
+    "cik": 912593,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000912593/000091259326000086/sui-20251231.htm"
+  },
+  {
+    "name": "Watsco",
+    "symbol": "WSOx",
+    "cik": 105016,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000105016/000119312526082486/wso-20251231.htm"
+  },
+  {
+    "name": "Rollins",
+    "symbol": "ROLx",
+    "cik": 84839,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000084839/000008483926000008/rol-20251231.htm"
+  },
+  {
+    "name": "Mid-America Apartment Communities",
+    "symbol": "MAAx",
+    "cik": 912595,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000912595/000119312526041208/maa-20251231.htm"
+  },
+  {
+    "name": "CoStar",
+    "symbol": "CSGPx",
+    "cik": 1057352,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001057352/000105735226000020/csgp-20251231.htm"
+  },
+  {
+    "name": "Tenet Healthcare",
+    "symbol": "THCx",
+    "cik": 70318,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000070318/000007031826000012/thc-20251231.htm"
+  },
+  {
+    "name": "Equitable",
+    "symbol": "EQHx",
+    "cik": 1333986,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001333986/000133398626000012/eqh-20251231.htm"
+  },
+  {
+    "name": "Globe Life",
+    "symbol": "GLx",
+    "cik": 320335,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000320335/000032033526000090/gl-20251231.htm"
+  },
+  {
+    "name": "Reinsurance Group of America",
+    "symbol": "RGAx",
+    "cik": 898174,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000898174/000089817426000006/rga-20251231.htm"
+  },
+  {
+    "name": "Exelixis",
+    "symbol": "EXELx",
+    "cik": 939767,
+    "form": "10-K",
+    "filed": "2026-02-10",
+    "period": "2026-01-02",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000939767/000093976726000021/exel-20260102.htm"
+  },
+  {
+    "name": "Unum",
+    "symbol": "UNMx",
+    "cik": 5513,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000005513/000000551326000008/unm-20251231.htm"
+  },
+  {
+    "name": "Deckers Outdoor",
+    "symbol": "DECKx",
+    "cik": 910521,
+    "form": "10-K",
+    "filed": "2026-05-22",
+    "period": "2026-03-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000910521/000162828026037664/deck-20260331.htm"
+  },
+  {
+    "name": "Neurocrine Biosciences",
+    "symbol": "NBIXx",
+    "cik": 914475,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000914475/000091447526000007/nbix-20251231.htm"
+  },
+  {
+    "name": "Somnigroup International",
+    "symbol": "SGIx",
+    "cik": 1206264,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001206264/000120626426000015/sgi-20251231.htm"
+  },
+  {
+    "name": "Regency Centers",
+    "symbol": "REGx",
+    "cik": 910606,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000910606/000119312526051668/reg-20251231.htm"
+  },
+  {
+    "name": "Leidos",
+    "symbol": "LDOSx",
+    "cik": 1336920,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2026-01-02",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001336920/000133692026000030/ldos-20260102.htm"
+  },
+  {
+    "name": "Jacobs Solutions",
+    "symbol": "Jx",
+    "cik": 52988,
+    "form": "10-K",
+    "filed": "2025-11-20",
+    "period": "2025-09-26",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000052988/000162828025053316/jec-20250926.htm"
+  },
+  {
+    "name": "Dick's Sporting Goods",
+    "symbol": "DKSx",
+    "cik": 1089063,
+    "form": "10-K",
+    "filed": "2026-03-27",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001089063/000108906326000007/dks-20260131.htm"
+  },
+  {
+    "name": "Pinnacle Financial Partners",
+    "symbol": "PNFPx",
+    "cik": 2082866,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0002082866/000208286626000018/pnfp-20251231.htm"
+  },
+  {
+    "name": "Performance Food",
+    "symbol": "PFGCx",
+    "cik": 1618673,
+    "form": "10-K",
+    "filed": "2026-08-12",
+    "period": "2026-06-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001618673/000119312526346886/pfgc-20260627.htm"
+  },
+  {
+    "name": "Evercore",
+    "symbol": "EVRx",
+    "cik": 1360901,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001360901/000162828026010273/evr-20251231.htm"
+  },
+  {
+    "name": "Roku",
+    "symbol": "ROKUx",
+    "cik": 1428439,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001428439/000162828026008114/roku-20251231.htm"
+  },
+  {
+    "name": "Lamar Advertising",
+    "symbol": "LAMRx",
+    "cik": 1090425,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001090425/000109042526000008/lamr-20251231.htm"
+  },
+  {
+    "name": "BorgWarner",
+    "symbol": "BWAx",
+    "cik": 908255,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000908255/000090825526000011/bwa-20251231.htm"
+  },
+  {
+    "name": "Ball",
+    "symbol": "BALLx",
+    "cik": 9389,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000009389/000110465926017410/ball-20251231x10k.htm"
+  },
+  {
+    "name": "DraftKings",
+    "symbol": "DKNGx",
+    "cik": 1883685,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001883685/000188368526000013/dkng-20251231.htm"
+  },
+  {
+    "name": "Regal Rexnord",
+    "symbol": "RRXx",
+    "cik": 82811,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000082811/000008281126000054/rbc-20251231.htm"
+  },
+  {
+    "name": "Gen Digital",
+    "symbol": "GENx",
+    "cik": 849399,
+    "form": "10-K",
+    "filed": "2026-05-21",
+    "period": "2026-04-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000849399/000084939926000017/gen-20260403.htm"
+  },
+  {
+    "name": "RPM International",
+    "symbol": "RPMx",
+    "cik": 110621,
+    "form": "10-K",
+    "filed": "2026-07-22",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000110621/000119312526312142/rpm-20260531.htm"
+  },
+  {
+    "name": "CBRE",
+    "symbol": "CBREx",
+    "cik": 1138118,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001138118/000113811826000005/cbre-20251231.htm"
+  },
+  {
+    "name": "SS&C Technologies",
+    "symbol": "SSNCx",
+    "cik": 1402436,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001402436/000119312526076745/ssnc-20251231.htm"
+  },
+  {
+    "name": "Aramark",
+    "symbol": "ARMKx",
+    "cik": 1584509,
+    "form": "10-K",
+    "filed": "2025-11-25",
+    "period": "2025-10-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001584509/000158450925000219/cik0-20251003.htm"
+  },
+  {
+    "name": "Ralph Lauren",
+    "symbol": "RLx",
+    "cik": 1037038,
+    "form": "10-K",
+    "filed": "2026-05-21",
+    "period": "2026-03-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001037038/000162828026037074/rl-20260328.htm"
+  },
+  {
+    "name": "Clean Harbors",
+    "symbol": "CLHx",
+    "cik": 822818,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000822818/000082281826000009/clh-20251231.htm"
+  },
+  {
+    "name": "Genuine Parts",
+    "symbol": "GPCx",
+    "cik": 40987,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000040987/000004098726000003/gpc-20251231.htm"
+  },
+  {
+    "name": "Block",
+    "symbol": "XYZx",
+    "cik": 1512673,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001512673/000162828026012254/xyz-20251231.htm"
+  },
+  {
+    "name": "Alcoa",
+    "symbol": "AAx",
+    "cik": 1675149,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001675149/000119312526077167/aa-20251231.htm"
+  },
+  {
+    "name": "Toll Brothers",
+    "symbol": "TOLx",
+    "cik": 794170,
+    "form": "10-K",
+    "filed": "2025-12-19",
+    "period": "2025-10-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000794170/000079417025000112/tol-20251031.htm"
+  },
+  {
+    "name": "Reddit",
+    "symbol": "RDDTx",
+    "cik": 1713445,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001713445/000171344526000022/rddt-20251231.htm"
+  },
+  {
+    "name": "Kinder Morgan",
+    "symbol": "KMIx",
+    "cik": 1506307,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001506307/000150630726000011/kmi-20251231.htm"
+  },
+  {
+    "name": "Heico",
+    "symbol": "HEIx",
+    "cik": 46619,
+    "form": "10-K",
+    "filed": "2025-12-22",
+    "period": "2025-10-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000046619/000004661925000082/hei-20251031.htm"
+  },
+  {
+    "name": "Carvana",
+    "symbol": "CVNAx",
+    "cik": 1690820,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001690820/000169082026000009/cvna-20251231.htm"
+  },
+  {
+    "name": "Southern Copper",
+    "symbol": "SCCOx",
+    "cik": 1001838,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001001838/000110465926021492/scco-20251231x10k.htm"
+  },
+  {
+    "name": "Best Buy",
+    "symbol": "BBYx",
+    "cik": 764478,
+    "form": "10-K",
+    "filed": "2026-03-18",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000764478/000076447826000009/bby-20260131.htm"
+  },
+  {
+    "name": "Everpure",
+    "symbol": "Px",
+    "cik": 1474432,
+    "form": "10-K",
+    "filed": "2026-03-25",
+    "period": "2026-02-01",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001474432/000147443226000027/pstg-20260201.htm"
+  },
+  {
+    "name": "Atlassian",
+    "symbol": "TEAMx",
+    "cik": 1650372,
+    "form": "10-K",
+    "filed": "2026-08-14",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001650372/000165037226000036/team-20260630.htm"
+  },
+  {
+    "name": "Las Vegas Sands",
+    "symbol": "LVSx",
+    "cik": 1300514,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001300514/000130051426000013/lvs-20251231.htm"
+  },
+  {
+    "name": "Carlisle Companies",
+    "symbol": "CSLx",
+    "cik": 790051,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000790051/000079005126000012/csl-20251231.htm"
+  },
+  {
+    "name": "Nasdaq Inc.",
+    "symbol": "NDAQx",
+    "cik": 1120193,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001120193/000162828026007703/ndaq-20251231.htm"
+  },
+  {
+    "name": "Mueller Industries",
+    "symbol": "MLIx",
+    "cik": 89439,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000089439/000008943926000008/mli-20251227.htm"
+  },
+  {
+    "name": "Generac",
+    "symbol": "GNRCx",
+    "cik": 1474735,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001474735/000143774926004568/gnrc20251231_10k.htm"
+  },
+  {
+    "name": "W.P. Carey",
+    "symbol": "WPCx",
+    "cik": 1025378,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001025378/000102537826000036/wpc-20251231.htm"
+  },
+  {
+    "name": "Masco",
+    "symbol": "MASx",
+    "cik": 62996,
+    "form": "10-K",
+    "filed": "2026-02-10",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000062996/000006299626000005/mas-20251231.htm"
+  },
+  {
+    "name": "ITT",
+    "symbol": "ITTx",
+    "cik": 216228,
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000216228/000021622826000012/itt-20251231.htm"
+  },
+  {
+    "name": "Okta",
+    "symbol": "OKTAx",
+    "cik": 1660134,
+    "form": "10-K",
+    "filed": "2026-03-05",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001660134/000166013426000020/okta-20260131.htm"
+  },
+  {
+    "name": "Tyson Foods",
+    "symbol": "TSNx",
+    "cik": 100493,
+    "form": "10-K",
+    "filed": "2025-11-10",
+    "period": "2025-09-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000100493/000010049325000095/tsn-20250927.htm"
+  },
+  {
+    "name": "Ovintiv",
+    "symbol": "OVVx",
+    "cik": 1792580,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001792580/000119312526064309/ovv-20251231.htm"
+  },
+  {
+    "name": "Annaly Capital Management",
+    "symbol": "NLYx",
+    "cik": 1043219,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001043219/000104321926000013/nly-20251231.htm"
+  },
+  {
+    "name": "Interactive Brokers",
+    "symbol": "IBKRx",
+    "cik": 1381197,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001381197/000138119726000062/ibkr-20251231.htm"
+  },
+  {
+    "name": "CF Industries",
+    "symbol": "CFx",
+    "cik": 1324404,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001324404/000132440426000007/cf-20251231.htm"
+  },
+  {
+    "name": "Ares Management",
+    "symbol": "ARESx",
+    "cik": 1176948,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001176948/000162828026011413/ares-20251231.htm"
+  },
+  {
+    "name": "The Estee Lauder Companies",
+    "symbol": "ELx",
+    "cik": 1001250,
+    "form": "10-K",
+    "filed": "2026-08-19",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001001250/000100125026000041/el-20260630.htm"
+  },
+  {
+    "name": "Onto Innovation",
+    "symbol": "ONTOx",
+    "cik": 704532,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2026-01-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000704532/000119312526066937/onto-20260103.htm"
+  },
+  {
+    "name": "Coupang",
+    "symbol": "CPNGx",
+    "cik": 1834584,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001834584/000183458426000024/cpng-20251231.htm"
+  },
+  {
+    "name": "Global Payments",
+    "symbol": "GPNx",
+    "cik": 1123360,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001123360/000112336026000008/gpn-20251231.htm"
+  },
+  {
+    "name": "DoorDash",
+    "symbol": "DASHx",
+    "cik": 1792789,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001792789/000179278926000013/dash-20251231.htm"
+  },
+  {
+    "name": "Nordson",
+    "symbol": "NDSNx",
+    "cik": 72331,
+    "form": "10-K",
+    "filed": "2025-12-17",
+    "period": "2025-10-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000072331/000007233125000144/ndsn-20251031.htm"
+  },
+  {
+    "name": "Twilio",
+    "symbol": "TWLOx",
+    "cik": 1447669,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001447669/000144766926000021/twlo-20251231.htm"
+  },
+  {
+    "name": "First Citizens BancShares",
+    "symbol": "FCNCAx",
+    "cik": 798941,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000798941/000079894126000015/fcnca-20251231.htm"
+  },
+  {
+    "name": "Constellation Brands",
+    "symbol": "STZx",
+    "cik": 16918,
+    "form": "10-K",
+    "filed": "2026-04-22",
+    "period": "2026-02-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000016918/000001691826000011/stz-20260228.htm"
+  },
+  {
+    "name": "United Parcel Service",
+    "symbol": "UPSx",
+    "cik": 1090727,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001090727/000162828026008432/ups-20251231.htm"
+  },
+  {
+    "name": "MongoDB",
+    "symbol": "MDBx",
+    "cik": 1441816,
+    "form": "10-K",
+    "filed": "2026-03-11",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001441816/000162828026016799/mdb-20260131.htm"
+  },
+  {
+    "name": "Cognizant Technology Solutions",
+    "symbol": "CTSHx",
+    "cik": 1058290,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001058290/000105829026000008/ctsh-20251231.htm"
+  },
+  {
+    "name": "Zoetis",
+    "symbol": "ZTSx",
+    "cik": 1555280,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001555280/000155528026000011/zts-20251231.htm"
+  },
+  {
+    "name": "Airbnb",
+    "symbol": "ABNBx",
+    "cik": 1559720,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001559720/000155972026000004/abnb-20251231.htm"
+  },
+  {
+    "name": "Incyte",
+    "symbol": "INCYx",
+    "cik": 879169,
+    "form": "10-K",
+    "filed": "2026-02-10",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000879169/000087916926000010/incy-20251231.htm"
+  },
+  {
+    "name": "Brookfield Asset Management",
+    "symbol": "BAMx",
+    "cik": 1937926,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001937926/000162828026013098/bam-20251231.htm"
+  },
+  {
+    "name": "Lennar",
+    "symbol": "LENx",
+    "cik": 920760,
+    "form": "10-K",
+    "filed": "2026-01-28",
+    "period": "2025-11-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000920760/000162828026003870/len-20251130.htm"
+  },
+  {
+    "name": "Veeva Systems",
+    "symbol": "VEEVx",
+    "cik": 1393052,
+    "form": "10-K",
+    "filed": "2026-03-20",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001393052/000139305226000014/veev-20260131.htm"
+  },
+  {
+    "name": "Textron",
+    "symbol": "TXTx",
+    "cik": 217346,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2026-01-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000217346/000021734626000006/txt-20260103.htm"
+  },
+  {
+    "name": "Workday",
+    "symbol": "WDAYx",
+    "cik": 1327811,
+    "form": "10-K",
+    "filed": "2026-03-06",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001327811/000132781126000014/wday-20260131.htm"
+  },
+  {
+    "name": "SBA Communications",
+    "symbol": "SBACx",
+    "cik": 1034054,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001034054/000103405426000002/sbac-20251231x10k.htm"
+  },
+  {
+    "name": "Nike",
+    "symbol": "NKEx",
+    "cik": 320187,
+    "form": "10-K",
+    "filed": "2026-07-15",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000320187/000032018726000088/nke-20260531.htm"
+  },
+  {
+    "name": "Marriott International",
+    "symbol": "MARx",
+    "cik": 1048286,
+    "form": "10-K",
+    "filed": "2026-02-10",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001048286/000104828626000007/mar-20251231.htm"
+  },
+  {
+    "name": "Tractor Supply",
+    "symbol": "TSCOx",
+    "cik": 916365,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000916365/000091636526000014/tsco-20251227.htm"
+  },
+  {
+    "name": "Mondelez International",
+    "symbol": "MDLZx",
+    "cik": 1103982,
+    "form": "10-K",
+    "filed": "2026-02-04",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001103982/000162828026005345/mdlz-20251231.htm"
+  },
+  {
+    "name": "CME",
+    "symbol": "CMEx",
+    "cik": 1156375,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001156375/000115637526000009/cme-20251231.htm"
+  },
+  {
+    "name": "Datadog",
+    "symbol": "DDOGx",
+    "cik": 1561550,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001561550/000162828026008819/ddog-20251231.htm"
+  },
+  {
+    "name": "Amphenol",
+    "symbol": "APHx",
+    "cik": 820313,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000820313/000110465926013549/aph-20251231x10k.htm"
+  },
+  {
+    "name": "Fiserv",
+    "symbol": "FISVx",
+    "cik": 798354,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000798354/000079835426000009/fi-20251231.htm"
+  },
+  {
+    "name": "KeyCorp",
+    "symbol": "KEYx",
+    "cik": 91576,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000091576/000162828026010546/key-20251231.htm"
+  },
+  {
+    "name": "Synchrony Financial",
+    "symbol": "SYFx",
+    "cik": 1601712,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001601712/000160171226000006/syf-20251231.htm"
+  },
+  {
+    "name": "Principal Financial",
+    "symbol": "PFGx",
+    "cik": 1126328,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001126328/000110465926017031/pfg-20251231x10k.htm"
+  },
+  {
+    "name": "Church & Dwight",
+    "symbol": "CHDx",
+    "cik": 313927,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000313927/000119312526048139/chd-20251231.htm"
+  },
+  {
+    "name": "Fidelity National Information Services",
+    "symbol": "FISx",
+    "cik": 1136893,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001136893/000113689326000013/fis-20251231.htm"
+  },
+  {
+    "name": "Fortive",
+    "symbol": "FTVx",
+    "cik": 1659166,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001659166/000165916626000007/ftv-20251231.htm"
+  },
+  {
+    "name": "Albemarle",
+    "symbol": "ALBx",
+    "cik": 915913,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000915913/000091591326000018/alb-20251231.htm"
+  },
+  {
+    "name": "Woodward",
+    "symbol": "WWDx",
+    "cik": 108312,
+    "form": "10-K",
+    "filed": "2025-11-25",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000108312/000119312525296204/wwd-20250930.htm"
+  },
+  {
+    "name": "Darden Restaurants",
+    "symbol": "DRIx",
+    "cik": 940944,
+    "form": "10-K",
+    "filed": "2026-07-24",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000940944/000094094426000025/dri-20260531.htm"
+  },
+  {
+    "name": "Quest Diagnostics",
+    "symbol": "DGXx",
+    "cik": 1022079,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001022079/000102207926000015/dgx-20251231.htm"
+  },
+  {
+    "name": "West Pharmaceutical Services",
+    "symbol": "WSTx",
+    "cik": 105770,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000105770/000010577026000010/wst-20251231.htm"
+  },
+  {
+    "name": "United Therapeutics",
+    "symbol": "UTHRx",
+    "cik": 1082554,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001082554/000108255426000006/uthr-20251231.htm"
+  },
+  {
+    "name": "Omnicom",
+    "symbol": "OMCx",
+    "cik": 29989,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000029989/000002998926000006/omc-20251231.htm"
+  },
+  {
+    "name": "Dollar General",
+    "symbol": "DGx",
+    "cik": 29534,
+    "form": "10-K",
+    "filed": "2026-03-20",
+    "period": "2026-01-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000029534/000110465926032325/dg-20260130x10k.htm"
+  },
+  {
+    "name": "T. Rowe Price",
+    "symbol": "TROWx",
+    "cik": 1113169,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001113169/000162828026008002/trow-20251231.htm"
+  },
+  {
+    "name": "WESCO International",
+    "symbol": "WCCx",
+    "cik": 929008,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000929008/000092900826000008/wcc-20251231.htm"
+  },
+  {
+    "name": "Regions Financial",
+    "symbol": "RFx",
+    "cik": 1281761,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001281761/000128176126000019/rf-20251231.htm"
+  },
+  {
+    "name": "Essex Property Trust",
+    "symbol": "ESSx",
+    "cik": 920522,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000920522/000092052226000003/ess-20251231.htm"
+  },
+  {
+    "name": "Evergy",
+    "symbol": "EVRGx",
+    "cik": 1711269,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001711269/000171126926000017/evrg-20251231.htm"
+  },
+  {
+    "name": "Loews",
+    "symbol": "Lx",
+    "cik": 60086,
+    "form": "10-K",
+    "filed": "2026-02-10",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000060086/000006008626000008/l-20251231.htm"
+  },
+  {
+    "name": "International Paper",
+    "symbol": "IPx",
+    "cik": 51434,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000051434/000005143426000055/ip-20251231.htm"
+  },
+  {
+    "name": "Expand Energy",
+    "symbol": "EXEx",
+    "cik": 895126,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000895126/000089512626000011/exe-20251231.htm"
+  },
+  {
+    "name": "Zimmer Biomet",
+    "symbol": "ZBHx",
+    "cik": 1136869,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001136869/000119312526059853/zbh-20251231.htm"
+  },
+  {
+    "name": "Brown & Brown",
+    "symbol": "BROx",
+    "cik": 79282,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000079282/000119312526046984/bro-20251231.htm"
+  },
+  {
+    "name": "JB Hunt Transport Services",
+    "symbol": "JBHTx",
+    "cik": 728535,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000728535/000143774926005294/jbht20251231_10k.htm"
+  },
+  {
+    "name": "East West Bancorp",
+    "symbol": "EWBCx",
+    "cik": 1069157,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001069157/000106915726000009/ewbc-20251231.htm"
+  },
+  {
+    "name": "Packaging Corp of America",
+    "symbol": "PKGx",
+    "cik": 75677,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000075677/000119312526074129/pkg-20251231.htm"
+  },
+  {
+    "name": "Illumina",
+    "symbol": "ILMNx",
+    "cik": 1110803,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001110803/000111080326000024/ilmn-20251228.htm"
+  },
+  {
+    "name": "F5",
+    "symbol": "FFIVx",
+    "cik": 1048695,
+    "form": "10-K",
+    "filed": "2025-11-25",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001048695/000104869525000157/ffiv-20250930.htm"
+  },
+  {
+    "name": "Invitation Homes",
+    "symbol": "INVHx",
+    "cik": 1687229,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001687229/000168722926000016/invh-20251231.htm"
+  },
+  {
+    "name": "Moderna",
+    "symbol": "MRNAx",
+    "cik": 1682852,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001682852/000168285226000033/mrna-20251231.htm"
+  },
+  {
+    "name": "HP",
+    "symbol": "HPQx",
+    "cik": 47217,
+    "form": "10-K",
+    "filed": "2025-12-10",
+    "period": "2025-10-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000047217/000004721725000071/hpq-20251031.htm"
+  },
+  {
+    "name": "The Kraft Heinz",
+    "symbol": "KHCx",
+    "cik": 1637459,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001637459/000163745926000009/khc-20251227.htm"
+  },
+  {
+    "name": "IDEX",
+    "symbol": "IEXx",
+    "cik": 832101,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000832101/000083210126000003/iex-20251231.htm"
+  },
+  {
+    "name": "Burlington Stores",
+    "symbol": "BURLx",
+    "cik": 1579298,
+    "form": "10-K",
+    "filed": "2026-03-19",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001579298/000119312526116001/burl-20260131.htm"
+  },
+  {
+    "name": "Lattice Semiconductor",
+    "symbol": "LSCCx",
+    "cik": 855658,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2026-01-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000855658/000143774926004100/lscc20260103_10k.htm"
+  },
+  {
+    "name": "TD Synnex",
+    "symbol": "SNXx",
+    "cik": 1177394,
+    "form": "10-K",
+    "filed": "2026-01-27",
+    "period": "2025-11-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001177394/000162828026003598/snx-20251130.htm"
+  },
+  {
+    "name": "Zoom Communications",
+    "symbol": "ZMx",
+    "cik": 1585521,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001585521/000158552126000030/zm-20260131.htm"
+  },
+  {
+    "name": "Verisk Analytics",
+    "symbol": "VRSKx",
+    "cik": 1442145,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001442145/000143774926004452/vrsk20251231_10k.htm"
+  },
+  {
+    "name": "Mettler-Toledo International",
+    "symbol": "MTDx",
+    "cik": 1037646,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001037646/000103764626000011/mtd-20251231.htm"
+  },
+  {
+    "name": "Eversource Energy",
+    "symbol": "ESx",
+    "cik": 72741,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000072741/000162828026008461/es-20251231.htm"
+  },
+  {
+    "name": "C.H. Robinson Worldwide",
+    "symbol": "CHRWx",
+    "cik": 1043277,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001043277/000104327726000009/chrw-20251231.htm"
+  },
+  {
+    "name": "Dow",
+    "symbol": "DOWx",
+    "cik": 1751788,
+    "form": "10-K",
+    "filed": "2026-02-03",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001751788/000175178826000018/dow-20251231.htm"
+  },
+  {
+    "name": "VeriSign",
+    "symbol": "VRSNx",
+    "cik": 1014473,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001014473/000101447326000006/vrsn-20251231.htm"
+  },
+  {
+    "name": "Expeditors International of Washington",
+    "symbol": "EXPDx",
+    "cik": 746515,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000746515/000119312526071569/expd-20251231.htm"
+  },
+  {
+    "name": "Southwest Airlines",
+    "symbol": "LUVx",
+    "cik": 92380,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000092380/000009238026000004/luv-20251231.htm"
+  },
+  {
+    "name": "American Water Works",
+    "symbol": "AWKx",
+    "cik": 1410636,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001410636/000141063626000034/awk-20251231.htm"
+  },
+  {
+    "name": "Corpay",
+    "symbol": "CPAYx",
+    "cik": 1175454,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001175454/000117545426000018/flt-20251231.htm"
+  },
+  {
+    "name": "CMS Energy",
+    "symbol": "CMSx",
+    "cik": 811156,
+    "form": "10-K",
+    "filed": "2026-02-10",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000811156/000081115626000004/cms-20251231.htm"
+  },
+  {
+    "name": "US Foods",
+    "symbol": "USFDx",
+    "cik": 1665918,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001665918/000166591826000008/usfd-20251227.htm"
+  },
+  {
+    "name": "MasTec",
+    "symbol": "MTZx",
+    "cik": 15615,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000015615/000001561526000020/mtz-20251231.htm"
+  },
+  {
+    "name": "NiSource",
+    "symbol": "NIx",
+    "cik": 1111711,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001111711/000111171126000027/nix-20251231.htm"
+  },
+  {
+    "name": "BWX Technologies",
+    "symbol": "BWXTx",
+    "cik": 1486957,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001486957/000148695726000007/bwxt-20251231.htm"
+  },
+  {
+    "name": "MKS",
+    "symbol": "MKSIx",
+    "cik": 1049502,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001049502/000119312526066820/mksi-20251231.htm"
+  },
+  {
+    "name": "Viatris",
+    "symbol": "VTRSx",
+    "cik": 1792044,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001792044/000179204426000013/vtrs-20251231.htm"
+  },
+  {
+    "name": "Insmed",
+    "symbol": "INSMx",
+    "cik": 1104506,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001104506/000110450626000009/insm-20251231.htm"
+  },
+  {
+    "name": "Host Hotels & Resorts",
+    "symbol": "HSTx",
+    "cik": 1070750,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001070750/000107075026000054/hst-20251231.htm"
+  },
+  {
+    "name": "ATI",
+    "symbol": "ATIx",
+    "cik": 1018963,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001018963/000162828026010140/ati-20251228.htm"
+  },
+  {
+    "name": "Markel",
+    "symbol": "MKLx",
+    "cik": 1096343,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001096343/000109634326000020/mkl-20251231.htm"
+  },
+  {
+    "name": "Alliant Energy",
+    "symbol": "LNTx",
+    "cik": 352541,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000352541/000035254126000007/lnt-20251231.htm"
+  },
+  {
+    "name": "Liberty Media",
+    "symbol": "FWONKx",
+    "cik": 1560385,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001560385/000110465926020653/lmca-20251231x10k.htm"
+  },
+  {
+    "name": "Weyerhaeuser",
+    "symbol": "WYx",
+    "cik": 106535,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000106535/000119312526051422/wy-20251231.htm"
+  },
+  {
+    "name": "Cincinnati Financial",
+    "symbol": "CINFx",
+    "cik": 20286,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000020286/000002028626000008/cinf-20251231.htm"
+  },
+  {
+    "name": "Kimco Realty",
+    "symbol": "KIMx",
+    "cik": 879101,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000879101/000119312526060760/kim-20251231.htm"
+  },
+  {
+    "name": "Equifax",
+    "symbol": "EFXx",
+    "cik": 33185,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000033185/000003318526000010/efx-20251231.htm"
+  },
+  {
+    "name": "Reliance",
+    "symbol": "RSx",
+    "cik": 861884,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000861884/000110465926020651/rs-20251231x10k.htm"
+  },
+  {
+    "name": "Xylem",
+    "symbol": "XYLx",
+    "cik": 1524472,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001524472/000152447226000012/xyl-20251231.htm"
+  },
+  {
+    "name": "Williams-Sonoma",
+    "symbol": "WSMx",
+    "cik": 719955,
+    "form": "10-K",
+    "filed": "2026-03-26",
+    "period": "2026-02-01",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000719955/000071995526000059/wsm-20260201.htm"
+  },
+  {
+    "name": "SoFi Technologies",
+    "symbol": "SOFIx",
+    "cik": 1818874,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001818874/000181887426000013/sofi-20251231.htm"
+  },
+  {
+    "name": "Ulta Beauty",
+    "symbol": "ULTAx",
+    "cik": 1403568,
+    "form": "10-K",
+    "filed": "2026-03-26",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001403568/000110465926035243/ulta-20260131x10k.htm"
+  },
+  {
+    "name": "Texas Pacific Land",
+    "symbol": "TPLx",
+    "cik": 1811074,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001811074/000181107426000018/tpl-20251231.htm"
+  },
+  {
+    "name": "Dollar Tree",
+    "symbol": "DLTRx",
+    "cik": 935703,
+    "form": "10-K",
+    "filed": "2026-03-16",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000935703/000093570326000025/dltr-20260131.htm"
+  },
+  {
+    "name": "XPO",
+    "symbol": "XPOx",
+    "cik": 1166003,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001166003/000116600326000016/xpo-20251231.htm"
+  },
+  {
+    "name": "General Mills",
+    "symbol": "GISx",
+    "cik": 40704,
+    "form": "10-K",
+    "filed": "2026-07-01",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000040704/000162828026046466/gis-20260531.htm"
+  },
+  {
+    "name": "Akamai Technologies",
+    "symbol": "AKAMx",
+    "cik": 1086222,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001086222/000108622226000022/akam-20251231.htm"
+  },
+  {
+    "name": "Royal Gold",
+    "symbol": "RGLDx",
+    "cik": 85535,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000085535/000008553526000008/rgld-20251231.htm"
+  },
+  {
+    "name": "Copart",
+    "symbol": "CPRTx",
+    "cik": 900075,
+    "form": "10-K",
+    "filed": "2025-09-26",
+    "period": "2025-07-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000900075/000162828025042946/cprt-20250731.htm"
+  },
+  {
+    "name": "International Flavors & Fragrances",
+    "symbol": "IFFx",
+    "cik": 51253,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000051253/000005125326000006/iff-20251231.htm"
+  },
+  {
+    "name": "FirstEnergy",
+    "symbol": "FEx",
+    "cik": 1031296,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001031296/000103129626000046/fe-20251231.htm"
+  },
+  {
+    "name": "LPL Financial",
+    "symbol": "LPLAx",
+    "cik": 1397911,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001397911/000162828026010705/lpla-20251231.htm"
+  },
+  {
+    "name": "Raymond James Financial",
+    "symbol": "RJFx",
+    "cik": 720005,
+    "form": "10-K",
+    "filed": "2025-11-25",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000720005/000072000525000093/rjf-20250930.htm"
+  },
+  {
+    "name": "Snap-on",
+    "symbol": "SNAx",
+    "cik": 91440,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2026-01-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000091440/000009144026000045/sna-20260103.htm"
+  },
+  {
+    "name": "The Hershey",
+    "symbol": "HSYx",
+    "cik": 47111,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000047111/000162828026008586/hsy-20251231.htm"
+  },
+  {
+    "name": "Entegris",
+    "symbol": "ENTGx",
+    "cik": 1101302,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001101302/000110130226000012/entg-20251231.htm"
+  },
+  {
+    "name": "PPL",
+    "symbol": "PPLx",
+    "cik": 922224,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000922224/000092222426000008/ppl-20251231.htm"
+  },
+  {
+    "name": "MACOM Technology Solutions",
+    "symbol": "MTSIx",
+    "cik": 1493594,
+    "form": "10-K",
+    "filed": "2025-11-14",
+    "period": "2025-10-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001493594/000149359425000054/mtsi-20251003.htm"
+  },
+  {
+    "name": "FTAI Aviation",
+    "symbol": "FTAIx",
+    "cik": 1590364,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001590364/000162828026012940/ftai-20251231.htm"
+  },
+  {
+    "name": "NRG Energy",
+    "symbol": "NRGx",
+    "cik": 1013871,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001013871/000101387126000004/nrg-20251231.htm"
+  },
+  {
+    "name": "Hubbell",
+    "symbol": "HUBBx",
+    "cik": 48898,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000048898/000162828026007500/hubb-20251231.htm"
+  },
+  {
+    "name": "Edison International",
+    "symbol": "EIXx",
+    "cik": 827052,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000827052/000082705226000012/eix-20251231.htm"
+  },
+  {
+    "name": "Fair Isaac",
+    "symbol": "FICOx",
+    "cik": 814547,
+    "form": "10-K",
+    "filed": "2025-11-07",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000814547/000081454725000030/fico-20250930.htm"
+  },
+  {
+    "name": "Carpenter Technology",
+    "symbol": "CRSx",
+    "cik": 17843,
+    "form": "10-K",
+    "filed": "2026-08-12",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000017843/000001784326000034/crs-20260630.htm"
+  },
+  {
+    "name": "PPG Industries",
+    "symbol": "PPGx",
+    "cik": 79879,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000079879/000007987926000046/ppg-20251231.htm"
+  },
+  {
+    "name": "First Solar",
+    "symbol": "FSLRx",
+    "cik": 1274494,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001274494/000127449426000021/fslr-20251231.htm"
+  },
+  {
+    "name": "Atmos Energy",
+    "symbol": "ATOx",
+    "cik": 731802,
+    "form": "10-K",
+    "filed": "2025-11-14",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000731802/000073180225000056/ato-20250930.htm"
+  },
+  {
+    "name": "Lennox International",
+    "symbol": "LIIx",
+    "cik": 1069202,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001069202/000106920226000028/lii-20251231.htm"
+  },
+  {
+    "name": "Live Nation Entertainment",
+    "symbol": "LYVx",
+    "cik": 1335258,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001335258/000133525826000009/lyv-20251231.htm"
+  },
+  {
+    "name": "Bending Spoons",
+    "symbol": "BSPx",
+    "cik": 2004711,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "DexCom",
+    "symbol": "DXCMx",
+    "cik": 1093557,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001093557/000109355726000027/dxcm-20251231.htm"
+  },
+  {
+    "name": "EQT",
+    "symbol": "EQTx",
+    "cik": 33213,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000033213/000003321326000018/eqt-20251231.htm"
+  },
+  {
+    "name": "Northern Trust",
+    "symbol": "NTRSx",
+    "cik": 73124,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000073124/000007312426000016/ntrs-20251231.htm"
+  },
+  {
+    "name": "Agilent Technologies",
+    "symbol": "Ax",
+    "cik": 1090872,
+    "form": "10-K",
+    "filed": "2025-12-22",
+    "period": "2025-10-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001090872/000109087225000087/a-20251031.htm"
+  },
+  {
+    "name": "Martin Marietta Materials",
+    "symbol": "MLMx",
+    "cik": 916076,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000916076/000119312526059193/mlm-20251231.htm"
+  },
+  {
+    "name": "CenterPoint Energy",
+    "symbol": "CNPx",
+    "cik": 1130310,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001130310/000113031026000008/cnp-20251231.htm"
+  },
+  {
+    "name": "MSCI",
+    "symbol": "MSCIx",
+    "cik": 1408198,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001408198/000140819826000011/msci-20251231.htm"
+  },
+  {
+    "name": "Kenvue",
+    "symbol": "KVUEx",
+    "cik": 1944048,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001944048/000194404826000030/kvue-20251228.htm"
+  },
+  {
+    "name": "Revolution Medicines",
+    "symbol": "RVMDx",
+    "cik": 1628171,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001628171/000119312526071563/rvmd-20251231.htm"
+  },
+  {
+    "name": "Teledyne Technologies",
+    "symbol": "TDYx",
+    "cik": 1094285,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001094285/000109428526000017/tdy-20251228.htm"
+  },
+  {
+    "name": "PG&E",
+    "symbol": "PCGx",
+    "cik": 1004980,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001004980/000100498026000009/pcg-20251231.htm"
+  },
+  {
+    "name": "IQVIA",
+    "symbol": "IQVx",
+    "cik": 1478242,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001478242/000162828026008322/iqv-20251231.htm"
+  },
+  {
+    "name": "WEC Energy",
+    "symbol": "WECx",
+    "cik": 783325,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000783325/000078332526000018/wec-20251231.htm"
+  },
+  {
+    "name": "Paychex",
+    "symbol": "PAYXx",
+    "cik": 723531,
+    "form": "10-K",
+    "filed": "2026-07-17",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000723531/000119312526307785/payx-20260531.htm"
+  },
+  {
+    "name": "Casey's General Stores",
+    "symbol": "CASYx",
+    "cik": 726958,
+    "form": "10-K",
+    "filed": "2026-06-22",
+    "period": "2026-04-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000726958/000072695826000046/casy-20260430.htm"
+  },
+  {
+    "name": "Natera",
+    "symbol": "NTRAx",
+    "cik": 1604821,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001604821/000110465926020881/ntra-20251231x10k.htm"
+  },
+  {
+    "name": "Ameren",
+    "symbol": "AEEx",
+    "cik": 1002910,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001002910/000100291026000009/aee-20251231.htm"
+  },
+  {
+    "name": "VICI Properties",
+    "symbol": "VICIx",
+    "cik": 1705696,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001705696/000170569626000034/vici-20251231.htm"
+  },
+  {
+    "name": "Diamondback Energy",
+    "symbol": "FANGx",
+    "cik": 1539838,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001539838/000153983826000010/fang-20251231.htm"
+  },
+  {
+    "name": "Otis Worldwide",
+    "symbol": "OTISx",
+    "cik": 1781335,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001781335/000178133526000011/otis-20251231.htm"
+  },
+  {
+    "name": "Steel Dynamics",
+    "symbol": "STLDx",
+    "cik": 1022671,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001022671/000110465926021395/stld-20251231x10k.htm"
+  },
+  {
+    "name": "Dover",
+    "symbol": "DOVx",
+    "cik": 29905,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000029905/000002990526000009/dov-20251231.htm"
+  },
+  {
+    "name": "Ferguson Enterprises",
+    "symbol": "FERGx",
+    "cik": 2011641,
+    "form": "10-K",
+    "filed": "2025-09-26",
+    "period": "2025-07-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0002011641/000201164125000027/ferg-20250731.htm"
+  },
+  {
+    "name": "Citizens Financial",
+    "symbol": "CFGx",
+    "cik": 759944,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000759944/000075994426000028/cfg-20251231.htm"
+  },
+  {
+    "name": "ResMed",
+    "symbol": "RMDx",
+    "cik": 943819,
+    "form": "10-K",
+    "filed": "2026-08-13",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000943819/000094381926000047/rmd-20260630.htm"
+  },
+  {
+    "name": "Qnity Electronics",
+    "symbol": "Qx",
+    "cik": 2058873,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0002058873/000205887326000010/q-20251231.htm"
+  },
+  {
+    "name": "EMCOR",
+    "symbol": "EMEx",
+    "cik": 105634,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000105634/000010563426000025/eme-20251231.htm"
+  },
+  {
+    "name": "Kimberly-Clark",
+    "symbol": "KMBx",
+    "cik": 55785,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000055785/000162828026007567/kmb-20251231.htm"
+  },
+  {
+    "name": "Ingersoll Rand",
+    "symbol": "IRx",
+    "cik": 1699150,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001699150/000162828026008617/iri-20251231.htm"
+  },
+  {
+    "name": "Exelon",
+    "symbol": "EXCx",
+    "cik": 1109357,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001109357/000110935726000018/exc-20251231.htm"
+  },
+  {
+    "name": "GE HealthCare Technologies",
+    "symbol": "GEHCx",
+    "cik": 1932393,
+    "form": "10-K",
+    "filed": "2026-02-04",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001932393/000193239326000007/gehc-20251231.htm"
+  },
+  {
+    "name": "The Hartford Insurance",
+    "symbol": "HIGx",
+    "cik": 874766,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000874766/000087476626000012/hig-20251231.htm"
+  },
+  {
+    "name": "Iron Mountain",
+    "symbol": "IRMx",
+    "cik": 1020569,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001020569/000102056926000013/irm-20251231.htm"
+  },
+  {
+    "name": "Extra Space Storage",
+    "symbol": "EXRx",
+    "cik": 1289490,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001289490/000128949026000011/exr-20251231.htm"
+  },
+  {
+    "name": "DTE Energy",
+    "symbol": "DTEx",
+    "cik": 936340,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000936340/000093634026000054/dte-20251231.htm"
+  },
+  {
+    "name": "Occidental Petroleum",
+    "symbol": "OXYx",
+    "cik": 797468,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000797468/000162828026009059/oxy-20251231.htm"
+  },
+  {
+    "name": "Take-Two Interactive Software",
+    "symbol": "TTWOx",
+    "cik": 946581,
+    "form": "10-K",
+    "filed": "2026-05-22",
+    "period": "2026-03-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000946581/000162828026037434/ttwo-20260331.htm"
+  },
+  {
+    "name": "The Kroger",
+    "symbol": "KRx",
+    "cik": 56873,
+    "form": "10-K",
+    "filed": "2026-03-31",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000056873/000110465926037723/kr-20260131x10k.htm"
+  },
+  {
+    "name": "NetApp",
+    "symbol": "NTAPx",
+    "cik": 1002047,
+    "form": "10-K",
+    "filed": "2026-06-05",
+    "period": "2026-04-24",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001002047/000119312526259683/ntap-20260424.htm"
+  },
+  {
+    "name": "Prudential Financial",
+    "symbol": "PRUx",
+    "cik": 1137774,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001137774/000113777426000048/pru-20251231.htm"
+  },
+  {
+    "name": "Consolidated Edison",
+    "symbol": "EDx",
+    "cik": 1047862,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001047862/000104786226000031/ed-20251231.htm"
+  },
+  {
+    "name": "Curtiss-Wright",
+    "symbol": "CWx",
+    "cik": 26324,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000026324/000162828026007587/cw-20251231.htm"
+  },
+  {
+    "name": "Waters",
+    "symbol": "WATx",
+    "cik": 1000697,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001000697/000119312526062604/d778470d10k.htm"
+  },
+  {
+    "name": "Halliburton",
+    "symbol": "HALx",
+    "cik": 45012,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000045012/000004501226000015/hal-20251231.htm"
+  },
+  {
+    "name": "Biogen",
+    "symbol": "BIIBx",
+    "cik": 875045,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000875045/000087504526000013/biib-20251231.htm"
+  },
+  {
+    "name": "Centene",
+    "symbol": "CNCx",
+    "cik": 1071739,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001071739/000107173926000049/cnc-20251231.htm"
+  },
+  {
+    "name": "IDEXX Laboratories",
+    "symbol": "IDXXx",
+    "cik": 874716,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000874716/000087471626000038/idxx-20251231.htm"
+  },
+  {
+    "name": "Axon Enterprise",
+    "symbol": "AXONx",
+    "cik": 1069183,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001069183/000162828026011360/axon-20251231.htm"
+  },
+  {
+    "name": "Chipotle Mexican Grill",
+    "symbol": "CMGx",
+    "cik": 1058090,
+    "form": "10-K",
+    "filed": "2026-02-04",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001058090/000105809026000009/cmg-20251231.htm"
+  },
+  {
+    "name": "Humana",
+    "symbol": "HUMx",
+    "cik": 49071,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000049071/000004907126000009/hum-20251231.htm"
+  },
+  {
+    "name": "Roper Technologies",
+    "symbol": "ROPx",
+    "cik": 882835,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000882835/000088283526000009/rop-20251231.htm"
+  },
+  {
+    "name": "Archer-Daniels-Midland",
+    "symbol": "ADMx",
+    "cik": 7084,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000007084/000000708426000011/adm-20251231.htm"
+  },
+  {
+    "name": "Crown Castle",
+    "symbol": "CCIx",
+    "cik": 1051470,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001051470/000105147026000016/cci-20251231.htm"
+  },
+  {
+    "name": "D.R. Horton",
+    "symbol": "DHIx",
+    "cik": 882184,
+    "form": "10-K",
+    "filed": "2025-11-19",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000882184/000088218425000081/dhi-20250930.htm"
+  },
+  {
+    "name": "Becton Dickinson",
+    "symbol": "BDXx",
+    "cik": 10795,
+    "form": "10-K",
+    "filed": "2025-11-25",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000010795/000001079525000099/bdx-20250930.htm"
+  },
+  {
+    "name": "Public Storage",
+    "symbol": "PSAx",
+    "cik": 1393311,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001393311/000162828026007696/psa-20251231.htm"
+  },
+  {
+    "name": "Vulcan Materials",
+    "symbol": "VMCx",
+    "cik": 1396009,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001396009/000162828026009546/vmc-20251231.htm"
+  },
+  {
+    "name": "Alnylam Pharmaceuticals",
+    "symbol": "ALNYx",
+    "cik": 1178670,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001178670/000162828026007497/alny-20251231.htm"
+  },
+  {
+    "name": "Ameriprise Financial",
+    "symbol": "AMPx",
+    "cik": 820027,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000820027/000082002726000011/amp-20251231.htm"
+  },
+  {
+    "name": "Sysco",
+    "symbol": "SYYx",
+    "cik": 96021,
+    "form": "10-K",
+    "filed": "2026-08-21",
+    "period": "2026-06-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000096021/000009602126000033/syy-20260627.htm"
+  },
+  {
+    "name": "M&T Bank",
+    "symbol": "MTBx",
+    "cik": 36270,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000036270/000003627026000010/mtb-20251231.htm"
+  },
+  {
+    "name": "Aflac",
+    "symbol": "AFLx",
+    "cik": 4977,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000004977/000162828026011402/afl-20251231.htm"
+  },
+  {
+    "name": "Cencora",
+    "symbol": "CORx",
+    "cik": 1140859,
+    "form": "10-K",
+    "filed": "2025-11-25",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001140859/000114085925000131/cor-20250930.htm"
+  },
+  {
+    "name": "Ventas",
+    "symbol": "VTRx",
+    "cik": 740260,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000740260/000074026026000006/vtr-20251231.htm"
+  },
+  {
+    "name": "Tapestry",
+    "symbol": "TPRx",
+    "cik": 1116132,
+    "form": "10-K",
+    "filed": "2026-08-13",
+    "period": "2026-06-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001116132/000111613226000018/tpr-20260627.htm"
+  },
+  {
+    "name": "Huntington Bancshares",
+    "symbol": "HBANx",
+    "cik": 49196,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000049196/000004919626000015/hban-20251231.htm"
+  },
+  {
+    "name": "Fastenal",
+    "symbol": "FASTx",
+    "cik": 815556,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000815556/000081555626000009/fast-20251231.htm"
+  },
+  {
+    "name": "Xcel Energy",
+    "symbol": "XELx",
+    "cik": 72903,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000072903/000007290326000009/xel-20251231.htm"
+  },
+  {
+    "name": "United Airlines",
+    "symbol": "UALx",
+    "cik": 100517,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000100517/000010051726000023/ual-20251231.htm"
+  },
+  {
+    "name": "Old Dominion Freight Line",
+    "symbol": "ODFLx",
+    "cik": 878927,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000878927/000119312526067161/odfl-20251231.htm"
+  },
+  {
+    "name": "Entergy",
+    "symbol": "ETRx",
+    "cik": 65984,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000065984/000006598426000174/etr-20251231.htm"
+  },
+  {
+    "name": "ON Semiconductor",
+    "symbol": "ONx",
+    "cik": 1097864,
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001097864/000109786426000006/on-20251231.htm"
+  },
+  {
+    "name": "Yum Brands",
+    "symbol": "YUMx",
+    "cik": 1041061,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001041061/000104106126000084/yum-20251231.htm"
+  },
+  {
+    "name": "Public Service Enterprise",
+    "symbol": "PEGx",
+    "cik": 788784,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000788784/000119312526077446/peg-20251231.htm"
+  },
+  {
+    "name": "Corteva",
+    "symbol": "CTVAx",
+    "cik": 1755672,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001755672/000175567226000004/ctva-20251231.htm"
+  },
+  {
+    "name": "Microchip Technology",
+    "symbol": "MCHPx",
+    "cik": 827054,
+    "form": "10-K",
+    "filed": "2026-05-21",
+    "period": "2026-03-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000827054/000082705426000016/mchp-20260331.htm"
+  },
+  {
+    "name": "Jabil",
+    "symbol": "JBLx",
+    "cik": 898293,
+    "form": "10-K",
+    "filed": "2025-10-17",
+    "period": "2025-08-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000898293/000162828025045293/jbl-20250831.htm"
+  },
+  {
+    "name": "Westinghouse Air Brake Technologies",
+    "symbol": "WABx",
+    "cik": 943452,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000943452/000162828026008067/wab-20251231.htm"
+  },
+  {
+    "name": "ONEOK",
+    "symbol": "OKEx",
+    "cik": 1039684,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001039684/000103968426000006/oke-20251231.htm"
+  },
+  {
+    "name": "State Street",
+    "symbol": "STTx",
+    "cik": 93751,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000093751/000009375126000124/stt-20251231.htm"
+  },
+  {
+    "name": "Keurig Dr Pepper",
+    "symbol": "KDPx",
+    "cik": 1418135,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001418135/000141813526000016/kdp-20251231.htm"
+  },
+  {
+    "name": "American International",
+    "symbol": "AIGx",
+    "cik": 5272,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000005272/000000527226000023/aig-20251231.htm"
+  },
+  {
+    "name": "Republic Services",
+    "symbol": "RSGx",
+    "cik": 1060391,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001060391/000106039126000094/rsg-20251231.htm"
+  },
+  {
+    "name": "MetLife",
+    "symbol": "METx",
+    "cik": 1099219,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001099219/000109921926000013/met-20251231.htm"
+  },
+  {
+    "name": "Edwards Lifesciences",
+    "symbol": "EWx",
+    "cik": 1099800,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001099800/000109980026000009/ew-20251231.htm"
+  },
+  {
+    "name": "Carrier Global",
+    "symbol": "CARRx",
+    "cik": 1783180,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001783180/000178318026000008/carr-20251231.htm"
+  },
+  {
+    "name": "Cardinal Health",
+    "symbol": "CAHx",
+    "cik": 721371,
+    "form": "10-K",
+    "filed": "2026-08-11",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000721371/000072137126000038/cah-20260630.htm"
+  },
+  {
+    "name": "Delta Air Lines",
+    "symbol": "DALx",
+    "cik": 27904,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000027904/000002790426000013/dal-20251231.htm"
+  },
+  {
+    "name": "Autodesk",
+    "symbol": "ADSKx",
+    "cik": 769397,
+    "form": "10-K",
+    "filed": "2026-03-03",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000769397/000076939726000015/adsk-20260131.htm"
+  },
+  {
+    "name": "Astera Labs",
+    "symbol": "ALABx",
+    "cik": 1736297,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001736297/000173629726000010/alab-20251231.htm"
+  },
+  {
+    "name": "AutoZone",
+    "symbol": "AZOx",
+    "cik": 866787,
+    "form": "10-K",
+    "filed": "2025-10-27",
+    "period": "2025-08-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000866787/000110465925102611/azo-20250830x10k.htm"
+  },
+  {
+    "name": "AMETEK",
+    "symbol": "AMEx",
+    "cik": 1037868,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001037868/000103786826000016/ame-20251231.htm"
+  },
+  {
+    "name": "Fifth Third Bancorp",
+    "symbol": "FITBx",
+    "cik": 35527,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000035527/000003552726000124/fitb-20251231.htm"
+  },
+  {
+    "name": "Targa Resources",
+    "symbol": "TRGPx",
+    "cik": 1389170,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001389170/000119312526059296/trgp-20251231.htm"
+  },
+  {
+    "name": "Devon Energy",
+    "symbol": "DVNx",
+    "cik": 1090012,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001090012/000119312526056485/dvn-20251231.htm"
+  },
+  {
+    "name": "Arthur J. Gallagher",
+    "symbol": "AJGx",
+    "cik": 354190,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000354190/000162828026008662/ajg-20251231.htm"
+  },
+  {
+    "name": "Rockwell Automation",
+    "symbol": "ROKx",
+    "cik": 1024478,
+    "form": "10-K",
+    "filed": "2025-11-12",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001024478/000102447825000116/rok-20250930.htm"
+  },
+  {
+    "name": "Realty Income",
+    "symbol": "Ox",
+    "cik": 726728,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000726728/000072672826000011/o-20251231.htm"
+  },
+  {
+    "name": "Regeneron Pharmaceuticals",
+    "symbol": "REGNx",
+    "cik": 872589,
+    "form": "10-K",
+    "filed": "2026-02-04",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000872589/000087258926000008/regn-20251231.htm"
+  },
+  {
+    "name": "Ciena",
+    "symbol": "CIENx",
+    "cik": 936395,
+    "form": "10-K",
+    "filed": "2025-12-12",
+    "period": "2025-11-01",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000936395/000162828025056698/cien-20251101.htm"
+  },
+  {
+    "name": "Dominion Energy",
+    "symbol": "Dx",
+    "cik": 715957,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000715957/000119312526063120/d-20251231.htm"
+  },
+  {
+    "name": "Moody's",
+    "symbol": "MCOx",
+    "cik": 1059556,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001059556/000162828026009136/mco-20251231.htm"
+  },
+  {
+    "name": "Sempra",
+    "symbol": "SREx",
+    "cik": 1032208,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001032208/000103220826000010/sre-20251231.htm"
+  },
+  {
+    "name": "The Travelers Companies",
+    "symbol": "TRVx",
+    "cik": 86312,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000086312/000008631226000065/trv-20251231.htm"
+  },
+  {
+    "name": "EOG Resources",
+    "symbol": "EOGx",
+    "cik": 821189,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000821189/000082118926000054/eog-20251231.htm"
+  },
+  {
+    "name": "L3Harris Technologies",
+    "symbol": "LHXx",
+    "cik": 202058,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2026-01-02",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000202058/000020205826000015/hrs-20260102.htm"
+  },
+  {
+    "name": "Simon Property",
+    "symbol": "SPGx",
+    "cik": 1063761,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001063761/000110465926019419/spg-20251231x10k.htm"
+  },
+  {
+    "name": "W.W. Grainger",
+    "symbol": "GWWx",
+    "cik": 277135,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000277135/000027713526000011/gww-20251231.htm"
+  },
+  {
+    "name": "Sherwin-Williams",
+    "symbol": "SHWx",
+    "cik": 89800,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000089800/000008980026000008/shw-20251231.htm"
+  },
+  {
+    "name": "Monolithic Power Systems",
+    "symbol": "MPWRx",
+    "cik": 1280452,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001280452/000143774926006113/mpwr20251231_10k.htm"
+  },
+  {
+    "name": "Marathon Petroleum",
+    "symbol": "MPCx",
+    "cik": 1510295,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001510295/000151029526000009/mpc-20251231.htm"
+  },
+  {
+    "name": "Apollo Global Management",
+    "symbol": "APOx",
+    "cik": 1858681,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001858681/000185868126000013/apo-20251231.htm"
+  },
+  {
+    "name": "Comfort Systems USA",
+    "symbol": "FIXx",
+    "cik": 1035983,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001035983/000110465926017530/fix-20251231x10k.htm"
+  },
+  {
+    "name": "Ford Motor",
+    "symbol": "Fx",
+    "cik": 37996,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000037996/000003799626000015/f-20251231.htm"
+  },
+  {
+    "name": "KKR",
+    "symbol": "KKRx",
+    "cik": 1404912,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001404912/000140491226000007/kkr-20251231.htm"
+  },
+  {
+    "name": "Northrop Grumman",
+    "symbol": "NOCx",
+    "cik": 1133421,
+    "form": "10-K",
+    "filed": "2026-01-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001133421/000113342126000003/noc-20251231.htm"
+  },
+  {
+    "name": "Air Products and Chemicals",
+    "symbol": "APDx",
+    "cik": 2969,
+    "form": "10-K",
+    "filed": "2025-11-20",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000002969/000000296925000055/apd-20250930.htm"
+  },
+  {
+    "name": "Digital Realty Trust",
+    "symbol": "DLRx",
+    "cik": 1297996,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001297996/000110465926015365/dlr-20251231x10k.htm"
+  },
+  {
+    "name": "Truist Financial",
+    "symbol": "TFCx",
+    "cik": 92230,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000092230/000009223026000030/tfc-20251231.htm"
+  },
+  {
+    "name": "Cintas",
+    "symbol": "CTASx",
+    "cik": 723254,
+    "form": "10-K",
+    "filed": "2026-07-29",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000723254/000072325426000028/ctas-20260531.htm"
+  },
+  {
+    "name": "Keysight Technologies",
+    "symbol": "KEYSx",
+    "cik": 1601046,
+    "form": "10-K",
+    "filed": "2025-12-17",
+    "period": "2025-10-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001601046/000160104625000127/keys-20251031.htm"
+  },
+  {
+    "name": "Nucor",
+    "symbol": "NUEx",
+    "cik": 73309,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000073309/000119312526071575/nue-20251231.htm"
+  },
+  {
+    "name": "Coherent",
+    "symbol": "COHRx",
+    "cik": 820318,
+    "form": "10-K",
+    "filed": "2026-08-14",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000820318/000082031826000020/iivi-20260630.htm"
+  },
+  {
+    "name": "Allstate",
+    "symbol": "ALLx",
+    "cik": 899051,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000899051/000089905126000031/all-20251231.htm"
+  },
+  {
+    "name": "PACCAR",
+    "symbol": "PCARx",
+    "cik": 75362,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000075362/000119312526057025/pcar-20251231.htm"
+  },
+  {
+    "name": "HCA Healthcare",
+    "symbol": "HCAx",
+    "cik": 860730,
+    "form": "10-K",
+    "filed": "2026-02-10",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000860730/000119312526044769/hca-20251231.htm"
+  },
+  {
+    "name": "American Electric Power",
+    "symbol": "AEPx",
+    "cik": 4904,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000004904/000000490426000013/aep-20251231.htm"
+  },
+  {
+    "name": "Motorola Solutions",
+    "symbol": "MSIx",
+    "cik": 68505,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000068505/000006850526000010/msi-20251231.htm"
+  },
+  {
+    "name": "Ecolab",
+    "symbol": "ECLx",
+    "cik": 31462,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000031462/000110465926018357/ecl-20251231x10k.htm"
+  },
+  {
+    "name": "Colgate-Palmolive",
+    "symbol": "CLx",
+    "cik": 21665,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000021665/000002166526000006/cl-20251231.htm"
+  },
+  {
+    "name": "Norfolk Southern",
+    "symbol": "NSCx",
+    "cik": 702165,
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000702165/000162828026006268/nsc-20251231.htm"
+  },
+  {
+    "name": "TransDigm",
+    "symbol": "TDGx",
+    "cik": 1260221,
+    "form": "10-K",
+    "filed": "2025-11-12",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001260221/000126022125000081/tdg-20250930.htm"
+  },
+  {
+    "name": "United Rentals",
+    "symbol": "URIx",
+    "cik": 1067701,
+    "form": "10-K",
+    "filed": "2026-01-28",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001067701/000106770126000007/uri-20251231.htm"
+  },
+  {
+    "name": "Hewlett Packard Enterprise",
+    "symbol": "HPEx",
+    "cik": 1645590,
+    "form": "10-K",
+    "filed": "2025-12-18",
+    "period": "2025-10-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001645590/000164559025000130/hpe-20251031.htm"
+  },
+  {
+    "name": "Boston Scientific",
+    "symbol": "BSXx",
+    "cik": 885725,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000885725/000088572526000010/bsx-20251231.htm"
+  },
+  {
+    "name": "Valero Energy",
+    "symbol": "VLOx",
+    "cik": 1035002,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001035002/000162828026011499/vlo-20251231.htm"
+  },
+  {
+    "name": "FedEx",
+    "symbol": "FDXx",
+    "cik": 1048911,
+    "form": "10-K",
+    "filed": "2026-07-20",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001048911/000104891126000105/fdx-20260531.htm"
+  },
+  {
+    "name": "Intuit",
+    "symbol": "INTUx",
+    "cik": 896878,
+    "form": "10-K",
+    "filed": "2026-09-09",
+    "period": "2026-07-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000896878/000089687826000037/intu-20260731.htm"
+  },
+  {
+    "name": "Hilton Worldwide",
+    "symbol": "HLTx",
+    "cik": 1585689,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001585689/000158568926000007/hlt-20251231.htm"
+  },
+  {
+    "name": "O'Reilly Automotive",
+    "symbol": "ORLYx",
+    "cik": 898173,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000898173/000089817326000009/orly-20251231x10k.htm"
+  },
+  {
+    "name": "Illinois Tool Works",
+    "symbol": "ITWx",
+    "cik": 49826,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000049826/000004982626000008/itw-20251231.htm"
+  },
+  {
+    "name": "Ross Stores",
+    "symbol": "ROSTx",
+    "cik": 745732,
+    "form": "10-K",
+    "filed": "2026-03-31",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000745732/000074573226000006/rost-20260131.htm"
+  },
+  {
+    "name": "Phillips 66",
+    "symbol": "PSXx",
+    "cik": 1534701,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001534701/000153470126000006/psx-20251231.htm"
+  },
+  {
+    "name": "Intercontinental Exchange",
+    "symbol": "ICEx",
+    "cik": 1571949,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001571949/000157194926000004/ice-20251231.htm"
+  },
+  {
+    "name": "The Cigna",
+    "symbol": "CIx",
+    "cik": 1739940,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001739940/000173994026000006/ci-20251231.htm"
+  },
+  {
+    "name": "General Motors",
+    "symbol": "GMx",
+    "cik": 1467858,
+    "form": "10-K",
+    "filed": "2026-01-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001467858/000146785826000013/gm-20251231.htm"
+  },
+  {
+    "name": "Snowflake",
+    "symbol": "SNOWx",
+    "cik": 1640147,
+    "form": "10-K",
+    "filed": "2026-03-20",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001640147/000164014726000008/snow-20260131.htm"
+  },
+  {
+    "name": "Waste Management",
+    "symbol": "WMx",
+    "cik": 823768,
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000823768/000110465926012049/wm-20251231x10k.htm"
+  },
+  {
+    "name": "Emerson Electric",
+    "symbol": "EMRx",
+    "cik": 32604,
+    "form": "10-K",
+    "filed": "2025-11-10",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000032604/000003260425000087/emr-20250930.htm"
+  },
+  {
+    "name": "Elevance Health",
+    "symbol": "ELVx",
+    "cik": 1156039,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001156039/000115603926000013/elv-20251231.htm"
+  },
+  {
+    "name": "3M",
+    "symbol": "MMMx",
+    "cik": 66740,
+    "form": "10-K",
+    "filed": "2026-02-03",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000066740/000006674026000014/mmm-20251231.htm"
+  },
+  {
+    "name": "CSX",
+    "symbol": "CSXx",
+    "cik": 277948,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000277948/000027794826000006/csx-20251231.htm"
+  },
+  {
+    "name": "Synopsys",
+    "symbol": "SNPSx",
+    "cik": 883241,
+    "form": "10-K",
+    "filed": "2025-12-22",
+    "period": "2025-10-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000883241/000088324125000028/snps-20251031.htm"
+  },
+  {
+    "name": "American Tower",
+    "symbol": "AMTx",
+    "cik": 1053507,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001053507/000105350726000035/amt-20251231.htm"
+  },
+  {
+    "name": "Fortinet",
+    "symbol": "FTNTx",
+    "cik": 1262039,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001262039/000126203926000007/ftnt-20251231.htm"
+  },
+  {
+    "name": "Blackstone",
+    "symbol": "BXx",
+    "cik": 1393818,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001393818/000119312526082531/d48618d10k.htm"
+  },
+  {
+    "name": "Automatic Data Processing",
+    "symbol": "ADPx",
+    "cik": 8670,
+    "form": "10-K",
+    "filed": "2026-08-05",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000008670/000000867026000030/adp-20260630.htm"
+  },
+  {
+    "name": "PNC Financial Services",
+    "symbol": "PNCx",
+    "cik": 713676,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000713676/000071367626000020/pnc-20251231.htm"
+  },
+  {
+    "name": "Marsh",
+    "symbol": "MRSHx",
+    "cik": 62709,
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000062709/000006270926000022/mrsh-20251231.htm"
+  },
+  {
+    "name": "Williams Companies",
+    "symbol": "WMBx",
+    "cik": 107263,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000107263/000010726326000006/wmb-20251231.htm"
+  },
+  {
+    "name": "Cummins",
+    "symbol": "CMIx",
+    "cik": 26172,
+    "form": "10-K",
+    "filed": "2026-02-10",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000026172/000002617226000009/cmi-20251231.htm"
+  },
+  {
+    "name": "Freeport-McMoRan",
+    "symbol": "FCXx",
+    "cik": 831259,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000831259/000083125926000012/fcx-20251231.htm"
+  },
+  {
+    "name": "Southern",
+    "symbol": "SOx",
+    "cik": null,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "McKesson",
+    "symbol": "MCKx",
+    "cik": 927653,
+    "form": "10-K",
+    "filed": "2026-05-08",
+    "period": "2026-03-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000927653/000092765326000069/mck-20260331.htm"
+  },
+  {
+    "name": "Cadence Design Systems",
+    "symbol": "CDNSx",
+    "cik": 813672,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000813672/000081367226000016/cdns-20251231.htm"
+  },
+  {
+    "name": "U.S. Bancorp",
+    "symbol": "USBx",
+    "cik": 36104,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000036104/000003610426000011/usb-20251231.htm"
+  },
+  {
+    "name": "General Dynamics",
+    "symbol": "GDx",
+    "cik": 40533,
+    "form": "10-K",
+    "filed": "2026-01-30",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000040533/000004053326000006/gd-20251231.htm"
+  },
+  {
+    "name": "Stryker",
+    "symbol": "SYKx",
+    "cik": 310764,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000310764/000031076426000010/syk-20251231.htm"
+  },
+  {
+    "name": "Equinix",
+    "symbol": "EQIXx",
+    "cik": 1101239,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001101239/000110123926000032/eqix-20251231.htm"
+  },
+  {
+    "name": "ServiceNow",
+    "symbol": "NOWx",
+    "cik": 1373715,
+    "form": "10-K",
+    "filed": "2026-01-29",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001373715/000137371526000007/now-20251231.htm"
+  },
+  {
+    "name": "Howmet Aerospace",
+    "symbol": "HWMx",
+    "cik": 4281,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000004281/000000428126000012/hwm-20251231.htm"
+  },
+  {
+    "name": "Duke Energy",
+    "symbol": "DUKx",
+    "cik": 1326160,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001326160/000132616026000014/duk-20251231.htm"
+  },
+  {
+    "name": "Lockheed Martin",
+    "symbol": "LMTx",
+    "cik": 936468,
+    "form": "10-K",
+    "filed": "2026-01-29",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000936468/000162828026004195/lmt-20251231.htm"
+  },
+  {
+    "name": "Vertex Pharmaceuticals",
+    "symbol": "VRTXx",
+    "cik": 875320,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000875320/000087532026000056/vrtx-20251231.htm"
+  },
+  {
+    "name": "Newmont",
+    "symbol": "NEMx",
+    "cik": 1164727,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001164727/000116472726000010/nem-20251231.htm"
+  },
+  {
+    "name": "Starbucks",
+    "symbol": "SBUXx",
+    "cik": 829224,
+    "form": "10-K",
+    "filed": "2025-11-14",
+    "period": "2025-09-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000829224/000082922425000114/sbux-20250928.htm"
+  },
+  {
+    "name": "Capital One Financial",
+    "symbol": "COFx",
+    "cik": 927628,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000927628/000092762826000024/cof-20251231.htm"
+  },
+  {
+    "name": "ConocoPhillips",
+    "symbol": "COPx",
+    "cik": 1163165,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001163165/000116316526000009/cop-20251231.htm"
+  },
+  {
+    "name": "Bristol-Myers Squibb",
+    "symbol": "BMYx",
+    "cik": 14272,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000014272/000001427226000004/bmy-20251231.htm"
+  },
+  {
+    "name": "Parker Hannifin",
+    "symbol": "PHx",
+    "cik": 76334,
+    "form": "10-K",
+    "filed": "2026-08-21",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000076334/000007633426000105/ph-20260630.htm"
+  },
+  {
+    "name": "Deere",
+    "symbol": "DEx",
+    "cik": 315189,
+    "form": "10-K",
+    "filed": "2025-12-18",
+    "period": "2025-11-02",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000315189/000110465925122321/de-20251102x10k.htm"
+  },
+  {
+    "name": "Altria",
+    "symbol": "MOx",
+    "cik": 764180,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000764180/000076418026000017/mo-20251231.htm"
+  },
+  {
+    "name": "CVS Health",
+    "symbol": "CVSx",
+    "cik": 64803,
+    "form": "10-K",
+    "filed": "2026-02-10",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000064803/000006480326000010/cvs-20251231.htm"
+  },
+  {
+    "name": "Welltower",
+    "symbol": "WELLx",
+    "cik": 766704,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000766704/000076670426000010/well-20251231.htm"
+  },
+  {
+    "name": "Progressive",
+    "symbol": "PGRx",
+    "cik": 80661,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000080661/000008066126000086/pgr-20251231.htm"
+  },
+  {
+    "name": "Prologis",
+    "symbol": "PLDx",
+    "cik": 1045609,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001045609/000119312526051453/pld-20251231.htm"
+  },
+  {
+    "name": "Lowe's Companies",
+    "symbol": "LOWx",
+    "cik": 60667,
+    "form": "10-K",
+    "filed": "2026-03-23",
+    "period": "2026-01-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000060667/000006066726000029/low-20260130.htm"
+  },
+  {
+    "name": "TJX Companies",
+    "symbol": "TJXx",
+    "cik": 109198,
+    "form": "10-K",
+    "filed": "2026-03-31",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000109198/000010919826000008/tjx-20260131.htm"
+  },
+  {
+    "name": "The Walt Disney",
+    "symbol": "DISx",
+    "cik": 1744489,
+    "form": "10-K",
+    "filed": "2025-11-13",
+    "period": "2025-09-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001744489/000174448925000155/dis-20250927.htm"
+  },
+  {
+    "name": "Corning",
+    "symbol": "GLWx",
+    "cik": 24741,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000024741/000002474126000124/glw-20251231.htm"
+  },
+  {
+    "name": "Union Pacific",
+    "symbol": "UNPx",
+    "cik": 100885,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000100885/000010088526000037/unp-20251231.htm"
+  },
+  {
+    "name": "Charles Schwab",
+    "symbol": "SCHWx",
+    "cik": 316709,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000316709/000031670926000009/schw-20251231.htm"
+  },
+  {
+    "name": "Intuitive Surgical",
+    "symbol": "ISRGx",
+    "cik": 1035267,
+    "form": "10-K",
+    "filed": "2026-02-03",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001035267/000103526726000010/isrg-20251231.htm"
+  },
+  {
+    "name": "Gilead Sciences",
+    "symbol": "GILDx",
+    "cik": 882095,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000882095/000088209526000006/gild-20251231.htm"
+  },
+  {
+    "name": "Boeing",
+    "symbol": "BAx",
+    "cik": 12927,
+    "form": "10-K",
+    "filed": "2026-01-30",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000012927/000162828026004357/ba-20251231.htm"
+  },
+  {
+    "name": "NextEra Energy",
+    "symbol": "NEEx",
+    "cik": 753308,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000753308/000075330826000015/nee-20251231.htm"
+  },
+  {
+    "name": "Amgen",
+    "symbol": "AMGNx",
+    "cik": 318154,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000318154/000031815426000010/amgn-20251231.htm"
+  },
+  {
+    "name": "Verizon Communications",
+    "symbol": "VZx",
+    "cik": 732712,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000732712/000073271226000007/vz-20251231.htm"
+  },
+  {
+    "name": "Qualcomm",
+    "symbol": "QCOMx",
+    "cik": 804328,
+    "form": "10-K",
+    "filed": "2025-11-05",
+    "period": "2025-09-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000804328/000080432825000085/qcom-20250928.htm"
+  },
+  {
+    "name": "RTX",
+    "symbol": "RTXx",
+    "cik": 101829,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000101829/000010182926000006/rtx-20251231.htm"
+  },
+  {
+    "name": "Morgan Stanley",
+    "symbol": "MSx",
+    "cik": 895421,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000895421/000089542126000086/ms-20251231.htm"
+  },
+  {
+    "name": "Citigroup",
+    "symbol": "Cx",
+    "cik": 831001,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000831001/000083100126000011/c-20251231.htm"
+  },
+  {
+    "name": "Texas Instruments",
+    "symbol": "TXNx",
+    "cik": 97476,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000097476/000009747626000059/txn-20251231.htm"
+  },
+  {
+    "name": "Western Digital",
+    "symbol": "WDCx",
+    "cik": 106040,
+    "form": "10-K",
+    "filed": "2026-08-14",
+    "period": "2026-07-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000106040/000162828026057139/wdc-20260703.htm"
+  },
+  {
+    "name": "GE Aerospace",
+    "symbol": "GEx",
+    "cik": 40545,
+    "form": "10-K",
+    "filed": "2026-01-29",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000040545/000004054526000008/ge-20251231.htm"
+  },
+  {
+    "name": "Analog Devices",
+    "symbol": "ADIx",
+    "cik": 6281,
+    "form": "10-K",
+    "filed": "2025-11-25",
+    "period": "2025-11-01",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000006281/000000628125000153/adi-20251101.htm"
+  },
+  {
+    "name": "Wells Fargo",
+    "symbol": "WFCx",
+    "cik": 72971,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000072971/000007297126000133/wfc-20251231_d2.htm"
+  },
+  {
+    "name": "Caterpillar",
+    "symbol": "CATx",
+    "cik": 18230,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000018230/000001823026000008/cat-20251231.htm"
+  },
+  {
+    "name": "SpaceX",
+    "symbol": "SPCXx",
+    "cik": 1181412,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Medline",
+    "symbol": "MDLNx",
+    "cik": 2046386,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0002046386/000204638626000009/mdln-20251231.htm"
+  },
+  {
+    "name": "Enhanced Group",
+    "symbol": "ENHAx",
+    "cik": 1956439,
+    "form": "10-K",
+    "filed": "2026-02-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001956439/000121390026013706/ea0273966-10k_aparadise.htm"
+  },
+  {
+    "name": "Strive, Inc. Series A Preferred",
+    "symbol": "SATAx",
+    "cik": 1920406,
+    "form": "10-K",
+    "filed": "2026-03-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001920406/000162828026019879/asst-20251231.htm"
+  },
+  {
+    "name": "Vida Global",
+    "symbol": "VIDAx",
+    "cik": 1973062,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Red Cat",
+    "symbol": "RCATx",
+    "cik": 748268,
+    "form": "10-K",
+    "filed": "2026-03-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000748268/000162828026019861/rcat-20251231.htm"
+  },
+  {
+    "name": "Ondas",
+    "symbol": "ONDSx",
+    "cik": 1646188,
+    "form": "10-K",
+    "filed": "2026-03-30",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001646188/000121390026035981/ea0282911-10k_ondas.htm"
+  },
+  {
+    "name": "IREN",
+    "symbol": "IRENx",
+    "cik": 1878848,
+    "form": "10-K",
+    "filed": "2026-08-27",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001878848/000187884826000052/iren-20260630.htm"
+  },
+  {
+    "name": "Hims & Hers",
+    "symbol": "HIMSx",
+    "cik": 1773751,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001773751/000177375126000022/hims-20251231.htm"
+  },
+  {
+    "name": "Cloudflare",
+    "symbol": "NETx",
+    "cik": 1477333,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001477333/000147733326000016/cloud-20251231.htm"
+  },
+  {
+    "name": "Cheniere Energy",
+    "symbol": "LNGx",
+    "cik": 3570,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000003570/000000357026000005/lng-20251231.htm"
+  },
+  {
+    "name": "Sandisk Corporation",
+    "symbol": "SNDKx",
+    "cik": 2023554,
+    "form": "10-K",
+    "filed": "2026-08-17",
+    "period": "2026-07-03",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0002023554/000162828026057406/sndk-20260703.htm"
+  },
+  {
+    "name": "Lumentum Holdings Inc.",
+    "symbol": "LITEx",
+    "cik": 1633978,
+    "form": "10-K",
+    "filed": "2026-08-17",
+    "period": "2026-06-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001633978/000162828026057358/lite-20260627.htm"
+  },
+  {
+    "name": "NuScale Power Corporation",
+    "symbol": "SMRx",
+    "cik": 1822966,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001822966/000182296626000018/smr-20251231.htm"
+  },
+  {
+    "name": "Applied Digital Corporation",
+    "symbol": "APLDx",
+    "cik": 1144879,
+    "form": "10-K",
+    "filed": "2026-07-29",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001144879/000114487926000048/apld-20260531.htm"
+  },
+  {
+    "name": "Quanta Services, Inc.",
+    "symbol": "PWRx",
+    "cik": 1050915,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001050915/000105091526000006/pwr-20251231.htm"
+  },
+  {
+    "name": "Teradyne, Inc.",
+    "symbol": "TERx",
+    "cik": 97210,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000097210/000119312526059002/ter-20251231.htm"
+  },
+  {
+    "name": "Eaton Corporation plc",
+    "symbol": "ETNx",
+    "cik": 1551182,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001551182/000155118226000007/etn-20251231.htm"
+  },
+  {
+    "name": "KLA Corporation",
+    "symbol": "KLACx",
+    "cik": 319201,
+    "form": "10-K",
+    "filed": "2026-08-06",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000319201/000031920126000027/klac-20260630.htm"
+  },
+  {
+    "name": "GE Vernova Inc.",
+    "symbol": "GEVx",
+    "cik": 1996810,
+    "form": "10-K",
+    "filed": "2026-01-29",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001996810/000199681026000015/gev-20251231.htm"
+  },
+  {
+    "name": "Constellation Energy Corporation",
+    "symbol": "CEGx",
+    "cik": 1868275,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001868275/000186827526000032/ceg-20251231.htm"
+  },
+  {
+    "name": "Super Micro Computer, Inc.",
+    "symbol": "SMCIx",
+    "cik": 1375365,
+    "form": "10-K",
+    "filed": "2026-08-31",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001375365/000137536526000022/smci-20260630.htm"
+  },
+  {
+    "name": "Dell Technologies Inc.",
+    "symbol": "DELLx",
+    "cik": 1571996,
+    "form": "10-K",
+    "filed": "2026-03-16",
+    "period": "2026-01-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001571996/000157199626000008/dell-20260130.htm"
+  },
+  {
+    "name": "Vertiv Holdings Co",
+    "symbol": "VRTx",
+    "cik": 1674101,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001674101/000167410126000008/vrt-20251231.htm"
+  },
+  {
+    "name": "Applied Materials, Inc.",
+    "symbol": "AMATx",
+    "cik": 6951,
+    "form": "10-K",
+    "filed": "2025-12-12",
+    "period": "2025-10-26",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000006951/000162828025056742/amat-20251026.htm"
+  },
+  {
+    "name": "Lam Research Corporation",
+    "symbol": "LRCXx",
+    "cik": 707549,
+    "form": "10-K",
+    "filed": "2026-08-07",
+    "period": "2026-06-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000707549/000070754926000037/lrcx-20260628.htm"
+  },
+  {
+    "name": "Arista Networks, Inc.",
+    "symbol": "ANETx",
+    "cik": 1596532,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001596532/000159653226000013/anet-20251231.htm"
+  },
+  {
+    "name": "USA Rare Earth Inc.",
+    "symbol": "USARx",
+    "cik": 1970622,
+    "form": "10-K",
+    "filed": "2026-03-30",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001970622/000197062226000021/usar-20251231.htm"
+  },
+  {
+    "name": "Energy Fuels Inc.",
+    "symbol": "UUUUx",
+    "cik": 1385849,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001385849/000138584926000009/efr-20251231.htm"
+  },
+  {
+    "name": "KRAQ",
+    "symbol": "KRAQx",
+    "cik": 2082119,
+    "form": "10-K",
+    "filed": "2026-03-30",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0002082119/000114036126012031/ef20067585_10k.htm"
+  },
+  {
+    "name": "Bitgo",
+    "symbol": "BTGOx",
+    "cik": 1740604,
+    "form": "10-K",
+    "filed": "2026-03-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001740604/000174060426000020/btgo-form10xk.htm"
+  },
+  {
+    "name": "Strategy PP Fixed",
+    "symbol": "STRKx",
+    "cik": 1050446,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001050446/000105044626000020/mstr-20251231.htm"
+  },
+  {
+    "name": "Strategy PP Variable",
+    "symbol": "STRCx",
+    "cik": 1050446,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001050446/000105044626000020/mstr-20251231.htm"
+  },
+  {
+    "name": "T-Mobile",
+    "symbol": "TMUSx",
+    "cik": 1283699,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001283699/000128369926000010/tmus-20251231.htm"
+  },
+  {
+    "name": "Bit Digital",
+    "symbol": "BTBTx",
+    "cik": 1710350,
+    "form": "10-K",
+    "filed": "2026-03-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001710350/000121390026035544/ea0279621-10k_bitdigit.htm"
+  },
+  {
+    "name": "Hut 8",
+    "symbol": "HUTx",
+    "cik": 1964789,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001964789/000110465926019392/hut-20251231x10k.htm"
+  },
+  {
+    "name": "Core Scientific",
+    "symbol": "CORZx",
+    "cik": 1839341,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001839341/000162828026013305/core-20251231.htm"
+  },
+  {
+    "name": "Rocket Lab",
+    "symbol": "RKLBx",
+    "cik": 1819994,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001819994/000181999426000013/rklb-20251231.htm"
+  },
+  {
+    "name": "Planet Labs",
+    "symbol": "PLx",
+    "cik": 1836833,
+    "form": "10-K",
+    "filed": "2026-03-23",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001836833/000119312526119957/pl-20260131.htm"
+  },
+  {
+    "name": "Virgin Galactic",
+    "symbol": "SPCEx",
+    "cik": 1706946,
+    "form": "10-K",
+    "filed": "2026-03-30",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001706946/000170694626000019/spce-20251231.htm"
+  },
+  {
+    "name": "Warner Bros. Discovery",
+    "symbol": "WBDx",
+    "cik": 1437107,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001437107/000143710726000020/wbd-20251231.htm"
+  },
+  {
+    "name": "Micron Technology",
+    "symbol": "MUx",
+    "cik": 723125,
+    "form": "10-K",
+    "filed": "2025-10-03",
+    "period": "2025-08-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000723125/000072312525000028/mu-20250828.htm"
+  },
+  {
+    "name": "Roblox",
+    "symbol": "RBLXx",
+    "cik": 1315098,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001315098/000131509826000024/rblx-20251231.htm"
+  },
+  {
+    "name": "Palo Alto Networks",
+    "symbol": "PANWx",
+    "cik": 1327567,
+    "form": "10-K",
+    "filed": "2026-09-10",
+    "period": "2026-07-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001327567/000132756726000023/panw-20260731.htm"
+  },
+  {
+    "name": "ASML",
+    "symbol": "ASMLx",
+    "cik": 937966,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "AMD",
+    "symbol": "AMDx",
+    "cik": 2488,
+    "form": "10-K",
+    "filed": "2026-02-04",
+    "period": "2025-12-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000002488/000000248826000018/amd-20251227.htm"
+  },
+  {
+    "name": "TSMC",
+    "symbol": "TSMx",
+    "cik": 1046179,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Wendy's",
+    "symbol": "WENx",
+    "cik": 30697,
+    "form": "10-K",
+    "filed": "2026-02-23",
+    "period": "2025-12-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000030697/000003069726000009/wen-20251228.htm"
+  },
+  {
+    "name": "AST SpaceMobile",
+    "symbol": "ASTSx",
+    "cik": 1780312,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001780312/000178031226000006/asts-20251231.htm"
+  },
+  {
+    "name": "PayPal",
+    "symbol": "PYPLx",
+    "cik": 1633917,
+    "form": "10-K",
+    "filed": "2026-02-03",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001633917/000163391726000024/pypl-20251231.htm"
+  },
+  {
+    "name": "CleanSpark",
+    "symbol": "CLSKx",
+    "cik": 827876,
+    "form": "10-K",
+    "filed": "2025-11-25",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000827876/000119312525297510/clsk-20250930.htm"
+  },
+  {
+    "name": "SharpLink Gaming",
+    "symbol": "SBETx",
+    "cik": 1981535,
+    "form": "10-K",
+    "filed": "2026-03-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001981535/000149315226009214/form10-k.htm"
+  },
+  {
+    "name": "Uber",
+    "symbol": "UBERx",
+    "cik": 1543151,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001543151/000154315126000015/uber-20251231.htm"
+  },
+  {
+    "name": "Adobe",
+    "symbol": "ADBEx",
+    "cik": 796343,
+    "form": "10-K",
+    "filed": "2026-01-15",
+    "period": "2025-11-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000796343/000079634326000003/adbe-20251128.htm"
+  },
+  {
+    "name": "TeraWulf",
+    "symbol": "WULFx",
+    "cik": 1083301,
+    "form": "10-K",
+    "filed": "2026-02-27",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001083301/000108330126000031/wulf-20251231.htm"
+  },
+  {
+    "name": "Riot Platforms",
+    "symbol": "RIOTx",
+    "cik": 1167419,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001167419/000110465926022322/riot-20251231x10k.htm"
+  },
+  {
+    "name": "MARA",
+    "symbol": "MARAx",
+    "cik": 1507605,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001507605/000150760526000007/mara-20251231.htm"
+  },
+  {
+    "name": "Oklo",
+    "symbol": "OKLOx",
+    "cik": 1849056,
+    "form": "10-K",
+    "filed": "2026-03-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001849056/000162828026018698/oklo-20251231.htm"
+  },
+  {
+    "name": "Galaxy Digital",
+    "symbol": "GLXYx",
+    "cik": 1859392,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001859392/000185939226000016/glxy-20251231.htm"
+  },
+  {
+    "name": "TON",
+    "symbol": "TONXx",
+    "cik": 1566610,
+    "form": "10-K",
+    "filed": "2026-03-31",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001566610/000149315226013931/form10-k.htm"
+  },
+  {
+    "name": "Bitmine",
+    "symbol": "BMNRx",
+    "cik": 1829311,
+    "form": "10-K",
+    "filed": "2025-11-21",
+    "period": "2025-08-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001829311/000149315225024679/form10-k.htm"
+  },
+  {
+    "name": "MicroStrategy",
+    "symbol": "MSTRx",
+    "cik": 1050446,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001050446/000105044626000020/mstr-20251231.htm"
+  },
+  {
+    "name": "OPEN",
+    "symbol": "OPENx",
+    "cik": 1801169,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001801169/000180116926000010/open-20251231.htm"
+  },
+  {
+    "name": "DFDV",
+    "symbol": "DFDVx",
+    "cik": 1805526,
+    "form": "10-K",
+    "filed": "2026-03-30",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001805526/000180552626000006/dfdv-20251231.htm"
+  },
+  {
+    "name": "Circle",
+    "symbol": "CRCLx",
+    "cik": 1876042,
+    "form": "10-K",
+    "filed": "2026-03-09",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001876042/000187604226000062/crcl-20251231.htm"
+  },
+  {
+    "name": "Amber",
+    "symbol": "AMBRx",
+    "cik": 1697818,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Coinbase",
+    "symbol": "COINx",
+    "cik": 1679788,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001679788/000167978826000015/coin-20251231.htm"
+  },
+  {
+    "name": "Gamestop",
+    "symbol": "GMEx",
+    "cik": 1326380,
+    "form": "10-K",
+    "filed": "2026-03-24",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001326380/000132638026000013/gme-20260131.htm"
+  },
+  {
+    "name": "Goldman Sachs",
+    "symbol": "GSx",
+    "cik": 886982,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000886982/000088698226000091/gs-20251231.htm"
+  },
+  {
+    "name": "CrowdStrike",
+    "symbol": "CRWDx",
+    "cik": 1535527,
+    "form": "10-K",
+    "filed": "2026-03-05",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001535527/000153552726000010/crwd-20260131.htm"
+  },
+  {
+    "name": "Robinhood",
+    "symbol": "HOODx",
+    "cik": 1783879,
+    "form": "10-K",
+    "filed": "2026-02-18",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001783879/000178387926000023/hood-20251231.htm"
+  },
+  {
+    "name": "Marvell",
+    "symbol": "MRVLx",
+    "cik": 1835632,
+    "form": "10-K",
+    "filed": "2026-03-11",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001835632/000183563226000011/mrvl-20260131.htm"
+  },
+  {
+    "name": "AppLovin",
+    "symbol": "APPx",
+    "cik": 1751008,
+    "form": "10-K",
+    "filed": "2026-02-19",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001751008/000175100826000010/app-20251231.htm"
+  },
+  {
+    "name": "Palantir",
+    "symbol": "PLTRx",
+    "cik": 1321655,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001321655/000132165526000011/pltr-20251231.htm"
+  },
+  {
+    "name": "Accenture",
+    "symbol": "ACNx",
+    "cik": 1467373,
+    "form": "10-K",
+    "filed": "2025-10-10",
+    "period": "2025-08-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001467373/000146737325000217/acn-20250831.htm"
+  },
+  {
+    "name": "Intel",
+    "symbol": "INTCx",
+    "cik": 50863,
+    "form": "10-K",
+    "filed": "2026-01-23",
+    "period": "2025-12-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000050863/000005086326000011/intc-20251227.htm"
+  },
+  {
+    "name": "Philip Morris",
+    "symbol": "PMx",
+    "cik": 1413329,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001413329/000162828026005939/pm-20251231.htm"
+  },
+  {
+    "name": "Honeywell",
+    "symbol": "HONx",
+    "cik": 773840,
+    "form": "10-K",
+    "filed": "2026-02-17",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000773840/000077384026000013/hon-20251231.htm"
+  },
+  {
+    "name": "Medtronic",
+    "symbol": "MDTx",
+    "cik": 1613103,
+    "form": "10-K",
+    "filed": "2026-06-18",
+    "period": "2026-04-24",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001613103/000162828026044354/mdt-20260424.htm"
+  },
+  {
+    "name": "Comcast",
+    "symbol": "CMCSAx",
+    "cik": 1166691,
+    "form": "10-K",
+    "filed": "2026-02-03",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001166691/000162828026004994/cmcsa-20251231.htm"
+  },
+  {
+    "name": "International Business Machines",
+    "symbol": "IBMx",
+    "cik": 51143,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000051143/000005114326000010/ibm-20251231.htm"
+  },
+  {
+    "name": "Danaher",
+    "symbol": "DHRx",
+    "cik": 313616,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000313616/000031361626000062/dhr-20251231.htm"
+  },
+  {
+    "name": "McDonald's",
+    "symbol": "MCDx",
+    "cik": 63908,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000063908/000006390826000035/mcd-20251231.htm"
+  },
+  {
+    "name": "Netflix",
+    "symbol": "NFLXx",
+    "cik": 1065280,
+    "form": "10-K",
+    "filed": "2026-01-23",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001065280/000106528026000034/nflx-20251231.htm"
+  },
+  {
+    "name": "Abbott",
+    "symbol": "ABTx",
+    "cik": 1800,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000001800/000162828026010185/abt-20251231.htm"
+  },
+  {
+    "name": "Bank of America",
+    "symbol": "BACx",
+    "cik": 70858,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000070858/000007085826000157/bac-20251231.htm"
+  },
+  {
+    "name": "Thermo Fisher",
+    "symbol": "TMOx",
+    "cik": 97745,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000097745/000009774526000018/tmo-20251231.htm"
+  },
+  {
+    "name": "AstraZeneca",
+    "symbol": "AZNx",
+    "cik": 901832,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Salesforce",
+    "symbol": "CRMx",
+    "cik": 1108524,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001108524/000110852426000060/crm-20260131.htm"
+  },
+  {
+    "name": "Linde",
+    "symbol": "LINx",
+    "cik": 1707925,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001707925/000162828026011430/lin-20251231.htm"
+  },
+  {
+    "name": "Oracle",
+    "symbol": "ORCLx",
+    "cik": 1341439,
+    "form": "10-K",
+    "filed": "2026-06-22",
+    "period": "2026-05-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001341439/000119312526277521/orcl-20260531.htm"
+  },
+  {
+    "name": "Novo Nordisk",
+    "symbol": "NVOx",
+    "cik": 353278,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "Cisco",
+    "symbol": "CSCOx",
+    "cik": 858877,
+    "form": "10-K",
+    "filed": "2026-09-02",
+    "period": "2026-07-25",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000858877/000085887726000132/csco-20260725.htm"
+  },
+  {
+    "name": "Walmart",
+    "symbol": "WMTx",
+    "cik": 104169,
+    "form": "10-K",
+    "filed": "2026-03-13",
+    "period": "2026-01-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000104169/000010416926000055/wmt-20260131.htm"
+  },
+  {
+    "name": "Coca-Cola",
+    "symbol": "KOx",
+    "cik": 21344,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000021344/000162828026010047/ko-20251231.htm"
+  },
+  {
+    "name": "PepsiCo",
+    "symbol": "PEPx",
+    "cik": 77476,
+    "form": "10-K",
+    "filed": "2026-02-03",
+    "period": "2025-12-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000077476/000007747626000007/pep-20251227.htm"
+  },
+  {
+    "name": "AbbVie",
+    "symbol": "ABBVx",
+    "cik": 1551152,
+    "form": "10-K",
+    "filed": "2026-02-20",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001551152/000155115226000008/abbv-20251231.htm"
+  },
+  {
+    "name": "Merck",
+    "symbol": "MRKx",
+    "cik": 310158,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000310158/000031015826000063/mrk-20251231.htm"
+  },
+  {
+    "name": "Pfizer",
+    "symbol": "PFEx",
+    "cik": 78003,
+    "form": "10-K",
+    "filed": "2026-02-26",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000078003/000007800326000026/pfe-20251231.htm"
+  },
+  {
+    "name": "Chevron",
+    "symbol": "CVXx",
+    "cik": 93410,
+    "form": "10-K",
+    "filed": "2026-02-24",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000093410/000009341026000078/cvx-20251231.htm"
+  },
+  {
+    "name": "Home Depot",
+    "symbol": "HDx",
+    "cik": 354950,
+    "form": "10-K",
+    "filed": "2026-03-18",
+    "period": "2026-02-01",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000354950/000162828026019436/hd-20260201.htm"
+  },
+  {
+    "name": "Procter & Gamble",
+    "symbol": "PGx",
+    "cik": 80424,
+    "form": "10-K",
+    "filed": "2026-08-04",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000080424/000008042426000103/pg-20260630.htm"
+  },
+  {
+    "name": "Mastercard",
+    "symbol": "MAx",
+    "cik": 1141391,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001141391/000114139126000013/ma-20251231.htm"
+  },
+  {
+    "name": "Eli Lilly",
+    "symbol": "LLYx",
+    "cik": 59478,
+    "form": "10-K",
+    "filed": "2026-02-12",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000059478/000005947826000013/lly-20251231.htm"
+  },
+  {
+    "name": "Visa",
+    "symbol": "Vx",
+    "cik": 1403161,
+    "form": "10-K",
+    "filed": "2025-11-06",
+    "period": "2025-09-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001403161/000140316125000089/v-20250930.htm"
+  },
+  {
+    "name": "JPMorgan Chase",
+    "symbol": "JPMx",
+    "cik": 19617,
+    "form": "10-K",
+    "filed": "2026-02-13",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000019617/000162828026008131/jpm-20251231.htm"
+  },
+  {
+    "name": "Johnson & Johnson",
+    "symbol": "JNJx",
+    "cik": 200406,
+    "form": "10-K",
+    "filed": "2026-02-11",
+    "period": "2025-12-28",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000200406/000020040626000016/jnj-20251228.htm"
+  },
+  {
+    "name": "Exxon Mobil",
+    "symbol": "XOMx",
+    "cik": 2115436,
+    "form": null,
+    "filed": null,
+    "period": null,
+    "url": null
+  },
+  {
+    "name": "UnitedHealth",
+    "symbol": "UNHx",
+    "cik": 731766,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000731766/000073176626000062/unh-20251231.htm"
+  },
+  {
+    "name": "Berkshire Hathaway",
+    "symbol": "BRK.Bx",
+    "cik": 1067983,
+    "form": "10-K",
+    "filed": "2026-03-02",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001067983/000119312526083899/brka-20251231.htm"
+  },
+  {
+    "name": "Tesla",
+    "symbol": "TSLAx",
+    "cik": 1318605,
+    "form": "10-K",
+    "filed": "2026-01-29",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001318605/000162828026003952/tsla-20251231.htm"
+  },
+  {
+    "name": "Broadcom",
+    "symbol": "AVGOx",
+    "cik": 1730168,
+    "form": "10-K",
+    "filed": "2025-12-18",
+    "period": "2025-11-02",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001730168/000173016825000121/avgo-20251102.htm"
+  },
+  {
+    "name": "Alphabet",
+    "symbol": "GOOGLx",
+    "cik": 1652044,
+    "form": "10-K",
+    "filed": "2026-02-05",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001652044/000165204426000018/goog-20251231.htm"
+  },
+  {
+    "name": "Meta",
+    "symbol": "METAx",
+    "cik": 1326801,
+    "form": "10-K",
+    "filed": "2026-01-29",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001326801/000162828026003942/meta-20251231.htm"
+  },
+  {
+    "name": "Amazon.com",
+    "symbol": "AMZNx",
+    "cik": 1018724,
+    "form": "10-K",
+    "filed": "2026-02-06",
+    "period": "2025-12-31",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001018724/000101872426000004/amzn-20251231.htm"
+  },
+  {
+    "name": "Microsoft",
+    "symbol": "MSFTx",
+    "cik": 789019,
+    "form": "10-K",
+    "filed": "2026-07-29",
+    "period": "2026-06-30",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000789019/000119312526323660/msft-20260630.htm"
+  },
+  {
+    "name": "NVIDIA",
+    "symbol": "NVDAx",
+    "cik": 1045810,
+    "form": "10-K",
+    "filed": "2026-02-25",
+    "period": "2026-01-25",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0001045810/000104581026000021/nvda-20260125.htm"
+  },
+  {
+    "name": "Apple",
+    "symbol": "AAPLx",
+    "cik": 320193,
+    "form": "10-K",
+    "filed": "2025-10-31",
+    "period": "2025-09-27",
+    "url": "https://www.sec.gov/ix?doc=/Archives/edgar/data/0000320193/000032019325000079/aapl-20250927.htm"
+  }
+]

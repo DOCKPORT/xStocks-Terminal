@@ -14,6 +14,7 @@ A web app that analyzes all xStocks tokenized assets.
 - Vercel.
 - xStock API v2.
 - Business Quant API.
+- SEC EDGAR API
 
 
 ## Preview 

@@ -19,7 +19,7 @@ answers null. The script skips those symbols, so they keep the last known price.
 A missing flag fetches the quote, and --force-quotes calls every symbol anyway.
 
 Output: data/xstocks-assets.json
-  array of { name, symbol, listingCountry, sector, industry, exchange,
+  array of { name, symbol, listingCountry, sector, industry, exchange, cik,
             sharesHeld, circulatingSupply, price, priceUpdatedAt, multiplier }
   one row per asset that holds a reserve row with a live balance
 
@@ -36,11 +36,12 @@ supply. See memory-bank/notes.md for the full meaning. The script drops a row
 when sharesHeld is "0" or when circulatingSupply is "0". A zero in either field
 means that no live reserve exists.
 
-The sector, the industry, and the exchange come from data/ticker_universe.json,
-which scripts/ticker_universe.py writes. scripts/sector_map.py holds the match
-rules and backfills a file without a fetch. Without a universe file, each asset
-keeps the sector, the industry, and the exchange of the last run. A value that
-the universe misses reads null, and the page then leaves that label out.
+The sector, the industry, the exchange, and the CIK come from
+data/ticker_universe.json, which scripts/ticker_universe.py writes.
+scripts/sector_map.py holds the match rules and backfills a file without a
+fetch. Without a universe file, each asset keeps the sector, the industry, the
+exchange, and the CIK of the last run. A value that the universe misses reads
+null, and the page then leaves that label out.
 
 The quote calls share one pacer. Each call takes one time slot. The default
 gap is 0.25 seconds. Pass --min-interval to change the gap. A 429 or 503
