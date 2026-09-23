@@ -13,8 +13,8 @@ A web app that analyzes all xStocks tokenized assets.
 - HTML, CSS, and JavaScript.
 - Vercel.
 - xStock API v2.
-- Business Quant API.
-- SEC EDGAR API
+- BQ-MICS (Business Quant Multi-Industry Classification System)
+- SEC EDGAR
 
 
 ## Preview 
