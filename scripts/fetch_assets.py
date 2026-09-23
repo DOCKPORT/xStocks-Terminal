@@ -67,6 +67,15 @@ After the write, the script runs scripts/sec_edgar.py. The asset snapshot holds
 the CIK of every asset, so that script builds the SEC EDGAR link list from the
 fresh snapshot. A new symbol then holds its link in the same run.
 
+The script writes the snapshot twice when the universe refresh runs. The first
+write gives scripts/ticker_universe.py the symbol list of this run, so the
+universe file matches the catalog of the same run. That script keeps only the
+rows that our symbols need, and it writes data/ticker_universe.json. The run
+then joins the sector again from the fresh universe file, and the second write
+holds the result. An added symbol then holds its sector in the same run. Pass
+--no-universe-fetch to skip the refresh. Without an API key, the script prints
+a warning and keeps the old universe file.
+
 scripts/http_client.py holds the shared HTTP layer: the User-Agent, the
 timeout, the retry count, the rate-limit wait, and the call pacer.
 
@@ -76,6 +85,7 @@ Usage:
   ./scripts/fetch_assets.py
   ./scripts/fetch_assets.py --workers 64
   ./scripts/fetch_assets.py --force-quotes
+  ./scripts/fetch_assets.py --no-universe-fetch
 """
 
 from __future__ import annotations
@@ -84,6 +94,7 @@ import argparse
 import json
 import subprocess
 import sys
+from collections import Counter
 from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
 from functools import partial
@@ -125,6 +136,7 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
 LOGO_SCRIPT = REPO_ROOT / "scripts" / "fetch_logos.py"
 EDGAR_SCRIPT = REPO_ROOT / "scripts" / "sec_edgar.py"
+UNIVERSE_SCRIPT = REPO_ROOT / "scripts" / "ticker_universe.py"
 
 Price = int | float | None
 Multiplier = int | float | None
@@ -409,6 +421,19 @@ def write_outputs(records: list[Record]) -> None:
     OUT_JSON.write_text(payload + "\n", encoding="utf-8")
 
 
+def apply_sector_map(
+    records: list[Record], last_known: dict[str, Record]
+) -> Counter[str]:
+    """Join the sector, the industry, the exchange, and the CIK on every record.
+
+    The universe file at data/ticker_universe.json supplies the four values. A
+    missing or broken file keeps the value of the previous run. The caller runs
+    this step twice: once before the first write, and once after the universe
+    refresh, so the second pass reads the fresh universe file.
+    """
+    return sector_map.apply_sectors(records, sector_map.load_index(), last_known)
+
+
 def country_counts_line(records: list[Record]) -> str:
     """Return one report line for the listing-country counts.
 
@@ -484,6 +509,28 @@ def refresh_edgar_links() -> None:
             "Run scripts/sec_edgar.py to retry.",
             file=sys.stderr,
         )
+
+
+def refresh_universe() -> bool:
+    """Run the ticker universe script on the snapshot that the write step saved.
+
+    The script reads the asset snapshot for its symbol filter, so the caller
+    runs it after the first write. Return True on success. Warn on a child
+    failure and return False, because the sector join then keeps the universe
+    file of the previous run.
+    """
+    print("Refreshing the ticker universe...")
+    result = subprocess.run(
+        [sys.executable, str(UNIVERSE_SCRIPT)], cwd=REPO_ROOT, check=False
+    )
+    if result.returncode != 0:
+        print(
+            "Warning: the ticker universe update failed. "
+            "Run scripts/ticker_universe.py to retry.",
+            file=sys.stderr,
+        )
+        return False
+    return True
 
 
 def refresh_logos(new_symbols: list[str], check_changes: bool) -> None:
@@ -649,15 +696,6 @@ def run(args: argparse.Namespace) -> int:
         records, multipliers, last_known
     )
 
-    # A missing or broken universe file keeps the sector of the previous run.
-    sector_counts = sector_map.apply_sectors(
-        records, sector_map.load_index(), last_known
-    )
-
-    write_outputs(records)
-    new_symbols = report_symbol_changes(records, last_known, has_baseline)
-
-    print(f"Wrote {len(records)} assets to {OUT_JSON}")
     report_filters(dropped, thin_supply, absent, len(asset_nodes))
     print(f"Prices: {fresh} fresh, {retained} retained, {unavailable} unavailable")
     print(
@@ -665,10 +703,31 @@ def run(args: argparse.Namespace) -> int:
         f"{multiplier_missing} unavailable"
     )
     print(f"Rate limited quotes: {rate_limited}")
+    new_symbols = report_symbol_changes(records, last_known, has_baseline)
+
+    # A missing or broken universe file keeps the sector of the previous run.
+    sector_counts = apply_sector_map(records, last_known)
+
+    # The first write gives the ticker universe script the symbol list of this
+    # run. The universe file then holds every new symbol, and the sector step
+    # below reads that fresh file.
+    write_outputs(records)
+    print(f"Wrote {len(records)} assets to {OUT_JSON} (first pass).")
+
+    refreshed = not args.no_universe_fetch and refresh_universe()
+    if refreshed:
+        print("Joining the sector on the fresh universe...")
+        sector_counts = apply_sector_map(records, last_known)
+        write_outputs(records)
+        print(
+            f"Wrote {len(records)} assets to {OUT_JSON} "
+            "(second pass, fresh sectors)."
+        )
+
     print(sector_map.counts_line(sector_counts))
     print(country_counts_line(records))
 
-    # The snapshot is on disk now, so the EDGAR links follow the new list.
+    # The snapshot is on disk now, so the EDGAR links follow the final list.
     refresh_edgar_links()
 
     refresh_logos(new_symbols, not args.no_logo_check)
@@ -703,6 +762,14 @@ def build_parser() -> argparse.ArgumentParser:
         "--no-logo-check",
         action="store_true",
         help="Skip the logo change check. A new logo still downloads.",
+    )
+    parser.add_argument(
+        "--no-universe-fetch",
+        action="store_true",
+        help=(
+            "Skip the ticker universe refresh. The sectors then come from the "
+            "universe file of the previous run."
+        ),
     )
     return parser
 

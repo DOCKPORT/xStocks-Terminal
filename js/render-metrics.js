@@ -38,8 +38,8 @@
   const COUNT = new Intl.NumberFormat("en-US");
 
   const RATIO = new Intl.NumberFormat("en-US", {
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
+    minimumFractionDigits: 3,
+    maximumFractionDigits: 3,
   });
 
   /** The note for the market cap card. */
