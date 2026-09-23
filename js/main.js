@@ -8,6 +8,7 @@
  * the files share one global object instead of ES module imports.
  * @typedef {object} AppNamespace
  * @property {() => Promise<Asset[]>} [loadAssets] - Read the local asset snapshot.
+ * @property {() => Promise<Map<string, string>>} [loadFilingLinks] - Read the SEC EDGAR link of every asset that holds a CIK.
  * @property {(assets: Asset[]) => Metrics} [computeMetrics] - Compute the headline totals.
  * @property {(metrics: Metrics, refs: MetricRefs) => void} [renderMetrics] - Draw the metric cards.
  * @property {(refs: MetricRefs) => void} [renderMetricsFailure] - Report that the totals did not load.
@@ -233,6 +234,23 @@
   });
 
   /**
+   * Write the SEC EDGAR link onto every asset row that holds the symbol.
+   *
+   * The field list reads the link from the asset, so the join runs before the
+   * table starts. A symbol that the link file misses takes null, and the panel
+   * then shows no link.
+   * @param {Asset[]} assets - The asset list.
+   * @param {Map<string, string>} links - The link per symbol.
+   * @returns {void}
+   */
+  const attachFilingLinks = (assets, links) => {
+    for (const asset of assets) {
+      const url = links.get(asset.symbol);
+      asset.filingUrl = typeof url === "string" && url !== "" ? url : null;
+    }
+  };
+
+  /**
    * Read the data and start the page.
    * @returns {Promise<void>} Resolves when the page is ready or has failed.
    */
@@ -259,6 +277,7 @@
       if (
         !ns ||
         typeof ns.loadAssets !== "function" ||
+        typeof ns.loadFilingLinks !== "function" ||
         typeof ns.computeMetrics !== "function" ||
         typeof ns.renderMetrics !== "function" ||
         typeof ns.renderList !== "function" ||
@@ -284,6 +303,8 @@
       regionRefs = requireRegionRefs();
 
       const assets = await ns.loadAssets();
+      const filingLinks = await ns.loadFilingLinks();
+      attachFilingLinks(assets, filingLinks);
 
       ns.renderMetrics(ns.computeMetrics(assets), metricRefs);
 

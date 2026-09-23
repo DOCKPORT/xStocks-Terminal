@@ -619,6 +619,14 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* The link reads as the value text: one font, one size, and one color, with no
+   border, no fill, and no underline. The pointer rule below adds the accent
+   color and the underline, so the plain text still answers the mouse. */
+.asset__link {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* The detail node leaves the layout while it is closed. A list item needs the
    rule, because a display value on the node would beat the user agent style. */
 .asset__detail[hidden] {
@@ -694,6 +702,14 @@
   .btn--primary:hover {
     border-color: var(--sol-purple-deep);
     background-color: var(--sol-purple-deep);
+  }
+
+  /* The EDGAR link. The color and the underline arrive together, so the link
+     reads as plain text until the pointer reaches it. */
+  .asset__link:hover {
+    color: var(--accent-alt);
+    text-decoration: underline;
+    text-decoration-color: currentColor;
   }
 
   .section-head__btn:hover {

@@ -1,6 +1,7 @@
 /**
  * @file Build the field list for one asset detail panel. Each field is a label
  * and a value. A field that the snapshot does not hold leaves no label behind.
+ * The panel ends with the SEC EDGAR link when the asset holds one.
  */
 
 /**
@@ -34,6 +35,12 @@
     minimumFractionDigits: 3,
     maximumFractionDigits: 3,
   });
+
+  /** The label of the filing row. The label style shows the text in upper case. */
+  const FILING_LABEL = "SEC filings";
+
+  /** The text of the link that opens the EDGAR page. */
+  const FILING_LINK_TEXT = "View on EDGAR";
 
   /** The shape of an ISO stamp: "2026-09-18T17:57:27+00:00". */
   const ISO_STAMP = /^(\d{4})-(\d{2})-(\d{2})T(\d{2}:\d{2})/;
@@ -110,8 +117,34 @@
   };
 
   /**
+   * Build the link that opens the SEC EDGAR page of one asset.
+   *
+   * The link reads as the value text, so the cell holds one font, one size, and
+   * one color. The pointer adds the accent color and the underline. The link
+   * opens in a new tab, because the page holds the open panel and the search
+   * text. An asset without a link gives no link.
+   * @param {string | null | undefined} url - The stored EDGAR link.
+   * @returns {HTMLAnchorElement | null} The link, or null.
+   */
+  const buildFilingLink = (url) => {
+    if (typeof url !== "string" || url.trim() === "") {
+      return null;
+    }
+
+    const link = document.createElement("a");
+    link.className = "asset__link";
+    link.href = url.trim();
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.textContent = FILING_LINK_TEXT;
+
+    return link;
+  };
+
+  /**
    * Build the field list for one asset. The order reads price first, then the
-   * place of the asset, then the reserve pair, then the age of the data.
+   * place of the asset, then the reserve pair, then the age of the data. The
+   * EDGAR link takes the last row, when the asset holds one.
    * @param {Asset} asset - The asset for the panel.
    * @returns {HTMLElement} The list of label and value pairs.
    */
@@ -176,6 +209,21 @@
         ? readStamp(asset.priceUpdatedAt)
         : "",
     );
+
+    /* The link takes the value cell, so the new row sits in the same grid as the
+       row above it and the label column keeps its width. */
+    const link = buildFilingLink(asset.filingUrl);
+    if (link !== null) {
+      const term = document.createElement("dt");
+      term.className = "asset__label";
+      term.textContent = FILING_LABEL;
+
+      const detail = document.createElement("dd");
+      detail.className = "asset__value";
+      detail.append(link);
+
+      list.append(term, detail);
+    }
 
     return list;
   };
