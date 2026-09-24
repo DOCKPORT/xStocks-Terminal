@@ -6,6 +6,12 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1801368"
   },
   {
+    "name": "Domino's Pizza",
+    "symbol": "DPZx",
+    "cik": 1286681,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
+  },
+  {
     "name": "Aurora Innovation",
     "symbol": "AURx",
     "cik": 1828108,

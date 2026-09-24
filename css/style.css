@@ -127,6 +127,14 @@
   border-color: var(--accent-line);
 }
 
+/* The hero holds the three headline readings. Its small text takes the muted
+   grey, one step lighter than the faint grey, so the label and the hint read
+   clear against the bright border. */
+.card--accent .eyebrow,
+.card--accent .metric__hint {
+  color: var(--text-muted);
+}
+
 .card__label {
   display: block;
   margin-block-end: var(--space-3);

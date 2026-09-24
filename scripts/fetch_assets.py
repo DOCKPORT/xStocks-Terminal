@@ -1,83 +1,31 @@
 #!/usr/bin/env python3
 """
-Download every xStock asset, its proof of reserves, and its price quote, then
-store one merged JSON file.
+Download every xStock asset, its proof of reserves, its price, and its
+multiplier. Write one merged JSON file.
 
-Three public endpoints are used:
-  1. /public/assets                     - catalog: name, symbol, logo, chains
-  2. /public/proof-of-reserves          - sharesHeld and circulatingSupply
-  3. /public/assets/{symbol}/price-data - the current quote, one symbol per call
-
-Both list endpoints paginate with 100 items per page and a hasNextPage flag.
-The proof-of-reserves totalNodes value is wrong (830), so the loop uses the
-flag, not the total.
-
-The script fetches a quote for every asset whose home market is open. Each
-catalog row carries a trading block. A false openNow value means the home
-exchange has no session, and the price endpoint then waits about 21 seconds and
-answers null. The script skips those symbols, so they keep the last known price.
-A missing flag fetches the quote, and --force-quotes calls every symbol anyway.
+The asset catalog, the proof of reserves, one quote per symbol, and one
+multiplier per symbol come from the xStocks API, through scripts/backed_api.py.
+The docstring of each function holds the rule for that step.
 
 Output: data/xstocks-assets.json
-  array of { name, symbol, listingCountry, sector, industry, exchange, cik,
-            sharesHeld, circulatingSupply, price, priceUpdatedAt, multiplier }
-  one row per asset that holds a reserve row with a live balance
+  one row per asset that holds a reserve row with a live balance. See
+  ASSET_FIELD_ORDER in scripts/sector_map.py for the field list and the order.
 
-The name field holds no " xStock" mark. The catalog adds that mark to every
-name, so the script drops it and the page shows the plain name, for example
-"Tesla" in place of "Tesla xStock".
-
-listingCountry is the country code of the venue that lists the underlying share,
-for example "HK" for Bank Of China xStock. The catalog row carries that value in
-its underlying object, so the field costs no extra request.
-
-circulatingSupply is the token supply that the public holds, not the minted
-supply. See memory-bank/notes.md for the full meaning. The script drops a row
-when sharesHeld is "0" or when circulatingSupply is "0". A zero in either field
-means that no live reserve exists.
+The script fetches a quote for every asset whose home market is open. Pass
+--force-quotes to call every symbol anyway.
 
 The sector, the industry, the exchange, and the CIK come from
-data/ticker_universe.json, which scripts/ticker_universe.py writes.
-scripts/sector_map.py holds the match rules and backfills a file without a
-fetch. Without a universe file, each asset keeps the sector, the industry, the
-exchange, and the CIK of the last run. A value that the universe misses reads
-null, and the page then leaves that label out.
+data/ticker_universe.json, through scripts/sector_map.py.
 
-The quote calls share one pacer. Each call takes one time slot. The default
-gap is 0.25 seconds. Pass --min-interval to change the gap. A 429 or 503
-answer waits for the Retry-After header, then backs off.
+scripts/http_client.py holds the shared HTTP layer. The quote calls share one
+pacer. The default gap is 0.25 seconds. Pass --min-interval to change the gap.
 
-multiplier is the current value of the token multiplier for one share, read
-from GET /public/assets/{symbol}/multiplier. The endpoint needs a network name,
-and it answers the same value on every network, so the run names Solana for
-every symbol. One call per symbol runs beside the quote calls. A failed call
-keeps the value of the last run. A value that no run holds reads null.
+The script writes the snapshot twice when the universe refresh runs, because
+scripts/ticker_universe.py reads the symbol list. Pass --no-universe-fetch to
+skip the refresh.
 
-The page reads that file with fetch, so the script writes no second file.
-
-A new symbol in the catalog has no logo yet, so the script runs
-scripts/fetch_logos.py after the write. The logo script skips every saved
-file, so only the new logos download. A dropped symbol keeps its logo file.
-
-That logo script also compares every saved logo with the server. An image that
-changed on the server replaces the saved file, and the run prints each change.
-Pass --no-logo-check to skip the compare and the extra requests.
-
-After the write, the script runs scripts/sec_edgar.py. The asset snapshot holds
-the CIK of every asset, so that script builds the SEC EDGAR link list from the
-fresh snapshot. A new symbol then holds its link in the same run.
-
-The script writes the snapshot twice when the universe refresh runs. The first
-write gives scripts/ticker_universe.py the symbol list of this run, so the
-universe file matches the catalog of the same run. That script keeps only the
-rows that our symbols need, and it writes data/ticker_universe.json. The run
-then joins the sector again from the fresh universe file, and the second write
-holds the result. An added symbol then holds its sector in the same run. Pass
---no-universe-fetch to skip the refresh. Without an API key, the script prints
-a warning and keeps the old universe file.
-
-scripts/http_client.py holds the shared HTTP layer: the User-Agent, the
-timeout, the retry count, the rate-limit wait, and the call pacer.
+After the write, the script runs scripts/fetch_logos.py and
+scripts/sec_edgar.py. Pass --no-logo-check to skip the logo change check.
 
 Requires: Python 3.9 or later. No third-party packages.
 
@@ -95,42 +43,17 @@ import json
 import subprocess
 import sys
 from collections import Counter
-from concurrent.futures import ThreadPoolExecutor
 from datetime import datetime, timezone
-from functools import partial
 from pathlib import Path
 from typing import Any
-from zoneinfo import ZoneInfo
 
-import http_client
+import backed_api
 import sector_map
-
-API_BASE = "https://api.backed.fi/api/v2/public"
-ASSETS_URL = f"{API_BASE}/assets"
-RESERVES_URL = f"{API_BASE}/proof-of-reserves"
-
-# The catalog marks every asset name with this text, for example
-# "Tesla xStock". The symbol carries the same mark, so the snapshot drops the
-# words and the page keeps the name column narrow.
-NAME_SUFFIX = " xStock"
-
-# The log lines print in Eastern time, where the main session runs.
-MARKET_ZONE = ZoneInfo("America/New_York")
 
 DEFAULT_WORKERS = 8
 
-# A page of the catalog or of the reserves gets two attempts on a transport
-# error. The quote calls use the count below.
-PAGE_ATTEMPTS = 2
-
-# The price endpoint rate limits a burst of quote calls. Pace those calls only.
-QUOTE_ATTEMPTS = 4
+# The default gap between two quote calls, in seconds.
 QUOTE_INTERVAL_SECONDS = 0.25
-
-# The multiplier endpoint needs a network name. It answers the same value on
-# every network, so one name serves the whole run.
-MULTIPLIER_NETWORK = "Solana"
-MULTIPLIER_ATTEMPTS = 3
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 OUT_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
@@ -138,72 +61,8 @@ LOGO_SCRIPT = REPO_ROOT / "scripts" / "fetch_logos.py"
 EDGAR_SCRIPT = REPO_ROOT / "scripts" / "sec_edgar.py"
 UNIVERSE_SCRIPT = REPO_ROOT / "scripts" / "ticker_universe.py"
 
-Price = int | float | None
-Multiplier = int | float | None
+# One snapshot row. The API node type lives in scripts/backed_api.py.
 Record = dict[str, Any]
-QuoteResult = tuple[Price, bool]
-MultiplierResult = tuple[Multiplier, bool]
-
-
-def fetch_pages(url: str, label: str) -> list[Record]:
-    """Walk every page of a paginated endpoint and return the nodes."""
-    records: list[Record] = []
-    page = 1
-    while True:
-        body = http_client.fetch_json(f"{url}?page={page}", PAGE_ATTEMPTS)
-        nodes = body.get("nodes") if isinstance(body, dict) else None
-        if not isinstance(nodes, list):
-            raise RuntimeError(f"{label} page {page} did not return a valid list.")  # noqa: TRY004
-        if not nodes:
-            break
-
-        records.extend(node for node in nodes if isinstance(node, dict))
-
-        page_meta = body.get("page")
-        has_next = (
-            bool(page_meta.get("hasNextPage")) if isinstance(page_meta, dict) else False
-        )
-        print(
-            f"  {label} page {page}: {len(nodes)} items "
-            f"(hasNextPage={str(has_next).lower()})"
-        )
-        if not has_next:
-            break
-        page += 1
-    return records
-
-
-def listing_country(node: Record) -> str | None:
-    """Return the country that lists the underlying share, or None.
-
-    The catalog holds the value in the underlying object of the same row, so no
-    extra request is needed. A missing object, a missing field, or an empty
-    string returns None.
-    """
-    underlying = node.get("underlying")
-    if not isinstance(underlying, dict):
-        return None
-
-    country = underlying.get("listingCountry")
-    if isinstance(country, str):
-        return country.strip() or None
-    return None
-
-
-def short_name(name: str) -> str:
-    """Return the asset name without the trailing xStock mark.
-
-    The catalog marks every name with " xStock", for example "Tesla xStock".
-    The symbol already carries that mark, so the snapshot drops the words and
-    the page shows "Tesla". The compare ignores case and the space around the
-    name. A name that holds the mark alone stays unchanged.
-    """
-    trimmed = name.strip()
-    if not trimmed.lower().endswith(NAME_SUFFIX.lower()):
-        return name
-
-    short = trimmed[: -len(NAME_SUFFIX)].strip()
-    return short or name
 
 
 def merge_records(
@@ -236,7 +95,7 @@ def merge_records(
         name = node.get("name")
         if not isinstance(symbol, str) or not isinstance(name, str):
             continue
-        name = short_name(name)
+        name = backed_api.short_name(name)
 
         shares, supply = reserves.get(symbol, (None, None))
         if shares is None:
@@ -253,7 +112,7 @@ def merge_records(
             {
                 "name": name,
                 "symbol": symbol,
-                "listingCountry": listing_country(node),
+                "listingCountry": backed_api.listing_country(node),
                 "sector": None,
                 "industry": None,
                 "exchange": None,
@@ -262,25 +121,6 @@ def merge_records(
             }
         )
     return merged, dropped, thin_supply, absent
-
-
-def closed_market_symbols(asset_nodes: list[Record]) -> set[str]:
-    """Return the symbols whose home market is closed, from the trading flag.
-
-    A false openNow value means the home exchange has no session. The price
-    endpoint then waits about 21 seconds and answers null, so the caller skips
-    those symbols. A missing flag returns no symbol, so that asset keeps its
-    quote call.
-    """
-    closed: set[str] = set()
-    for node in asset_nodes:
-        symbol = node.get("symbol")
-        trading = node.get("trading")
-        if not isinstance(symbol, str) or not isinstance(trading, dict):
-            continue
-        if trading.get("openNow") is False:
-            closed.add(symbol)
-    return closed
 
 
 def load_last_known(path: Path) -> dict[str, Record]:
@@ -316,109 +156,74 @@ def load_last_known(path: Path) -> dict[str, Record]:
     return known
 
 
-def fetch_quote(symbol: str, pacer: http_client.Pacer) -> QuoteResult:
-    """Fetch one quote. Return the price and a rate-limit flag.
-
-    A null quote, a timeout, or a plain error returns the price None. The
-    quote call takes its own time slot from the pacer, and a rate-limit status
-    waits for the Retry-After value.
-    """
-    url = f"{ASSETS_URL}/{symbol}/price-data"
-    try:
-        body = http_client.fetch_json(
-            url, QUOTE_ATTEMPTS, pacer=pacer
-        )
-    except http_client.RateLimitError as error:
-        print(f"Warning: quote rate limited for {symbol}: {error}", file=sys.stderr)
-        return None, True
-    except RuntimeError as error:
-        print(f"Warning: quote failed for {symbol}: {error}", file=sys.stderr)
-        return None, False
-
-    quote = body.get("quote") if isinstance(body, dict) else None
-    if isinstance(quote, bool) or not isinstance(quote, (int, float)):
-        return None, False
-    return quote, False
-
-
-def _is_number(value: Any) -> bool:
-    """True for a real number. A bool is not a number."""
-    return isinstance(value, (int, float)) and not isinstance(value, bool)
-
-
-def apply_prices(
-    records: list[Record], quotes: list[Price], last_known: dict[str, Record]
+def apply_values(
+    records: list[Record],
+    values: list[backed_api.Value],
+    last_known: dict[str, Record],
+    field: str,
+    *,
+    stamp_field: str | None = None,
+    stamp: str | None = None,
 ) -> tuple[int, int, int]:
-    """Write the price. A null quote keeps the last known value. Return counts.
+    """Write one value on every record. Return the fresh, kept, and missing counts.
 
-    The record holds the symbol order, and the quote list matches that order.
-    A short quote list reads None for the missing tail, so the last known price
-    stands. The zip call cannot do this job, because it drops the tail rows.
+    A value from this run wins, and with stamp_field set the record also takes
+    the run time. A null value keeps the value of the previous run when that
+    value is a real number, and the record then keeps the time of that run. A
+    value that neither source holds reads None.
+
+    The record list holds the symbol order, and the value list matches that
+    order. A short value list reads None for the missing tail, so the last known
+    value stands. The zip call cannot do this job, because it drops the tail
+    rows.
     """
     fresh = 0
     retained = 0
     unavailable = 0
-    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
 
     for index, record in enumerate(records):
-        quote = quotes[index] if index < len(quotes) else None
-        if quote is not None:
-            record["price"] = quote
-            record["priceUpdatedAt"] = stamp
-            fresh += 1
-            continue
+        value = values[index] if index < len(values) else None
+        source = last_known.get(record["symbol"], {})
+        kept = source.get(field)
+        stamp_value: str | None = None
 
-        previous = last_known.get(record["symbol"], {})
-        previous_price = previous.get("price")
-        if _is_number(previous_price):
-            record["price"] = previous_price
-            record["priceUpdatedAt"] = previous.get("priceUpdatedAt")
+        if value is not None:
+            record[field] = value
+            stamp_value = stamp
+            fresh += 1
+        elif backed_api.is_number(kept):
+            record[field] = kept
+            stamp_value = source.get(stamp_field) if stamp_field else None
             retained += 1
         else:
-            record["price"] = None
-            record["priceUpdatedAt"] = None
+            record[field] = None
             unavailable += 1
 
+        if stamp_field is not None:
+            record[stamp_field] = stamp_value
+
     return fresh, retained, unavailable
+
+
+def apply_prices(
+    records: list[Record],
+    quotes: list[backed_api.Value],
+    last_known: dict[str, Record],
+) -> tuple[int, int, int]:
+    """Write the price. A null quote keeps the last known value. Return counts."""
+    stamp = datetime.now(timezone.utc).isoformat(timespec="seconds")
+    return apply_values(
+        records, quotes, last_known, "price", stamp_field="priceUpdatedAt", stamp=stamp
+    )
 
 
 def apply_multipliers(
     records: list[Record],
-    multipliers: list[Multiplier],
+    multipliers: list[backed_api.Value],
     last_known: dict[str, Record],
 ) -> tuple[int, int, int]:
-    """Write the multiplier. A failed call keeps the last known value.
-
-    The record holds the symbol order, and the value list matches that order,
-    the same rule as the price list. A value that no source holds reads null.
-    """
-    fresh = 0
-    retained = 0
-    unavailable = 0
-
-    for index, record in enumerate(records):
-        value = multipliers[index] if index < len(multipliers) else None
-        if value is not None:
-            record["multiplier"] = value
-            fresh += 1
-            continue
-
-        previous = last_known.get(record["symbol"], {}).get("multiplier")
-        if _is_number(previous):
-            record["multiplier"] = previous
-            retained += 1
-        else:
-            record["multiplier"] = None
-            unavailable += 1
-
-    return fresh, retained, unavailable
-
-
-def write_outputs(records: list[Record]) -> None:
-    """Write the JSON snapshot that the page reads."""
-    OUT_JSON.parent.mkdir(parents=True, exist_ok=True)
-    payload = json.dumps(records, indent=2, ensure_ascii=False)
-    OUT_JSON.write_text(payload + "\n", encoding="utf-8")
+    """Write the multiplier. A failed call keeps the last known value."""
+    return apply_values(records, multipliers, last_known, "multiplier")
 
 
 def apply_sector_map(
@@ -492,18 +297,24 @@ def report_symbol_changes(
     return new_symbols
 
 
+def _run_child(script: Path, extra_args: tuple[str, ...] = ()) -> bool:
+    """Run one child script from the repo root. Return True on a zero exit code.
+
+    This step prints no warning. The caller prints its own warning, because the
+    asset snapshot stays valid and the caller keeps its own exit code.
+    """
+    command = [sys.executable, str(script), *extra_args]
+    result = subprocess.run(command, cwd=REPO_ROOT, check=False)
+    return result.returncode == 0
+
+
 def refresh_edgar_links() -> None:
     """Run the EDGAR link script on the snapshot that the write step saved.
 
     The script reads the asset snapshot, so the caller runs it after the write.
-    Warn on a child failure. The asset snapshot is still valid, so the caller
-    keeps its own exit code.
     """
     print("Refreshing the SEC EDGAR links...")
-    result = subprocess.run(
-        [sys.executable, str(EDGAR_SCRIPT)], cwd=REPO_ROOT, check=False
-    )
-    if result.returncode != 0:
+    if not _run_child(EDGAR_SCRIPT):
         print(
             "Warning: the EDGAR link update failed. "
             "Run scripts/sec_edgar.py to retry.",
@@ -515,141 +326,38 @@ def refresh_universe() -> bool:
     """Run the ticker universe script on the snapshot that the write step saved.
 
     The script reads the asset snapshot for its symbol filter, so the caller
-    runs it after the first write. Return True on success. Warn on a child
-    failure and return False, because the sector join then keeps the universe
-    file of the previous run.
+    runs it after the first write. Return True on success. A child failure
+    returns False, because the sector join then keeps the universe file of the
+    previous run.
     """
     print("Refreshing the ticker universe...")
-    result = subprocess.run(
-        [sys.executable, str(UNIVERSE_SCRIPT)], cwd=REPO_ROOT, check=False
+    if _run_child(UNIVERSE_SCRIPT):
+        return True
+
+    print(
+        "Warning: the ticker universe update failed. "
+        "Run scripts/ticker_universe.py to retry.",
+        file=sys.stderr,
     )
-    if result.returncode != 0:
-        print(
-            "Warning: the ticker universe update failed. "
-            "Run scripts/ticker_universe.py to retry.",
-            file=sys.stderr,
-        )
-        return False
-    return True
+    return False
 
 
 def refresh_logos(new_symbols: list[str], check_changes: bool) -> None:
-    """Run the logo script for the new symbols and the changed logos.
-
-    Warn on a child failure. The asset snapshot is still valid, so the caller
-    keeps its own exit code.
-    """
+    """Run the logo script for the new symbols and the changed logos."""
     if not new_symbols and not check_changes:
         return
 
-    command = [sys.executable, str(LOGO_SCRIPT)]
+    extra: tuple[str, ...] = ()
     if check_changes:
         print("Checking the saved logos with the server...")
-        command.append("--check-changes")
+        extra = ("--check-changes",)
 
-    result = subprocess.run(command, cwd=REPO_ROOT, check=False)
-    if result.returncode != 0:
+    if not _run_child(LOGO_SCRIPT, extra):
         print(
             "Warning: the logo download failed. "
             "Run scripts/fetch_logos.py to retry.",
             file=sys.stderr,
         )
-
-
-def fetch_all_quotes(
-    symbols: list[str], closed: set[str], args: argparse.Namespace
-) -> tuple[list[Price], int]:
-    """Fetch one quote per open-market symbol.
-
-    Return the price list, in symbol order, and the count of rate-limited
-    calls. A skipped symbol reads None, so it keeps the last known price.
-    With no open market the list holds one None per symbol, so the last known
-    price still stands on every row.
-    """
-    todo = [symbol for symbol in symbols if symbol not in closed]
-    skipped = len(symbols) - len(todo)
-    stamp = (
-        datetime.now(timezone.utc).astimezone(MARKET_ZONE).strftime("%Y-%m-%d %H:%M %Z")
-    )
-
-    print(f"Fetching {len(todo)} quotes at {stamp} with {args.workers} workers...")
-    if skipped:
-        print(f"  Skipped {skipped}: the home market is closed.")
-    if not todo:
-        print("  No market is open now, so every quote call is skipped.")
-        return [None] * len(symbols), 0
-
-    pacer = http_client.Pacer(args.min_interval)
-    paced = partial(fetch_quote, pacer=pacer)
-    rate_limited = 0
-    fetched: list[Price] = []
-    with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        for price, limited in pool.map(paced, todo):
-            fetched.append(price)
-            if limited:
-                rate_limited += 1
-            done = len(fetched)
-            if done % 100 == 0 or done == len(todo):
-                print(f"  quotes: {done}/{len(todo)}")
-
-    price_by_symbol = dict(zip(todo, fetched))
-    return [price_by_symbol.get(symbol) for symbol in symbols], rate_limited
-
-
-def fetch_multiplier(symbol: str, pacer: http_client.Pacer) -> MultiplierResult:
-    """Fetch one multiplier. Return the value and a rate-limit flag.
-
-    The endpoint needs a network name, and it answers the same value on every
-    network. A miss or a plain error returns the value None, so the caller keeps
-    the value of the previous run.
-    """
-    url = f"{ASSETS_URL}/{symbol}/multiplier?network={MULTIPLIER_NETWORK}"
-    try:
-        body = http_client.fetch_json(url, MULTIPLIER_ATTEMPTS, pacer=pacer)
-    except http_client.RateLimitError as error:
-        print(
-            f"Warning: multiplier rate limited for {symbol}: {error}",
-            file=sys.stderr,
-        )
-        return None, True
-    except RuntimeError as error:
-        print(f"Warning: multiplier failed for {symbol}: {error}", file=sys.stderr)
-        return None, False
-
-    value = body.get("currentMultiplier") if isinstance(body, dict) else None
-    if not _is_number(value):
-        return None, False
-    return value, False
-
-
-def fetch_all_multipliers(
-    symbols: list[str], args: argparse.Namespace
-) -> list[Multiplier]:
-    """Fetch one multiplier per symbol.
-
-    Every symbol takes a call, because this endpoint has no market gate. Return
-    the values in symbol order.
-    """
-    print(f"Fetching {len(symbols)} multipliers with {args.workers} workers...")
-
-    pacer = http_client.Pacer(args.min_interval)
-    paced = partial(fetch_multiplier, pacer=pacer)
-    rate_limited = 0
-    fetched: list[Multiplier] = []
-
-    with ThreadPoolExecutor(max_workers=args.workers) as pool:
-        for value, limited in pool.map(paced, symbols):
-            fetched.append(value)
-            if limited:
-                rate_limited += 1
-            done = len(fetched)
-            if done % 100 == 0 or done == len(symbols):
-                print(f"  multipliers: {done}/{len(symbols)}")
-
-    if rate_limited:
-        print(f"  Rate limited: {rate_limited}")
-
-    return fetched
 
 
 def report_filters(
@@ -671,27 +379,38 @@ def report_filters(
         print(f"No reserve entry: {', '.join(absent)}")
 
 
-def run(args: argparse.Namespace) -> int:
-    """Fetch everything, merge it, and write the JSON snapshot."""
+def _build_snapshot(
+    args: argparse.Namespace,
+) -> tuple[list[Record], dict[str, Record], list[str]]:
+    """Fetch the catalog, the reserves, the quotes, and the multipliers.
+
+    Return the merged records, the last known values of the previous run, and
+    the new symbols of this run.
+    """
     # Read the symbol set before the write, so the compare has a baseline.
     has_baseline = OUT_JSON.is_file()
     last_known = load_last_known(OUT_JSON)
 
     print("Fetching assets...")
-    asset_nodes = fetch_pages(ASSETS_URL, "assets")
+    asset_nodes = backed_api.fetch_pages(backed_api.ASSETS_URL, "assets")
 
     print("Fetching proof of reserves...")
-    reserve_nodes = fetch_pages(RESERVES_URL, "reserves")
+    reserve_nodes = backed_api.fetch_pages(backed_api.RESERVES_URL, "reserves")
 
     records, dropped, thin_supply, absent = merge_records(asset_nodes, reserve_nodes)
     symbols = [record["symbol"] for record in records]
 
-    closed = set() if args.force_quotes else closed_market_symbols(asset_nodes)
-    quotes, rate_limited = fetch_all_quotes(symbols, closed, args)
-
+    closed = (
+        set() if args.force_quotes else backed_api.closed_market_symbols(asset_nodes)
+    )
+    quotes, rate_limited = backed_api.fetch_quotes(
+        symbols, closed, workers=args.workers, interval=args.min_interval
+    )
     fresh, retained, unavailable = apply_prices(records, quotes, last_known)
 
-    multipliers = fetch_all_multipliers(symbols, args)
+    multipliers = backed_api.fetch_multipliers(
+        symbols, workers=args.workers, interval=args.min_interval
+    )
     multiplier_fresh, multiplier_retained, multiplier_missing = apply_multipliers(
         records, multipliers, last_known
     )
@@ -704,21 +423,28 @@ def run(args: argparse.Namespace) -> int:
     )
     print(f"Rate limited quotes: {rate_limited}")
     new_symbols = report_symbol_changes(records, last_known, has_baseline)
+    return records, last_known, new_symbols
 
-    # A missing or broken universe file keeps the sector of the previous run.
+
+def _publish(
+    args: argparse.Namespace, records: list[Record], last_known: dict[str, Record]
+) -> None:
+    """Join the sectors, write the snapshot, and report the counts.
+
+    A missing or broken universe file keeps the sector of the previous run. The
+    first write gives the ticker universe script the symbol list of this run.
+    The universe file then holds every new symbol, and the sector join runs
+    again on that fresh file. The second write holds the result.
+    """
     sector_counts = apply_sector_map(records, last_known)
-
-    # The first write gives the ticker universe script the symbol list of this
-    # run. The universe file then holds every new symbol, and the sector step
-    # below reads that fresh file.
-    write_outputs(records)
+    sector_map.write_assets(records)
     print(f"Wrote {len(records)} assets to {OUT_JSON} (first pass).")
 
     refreshed = not args.no_universe_fetch and refresh_universe()
     if refreshed:
         print("Joining the sector on the fresh universe...")
         sector_counts = apply_sector_map(records, last_known)
-        write_outputs(records)
+        sector_map.write_assets(records)
         print(
             f"Wrote {len(records)} assets to {OUT_JSON} "
             "(second pass, fresh sectors)."
@@ -726,6 +452,12 @@ def run(args: argparse.Namespace) -> int:
 
     print(sector_map.counts_line(sector_counts))
     print(country_counts_line(records))
+
+
+def run(args: argparse.Namespace) -> int:
+    """Fetch everything, merge it, and write the JSON snapshot."""
+    records, last_known, new_symbols = _build_snapshot(args)
+    _publish(args, records, last_known)
 
     # The snapshot is on disk now, so the EDGAR links follow the final list.
     refresh_edgar_links()

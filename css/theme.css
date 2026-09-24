@@ -141,9 +141,11 @@
   --positive: var(--sol-green);
   --negative: var(--sol-magenta);
 
-  /* Solid accent fills. The theme has no gradients and no glow. */
+  /* Solid accent fills. The theme has no gradients and no glow. The line takes
+     the bright magenta, so the metric hero and the selected control read at a
+     glance. */
   --accent-soft: #2b1b42;
-  --accent-line: var(--sol-purple-deep);
+  --accent-line: var(--sol-magenta);
   --positive-soft: #112b23;
   --positive-line: var(--sol-green-deep);
 
