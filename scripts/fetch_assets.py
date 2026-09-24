@@ -363,7 +363,7 @@ def refresh_logos(new_symbols: list[str], check_changes: bool) -> None:
 def report_filters(
     dropped: list[str], thin_supply: list[str], absent: list[str], fetched_total: int
 ) -> None:
-    """Print the rows that the reserve filter removed, and the reason."""
+    """Print the counts of the rows that the reserve filter removed."""
     removed = len(dropped) + len(thin_supply) + len(absent)
     print(
         f"Filtered out {removed} assets (fetched {fetched_total}): "
@@ -371,12 +371,6 @@ def report_filters(
         f"{len(thin_supply)} zero circulating supply, "
         f"{len(absent)} no reserve entry"
     )
-    if dropped:
-        print(f"Zero shares held: {', '.join(dropped)}")
-    if thin_supply:
-        print(f"Zero circulating supply: {', '.join(thin_supply)}")
-    if absent:
-        print(f"No reserve entry: {', '.join(absent)}")
 
 
 def _build_snapshot(

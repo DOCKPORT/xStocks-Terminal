@@ -419,10 +419,9 @@ def run(args: argparse.Namespace) -> int:
     print(f"Rows: {len(rows)}")
     print(f"Kept: {len(kept)} rows for our symbols")
     if missing:
-        print(f"No row for {len(missing)} base symbols: {', '.join(missing)}")
+        print(f"No universe row for {len(missing)} base symbols.")
     if shadowed:
-        named = [f"{ticker_of(row)} {row_type(row)}" for row in shadowed]
-        print(f"Dropped {len(shadowed)} lower-type rows: {', '.join(named)}")
+        print(f"Dropped {len(shadowed)} lower-type rows.")
     if previous is not None:
         print(f"Previous run: {previous}")
     if kept:
