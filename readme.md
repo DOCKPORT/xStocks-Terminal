@@ -1,10 +1,9 @@
-`Repo in early stages of development.`
-
-`Not officially associated or partnered with xStocks. This Repo simply uses public API data.`
-
 # xStocks Terminal
 
 A web app that analyzes all xStocks tokenized assets.
+
+`Not partnered with xStocks. This Repo simply uses public API data.`
+
 
 
 ## Stack
