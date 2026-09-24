@@ -61,7 +61,7 @@ Usage:
 
   Or name a key file:
     ./scripts/ticker_universe.py --api-key-file ~/.bq-key
-"""
+"""  # noqa: EXE001
 
 from __future__ import annotations
 
