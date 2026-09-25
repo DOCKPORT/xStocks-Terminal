@@ -12,6 +12,12 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
   },
   {
+    "name": "MGM Resorts International",
+    "symbol": "MGMx",
+    "cik": 789570,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=789570"
+  },
+  {
     "name": "Aurora Innovation",
     "symbol": "AURx",
     "cik": 1828108,

@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-09-24T23:43:11+00:00",
+  "fetchedAt": "2026-09-25T19:35:43+00:00",
   "universeCount": 45404,
-  "count": 649,
+  "count": 650,
   "tickers": [
     {
       "security_type": "Equity",
@@ -4045,6 +4045,18 @@
       "sector": "Technology",
       "industry": "Social Media",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "MGM",
+      "cik": 789570,
+      "name": "MGM Resorts International",
+      "name_short": "MGM Resorts International",
+      "sector": "Consumer Discretionary",
+      "industry": "Casinos",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
