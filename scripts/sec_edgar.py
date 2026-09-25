@@ -3,7 +3,8 @@
 Build the SEC EDGAR link of every asset that holds a CIK.
 
 The script reads data/xstocks-assets.json, which holds one row per asset. The
-row holds the CIK, so the link needs no lookup and no network call. The link is:
+row holds the CIK, so the link needs no lookup and no network call. The reader
+lives in scripts/sector_map.py. The link is:
 
   https://www.sec.gov/edgar/browse/?CIK=320193
 
@@ -14,7 +15,8 @@ Output: data/sec_edgar.json
   array of { name, symbol, cik, url }
   one row per asset that holds a CIK, in the order of data/xstocks-assets.json
 
-A row without a CIK reads no output row. The run prints that count.
+A row without a CIK reads no output row. The run prints that count. A run
+that builds no link stops, so the saved file stands.
 
 Pass --dry-run to write nothing.
 
@@ -33,11 +35,12 @@ import sys
 from pathlib import Path
 from typing import Any
 
+import sector_map
+
 # The EDGAR company page. The CIK fills the only variable part.
 BROWSE_URL = "https://www.sec.gov/edgar/browse/?CIK={cik}"
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
-ASSETS_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
 OUT_JSON = REPO_ROOT / "data" / "sec_edgar.json"
 
 Row = dict[str, Any]
@@ -50,25 +53,6 @@ def browse_url(cik: int) -> str:
     because the page reads the plain number.
     """
     return BROWSE_URL.format(cik=cik)
-
-
-def read_assets(path: Path = ASSETS_JSON) -> list[Row]:
-    """Read the asset rows from the snapshot file. A fault stops the run."""
-    if not path.is_file():
-        raise RuntimeError(f"no asset snapshot at {path}")
-
-    try:
-        rows = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, ValueError) as error:
-        raise RuntimeError(
-            f"cannot read the asset snapshot at {path}: {error}"
-        ) from error
-
-    if not isinstance(rows, list):
-        raise RuntimeError(  # noqa: TRY004
-            f"the asset snapshot at {path} holds no list"
-        )
-    return [row for row in rows if isinstance(row, dict)]
 
 
 def cik_of(record: Row) -> int | None:
@@ -116,15 +100,26 @@ def write_outputs(rows: list[Row], path: Path = OUT_JSON) -> None:
 
 
 def run(args: argparse.Namespace) -> int:
-    """Build the EDGAR link of every asset that holds a CIK."""
-    records = read_assets()
+    """Build the EDGAR link of every asset that holds a CIK.
+
+    A run that builds no link stops, so the saved file stands.
+    """
+    records = sector_map.read_assets()
     if not records:
-        raise RuntimeError(f"the asset snapshot at {ASSETS_JSON} holds no asset")
+        raise RuntimeError(
+            f"the asset snapshot at {sector_map.ASSETS_JSON} holds no asset"
+        )
 
     rows = output_rows(records)
 
     print(f"Assets: {len(records)}")
     print(f"Links: {len(rows)} from a CIK, {missing_cik(records)} without a CIK")
+
+    if not rows:
+        raise RuntimeError(
+            f"no asset holds a CIK from {len(records)} asset rows, "
+            f"so {OUT_JSON} keeps its content."
+        )
 
     if args.dry_run:
         print(f"Dry run: no write. {OUT_JSON} keeps its content.")

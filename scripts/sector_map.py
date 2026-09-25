@@ -74,8 +74,7 @@ SOURCE_RETAINED = "retained"
 SOURCE_OVERRIDE = "override"
 
 # Field names. The universe file holds the ticker, the type, the sector, the
-# industry, the exchange, and the CIK. The snapshot holds the symbol and the
-# country.
+# industry, the exchange, and the CIK. The snapshot holds the symbol.
 TICKER_FIELD = "ticker"
 TYPE_FIELD = "security_type"
 SECTOR_FIELD = "sector"
@@ -84,7 +83,6 @@ EXCHANGE_FIELD = "exchange"
 CIK_FIELD = "cik"
 UNIVERSE_ROWS_KEY = "tickers"
 ASSET_SYMBOL_FIELD = "symbol"
-LISTING_COUNTRY_FIELD = "listingCountry"
 
 # The field order of the asset snapshot. The sector and its three detail fields
 # follow the country, so a backfill keeps the same order that fetch_assets.py
@@ -130,6 +128,20 @@ def base_symbol(symbol: str) -> str:
     if text[-1:].lower() == "x":
         text = text[:-1]
     return text.strip().upper()
+
+
+def symbol_variants(base: str) -> list[str]:
+    """Return the ticker spellings of one base symbol, in the try order.
+
+    The universe spells a share class with a dot or with a dash, so the other
+    form follows the base. "BRK.B" then reads "BRK.B", "BRK-B".
+    """
+    variants = [base]
+    if "." in base:
+        variants.append(base.replace(".", "-"))
+    if "-" in base:
+        variants.append(base.replace("-", "."))
+    return variants
 
 
 def _row_text(row: Row, field: str) -> str:
@@ -306,16 +318,14 @@ def load_industry_overrides(path: Path = INDUSTRY_OVERRIDES_JSON) -> dict[str, s
 def entry_for(symbol: str, index: Index) -> IndexEntry | None:
     """Return the universe entry for one asset symbol.
 
-    A base symbol with a dot retries with a dash, and the other way around. A
-    symbol that the universe does not hold gives None.
+    The spellings of one base symbol are tried in order, so a dot form and a
+    dash form both answer. A symbol that the universe does not hold gives None.
     """
-    base = base_symbol(symbol)
-    entry = index.get(base)
-    if entry is None and "." in base:
-        entry = index.get(base.replace(".", "-"))
-    if entry is None and "-" in base:
-        entry = index.get(base.replace("-", "."))
-    return entry
+    for spelling in symbol_variants(base_symbol(symbol)):
+        entry = index.get(spelling)
+        if entry is not None:
+            return entry
+    return None
 
 
 def sector_for(symbol: str, index: Index) -> str:
@@ -505,10 +515,17 @@ def ordered_record(record: Row) -> Row:
     return dict(known + extra)
 
 
-def read_assets(path: Path = ASSETS_JSON) -> list[Row]:
-    """Read the asset rows from the snapshot file. A fault stops the run."""
+def read_assets(path: Path = ASSETS_JSON, reason: str = "") -> list[Row]:
+    """Read the asset rows from the snapshot file. A fault stops the run.
+
+    This is the only reader of the snapshot, so every caller holds the same
+    path rule, the same list check, and the same fault text. A reason names the
+    need of the caller, and the absent-file message then holds it. A row that
+    is not an object drops.
+    """
     if not path.is_file():
-        raise RuntimeError(f"no asset snapshot at {path}")
+        note = f", {reason}" if reason else ""
+        raise RuntimeError(f"no asset snapshot at {path}{note}")
 
     try:
         rows = json.loads(path.read_text(encoding="utf-8"))

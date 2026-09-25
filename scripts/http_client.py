@@ -8,9 +8,10 @@ read, the backoff values, the Pacer class, fetch_json, and get_bytes.
 
 A rate-limit status waits for the Retry-After header, then backs off. When
 every attempt meets a rate-limit status, fetch_json raises RateLimitError.
-With raise_on_auth set, a rejected key raises AuthError at once. A call that
-gives a label puts that label in the message in place of the URL. Use a label
-when the URL holds a secret, for example an API key.
+A missing-resource status (404, 410) is final, so a missing symbol costs one
+request. With raise_on_auth set, a rejected key raises AuthError at once. A
+call that gives a label puts that label in the message in place of the URL.
+Use a label when the URL holds a secret, for example an API key.
 
 A wrong content type, or an absent file, throws RuntimeError from get_bytes.
 The type check runs before the caller writes a file.
@@ -41,6 +42,9 @@ RETRY_DELAY_SECONDS = 2
 
 # A rejected key stops the call at once.
 AUTH_ERROR_CODES = (401, 403)
+
+# A missing resource never appears on a retry, so this status is final.
+MISSING_CODES = (404, 410)
 
 # The quote endpoint and the logo host rate limit a burst of calls.
 RATE_LIMIT_CODES = (429, 503)
@@ -146,8 +150,9 @@ def _request(
     """Fetch one URL. Return the body and the content type.
 
     A rate-limit status waits, then backs off. A rejected key raises AuthError.
-    HTTP 304 raises NotModifiedError. The decode sits inside the retry loop, so
-    a broken body retries.
+    HTTP 304 raises NotModifiedError. A missing-resource status is final, so a
+    retry stops at once. The decode sits inside the retry loop, so a broken
+    body retries.
     """
     name = label or url
     request = urllib.request.Request(
@@ -181,6 +186,8 @@ def _request(
                 if attempt < attempts:
                     time.sleep(_rate_limit_delay(error, attempt))
                 continue
+            if error.code in MISSING_CODES:
+                break
             if not retry_http_errors:
                 break
             if attempt < attempts:

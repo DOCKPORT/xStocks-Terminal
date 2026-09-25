@@ -5,62 +5,37 @@ Fetch the listed ticker universe from BusinessQuant and store one JSON file.
 One endpoint is used:
   https://data.businessquant.com/universe?api_key=KEY
 
-The key arrives in one of three places, in this order:
-  1. The BUSINESSQUANT_API_KEY environment variable.
-  2. The text file that --api-key-file names.
-  3. The local file scripts/bq_key.py, which .gitignore holds.
+The key comes from the environment variable, then from a file that
+--api-key-file names, then from the local file scripts/bq_key.py. The script
+prints the source of the key and redacts the key itself, because the request
+URL carries it.
 
-The local key file starts with an empty value. Put your key there. The script
-holds no key of its own. Every printed line passes redact(), because the
-request URL carries the key. The script prints the source name, never the key.
-
-A 401 or 403 answer stops the run at once, with one clear line. A 429 or 503
-answer waits for the Retry-After header, then backs off. A transport error
-retries. scripts/http_client.py holds that shared HTTP layer.
-
-The script keeps only the rows that our symbols need. data/xstocks-assets.json
-holds those symbols, and the base symbol is the asset symbol minus the final
-"x". A base symbol with a dot also fits the dash form, and the other way
-around, because the universe spells a share class either way. "BRK.Bx" then
-fits "BRK-B".
-
-The run prints the base symbols that no row answers. A missing asset snapshot
-stops the run, because the filter would then hold no symbol list.
-
-One ticker can hold rows of more than one security type, because two issuers can
-use the same ticker. The match rules of scripts/sector_map.py take the type that
-comes first, so a row of a lower type can never decide a value. The script drops
-those rows. The ticker META holds an Equity row for Meta Platforms and a Fund row
-for a fund series, and the Fund row drops.
+The script keeps only the rows that our symbols need, and drops the rows of a
+lower security type. scripts/sector_map.py holds the base-symbol rule, the type
+order, and the reader of the asset snapshot. This script imports them, so one
+rule serves the filter and the matcher, and the two rules cannot drift apart. A
+missing snapshot stops the run, because the filter would then hold no symbol
+list.
 
 Output: data/ticker_universe.json
-  {
-    "source": "https://data.businessquant.com/universe",
-    "fetchedAt": "2026-09-15T18:18:50+00:00",
-    "universeCount": 45400,
-    "count": 647,
-    "tickers": [ ... one row per kept ticker, exactly as the API returned it ... ]
-  }
+  an object with source, fetchedAt, universeCount, count, and the tickers array
+  one row per kept ticker, exactly as the API returned it
 
-The rows stay untouched, so a later script reads the true field names. The run
-prints those field names. universeCount is the size of the fetched payload, and
-count is the number of kept rows.
+universeCount is the size of the fetched payload, and count is the number of
+kept rows.
 
 The write is skipped when the payload holds no rows, or when the fetched row
 count falls below MIN_KEEP_RATIO of the previous run. A cut payload then keeps
-the good file. Pass --force to write anyway. Pass --dry-run to write nothing.
+the good file.
 
 Requires: Python 3.9 or later. No third-party packages.
 
 Usage:
-  Put your key in scripts/bq_key.py, then run:
-    ./scripts/ticker_universe.py
-
-  Or name the key in the environment:
-    BUSINESSQUANT_API_KEY=... ./scripts/ticker_universe.py
-
-  Or name a key file:
-    ./scripts/ticker_universe.py --api-key-file ~/.bq-key
+  ./scripts/ticker_universe.py                     # key from scripts/bq_key.py
+  BUSINESSQUANT_API_KEY=... ./scripts/ticker_universe.py
+  ./scripts/ticker_universe.py --api-key-file ~/.bq-key
+  ./scripts/ticker_universe.py --dry-run           # report only
+  ./scripts/ticker_universe.py --force             # write a thin payload
 """  # noqa: EXE001
 
 from __future__ import annotations
@@ -76,6 +51,7 @@ from pathlib import Path
 from typing import Any
 
 import http_client
+import sector_map
 
 UNIVERSE_URL = "https://data.businessquant.com/universe"
 API_KEY_ENV = "BUSINESSQUANT_API_KEY"
@@ -93,14 +69,7 @@ SCRIPTS_DIR = Path(__file__).resolve().parent
 # The local key file. Put your key there, and .gitignore keeps it out of git.
 KEY_MODULE = SCRIPTS_DIR / "bq_key.py"
 
-# The asset snapshot. The filter reads the symbols that our page shows.
-ASSETS_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
-
 OUT_JSON = REPO_ROOT / "data" / "ticker_universe.json"
-
-# The type order of scripts/sector_map.py. A row of a lower type can never win,
-# so the filter drops it.
-TYPE_ORDER = ("Equity", "ETF", "Fund", "Index")
 
 Row = dict[str, Any]
 
@@ -217,66 +186,21 @@ def ticker_of(row: Row) -> str:
     return ticker.strip().upper() if isinstance(ticker, str) else ""
 
 
-def base_symbol(symbol: str) -> str:
-    """Return the base symbol: the asset symbol without the final "x".
-
-    The rule matches scripts/sector_map.py, which reads the file that this
-    script writes.
-    """
-    text = symbol.strip()
-    if text[-1:].lower() == "x":
-        text = text[:-1]
-    return text.strip().upper()
-
-
-def read_assets(path: Path = ASSETS_JSON) -> list[Row]:
-    """Read the asset rows from the snapshot file. A fault stops the run.
-
-    The filter needs the symbols, so a missing file stops the run rather than
-    write every fetched row.
-    """
-    if not path.is_file():
-        raise RuntimeError(
-            f"no asset snapshot at {path}, so the filter holds no symbol list"
-        )
-
-    try:
-        rows = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, ValueError) as error:
-        raise RuntimeError(
-            f"cannot read the asset snapshot at {path}: {error}"
-        ) from error
-
-    if not isinstance(rows, list):
-        raise RuntimeError(  # noqa: TRY004
-            f"the asset snapshot at {path} holds no list"
-        )
-    return [row for row in rows if isinstance(row, dict)]
-
-
 def wanted_tickers(records: list[Row]) -> dict[str, set[str]]:
     """Map each asset base symbol to the ticker spellings that answer for it.
 
-    The base symbol is the asset symbol minus the final "x". A base symbol with
-    a dot also adds the dash form, and the other way around, because the
-    universe spells a share class either way. "BRK.Bx" then asks for "BRK.B"
-    and for "BRK-B".
+    The base-symbol rule and the spelling rule come from scripts/sector_map.py,
+    so the filter keeps the rows that the matcher later reads.
     """
     wanted: dict[str, set[str]] = {}
     for record in records:
         symbol = record.get("symbol")
         if not isinstance(symbol, str):
             continue
-        name = base_symbol(symbol)
+        name = sector_map.base_symbol(symbol)
         if not name:
             continue
-
-        spellings = {name}
-        if "." in name:
-            spellings.add(name.replace(".", "-"))
-        if "-" in name:
-            spellings.add(name.replace("-", "."))
-        wanted[name] = spellings
+        wanted[name] = set(sector_map.symbol_variants(name))
     return wanted
 
 
@@ -308,11 +232,11 @@ def row_type(row: Row) -> str:
 def winning_type(group: list[Row]) -> str | None:
     """Return the type that decides one ticker group, or None.
 
-    The first type of TYPE_ORDER that the group holds wins. A group with no
-    known type returns None, because any row of that group can still win.
+    The first type of the shared order that the group holds wins. A group with
+    no known type returns None, because any row of that group can still win.
     """
     kinds = {row_type(row) for row in group}
-    for kind in TYPE_ORDER:
+    for kind in sector_map.TYPE_ORDER:
         if kind in kinds:
             return kind
     return None
@@ -400,10 +324,15 @@ def keep_payload(rows: list[Row], previous: int | None, force: bool) -> None:
 
 
 def run(args: argparse.Namespace) -> int:
-    """Fetch the universe, keep the rows of our symbols, and write the snapshot."""
+    """Fetch the universe, keep the rows of our symbols, and write the snapshot.
+
+    The run prints the fetched row count, the kept count, the base symbols that
+    no row answers, the dropped lower-type rows, the previous count, and the
+    field names of the first kept row.
+    """
     key, source = read_api_key(args.api_key_file)
     previous = load_previous_count(OUT_JSON)
-    assets = read_assets()
+    assets = sector_map.read_assets(reason="so the filter holds no symbol list")
     wanted = wanted_tickers(assets)
 
     print(f"Key source: {source}")

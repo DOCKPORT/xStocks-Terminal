@@ -21,7 +21,9 @@ Behaviour:
     the timeout and the retry.
   - The content type must be image/png. That check runs before the write, so
     an error page never lands in the folder.
-  - A failed write is removed. A partial file never stays behind.
+  - A failed write leaves no partial file. A write that fails at the open step
+    keeps the saved file. A failure after that removes the file.
+  - A saved file of 0 bytes counts as missing, so a plain run fetches it again.
   - The script reports the counts and a missed-symbol list.
   - The exit code is non-zero when one or more downloads fail.
 
@@ -42,12 +44,12 @@ from __future__ import annotations
 
 import argparse
 import hashlib
-import json
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import http_client
+import sector_map
 
 LOGO_BASE = "https://xstocks-metadata.backed.fi/logos/tokens"
 
@@ -64,23 +66,12 @@ OUT_DIR = REPO_ROOT / "data" / "logos"
 def load_symbols(path: Path) -> list[str]:
     """Read the symbols from the asset snapshot, in file order.
 
-    Raise RuntimeError when the file is absent or holds no symbol.
+    The snapshot reader lives in scripts/sector_map.py. Raise RuntimeError when
+    the file is absent or holds no symbol.
     """
-    if not path.is_file():
-        raise RuntimeError(f"input file not found: {path}")
-
-    try:
-        rows = json.loads(path.read_text(encoding="utf-8"))
-    except (OSError, ValueError) as error:
-        raise RuntimeError(f"cannot read {path}: {error}") from error
-
-    if not isinstance(rows, list):
-        raise RuntimeError(f"{path} does not hold an array of assets.")  # noqa: TRY004
-
+    rows = sector_map.read_assets(path)
     symbols = [
-        row["symbol"]
-        for row in rows
-        if isinstance(row, dict) and isinstance(row.get("symbol"), str)
+        row["symbol"] for row in rows if isinstance(row.get("symbol"), str)
     ]
     if not symbols:
         raise RuntimeError(f"{path} holds no symbol.")
@@ -88,11 +79,28 @@ def load_symbols(path: Path) -> list[str]:
 
 
 def saved_bytes(path: Path) -> bytes | None:
-    """Read a saved logo. Return None when the file is absent or unreadable."""
+    """Read a saved logo. Return None when the file is absent, empty, or unreadable.
+
+    An empty file comes from a download that stopped at the start. The caller
+    then treats the symbol as missing and fetches the image again.
+    """
     try:
-        return path.read_bytes()
+        payload = path.read_bytes()
     except OSError:
         return None
+    return payload or None
+
+
+def saved_size(path: Path) -> int:
+    """Return the byte count of a saved logo. A missing file reads 0.
+
+    A count of 0 means a download that stopped at the start, so the caller
+    treats the symbol as missing and fetches the image again.
+    """
+    try:
+        return path.stat().st_size
+    except OSError:
+        return 0
 
 
 def download_logo(symbol: str, conditional: bool) -> tuple[str, str]:
@@ -105,6 +113,10 @@ def download_logo(symbol: str, conditional: bool) -> tuple[str, str]:
     content type stops the call before the write, so a bad response never
     reaches the disk. The shared HTTP layer retries a transport error and stops
     on an HTTP error.
+
+    A write that fails at the open step keeps the saved file. A failure after
+    that removes the file, because the file then holds part of the image only.
+    A saved file of 0 bytes reads as missing.
     """
     out_path = OUT_DIR / f"{symbol}.png"
     saved = saved_bytes(out_path) if conditional else None
@@ -130,8 +142,16 @@ def download_logo(symbol: str, conditional: bool) -> tuple[str, str]:
         return "unchanged", f"SAME  {symbol}"
 
     try:
-        out_path.write_bytes(payload)
+        handle = out_path.open("wb")
     except OSError as error:
+        # The open failed, so the saved file keeps its bytes.
+        return "miss", f"MISS  {symbol} (write failed: {error})"
+
+    try:
+        with handle:
+            handle.write(payload)
+    except OSError as error:
+        # The write failed, so the file holds part of the image only.
         out_path.unlink(missing_ok=True)
         return "miss", f"MISS  {symbol} (write failed: {error})"
 
@@ -152,7 +172,7 @@ def run(args: argparse.Namespace) -> int:
     todo: list[str] = []
     skipped = 0
     for symbol in symbols:
-        exists = (OUT_DIR / f"{symbol}.png").is_file()
+        exists = saved_size(OUT_DIR / f"{symbol}.png") > 0
         if exists and not args.force and not args.check_changes:
             skipped += 1
             continue

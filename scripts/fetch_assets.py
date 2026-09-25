@@ -126,8 +126,9 @@ def merge_records(
 def load_last_known(path: Path) -> dict[str, Record]:
     """Read the values of the previous run. This holds the last known value.
 
-    The prices, the multipliers, and the sectors all come from here. The
-    previous sector stands when the ticker universe file is absent.
+    The prices, the multipliers, the sectors, and the three sector detail
+    fields all come from here. The previous value stands when the source of
+    this run misses a row.
     """
     if not path.is_file():
         return {}
@@ -152,6 +153,9 @@ def load_last_known(path: Path) -> dict[str, Record]:
                 "priceUpdatedAt": row.get("priceUpdatedAt"),
                 "multiplier": row.get("multiplier"),
                 "sector": row.get("sector"),
+                "industry": row.get("industry"),
+                "exchange": row.get("exchange"),
+                "cik": row.get("cik"),
             }
     return known
 
@@ -379,7 +383,8 @@ def _build_snapshot(
     """Fetch the catalog, the reserves, the quotes, and the multipliers.
 
     Return the merged records, the last known values of the previous run, and
-    the new symbols of this run.
+    the new symbols of this run. A merge that keeps no record stops the run
+    here, before the write, so the snapshot on disk stands.
     """
     # Read the symbol set before the write, so the compare has a baseline.
     has_baseline = OUT_JSON.is_file()
@@ -392,6 +397,14 @@ def _build_snapshot(
     reserve_nodes = backed_api.fetch_pages(backed_api.RESERVES_URL, "reserves")
 
     records, dropped, thin_supply, absent = merge_records(asset_nodes, reserve_nodes)
+    if not records:
+        raise RuntimeError(
+            f"the fetch kept no asset from {len(asset_nodes)} asset rows: "
+            f"{len(dropped)} zero shares held, "
+            f"{len(thin_supply)} zero circulating supply, "
+            f"{len(absent)} no reserve entry. "
+            f"{OUT_JSON} keeps its content."
+        )
     symbols = [record["symbol"] for record in records]
 
     closed = (
