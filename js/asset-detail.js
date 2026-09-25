@@ -1,7 +1,7 @@
 /**
  * @file Build an asset row that opens a detail panel below it. One panel stays
- * open at a time. The module owns the collapse mechanics only. The panel body
- * holds a placeholder until the asset details arrive.
+ * open at a time. The module owns the collapse mechanics only. The content
+ * module builds the panel body at the first open.
  */
 
 /**
@@ -37,9 +37,6 @@
   const page = window;
   const ns = page.XSTOCKS || (page.XSTOCKS = {});
 
-  /** The hint that marks an empty slot, when no asset and no body arrive. */
-  const PLACEHOLDER = "Details for this asset come later.";
-
   /** The id counter, so every detail node takes a unique id. */
   let nextId = 0;
 
@@ -48,10 +45,10 @@
 
   /**
    * Build the panel body for one detail. A ready body wins. Without one, the
-   * content module builds the field list from the asset. When neither arrives,
-   * the placeholder marks the slot.
+   * content module builds the field list from the asset.
    * @param {AssetDetailOptions} options - The caller options.
-   * @returns {HTMLElement | null} The body, or null for the placeholder.
+   * @returns {HTMLElement} The body for the panel.
+   * @throws {Error} When no body arrives and the content module is absent.
    */
   const buildBody = (options) => {
     if (options.body instanceof HTMLElement) {
@@ -59,11 +56,13 @@
     }
 
     const buildFields = ns.buildAssetDetailBody;
-    if (options.asset !== undefined && typeof buildFields === "function") {
-      return buildFields(options.asset);
+    if (options.asset === undefined || typeof buildFields !== "function") {
+      throw new Error(
+        "The asset detail body builder from js/render-asset-detail.js did not load.",
+      );
     }
 
-    return null;
+    return buildFields(options.asset);
   };
 
   /**
@@ -90,15 +89,9 @@
     const content = document.createElement("div");
     content.className = "asset__body";
 
-    const body = buildBody(options);
-    if (body === null) {
-      const hint = document.createElement("p");
-      hint.className = "asset__hint";
-      hint.textContent = PLACEHOLDER;
-      content.append(hint);
-    } else {
-      content.append(body);
-    }
+    /* The body builds at the first open, so a table of 730 rows holds no field
+       list until the reader opens one panel. */
+    let built = false;
 
     const element = document.createElement(inTable ? "tr" : "li");
     element.className = "asset__detail";
@@ -133,6 +126,11 @@
           openDetail.setOpen(false);
         }
         openDetail = detail;
+
+        if (!built) {
+          content.append(buildBody(options));
+          built = true;
+        }
       } else if (openDetail === detail) {
         openDetail = null;
       }

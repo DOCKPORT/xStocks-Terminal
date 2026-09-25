@@ -58,8 +58,10 @@
   });
 
   /**
-   * Build the logo for one row. If the file is missing, a letter tile takes its
-   * place, so a broken logo stays visible instead of vanishing.
+   * Build the logo for one row. The image loads when the row nears the viewport,
+   * so a table of 730 rows holds no 730 image requests at load. If the file is
+   * missing, a letter tile takes its place, so a broken logo stays visible
+   * instead of vanishing.
    * @param {Asset} asset - The asset for the row.
    * @returns {HTMLImageElement} The logo image.
    */
@@ -71,6 +73,9 @@
     image.width = LOGO_SIZE;
     image.height = LOGO_SIZE;
     image.decoding = "async";
+    /* The mode is a hint. A browser that holds no support loads the image at
+       once, the same rule as before. */
+    image.loading = "lazy";
     image.addEventListener("error", () => {
       const fallback = document.createElement("span");
       fallback.className = "table__logo table__logo--empty";

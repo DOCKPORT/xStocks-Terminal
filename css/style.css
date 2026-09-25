@@ -149,23 +149,6 @@
   line-height: 1.1;
 }
 
-.metric__delta {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-1);
-  margin-block-start: var(--space-2);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-}
-
-.metric__delta--up {
-  color: var(--positive);
-}
-
-.metric__delta--down {
-  color: var(--negative);
-}
-
 .metric__hint {
   margin-block-start: var(--space-3);
   color: var(--text-faint);
@@ -586,17 +569,10 @@
 }
 
 /* The panel body. The sunken fill groups the open panel, the same fill that the
-   group lists take. The slot holds a hint until the asset details arrive. */
+   group lists take. */
 .asset__body {
   padding: var(--space-3) var(--space-4);
   background: var(--bg-sunken);
-}
-
-.asset__hint {
-  margin: 0;
-  color: var(--text-faint);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
 }
 
 /* The field list. One label takes each left cell and one value each right cell.

@@ -138,7 +138,6 @@
   --accent: var(--sol-purple);
   --accent-alt: var(--sol-teal);
   --accent-contrast: var(--grey-000);
-  --positive: var(--sol-green);
   --negative: var(--sol-magenta);
 
   /* Solid accent fills. The theme has no gradients and no glow. The line takes
@@ -146,8 +145,6 @@
      glance. */
   --accent-soft: #2b1b42;
   --accent-line: var(--sol-magenta);
-  --positive-soft: #112b23;
-  --positive-line: var(--sol-green-deep);
 
   /* Focus. A solid double ring for access, not a glow. */
   --focus-ring: 0 0 0 2px var(--bg-page), 0 0 0 4px var(--accent-alt);

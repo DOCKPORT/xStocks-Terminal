@@ -8,7 +8,6 @@
  * @property {number} totalMarketCap - Price times circulating supply, summed over the snapshot.
  * @property {number} assetCount - The number of assets in the snapshot.
  * @property {number | null} tokensPerShare - The circulating tokens divided by the reserve shares. Null when no asset holds a reserve row.
- * @property {string | null} quoteUpdatedAt - The newest quote stamp in the snapshot.
  */
 
 /**
@@ -92,22 +91,6 @@
   };
 
   /**
-   * Keep the later of two quote stamps.
-   * @param {string | null} current - The newest stamp so far.
-   * @param {unknown} candidate - The next stamp.
-   * @returns {string | null} The newer stamp.
-   */
-  const newerStamp = (current, candidate) => {
-    if (typeof candidate !== "string" || candidate === "") {
-      return current;
-    }
-    if (current === null || candidate > current) {
-      return candidate;
-    }
-    return current;
-  };
-
-  /**
    * Compare two market cap values. The larger value comes first. A missing value
    * comes last. An equal pair returns zero, so the caller can break the tie.
    * @param {number | null} a - The left value.
@@ -135,15 +118,10 @@
     let circulatingTotal = 0;
     let sharesTotal = 0;
 
-    /** @type {string | null} */
-    let quoteUpdatedAt = null;
-
     for (const asset of assets) {
       const price = toNumber(asset.price);
       const supply = toNumber(asset.circulatingSupply);
       const shares = toNumber(asset.sharesHeld);
-
-      quoteUpdatedAt = newerStamp(quoteUpdatedAt, asset.priceUpdatedAt);
 
       if (price !== null && supply !== null) {
         totalMarketCap += price * supply;
@@ -159,7 +137,6 @@
       totalMarketCap,
       assetCount: assets.length,
       tokensPerShare: sharesTotal > 0 ? circulatingTotal / sharesTotal : null,
-      quoteUpdatedAt,
     };
   };
 

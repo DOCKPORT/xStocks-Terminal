@@ -251,7 +251,7 @@
   };
 
   /**
-   * Read the data and start the page.
+   * Read both data files together and start the page.
    * @returns {Promise<void>} Resolves when the page is ready or has failed.
    */
   const init = async () => {
@@ -302,8 +302,12 @@
       sectorRefs = requireSectorRefs();
       regionRefs = requireRegionRefs();
 
-      const assets = await ns.loadAssets();
-      const filingLinks = await ns.loadFilingLinks();
+      /* The two files are independent, so the reads start together. The join of
+         the EDGAR links then waits for both. */
+      const [assets, filingLinks] = await Promise.all([
+        ns.loadAssets(),
+        ns.loadFilingLinks(),
+      ]);
       attachFilingLinks(assets, filingLinks);
 
       ns.renderMetrics(ns.computeMetrics(assets), metricRefs);

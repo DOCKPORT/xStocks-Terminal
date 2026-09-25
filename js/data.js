@@ -41,6 +41,14 @@
   const FILINGS_URL = "data/sec_edgar.json";
 
   /**
+   * The read mode for both data files. The browser checks each file with the
+   * server before use, so a rewritten file never shows stale rows. A 304 answer
+   * reuses the stored body, so the download stays small.
+   * @type {RequestInit}
+   */
+  const REVALIDATE = { cache: "no-cache" };
+
+  /**
    * Check one raw row from the snapshot.
    * @param {unknown} row - One raw row.
    * @returns {row is Asset} True when the row holds a name and a symbol.
@@ -56,11 +64,12 @@
   };
 
   /**
-   * Read every asset from the local snapshot.
+   * Read every asset from the local snapshot. The browser revalidates the file,
+   * so a snapshot that a script rewrote never shows stale rows.
    * @returns {Promise<Asset[]>} The asset list in file order.
    */
   const loadAssets = async () => {
-    const response = await fetch(SNAPSHOT_URL);
+    const response = await fetch(SNAPSHOT_URL, REVALIDATE);
     if (!response.ok) {
       throw new Error(
         `The asset snapshot did not load. HTTP ${response.status} from ${SNAPSHOT_URL}.`,
@@ -95,7 +104,7 @@
     /** @type {Response} */
     let response;
     try {
-      response = await fetch(FILINGS_URL);
+      response = await fetch(FILINGS_URL, REVALIDATE);
     } catch (error) {
       console.warn(`The EDGAR link file did not load. ${FILINGS_URL}.`, error);
       return links;
