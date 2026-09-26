@@ -1,3 +1,108 @@
-run_scripts.yml
+name: Run scripts
 
-Repository secrets : BQ_API_KEY 
+# Three runs a week: Monday 01:00 UTC, Wednesday 06:00 UTC, Friday 11:00 UTC.
+# The manual dispatch starts one run from the Actions page.
+on:
+  schedule:
+    - cron: "0 1 * * 1"
+    - cron: "0 6 * * 3"
+    - cron: "0 11 * * 5"
+  workflow_dispatch:
+
+# The commit step writes the fresh data back to the repository.
+permissions:
+  contents: write
+
+# One run at a time, so two runs cannot write the data folder together.
+concurrency:
+  group: run-scripts
+  cancel-in-progress: false
+
+jobs:
+  fetch:
+    name: Fetch the asset data
+    runs-on: ubuntu-latest
+    # The quote calls take a few minutes. The limit stops a hung run.
+    timeout-minutes: 60
+
+    env:
+      # The repository secret is named BQ_API_KEY. scripts/ticker_universe.py
+      # reads BUSINESSQUANT_API_KEY, so this line maps the secret onto that
+      # name. The child process of fetch_assets.py inherits this value.
+      BUSINESSQUANT_API_KEY: ${{ secrets.BQ_API_KEY }}
+      # Stream the print output of the script into the run log.
+      PYTHONUNBUFFERED: "1"
+
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Stop the run when the secret is absent. A missing key makes the
+      # universe step fail, and fetch_assets.py then keeps exit code 0.
+      - name: Check the API key
+        run: |
+          if [ -z "$BUSINESSQUANT_API_KEY" ]; then
+            echo "Error: the BQ_API_KEY secret is empty or absent." >&2
+            exit 1
+          fi
+          echo "The API key is set."
+
+      - name: Fetch the assets
+        run: python3 scripts/fetch_assets.py
+
+      # The commit step must never publish a broken file. This step reads
+      # every output file before the write.
+      - name: Check the JSON output
+        run: |
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          FILES = (
+              "data/xstocks-assets.json",
+              "data/ticker_universe.json",
+              "data/sec_edgar.json",
+          )
+
+          for name in FILES:
+              path = Path(name)
+              if not path.is_file():
+                  raise SystemExit(f"Error: {name} is missing.")
+              text = path.read_text(encoding="utf-8")
+              if not text.strip():
+                  raise SystemExit(f"Error: {name} is empty.")
+              json.loads(text)
+              print(f"{name}: valid JSON, {len(text)} bytes")
+
+          rows = json.loads(Path(FILES[0]).read_text(encoding="utf-8"))
+          if not rows:
+              raise SystemExit(f"Error: {FILES[0]} holds no asset row.")
+          print(f"{FILES[0]}: {len(rows)} assets")
+          PY
+
+      - name: Commit and push the data
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          # A scheduled run can start on a detached head, so name the branch.
+          git checkout -B "$GITHUB_REF_NAME"
+
+          git add -- data
+          if git diff --cached --quiet; then
+            echo "No data change. Nothing to commit."
+            exit 0
+          fi
+
+          git commit -m "Update the asset data snapshot" -m "Run: $(date -u +%Y-%m-%dT%H:%M:%SZ)"
+
+          # Another commit can land while this run works. Rebase, then push.
+          git pull --rebase origin "$GITHUB_REF_NAME"
+          git push origin "$GITHUB_REF_NAME"
+
+          echo "Pushed the data snapshot to $GITHUB_REF_NAME."
