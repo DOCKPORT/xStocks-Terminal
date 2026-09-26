@@ -2975,7 +2975,7 @@
     "industry": "Copper",
     "exchange": "NYSE",
     "cik": 1001838,
-    "sharesHeld": "5.024",
+    "sharesHeld": "5",
     "circulatingSupply": "0.237283430044485727",
     "price": 203.31,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
@@ -7946,7 +7946,7 @@
     "exchange": "NASDAQ",
     "cik": 1181412,
     "sharesHeld": "297356",
-    "circulatingSupply": "297239.50574382437674",
+    "circulatingSupply": "297239.50093416437674",
     "price": 148.52,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -9430,7 +9430,7 @@
     "exchange": "NYSE",
     "cik": 1876042,
     "sharesHeld": "890102",
-    "circulatingSupply": "889517.24130483020921",
+    "circulatingSupply": "889517.24130478020921",
     "price": 86.68,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -9472,7 +9472,7 @@
     "exchange": "NYSE",
     "cik": 1222333,
     "sharesHeld": "31326.99",
-    "circulatingSupply": "31108.661564795894093",
+    "circulatingSupply": "31108.660611325894093",
     "price": 392.955,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -9500,7 +9500,7 @@
     "exchange": null,
     "cik": 1067839,
     "sharesHeld": "51174",
-    "circulatingSupply": "51024.024001541090259",
+    "circulatingSupply": "51024.024001510986577",
     "price": 745.075,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0034560758968376
@@ -9514,7 +9514,7 @@
     "exchange": "NYSE",
     "cik": 884394,
     "sharesHeld": "85204.99856414",
-    "circulatingSupply": "84137.202235365866507",
+    "circulatingSupply": "84137.20185847433504",
     "price": 771.52,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.005714560286254
@@ -9542,7 +9542,7 @@
     "exchange": "NYSE",
     "cik": 1326380,
     "sharesHeld": "91954",
-    "circulatingSupply": "88425.235398674477062",
+    "circulatingSupply": "88425.207841883509522",
     "price": 23.425,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.005309167384
@@ -9766,7 +9766,7 @@
     "exchange": "NASDAQ",
     "cik": 1065280,
     "sharesHeld": "20285",
-    "circulatingSupply": "19941.499243517843369",
+    "circulatingSupply": "19941.499135617843369",
     "price": 71.29,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 10
@@ -10074,7 +10074,7 @@
     "exchange": "NYSE",
     "cik": 19617,
     "sharesHeld": "1116",
-    "circulatingSupply": "1068.037160131994045",
+    "circulatingSupply": "1068.0371601319940449",
     "price": 342.78,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0139174713894084
@@ -10088,7 +10088,7 @@
     "exchange": "NYSE",
     "cik": 200406,
     "sharesHeld": "1888",
-    "circulatingSupply": "1851.1416457364350183",
+    "circulatingSupply": "1851.1416457364350182",
     "price": 271.87,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0195885202077413
@@ -10157,7 +10157,7 @@
     "industry": "Semiconductor Design",
     "exchange": "NASDAQ",
     "cik": 1730168,
-    "sharesHeld": "18357.22",
+    "sharesHeld": "18357",
     "circulatingSupply": "18240.412803362633683",
     "price": 353.23,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
@@ -10172,7 +10172,7 @@
     "exchange": "NASDAQ",
     "cik": 1652044,
     "sharesHeld": "106483",
-    "circulatingSupply": "106407.87688898123312",
+    "circulatingSupply": "106407.87263580434716",
     "price": 344.1325,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0023772500603487
@@ -10186,7 +10186,7 @@
     "exchange": "NASDAQ",
     "cik": 1326801,
     "sharesHeld": "14438",
-    "circulatingSupply": "14286.920899700810147",
+    "circulatingSupply": "14286.918206643275696",
     "price": 749.6575,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0028515433272898
@@ -10200,7 +10200,7 @@
     "exchange": "NASDAQ",
     "cik": 1018724,
     "sharesHeld": "34070",
-    "circulatingSupply": "33593.472959279785026",
+    "circulatingSupply": "33593.472959079785026",
     "price": 249.725,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -10214,7 +10214,7 @@
     "exchange": "NASDAQ",
     "cik": 789019,
     "sharesHeld": "15153.57",
-    "circulatingSupply": "15027.674352680102935",
+    "circulatingSupply": "15027.673443102021135",
     "price": 517.45,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0059033904787456
@@ -10227,8 +10227,8 @@
     "industry": "Semiconductor Design",
     "exchange": "NASDAQ",
     "cik": 1045810,
-    "sharesHeld": "186664.24989831",
-    "circulatingSupply": "186396.71256051110349",
+    "sharesHeld": "186664",
+    "circulatingSupply": "186396.70296790991555",
     "price": 225.0255,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.001701196801074
@@ -10242,7 +10242,7 @@
     "exchange": "NASDAQ",
     "cik": 320193,
     "sharesHeld": "39102",
-    "circulatingSupply": "38800.690557231568183",
+    "circulatingSupply": "38800.690556569410643",
     "price": 341.155,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0032690125398187
