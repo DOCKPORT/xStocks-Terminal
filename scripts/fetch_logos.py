@@ -16,6 +16,11 @@ Behaviour:
     request carries the fingerprint of the saved file, so an unchanged image
     costs one small request and no image bytes. A changed image replaces the
     file and prints CHANGED.
+  - The calls share one pacer. The default gap is 0.25 seconds. Pass
+    --min-interval to change the gap.
+  - A rate-limit answer pauses every call for 60 seconds and doubles the gap.
+    A later answer stops the check. The saved files stand, and the next run
+    covers the stopped symbols.
   - The host rejects the default urllib User-Agent with HTTP 403, so the
     script sends its own Agent. scripts/http_client.py holds that header with
     the timeout and the retry.
@@ -24,8 +29,9 @@ Behaviour:
   - A failed write leaves no partial file. A write that fails at the open step
     keeps the saved file. A failure after that removes the file.
   - A saved file of 0 bytes counts as missing, so a plain run fetches it again.
-  - The script reports the counts and a missed-symbol list.
-  - The exit code is non-zero when one or more downloads fail.
+  - The script reports the counts and the symbol lists.
+  - The exit code is non-zero when one or more calls fail or stop. The parent
+    script scripts/fetch_assets.py reports that code as one warning.
 
 The logos are tracked in git. A fresh checkout holds every file, so a plain
 run skips the lot. Pass --force to refresh them, or --check-changes to replace
@@ -37,7 +43,8 @@ Usage:
   ./scripts/fetch_logos.py
   ./scripts/fetch_logos.py --check-changes
   ./scripts/fetch_logos.py --force
-  ./scripts/fetch_logos.py --workers 16
+  ./scripts/fetch_logos.py --workers 6
+  ./scripts/fetch_logos.py --min-interval 0.5
 """  # noqa: EXE001, RUF100
 
 from __future__ import annotations
@@ -45,7 +52,10 @@ from __future__ import annotations
 import argparse
 import hashlib
 import sys
+import threading
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from dataclasses import dataclass
 from pathlib import Path
 
 import http_client
@@ -53,7 +63,22 @@ import sector_map
 
 LOGO_BASE = "https://xstocks-metadata.backed.fi/logos/tokens"
 
-DEFAULT_WORKERS = 8
+DEFAULT_WORKERS = 6
+
+# The default gap between two logo calls, in seconds. The host answers a burst
+# with HTTP 429, so the calls share one pacer.
+DEFAULT_INTERVAL_SECONDS = 0.25
+
+# The logo call keeps its own attempt count, because a rate-limit answer costs
+# a real wait. LOGO_ATTEMPTS counts every try, so five tries hold four waits.
+LOGO_ATTEMPTS = 5
+
+# A rate-limit answer pauses every call for this long.
+COOLDOWN_SECONDS = 60.0
+
+# One pause is allowed. A rate-limit answer past that count stops the check.
+RATE_LIMIT_PAUSES = 1
+
 PROGRESS_EVERY = 25
 
 PNG_CONTENT_TYPE = "image/png"
@@ -61,6 +86,120 @@ PNG_CONTENT_TYPE = "image/png"
 REPO_ROOT = Path(__file__).resolve().parent.parent
 IN_JSON = REPO_ROOT / "data" / "xstocks-assets.json"
 OUT_DIR = REPO_ROOT / "data" / "logos"
+
+
+class Throttle:
+    """Hold the logo calls back when the host answers a rate-limit status.
+
+    Every worker shares one object. The first rate-limit answer closes the gate
+    for COOLDOWN_SECONDS and doubles the gap between two calls, so the run goes
+    easier after the pause. An answer past RATE_LIMIT_PAUSES keeps the gate
+    closed, so the run then stops and makes no more calls.
+
+    The class owns the pacer of the logo calls. The quote calls keep their own
+    pacer in scripts/backed_api.py.
+    """
+
+    def __init__(
+        self,
+        interval: float = DEFAULT_INTERVAL_SECONDS,
+        cooldown: float = COOLDOWN_SECONDS,
+        pauses: int = RATE_LIMIT_PAUSES,
+    ) -> None:
+        self._lock = threading.Lock()
+        self._interval = max(0.0, interval)
+        self._cooldown = max(0.0, cooldown)
+        self._pauses = max(0, pauses)
+        self._gate_pauses = 0
+        self._trips = 0
+        self._open_at = 0.0
+        self._stopped = False
+        self._pacer = http_client.Pacer(self._interval)
+
+    @property
+    def interval(self) -> float:
+        """Return the current gap between two calls, in seconds."""
+        return self._interval
+
+    @property
+    def trips(self) -> int:
+        """Return the count of the rate-limit answers."""
+        with self._lock:
+            return self._trips
+
+    @property
+    def pacer(self) -> http_client.Pacer:
+        """Return the pacer that every call shares."""
+        return self._pacer
+
+    def wait(self) -> bool:
+        """Hold the caller for the pause. Return False when the run stops.
+
+        The gate opens again when the pause ends. A stopped gate never opens,
+        so the caller makes no call and leaves at once.
+        """
+        while True:
+            with self._lock:
+                if self._stopped:
+                    return False
+                delay = self._open_at - time.monotonic()
+            if delay <= 0:
+                return True
+            time.sleep(min(delay, 1.0))
+
+    def trip(self) -> None:
+        """Note one rate-limit answer. This method is the notify callback.
+
+        An answer that arrives while the gate holds joins the same pause,
+        because the workers meet one rate limit together. An answer that opens
+        a pause past the limit stops the run.
+        """
+        with self._lock:
+            self._trips += 1
+            if time.monotonic() < self._open_at:
+                return
+            if self._gate_pauses >= self._pauses:
+                if not self._stopped:
+                    self._stopped = True
+                    print("Rate limited again. The logo check stops here.")
+                return
+            self._gate_pauses += 1
+            self._open_at = time.monotonic() + self._cooldown
+            if self._interval > 0:
+                self._interval *= 2
+            self._pacer = http_client.Pacer(self._interval)
+            print(
+                f"Rate limited. Every call pauses for {self._cooldown:g} seconds,"
+                f" then the gap grows to {self._interval:g} seconds."
+            )
+
+
+@dataclass(frozen=True)
+class Batch:
+    """The result of one block of logo calls.
+
+    A symbol of the failed list ended with no verdict, because the host refused
+    the last try. A symbol of the limited list ended on a rate-limit answer. A
+    symbol of the stopped list met a closed gate, so it cost no call.
+    """
+
+    downloaded: int = 0
+    unchanged: int = 0
+    changed: tuple[str, ...] = ()
+    failed: tuple[str, ...] = ()
+    limited: tuple[str, ...] = ()
+    stopped: tuple[str, ...] = ()
+
+    def merge(self, other: Batch) -> Batch:
+        """Return one result that holds the counts and the lists of both."""
+        return Batch(
+            downloaded=self.downloaded + other.downloaded,
+            unchanged=self.unchanged + other.unchanged,
+            changed=self.changed + other.changed,
+            failed=self.failed + other.failed,
+            limited=self.limited + other.limited,
+            stopped=self.stopped + other.stopped,
+        )
 
 
 def load_symbols(path: Path) -> list[str]:
@@ -103,21 +242,28 @@ def saved_size(path: Path) -> int:
         return 0
 
 
-def download_logo(symbol: str, conditional: bool) -> tuple[str, str]:
+def download_logo(
+    symbol: str, conditional: bool, throttle: Throttle
+) -> tuple[str, str]:
     """Fetch one logo. Return the status and the report line.
 
-    The status is "unchanged", "ok", "changed", or "miss".
+    The status is "unchanged", "ok", "changed", "miss", "limited", or
+    "stopped". A stopped status means that the gate of the throttle holds the
+    calls, so this symbol costs no request.
 
     With conditional set, the request carries the fingerprint of the saved file.
     An unchanged image then costs one small request and no image bytes. A wrong
     content type stops the call before the write, so a bad response never
-    reaches the disk. The shared HTTP layer retries a transport error and stops
-    on an HTTP error.
+    reaches the disk. The shared HTTP layer retries a transport error and a
+    rate-limit answer, and it stops on another HTTP error.
 
     A write that fails at the open step keeps the saved file. A failure after
     that removes the file, because the file then holds part of the image only.
     A saved file of 0 bytes reads as missing.
     """
+    if not throttle.wait():
+        return "stopped", f"STOP  {symbol}"
+
     out_path = OUT_DIR / f"{symbol}.png"
     saved = saved_bytes(out_path) if conditional else None
 
@@ -128,8 +274,16 @@ def download_logo(symbol: str, conditional: bool) -> tuple[str, str]:
     url = f"{LOGO_BASE}/{symbol}.png"
     try:
         payload = http_client.get_bytes(
-            url, headers=headers, label=url, content_type=PNG_CONTENT_TYPE
+            url,
+            headers=headers,
+            label=url,
+            content_type=PNG_CONTENT_TYPE,
+            attempts=LOGO_ATTEMPTS,
+            pacer=throttle.pacer,
+            on_rate_limit=throttle.trip,
         )
+    except http_client.RateLimitError as error:
+        return "limited", f"LIMIT {symbol} (download failed: {error})"
     except RuntimeError as error:
         return "miss", f"MISS  {symbol} (download failed: {error})"
 
@@ -161,8 +315,75 @@ def download_logo(symbol: str, conditional: bool) -> tuple[str, str]:
 
 
 
+def _fetch_batch(
+    symbols: list[str], conditional: bool, workers: int, throttle: Throttle
+) -> Batch:
+    """Run one block of logo calls. Return the counts and the symbol lists.
+
+    The pool holds the worker count. The throttle gates every call, so the call
+    rate follows the gap and not the worker count.
+    """
+    if not symbols:
+        return Batch()
+
+    downloaded = 0
+    unchanged = 0
+    changed: list[str] = []
+    failed: list[str] = []
+    limited: list[str] = []
+    stopped: list[str] = []
+
+    print(f"Fetching {len(symbols)} logos with {workers} workers...")
+    done = 0
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        pending = {
+            pool.submit(download_logo, symbol, conditional, throttle): symbol
+            for symbol in symbols
+        }
+        for future in as_completed(pending):
+            symbol = pending[future]
+            try:
+                status, line = future.result()
+            except Exception as error:  # noqa: BLE001
+                status = "miss"
+                line = f"MISS  {symbol} (download failed: {error})"
+
+            done += 1
+            if status == "miss":
+                failed.append(symbol)
+                print(line)
+            elif status == "limited":
+                limited.append(symbol)
+                print(line)
+            elif status == "stopped":
+                stopped.append(symbol)
+            elif status == "changed":
+                changed.append(symbol)
+                print(line)
+            elif status == "unchanged":
+                unchanged += 1
+            else:
+                downloaded += 1
+            if done % PROGRESS_EVERY == 0 or done == len(symbols):
+                print(f"  logos: {done}/{len(symbols)}")
+
+    return Batch(
+        downloaded=downloaded,
+        unchanged=unchanged,
+        changed=tuple(changed),
+        failed=tuple(failed),
+        limited=tuple(limited),
+        stopped=tuple(stopped),
+    )
+
+
 def run(args: argparse.Namespace) -> int:
-    """Download every missing logo, check the saved ones, and report the result."""
+    """Download every missing logo, check the saved ones, and report the result.
+
+    The calls share one pacer, so the host sees a steady rate. A rate-limit
+    answer pauses every call, and a late answer stops the check. A stopped or a
+    failed symbol keeps its saved file, so the next run covers it again.
+    """
     symbols = load_symbols(IN_JSON)
     OUT_DIR.mkdir(parents=True, exist_ok=True)
 
@@ -179,55 +400,51 @@ def run(args: argparse.Namespace) -> int:
         todo.append(symbol)
 
     print(f"{len(symbols)} symbols in the snapshot. {skipped} already saved.")
+    if args.min_interval > 0:
+        print(f"Call gap: {args.min_interval:g} seconds.")
 
-    downloaded = 0
-    unchanged = 0
-    changed: list[str] = []
-    failed: list[str] = []
-    if todo:
-        print(f"Fetching {len(todo)} logos with {args.workers} workers...")
-        done = 0
-        with ThreadPoolExecutor(max_workers=args.workers) as pool:
-            pending = {
-                pool.submit(download_logo, symbol, conditional): symbol
-                for symbol in todo
-            }
-            for future in as_completed(pending):
-                symbol = pending[future]
-                try:
-                    status, line = future.result()
-                except Exception as error:  # noqa: BLE001
-                    status = "miss"
-                    line = f"MISS  {symbol} (download failed: {error})"
+    throttle = Throttle(args.min_interval, COOLDOWN_SECONDS)
+    result = _fetch_batch(todo, conditional, args.workers, throttle)
 
-                done += 1
-                if status == "miss":
-                    failed.append(symbol)
-                    print(line)
-                elif status == "changed":
-                    changed.append(symbol)
-                    print(line)
-                elif status == "unchanged":
-                    unchanged += 1
-                else:
-                    downloaded += 1
-                if done % PROGRESS_EVERY == 0 or done == len(todo):
-                    print(f"  logos: {done}/{len(todo)}")
+    retry = result.limited + result.failed
+    if retry:
+        # A rate-limit window clears with time, so the symbols that hold no
+        # verdict get one more try. One call at a time holds a small count.
+        if throttle.trips:
+            print(f"Pausing {COOLDOWN_SECONDS:g} seconds before the second pass...")
+            time.sleep(COOLDOWN_SECONDS)
+        print(f"Second pass over {len(retry)} symbols, one call at a time...")
+        result = result.merge(
+            _fetch_batch(
+                retry, conditional, 1, Throttle(throttle.interval, COOLDOWN_SECONDS)
+            )
+        )
 
     print()
     print(f"Logos: {len(symbols)} symbols in input")
-    print(f"  downloaded: {downloaded}")
-    print(f"  changed:    {len(changed)}")
-    print(f"  unchanged:  {unchanged}")
+    print(f"  downloaded: {result.downloaded}")
+    print(f"  changed:    {len(result.changed)}")
+    print(f"  unchanged:  {result.unchanged}")
     print(f"  skipped:    {skipped}")
-    print(f"  failed:     {len(failed)}")
+    print(f"  failed:     {len(result.failed)}")
+    print(f"  limited:    {len(result.limited)}")
+    print(f"  stopped:    {len(result.stopped)}")
     print(f"Saved to {OUT_DIR}")
 
-    if changed:
-        print(f"Changed logos: {', '.join(changed)}")
+    if result.changed:
+        print(f"Changed logos: {', '.join(result.changed)}")
         print("Commit the replaced files, so the new look reaches the page.")
-    if failed:
-        print(f"Missed symbols: {', '.join(failed)}")
+    missed = result.failed + result.limited
+    if missed:
+        print(f"Missed symbols: {', '.join(missed)}")
+    if result.stopped:
+        print(
+            f"Stopped symbols: {len(result.stopped)}. The host rate limited the "
+            "calls. The saved files stand, and the next run covers them."
+        )
+    if throttle.trips:
+        print(f"Rate-limit answers: {throttle.trips}")
+    if missed or result.stopped:
         return 1
     return 0
 
@@ -252,6 +469,15 @@ def build_parser() -> argparse.ArgumentParser:
         default=DEFAULT_WORKERS,
         help=f"Parallel downloads (default: {DEFAULT_WORKERS}).",
     )
+    parser.add_argument(
+        "--min-interval",
+        type=float,
+        default=DEFAULT_INTERVAL_SECONDS,
+        help=(
+            "Minimum seconds between logo calls. Use 0 to stop pacing "
+            f"(default: {DEFAULT_INTERVAL_SECONDS})."
+        ),
+    )
     return parser
 
 
@@ -261,6 +487,8 @@ def main(argv: list[str] | None = None) -> int:
     args = parser.parse_args(argv)
     if args.workers < 1:
         parser.error("--workers must be 1 or more")
+    if args.min_interval < 0:
+        parser.error("--min-interval must be 0 or more")
 
     try:
         return run(args)

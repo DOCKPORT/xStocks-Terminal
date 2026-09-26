@@ -6,8 +6,11 @@ Three scripts talk to three hosts, so this module holds the parts that they
 share: the User-Agent header, the timeout, the retry count, the Retry-After
 read, the backoff values, the Pacer class, fetch_json, and get_bytes.
 
-A rate-limit status waits for the Retry-After header, then backs off. When
-every attempt meets a rate-limit status, fetch_json raises RateLimitError.
+A rate-limit status waits for the Retry-After header, then backs off. A small
+random part joins the wait, so two threads do not retry in step. A call that
+passes a callback runs it on every rate-limit answer, so the caller can hold
+every thread back. When every attempt meets a rate-limit status, fetch_json
+raises RateLimitError.
 A missing-resource status (404, 410) is final, so a missing symbol costs one
 request. With raise_on_auth set, a rejected key raises AuthError at once. A
 call that gives a label puts that label in the message in place of the URL.
@@ -25,6 +28,7 @@ Requires: Python 3.9 or later. No third-party packages.
 from __future__ import annotations
 
 import json
+import random
 import threading
 import time
 import urllib.error
@@ -50,6 +54,9 @@ MISSING_CODES = (404, 410)
 RATE_LIMIT_CODES = (429, 503)
 RATE_LIMIT_BACKOFF_SECONDS = (2.0, 4.0, 8.0)
 RATE_LIMIT_MAX_WAIT_SECONDS = 30.0
+
+# The random part of a rate-limit wait. It keeps two threads apart.
+RATE_LIMIT_JITTER_SECONDS = 1.0
 
 
 class AuthError(RuntimeError):
@@ -102,13 +109,19 @@ def _retry_after_seconds(error: urllib.error.HTTPError) -> float | None:
 
 
 def _rate_limit_delay(error: urllib.error.HTTPError, attempt: int) -> float:
-    """Return the wait before a retry. Honor Retry-After, then back off."""
+    """Return the wait before a retry. Honor Retry-After, then back off.
+
+    A small random part joins the wait, so two threads do not retry in step.
+    """
     header_seconds = _retry_after_seconds(error)
     if header_seconds is not None:
-        return min(header_seconds, RATE_LIMIT_MAX_WAIT_SECONDS)
+        delay = header_seconds
+    else:
+        index = min(attempt - 1, len(RATE_LIMIT_BACKOFF_SECONDS) - 1)
+        delay = RATE_LIMIT_BACKOFF_SECONDS[index]
 
-    index = min(attempt - 1, len(RATE_LIMIT_BACKOFF_SECONDS) - 1)
-    return RATE_LIMIT_BACKOFF_SECONDS[index]
+    jitter = random.uniform(0.0, RATE_LIMIT_JITTER_SECONDS)
+    return min(delay + jitter, RATE_LIMIT_MAX_WAIT_SECONDS)
 
 
 class Pacer:
@@ -146,13 +159,15 @@ def _request(
     retry_http_errors: bool = True,
     label: str | None = None,
     decode: Callable[[bytes], Any] | None = None,
+    on_rate_limit: Callable[[], None] | None = None,
 ) -> tuple[Any, str]:
     """Fetch one URL. Return the body and the content type.
 
     A rate-limit status waits, then backs off. A rejected key raises AuthError.
     HTTP 304 raises NotModifiedError. A missing-resource status is final, so a
     retry stops at once. The decode sits inside the retry loop, so a broken
-    body retries.
+    body retries. With on_rate_limit set, each rate-limit answer runs that
+    callback before the wait, so the caller can hold the other threads back.
     """
     name = label or url
     request = urllib.request.Request(
@@ -183,6 +198,8 @@ def _request(
                 ) from error
             if error.code in RATE_LIMIT_CODES:
                 rate_limited = True
+                if on_rate_limit is not None:
+                    on_rate_limit()
                 if attempt < attempts:
                     time.sleep(_rate_limit_delay(error, attempt))
                 continue
@@ -234,12 +251,16 @@ def get_bytes(
     attempts: int = REQUEST_ATTEMPTS,
     label: str | None = None,
     content_type: str | None = None,
+    pacer: Pacer | None = None,
+    on_rate_limit: Callable[[], None] | None = None,
 ) -> bytes | None:
     """Fetch a raw body. Return None when the server answers HTTP 304.
 
     With content_type set, a different type raises RuntimeError, so a bad
-    answer never reaches the disk. An HTTP error is final, so a missing file
-    costs one request. A transport error retries.
+    answer never reaches the disk. A rate-limit status waits and retries; every
+    other HTTP error is final, so a missing file costs one request. A transport
+    error retries. With pacer set, each attempt waits for its time slot. With
+    on_rate_limit set, a rate-limit answer runs that callback.
     """
     name = label or url
     try:
@@ -249,6 +270,8 @@ def get_bytes(
             attempts=attempts,
             retry_http_errors=False,
             label=name,
+            pacer=pacer,
+            on_rate_limit=on_rate_limit,
         )
     except NotModifiedError:
         return None
