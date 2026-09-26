@@ -7946,7 +7946,7 @@
     "exchange": "NASDAQ",
     "cik": 1181412,
     "sharesHeld": "297356",
-    "circulatingSupply": "297239.51593727437674",
+    "circulatingSupply": "297239.50574382437674",
     "price": 148.52,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -8814,7 +8814,7 @@
     "exchange": "NYSE",
     "cik": 1459862,
     "sharesHeld": "6775",
-    "circulatingSupply": "6741.5575896337161023",
+    "circulatingSupply": "6741.5575896337161024",
     "price": 22.84,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 5
@@ -8912,7 +8912,7 @@
     "exchange": null,
     "cik": 857489,
     "sharesHeld": "2797",
-    "circulatingSupply": "2728.7791581521885885",
+    "circulatingSupply": "2728.7791581521885886",
     "price": 160.25,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0115628863182522
@@ -9332,7 +9332,7 @@
     "exchange": "NASDAQ",
     "cik": 1859392,
     "sharesHeld": "12831",
-    "circulatingSupply": "12768.445117027884308",
+    "circulatingSupply": "12768.445117027884309",
     "price": 24.37,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -9374,7 +9374,7 @@
     "exchange": "NASDAQ",
     "cik": 1050446,
     "sharesHeld": "628839.97",
-    "circulatingSupply": "623736.5226489015723",
+    "circulatingSupply": "623736.5226481215723",
     "price": 158.5,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -9430,7 +9430,7 @@
     "exchange": "NYSE",
     "cik": 1876042,
     "sharesHeld": "890102",
-    "circulatingSupply": "889517.24159543020921",
+    "circulatingSupply": "889517.24130483020921",
     "price": 86.68,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -9472,7 +9472,7 @@
     "exchange": "NYSE",
     "cik": 1222333,
     "sharesHeld": "31326.99",
-    "circulatingSupply": "31108.665364355894093",
+    "circulatingSupply": "31108.661564795894093",
     "price": 392.955,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -9500,7 +9500,7 @@
     "exchange": null,
     "cik": 1067839,
     "sharesHeld": "51174",
-    "circulatingSupply": "51024.024003186758224",
+    "circulatingSupply": "51024.024001541090259",
     "price": 745.075,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0034560758968376
@@ -9514,7 +9514,7 @@
     "exchange": "NYSE",
     "cik": 884394,
     "sharesHeld": "85204.99856414",
-    "circulatingSupply": "84137.207056409468423",
+    "circulatingSupply": "84137.202235365866507",
     "price": 771.52,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.005714560286254
@@ -9528,7 +9528,7 @@
     "exchange": "NASDAQ",
     "cik": 1679788,
     "sharesHeld": "66788",
-    "circulatingSupply": "66575.655733519103328",
+    "circulatingSupply": "66575.655732899103328",
     "price": 194.75,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -9542,7 +9542,7 @@
     "exchange": "NYSE",
     "cik": 1326380,
     "sharesHeld": "91954",
-    "circulatingSupply": "88425.238888615304732",
+    "circulatingSupply": "88425.235398674477062",
     "price": 23.425,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.005309167384
@@ -9584,7 +9584,7 @@
     "exchange": "NASDAQ",
     "cik": 1783879,
     "sharesHeld": "102156",
-    "circulatingSupply": "101423.43089425741707",
+    "circulatingSupply": "101423.43089323741707",
     "price": 118.875,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -9752,7 +9752,7 @@
     "exchange": "NYSE",
     "cik": 63908,
     "sharesHeld": "10060",
-    "circulatingSupply": "9515.231915288376789",
+    "circulatingSupply": "9515.231915278164982",
     "price": 236.65,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0211807004882871
@@ -9766,7 +9766,7 @@
     "exchange": "NASDAQ",
     "cik": 1065280,
     "sharesHeld": "20285",
-    "circulatingSupply": "19941.499850417843369",
+    "circulatingSupply": "19941.499243517843369",
     "price": 71.29,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 10
@@ -9906,7 +9906,7 @@
     "exchange": "NASDAQ",
     "cik": 104169,
     "sharesHeld": "2752",
-    "circulatingSupply": "2308.4166772781257971",
+    "circulatingSupply": "2308.4163687674229071",
     "price": 107.87,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0071845610241497
@@ -9990,7 +9990,7 @@
     "exchange": "NYSE",
     "cik": 93410,
     "sharesHeld": "5150",
-    "circulatingSupply": "5100.5033157488489473",
+    "circulatingSupply": "5100.5033157488489472",
     "price": 204.39,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0295541831890767
@@ -10060,7 +10060,7 @@
     "exchange": "NYSE",
     "cik": 1403161,
     "sharesHeld": "1319",
-    "circulatingSupply": "1268.1681766461051586",
+    "circulatingSupply": "1268.1679795703351276",
     "price": 367.425,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0066699189441244
@@ -10074,7 +10074,7 @@
     "exchange": "NYSE",
     "cik": 19617,
     "sharesHeld": "1116",
-    "circulatingSupply": "1068.0371601319940449",
+    "circulatingSupply": "1068.037160131994045",
     "price": 342.78,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0139174713894084
@@ -10144,7 +10144,7 @@
     "exchange": "NASDAQ",
     "cik": 1318605,
     "sharesHeld": "189593",
-    "circulatingSupply": "189476.77364430284417",
+    "circulatingSupply": "189476.77364096284417",
     "price": 372.203,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1
@@ -10172,7 +10172,7 @@
     "exchange": "NASDAQ",
     "cik": 1652044,
     "sharesHeld": "106483",
-    "circulatingSupply": "106407.87959563035505",
+    "circulatingSupply": "106407.87688898123312",
     "price": 344.1325,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0023772500603487
@@ -10186,7 +10186,7 @@
     "exchange": "NASDAQ",
     "cik": 1326801,
     "sharesHeld": "14438",
-    "circulatingSupply": "14286.920903702187805",
+    "circulatingSupply": "14286.920899700810147",
     "price": 749.6575,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0028515433272898
@@ -10214,7 +10214,7 @@
     "exchange": "NASDAQ",
     "cik": 789019,
     "sharesHeld": "15153.57",
-    "circulatingSupply": "15027.683487238496705",
+    "circulatingSupply": "15027.674352680102935",
     "price": 517.45,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0059033904787456
@@ -10228,7 +10228,7 @@
     "exchange": "NASDAQ",
     "cik": 1045810,
     "sharesHeld": "186664.24989831",
-    "circulatingSupply": "186396.7414353194112",
+    "circulatingSupply": "186396.71256051110349",
     "price": 225.0255,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.001701196801074
@@ -10242,7 +10242,7 @@
     "exchange": "NASDAQ",
     "cik": 320193,
     "sharesHeld": "39102",
-    "circulatingSupply": "38800.690557652941173",
+    "circulatingSupply": "38800.690557231568183",
     "price": 341.155,
     "priceUpdatedAt": "2026-09-25T21:00:51+00:00",
     "multiplier": 1.0032690125398187
