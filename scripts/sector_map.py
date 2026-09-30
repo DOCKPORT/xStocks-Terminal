@@ -24,6 +24,13 @@ CIK is the SEC central index key, and it stays a number.
 An asset with no universe row reads a null CIK. A row that a later run loses
 keeps the CIK of the last run, in the same way as the industry and the exchange.
 
+The exchange column holds one extra source. The xStock catalog gives the venue
+of the underlying share, and that value wins over the universe row. The
+universe supplies the exchange only when the catalog holds none.
+apply_sectors() runs the universe rule, then apply_exchange_preference() puts
+the catalog value back. A caller reads the catalog values before the join, so
+the two write passes of fetch_assets.py agree.
+
 A manual override in data/sector_overrides.json wins over every rule above. The
 key is the base symbol, and the value is the sector. Use that file for a symbol
 that the universe misses, or for a symbol that the feed drops. Put a fund in as
@@ -387,6 +394,26 @@ def cik_value(
     return None
 
 
+def apply_exchange_preference(
+    records: list[Row], preferred: dict[str, str]
+) -> None:
+    """Put the catalog venue back over the universe value.
+
+    The catalog is the primary source for the exchange column. The universe
+    join overwrites that column on every row, so this step runs after the join.
+    A symbol that the catalog misses keeps the value from the join. The step is
+    idempotent, so a second join pass changes nothing.
+    """
+    for record in records:
+        symbol = record.get(ASSET_SYMBOL_FIELD)
+        if not isinstance(symbol, str):
+            continue
+
+        value = preferred.get(symbol)
+        if isinstance(value, str) and value:
+            record[EXCHANGE_FIELD] = value
+
+
 def apply_sectors(
     records: list[Row],
     index: Index | None,
@@ -569,7 +596,14 @@ def run(args: argparse.Namespace) -> int:
 
     # Without a universe, the records themselves hold the previous sector.
     previous = {record[ASSET_SYMBOL_FIELD]: record for record in records}
+    # Read the exchange of the file before the join, so the write keeps it.
+    preferred = {
+        symbol: row[EXCHANGE_FIELD]
+        for symbol, row in previous.items()
+        if isinstance(row.get(EXCHANGE_FIELD), str) and row[EXCHANGE_FIELD]
+    }
     counts = apply_sectors(records, index, previous, overrides, industry_overrides)
+    apply_exchange_preference(records, preferred)
 
     print(counts_line(counts))
     print(detail_counts_line(records))

@@ -114,17 +114,47 @@ def fetch_pages(url: str, label: str) -> list[Record]:
 def listing_country(node: Record) -> str | None:
     """Return the country that lists the underlying share, or None.
 
-    The catalog holds the value in the underlying object of the same row, so no
-    extra request is needed. A missing object, a missing field, or an empty
-    string returns None.
+    The catalog holds the value on the exchange object inside the underlying
+    object, at "country". An older catalog held a "listingCountry" field on the
+    underlying object itself, so that path stays as a fallback. The source
+    moved on 2026-09-30. No extra request is needed. A missing object, a
+    missing field, or an empty string returns None.
     """
     underlying = node.get("underlying")
     if not isinstance(underlying, dict):
         return None
 
-    country = underlying.get("listingCountry")
-    if isinstance(country, str):
-        return country.strip() or None
+    exchange = underlying.get("exchange")
+    if isinstance(exchange, dict):
+        country = exchange.get("country")
+        if isinstance(country, str) and country.strip():
+            return country.strip()
+
+    legacy = underlying.get("listingCountry")
+    if isinstance(legacy, str):
+        return legacy.strip() or None
+    return None
+
+
+def exchange_abbreviation(node: Record) -> str | None:
+    """Return the venue that lists the underlying share, or None.
+
+    The catalog holds the venue on the exchange object inside the underlying
+    object, at "abbreviation". The value reads "NYSE", "NASDAQ", "LSE", "HKEX",
+    and so on. No extra request is needed. A missing object, a missing field, or
+    an empty string returns None.
+    """
+    underlying = node.get("underlying")
+    if not isinstance(underlying, dict):
+        return None
+
+    exchange = underlying.get("exchange")
+    if not isinstance(exchange, dict):
+        return None
+
+    venue = exchange.get("abbreviation")
+    if isinstance(venue, str):
+        return venue.strip() or None
     return None
 
 

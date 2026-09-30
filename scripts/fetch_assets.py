@@ -76,9 +76,9 @@ def merge_records(
     a missing row both mean that no live reserve exists.
 
     The sector starts empty, because the ticker universe supplies that value.
-    apply_sectors() fills it after the price step. The listing country comes
-    from the catalog row, so this step fills it. The name loses its xStock mark
-    in this step, so the JSON holds the plain name.
+    apply_sectors() fills it after the price step. The listing country and the
+    exchange come from the catalog row, so this step fills those two. The name
+    loses its xStock mark in this step, so the JSON holds the plain name.
     """
     reserves: dict[str, tuple[Any, Any]] = {}
     for node in reserve_nodes:
@@ -115,7 +115,7 @@ def merge_records(
                 "listingCountry": backed_api.listing_country(node),
                 "sector": None,
                 "industry": None,
-                "exchange": None,
+                "exchange": backed_api.exchange_abbreviation(node),
                 "sharesHeld": shares,
                 "circulatingSupply": supply,
             }
@@ -126,9 +126,9 @@ def merge_records(
 def load_last_known(path: Path) -> dict[str, Record]:
     """Read the values of the previous run. This holds the last known value.
 
-    The prices, the multipliers, the sectors, and the three sector detail
-    fields all come from here. The previous value stands when the source of
-    this run misses a row.
+    The prices, the multipliers, the listing country, the sectors, and the
+    three sector detail fields all come from here. The previous value stands
+    when the source of this run misses a row.
     """
     if not path.is_file():
         return {}
@@ -152,6 +152,7 @@ def load_last_known(path: Path) -> dict[str, Record]:
                 "price": row.get("price"),
                 "priceUpdatedAt": row.get("priceUpdatedAt"),
                 "multiplier": row.get("multiplier"),
+                "listingCountry": row.get("listingCountry"),
                 "sector": row.get("sector"),
                 "industry": row.get("industry"),
                 "exchange": row.get("exchange"),
@@ -230,17 +231,90 @@ def apply_multipliers(
     return apply_values(records, multipliers, last_known, "multiplier")
 
 
-def apply_sector_map(
+def apply_listing_country(
     records: list[Record], last_known: dict[str, Record]
+) -> tuple[int, int, int]:
+    """Keep the last known listing country when this run reads none.
+
+    The catalog holds the country on the underlying exchange object. A moved or
+    missing field reads None, so the row then keeps the value of the previous
+    run. A new symbol with neither value reads None. Return the fresh, the
+    retained, and the missing counts.
+    """
+    fresh = 0
+    retained = 0
+    missing = 0
+
+    for record in records:
+        current = record.get("listingCountry")
+        if isinstance(current, str) and current:
+            fresh += 1
+            continue
+
+        kept = last_known.get(record["symbol"], {}).get("listingCountry")
+        if isinstance(kept, str) and kept:
+            record["listingCountry"] = kept
+            retained += 1
+        else:
+            record["listingCountry"] = None
+            missing += 1
+
+    return fresh, retained, missing
+
+
+def catalog_exchange(records: list[Record]) -> dict[str, str]:
+    """Return the exchange value that every record holds from the catalog.
+
+    The universe join overwrites the exchange column, so the caller reads the
+    catalog values before that join and puts them back after it. A record with
+    no catalog value drops from the map, and the universe value then stands.
+    """
+    return {
+        record["symbol"]: record["exchange"]
+        for record in records
+        if isinstance(record.get("exchange"), str) and record["exchange"]
+    }
+
+
+def apply_sector_map(
+    records: list[Record],
+    last_known: dict[str, Record],
+    preferred: dict[str, str],
 ) -> Counter[str]:
     """Join the sector, the industry, the exchange, and the CIK on every record.
 
     The universe file at data/ticker_universe.json supplies the four values. A
-    missing or broken file keeps the value of the previous run. The caller runs
-    this step twice: once before the first write, and once after the universe
-    refresh, so the second pass reads the fresh universe file.
+    missing or broken file keeps the value of the previous run. The catalog
+    keeps its own exchange value, so the join runs first and the preference step
+    follows. The caller runs this step twice: once before the first write, and
+    once after the universe refresh, so the second pass reads the fresh universe
+    file.
     """
-    return sector_map.apply_sectors(records, sector_map.load_index(), last_known)
+    counts = sector_map.apply_sectors(records, sector_map.load_index(), last_known)
+    sector_map.apply_exchange_preference(records, preferred)
+    return counts
+
+
+def exchange_counts_line(records: list[Record], preferred: dict[str, str]) -> str:
+    """Return one report line for the source of the exchange value.
+
+    A value that the catalog holds counts as catalog. Any other value comes from
+    the universe join or from the previous run.
+    """
+    catalog = 0
+    universe = 0
+    unavailable = 0
+
+    for record in records:
+        value = record.get("exchange")
+        if not isinstance(value, str) or not value:
+            unavailable += 1
+        elif record["symbol"] in preferred:
+            catalog += 1
+        else:
+            universe += 1
+
+    return f"Exchange: {catalog} catalog, {universe} universe, {unavailable} unavailable"
 
 
 def country_counts_line(records: list[Record]) -> str:
@@ -407,6 +481,14 @@ def _build_snapshot(
         )
     symbols = [record["symbol"] for record in records]
 
+    country_fresh, country_retained, country_missing = apply_listing_country(
+        records, last_known
+    )
+    print(
+        f"Listing country: {country_fresh} fresh, {country_retained} retained, "
+        f"{country_missing} unavailable"
+    )
+
     closed = (
         set() if args.force_quotes else backed_api.closed_market_symbols(asset_nodes)
     )
@@ -442,15 +524,20 @@ def _publish(
     first write gives the ticker universe script the symbol list of this run.
     The universe file then holds every new symbol, and the sector join runs
     again on that fresh file. The second write holds the result.
+
+    The exchange column comes from the catalog, and the universe join overwrites
+    it. This step reads the catalog values before the first join, so both passes
+    write the same venue.
     """
-    sector_counts = apply_sector_map(records, last_known)
+    preferred = catalog_exchange(records)
+    sector_counts = apply_sector_map(records, last_known, preferred)
     sector_map.write_assets(records)
     print(f"Wrote {len(records)} assets to {OUT_JSON} (first pass).")
 
     refreshed = not args.no_universe_fetch and refresh_universe()
     if refreshed:
         print("Joining the sector on the fresh universe...")
-        sector_counts = apply_sector_map(records, last_known)
+        sector_counts = apply_sector_map(records, last_known, preferred)
         sector_map.write_assets(records)
         print(
             f"Wrote {len(records)} assets to {OUT_JSON} "
@@ -458,6 +545,7 @@ def _publish(
         )
 
     print(sector_map.counts_line(sector_counts))
+    print(exchange_counts_line(records, preferred))
     print(country_counts_line(records))
 
 
