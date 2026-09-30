@@ -18,7 +18,7 @@
   const ns = page.XSTOCKS || (page.XSTOCKS = {});
 
   /** The current release version. Bump this value and the git tag together. */
-  const VERSION = "v1.2.0";
+  const VERSION = "v1.2.1";
 
   ns.version = VERSION;
 })();
