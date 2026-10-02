@@ -14,7 +14,7 @@ Live deployment: https://xstocks-terminal.vercel.app/
 - HTML, CSS, and JavaScript.
 - Vercel.
 - xStock API v2.
-- BQ-MICS (Business Quant Multi-Industry Classification System)
+- Sector and Industry classifcation source https://businessquant.com/ 
 - SEC EDGAR
 
 
