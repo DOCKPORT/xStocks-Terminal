@@ -1,5 +1,17 @@
 [
   {
+    "name": "Lyft",
+    "symbol": "LYFTx",
+    "cik": 1759509,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1759509"
+  },
+  {
+    "name": "Zillow",
+    "symbol": "Zx",
+    "cik": 1617640,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1617640"
+  },
+  {
     "name": "MP Materials",
     "symbol": "MPx",
     "cik": 1801368,
@@ -76,6 +88,12 @@
     "symbol": "SNXXx",
     "cik": 1587982,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1587982"
+  },
+  {
+    "name": "NatWest",
+    "symbol": "NWGx",
+    "cik": 844150,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=844150"
   },
   {
     "name": "Shell",

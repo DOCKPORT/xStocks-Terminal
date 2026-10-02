@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-09-30T13:45:49+00:00",
-  "universeCount": 45504,
-  "count": 650,
+  "fetchedAt": "2026-10-02T16:39:45+00:00",
+  "universeCount": 45524,
+  "count": 653,
   "tickers": [
     {
       "security_type": "Equity",
@@ -3858,6 +3858,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "LYFT",
+      "cik": 1759509,
+      "name": "Lyft, Inc.",
+      "name_short": "Lyft",
+      "sector": "Technology",
+      "industry": "Ride-Hailing and Delivery",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "LYV",
       "cik": 1335258,
       "name": "Live Nation Entertainment, Inc.",
@@ -4608,6 +4620,18 @@
       "name_short": "Novo Nordisk A S",
       "sector": "Healthcare",
       "industry": "Pharmaceuticals",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "NWG",
+      "cik": 844150,
+      "name": "NatWest Group plc",
+      "name_short": "NatWest",
+      "sector": "Financial Services",
+      "industry": "Money Center Banks",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -7093,6 +7117,18 @@
       "sector": "Consumer Discretionary",
       "industry": "Quick-Service Restaurants",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "Z",
+      "cik": 1617640,
+      "name": "Zillow Group, Inc.",
+      "name_short": "Zillow",
+      "sector": "Technology",
+      "industry": "Real Estate Software",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
