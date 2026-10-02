@@ -13,9 +13,9 @@ Live deployment: https://xstocks-terminal.vercel.app/
 - Github actions.
 - HTML, CSS, and JavaScript.
 - Vercel.
-- xStock API v2.
+- xStock API v2 https://docs.xstocks.fi/apis/openapi
 - Sector and Industry classifcation source https://businessquant.com/ 
-- SEC EDGAR
+- SEC EDGAR https://www.sec.gov/search-filings
 
 
 ## Preview 
