@@ -649,6 +649,13 @@
   justify-content: space-between;
 }
 
+/* The data source links. They take the faint footer grey, so the line stays
+   quiet. The rule drops the underline that the global anchor rule adds. */
+.footer__link {
+  color: inherit;
+  text-decoration: none;
+}
+
 /* --- App state ------------------------------------------------------------ */
 [data-app-state="loading"] .table__status {
   color: var(--text-muted);
@@ -672,6 +679,13 @@
 
   .topbar__link:hover {
     color: var(--text-muted);
+  }
+
+  /* The data source link lifts one grey step and shows its underline. */
+  .footer__link:hover {
+    color: var(--text-muted);
+    text-decoration: underline;
+    text-decoration-color: currentColor;
   }
 
   .topbar__link:hover .topbar__icon {
