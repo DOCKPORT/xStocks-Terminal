@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-10-02T16:39:45+00:00",
-  "universeCount": 45524,
-  "count": 653,
+  "fetchedAt": "2026-10-05T06:47:13+00:00",
+  "universeCount": 45525,
+  "count": 654,
   "tickers": [
     {
       "security_type": "Equity",
@@ -5856,6 +5856,18 @@
       "name_short": "Td Synnex",
       "sector": "Technology",
       "industry": "Technology Distribution",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "SO",
+      "cik": 92122,
+      "name": "Southern Co",
+      "name_short": "Southern",
+      "sector": "Utilities",
+      "industry": "Regulated Electric Utilities",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
