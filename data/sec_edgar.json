@@ -12,6 +12,12 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1617640"
   },
   {
+    "name": "Viavi Solutions",
+    "symbol": "VIAVx",
+    "cik": 912093,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=912093"
+  },
+  {
     "name": "MP Materials",
     "symbol": "MPx",
     "cik": 1801368,

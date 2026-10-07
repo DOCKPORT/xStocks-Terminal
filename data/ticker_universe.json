@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-10-05T06:47:13+00:00",
-  "universeCount": 45525,
-  "count": 654,
+  "fetchedAt": "2026-10-07T12:38:45+00:00",
+  "universeCount": 45238,
+  "count": 655,
   "tickers": [
     {
       "security_type": "Equity",
@@ -6637,6 +6637,18 @@
       "sector": "Technology",
       "industry": "Healthcare IT",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "VIAV",
+      "cik": 912093,
+      "name": "Viavi Solutions Inc.",
+      "name_short": "Viavi Solutions",
+      "sector": "Technology",
+      "industry": "Test and Measurement",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
