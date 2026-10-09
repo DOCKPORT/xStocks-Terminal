@@ -1,9 +1,27 @@
 [
   {
-    "name": "Lyft",
-    "symbol": "LYFTx",
-    "cik": 1759509,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1759509"
+    "name": "Whitefiber",
+    "symbol": "WYFIx",
+    "cik": 2042022,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2042022"
+  },
+  {
+    "name": "Better Home & Finance",
+    "symbol": "BETRx",
+    "cik": 1835856,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1835856"
+  },
+  {
+    "name": "C3.ai",
+    "symbol": "AIx",
+    "cik": 1577526,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1577526"
+  },
+  {
+    "name": "X-Energy",
+    "symbol": "XEx",
+    "cik": 2088896,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2088896"
   },
   {
     "name": "Zillow",
@@ -12,16 +30,46 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1617640"
   },
   {
+    "name": "The Mosaic",
+    "symbol": "MOSx",
+    "cik": 1285785,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1285785"
+  },
+  {
+    "name": "American Airlines",
+    "symbol": "AALx",
+    "cik": 6201,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=6201"
+  },
+  {
+    "name": "Cognex",
+    "symbol": "CGNXx",
+    "cik": 851205,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=851205"
+  },
+  {
     "name": "Viavi Solutions",
     "symbol": "VIAVx",
     "cik": 912093,
     "url": "https://www.sec.gov/edgar/browse/?CIK=912093"
   },
   {
+    "name": "Modine Manufacturing",
+    "symbol": "MODx",
+    "cik": 67347,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=67347"
+  },
+  {
     "name": "MP Materials",
     "symbol": "MPx",
     "cik": 1801368,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1801368"
+  },
+  {
+    "name": "TTM Technologies",
+    "symbol": "TTMIx",
+    "cik": 1116942,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1116942"
   },
   {
     "name": "Domino's Pizza",
@@ -46,6 +94,12 @@
     "symbol": "AGNCx",
     "cik": 1423689,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1423689"
+  },
+  {
+    "name": "IonQ",
+    "symbol": "IONQx",
+    "cik": 1824920,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1824920"
   },
   {
     "name": "Marvell 2x Long ETF",
