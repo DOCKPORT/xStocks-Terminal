@@ -1,5 +1,59 @@
 [
   {
+    "name": "SoundHound AI",
+    "symbol": "SOUNx",
+    "cik": 1840856,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1840856"
+  },
+  {
+    "name": "Xerox",
+    "symbol": "XRXx",
+    "cik": 1770450,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1770450"
+  },
+  {
+    "name": "Fluence Energy",
+    "symbol": "FLNCx",
+    "cik": 1868941,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1868941"
+  },
+  {
+    "name": "GeneDx",
+    "symbol": "WGSx",
+    "cik": 1818331,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1818331"
+  },
+  {
+    "name": "World Acceptance",
+    "symbol": "WRLDx",
+    "cik": 108385,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=108385"
+  },
+  {
+    "name": "Indie Semiconductor",
+    "symbol": "INDIx",
+    "cik": 1841925,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1841925"
+  },
+  {
+    "name": "PureCycle Technologies",
+    "symbol": "PCTx",
+    "cik": 1830033,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1830033"
+  },
+  {
+    "name": "Ramaco Resources",
+    "symbol": "METCx",
+    "cik": 1687187,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1687187"
+  },
+  {
+    "name": "Quantum Computing",
+    "symbol": "QUBTx",
+    "cik": 1758009,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1758009"
+  },
+  {
     "name": "Whitefiber",
     "symbol": "WYFIx",
     "cik": 2042022,
@@ -18,10 +72,1018 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1577526"
   },
   {
+    "name": "Howard Hughes",
+    "symbol": "HHHx",
+    "cik": 1981792,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1981792"
+  },
+  {
+    "name": "Whirlpool",
+    "symbol": "WHRx",
+    "cik": 106640,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=106640"
+  },
+  {
+    "name": "Post",
+    "symbol": "POSTx",
+    "cik": 1530950,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1530950"
+  },
+  {
+    "name": "Primoris Services",
+    "symbol": "PRIMx",
+    "cik": 1361538,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1361538"
+  },
+  {
+    "name": "Universal Display",
+    "symbol": "OLEDx",
+    "cik": 1005284,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1005284"
+  },
+  {
+    "name": "Wingstop",
+    "symbol": "WINGx",
+    "cik": 1636222,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1636222"
+  },
+  {
+    "name": "Freshpet",
+    "symbol": "FRPTx",
+    "cik": 1611647,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1611647"
+  },
+  {
+    "name": "Mattel",
+    "symbol": "MATx",
+    "cik": 63276,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=63276"
+  },
+  {
+    "name": "IPG Photonics",
+    "symbol": "IPGPx",
+    "cik": 1111928,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1111928"
+  },
+  {
+    "name": "Seaboard",
+    "symbol": "SEBx",
+    "cik": 88121,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=88121"
+  },
+  {
+    "name": "Graphic Packaging",
+    "symbol": "GPKx",
+    "cik": 1408075,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1408075"
+  },
+  {
+    "name": "Assured Guaranty",
+    "symbol": "AGOx",
+    "cik": 1273813,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1273813"
+  },
+  {
+    "name": "Organon",
+    "symbol": "OGNx",
+    "cik": 1821825,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1821825"
+  },
+  {
+    "name": "Medical Properties Trust",
+    "symbol": "MPTx",
+    "cik": 1287865,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1287865"
+  },
+  {
+    "name": "YETI",
+    "symbol": "YETIx",
+    "cik": 1670592,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1670592"
+  },
+  {
+    "name": "Bright Horizons Family Solutions",
+    "symbol": "BFAMx",
+    "cik": 1437578,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1437578"
+  },
+  {
+    "name": "Olin",
+    "symbol": "OLNx",
+    "cik": 74303,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=74303"
+  },
+  {
+    "name": "The Scotts Miracle Gro",
+    "symbol": "SMGx",
+    "cik": 825542,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=825542"
+  },
+  {
+    "name": "PVH",
+    "symbol": "PVHx",
+    "cik": 78239,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=78239"
+  },
+  {
+    "name": "First Hawaiian",
+    "symbol": "FHBx",
+    "cik": 36377,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=36377"
+  },
+  {
+    "name": "Planet Fitness",
+    "symbol": "PLNTx",
+    "cik": 1637207,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1637207"
+  },
+  {
+    "name": "Liberty Global",
+    "symbol": "LBTYAx",
+    "cik": 1570585,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1570585"
+  },
+  {
+    "name": "Loar",
+    "symbol": "LOARx",
+    "cik": 2000178,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2000178"
+  },
+  {
+    "name": "Kyndryl",
+    "symbol": "KDx",
+    "cik": 1867072,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1867072"
+  },
+  {
+    "name": "Shift4 Payments",
+    "symbol": "FOURx",
+    "cik": 1794669,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1794669"
+  },
+  {
+    "name": "Viking Therapeutics",
+    "symbol": "VKTXx",
+    "cik": 1607678,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1607678"
+  },
+  {
+    "name": "Euronet Worldwide",
+    "symbol": "EEFTx",
+    "cik": 1029199,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1029199"
+  },
+  {
+    "name": "Bath & Body Works",
+    "symbol": "BBWIx",
+    "cik": 701985,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=701985"
+  },
+  {
+    "name": "Brighthouse Financial",
+    "symbol": "BHFx",
+    "cik": 1685040,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1685040"
+  },
+  {
+    "name": "SiTime",
+    "symbol": "SITMx",
+    "cik": 1451809,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1451809"
+  },
+  {
+    "name": "Zions Bancorp NA",
+    "symbol": "ZIONx",
+    "cik": 109380,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=109380"
+  },
+  {
+    "name": "SiteOne Landscape Supply",
+    "symbol": "SITEx",
+    "cik": 1650729,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1650729"
+  },
+  {
+    "name": "Columbia Sportswear",
+    "symbol": "COLMx",
+    "cik": 1050797,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1050797"
+  },
+  {
+    "name": "Fermi",
+    "symbol": "FRMIx",
+    "cik": 2071778,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2071778"
+  },
+  {
+    "name": "Thor Industries",
+    "symbol": "THOx",
+    "cik": 730263,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=730263"
+  },
+  {
+    "name": "QuantumScape",
+    "symbol": "QSx",
+    "cik": 1811414,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1811414"
+  },
+  {
+    "name": "MDU Resources",
+    "symbol": "MDUx",
+    "cik": 67716,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=67716"
+  },
+  {
+    "name": "Grand Canyon Education",
+    "symbol": "LOPEx",
+    "cik": 1434588,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1434588"
+  },
+  {
+    "name": "The Western Union",
+    "symbol": "WUx",
+    "cik": 1365135,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1365135"
+  },
+  {
+    "name": "Ralliant",
+    "symbol": "RALx",
+    "cik": 2041385,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2041385"
+  },
+  {
+    "name": "WillScot",
+    "symbol": "WSCx",
+    "cik": 1647088,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1647088"
+  },
+  {
+    "name": "Hamilton Lane",
+    "symbol": "HLNEx",
+    "cik": 1433642,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1433642"
+  },
+  {
+    "name": "Hayward",
+    "symbol": "HAYWx",
+    "cik": 1834622,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1834622"
+  },
+  {
+    "name": "BILL",
+    "symbol": "BILLx",
+    "cik": 1786352,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1786352"
+  },
+  {
+    "name": "EPR Properties",
+    "symbol": "EPRx",
+    "cik": 1045450,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1045450"
+  },
+  {
+    "name": "Envista",
+    "symbol": "NVSTx",
+    "cik": 1757073,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1757073"
+  },
+  {
+    "name": "Ollie's Bargain Outlet",
+    "symbol": "OLLIx",
+    "cik": 1639300,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1639300"
+  },
+  {
+    "name": "Robert Half",
+    "symbol": "RHIx",
+    "cik": 315213,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=315213"
+  },
+  {
+    "name": "CCC Intelligent Solutions",
+    "symbol": "CCCx",
+    "cik": 1818201,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1818201"
+  },
+  {
+    "name": "KBR",
+    "symbol": "KBRx",
+    "cik": 1357615,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1357615"
+  },
+  {
+    "name": "Silgan",
+    "symbol": "SLGNx",
+    "cik": 849869,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=849869"
+  },
+  {
+    "name": "Vontier",
+    "symbol": "VNTx",
+    "cik": 1786842,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1786842"
+  },
+  {
+    "name": "FTI Consulting",
+    "symbol": "FCNx",
+    "cik": 887936,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=887936"
+  },
+  {
+    "name": "Cousins Properties",
+    "symbol": "CUZx",
+    "cik": 25232,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=25232"
+  },
+  {
+    "name": "Travel+Leisure",
+    "symbol": "TNLx",
+    "cik": 1361658,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1361658"
+  },
+  {
+    "name": "Americold Realty Trust",
+    "symbol": "COLDx",
+    "cik": 1455863,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1455863"
+  },
+  {
+    "name": "Celanese",
+    "symbol": "CEx",
+    "cik": 1306830,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1306830"
+  },
+  {
+    "name": "Enphase Energy",
+    "symbol": "ENPHx",
+    "cik": 1463101,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1463101"
+  },
+  {
+    "name": "Lazard",
+    "symbol": "LAZx",
+    "cik": 1311370,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1311370"
+  },
+  {
+    "name": "SLM",
+    "symbol": "SLMx",
+    "cik": 1032033,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1032033"
+  },
+  {
+    "name": "Louisiana-Pacific",
+    "symbol": "LPXx",
+    "cik": 60519,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
+  },
+  {
+    "name": "Gentex",
+    "symbol": "GNTXx",
+    "cik": 355811,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
+  },
+  {
+    "name": "TFS Financial",
+    "symbol": "TFSLx",
+    "cik": 1381668,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1381668"
+  },
+  {
+    "name": "White Mountains Insurance",
+    "symbol": "WTMx",
+    "cik": 776867,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=776867"
+  },
+  {
+    "name": "Choice Hotels International",
+    "symbol": "CHHx",
+    "cik": 1046311,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1046311"
+  },
+  {
+    "name": "Valvoline",
+    "symbol": "VVVx",
+    "cik": 1674910,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1674910"
+  },
+  {
+    "name": "Alaska Air",
+    "symbol": "ALKx",
+    "cik": 766421,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=766421"
+  },
+  {
+    "name": "ESAB",
+    "symbol": "ESABx",
+    "cik": 1877322,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1877322"
+  },
+  {
+    "name": "The Middleby",
+    "symbol": "MIDDx",
+    "cik": 769520,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=769520"
+  },
+  {
+    "name": "Rithm Capital",
+    "symbol": "RITMx",
+    "cik": 1556593,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1556593"
+  },
+  {
+    "name": "RingCentral",
+    "symbol": "RNGx",
+    "cik": 1384905,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1384905"
+  },
+  {
+    "name": "Sotera Health",
+    "symbol": "SHCx",
+    "cik": 1822479,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1822479"
+  },
+  {
+    "name": "Wyndham Hotels & Resorts",
+    "symbol": "WHx",
+    "cik": 1722684,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1722684"
+  },
+  {
+    "name": "Reynolds Consumer Products",
+    "symbol": "REYNx",
+    "cik": 1786431,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1786431"
+  },
+  {
+    "name": "Versant Media",
+    "symbol": "VSNTx",
+    "cik": 2067876,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2067876"
+  },
+  {
+    "name": "Avis Budget",
+    "symbol": "CARx",
+    "cik": 723612,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=723612"
+  },
+  {
+    "name": "Iridium Communications",
+    "symbol": "IRDMx",
+    "cik": 1418819,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1418819"
+  },
+  {
+    "name": "GXO Logistics",
+    "symbol": "GXOx",
+    "cik": 1852244,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1852244"
+  },
+  {
+    "name": "Fortune Brands Innovations",
+    "symbol": "FBINx",
+    "cik": 1519751,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1519751"
+  },
+  {
+    "name": "Amentum",
+    "symbol": "AMTMx",
+    "cik": 2011286,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2011286"
+  },
+  {
+    "name": "Vail Resorts",
+    "symbol": "MTNx",
+    "cik": 812011,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=812011"
+  },
+  {
+    "name": "Parsons",
+    "symbol": "PSNx",
+    "cik": 275880,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=275880"
+  },
+  {
+    "name": "Pegasystems",
+    "symbol": "PEGAx",
+    "cik": 1013857,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1013857"
+  },
+  {
+    "name": "Science Applications International",
+    "symbol": "SAICx",
+    "cik": 1571123,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1571123"
+  },
+  {
+    "name": "ExlService",
+    "symbol": "EXLSx",
+    "cik": 1297989,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1297989"
+  },
+  {
+    "name": "EPAM Systems",
+    "symbol": "EPAMx",
+    "cik": 1352010,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1352010"
+  },
+  {
+    "name": "Cirrus Logic",
+    "symbol": "CRUSx",
+    "cik": 772406,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=772406"
+  },
+  {
+    "name": "Macy's",
+    "symbol": "Mx",
+    "cik": 794367,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=794367"
+  },
+  {
+    "name": "e.l.f. Beauty",
+    "symbol": "ELFx",
+    "cik": 1600033,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1600033"
+  },
+  {
+    "name": "Schneider National",
+    "symbol": "SNDRx",
+    "cik": 1692063,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1692063"
+  },
+  {
+    "name": "Vornado Realty Trust",
+    "symbol": "VNOx",
+    "cik": 899689,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=899689"
+  },
+  {
+    "name": "Eagle Materials",
+    "symbol": "EXPx",
+    "cik": 918646,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=918646"
+  },
+  {
+    "name": "Virtu Financial",
+    "symbol": "VIRTx",
+    "cik": 1592386,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1592386"
+  },
+  {
+    "name": "MarketAxess",
+    "symbol": "MKTXx",
+    "cik": 1278021,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1278021"
+  },
+  {
+    "name": "Hexcel",
+    "symbol": "HXLx",
+    "cik": 717605,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=717605"
+  },
+  {
+    "name": "The Campbell's",
+    "symbol": "CPBx",
+    "cik": 16732,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=16732"
+  },
+  {
+    "name": "VF",
+    "symbol": "VFCx",
+    "cik": 103379,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=103379"
+  },
+  {
+    "name": "Nexstar Media",
+    "symbol": "NXSTx",
+    "cik": 1142417,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1142417"
+  },
+  {
+    "name": "ADT",
+    "symbol": "ADTx",
+    "cik": 1703056,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1703056"
+  },
+  {
+    "name": "Brunswick",
+    "symbol": "BCx",
+    "cik": 14930,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=14930"
+  },
+  {
+    "name": "Albertsons Companies",
+    "symbol": "ACIx",
+    "cik": 1646972,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1646972"
+  },
+  {
+    "name": "Karman",
+    "symbol": "KRMNx",
+    "cik": 2040127,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2040127"
+  },
+  {
+    "name": "H&R Block",
+    "symbol": "HRBx",
+    "cik": 12659,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=12659"
+  },
+  {
+    "name": "Axis Capital",
+    "symbol": "AXSx",
+    "cik": 1214816,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1214816"
+  },
+  {
+    "name": "Dolby Laboratories",
+    "symbol": "DLBx",
+    "cik": 1308547,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1308547"
+  },
+  {
+    "name": "Rayonier",
+    "symbol": "RYNx",
+    "cik": 52827,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=52827"
+  },
+  {
+    "name": "Pool",
+    "symbol": "POOLx",
+    "cik": 945841,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=945841"
+  },
+  {
+    "name": "Teleflex",
+    "symbol": "TFXx",
+    "cik": 96943,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=96943"
+  },
+  {
+    "name": "Lamb Weston",
+    "symbol": "LWx",
+    "cik": 1679273,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1679273"
+  },
+  {
+    "name": "Sonoco Products",
+    "symbol": "SONx",
+    "cik": 91767,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=91767"
+  },
+  {
+    "name": "Ingram Micro",
+    "symbol": "INGMx",
+    "cik": 1897762,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1897762"
+  },
+  {
+    "name": "The Trade Desk",
+    "symbol": "TTDx",
+    "cik": 1671933,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1671933"
+  },
+  {
+    "name": "Healthcare Realty Trust",
+    "symbol": "HRx",
+    "cik": 1360604,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1360604"
+  },
+  {
+    "name": "RLI",
+    "symbol": "RLIx",
+    "cik": 84246,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=84246"
+  },
+  {
+    "name": "Cleveland-Cliffs",
+    "symbol": "CLFx",
+    "cik": 764065,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=764065"
+  },
+  {
+    "name": "Starwood Property Trust",
+    "symbol": "STWDx",
+    "cik": 1465128,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1465128"
+  },
+  {
+    "name": "MSC Industrial Direct",
+    "symbol": "MSMx",
+    "cik": 1003078,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1003078"
+  },
+  {
+    "name": "Caesars Entertainment",
+    "symbol": "CZRx",
+    "cik": 1590895,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1590895"
+  },
+  {
+    "name": "OneMain",
+    "symbol": "OMFx",
+    "cik": 1584207,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1584207"
+  },
+  {
+    "name": "Crocs",
+    "symbol": "CROXx",
+    "cik": 1334036,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1334036"
+  },
+  {
+    "name": "Genpact",
+    "symbol": "Gx",
+    "cik": 1398659,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1398659"
+  },
+  {
+    "name": "Allegro Microsystems",
+    "symbol": "ALGMx",
+    "cik": 866291,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=866291"
+  },
+  {
+    "name": "MGIC Investment",
+    "symbol": "MTGx",
+    "cik": 876437,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=876437"
+  },
+  {
+    "name": "Matador Resources",
+    "symbol": "MTDRx",
+    "cik": 1520006,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1520006"
+  },
+  {
+    "name": "Ingredion",
+    "symbol": "INGRx",
+    "cik": 1046257,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1046257"
+  },
+  {
+    "name": "Lyft",
+    "symbol": "LYFTx",
+    "cik": 1759509,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1759509"
+  },
+  {
+    "name": "Boyd Gaming",
+    "symbol": "BYDx",
+    "cik": 906553,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=906553"
+  },
+  {
+    "name": "Stag Industrial",
+    "symbol": "STAGx",
+    "cik": 1479094,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1479094"
+  },
+  {
+    "name": "F N B",
+    "symbol": "FNBx",
+    "cik": 37808,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=37808"
+  },
+  {
+    "name": "Credit Acceptance",
+    "symbol": "CACCx",
+    "cik": 885550,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=885550"
+  },
+  {
+    "name": "Everus Construction",
+    "symbol": "ECGx",
+    "cik": 2015845,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2015845"
+  },
+  {
+    "name": "LKQ",
+    "symbol": "LKQx",
+    "cik": 1065696,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1065696"
+  },
+  {
+    "name": "Dutch Bros",
+    "symbol": "BROSx",
+    "cik": 1866581,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1866581"
+  },
+  {
+    "name": "Floor & Decor",
+    "symbol": "FNDx",
+    "cik": 1507079,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1507079"
+  },
+  {
+    "name": "Landstar System",
+    "symbol": "LSTRx",
+    "cik": 853816,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=853816"
+  },
+  {
+    "name": "WEX",
+    "symbol": "WEXx",
+    "cik": 1309108,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1309108"
+  },
+  {
+    "name": "Lear",
+    "symbol": "LEAx",
+    "cik": 842162,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=842162"
+  },
+  {
+    "name": "Powell Industries",
+    "symbol": "POWLx",
+    "cik": 80420,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=80420"
+  },
+  {
+    "name": "GitLab",
+    "symbol": "GTLBx",
+    "cik": 1653482,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1653482"
+  },
+  {
+    "name": "MSA Safety",
+    "symbol": "MSAx",
+    "cik": 66570,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=66570"
+  },
+  {
+    "name": "Gap",
+    "symbol": "GAPx",
+    "cik": 39911,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=39911"
+  },
+  {
+    "name": "Avnet",
+    "symbol": "AVTx",
+    "cik": 8858,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=8858"
+  },
+  {
+    "name": "Clearway Energy",
+    "symbol": "CWENx",
+    "cik": 1567683,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1567683"
+  },
+  {
+    "name": "Churchill Downs",
+    "symbol": "CHDNx",
+    "cik": 20212,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=20212"
+  },
+  {
+    "name": "Janus Living",
+    "symbol": "JANx",
+    "cik": 2100805,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2100805"
+  },
+  {
+    "name": "NOV",
+    "symbol": "NOVx",
+    "cik": 1021860,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1021860"
+  },
+  {
+    "name": "Kirby",
+    "symbol": "KEXx",
+    "cik": 56047,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=56047"
+  },
+  {
+    "name": "SentinelOne",
+    "symbol": "Sx",
+    "cik": 1583708,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1583708"
+  },
+  {
     "name": "X-Energy",
     "symbol": "XEx",
     "cik": 2088896,
     "url": "https://www.sec.gov/edgar/browse/?CIK=2088896"
+  },
+  {
+    "name": "Etsy",
+    "symbol": "ETSYx",
+    "cik": 1370637,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1370637"
+  },
+  {
+    "name": "Dropbox",
+    "symbol": "DBXx",
+    "cik": 1467623,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1467623"
+  },
+  {
+    "name": "First American Financial",
+    "symbol": "FAFx",
+    "cik": 1472787,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1472787"
+  },
+  {
+    "name": "Caris Life Sciences",
+    "symbol": "CAIx",
+    "cik": 2019410,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2019410"
+  },
+  {
+    "name": "Builders FirstSource",
+    "symbol": "BLDRx",
+    "cik": 1316835,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1316835"
+  },
+  {
+    "name": "Pilgrims Pride",
+    "symbol": "PPCx",
+    "cik": 802481,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=802481"
+  },
+  {
+    "name": "AGCO",
+    "symbol": "AGCOx",
+    "cik": 880266,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=880266"
+  },
+  {
+    "name": "Sprouts Farmers Market",
+    "symbol": "SFMx",
+    "cik": 1575515,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1575515"
+  },
+  {
+    "name": "Armstrong World Industries",
+    "symbol": "AWIx",
+    "cik": 7431,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=7431"
+  },
+  {
+    "name": "Simpson Manufacturing",
+    "symbol": "SSDx",
+    "cik": 920371,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=920371"
+  },
+  {
+    "name": "Primerica",
+    "symbol": "PRIx",
+    "cik": 1475922,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1475922"
+  },
+  {
+    "name": "Aecom",
+    "symbol": "ACMx",
+    "cik": 868857,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=868857"
+  },
+  {
+    "name": "Element Solutions",
+    "symbol": "ESIx",
+    "cik": 1590714,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1590714"
+  },
+  {
+    "name": "Morningstar",
+    "symbol": "MORNx",
+    "cik": 1289419,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1289419"
+  },
+  {
+    "name": "The Hanover Insurance",
+    "symbol": "THGx",
+    "cik": 944695,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=944695"
+  },
+  {
+    "name": "Idacorp",
+    "symbol": "IDAx",
+    "cik": 1057877,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1057877"
+  },
+  {
+    "name": "Smithfield Foods",
+    "symbol": "SFDx",
+    "cik": 91388,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=91388"
+  },
+  {
+    "name": "StandardAero",
+    "symbol": "SAROx",
+    "cik": 2025410,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2025410"
+  },
+  {
+    "name": "Eastman Chemical",
+    "symbol": "EMNx",
+    "cik": 915389,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=915389"
+  },
+  {
+    "name": "A.O. Smith",
+    "symbol": "AOSx",
+    "cik": 91142,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=91142"
   },
   {
     "name": "Zillow",
@@ -30,10 +1092,190 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1617640"
   },
   {
+    "name": "AppFolio",
+    "symbol": "APPFx",
+    "cik": 1433195,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1433195"
+  },
+  {
+    "name": "UiPath",
+    "symbol": "PATHx",
+    "cik": 1734722,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1734722"
+  },
+  {
+    "name": "Rexford Industrial Realty",
+    "symbol": "REXRx",
+    "cik": 1571283,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1571283"
+  },
+  {
+    "name": "Commerce Bancshares",
+    "symbol": "CBSHx",
+    "cik": 22356,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=22356"
+  },
+  {
+    "name": "Lincoln National",
+    "symbol": "LNCx",
+    "cik": 59558,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=59558"
+  },
+  {
     "name": "The Mosaic",
     "symbol": "MOSx",
     "cik": 1285785,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1285785"
+  },
+  {
+    "name": "Primo Brands",
+    "symbol": "PRMBx",
+    "cik": 2042694,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2042694"
+  },
+  {
+    "name": "The Timken",
+    "symbol": "TKRx",
+    "cik": 98362,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=98362"
+  },
+  {
+    "name": "Paylocity",
+    "symbol": "PCTYx",
+    "cik": 1591698,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1591698"
+  },
+  {
+    "name": "Kinsale Capital",
+    "symbol": "KNSLx",
+    "cik": 1669162,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1669162"
+  },
+  {
+    "name": "Molson Coors Beverage",
+    "symbol": "TAPx",
+    "cik": 24545,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=24545"
+  },
+  {
+    "name": "CarMax",
+    "symbol": "KMXx",
+    "cik": 1170010,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1170010"
+  },
+  {
+    "name": "National Fuel Gas",
+    "symbol": "NFGx",
+    "cik": 70145,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=70145"
+  },
+  {
+    "name": "BOK Financial",
+    "symbol": "BOKFx",
+    "cik": 875357,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=875357"
+  },
+  {
+    "name": "Lithia Motors",
+    "symbol": "LADx",
+    "cik": 1023128,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1023128"
+  },
+  {
+    "name": "Western Alliance Bancorp",
+    "symbol": "WALx",
+    "cik": 1212545,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1212545"
+  },
+  {
+    "name": "AptarGroup",
+    "symbol": "ATRx",
+    "cik": 896622,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=896622"
+  },
+  {
+    "name": "Houlihan Lokey",
+    "symbol": "HLIx",
+    "cik": 1302215,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1302215"
+  },
+  {
+    "name": "AeroVironment",
+    "symbol": "AVAVx",
+    "cik": 1368622,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1368622"
+  },
+  {
+    "name": "Core & Main",
+    "symbol": "CNMx",
+    "cik": 1856525,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1856525"
+  },
+  {
+    "name": "NNN REIT",
+    "symbol": "NNNx",
+    "cik": 751364,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=751364"
+  },
+  {
+    "name": "Chord Energy",
+    "symbol": "CHRDx",
+    "cik": 1486159,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1486159"
+  },
+  {
+    "name": "UGI",
+    "symbol": "UGIx",
+    "cik": 884614,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=884614"
+  },
+  {
+    "name": "Axalta Coating Systems",
+    "symbol": "AXTAx",
+    "cik": 1616862,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1616862"
+  },
+  {
+    "name": "Voya Financial",
+    "symbol": "VOYAx",
+    "cik": 1535929,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1535929"
+  },
+  {
+    "name": "Conagra Brands",
+    "symbol": "CAGx",
+    "cik": 23217,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=23217"
+  },
+  {
+    "name": "Norwegian Cruise Line",
+    "symbol": "NCLHx",
+    "cik": 1513761,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1513761"
+  },
+  {
+    "name": "Columbia Banking System",
+    "symbol": "COLBx",
+    "cik": 887343,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=887343"
+  },
+  {
+    "name": "Agree Realty",
+    "symbol": "ADCx",
+    "cik": 917251,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=917251"
+  },
+  {
+    "name": "Forgent Power Solutions",
+    "symbol": "FPSx",
+    "cik": 2080126,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2080126"
+  },
+  {
+    "name": "Brixmor Property",
+    "symbol": "BRXx",
+    "cik": 1581068,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1581068"
   },
   {
     "name": "American Airlines",
@@ -42,10 +1284,124 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=6201"
   },
   {
+    "name": "FormFactor",
+    "symbol": "FORMx",
+    "cik": 1039399,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1039399"
+  },
+  {
+    "name": "TPG",
+    "symbol": "TPGx",
+    "cik": 1880661,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1880661"
+  },
+  {
+    "name": "Vicor",
+    "symbol": "VICRx",
+    "cik": 751978,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=751978"
+  },
+  {
+    "name": "CubeSmart",
+    "symbol": "CUBEx",
+    "cik": 1298675,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1298675"
+  },
+  {
+    "name": "Bruker",
+    "symbol": "BRKRx",
+    "cik": 1109354,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1109354"
+  },
+  {
+    "name": "Bio-Rad Laboratories",
+    "symbol": "BIOx",
+    "cik": 12208,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=12208"
+  },
+  {
+    "name": "NewMarket",
+    "symbol": "NEUx",
+    "cik": 1282637,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1282637"
+  },
+  {
+    "name": "Affiliated Managers",
+    "symbol": "AMGx",
+    "cik": 1004434,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1004434"
+  },
+  {
+    "name": "Booz Allen Hamilton",
+    "symbol": "BAHx",
+    "cik": 1443646,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1443646"
+  },
+  {
+    "name": "Celsius",
+    "symbol": "CELHx",
+    "cik": 1341766,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1341766"
+  },
+  {
+    "name": "Alexandria Real Estate Equities",
+    "symbol": "AREx",
+    "cik": 1035443,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1035443"
+  },
+  {
+    "name": "Match",
+    "symbol": "MTCHx",
+    "cik": 891103,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=891103"
+  },
+  {
     "name": "Cognex",
     "symbol": "CGNXx",
     "cik": 851205,
     "url": "https://www.sec.gov/edgar/browse/?CIK=851205"
+  },
+  {
+    "name": "OGE Energy",
+    "symbol": "OGEx",
+    "cik": 1021635,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1021635"
+  },
+  {
+    "name": "The Toro",
+    "symbol": "TTCx",
+    "cik": 737758,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=737758"
+  },
+  {
+    "name": "Lineage",
+    "symbol": "LINEx",
+    "cik": 1868159,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1868159"
+  },
+  {
+    "name": "Madison Square Garden Sports",
+    "symbol": "MSGSx",
+    "cik": 1636519,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1636519"
+  },
+  {
+    "name": "Avantor",
+    "symbol": "AVTRx",
+    "cik": 1722482,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1722482"
+  },
+  {
+    "name": "Tetra Tech",
+    "symbol": "TTEKx",
+    "cik": 831641,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
+  },
+  {
+    "name": "Mohawk Industries",
+    "symbol": "MHKx",
+    "cik": 851968,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
   },
   {
     "name": "Viavi Solutions",
@@ -54,10 +1410,220 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=912093"
   },
   {
+    "name": "Range Resources",
+    "symbol": "RRCx",
+    "cik": 315852,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=315852"
+  },
+  {
+    "name": "Ryder System",
+    "symbol": "Rx",
+    "cik": 85961,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=85961"
+  },
+  {
+    "name": "Dillard's",
+    "symbol": "DDSx",
+    "cik": 28917,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=28917"
+  },
+  {
+    "name": "Valmont Industries",
+    "symbol": "VMIx",
+    "cik": 102729,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=102729"
+  },
+  {
+    "name": "Rambus",
+    "symbol": "RMBSx",
+    "cik": 917273,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=917273"
+  },
+  {
+    "name": "Chewy",
+    "symbol": "CHWYx",
+    "cik": 1766502,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1766502"
+  },
+  {
+    "name": "Westlake",
+    "symbol": "WLKx",
+    "cik": 1262823,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1262823"
+  },
+  {
+    "name": "Old Republic International",
+    "symbol": "ORIx",
+    "cik": 74260,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=74260"
+  },
+  {
+    "name": "Oshkosh",
+    "symbol": "OSKx",
+    "cik": 775158,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=775158"
+  },
+  {
+    "name": "Sirius XM",
+    "symbol": "SIRIx",
+    "cik": 908937,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=908937"
+  },
+  {
+    "name": "Insulet",
+    "symbol": "PODDx",
+    "cik": 1145197,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1145197"
+  },
+  {
+    "name": "Paycom Software",
+    "symbol": "PAYCx",
+    "cik": 1590955,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1590955"
+  },
+  {
+    "name": "Flowserve",
+    "symbol": "FLSx",
+    "cik": 30625,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=30625"
+  },
+  {
+    "name": "Acuity",
+    "symbol": "AYIx",
+    "cik": 1144215,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1144215"
+  },
+  {
+    "name": "Federal Realty Investment Trust",
+    "symbol": "FRTx",
+    "cik": 34903,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=34903"
+  },
+  {
+    "name": "Henry Schein",
+    "symbol": "HSICx",
+    "cik": 1000228,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1000228"
+  },
+  {
+    "name": "Sanmina",
+    "symbol": "SANMx",
+    "cik": 897723,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=897723"
+  },
+  {
+    "name": "Cullen/Frost Bankers",
+    "symbol": "CFRx",
+    "cik": 39263,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=39263"
+  },
+  {
+    "name": "Repligen",
+    "symbol": "RGENx",
+    "cik": 730272,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=730272"
+  },
+  {
+    "name": "Wintrust Financial",
+    "symbol": "WTFCx",
+    "cik": 1015328,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1015328"
+  },
+  {
+    "name": "Procore Technologies",
+    "symbol": "PCORx",
+    "cik": 1611052,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1611052"
+  },
+  {
+    "name": "Wynn Resorts",
+    "symbol": "WYNNx",
+    "cik": 1174922,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1174922"
+  },
+  {
+    "name": "Universal Health Services",
+    "symbol": "UHSx",
+    "cik": 352915,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=352915"
+  },
+  {
+    "name": "Murphy USA",
+    "symbol": "MUSAx",
+    "cik": 1573516,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1573516"
+  },
+  {
+    "name": "SouthState Bank",
+    "symbol": "SSBx",
+    "cik": 764038,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=764038"
+  },
+  {
+    "name": "Littelfuse",
+    "symbol": "LFUSx",
+    "cik": 889331,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=889331"
+  },
+  {
+    "name": "Ionis Pharmaceuticals",
+    "symbol": "IONSx",
+    "cik": 874015,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=874015"
+  },
+  {
     "name": "Modine Manufacturing",
     "symbol": "MODx",
     "cik": 67347,
     "url": "https://www.sec.gov/edgar/browse/?CIK=67347"
+  },
+  {
+    "name": "Ensign",
+    "symbol": "ENSGx",
+    "cik": 1125376,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1125376"
+  },
+  {
+    "name": "Summit Therapeutics",
+    "symbol": "SMMTx",
+    "cik": 1599298,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1599298"
+  },
+  {
+    "name": "Darling Ingredients",
+    "symbol": "DARx",
+    "cik": 916540,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=916540"
+  },
+  {
+    "name": "Leonardo DRS",
+    "symbol": "DRSx",
+    "cik": 1833756,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1833756"
+  },
+  {
+    "name": "Service Corp International",
+    "symbol": "SCIx",
+    "cik": 89089,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=89089"
+  },
+  {
+    "name": "SailPoint",
+    "symbol": "SAILx",
+    "cik": 2030781,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2030781"
+  },
+  {
+    "name": "Bentley Systems",
+    "symbol": "BSYx",
+    "cik": 1031308,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1031308"
+  },
+  {
+    "name": "Globalstar",
+    "symbol": "GSATx",
+    "cik": 1366868,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1366868"
   },
   {
     "name": "MP Materials",
@@ -66,10 +1632,112 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1801368"
   },
   {
+    "name": "DaVita",
+    "symbol": "DVAx",
+    "cik": 927066,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=927066"
+  },
+  {
+    "name": "Donaldson",
+    "symbol": "DCIx",
+    "cik": 29644,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=29644"
+  },
+  {
+    "name": "GoDaddy",
+    "symbol": "GDDYx",
+    "cik": 1609711,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1609711"
+  },
+  {
+    "name": "Ryan Specialty",
+    "symbol": "RYANx",
+    "cik": 1849253,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1849253"
+  },
+  {
+    "name": "BXP",
+    "symbol": "BXPx",
+    "cik": 1037540,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1037540"
+  },
+  {
+    "name": "Freedom",
+    "symbol": "FRHCx",
+    "cik": 924805,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
+  },
+  {
+    "name": "Dycom Industries",
+    "symbol": "DYx",
+    "cik": 67215,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=67215"
+  },
+  {
+    "name": "Advanced Drainage Systems",
+    "symbol": "WMSx",
+    "cik": 1604028,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1604028"
+  },
+  {
+    "name": "Antero Midstream",
+    "symbol": "AMx",
+    "cik": 1623925,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1623925"
+  },
+  {
+    "name": "FactSet Research Systems",
+    "symbol": "FDSx",
+    "cik": 1013237,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1013237"
+  },
+  {
+    "name": "Allison Transmission",
+    "symbol": "ALSNx",
+    "cik": 1411207,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1411207"
+  },
+  {
+    "name": "Semtech",
+    "symbol": "SMTCx",
+    "cik": 88941,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=88941"
+  },
+  {
+    "name": "Stifel Financial",
+    "symbol": "SFx",
+    "cik": 720672,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=720672"
+  },
+  {
+    "name": "Axsome Therapeutics",
+    "symbol": "AXSMx",
+    "cik": 1579428,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1579428"
+  },
+  {
+    "name": "EastGroup Properties",
+    "symbol": "EGPx",
+    "cik": 49600,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=49600"
+  },
+  {
+    "name": "Popular",
+    "symbol": "BPOPx",
+    "cik": 763901,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=763901"
+  },
+  {
     "name": "TTM Technologies",
     "symbol": "TTMIx",
     "cik": 1116942,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1116942"
+  },
+  {
+    "name": "Advanced Energy Industries",
+    "symbol": "AEISx",
+    "cik": 927003,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=927003"
   },
   {
     "name": "Domino's Pizza",
@@ -78,10 +1746,184 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
   },
   {
+    "name": "Kratos Defense & Security Solutions",
+    "symbol": "KTOSx",
+    "cik": 1069258,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
+  },
+  {
+    "name": "Hormel Foods",
+    "symbol": "HRLx",
+    "cik": 48465,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
+  },
+  {
+    "name": "Penske Automotive",
+    "symbol": "PAGx",
+    "cik": 1019849,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1019849"
+  },
+  {
+    "name": "SEI Investments",
+    "symbol": "SEICx",
+    "cik": 350894,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=350894"
+  },
+  {
+    "name": "Huntington Ingalls Industries",
+    "symbol": "HIIx",
+    "cik": 1501585,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1501585"
+  },
+  {
+    "name": "Encompass Health",
+    "symbol": "EHCx",
+    "cik": 785161,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=785161"
+  },
+  {
     "name": "MGM Resorts International",
     "symbol": "MGMx",
     "cik": 789570,
     "url": "https://www.sec.gov/edgar/browse/?CIK=789570"
+  },
+  {
+    "name": "Docusign",
+    "symbol": "DOCUx",
+    "cik": 1261333,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1261333"
+  },
+  {
+    "name": "Halozyme Therapeutics",
+    "symbol": "HALOx",
+    "cik": 1159036,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1159036"
+  },
+  {
+    "name": "Essential Utilities",
+    "symbol": "WTRGx",
+    "cik": 78128,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=78128"
+  },
+  {
+    "name": "American Financial",
+    "symbol": "AFGx",
+    "cik": 1042046,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1042046"
+  },
+  {
+    "name": "HubSpot",
+    "symbol": "HUBSx",
+    "cik": 1404655,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1404655"
+  },
+  {
+    "name": "Amkor Technology",
+    "symbol": "AMKRx",
+    "cik": 1047127,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1047127"
+  },
+  {
+    "name": "Globus Medical",
+    "symbol": "GMEDx",
+    "cik": 1237831,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1237831"
+  },
+  {
+    "name": "Jack Henry & Associates",
+    "symbol": "JKHYx",
+    "cik": 779152,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=779152"
+  },
+  {
+    "name": "IES",
+    "symbol": "IESCx",
+    "cik": 1048268,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1048268"
+  },
+  {
+    "name": "Owens-Corning",
+    "symbol": "OCx",
+    "cik": 1370946,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1370946"
+  },
+  {
+    "name": "Crane",
+    "symbol": "CRx",
+    "cik": 1944013,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1944013"
+  },
+  {
+    "name": "BioMarin Pharmaceutical",
+    "symbol": "BMRNx",
+    "cik": 1048477,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1048477"
+  },
+  {
+    "name": "Jefferies Financial",
+    "symbol": "JEFx",
+    "cik": 96223,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=96223"
+  },
+  {
+    "name": "American Homes 4 Rent",
+    "symbol": "AMHx",
+    "cik": 1562401,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1562401"
+  },
+  {
+    "name": "Five Below",
+    "symbol": "FIVEx",
+    "cik": 1177609,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1177609"
+  },
+  {
+    "name": "Gartner",
+    "symbol": "ITx",
+    "cik": 749251,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=749251"
+  },
+  {
+    "name": "Madrigal Pharmaceuticals",
+    "symbol": "MDGLx",
+    "cik": 1157601,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1157601"
+  },
+  {
+    "name": "Viper Energy",
+    "symbol": "VNOMx",
+    "cik": 2074176,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2074176"
+  },
+  {
+    "name": "U-Haul",
+    "symbol": "UHALx",
+    "cik": 4457,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=4457"
+  },
+  {
+    "name": "American Healthcare REIT",
+    "symbol": "AHRx",
+    "cik": 1632970,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1632970"
+  },
+  {
+    "name": "Invesco",
+    "symbol": "IVZx",
+    "cik": 914208,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=914208"
+  },
+  {
+    "name": "Corcept Therapeutics",
+    "symbol": "CORTx",
+    "cik": 1088856,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1088856"
+  },
+  {
+    "name": "Sterling Infrastructure",
+    "symbol": "STRLx",
+    "cik": 874238,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=874238"
   },
   {
     "name": "Aurora Innovation",
@@ -90,16 +1932,214 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1828108"
   },
   {
+    "name": "Hyatt Hotels",
+    "symbol": "Hx",
+    "cik": 1468174,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1468174"
+  },
+  {
+    "name": "Arrowhead Pharmaceuticals",
+    "symbol": "ARWRx",
+    "cik": 879407,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=879407"
+  },
+  {
+    "name": "Guidewire Software",
+    "symbol": "GWREx",
+    "cik": 1528396,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1528396"
+  },
+  {
+    "name": "News",
+    "symbol": "NWSx",
+    "cik": 1564708,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1564708"
+  },
+  {
+    "name": "Manhattan Associates",
+    "symbol": "MANHx",
+    "cik": 1056696,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1056696"
+  },
+  {
+    "name": "CACI International",
+    "symbol": "CACIx",
+    "cik": 16058,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=16058"
+  },
+  {
+    "name": "Baxter International",
+    "symbol": "BAXx",
+    "cik": 10456,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=10456"
+  },
+  {
+    "name": "Revvity",
+    "symbol": "RVTYx",
+    "cik": 31791,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=31791"
+  },
+  {
+    "name": "Texas Roadhouse",
+    "symbol": "TXRHx",
+    "cik": 1289460,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1289460"
+  },
+  {
+    "name": "CNA Financial",
+    "symbol": "CNAx",
+    "cik": 21175,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=21175"
+  },
+  {
+    "name": "Wayfair",
+    "symbol": "Wx",
+    "cik": 1616707,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1616707"
+  },
+  {
+    "name": "Fabrinet",
+    "symbol": "FNx",
+    "cik": 1408710,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1408710"
+  },
+  {
+    "name": "BridgeBio Pharma",
+    "symbol": "BBIOx",
+    "cik": 1743881,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1743881"
+  },
+  {
+    "name": "HF Sinclair",
+    "symbol": "DINOx",
+    "cik": 1915657,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1915657"
+  },
+  {
+    "name": "DigitalOcean",
+    "symbol": "DOCNx",
+    "cik": 1582961,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1582961"
+  },
+  {
     "name": "AGNC Investment",
     "symbol": "AGNCx",
     "cik": 1423689,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1423689"
   },
   {
+    "name": "Medpace",
+    "symbol": "MEDPx",
+    "cik": 1668397,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1668397"
+  },
+  {
+    "name": "Watts Water Technologies",
+    "symbol": "WTSx",
+    "cik": 795403,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=795403"
+  },
+  {
+    "name": "Crown",
+    "symbol": "CCKx",
+    "cik": 1219601,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1219601"
+  },
+  {
+    "name": "UL Solutions",
+    "symbol": "ULSx",
+    "cik": 1901440,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1901440"
+  },
+  {
+    "name": "Hecla Mining",
+    "symbol": "HLx",
+    "cik": 719413,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=719413"
+  },
+  {
+    "name": "Rubrik",
+    "symbol": "RBRKx",
+    "cik": 1943896,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1943896"
+  },
+  {
+    "name": "Blue Owl Capital",
+    "symbol": "OWLx",
+    "cik": 1823945,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1823945"
+  },
+  {
+    "name": "Corebridge Financial",
+    "symbol": "CRBGx",
+    "cik": 1889539,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1889539"
+  },
+  {
+    "name": "NVR",
+    "symbol": "NVRx",
+    "cik": 906163,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=906163"
+  },
+  {
+    "name": "Unity Software",
+    "symbol": "Ux",
+    "cik": 1810806,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1810806"
+  },
+  {
+    "name": "Franklin Templeton",
+    "symbol": "BENx",
+    "cik": 38777,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=38777"
+  },
+  {
+    "name": "Coeur Mining",
+    "symbol": "CDEx",
+    "cik": 215466,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=215466"
+  },
+  {
     "name": "IonQ",
     "symbol": "IONQx",
     "cik": 1824920,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1824920"
+  },
+  {
+    "name": "Amer Sports",
+    "symbol": "ASx",
+    "cik": 1988894,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1988894"
+  },
+  {
+    "name": "GLOBALFOUNDRIES",
+    "symbol": "GFSx",
+    "cik": 1709048,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1709048"
+  },
+  {
+    "name": "Toast",
+    "symbol": "TOSTx",
+    "cik": 1650164,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1650164"
+  },
+  {
+    "name": "Affirm",
+    "symbol": "AFRMx",
+    "cik": 1820953,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1820953"
+  },
+  {
+    "name": "Guardant Health",
+    "symbol": "GHx",
+    "cik": 1576280,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1576280"
+  },
+  {
+    "name": "Ubiquiti",
+    "symbol": "UIx",
+    "cik": 1511737,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1511737"
   },
   {
     "name": "Marvell 2x Long ETF",
