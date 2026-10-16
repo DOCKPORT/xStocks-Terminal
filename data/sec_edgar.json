@@ -1,9 +1,9 @@
 [
   {
-    "name": "SoundHound AI",
-    "symbol": "SOUNx",
-    "cik": 1840856,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1840856"
+    "name": "Merlin",
+    "symbol": "MRLNx",
+    "cik": 2028707,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2028707"
   },
   {
     "name": "Xerox",
@@ -102,12 +102,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1005284"
   },
   {
-    "name": "Wingstop",
-    "symbol": "WINGx",
-    "cik": 1636222,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1636222"
-  },
-  {
     "name": "Freshpet",
     "symbol": "FRPTx",
     "cik": 1611647,
@@ -118,12 +112,6 @@
     "symbol": "MATx",
     "cik": 63276,
     "url": "https://www.sec.gov/edgar/browse/?CIK=63276"
-  },
-  {
-    "name": "IPG Photonics",
-    "symbol": "IPGPx",
-    "cik": 1111928,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1111928"
   },
   {
     "name": "Seaboard",
@@ -138,12 +126,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1408075"
   },
   {
-    "name": "Assured Guaranty",
-    "symbol": "AGOx",
-    "cik": 1273813,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1273813"
-  },
-  {
     "name": "Organon",
     "symbol": "OGNx",
     "cik": 1821825,
@@ -154,12 +136,6 @@
     "symbol": "MPTx",
     "cik": 1287865,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1287865"
-  },
-  {
-    "name": "YETI",
-    "symbol": "YETIx",
-    "cik": 1670592,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1670592"
   },
   {
     "name": "Bright Horizons Family Solutions",
@@ -220,12 +196,6 @@
     "symbol": "FOURx",
     "cik": 1794669,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1794669"
-  },
-  {
-    "name": "Viking Therapeutics",
-    "symbol": "VKTXx",
-    "cik": 1607678,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1607678"
   },
   {
     "name": "Euronet Worldwide",
@@ -432,16 +402,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1032033"
   },
   {
-    "name": "Louisiana-Pacific",
-    "symbol": "LPXx",
-    "cik": 60519,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
-  },
-  {
     "name": "Gentex",
     "symbol": "GNTXx",
     "cik": 355811,
     "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
+  },
+  {
+    "name": "Louisiana-Pacific",
+    "symbol": "LPXx",
+    "cik": 60519,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
   },
   {
     "name": "TFS Financial",
@@ -460,12 +430,6 @@
     "symbol": "CHHx",
     "cik": 1046311,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1046311"
-  },
-  {
-    "name": "Valvoline",
-    "symbol": "VVVx",
-    "cik": 1674910,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1674910"
   },
   {
     "name": "Alaska Air",
@@ -544,12 +508,6 @@
     "symbol": "FBINx",
     "cik": 1519751,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1519751"
-  },
-  {
-    "name": "Amentum",
-    "symbol": "AMTMx",
-    "cik": 2011286,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=2011286"
   },
   {
     "name": "Vail Resorts",
@@ -636,12 +594,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1278021"
   },
   {
-    "name": "Hexcel",
-    "symbol": "HXLx",
-    "cik": 717605,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=717605"
-  },
-  {
     "name": "The Campbell's",
     "symbol": "CPBx",
     "cik": 16732,
@@ -670,12 +622,6 @@
     "symbol": "BCx",
     "cik": 14930,
     "url": "https://www.sec.gov/edgar/browse/?CIK=14930"
-  },
-  {
-    "name": "Albertsons Companies",
-    "symbol": "ACIx",
-    "cik": 1646972,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1646972"
   },
   {
     "name": "Karman",
@@ -906,12 +852,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1653482"
   },
   {
-    "name": "MSA Safety",
-    "symbol": "MSAx",
-    "cik": 66570,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=66570"
-  },
-  {
     "name": "Gap",
     "symbol": "GAPx",
     "cik": 39911,
@@ -952,12 +892,6 @@
     "symbol": "KEXx",
     "cik": 56047,
     "url": "https://www.sec.gov/edgar/browse/?CIK=56047"
-  },
-  {
-    "name": "SentinelOne",
-    "symbol": "Sx",
-    "cik": 1583708,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1583708"
   },
   {
     "name": "X-Energy",
@@ -1056,12 +990,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=944695"
   },
   {
-    "name": "Idacorp",
-    "symbol": "IDAx",
-    "cik": 1057877,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1057877"
-  },
-  {
     "name": "Smithfield Foods",
     "symbol": "SFDx",
     "cik": 91388,
@@ -1080,22 +1008,10 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=915389"
   },
   {
-    "name": "A.O. Smith",
-    "symbol": "AOSx",
-    "cik": 91142,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=91142"
-  },
-  {
     "name": "Zillow",
     "symbol": "Zx",
     "cik": 1617640,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1617640"
-  },
-  {
-    "name": "AppFolio",
-    "symbol": "APPFx",
-    "cik": 1433195,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1433195"
   },
   {
     "name": "UiPath",
@@ -1284,12 +1200,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=6201"
   },
   {
-    "name": "FormFactor",
-    "symbol": "FORMx",
-    "cik": 1039399,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1039399"
-  },
-  {
     "name": "TPG",
     "symbol": "TPGx",
     "cik": 1880661,
@@ -1374,12 +1284,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=737758"
   },
   {
-    "name": "Lineage",
-    "symbol": "LINEx",
-    "cik": 1868159,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1868159"
-  },
-  {
     "name": "Madison Square Garden Sports",
     "symbol": "MSGSx",
     "cik": 1636519,
@@ -1392,16 +1296,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1722482"
   },
   {
-    "name": "Tetra Tech",
-    "symbol": "TTEKx",
-    "cik": 831641,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
-  },
-  {
     "name": "Mohawk Industries",
     "symbol": "MHKx",
     "cik": 851968,
     "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
+  },
+  {
+    "name": "Tetra Tech",
+    "symbol": "TTEKx",
+    "cik": 831641,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
   },
   {
     "name": "Viavi Solutions",
@@ -1530,12 +1434,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1015328"
   },
   {
-    "name": "Procore Technologies",
-    "symbol": "PCORx",
-    "cik": 1611052,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1611052"
-  },
-  {
     "name": "Wynn Resorts",
     "symbol": "WYNNx",
     "cik": 1174922,
@@ -1662,12 +1560,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1037540"
   },
   {
-    "name": "Freedom",
-    "symbol": "FRHCx",
-    "cik": 924805,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
-  },
-  {
     "name": "Dycom Industries",
     "symbol": "DYx",
     "cik": 67215,
@@ -1702,12 +1594,6 @@
     "symbol": "SMTCx",
     "cik": 88941,
     "url": "https://www.sec.gov/edgar/browse/?CIK=88941"
-  },
-  {
-    "name": "Stifel Financial",
-    "symbol": "SFx",
-    "cik": 720672,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=720672"
   },
   {
     "name": "Axsome Therapeutics",
@@ -2160,12 +2046,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1051627"
   },
   {
-    "name": "Trump Media & Technology Group",
-    "symbol": "DJTx",
-    "cik": 1849635,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1849635"
-  },
-  {
     "name": "Korea 3x Long ETF",
     "symbol": "KORUx",
     "cik": 1424958,
@@ -2190,10 +2070,10 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1587982"
   },
   {
-    "name": "NatWest",
-    "symbol": "NWGx",
-    "cik": 844150,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=844150"
+    "name": "Banco Bilbao Vizcaya Argentaria",
+    "symbol": "BBVAx",
+    "cik": 842180,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=842180"
   },
   {
     "name": "Shell",
@@ -2206,12 +2086,6 @@
     "symbol": "VODx",
     "cik": 839923,
     "url": "https://www.sec.gov/edgar/browse/?CIK=839923"
-  },
-  {
-    "name": "SITC International",
-    "symbol": "SITCx",
-    "cik": 894315,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=894315"
   },
   {
     "name": "CoreWeave",
@@ -5518,12 +5392,6 @@
     "symbol": "SPCEx",
     "cik": 1706946,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1706946"
-  },
-  {
-    "name": "Warner Bros. Discovery",
-    "symbol": "WBDx",
-    "cik": 1437107,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1437107"
   },
   {
     "name": "Micron Technology",
