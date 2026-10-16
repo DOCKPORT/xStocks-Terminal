@@ -1,5 +1,6 @@
 {
   "_comment": "Manual sector overrides. The key is the base symbol, without the final x. A manual value wins over data/ticker_universe.json. A key that starts with an underscore is a comment. Add a key only when the feed cannot supply the value: no row, or a row with no sector. A fund reads ETF. A sector value uses the labels of the feed, so the page sums one sector and not two.",
+  "ABN": "Financial Services",
   "AIAGR": "Financial Services",
   "ANTAS": "Consumer Discretionary",
   "ASMPT": "Technology",
