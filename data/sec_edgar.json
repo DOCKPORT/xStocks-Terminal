@@ -1,11 +1,5 @@
 [
   {
-    "name": "Merlin",
-    "symbol": "MRLNx",
-    "cik": 2028707,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=2028707"
-  },
-  {
     "name": "Xerox",
     "symbol": "XRXx",
     "cik": 1770450,
@@ -180,16 +174,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1570585"
   },
   {
-    "name": "Loar",
-    "symbol": "LOARx",
-    "cik": 2000178,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=2000178"
-  },
-  {
     "name": "Kyndryl",
     "symbol": "KDx",
     "cik": 1867072,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1867072"
+  },
+  {
+    "name": "Loar",
+    "symbol": "LOARx",
+    "cik": 2000178,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2000178"
   },
   {
     "name": "Shift4 Payments",
@@ -304,6 +298,12 @@
     "symbol": "BILLx",
     "cik": 1786352,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1786352"
+  },
+  {
+    "name": "Kilroy Realty",
+    "symbol": "KRCx",
+    "cik": 1025996,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1025996"
   },
   {
     "name": "EPR Properties",
@@ -1632,16 +1632,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
   },
   {
-    "name": "Kratos Defense & Security Solutions",
-    "symbol": "KTOSx",
-    "cik": 1069258,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
-  },
-  {
     "name": "Hormel Foods",
     "symbol": "HRLx",
     "cik": 48465,
     "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
+  },
+  {
+    "name": "Kratos Defense & Security Solutions",
+    "symbol": "KTOSx",
+    "cik": 1069258,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
   },
   {
     "name": "Penske Automotive",

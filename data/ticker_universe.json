@@ -1,7 +1,7 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-10-16T15:27:01+00:00",
-  "universeCount": 45254,
+  "fetchedAt": "2026-10-19T06:02:39+00:00",
+  "universeCount": 45255,
   "count": 982,
   "tickers": [
     {
@@ -5622,6 +5622,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "KRC",
+      "cik": 1025996,
+      "name": "Kilroy Realty Corp",
+      "name_short": "Kilroy Realty",
+      "sector": "Real Estate",
+      "industry": "Office REITs",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "KRMN",
       "cik": 2040127,
       "name": "Karman Holdings Inc.",
@@ -6541,18 +6553,6 @@
       "sector": "Healthcare",
       "industry": "Pharmaceuticals",
       "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "MRLN",
-      "cik": 2028707,
-      "name": "Merlin, Inc.",
-      "name_short": "Merlin",
-      "sector": "Financial Services",
-      "industry": "Alternative Asset Managers",
-      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -11538,6 +11538,18 @@
     },
     {
       "security_type": "ETF",
+      "ticker": "SNXX",
+      "cik": 1587982,
+      "name": "Investment Managers Series Trust II",
+      "name_short": "Investment Managers Series Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000100925",
+      "contractid": "C000270846"
+    },
+    {
+      "security_type": "ETF",
       "ticker": "SOXL",
       "cik": 1424958,
       "name": "Direxion Shares ETF Trust",
@@ -11763,18 +11775,6 @@
       "exchange": null,
       "seriesid": "S000099377",
       "contractid": "C000269153"
-    },
-    {
-      "security_type": "Fund",
-      "ticker": "SNXX",
-      "cik": 1587982,
-      "name": "Investment Managers Series Trust II",
-      "name_short": "Investment Managers Series Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000100925",
-      "contractid": "C000270846"
     },
     {
       "security_type": "Fund",
