@@ -1,3 +1,5 @@
+![Run scripts](https://github.com/DOCKPORT/xStocks-Terminal/actions/workflows/run_scripts.yml/badge.svg)
+
 # xStocks Terminal
 
 A web app that analyzes all xStocks tokenized assets.
