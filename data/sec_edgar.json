@@ -1,5 +1,53 @@
 [
   {
+    "name": "Chubb",
+    "symbol": "CBx",
+    "cik": 896159,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=896159"
+  },
+  {
+    "name": "CRH",
+    "symbol": "CRHx",
+    "cik": 849395,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=849395"
+  },
+  {
+    "name": "SLB",
+    "symbol": "SLBx",
+    "cik": 87347,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=87347"
+  },
+  {
+    "name": "Johnson Controls International",
+    "symbol": "JCIx",
+    "cik": 833444,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=833444"
+  },
+  {
+    "name": "Flex",
+    "symbol": "FLEXx",
+    "cik": 866374,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=866374"
+  },
+  {
+    "name": "Aon",
+    "symbol": "AONx",
+    "cik": 315293,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=315293"
+  },
+  {
+    "name": "Trane Technologies",
+    "symbol": "TTx",
+    "cik": 1466258,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1466258"
+  },
+  {
+    "name": "TechnipFMC",
+    "symbol": "FTIx",
+    "cik": 1681459,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1681459"
+  },
+  {
     "name": "Xerox",
     "symbol": "XRXx",
     "cik": 1770450,
@@ -1296,16 +1344,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1722482"
   },
   {
-    "name": "Mohawk Industries",
-    "symbol": "MHKx",
-    "cik": 851968,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
-  },
-  {
     "name": "Tetra Tech",
     "symbol": "TTEKx",
     "cik": 831641,
     "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
+  },
+  {
+    "name": "Mohawk Industries",
+    "symbol": "MHKx",
+    "cik": 851968,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
   },
   {
     "name": "Viavi Solutions",
@@ -1632,16 +1680,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
   },
   {
-    "name": "Hormel Foods",
-    "symbol": "HRLx",
-    "cik": 48465,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
-  },
-  {
     "name": "Kratos Defense & Security Solutions",
     "symbol": "KTOSx",
     "cik": 1069258,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
+  },
+  {
+    "name": "Hormel Foods",
+    "symbol": "HRLx",
+    "cik": 48465,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
   },
   {
     "name": "Penske Automotive",
@@ -5352,6 +5400,12 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1100663"
   },
   {
+    "name": "S&P Global",
+    "symbol": "SPGIx",
+    "cik": 64040,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=64040"
+  },
+  {
     "name": "T-Mobile",
     "symbol": "TMUSx",
     "cik": 1283699,
@@ -5410,6 +5464,12 @@
     "symbol": "PANWx",
     "cik": 1327567,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1327567"
+  },
+  {
+    "name": "Tempus AI",
+    "symbol": "TEMx",
+    "cik": 1717115,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1717115"
   },
   {
     "name": "ASML",
@@ -5518,12 +5578,6 @@
     "symbol": "MSTRx",
     "cik": 1050446,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1050446"
-  },
-  {
-    "name": "TBLL",
-    "symbol": "TBLLx",
-    "cik": 1378872,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1378872"
   },
   {
     "name": "OPEN",

@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-10-19T06:02:39+00:00",
+  "fetchedAt": "2026-10-21T11:12:17+00:00",
   "universeCount": 45255,
-  "count": 982,
+  "count": 991,
   "tickers": [
     {
       "security_type": "Equity",
@@ -648,6 +648,18 @@
       "name_short": "Arista Networks",
       "sector": "Technology",
       "industry": "Server and Storage Hardware",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "AON",
+      "cik": 315293,
+      "name": "Aon plc",
+      "name_short": "Aon",
+      "sector": "Financial Services",
+      "industry": "Insurance Brokers",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -1746,6 +1758,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "CB",
+      "cik": 896159,
+      "name": "Chubb Ltd",
+      "name_short": "Chubb",
+      "sector": "Financial Services",
+      "industry": "Property and Casualty Insurance",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "CBRE",
       "cik": 1138118,
       "name": "Cbre Group, Inc.",
@@ -2460,6 +2484,18 @@
       "name_short": "Circle Internet",
       "sector": "Financial Services",
       "industry": "Crypto Exchanges",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "CRH",
+      "cik": 849395,
+      "name": "Crh Public Ltd Co",
+      "name_short": "Crh Public",
+      "sector": "Basic Materials",
+      "industry": "Cement",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -3978,6 +4014,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "FLEX",
+      "cik": 866374,
+      "name": "Flex Ltd.",
+      "name_short": "Flex",
+      "sector": "Technology",
+      "industry": "Electronic Manufacturing Services",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "FLNC",
       "cik": 1868941,
       "name": "Fluence Energy, Inc.",
@@ -4129,6 +4177,18 @@
       "sector": "Industrials",
       "industry": "Commercial Aerospace",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "FTI",
+      "cik": 1681459,
+      "name": "TechnipFMC plc",
+      "name_short": "TechnipFMC",
+      "sector": "Energy",
+      "industry": "Oilfield Equipment",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -5328,6 +5388,18 @@
       "name_short": "Jabil",
       "sector": "Technology",
       "industry": "Electronic Manufacturing Services",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "JCI",
+      "cik": 833444,
+      "name": "Johnson Controls International plc",
+      "name_short": "Johnson Controls International",
+      "sector": "Industrials",
+      "industry": "HVAC",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -8982,6 +9054,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "SLB",
+      "cik": 87347,
+      "name": "Slb Limited/Nv",
+      "name_short": "Slb",
+      "sector": "Energy",
+      "industry": "Oilfield Services",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "SLGN",
       "cik": 849869,
       "name": "Silgan Holdings Inc",
@@ -9216,6 +9300,18 @@
       "name_short": "Simon Property",
       "sector": "Real Estate",
       "industry": "Retail REITs",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "SPGI",
+      "cik": 64040,
+      "name": "S&P Global Inc.",
+      "name_short": "S&P Global",
+      "sector": "Financial Services",
+      "industry": "Financial Data and Analytics",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -9480,6 +9576,18 @@
       "name_short": "Atlassian",
       "sector": "Technology",
       "industry": "Productivity Software",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "TEM",
+      "cik": 1717115,
+      "name": "Tempus AI, Inc.",
+      "name_short": "Tempus AI",
+      "sector": "Healthcare",
+      "industry": "Diagnostic Labs",
       "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
@@ -9816,6 +9924,18 @@
       "name_short": "Tyson Foods",
       "sector": "Consumer Staples",
       "industry": "Meat and Poultry",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "TT",
+      "cik": 1466258,
+      "name": "Trane Technologies plc",
+      "name_short": "Trane Technologies",
+      "sector": "Industrials",
+      "industry": "HVAC",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -11595,18 +11715,6 @@
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "TBLL",
-      "cik": 1378872,
-      "name": "Invesco Exchange-Traded Fund Trust II",
-      "name_short": "Invesco Exchange-Traded Fund Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000055054",
-      "contractid": "C000173134"
     },
     {
       "security_type": "ETF",
