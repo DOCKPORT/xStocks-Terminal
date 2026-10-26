@@ -1,7 +1,7 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-10-23T23:24:43+00:00",
-  "universeCount": 45269,
+  "fetchedAt": "2026-10-26T06:02:04+00:00",
+  "universeCount": 45271,
   "count": 1074,
   "tickers": [
     {
@@ -3048,7 +3048,7 @@
       "name_short": "Dillard'S",
       "sector": "Consumer Discretionary",
       "industry": "Department Stores",
-      "exchange": "NYSE",
+      "exchange": "TXSE",
       "seriesid": null,
       "contractid": null
     },
@@ -11132,8 +11132,8 @@
       "security_type": "Equity",
       "ticker": "USB",
       "cik": 36104,
-      "name": "Us Bancorp De",
-      "name_short": "Us Bancorp",
+      "name": "Us Bancorp \\De\\",
+      "name_short": "Us Bancorp \\De\\",
       "sector": "Financial Services",
       "industry": "Money Center Banks",
       "exchange": "NYSE",
@@ -12235,18 +12235,6 @@
     {
       "security_type": "ETF",
       "ticker": "CHAD",
-      "cik": 1424958,
-      "name": "Direxion Shares ETF Trust",
-      "name_short": "Direxion Shares ETF Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000048906",
-      "contractid": "C000154004"
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "CHAD",
       "cik": 1805526,
       "name": "DeFi Development Corp.",
       "name_short": "DeFi Development",
@@ -12255,6 +12243,18 @@
       "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "CHAD",
+      "cik": 1424958,
+      "name": "Direxion Shares ETF Trust",
+      "name_short": "Direxion Shares ETF Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000048906",
+      "contractid": "C000154004"
     },
     {
       "security_type": "ETF",
