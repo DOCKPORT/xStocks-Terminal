@@ -780,16 +780,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1032033"
   },
   {
-    "name": "Gentex",
-    "symbol": "GNTXx",
-    "cik": 355811,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
-  },
-  {
     "name": "Louisiana-Pacific",
     "symbol": "LPXx",
     "cik": 60519,
     "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
+  },
+  {
+    "name": "Gentex",
+    "symbol": "GNTXx",
+    "cik": 355811,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
   },
   {
     "name": "TFS Financial",
@@ -1764,28 +1764,22 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1868159"
   },
   {
-    "name": "Madison Square Garden Sports",
-    "symbol": "MSGSx",
-    "cik": 1636519,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1636519"
-  },
-  {
     "name": "Avantor",
     "symbol": "AVTRx",
     "cik": 1722482,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1722482"
   },
   {
-    "name": "Mohawk Industries",
-    "symbol": "MHKx",
-    "cik": 851968,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
-  },
-  {
     "name": "Tetra Tech",
     "symbol": "TTEKx",
     "cik": 831641,
     "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
+  },
+  {
+    "name": "Mohawk Industries",
+    "symbol": "MHKx",
+    "cik": 851968,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
   },
   {
     "name": "Viavi Solutions",
@@ -2130,16 +2124,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
   },
   {
-    "name": "Hormel Foods",
-    "symbol": "HRLx",
-    "cik": 48465,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
-  },
-  {
     "name": "Kratos Defense & Security Solutions",
     "symbol": "KTOSx",
     "cik": 1069258,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
+  },
+  {
+    "name": "Hormel Foods",
+    "symbol": "HRLx",
+    "cik": 48465,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
   },
   {
     "name": "Penske Automotive",
@@ -2592,6 +2586,18 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=842180"
   },
   {
+    "name": "BP",
+    "symbol": "BPx",
+    "cik": 313807,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=313807"
+  },
+  {
+    "name": "NatWest",
+    "symbol": "NWGx",
+    "cik": 844150,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=844150"
+  },
+  {
     "name": "Shell",
     "symbol": "SHELx",
     "cik": 1306965,
@@ -2602,6 +2608,12 @@
     "symbol": "VODx",
     "cik": 839923,
     "url": "https://www.sec.gov/edgar/browse/?CIK=839923"
+  },
+  {
+    "name": "SITC International",
+    "symbol": "SITCx",
+    "cik": 894315,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=894315"
   },
   {
     "name": "CoreWeave",

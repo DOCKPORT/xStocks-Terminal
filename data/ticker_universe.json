@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-10-26T06:02:04+00:00",
-  "universeCount": 45271,
-  "count": 1074,
+  "fetchedAt": "2026-10-28T13:03:48+00:00",
+  "universeCount": 45253,
+  "count": 1076,
   "tickers": [
     {
       "security_type": "Equity",
@@ -1573,6 +1573,18 @@
       "sector": "Financial Services",
       "industry": "Regional Banks",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "BP",
+      "cik": 313807,
+      "name": "Bp Plc",
+      "name_short": "Bp",
+      "sector": "Energy",
+      "industry": "Integrated Oil and Gas",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -7242,18 +7254,6 @@
     },
     {
       "security_type": "Equity",
-      "ticker": "MSGS",
-      "cik": 1636519,
-      "name": "Madison Square Garden Sports Corp.",
-      "name_short": "Madison Square Garden Sports",
-      "sector": "Consumer Discretionary",
-      "industry": "Entertainment Venues",
-      "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
       "ticker": "MSI",
       "cik": 68505,
       "name": "Motorola Solutions, Inc.",
@@ -7800,6 +7800,18 @@
       "name_short": "Envista Holdings",
       "sector": "Healthcare",
       "industry": "Dental",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "NWG",
+      "cik": 844150,
+      "name": "NatWest Group plc",
+      "name_short": "NatWest",
+      "sector": "Financial Services",
+      "industry": "Money Center Banks",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -9745,6 +9757,18 @@
       "sector": "Communication Services",
       "industry": "Radio Broadcasting",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "SITC",
+      "cik": 894315,
+      "name": "SITE Centers Corp.",
+      "name_short": "SITE Centers",
+      "sector": "Real Estate",
+      "industry": "Retail REITs",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
