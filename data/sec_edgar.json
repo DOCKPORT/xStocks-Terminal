@@ -236,8 +236,8 @@
   {
     "name": "DeFi Development Corp. Variable Rate Series C Perpetual Preferred",
     "symbol": "CHADx",
-    "cik": 1805526,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1805526"
+    "cik": 1424958,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1424958"
   },
   {
     "name": "Lucid",
@@ -2040,16 +2040,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1037540"
   },
   {
-    "name": "Dycom Industries",
-    "symbol": "DYx",
-    "cik": 67215,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=67215"
-  },
-  {
     "name": "Freedom",
     "symbol": "FRHCx",
     "cik": 924805,
     "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
+  },
+  {
+    "name": "Dycom Industries",
+    "symbol": "DYx",
+    "cik": 67215,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=67215"
   },
   {
     "name": "Advanced Drainage Systems",
@@ -2124,16 +2124,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
   },
   {
-    "name": "Kratos Defense & Security Solutions",
-    "symbol": "KTOSx",
-    "cik": 1069258,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
-  },
-  {
     "name": "Hormel Foods",
     "symbol": "HRLx",
     "cik": 48465,
     "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
+  },
+  {
+    "name": "Kratos Defense & Security Solutions",
+    "symbol": "KTOSx",
+    "cik": 1069258,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
   },
   {
     "name": "Penske Automotive",
@@ -5572,12 +5572,6 @@
     "symbol": "YLDEx",
     "cik": 1645194,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1645194"
-  },
-  {
-    "name": "Fidelity AAA CLO",
-    "symbol": "FAAAx",
-    "cik": 1562565,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1562565"
   },
   {
     "name": "Direxion Semiconductor Bull 3X",

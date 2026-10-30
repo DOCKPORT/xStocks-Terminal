@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-10-28T13:03:48+00:00",
-  "universeCount": 45253,
-  "count": 1076,
+  "fetchedAt": "2026-10-30T17:07:04+00:00",
+  "universeCount": 45255,
+  "count": 1075,
   "tickers": [
     {
       "security_type": "Equity",
@@ -11156,8 +11156,8 @@
       "security_type": "Equity",
       "ticker": "USB",
       "cik": 36104,
-      "name": "Us Bancorp \\De\\",
-      "name_short": "Us Bancorp \\De\\",
+      "name": "Us Bancorp De",
+      "name_short": "Us Bancorp",
       "sector": "Financial Services",
       "industry": "Money Center Banks",
       "exchange": "NYSE",
@@ -12259,18 +12259,6 @@
     {
       "security_type": "ETF",
       "ticker": "CHAD",
-      "cik": 1805526,
-      "name": "DeFi Development Corp.",
-      "name_short": "DeFi Development",
-      "sector": null,
-      "industry": null,
-      "exchange": "NASDAQ",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "CHAD",
       "cik": 1424958,
       "name": "Direxion Shares ETF Trust",
       "name_short": "Direxion Shares ETF Trust",
@@ -12279,6 +12267,18 @@
       "exchange": null,
       "seriesid": "S000048906",
       "contractid": "C000154004"
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "CHAD",
+      "cik": 1805526,
+      "name": "DeFi Development Corp.",
+      "name_short": "DeFi Development",
+      "sector": null,
+      "industry": null,
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
     },
     {
       "security_type": "ETF",
@@ -12891,18 +12891,6 @@
       "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
-    },
-    {
-      "security_type": "Fund",
-      "ticker": "FAAA",
-      "cik": 1562565,
-      "name": "Fidelity Merrimack Street Trust",
-      "name_short": "Fidelity Merrimack Street Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000099377",
-      "contractid": "C000269153"
     },
     {
       "security_type": "Fund",
