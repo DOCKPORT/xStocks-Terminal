@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-10-30T17:07:04+00:00",
-  "universeCount": 45255,
-  "count": 1075,
+  "fetchedAt": "2026-11-02T07:39:18+00:00",
+  "universeCount": 45271,
+  "count": 1070,
   "tickers": [
     {
       "security_type": "Equity",
@@ -325,18 +325,6 @@
       "sector": "Industrials",
       "industry": "Agricultural Machinery",
       "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "AGNC",
-      "cik": 1423689,
-      "name": "AGNC Investment Corp.",
-      "name_short": "AGNC Investment",
-      "sector": "Financial Services",
-      "industry": "Mortgage REITs",
-      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -7602,18 +7590,6 @@
     },
     {
       "security_type": "Equity",
-      "ticker": "NNN",
-      "cik": 751364,
-      "name": "Nnn Reit, Inc.",
-      "name_short": "Nnn Reit",
-      "sector": "Real Estate",
-      "industry": "Net Lease REITs",
-      "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
       "ticker": "NOC",
       "cik": 1133421,
       "name": "Northrop Grumman Corp /De/",
@@ -12259,18 +12235,6 @@
     {
       "security_type": "ETF",
       "ticker": "CHAD",
-      "cik": 1424958,
-      "name": "Direxion Shares ETF Trust",
-      "name_short": "Direxion Shares ETF Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000048906",
-      "contractid": "C000154004"
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "CHAD",
       "cik": 1805526,
       "name": "DeFi Development Corp.",
       "name_short": "DeFi Development",
@@ -12279,6 +12243,18 @@
       "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "CHAD",
+      "cik": 1424958,
+      "name": "Direxion Shares ETF Trust",
+      "name_short": "Direxion Shares ETF Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000048906",
+      "contractid": "C000154004"
     },
     {
       "security_type": "ETF",
@@ -12498,30 +12474,6 @@
     },
     {
       "security_type": "ETF",
-      "ticker": "JAAA",
-      "cik": 1500604,
-      "name": "Janus Detroit Street Trust",
-      "name_short": "Janus Detroit Street Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000069705",
-      "contractid": "C000222294"
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "JPST",
-      "cik": 1485894,
-      "name": "J.P. Morgan Exchange-Traded Fund Trust",
-      "name_short": "J.P. Morgan Exchange-Traded Fund Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000054790",
-      "contractid": "C000172198"
-    },
-    {
-      "security_type": "ETF",
       "ticker": "KORU",
       "cik": 1424958,
       "name": "Direxion Shares ETF Trust",
@@ -12627,18 +12579,6 @@
       "exchange": null,
       "seriesid": "S000026637",
       "contractid": "C000079984"
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "SGOV",
-      "cik": 1100663,
-      "name": "iSHARES TRUST",
-      "name_short": "iSHARES TRUST",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000068768",
-      "contractid": "C000219740"
     },
     {
       "security_type": "ETF",

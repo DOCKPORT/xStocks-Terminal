@@ -236,8 +236,8 @@
   {
     "name": "DeFi Development Corp. Variable Rate Series C Perpetual Preferred",
     "symbol": "CHADx",
-    "cik": 1424958,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1424958"
+    "cik": 1805526,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1805526"
   },
   {
     "name": "Lucid",
@@ -780,16 +780,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1032033"
   },
   {
-    "name": "Louisiana-Pacific",
-    "symbol": "LPXx",
-    "cik": 60519,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
-  },
-  {
     "name": "Gentex",
     "symbol": "GNTXx",
     "cik": 355811,
     "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
+  },
+  {
+    "name": "Louisiana-Pacific",
+    "symbol": "LPXx",
+    "cik": 60519,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
   },
   {
     "name": "TFS Financial",
@@ -1594,12 +1594,6 @@
     "symbol": "CNMx",
     "cik": 1856525,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1856525"
-  },
-  {
-    "name": "NNN REIT",
-    "symbol": "NNNx",
-    "cik": 751364,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=751364"
   },
   {
     "name": "Chord Energy",
@@ -2410,12 +2404,6 @@
     "symbol": "DOCNx",
     "cik": 1582961,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1582961"
-  },
-  {
-    "name": "AGNC Investment",
-    "symbol": "AGNCx",
-    "cik": 1423689,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1423689"
   },
   {
     "name": "Medpace",
@@ -5526,18 +5514,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1168164"
   },
   {
-    "name": "Janus Henderson AAA CLO",
-    "symbol": "JAAAx",
-    "cik": 1500604,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1500604"
-  },
-  {
-    "name": "JPMorgan Ultra-Short Income",
-    "symbol": "JPSTx",
-    "cik": 1485894,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1485894"
-  },
-  {
     "name": "Franklin U.S. Mid Cap Multi-Factor",
     "symbol": "FLQMx",
     "cik": 1655589,
@@ -5650,12 +5626,6 @@
     "symbol": "VXUSx",
     "cik": 736054,
     "url": "https://www.sec.gov/edgar/browse/?CIK=736054"
-  },
-  {
-    "name": "iShares 0-3 Month Treasury Bond ETF",
-    "symbol": "SGOVx",
-    "cik": 1100663,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1100663"
   },
   {
     "name": "Vanguard Growth ETF",
