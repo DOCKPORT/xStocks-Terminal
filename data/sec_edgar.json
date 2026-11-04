@@ -1,5 +1,233 @@
 [
   {
+    "name": "United States Oil Fund",
+    "symbol": "USOx",
+    "cik": 1327068,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1327068"
+  },
+  {
+    "name": "LyondellBasell Industries",
+    "symbol": "LYBx",
+    "cik": 1489393,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1489393"
+  },
+  {
+    "name": "State Street SPDR S&P Biotech ETF",
+    "symbol": "XBIx",
+    "cik": 1064642,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1064642"
+  },
+  {
+    "name": "Flutter Entertainment",
+    "symbol": "FLUTx",
+    "cik": 1635327,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1635327"
+  },
+  {
+    "name": "Infleqtion",
+    "symbol": "INFQx",
+    "cik": 2007825,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2007825"
+  },
+  {
+    "name": "Global X Defense Tech ETF",
+    "symbol": "SHLDx",
+    "cik": 1432353,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1432353"
+  },
+  {
+    "name": "Bunge Global",
+    "symbol": "BGx",
+    "cik": 1996862,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1996862"
+  },
+  {
+    "name": "Jazz Pharmaceuticals",
+    "symbol": "JAZZx",
+    "cik": 1232524,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1232524"
+  },
+  {
+    "name": "Ouster",
+    "symbol": "OUSTx",
+    "cik": 1816581,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1816581"
+  },
+  {
+    "name": "Figure Technology Solutions",
+    "symbol": "FIGRx",
+    "cik": 2064124,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2064124"
+  },
+  {
+    "name": "Arqit Quantum",
+    "symbol": "ARQQx",
+    "cik": 1859690,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1859690"
+  },
+  {
+    "name": "Willis Towers Watson",
+    "symbol": "WTWx",
+    "cik": 1140536,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1140536"
+  },
+  {
+    "name": "PDD",
+    "symbol": "PDDx",
+    "cik": 1737806,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1737806"
+  },
+  {
+    "name": "Penguin Solutions",
+    "symbol": "PENGx",
+    "cik": 1616533,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1616533"
+  },
+  {
+    "name": "Forward Industries",
+    "symbol": "FWDIx",
+    "cik": 38264,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=38264"
+  },
+  {
+    "name": "ProShares UltraPro Short QQQ",
+    "symbol": "SQQQx",
+    "cik": 1174610,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1174610"
+  },
+  {
+    "name": "SPX Technologies",
+    "symbol": "SPXCx",
+    "cik": 88205,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=88205"
+  },
+  {
+    "name": "Prosperity Bancshares",
+    "symbol": "PBx",
+    "cik": 1068851,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1068851"
+  },
+  {
+    "name": "Capricor Therapeutics",
+    "symbol": "CAPRx",
+    "cik": 1133869,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1133869"
+  },
+  {
+    "name": "Doximity",
+    "symbol": "DOCSx",
+    "cik": 1516513,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1516513"
+  },
+  {
+    "name": "Pentair",
+    "symbol": "PNRx",
+    "cik": 77360,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=77360"
+  },
+  {
+    "name": "Rocket Companies",
+    "symbol": "RKTx",
+    "cik": 1805284,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1805284"
+  },
+  {
+    "name": "Chime Financial",
+    "symbol": "CHYMx",
+    "cik": 1795586,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1795586"
+  },
+  {
+    "name": "UWM",
+    "symbol": "UWMCx",
+    "cik": 1783398,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1783398"
+  },
+  {
+    "name": "GraniteShares 2x Long NVDA Daily ETF",
+    "symbol": "NVDLx",
+    "cik": 1689873,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1689873"
+  },
+  {
+    "name": "AMC Entertainment",
+    "symbol": "AMCx",
+    "cik": 1411579,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1411579"
+  },
+  {
+    "name": "GoPro",
+    "symbol": "GPROx",
+    "cik": 1500435,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1500435"
+  },
+  {
+    "name": "Credo Technology",
+    "symbol": "CRDOx",
+    "cik": 1807794,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1807794"
+  },
+  {
+    "name": "DT Midstream",
+    "symbol": "DTMx",
+    "cik": 1842022,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1842022"
+  },
+  {
+    "name": "Royalty Pharma",
+    "symbol": "RPRXx",
+    "cik": 1802768,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1802768"
+  },
+  {
+    "name": "Garmin",
+    "symbol": "GRMNx",
+    "cik": 1121788,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1121788"
+  },
+  {
+    "name": "AutoNation",
+    "symbol": "ANx",
+    "cik": 350698,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=350698"
+  },
+  {
+    "name": "Nu",
+    "symbol": "NUx",
+    "cik": 1691493,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1691493"
+  },
+  {
+    "name": "Bilibili",
+    "symbol": "BILIx",
+    "cik": 1723690,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1723690"
+  },
+  {
+    "name": "Carnival",
+    "symbol": "CCLx",
+    "cik": 815097,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=815097"
+  },
+  {
+    "name": "iShares MSCI Taiwan ETF",
+    "symbol": "EWTx",
+    "cik": 930667,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=930667"
+  },
+  {
+    "name": "Arch Capital",
+    "symbol": "ACGLx",
+    "cik": 947484,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=947484"
+  },
+  {
+    "name": "Steris",
+    "symbol": "STEx",
+    "cik": 1757898,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1757898"
+  },
+  {
     "name": "Chubb",
     "symbol": "CBx",
     "cik": 896159,
@@ -236,8 +464,8 @@
   {
     "name": "DeFi Development Corp. Variable Rate Series C Perpetual Preferred",
     "symbol": "CHADx",
-    "cik": 1805526,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1805526"
+    "cik": 1424958,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1424958"
   },
   {
     "name": "Lucid",
@@ -546,16 +774,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1570585"
   },
   {
-    "name": "Kyndryl",
-    "symbol": "KDx",
-    "cik": 1867072,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1867072"
-  },
-  {
     "name": "Loar",
     "symbol": "LOARx",
     "cik": 2000178,
     "url": "https://www.sec.gov/edgar/browse/?CIK=2000178"
+  },
+  {
+    "name": "Kyndryl",
+    "symbol": "KDx",
+    "cik": 1867072,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1867072"
   },
   {
     "name": "Shift4 Payments",
@@ -780,16 +1008,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1032033"
   },
   {
-    "name": "Gentex",
-    "symbol": "GNTXx",
-    "cik": 355811,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
-  },
-  {
     "name": "Louisiana-Pacific",
     "symbol": "LPXx",
     "cik": 60519,
     "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
+  },
+  {
+    "name": "Gentex",
+    "symbol": "GNTXx",
+    "cik": 355811,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
   },
   {
     "name": "TFS Financial",
@@ -1596,6 +1824,12 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1856525"
   },
   {
+    "name": "NNN REIT",
+    "symbol": "NNNx",
+    "cik": 751364,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=751364"
+  },
+  {
     "name": "Chord Energy",
     "symbol": "CHRDx",
     "cik": 1486159,
@@ -2118,16 +2352,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
   },
   {
-    "name": "Hormel Foods",
-    "symbol": "HRLx",
-    "cik": 48465,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
-  },
-  {
     "name": "Kratos Defense & Security Solutions",
     "symbol": "KTOSx",
     "cik": 1069258,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
+  },
+  {
+    "name": "Hormel Foods",
+    "symbol": "HRLx",
+    "cik": 48465,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
   },
   {
     "name": "Penske Automotive",
@@ -2404,6 +2638,12 @@
     "symbol": "DOCNx",
     "cik": 1582961,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1582961"
+  },
+  {
+    "name": "AGNC Investment",
+    "symbol": "AGNCx",
+    "cik": 1423689,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1423689"
   },
   {
     "name": "Medpace",
@@ -4212,12 +4452,6 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1408198"
   },
   {
-    "name": "Kenvue",
-    "symbol": "KVUEx",
-    "cik": 1944048,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1944048"
-  },
-  {
     "name": "Revolution Medicines",
     "symbol": "RVMDx",
     "cik": 1628171,
@@ -5514,6 +5748,18 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1168164"
   },
   {
+    "name": "Janus Henderson AAA CLO",
+    "symbol": "JAAAx",
+    "cik": 1500604,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1500604"
+  },
+  {
+    "name": "JPMorgan Ultra-Short Income",
+    "symbol": "JPSTx",
+    "cik": 1485894,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1485894"
+  },
+  {
     "name": "Franklin U.S. Mid Cap Multi-Factor",
     "symbol": "FLQMx",
     "cik": 1655589,
@@ -5548,6 +5794,12 @@
     "symbol": "YLDEx",
     "cik": 1645194,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1645194"
+  },
+  {
+    "name": "Fidelity AAA CLO",
+    "symbol": "FAAAx",
+    "cik": 1562565,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1562565"
   },
   {
     "name": "Direxion Semiconductor Bull 3X",
@@ -5626,6 +5878,12 @@
     "symbol": "VXUSx",
     "cik": 736054,
     "url": "https://www.sec.gov/edgar/browse/?CIK=736054"
+  },
+  {
+    "name": "iShares 0-3 Month Treasury Bond ETF",
+    "symbol": "SGOVx",
+    "cik": 1100663,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1100663"
   },
   {
     "name": "Vanguard Growth ETF",
@@ -5980,6 +6238,12 @@
     "symbol": "UBERx",
     "cik": 1543151,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1543151"
+  },
+  {
+    "name": "BlackRock",
+    "symbol": "BLKx",
+    "cik": 2012383,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2012383"
   },
   {
     "name": "Adobe",

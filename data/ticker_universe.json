@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-11-02T07:39:18+00:00",
-  "universeCount": 45271,
-  "count": 1070,
+  "fetchedAt": "2026-11-04T13:52:42+00:00",
+  "universeCount": 45289,
+  "count": 1115,
   "tickers": [
     {
       "security_type": "Equity",
@@ -109,6 +109,18 @@
       "sector": "Healthcare",
       "industry": "Medical Devices",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "ACGL",
+      "cik": 947484,
+      "name": "Arch Capital Group Ltd.",
+      "name_short": "Arch Capital",
+      "sector": "Financial Services",
+      "industry": "Property and Casualty Insurance",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -325,6 +337,18 @@
       "sector": "Industrials",
       "industry": "Agricultural Machinery",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "AGNC",
+      "cik": 1423689,
+      "name": "AGNC Investment Corp.",
+      "name_short": "AGNC Investment",
+      "sector": "Financial Services",
+      "industry": "Mortgage REITs",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -594,6 +618,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "AMC",
+      "cik": 1411579,
+      "name": "Amc Entertainment Holdings, Inc.",
+      "name_short": "Amc Entertainment Holdings",
+      "sector": "Communication Services",
+      "industry": "Movie Theaters",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "AMD",
       "cik": 2488,
       "name": "Advanced Micro Devices Inc",
@@ -709,6 +745,18 @@
       "sector": "Consumer Discretionary",
       "industry": "Online Retail",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "AN",
+      "cik": 350698,
+      "name": "Autonation, Inc.",
+      "name_short": "Autonation",
+      "sector": "Consumer Discretionary",
+      "industry": "Auto Dealerships",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -889,6 +937,18 @@
       "sector": "Industrials",
       "industry": "Facility Services",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "ARQQ",
+      "cik": 1859690,
+      "name": "Arqit Quantum Inc.",
+      "name_short": "Arqit Quantum",
+      "sector": "Technology",
+      "industry": "Quantum Computing",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -1410,6 +1470,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "BG",
+      "cik": 1996862,
+      "name": "Bunge Global SA",
+      "name_short": "Bunge Global",
+      "sector": "Consumer Staples",
+      "industry": "Agricultural Products",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "BHF",
       "cik": 1685040,
       "name": "Brighthouse Financial, Inc.",
@@ -1428,6 +1500,18 @@
       "name_short": "Biogen",
       "sector": "Healthcare",
       "industry": "Biotechnology",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "BILI",
+      "cik": 1723690,
+      "name": "Bilibili Inc.",
+      "name_short": "Bilibili",
+      "sector": "Technology",
+      "industry": "Social Media",
       "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
@@ -1500,6 +1584,18 @@
       "name_short": "Builders FirstSource",
       "sector": "Industrials",
       "industry": "Building Products",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "BLK",
+      "cik": 2012383,
+      "name": "BlackRock, Inc.",
+      "name_short": "BlackRock",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -1878,6 +1974,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "CAPR",
+      "cik": 1133869,
+      "name": "Capricor Therapeutics, Inc.",
+      "name_short": "Capricor Therapeutics",
+      "sector": "Healthcare",
+      "industry": "Gene and Cell Therapy",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "CAR",
       "cik": 723612,
       "name": "Avis Budget Group, Inc.",
@@ -2004,6 +2112,18 @@
       "name_short": "Crown Holdings",
       "sector": "Basic Materials",
       "industry": "Metal Packaging",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "CCL",
+      "cik": 815097,
+      "name": "Carnival Corp Ltd.",
+      "name_short": "Carnival",
+      "sector": "Consumer Discretionary",
+      "industry": "Cruise Lines",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -2221,6 +2341,18 @@
       "sector": "Consumer Staples",
       "industry": "Packaged Foods",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "CHYM",
+      "cik": 1795586,
+      "name": "Chime Financial, Inc.",
+      "name_short": "Chime Financial",
+      "sector": "Technology",
+      "industry": "Digital Banking",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -2665,6 +2797,18 @@
       "sector": "Financial Services",
       "industry": "Crypto Exchanges",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "CRDO",
+      "cik": 1807794,
+      "name": "Credo Technology Group Holding Ltd",
+      "name_short": "Credo Technology Group Holding",
+      "sector": "Technology",
+      "industry": "Semiconductor Design",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -3282,6 +3426,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "DOCS",
+      "cik": 1516513,
+      "name": "Doximity, Inc.",
+      "name_short": "Doximity",
+      "sector": "Technology",
+      "industry": "Healthcare IT",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "DOCU",
       "cik": 1261333,
       "name": "Docusign, Inc.",
@@ -3372,6 +3528,18 @@
       "name_short": "Dte Energy",
       "sector": "Utilities",
       "industry": "Regulated Electric Utilities",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "DTM",
+      "cik": 1842022,
+      "name": "DT Midstream, Inc.",
+      "name_short": "DT Midstream",
+      "sector": "Energy",
+      "industry": "Oil and Gas Pipelines",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -4182,6 +4350,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "FIGR",
+      "cik": 2064124,
+      "name": "Figure Technology Solutions, Inc.",
+      "name_short": "Figure Technology Solutions",
+      "sector": "Financial Services",
+      "industry": "Mortgage Lending",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "FIS",
       "cik": 1136893,
       "name": "Fidelity National Information Services, Inc.",
@@ -4272,6 +4452,18 @@
       "name_short": "Flowserve",
       "sector": "Industrials",
       "industry": "Pumps and Valves",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "FLUT",
+      "cik": 1635327,
+      "name": "Flutter Entertainment plc",
+      "name_short": "Flutter Entertainment",
+      "sector": "Consumer Discretionary",
+      "industry": "Sports Betting",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -4477,6 +4669,18 @@
       "sector": "Industrials",
       "industry": "Industrial Machinery",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "FWDI",
+      "cik": 38264,
+      "name": "Forward Industries, Inc.",
+      "name_short": "Forward Industries",
+      "sector": "Technology",
+      "industry": "IT Services",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -4818,6 +5022,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "GPRO",
+      "cik": 1500435,
+      "name": "GoPro, Inc.",
+      "name_short": "GoPro",
+      "sector": "Consumer Discretionary",
+      "industry": "Consumer Electronics",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "GRAB",
       "cik": 1855612,
       "name": "Grab Holdings Ltd",
@@ -4825,6 +5041,18 @@
       "sector": "Technology",
       "industry": "Ride-Hailing and Delivery",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "GRMN",
+      "cik": 1121788,
+      "name": "Garmin Ltd",
+      "name_short": "Garmin",
+      "sector": "Technology",
+      "industry": "Smartphones and Wearables",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -5550,6 +5778,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "INFQ",
+      "cik": 2007825,
+      "name": "Infleqtion, Inc.",
+      "name_short": "Infleqtion",
+      "sector": "Technology",
+      "industry": "Quantum Computing",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "INGM",
       "cik": 1897762,
       "name": "Ingram Micro Holding Corp",
@@ -5821,6 +6061,18 @@
       "sector": "Real Estate",
       "industry": "Healthcare REITs",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "JAZZ",
+      "cik": 1232524,
+      "name": "Jazz Pharmaceuticals plc",
+      "name_short": "Jazz Pharmaceuticals",
+      "sector": "Healthcare",
+      "industry": "Pharmaceuticals",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -6193,18 +6445,6 @@
       "sector": "Industrials",
       "industry": "Defense",
       "exchange": "NASDAQ",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "KVUE",
-      "cik": 1944048,
-      "name": "Kenvue Inc.",
-      "name_short": "Kenvue",
-      "sector": "Consumer Staples",
-      "industry": "Personal Care Products",
-      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -6624,6 +6864,18 @@
       "name_short": "Lamb Weston Holdings",
       "sector": "Consumer Staples",
       "industry": "Packaged Foods",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "LYB",
+      "cik": 1489393,
+      "name": "LyondellBasell Industries N.V.",
+      "name_short": "LyondellBasell Industries",
+      "sector": "Basic Materials",
+      "industry": "Commodity Chemicals",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -7590,6 +7842,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "NNN",
+      "cik": 751364,
+      "name": "Nnn Reit, Inc.",
+      "name_short": "Nnn Reit",
+      "sector": "Real Estate",
+      "industry": "Net Lease REITs",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "NOC",
       "cik": 1133421,
       "name": "Northrop Grumman Corp /De/",
@@ -7705,6 +7969,18 @@
       "sector": "Financial Services",
       "industry": "Custody and Fund Services",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "NU",
+      "cik": 1691493,
+      "name": "Nu Holdings Ltd.",
+      "name_short": "Nu Holdings",
+      "sector": "Financial Services",
+      "industry": "Money Center Banks",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -8118,6 +8394,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "OUST",
+      "cik": 1816581,
+      "name": "Ouster, Inc.",
+      "name_short": "Ouster",
+      "sector": "Technology",
+      "industry": "Electronic Components",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "OVV",
       "cik": 1792580,
       "name": "Ovintiv Inc.",
@@ -8226,6 +8514,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "PB",
+      "cik": 1068851,
+      "name": "Prosperity Bancshares Inc",
+      "name_short": "Prosperity Bancshares",
+      "sector": "Financial Services",
+      "industry": "Regional Banks",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "PCAR",
       "cik": 75362,
       "name": "Paccar Inc",
@@ -8286,6 +8586,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "PDD",
+      "cik": 1737806,
+      "name": "PDD Holdings Inc.",
+      "name_short": "PDD Holdings",
+      "sector": "Technology",
+      "industry": "Digital Marketplaces",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "PEG",
       "cik": 788784,
       "name": "Public Service Enterprise Group Inc",
@@ -8317,6 +8629,18 @@
       "sector": "Healthcare",
       "industry": "Medical Devices",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "PENG",
+      "cik": 1616533,
+      "name": "Penguin Solutions, Inc.",
+      "name_short": "Penguin Solutions",
+      "sector": "Technology",
+      "industry": "Server and Storage Hardware",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -8520,6 +8844,18 @@
       "name_short": "Pinnacle Financial Partners",
       "sector": "Financial Services",
       "industry": "Regional Banks",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "PNR",
+      "cik": 77360,
+      "name": "PENTAIR plc",
+      "name_short": "Pentair",
+      "sector": "Industrials",
+      "industry": "Pumps and Valves",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -9138,6 +9474,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "RKT",
+      "cik": 1805284,
+      "name": "Rocket Companies, Inc.",
+      "name_short": "Rocket Companies",
+      "sector": "Financial Services",
+      "industry": "Mortgage Lending",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "RL",
       "cik": 1037038,
       "name": "Ralph Lauren Corp",
@@ -9289,6 +9637,18 @@
       "sector": "Basic Materials",
       "industry": "Paints and Coatings",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "RPRX",
+      "cik": 1802768,
+      "name": "Royalty Pharma plc",
+      "name_short": "Royalty Pharma",
+      "sector": "Financial Services",
+      "industry": "Specialty Finance",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -10122,6 +10482,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "SPXC",
+      "cik": 88205,
+      "name": "SPX Technologies, Inc.",
+      "name_short": "SPX Technologies",
+      "sector": "Industrials",
+      "industry": "HVAC",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "SRE",
       "cik": 1032208,
       "name": "Sempra",
@@ -10176,6 +10548,18 @@
       "name_short": "STAG Industrial",
       "sector": "Real Estate",
       "industry": "Industrial REITs",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "STE",
+      "cik": 1757898,
+      "name": "STERIS plc",
+      "name_short": "Steris",
+      "sector": "Healthcare",
+      "industry": "Medical Devices",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -11154,6 +11538,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "USO",
+      "cik": 1327068,
+      "name": "United States Oil Fund, LP",
+      "name_short": "United States Oil Fund",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "UTHR",
       "cik": 1082554,
       "name": "UNITED THERAPEUTICS Corp",
@@ -11172,6 +11568,18 @@
       "name_short": "Energy Fuels",
       "sector": "Energy",
       "industry": "Uranium",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "UWMC",
+      "cik": 1783398,
+      "name": "UWM Holdings Corp",
+      "name_short": "UWM Holdings",
+      "sector": "Financial Services",
+      "industry": "Mortgage Lending",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -11922,6 +12330,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "WTW",
+      "cik": 1140536,
+      "name": "Willis Towers Watson Plc",
+      "name_short": "Willis Towers Watson",
+      "sector": "Financial Services",
+      "industry": "Insurance Brokers",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "WU",
       "cik": 1365135,
       "name": "Western Union CO",
@@ -12235,18 +12655,6 @@
     {
       "security_type": "ETF",
       "ticker": "CHAD",
-      "cik": 1805526,
-      "name": "DeFi Development Corp.",
-      "name_short": "DeFi Development",
-      "sector": null,
-      "industry": null,
-      "exchange": "NASDAQ",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "CHAD",
       "cik": 1424958,
       "name": "Direxion Shares ETF Trust",
       "name_short": "Direxion Shares ETF Trust",
@@ -12255,6 +12663,18 @@
       "exchange": null,
       "seriesid": "S000048906",
       "contractid": "C000154004"
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "CHAD",
+      "cik": 1805526,
+      "name": "DeFi Development Corp.",
+      "name_short": "DeFi Development",
+      "sector": null,
+      "industry": null,
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
     },
     {
       "security_type": "ETF",
@@ -12303,6 +12723,18 @@
       "exchange": null,
       "seriesid": "S000004267",
       "contractid": "C000011971"
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "EWT",
+      "cik": 930667,
+      "name": "iShares, Inc.",
+      "name_short": "iShares",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000004261",
+      "contractid": "C000011965"
     },
     {
       "security_type": "ETF",
@@ -12474,6 +12906,30 @@
     },
     {
       "security_type": "ETF",
+      "ticker": "JAAA",
+      "cik": 1500604,
+      "name": "Janus Detroit Street Trust",
+      "name_short": "Janus Detroit Street Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000069705",
+      "contractid": "C000222294"
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "JPST",
+      "cik": 1485894,
+      "name": "J.P. Morgan Exchange-Traded Fund Trust",
+      "name_short": "J.P. Morgan Exchange-Traded Fund Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000054790",
+      "contractid": "C000172198"
+    },
+    {
+      "security_type": "ETF",
       "ticker": "KORU",
       "cik": 1424958,
       "name": "Direxion Shares ETF Trust",
@@ -12534,6 +12990,18 @@
     },
     {
       "security_type": "ETF",
+      "ticker": "NVDL",
+      "cik": 1689873,
+      "name": "GraniteShares ETF Trust",
+      "name_short": "GraniteShares ETF Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000076344",
+      "contractid": "C000236090"
+    },
+    {
+      "security_type": "ETF",
       "ticker": "PALL",
       "cik": 1459862,
       "name": "abrdn Palladium ETF Trust",
@@ -12579,6 +13047,42 @@
       "exchange": null,
       "seriesid": "S000026637",
       "contractid": "C000079984"
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "SGOV",
+      "cik": 1100663,
+      "name": "iSHARES TRUST",
+      "name_short": "iSHARES TRUST",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000068768",
+      "contractid": "C000219740"
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "SHLD",
+      "cik": 1432353,
+      "name": "Global X Funds",
+      "name_short": "Global X Funds",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000081193",
+      "contractid": "C000243865"
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "SHLD",
+      "cik": 1547580,
+      "name": "Victory Portfolios II",
+      "name_short": "Victory Portfolios",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000069389",
+      "contractid": "C000221409"
     },
     {
       "security_type": "ETF",
@@ -12663,6 +13167,18 @@
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
+    },
+    {
+      "security_type": "ETF",
+      "ticker": "SQQQ",
+      "cik": 1174610,
+      "name": "PROSHARES TRUST",
+      "name_short": "Proshares Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000024909",
+      "contractid": "C000074099"
     },
     {
       "security_type": "ETF",
@@ -12786,6 +13302,18 @@
     },
     {
       "security_type": "ETF",
+      "ticker": "XBI",
+      "cik": 1064642,
+      "name": "SPDR SERIES TRUST",
+      "name_short": "Spdr Series Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000010018",
+      "contractid": "C000027706"
+    },
+    {
+      "security_type": "ETF",
       "ticker": "XLE",
       "cik": 1064641,
       "name": "SELECT SECTOR SPDR TRUST",
@@ -12831,6 +13359,18 @@
       "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
+    },
+    {
+      "security_type": "Fund",
+      "ticker": "FAAA",
+      "cik": 1562565,
+      "name": "Fidelity Merrimack Street Trust",
+      "name_short": "Fidelity Merrimack Street Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000099377",
+      "contractid": "C000269153"
     },
     {
       "security_type": "Fund",
