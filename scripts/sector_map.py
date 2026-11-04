@@ -41,6 +41,11 @@ A manual industry override lives in data/industry_overrides.json. The shape
 matches the sector file: the key is the base symbol and the value is the
 industry. It wins over the universe row, and it leaves the sector alone.
 
+A manual country override lives in data/country_overrides.json. The shape
+matches the sector file, and the value is an upper-case country code. The
+catalog is the usual source for the listing country. The override wins over the
+catalog value, and it leaves the other fields alone.
+
 A base symbol with a dot retries with a dash, and the other way around.
 "BRK.B" then reads "BRK-B".
 
@@ -87,6 +92,7 @@ TYPE_FIELD = "security_type"
 SECTOR_FIELD = "sector"
 INDUSTRY_FIELD = "industry"
 EXCHANGE_FIELD = "exchange"
+COUNTRY_FIELD = "listingCountry"
 CIK_FIELD = "cik"
 UNIVERSE_ROWS_KEY = "tickers"
 ASSET_SYMBOL_FIELD = "symbol"
@@ -118,6 +124,9 @@ OVERRIDES_JSON = REPO_ROOT / "data" / "sector_overrides.json"
 
 # The manual industry overrides. The same shape, for the industry field.
 INDUSTRY_OVERRIDES_JSON = REPO_ROOT / "data" / "industry_overrides.json"
+
+# The manual listing-country overrides. The same shape, for the country field.
+COUNTRY_OVERRIDES_JSON = REPO_ROOT / "data" / "country_overrides.json"
 
 Row = dict[str, Any]
 
@@ -322,6 +331,11 @@ def load_industry_overrides(path: Path = INDUSTRY_OVERRIDES_JSON) -> dict[str, s
     return read_labels(path, "industry overrides")
 
 
+def load_country_overrides(path: Path = COUNTRY_OVERRIDES_JSON) -> dict[str, str]:
+    """Read the manual listing-country overrides."""
+    return read_labels(path, "country overrides")
+
+
 def entry_for(symbol: str, index: Index) -> IndexEntry | None:
     """Return the universe entry for one asset symbol.
 
@@ -412,6 +426,33 @@ def apply_exchange_preference(
         value = preferred.get(symbol)
         if isinstance(value, str) and value:
             record[EXCHANGE_FIELD] = value
+
+
+def apply_country_overrides(
+    records: list[Row],
+    overrides: dict[str, str] | None = None,
+) -> int:
+    """Put the manual listing country on every row that the file names.
+
+    The catalog is the usual source for the country. A hand edit wins over that
+    value, so the override fills the field when the catalog holds none. A row
+    that the file misses keeps its value. Return the count of the rows that the
+    file set.
+    """
+    if overrides is None:
+        overrides = load_country_overrides()
+
+    applied = 0
+    for record in records:
+        symbol = record.get(ASSET_SYMBOL_FIELD)
+        if not isinstance(symbol, str):
+            continue
+
+        value = overrides.get(base_symbol(symbol))
+        if value:
+            record[COUNTRY_FIELD] = value
+            applied += 1
+    return applied
 
 
 def apply_sectors(
@@ -592,6 +633,9 @@ def run(args: argparse.Namespace) -> int:
     industry_overrides = load_industry_overrides()
     if industry_overrides:
         print(f"Industry overrides: {len(industry_overrides)} symbols")
+    country_overrides = load_country_overrides()
+    if country_overrides:
+        print(f"Country overrides: {len(country_overrides)} symbols")
     print(f"Assets: {len(records)}")
 
     # Without a universe, the records themselves hold the previous sector.
@@ -604,9 +648,12 @@ def run(args: argparse.Namespace) -> int:
     }
     counts = apply_sectors(records, index, previous, overrides, industry_overrides)
     apply_exchange_preference(records, preferred)
+    country_set = apply_country_overrides(records, country_overrides)
 
     print(counts_line(counts))
     print(detail_counts_line(records))
+    if country_set:
+        print(f"Country: {country_set} by override")
     for label, count in label_counts(records):
         print(f"  {label}: {count}")
 
@@ -625,8 +672,9 @@ def build_parser() -> argparse.ArgumentParser:
         epilog=(
             f"The sector, the industry, and the CIK come from "
             f"{UNIVERSE_JSON.relative_to(REPO_ROOT)}. A manual override in "
-            f"{OVERRIDES_JSON.relative_to(REPO_ROOT)} or "
-            f"{INDUSTRY_OVERRIDES_JSON.relative_to(REPO_ROOT)} wins over that "
+            f"{OVERRIDES_JSON.relative_to(REPO_ROOT)}, "
+            f"{INDUSTRY_OVERRIDES_JSON.relative_to(REPO_ROOT)}, or "
+            f"{COUNTRY_OVERRIDES_JSON.relative_to(REPO_ROOT)} wins over that "
             "file. fetch_assets.py joins both on every run."
         ),
     )

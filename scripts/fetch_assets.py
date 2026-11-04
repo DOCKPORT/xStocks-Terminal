@@ -15,7 +15,10 @@ The script fetches a quote for every asset whose home market is open. Pass
 --force-quotes to call every symbol anyway.
 
 The sector, the industry, the exchange, and the CIK come from
-data/ticker_universe.json, through scripts/sector_map.py.
+data/ticker_universe.json, through scripts/sector_map.py. A manual value in
+data/sector_overrides.json or data/industry_overrides.json wins over that file.
+The listing country comes from the catalog, and a manual value in
+data/country_overrides.json wins over the catalog.
 
 scripts/http_client.py holds the shared HTTP layer. The quote calls share one
 pacer. The default gap is 0.25 seconds. Pass --min-interval to change the gap.
@@ -488,6 +491,9 @@ def _build_snapshot(
         f"Listing country: {country_fresh} fresh, {country_retained} retained, "
         f"{country_missing} unavailable"
     )
+    country_set = sector_map.apply_country_overrides(records)
+    if country_set:
+        print(f"Listing country overrides: {country_set} assets")
 
     closed = (
         set() if args.force_quotes else backed_api.closed_market_symbols(asset_nodes)

@@ -1,0 +1,8 @@
+{
+  "_comment": "Manual listing country overrides. The key is the base symbol, without the final x. A manual value wins over the catalog value, so add a key only when the catalog holds no country for the symbol. The value is an ISO 3166-1 alpha-2 code in upper case, because the region table reads that form. A key that starts with an underscore is a comment.",
+  "AN": "US",
+  "OUST": "US",
+  "PB": "US",
+  "PDD": "US",
+  "XBI": "US"
+}
