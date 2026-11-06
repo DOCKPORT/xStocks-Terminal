@@ -96,16 +96,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1174610"
   },
   {
-    "name": "SPX Technologies",
-    "symbol": "SPXCx",
-    "cik": 88205,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=88205"
-  },
-  {
     "name": "Prosperity Bancshares",
     "symbol": "PBx",
     "cik": 1068851,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1068851"
+  },
+  {
+    "name": "SPX Technologies",
+    "symbol": "SPXCx",
+    "cik": 88205,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=88205"
   },
   {
     "name": "Capricor Therapeutics",
@@ -464,8 +464,8 @@
   {
     "name": "DeFi Development Corp. Variable Rate Series C Perpetual Preferred",
     "symbol": "CHADx",
-    "cik": 1424958,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1424958"
+    "cik": 1805526,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1805526"
   },
   {
     "name": "Lucid",
@@ -774,16 +774,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1570585"
   },
   {
-    "name": "Loar",
-    "symbol": "LOARx",
-    "cik": 2000178,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=2000178"
-  },
-  {
     "name": "Kyndryl",
     "symbol": "KDx",
     "cik": 1867072,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1867072"
+  },
+  {
+    "name": "Loar",
+    "symbol": "LOARx",
+    "cik": 2000178,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2000178"
   },
   {
     "name": "Shift4 Payments",
@@ -1008,16 +1008,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1032033"
   },
   {
-    "name": "Louisiana-Pacific",
-    "symbol": "LPXx",
-    "cik": 60519,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
-  },
-  {
     "name": "Gentex",
     "symbol": "GNTXx",
     "cik": 355811,
     "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
+  },
+  {
+    "name": "Louisiana-Pacific",
+    "symbol": "LPXx",
+    "cik": 60519,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
   },
   {
     "name": "TFS Financial",
@@ -1998,16 +1998,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1722482"
   },
   {
-    "name": "Tetra Tech",
-    "symbol": "TTEKx",
-    "cik": 831641,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
-  },
-  {
     "name": "Mohawk Industries",
     "symbol": "MHKx",
     "cik": 851968,
     "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
+  },
+  {
+    "name": "Tetra Tech",
+    "symbol": "TTEKx",
+    "cik": 831641,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
   },
   {
     "name": "Viavi Solutions",
@@ -2268,16 +2268,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1037540"
   },
   {
-    "name": "Freedom",
-    "symbol": "FRHCx",
-    "cik": 924805,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
-  },
-  {
     "name": "Dycom Industries",
     "symbol": "DYx",
     "cik": 67215,
     "url": "https://www.sec.gov/edgar/browse/?CIK=67215"
+  },
+  {
+    "name": "Freedom",
+    "symbol": "FRHCx",
+    "cik": 924805,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
   },
   {
     "name": "Advanced Drainage Systems",
@@ -2352,16 +2352,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
   },
   {
-    "name": "Kratos Defense & Security Solutions",
-    "symbol": "KTOSx",
-    "cik": 1069258,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
-  },
-  {
     "name": "Hormel Foods",
     "symbol": "HRLx",
     "cik": 48465,
     "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
+  },
+  {
+    "name": "Kratos Defense & Security Solutions",
+    "symbol": "KTOSx",
+    "cik": 1069258,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
   },
   {
     "name": "Penske Automotive",
@@ -2812,6 +2812,12 @@
     "symbol": "BBVAx",
     "cik": 842180,
     "url": "https://www.sec.gov/edgar/browse/?CIK=842180"
+  },
+  {
+    "name": "Standard Chartered",
+    "symbol": "STANx",
+    "cik": 1592900,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1592900"
   },
   {
     "name": "BP",

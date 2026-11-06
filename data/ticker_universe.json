@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-11-04T13:52:42+00:00",
-  "universeCount": 45289,
-  "count": 1115,
+  "fetchedAt": "2026-11-06T18:01:12+00:00",
+  "universeCount": 50182,
+  "count": 1114,
   "tickers": [
     {
       "security_type": "Equity",
@@ -4878,6 +4878,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "GLD",
+      "cik": 1222333,
+      "name": "Spdr Gold Trust",
+      "name_short": "Spdr Gold Trust",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "GLPI",
       "cik": 1575965,
       "name": "Gaming & Leisure Properties, Inc.",
@@ -8228,8 +8240,8 @@
       "security_type": "Equity",
       "ticker": "OLED",
       "cik": 1005284,
-      "name": "Universal Display Corp \\Pa\\",
-      "name_short": "Universal Display Corp \\Pa\\",
+      "name": "Universal Display Corp Pa",
+      "name_short": "Universal Display Corp Pa",
       "sector": "Technology",
       "industry": "Semiconductor Materials",
       "exchange": "NASDAQ",
@@ -11516,8 +11528,8 @@
       "security_type": "Equity",
       "ticker": "USB",
       "cik": 36104,
-      "name": "Us Bancorp De",
-      "name_short": "Us Bancorp",
+      "name": "Us Bancorp \\De\\",
+      "name_short": "Us Bancorp \\De\\",
       "sector": "Financial Services",
       "industry": "Money Center Banks",
       "exchange": "NYSE",
@@ -12655,18 +12667,6 @@
     {
       "security_type": "ETF",
       "ticker": "CHAD",
-      "cik": 1424958,
-      "name": "Direxion Shares ETF Trust",
-      "name_short": "Direxion Shares ETF Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000048906",
-      "contractid": "C000154004"
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "CHAD",
       "cik": 1805526,
       "name": "DeFi Development Corp.",
       "name_short": "DeFi Development",
@@ -12819,18 +12819,6 @@
       "exchange": null,
       "seriesid": "S000009191",
       "contractid": "C000024980"
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "GLD",
-      "cik": 1222333,
-      "name": "Spdr Gold Trust",
-      "name_short": "Spdr Gold Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
     },
     {
       "security_type": "ETF",
@@ -13071,18 +13059,6 @@
       "exchange": null,
       "seriesid": "S000081193",
       "contractid": "C000243865"
-    },
-    {
-      "security_type": "ETF",
-      "ticker": "SHLD",
-      "cik": 1547580,
-      "name": "Victory Portfolios II",
-      "name_short": "Victory Portfolios",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000069389",
-      "contractid": "C000221409"
     },
     {
       "security_type": "ETF",
@@ -13371,6 +13347,18 @@
       "exchange": null,
       "seriesid": "S000099377",
       "contractid": "C000269153"
+    },
+    {
+      "security_type": "Fund",
+      "ticker": "STAN",
+      "cik": 1592900,
+      "name": "EA Series Trust",
+      "name_short": "EA Series Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000086652",
+      "contractid": "C000252240"
     },
     {
       "security_type": "Fund",
