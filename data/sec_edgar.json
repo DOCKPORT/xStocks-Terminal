@@ -774,16 +774,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1570585"
   },
   {
-    "name": "Kyndryl",
-    "symbol": "KDx",
-    "cik": 1867072,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1867072"
-  },
-  {
     "name": "Loar",
     "symbol": "LOARx",
     "cik": 2000178,
     "url": "https://www.sec.gov/edgar/browse/?CIK=2000178"
+  },
+  {
+    "name": "Kyndryl",
+    "symbol": "KDx",
+    "cik": 1867072,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1867072"
   },
   {
     "name": "Shift4 Payments",
@@ -1998,16 +1998,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1722482"
   },
   {
-    "name": "Mohawk Industries",
-    "symbol": "MHKx",
-    "cik": 851968,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
-  },
-  {
     "name": "Tetra Tech",
     "symbol": "TTEKx",
     "cik": 831641,
     "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
+  },
+  {
+    "name": "Mohawk Industries",
+    "symbol": "MHKx",
+    "cik": 851968,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
   },
   {
     "name": "Viavi Solutions",
@@ -2268,16 +2268,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1037540"
   },
   {
-    "name": "Dycom Industries",
-    "symbol": "DYx",
-    "cik": 67215,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=67215"
-  },
-  {
     "name": "Freedom",
     "symbol": "FRHCx",
     "cik": 924805,
     "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
+  },
+  {
+    "name": "Dycom Industries",
+    "symbol": "DYx",
+    "cik": 67215,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=67215"
   },
   {
     "name": "Advanced Drainage Systems",
