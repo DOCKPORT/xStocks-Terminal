@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-11-09T07:56:13+00:00",
-  "universeCount": 50182,
-  "count": 1114,
+  "fetchedAt": "2026-11-11T13:38:24+00:00",
+  "universeCount": 50193,
+  "count": 1110,
   "tickers": [
     {
       "security_type": "Equity",
@@ -912,7 +912,7 @@
       "name_short": "Ares Management",
       "sector": "Financial Services",
       "industry": "Alternative Asset Managers",
-      "exchange": "NYSE",
+      "exchange": null,
       "seriesid": null,
       "contractid": null
     },
@@ -5376,7 +5376,7 @@
       "name_short": "Hilton Worldwide Holdings",
       "sector": "Consumer Discretionary",
       "industry": "Hotels",
-      "exchange": "NYSE",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -5461,18 +5461,6 @@
       "sector": "Technology",
       "industry": "Quantum Computing",
       "exchange": "NASDAQ",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "HR",
-      "cik": 1360604,
-      "name": "Healthcare Realty Trust Inc",
-      "name_short": "Healthcare Realty Trust",
-      "sector": "Real Estate",
-      "industry": "Healthcare REITs",
-      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -6500,8 +6488,8 @@
       "security_type": "Equity",
       "ticker": "LASE",
       "cik": 1807887,
-      "name": "Laser Photonics Corp",
-      "name_short": "Laser Photonics",
+      "name": "LASE Corp.",
+      "name_short": "Lase",
       "sector": "Industrials",
       "industry": "Industrial Machinery",
       "exchange": "NASDAQ",
@@ -7662,6 +7650,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "MWH",
+      "cik": 2065636,
+      "name": "SOLV Energy, Inc.",
+      "name_short": "SOLV Energy",
+      "sector": "Industrials",
+      "industry": "Utility Construction",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "NBIS",
       "cik": 1513845,
       "name": "Nebius Group N.V.",
@@ -8022,18 +8022,6 @@
     },
     {
       "security_type": "Equity",
-      "ticker": "NVDA",
-      "cik": 1045810,
-      "name": "Nvidia Corp",
-      "name_short": "Nvidia",
-      "sector": "Technology",
-      "industry": "Semiconductor Design",
-      "exchange": "NASDAQ",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
       "ticker": "NVO",
       "cik": 353278,
       "name": "Novo Nordisk A S",
@@ -8240,8 +8228,8 @@
       "security_type": "Equity",
       "ticker": "OLED",
       "cik": 1005284,
-      "name": "Universal Display Corp Pa",
-      "name_short": "Universal Display Corp Pa",
+      "name": "Universal Display Corp \\Pa\\",
+      "name_short": "Universal Display Corp \\Pa\\",
       "sector": "Technology",
       "industry": "Semiconductor Materials",
       "exchange": "NASDAQ",
@@ -8424,18 +8412,6 @@
       "name_short": "Ovintiv",
       "sector": "Energy",
       "industry": "Oil and Gas Exploration and Production",
-      "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "OWL",
-      "cik": 1823945,
-      "name": "Blue Owl Capital Inc.",
-      "name_short": "Blue Owl Capital",
-      "sector": "Financial Services",
-      "industry": "Alternative Asset Managers",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -9589,18 +9565,6 @@
       "sector": "Industrials",
       "industry": "Industrial Machinery",
       "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "ROKU",
-      "cik": 1428439,
-      "name": "Roku, Inc",
-      "name_short": "Roku",
-      "sector": "Technology",
-      "industry": "Operating Systems",
-      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -11528,8 +11492,8 @@
       "security_type": "Equity",
       "ticker": "USB",
       "cik": 36104,
-      "name": "Us Bancorp \\De\\",
-      "name_short": "Us Bancorp \\De\\",
+      "name": "Us Bancorp De",
+      "name_short": "Us Bancorp",
       "sector": "Financial Services",
       "industry": "Money Center Banks",
       "exchange": "NYSE",
@@ -12312,18 +12276,6 @@
       "name_short": "White Mountains Insurance",
       "sector": "Financial Services",
       "industry": "Property and Casualty Insurance",
-      "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "WTRG",
-      "cik": 78128,
-      "name": "Essential Utilities, Inc.",
-      "name_short": "Essential Utilities",
-      "sector": "Utilities",
-      "industry": "Water Utilities",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null

@@ -1,5 +1,11 @@
 [
   {
+    "name": "SOLV Energy",
+    "symbol": "MWHx",
+    "cik": 2065636,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2065636"
+  },
+  {
     "name": "United States Oil Fund",
     "symbol": "USOx",
     "cik": 1327068,
@@ -1008,16 +1014,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1032033"
   },
   {
-    "name": "Gentex",
-    "symbol": "GNTXx",
-    "cik": 355811,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
-  },
-  {
     "name": "Louisiana-Pacific",
     "symbol": "LPXx",
     "cik": 60519,
     "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
+  },
+  {
+    "name": "Gentex",
+    "symbol": "GNTXx",
+    "cik": 355811,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
   },
   {
     "name": "TFS Financial",
@@ -1336,12 +1342,6 @@
     "symbol": "TTDx",
     "cik": 1671933,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1671933"
-  },
-  {
-    "name": "Healthcare Realty Trust",
-    "symbol": "HRx",
-    "cik": 1360604,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1360604"
   },
   {
     "name": "RLI",
@@ -2268,16 +2268,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1037540"
   },
   {
-    "name": "Freedom",
-    "symbol": "FRHCx",
-    "cik": 924805,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
-  },
-  {
     "name": "Dycom Industries",
     "symbol": "DYx",
     "cik": 67215,
     "url": "https://www.sec.gov/edgar/browse/?CIK=67215"
+  },
+  {
+    "name": "Freedom",
+    "symbol": "FRHCx",
+    "cik": 924805,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
   },
   {
     "name": "Advanced Drainage Systems",
@@ -2352,16 +2352,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1286681"
   },
   {
-    "name": "Hormel Foods",
-    "symbol": "HRLx",
-    "cik": 48465,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
-  },
-  {
     "name": "Kratos Defense & Security Solutions",
     "symbol": "KTOSx",
     "cik": 1069258,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1069258"
+  },
+  {
+    "name": "Hormel Foods",
+    "symbol": "HRLx",
+    "cik": 48465,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=48465"
   },
   {
     "name": "Penske Automotive",
@@ -2410,12 +2410,6 @@
     "symbol": "HALOx",
     "cik": 1159036,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1159036"
-  },
-  {
-    "name": "Essential Utilities",
-    "symbol": "WTRGx",
-    "cik": 78128,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=78128"
   },
   {
     "name": "American Financial",
@@ -2680,12 +2674,6 @@
     "symbol": "RBRKx",
     "cik": 1943896,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1943896"
-  },
-  {
-    "name": "Blue Owl Capital",
-    "symbol": "OWLx",
-    "cik": 1823945,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1823945"
   },
   {
     "name": "Corebridge Financial",
@@ -3412,12 +3400,6 @@
     "symbol": "EVRx",
     "cik": 1360901,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1360901"
-  },
-  {
-    "name": "Roku",
-    "symbol": "ROKUx",
-    "cik": 1428439,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1428439"
   },
   {
     "name": "Lamar Advertising",
@@ -6670,12 +6652,6 @@
     "symbol": "MSFTx",
     "cik": 789019,
     "url": "https://www.sec.gov/edgar/browse/?CIK=789019"
-  },
-  {
-    "name": "NVIDIA",
-    "symbol": "NVDAx",
-    "cik": 1045810,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1045810"
   },
   {
     "name": "Apple",
