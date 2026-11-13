@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-11-11T13:38:24+00:00",
-  "universeCount": 50193,
-  "count": 1110,
+  "fetchedAt": "2026-11-13T18:37:16+00:00",
+  "universeCount": 50213,
+  "count": 1122,
   "tickers": [
     {
       "security_type": "Equity",
@@ -3846,6 +3846,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "ENT",
+      "cik": 2028464,
+      "name": "Entrata, Inc.",
+      "name_short": "Entrata",
+      "sector": "Technology",
+      "industry": "Real Estate Software",
+      "exchange": null,
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "ENTG",
       "cik": 1101302,
       "name": "Entegris Inc",
@@ -5118,6 +5130,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "GSK",
+      "cik": 1131399,
+      "name": "GSK plc",
+      "name_short": "Gsk",
+      "sector": "Healthcare",
+      "industry": "Pharmaceuticals",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "GTES",
       "cik": 1718512,
       "name": "Gates Industrial Corp Ltd.",
@@ -5352,6 +5376,18 @@
       "name_short": "Houlihan Lokey",
       "sector": "Financial Services",
       "industry": "Investment Banking",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "HLN",
+      "cik": 1900304,
+      "name": "Haleon plc",
+      "name_short": "Haleon",
+      "sector": null,
+      "industry": null,
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -6373,18 +6409,6 @@
       "sector": "Consumer Staples",
       "industry": "Non-Alcoholic Beverages",
       "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "KPTI",
-      "cik": 1503802,
-      "name": "Karyopharm Therapeutics Inc.",
-      "name_short": "Karyopharm Therapeutics",
-      "sector": "Healthcare",
-      "industry": "Pharmaceuticals",
-      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -7530,6 +7554,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "MT",
+      "cik": 1243429,
+      "name": "ArcelorMittal",
+      "name_short": "ArcelorMittal",
+      "sector": "Basic Materials",
+      "industry": "Steel",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "MTB",
       "cik": 36270,
       "name": "M&T Bank Corp",
@@ -7572,18 +7608,6 @@
       "name_short": "Matador Resources",
       "sector": "Energy",
       "industry": "Oil and Gas Exploration and Production",
-      "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "MTG",
-      "cik": 876437,
-      "name": "Mgic Investment Corp",
-      "name_short": "Mgic Investment",
-      "sector": "Financial Services",
-      "industry": "Property and Casualty Insurance",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -8022,6 +8046,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "NVDA",
+      "cik": 1045810,
+      "name": "Nvidia Corp",
+      "name_short": "Nvidia",
+      "sector": "Technology",
+      "industry": "Semiconductor Design",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "NVO",
       "cik": 353278,
       "name": "Novo Nordisk A S",
@@ -8412,6 +8448,18 @@
       "name_short": "Ovintiv",
       "sector": "Energy",
       "industry": "Oil and Gas Exploration and Production",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "OWL",
+      "cik": 1823945,
+      "name": "Blue Owl Capital Inc.",
+      "name_short": "Blue Owl Capital",
+      "sector": "Financial Services",
+      "industry": "Alternative Asset Managers",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -8941,6 +8989,18 @@
       "sector": "Utilities",
       "industry": "Regulated Electric Utilities",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "PPLI",
+      "cik": 1800227,
+      "name": "People Inc",
+      "name_short": "People",
+      "sector": "Technology",
+      "industry": "Digital Marketplaces",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -9678,6 +9738,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "RTO",
+      "cik": 930157,
+      "name": "Rentokil Initial Plc /Fi",
+      "name_short": "Rentokil Initial",
+      "sector": "Industrials",
+      "industry": "Facility Services",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "RTX",
       "cik": 101829,
       "name": "RTX Corp",
@@ -9817,6 +9889,18 @@
       "sector": "Technology",
       "industry": "Electronic Manufacturing Services",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "SAP",
+      "cik": 1000184,
+      "name": "Sap Se",
+      "name_short": "Sap Se",
+      "sector": "Technology",
+      "industry": "ERP Software",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -10225,6 +10309,18 @@
       "sector": "Technology",
       "industry": "Semiconductor Manufacturing",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "SN",
+      "cik": 1957132,
+      "name": "SharkNinja, Inc.",
+      "name_short": "SharkNinja",
+      "sector": "Consumer Discretionary",
+      "industry": "Home Appliances",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -11173,6 +11269,18 @@
       "sector": "Technology",
       "industry": "Digital Advertising",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "TTE",
+      "cik": 879764,
+      "name": "TotalEnergies SE",
+      "name_short": "TotalEnergies SE",
+      "sector": "Energy",
+      "industry": "Integrated Oil and Gas",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -12180,6 +12288,18 @@
       "name_short": "W. P. Carey",
       "sector": "Real Estate",
       "industry": "Net Lease REITs",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "WPP",
+      "cik": 806968,
+      "name": "WPP plc",
+      "name_short": "Wpp",
+      "sector": "Communication Services",
+      "industry": "Advertising Agencies",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -13275,6 +13395,30 @@
       "exchange": null,
       "seriesid": "S000057702",
       "contractid": "C000186077"
+    },
+    {
+      "security_type": "Fund",
+      "ticker": "ADS",
+      "cik": 1689873,
+      "name": "GraniteShares ETF Trust",
+      "name_short": "GraniteShares ETF Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000088296",
+      "contractid": "C000254494"
+    },
+    {
+      "security_type": "Fund",
+      "ticker": "ANTO",
+      "cik": 1424958,
+      "name": "Direxion Shares ETF Trust",
+      "name_short": "Direxion Shares ETF Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000104940",
+      "contractid": "C000275598"
     },
     {
       "security_type": "Fund",
