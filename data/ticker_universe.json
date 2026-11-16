@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-11-13T18:37:16+00:00",
-  "universeCount": 50213,
-  "count": 1122,
+  "fetchedAt": "2026-11-16T07:56:57+00:00",
+  "universeCount": 50210,
+  "count": 1118,
   "tickers": [
     {
       "security_type": "Equity",
@@ -912,7 +912,7 @@
       "name_short": "Ares Management",
       "sector": "Financial Services",
       "industry": "Alternative Asset Managers",
-      "exchange": null,
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -2508,18 +2508,6 @@
       "name_short": "Cms Energy",
       "sector": "Utilities",
       "industry": "Regulated Electric Utilities",
-      "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "CNA",
-      "cik": 21175,
-      "name": "Cna Financial Corp",
-      "name_short": "Cna Financial",
-      "sector": "Financial Services",
-      "industry": "Property and Casualty Insurance",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -6150,18 +6138,6 @@
     },
     {
       "security_type": "Equity",
-      "ticker": "JEF",
-      "cik": 96223,
-      "name": "Jefferies Financial Group Inc.",
-      "name_short": "Jefferies Financial",
-      "sector": "Financial Services",
-      "industry": "Investment Banking",
-      "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
       "ticker": "JKHY",
       "cik": 779152,
       "name": "Jack Henry & Associates Inc",
@@ -9378,18 +9354,6 @@
     },
     {
       "security_type": "Equity",
-      "ticker": "REYN",
-      "cik": 1786431,
-      "name": "Reynolds Consumer Products Inc.",
-      "name_short": "Reynolds Consumer Products",
-      "sector": "Consumer Staples",
-      "industry": "Household Products",
-      "exchange": "NASDAQ",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
       "ticker": "RF",
       "cik": 1281761,
       "name": "Regions Financial Corp",
@@ -9913,18 +9877,6 @@
       "sector": "Industrials",
       "industry": "Commercial Aerospace",
       "exchange": "NYSE",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
-      "ticker": "SATA",
-      "cik": 1920406,
-      "name": "Strive, Inc.",
-      "name_short": "Strive",
-      "sector": "Financial Services",
-      "industry": "Asset Management",
-      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -11600,8 +11552,8 @@
       "security_type": "Equity",
       "ticker": "USB",
       "cik": 36104,
-      "name": "Us Bancorp De",
-      "name_short": "Us Bancorp",
+      "name": "Us Bancorp \\De\\",
+      "name_short": "Us Bancorp \\De\\",
       "sector": "Financial Services",
       "industry": "Money Center Banks",
       "exchange": "NYSE",
@@ -12834,6 +12786,18 @@
     },
     {
       "security_type": "ETF",
+      "ticker": "FAAA",
+      "cik": 1562565,
+      "name": "Fidelity Merrimack Street Trust",
+      "name_short": "Fidelity Merrimack Street Trust",
+      "sector": null,
+      "industry": null,
+      "exchange": null,
+      "seriesid": "S000099377",
+      "contractid": "C000269153"
+    },
+    {
+      "security_type": "ETF",
       "ticker": "FEZ",
       "cik": 1168164,
       "name": "SPDR INDEX SHARES FUNDS",
@@ -13431,18 +13395,6 @@
       "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
-    },
-    {
-      "security_type": "Fund",
-      "ticker": "FAAA",
-      "cik": 1562565,
-      "name": "Fidelity Merrimack Street Trust",
-      "name_short": "Fidelity Merrimack Street Trust",
-      "sector": null,
-      "industry": null,
-      "exchange": null,
-      "seriesid": "S000099377",
-      "contractid": "C000269153"
     },
     {
       "security_type": "Fund",
