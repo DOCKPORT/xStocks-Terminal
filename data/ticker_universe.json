@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-11-16T07:56:57+00:00",
-  "universeCount": 50210,
-  "count": 1118,
+  "fetchedAt": "2026-11-18T15:10:40+00:00",
+  "universeCount": 50241,
+  "count": 1127,
   "tickers": [
     {
       "security_type": "Equity",
@@ -2232,7 +2232,7 @@
       "name_short": "Cullen",
       "sector": "Financial Services",
       "industry": "Regional Banks",
-      "exchange": "NYSE",
+      "exchange": "TXSE",
       "seriesid": null,
       "contractid": null
     },
@@ -2281,6 +2281,18 @@
       "sector": "Consumer Discretionary",
       "industry": "Casinos",
       "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "CHE",
+      "cik": 19584,
+      "name": "Chemed Corp",
+      "name_short": "Chemed",
+      "sector": "Healthcare",
+      "industry": "Home Health and Senior Care",
+      "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
     },
@@ -2508,6 +2520,18 @@
       "name_short": "Cms Energy",
       "sector": "Utilities",
       "industry": "Regulated Electric Utilities",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "CNA",
+      "cik": 21175,
+      "name": "Cna Financial Corp",
+      "name_short": "Cna Financial",
+      "sector": "Financial Services",
+      "industry": "Property and Casualty Insurance",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -4566,6 +4590,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "FR",
+      "cik": 921825,
+      "name": "First Industrial Realty Trust Inc",
+      "name_short": "First Industrial Realty Trust",
+      "sector": "Real Estate",
+      "industry": "Industrial REITs",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "FRHC",
       "cik": 924805,
       "name": "Freedom Holding Corp.",
@@ -5490,6 +5526,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "HR",
+      "cik": 1360604,
+      "name": "Healthcare Realty Trust Inc",
+      "name_short": "Healthcare Realty Trust",
+      "sector": "Real Estate",
+      "industry": "Healthcare REITs",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "HRB",
       "cik": 12659,
       "name": "H&R Block Inc",
@@ -6132,6 +6180,18 @@
       "name_short": "Johnson Controls International",
       "sector": "Industrials",
       "industry": "HVAC",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "JEF",
+      "cik": 96223,
+      "name": "Jefferies Financial Group Inc.",
+      "name_short": "Jefferies Financial",
+      "sector": "Financial Services",
+      "industry": "Investment Banking",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -7002,6 +7062,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "MBGL",
+      "cik": 2090312,
+      "name": "Mobility Global Inc.",
+      "name_short": "Mobility Global",
+      "sector": "Technology",
+      "industry": "Analytics and BI",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "MCD",
       "cik": 63908,
       "name": "Mcdonalds Corp",
@@ -7584,6 +7656,18 @@
       "name_short": "Matador Resources",
       "sector": "Energy",
       "industry": "Oil and Gas Exploration and Production",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "MTG",
+      "cik": 876437,
+      "name": "Mgic Investment Corp",
+      "name_short": "Mgic Investment",
+      "sector": "Financial Services",
+      "industry": "Property and Casualty Insurance",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
@@ -8778,18 +8862,6 @@
     },
     {
       "security_type": "Equity",
-      "ticker": "PLCE",
-      "cik": 1041859,
-      "name": "Childrens Place, Inc.",
-      "name_short": "Childrens Place",
-      "sector": "Consumer Discretionary",
-      "industry": "Apparel Retail",
-      "exchange": "NASDAQ",
-      "seriesid": null,
-      "contractid": null
-    },
-    {
-      "security_type": "Equity",
       "ticker": "PLD",
       "cik": 1045609,
       "name": "Prologis, Inc.",
@@ -9354,6 +9426,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "REYN",
+      "cik": 1786431,
+      "name": "Reynolds Consumer Products Inc.",
+      "name_short": "Reynolds Consumer Products",
+      "sector": "Consumer Staples",
+      "industry": "Household Products",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "RF",
       "cik": 1281761,
       "name": "Regions Financial Corp",
@@ -9877,6 +9961,18 @@
       "sector": "Industrials",
       "industry": "Commercial Aerospace",
       "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "SATA",
+      "cik": 1920406,
+      "name": "Strive, Inc.",
+      "name_short": "Strive",
+      "sector": "Financial Services",
+      "industry": "Asset Management",
+      "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
     },
@@ -12348,6 +12444,18 @@
       "name_short": "White Mountains Insurance",
       "sector": "Financial Services",
       "industry": "Property and Casualty Insurance",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "WTRG",
+      "cik": 78128,
+      "name": "Essential Utilities, Inc.",
+      "name_short": "Essential Utilities",
+      "sector": "Utilities",
+      "industry": "Water Utilities",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
