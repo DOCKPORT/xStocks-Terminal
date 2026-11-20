@@ -1,5 +1,11 @@
 [
   {
+    "name": "Sprott Uranium Miners ETF",
+    "symbol": "URNMx",
+    "cik": 1728683,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1728683"
+  },
+  {
     "name": "SOLV Energy",
     "symbol": "MWHx",
     "cik": 2065636,
@@ -460,12 +466,6 @@
     "symbol": "SOUNx",
     "cik": 1840856,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1840856"
-  },
-  {
-    "name": "DeFi Development Corp. Variable Rate Series C Perpetual Preferred",
-    "symbol": "CHADx",
-    "cik": 1805526,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=1805526"
   },
   {
     "name": "Lucid",
@@ -2292,16 +2292,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1037540"
   },
   {
-    "name": "Freedom",
-    "symbol": "FRHCx",
-    "cik": 924805,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
-  },
-  {
     "name": "Dycom Industries",
     "symbol": "DYx",
     "cik": 67215,
     "url": "https://www.sec.gov/edgar/browse/?CIK=67215"
+  },
+  {
+    "name": "Freedom",
+    "symbol": "FRHCx",
+    "cik": 924805,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
   },
   {
     "name": "Advanced Drainage Systems",
@@ -2416,6 +2416,12 @@
     "symbol": "GFLx",
     "cik": 1780232,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1780232"
+  },
+  {
+    "name": "Antero Resources",
+    "symbol": "ARx",
+    "cik": 1433270,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1433270"
   },
   {
     "name": "MGM Resorts International",
@@ -2740,6 +2746,12 @@
     "symbol": "CDEx",
     "cik": 215466,
     "url": "https://www.sec.gov/edgar/browse/?CIK=215466"
+  },
+  {
+    "name": "Samsara",
+    "symbol": "IOTx",
+    "cik": 1642896,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1642896"
   },
   {
     "name": "IonQ",
@@ -6126,6 +6138,12 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1432353"
   },
   {
+    "name": "Brera",
+    "symbol": "SLMTx",
+    "cik": 1939965,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1939965"
+  },
+  {
     "name": "KRAQ",
     "symbol": "KRAQx",
     "cik": 2082119,
@@ -6186,6 +6204,12 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1100663"
   },
   {
+    "name": "Figma",
+    "symbol": "FIGx",
+    "cik": 1579878,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1579878"
+  },
+  {
     "name": "S&P Global",
     "symbol": "SPGIx",
     "cik": 64040,
@@ -6240,6 +6264,12 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1706946"
   },
   {
+    "name": "Monster",
+    "symbol": "MNSTx",
+    "cik": 865752,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=865752"
+  },
+  {
     "name": "Micron Technology",
     "symbol": "MUx",
     "cik": 723125,
@@ -6262,6 +6292,12 @@
     "symbol": "TEMx",
     "cik": 1717115,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1717115"
+  },
+  {
+    "name": "lululemon",
+    "symbol": "LULUx",
+    "cik": 1397187,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1397187"
   },
   {
     "name": "ASML",
@@ -6288,10 +6324,22 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=30697"
   },
   {
+    "name": "Duolingo",
+    "symbol": "DUOLx",
+    "cik": 1562088,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1562088"
+  },
+  {
     "name": "AST SpaceMobile",
     "symbol": "ASTSx",
     "cik": 1780312,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1780312"
+  },
+  {
+    "name": "Expedia",
+    "symbol": "EXPEx",
+    "cik": 1324424,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1324424"
   },
   {
     "name": "Costco",
@@ -6300,10 +6348,22 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=909832"
   },
   {
+    "name": "Target",
+    "symbol": "TGTx",
+    "cik": 27419,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=27419"
+  },
+  {
     "name": "PayPal",
     "symbol": "PYPLx",
     "cik": 1633917,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1633917"
+  },
+  {
+    "name": "eBay",
+    "symbol": "EBAYx",
+    "cik": 1065088,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1065088"
   },
   {
     "name": "CleanSpark",
@@ -6364,6 +6424,12 @@
     "symbol": "GLXYx",
     "cik": 1859392,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1859392"
+  },
+  {
+    "name": "Bullish",
+    "symbol": "BLSHx",
+    "cik": 1872195,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1872195"
   },
   {
     "name": "Tron",
