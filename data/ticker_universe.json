@@ -1,6 +1,6 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-11-20T19:10:28+00:00",
+  "fetchedAt": "2026-11-23T08:56:30+00:00",
   "universeCount": 50268,
   "count": 1138,
   "tickers": [
@@ -12918,15 +12918,15 @@
     },
     {
       "security_type": "ETF",
-      "ticker": "BITX",
-      "cik": 1884021,
-      "name": "Volatility Shares Trust",
-      "name_short": "Volatility Shares Trust",
+      "ticker": "CHAD",
+      "cik": 1805526,
+      "name": "DeFi Development Corp.",
+      "name_short": "DeFi Development",
       "sector": null,
       "industry": null,
-      "exchange": null,
-      "seriesid": "S000080610",
-      "contractid": "C000243124"
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
     },
     {
       "security_type": "ETF",
