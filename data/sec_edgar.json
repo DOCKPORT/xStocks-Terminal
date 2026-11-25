@@ -1,5 +1,29 @@
 [
   {
+    "name": "POET Technologies",
+    "symbol": "POETx",
+    "cik": 1437424,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1437424"
+  },
+  {
+    "name": "Firefly Aerospace",
+    "symbol": "FLYx",
+    "cik": 1860160,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1860160"
+  },
+  {
+    "name": "Redwire",
+    "symbol": "RDWx",
+    "cik": 1819810,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1819810"
+  },
+  {
+    "name": "Bitdeer Technologies",
+    "symbol": "BTDRx",
+    "cik": 1899123,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1899123"
+  },
+  {
     "name": "Sprott Uranium Miners ETF",
     "symbol": "URNMx",
     "cik": 1728683,
@@ -780,16 +804,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1570585"
   },
   {
-    "name": "Loar",
-    "symbol": "LOARx",
-    "cik": 2000178,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=2000178"
-  },
-  {
     "name": "Kyndryl",
     "symbol": "KDx",
     "cik": 1867072,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1867072"
+  },
+  {
+    "name": "Loar",
+    "symbol": "LOARx",
+    "cik": 2000178,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=2000178"
   },
   {
     "name": "Shift4 Payments",
@@ -1020,16 +1044,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1032033"
   },
   {
-    "name": "Gentex",
-    "symbol": "GNTXx",
-    "cik": 355811,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
-  },
-  {
     "name": "Louisiana-Pacific",
     "symbol": "LPXx",
     "cik": 60519,
     "url": "https://www.sec.gov/edgar/browse/?CIK=60519"
+  },
+  {
+    "name": "Gentex",
+    "symbol": "GNTXx",
+    "cik": 355811,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=355811"
   },
   {
     "name": "TFS Financial",
@@ -2022,22 +2046,28 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1868159"
   },
   {
+    "name": "Madison Square Garden Sports",
+    "symbol": "MSGSx",
+    "cik": 1636519,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=1636519"
+  },
+  {
     "name": "Avantor",
     "symbol": "AVTRx",
     "cik": 1722482,
     "url": "https://www.sec.gov/edgar/browse/?CIK=1722482"
   },
   {
-    "name": "Tetra Tech",
-    "symbol": "TTEKx",
-    "cik": 831641,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
-  },
-  {
     "name": "Mohawk Industries",
     "symbol": "MHKx",
     "cik": 851968,
     "url": "https://www.sec.gov/edgar/browse/?CIK=851968"
+  },
+  {
+    "name": "Tetra Tech",
+    "symbol": "TTEKx",
+    "cik": 831641,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=831641"
   },
   {
     "name": "Viavi Solutions",
@@ -2298,16 +2328,16 @@
     "url": "https://www.sec.gov/edgar/browse/?CIK=1037540"
   },
   {
-    "name": "Freedom",
-    "symbol": "FRHCx",
-    "cik": 924805,
-    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
-  },
-  {
     "name": "Dycom Industries",
     "symbol": "DYx",
     "cik": 67215,
     "url": "https://www.sec.gov/edgar/browse/?CIK=67215"
+  },
+  {
+    "name": "Freedom",
+    "symbol": "FRHCx",
+    "cik": 924805,
+    "url": "https://www.sec.gov/edgar/browse/?CIK=924805"
   },
   {
     "name": "Advanced Drainage Systems",

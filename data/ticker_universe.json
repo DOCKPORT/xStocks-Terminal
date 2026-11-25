@@ -1,8 +1,8 @@
 {
   "source": "https://data.businessquant.com/universe",
-  "fetchedAt": "2026-11-23T08:56:30+00:00",
-  "universeCount": 50268,
-  "count": 1138,
+  "fetchedAt": "2026-11-25T16:53:22+00:00",
+  "universeCount": 50274,
+  "count": 1143,
   "tickers": [
     {
       "security_type": "Equity",
@@ -1822,6 +1822,18 @@
       "cik": 1710350,
       "name": "Bit Digital, Inc",
       "name_short": "Bit Digital",
+      "sector": "Technology",
+      "industry": "Crypto Mining",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "BTDR",
+      "cik": 1899123,
+      "name": "Bitdeer Technologies Group",
+      "name_short": "Bitdeer Technologies",
       "sector": "Technology",
       "industry": "Crypto Mining",
       "exchange": "NASDAQ",
@@ -4572,6 +4584,18 @@
       "name_short": "1 800 Flowers Com",
       "sector": "Consumer Discretionary",
       "industry": "Online Retail",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "FLY",
+      "cik": 1860160,
+      "name": "Firefly Aerospace Inc.",
+      "name_short": "Firefly Aerospace",
+      "sector": "Industrials",
+      "industry": "Space",
       "exchange": "NASDAQ",
       "seriesid": null,
       "contractid": null
@@ -7674,6 +7698,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "MSGS",
+      "cik": 1636519,
+      "name": "MSG Knickerbockers Corp.",
+      "name_short": "MSG Knickerbockers",
+      "sector": "Consumer Discretionary",
+      "industry": "Entertainment Venues",
+      "exchange": null,
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "MSI",
       "cik": 68505,
       "name": "Motorola Solutions, Inc.",
@@ -9078,6 +9114,18 @@
     },
     {
       "security_type": "Equity",
+      "ticker": "POET",
+      "cik": 1437424,
+      "name": "Poet Technologies Inc.",
+      "name_short": "Poet Technologies",
+      "sector": "Technology",
+      "industry": "Semiconductor Design",
+      "exchange": "NASDAQ",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
       "ticker": "POOL",
       "cik": 945841,
       "name": "Pool Corp",
@@ -9492,6 +9540,18 @@
       "name_short": "Reddit",
       "sector": "Technology",
       "industry": "Social Media",
+      "exchange": "NYSE",
+      "seriesid": null,
+      "contractid": null
+    },
+    {
+      "security_type": "Equity",
+      "ticker": "RDW",
+      "cik": 1819810,
+      "name": "Redwire Corp",
+      "name_short": "Redwire",
+      "sector": "Industrials",
+      "industry": "Space",
       "exchange": "NYSE",
       "seriesid": null,
       "contractid": null
